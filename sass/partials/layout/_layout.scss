@@ -1,0 +1,341 @@
+////////////////////////
+// Layouts Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All box model properties go here
+////////////////////////
+
+@import "singularitygs";
+
+
+$break: 420px;
+$break2: 800px;
+$break3: 960px;
+$break4: 1200px;
+
+
+$grids: add-grid(1);
+$grids: add-grid(4 at $break);
+$grids: add-grid(16 at $break2);
+$grids: add-grid(16 at $break3);
+$grids: add-grid(16 at $break4);
+
+
+$gutters: add-gutter(.4);
+// $gutters: add-gutter(.25 at $break);
+// $output: 'float';
+
+* {
+  @include box-sizing('border-box');
+}
+
+html body
+{
+	margin-top: 0px;
+
+
+	@include breakpoint($break4)
+	{
+    margin: 1em 0;
+	}
+
+	#admin-menu
+	{
+		display: none;
+
+		@include breakpoint($break2)
+		{
+			display: block;
+		}
+
+	}
+
+
+}
+
+html body.admin-menu
+{
+		margin-top: 0px !important;
+
+
+	@include breakpoint($break2)
+	{
+		margin-top: 3em !important;
+		
+	}
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+ background-color: #ccc;
+}
+
+
+.front .flex-caption
+{ 
+display: none;
+}
+
+
+
+#parent
+{
+background: #fff;
+}
+
+#header
+{
+background-color: #fff;
+padding: 0px;
+}
+
+
+
+
+#page
+{
+width: 100%;
+ 
+ background-color:#fff;
+ margin: 0px;
+ float: none;
+
+ @include breakpoint($break2)
+ {
+ 	
+ }
+ 
+@include breakpoint($break3)
+{
+	max-width: $break3;
+	margin: 0 auto;
+	
+	}
+
+
+@include breakpoint($break4)
+{
+  max-width: $break4;
+  margin: 1em auto;
+  
+  }
+}
+
+#header
+{
+
+
+  @include grid-span(1, 1, $options: 'both');
+  
+   @include breakpoint($break) {
+    @include grid-span(4, 1, $options: 'both');
+  }
+
+ /*  @include breakpoint($break2) {
+    @include grid-span(9, 1, $options: 'both');
+  }*/  
+  
+
+  @include breakpoint($break2) {
+    @include grid-span(16, 1, $options: 'both');
+  }
+  
+ 
+  
+}
+
+#main-menu
+{
+
+
+  @include grid-span(1, 1, $options: 'both');
+  
+   @include breakpoint($break) {
+    @include grid-span(4, 1, $options: 'both');
+  }
+  
+ /*    @include breakpoint($break2) {
+    @include grid-span(9, 1, $options: 'both');
+  }*/
+
+  @include breakpoint($break2) {
+    @include grid-span(16, 1, $options: 'both');
+  }
+  
+  
+  
+}
+
+#main
+{
+  float: left;
+}
+
+/*
+#main-wrap
+{
+	padding: 5px 10px 5px 15px;
+}*/
+
+
+
+
+.unity-region
+{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+#footer
+{
+
+  @include grid-span(1, 1, $options: 'both');
+  
+   @include breakpoint($break) {
+    @include grid-span(4, 1, $options: 'both');
+  }
+/*
+   @include breakpoint($break2) {
+    @include grid-span(9, 1, $options: 'both');
+  }  
+  */
+
+  @include breakpoint($break2) {
+    @include grid-span(16, 1, $options: 'both');
+  }
+
+
+}
+
+#left-menu-footer
+{
+
+ @include grid-span(1, 1, $options: 'both');
+ 
+  @include breakpoint($break) {
+    @include grid-span(2, 1, $options: 'both');
+
+  }
+  /*
+   @include breakpoint($break2) {
+    @include grid-span(2, 1, $options: 'both');
+  }*/
+
+  @include breakpoint($break2) {
+    @include grid-span(3, 1, $options: 'both');
+	
+  }
+
+}
+
+#middle-menu-footer
+{
+
+ @include grid-span(1, 1, $options: 'both');
+	
+  @include breakpoint($break) {
+    @include grid-span(2, 3);
+
+  }
+  /*
+   @include breakpoint($break2) {
+    @include grid-span(2, 3);
+  }*/
+
+  @include breakpoint($break2) {
+    @include grid-span(3, 4);
+	
+  }
+
+}
+
+#right-menu-footer
+{
+
+ @include grid-span(1, 1, $options: 'both');
+ 
+  @include breakpoint($break) {
+    @include grid-span(2, 1, $options: 'both');
+  }
+  /*
+   @include breakpoint($break2) {
+    @include grid-span(2, 5);
+  }*/
+
+  @include breakpoint($break2) {
+    @include grid-span(3, 7);
+	
+  }
+
+}
+
+#social-footer
+{
+
+ @include grid-span(1, 1, $options: 'both');
+ 
+  @include breakpoint($break) {
+    @include grid-span(2,3);
+  }
+  /*
+   @include breakpoint($break2) {
+    @include grid-span(2, 5);
+  }*/
+
+  @include breakpoint($break2) {
+    @include grid-span(5, 12);
+	
+  }
+
+}
+
+
+#bottom-footer
+{
+
+ @include grid-span(1, 1, $options: 'both');
+ 
+  @include breakpoint($break) {
+    @include grid-span(4,1, $options: 'both');
+  }
+  /*
+   @include breakpoint($break2) {
+    @include grid-span(2, 5);
+  }*/
+
+  @include breakpoint($break2) {
+    @include grid-span(16, 1, $options: 'both');
+  
+  }
+
+}
+
+
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+@import 'front';
+@import 'potter';
+@import 'dumbledore';
+@import 'notfront';
+@import 'service';
+@import 'mainnav';
+@import 'snape';
+
+
+

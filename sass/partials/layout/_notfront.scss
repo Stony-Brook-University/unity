@@ -1,0 +1,344 @@
+.not-front
+{
+	#content
+	{
+		margin: 5px;
+
+		@include breakpoint($break) {
+		margin: 0px;
+		}
+	}
+
+	
+}
+
+
+.not-front.unity-no-sidebars
+{
+	#main-wrap
+	{
+		@include grid-span(1, 1, $options: 'both');
+
+		@include breakpoint($break) {
+			@include grid-span(4, 1, $options: 'right');
+		}
+
+		@include breakpoint($break2) {
+			@include grid-span(16, 1, $options: 'right');
+				
+		}
+
+
+
+		#main-content
+		{
+
+			width: 100%;
+			float: left;
+			padding-right: 3%;
+			@include breakpoint($break2) 
+			{
+		
+				width: 75%;		
+			}
+		}
+
+		#right-prefix
+		{
+
+			width: 100%;
+			float: left;
+
+			@include breakpoint($break2) 
+			{
+		
+				width: 25%;		
+				float: right;
+			}
+
+			.panel-pane
+			{
+				float: left;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+		#right-postfix
+		{
+
+			width: 100%;
+			float: left;
+
+			@include breakpoint($break2) 
+			{
+		
+				width: 25%;		
+				float: right;
+				clear: right;
+			}
+
+			.panel-pane
+			{
+				float: left;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+
+
+
+		
+
+	}
+
+}
+
+
+	.not-front.unity-sidebar-prefix
+	{
+
+		#main-prefix
+		{
+			display: none;
+			
+
+			@include grid-span(1, 1, $options: 'both');
+			
+			@include breakpoint($break) {
+		
+				@include grid-span(2, 1, $options: 'both');
+			}
+		  /*
+		   @include breakpoint($break2) {
+			@include grid-span(3, 1, $options: 'right');
+			}*/
+
+			@include breakpoint($break2) {
+				display: block;
+				padding: 5px 10px 5px 10px;
+				@include grid-span(4, 1, $options: 'right');
+				
+			}
+		}
+		
+		#main-wrap
+		{
+
+			padding: 5px 10px 5px 10px;
+
+			@include grid-span(1, 1, $options: 'both');
+			
+			
+
+
+			@include breakpoint($break) {
+				@include grid-span(4, 1, $options: 'right');
+			}
+		  /*
+		   @include breakpoint($break2) {
+			@include grid-span(4, 6, $options: 'right');
+			}*/
+
+			@include breakpoint($break2) {
+
+				padding: 5px 10px 5px 0px;
+				@include grid-span(12, 5, $options: 'right');
+				
+				
+				
+			}
+
+
+
+				#main-content
+		{
+
+			width: 100%;
+			float: left;
+			padding-right: 3%;
+			@include breakpoint($break2) 
+			{
+		
+				width: 60%;		
+			}
+		}
+
+		#right-prefix
+		{
+
+			width: 100%;
+			float: left;
+
+			@include breakpoint($break2) 
+			{
+		
+				width: 38%;
+				margin-left: 2%;		
+				float: right;
+			}
+
+			.panel-pane
+			{
+				float: left;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+		#right-postfix
+		{
+
+			width: 100%;
+			float: left;
+
+			@include breakpoint($break2) 
+			{
+		
+				width: 38%;
+				margin-left: 2%;		
+				float: right;
+				clear: right;
+			}
+
+			.panel-pane
+			{
+				float: left;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+
+		}
+
+		
+
+	}
+
+
+.not-front.unity-sidebar-suffix
+	{
+
+#main-suffix
+		{
+			
+			
+
+			@include grid-span(1, 1, $options: 'both');
+			
+			@include breakpoint($break) {
+		
+				@include grid-span(2, 1, $options: 'both');
+			}
+		  /*
+		   @include breakpoint($break2) {
+			@include grid-span(3, 1, $options: 'right');
+			}*/
+
+			@include breakpoint($break2) {
+				display: block;
+				padding: 5px 10px 5px 10px;
+				margin-top: 45px;
+				@include grid-span(4, 13, $options: 'right');
+				
+			}
+		}
+		
+		
+		#main-wrap
+		{
+
+			padding: 5px 10px 5px 10px;
+
+			@include grid-span(1, 1, $options: 'both');
+			
+			
+
+
+			@include breakpoint($break) {
+				@include grid-span(4, 1, $options: 'right');
+			}
+		  /*
+		   @include breakpoint($break2) {
+			@include grid-span(4, 6, $options: 'right');
+			}*/
+
+			@include breakpoint($break2) {
+
+				padding: 5px 10px 5px 15px;
+				@include grid-span(12, 1, $options: 'right');
+				
+				
+				
+			}
+
+
+
+				#main-content
+		{
+
+			width: 100%;
+			float: left;
+			padding-right: 3%;
+			@include breakpoint($break2) 
+			{
+		
+				width: 60%;		
+			}
+		}
+
+		#right-prefix
+		{
+
+			width: 100%;
+			float: left;
+
+			@include breakpoint($break2) 
+			{
+		
+				width: 38%;
+				margin-left: 2%;		
+				float: right;
+			}
+
+			.panel-pane
+			{
+				float: left;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+		#right-postfix
+		{
+
+			width: 100%;
+			float: left;
+
+			@include breakpoint($break2) 
+			{
+		
+				width: 38%;
+				margin-left: 2%;		
+				float: right;
+				clear: right;
+			}
+
+			.panel-pane
+			{
+				float: left;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+
+
+
+		}
+
+		
+
+}

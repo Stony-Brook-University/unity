@@ -1,0 +1,179 @@
+.front
+{
+	#main-wrapper-section
+	{
+	@include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'right');
+	  }
+	  /*
+	   @include breakpoint($break2) {
+		@include grid-span(4, 6, $options: 'right');
+	  }*/
+
+	  @include breakpoint($break2) {
+		@include grid-span(16, 1, $options: 'right');
+		
+	  }
+	}
+
+
+	#banner
+	{
+
+	  @include grid-span(1, 1, $options: 'both');
+	  
+	   @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+
+	   /* @include breakpoint($break2) {
+		@include grid-span(9, 1, $options: 'both');
+	  }  */
+	  
+
+	  @include breakpoint($break2) {
+		@include grid-span(16, 1, $options: 'both');
+	  }
+
+	}
+
+	#callout
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  
+	  /*
+	   @include breakpoint($break2) {
+		@include grid-span(3, 1, $gutter: 0, $options: 'right');
+	  }*/
+
+	  @include breakpoint($break2) {
+		@include grid-span(4, 1, $gutter: 0, $options: 'right');
+		
+	  }
+	}
+
+	
+
+	#main-wrap
+	{
+	   @include grid-span(1, 1, $options: 'both');
+	  
+	   @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+
+	   /* @include breakpoint($break2) {
+		@include grid-span(9, 1, $options: 'both');
+	  }  */
+	  
+
+	  @include breakpoint($break2) {
+		@include grid-span(16, 1, $options: 'both');
+	  }
+	}
+
+	#system-status
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  
+	 /*  @include breakpoint($break2) {
+		@include grid-span(3, 1);
+	  }*/
+
+	  @include breakpoint($break2) {
+		@include grid-span(4, 1);
+		
+	  }
+	}
+
+	#service-catalog
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  
+	 /*  @include breakpoint($break2) {
+		@include grid-span(3, 4, $options: 'right');
+	  }*/
+
+	  @include breakpoint($break2) {
+		@include grid-span(8, 5, $options: 'right');
+		
+	  }
+	}
+
+	#features
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  
+	 /*  @include breakpoint($break2) {
+		@include grid-span(3, 7, $options: 'right');
+	  }*/
+
+	  @include breakpoint($break2) {
+		@include grid-span(4, 13, $options: 'right');
+		
+	  }
+	}
+
+	#headlines
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  
+	 /*  @include breakpoint($break2) {
+		@include grid-span(6, 1, $options: 'both');
+	  }*/
+
+	  @include breakpoint($break2) {
+		@include grid-span(12, 1, $options: 'both');
+		
+	  }
+	}
+
+	#events
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  /*
+	   @include breakpoint($break2) {
+		@include grid-span(3, 7, $options: 'right');
+	  }*/
+
+	 @include breakpoint($break2) {
+		@include grid-span(4, 13, $options: 'right');
+		
+	  }
+	}
+
+}
+
+

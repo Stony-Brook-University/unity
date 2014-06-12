@@ -1,0 +1,264 @@
+#banner-icons
+{
+position: relative;
+top: -30px;
+	left: 800px;
+	z-index: 10;
+	
+	width: 300px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+#system-status
+{
+	display: inline;
+	background-image: url("../images/checkmark.png");
+	
+	z-index: 10;
+	height: 120px;
+	width: 100px;
+	padding-top: 40px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	margin-right: 30px;
+	background-position: 50% 0%;
+}
+
+#report-a-problem
+{
+	display: inline;
+	background-image: url("../images/exclamation.png");
+	background-position: 50% 0%;
+	z-index: 10;
+	height: 120px;
+	width: 100px;
+	padding-top: 40px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+
+#banner {
+width: 100%;
+float: right;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 30px;
+clear: both;
+max-height: 300px;
+margin-top: 15px;
+}
+
+#main-wrap
+{
+	padding: 0px 10px;
+}
+
+#overview
+{
+margin-bottom: 30px;
+float: left;
+width: 100%;
+
+margin: 0px 0px 30px 0px;
+}
+
+#introduction
+{
+width: 100%;
+
+float: left;
+padding: 0px 15px;
+font-size: 2.0em;
+
+}
+
+#introduction p
+{
+margin: 0px;
+}
+
+#support-options
+{
+margin-bottom: 15px;
+ float: left;
+ margin-left: 10px;
+}
+
+#join-convo
+{
+margin-bottom: 15px;
+ float: left;
+ margin-left: 10px;
+}
+
+.node-type-service-page.unity-no-sidebar #main-wrap #main-content
+{
+	width:100%;
+}
+
+#cards
+{
+width: 100%;
+
+float:left;
+margin-bottom: 30px;
+}
+
+#userStories
+{
+width: 100%;
+float: left;
+margin-bottom: 30px;
+}
+.cardWrapper:hover {
+border: #969495 1px solid;
+-webkit-box-shadow: 0px 0px 12px #969495;
+box-shadow: 0px 0px 12px #969495;
+}
+.cardWrapper {
+text-align: left;
+display: block;
+float: left;
+margin-bottom: 12px;
+margin-left: 12px;
+width: 221px;
+height: 270px;
+border: #B7B5B6 1px solid;
+background: #FFF;
+-webkit-box-shadow: 0px 0px 8px #B7B5B6;
+box-shadow: 0px 0px 8px #B7B5B6;
+}
+
+.cardWrapper .cardContentWrapper {
+margin: 0px;
+padding: 10px;
+}
+
+.cardWrapper .cardContentWrapper img {
+width: 199px;
+height: 138px;
+padding-bottom: 10px;
+}
+
+
+.userStoryWrapper:hover {
+border: #969495 1px solid;
+-webkit-box-shadow: 0px 0px 12px #969495;
+box-shadow: 0px 0px 12px #969495;
+}
+.userStoryWrapper {
+text-align: left;
+display: block;
+float: left;
+margin-bottom: 12px;
+margin-left: 12px;
+width: 570px;
+height: 260px;
+border: #B7B5B6 1px solid;
+background: #FFF;
+-webkit-box-shadow: 0px 0px 8px #B7B5B6;
+box-shadow: 0px 0px 8px #B7B5B6;
+}
+
+.userStoryWrapper .userStoryContentWrapper {
+margin: 0px;
+padding: 10px;
+}
+
+.userStoryWrapper .userStoryContentWrapper img {
+
+float: left;
+
+}
+
+.userStoryWrapper .userStoryContent {
+
+float: left;
+margin-left: 10px;
+width: 365px;
+
+}
+
+.userStoryWrapper .userStoryContent p
+{
+margin-top: 0px;
+}
+
+.userStoryWrapper .userStoryContent em {
+
+font-size: 1.5em;
+
+}
+
+.userStoryWrapper .userStoryContent .credit
+{
+clear: both;
+margin-top: 10px;
+font-size: 1.2em;
+}
+
+#faqs
+{
+	width: 32%;
+	padding: 10px;
+	float: left;
+	border: #B7B5B6 1px solid;
+background: #FFF;
+-webkit-box-shadow: 0px 0px 8px #B7B5B6;
+box-shadow: 0px 0px 8px #B7B5B6;
+	margin-right: 14px;
+	height: 190px;
+}
+
+#faqs table
+{
+width: 100%;
+}
+
+#faqs table td
+{
+padding: 10px 0px;
+}
+
+#supported-by, #third-box
+{
+	width: 32%;
+	padding: 10px;
+	float: left;
+border: #B7B5B6 1px solid;
+background: #FFF;
+-webkit-box-shadow: 0px 0px 8px #B7B5B6;
+box-shadow: 0px 0px 8px #B7B5B6;
+	margin-right: 14px;
+	float: left;
+	height: 190px;
+	
+	
+	
+	
+}
+
+#supported-by p, #third-box p
+{
+font-size: 1.4em;
+margin: 0px 0px 20px 0px;
+}
+
+#twitter
+{
+width: 32%;
+	padding: 10px;
+	float: left;
+	border: #B7B5B6 1px solid;
+background: #FFF;
+-webkit-box-shadow: 0px 0px 8px #B7B5B6;
+box-shadow: 0px 0px 8px #B7B5B6;
+	margin-right: 14px;
+	height: 190px;
+	
+	font-size: 1.4em;
+
+}

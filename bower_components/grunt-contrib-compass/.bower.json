@@ -1,0 +1,14 @@
+{
+  "name": "grunt-contrib-compass",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-compass",
+  "version": "0.2.0",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "264bf91e7cedd6551b5064a308df28610d4cc93a"
+  },
+  "_source": "git://github.com/gruntjs/grunt-contrib-compass.git",
+  "_target": "~0.2.0",
+  "_originalSource": "grunt-contrib-compass"
+}

@@ -1,0 +1,54 @@
+#main-menu-controller
+{
+	float: left;
+}
+
+#main-menu-navigation
+{
+	float: left;
+}
+
+#search-controller
+{
+	float: right;
+}
+
+
+
+#main-menu-controller
+{
+	display: block;
+
+	@include breakpoint($break2) {
+    	display: none;
+  }
+}
+
+#search-controller
+{
+	display: block;
+
+	@include breakpoint($break3) {
+    	display: none;
+  }
+}
+
+#main-menu-navigation
+{
+	display: none;
+
+	@include breakpoint($break2) {
+    	display: block;
+  }
+
+}
+
+#search-wrapper
+{
+	display: none;
+
+  @include breakpoint($break3) {
+    	display: block;
+  }
+
+}

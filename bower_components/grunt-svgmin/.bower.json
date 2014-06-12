@@ -1,0 +1,14 @@
+{
+  "name": "grunt-svgmin",
+  "homepage": "https://github.com/sindresorhus/grunt-svgmin",
+  "version": "0.2.1",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.1",
+    "commit": "7702fce18888c3fd677cdaed0d076dbe11d0eb9a"
+  },
+  "_source": "git://github.com/sindresorhus/grunt-svgmin.git",
+  "_target": "~0.2.0",
+  "_originalSource": "grunt-svgmin"
+}
