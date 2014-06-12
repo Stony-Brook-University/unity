@@ -6,11 +6,10 @@ module.exports = function (grunt) {
 	
 	browserSync: {
 		files: {
-			src: '{,**/}*.css'
+			src: 'html/stylesheets/{,**/}*.css'
 		},
 		options: {
-			proxy: "localhost/html",
-			startPath: "/index.htm",
+			proxy: "localhost:8080",
 			injectChanges: false,
 			debugInfo: true,
 			logConnections: true,
@@ -19,7 +18,7 @@ module.exports = function (grunt) {
 				min: 9000,
 				max: 9020
 			},
-			host : "129.49.20.61",
+			host : "unity.localhost",
 			ghostMode: {
 				clicks: true,
 				scroll: true,
@@ -164,7 +163,7 @@ module.exports = function (grunt) {
 		  cwd: 'stylesheets',
 		  src: ['**'],
 		  dest: 'drupal/stylesheets'
-		  }
+		  },
 		  
 		   {
 		  expand: true,

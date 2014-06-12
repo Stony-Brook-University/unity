@@ -94,8 +94,8 @@ $( ".accordion" ).accordion({
         clearStyle: true,   
         });
 </script>
-<script src='//129.49.20.61:3001/socket.io/socket.io.js'></script>
-<script>var ___socket___ = io.connect('http://129.49.20.61:3001');</script>
-<script src='//129.49.20.61:3002/client/browser-sync-client.0.9.1.js'></script>
+<script src='//unity.localhost:3001/socket.io/socket.io.js'></script>
+<script>var ___socket___ = io.connect('http://unity.localhost:3001');</script>
+<script src='//unity.localhost:3002/client/browser-sync-client.0.9.1.js'></script>
 </body>
 </html>

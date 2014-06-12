@@ -24,7 +24,7 @@
 @import url("http://it.dev.sinc.stonybrook.edu/modules/system/system.base.css?n5ycpv");
 @import url("styles/icomoon-style.css");
 
-@import url("../stylesheets/style.css");
+@import url("stylesheets/style.css");
 @import url("styles/style.css");
 </style>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
