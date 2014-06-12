@@ -52,18 +52,28 @@ module.exports = function (grunt) {
           '!javascripts/{,**/}*.js'
         ],
         tasks: ['jshint', 'uglify:dev']
-      }
+      },
+	  
+	  copy: {
+		files: ['stylesheets/{,**/}*.css', 'images/**', 'javascripts/{,**/}*.js'],
+		tasks: ['copy']
+	  }
+	  
     },
 
     compass: {
+	  
       options: {
         config: 'config.rb',
-        bundleExec: true
+        bundleExec: true,
+		
       },
       dev: {
+		
         options: {
           environment: 'development'
         }
+		
       },
       dist: {
         options: {
@@ -147,7 +157,21 @@ module.exports = function (grunt) {
             cwd: 'images',
             src: ['**', '!**/*.svg', '!**/*.png', '!**/*.jpg'],
             dest: 'images-min'
-          }
+          },
+		  
+		  {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'drupal/stylesheets'
+		  }
+		  
+		   {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'html/stylesheets'
+		  }
         ]
       }
     },
@@ -180,5 +204,5 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', ['parallel', 'compass:dist', 'jshint']);
   grunt.registerTask('default', ['build', 'browserSync', 'watch']);
-  grunt.registerTask('csswatch', ['browserSync', 'watch']);
+  grunt.registerTask('csswatch', ['browserSync', 'watch', 'copy']);
 };
