@@ -1,0 +1,58 @@
+#main-wrap.page-styleguide
+{
+	.examples
+	{
+		background-color: #ccc;
+			margin: 10px 0px 0px -15px;
+			padding: 10px 0px 10px 15px;
+
+			.examples-example
+			{
+				margin: 10px;
+			}
+	}
+
+	.demos
+	{
+		padding: 10px 0px;
+		margin: 10px 0px;
+
+		.examples-example
+			{
+				margin: 10px;
+			}
+	}
+
+	h1.heading-styleguide, h2.heading-styleguide, h3.heading-styleguide,h4.heading-styleguide,h5.heading-styleguide,h6.heading-styleguide
+	{
+		font-family: tahoma;
+	}
+
+
+	.swatch
+	{
+		width: 100%;
+		height: 75px;
+		margin-bottom: 5px;
+
+		&.red
+		{
+			background-color: $stony-brook-red;
+		}
+
+		&.blue
+		{
+			background-color: $blue;
+		}
+
+		&.dark-gray
+		{
+			background-color: $dark-gray;
+		}
+
+		&.light-gray
+		{
+			background-color: $light-gray;
+		}
+	}
+}

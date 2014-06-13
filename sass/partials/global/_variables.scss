@@ -3,3 +3,25 @@
 //
 // All of your variables should go in this file.
 ////////////////////////
+ $red: #990000;
+ $stony-brook-red: $red;
+ $dark-red: darken($red, 10%);
+ $light-red: lighten($red, 10%);
+
+	
+	$gray: #ccc;
+ $dark-gray: #333;
+ $light-gray: #eee;
+ 
+ $blue: #0063a3;
+ $dark-blue: darken($blue, 10%);
+ $light-blue: lighten($blue, 10%);
+
+ $black:#000;
+ $green: #009900;
+
+
+$normal-spacing: 10px;
+$large-spacing: 20px;
+$small-spacing: 5px;
+

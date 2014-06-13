@@ -78,7 +78,7 @@ background-color: #006699;
 
 .section.red, #banner.red
 {
-	background-color: #990000;
+	background-color: $stony-brook-red;
 }
 
 
@@ -103,7 +103,7 @@ float: left;
 
 .section
 {
-	padding: 4.0em 2.0em;
+	padding: 3.0em 1.75em;
 	font-family: TradeGothicNextW01-Ligh 693250;
 }
 
@@ -117,7 +117,7 @@ padding: 2.0em;
 	
 	background-image: image-url('textures/bright-squares.png');
 	background-repeat: repeat-both;
-	background-color: #eee;
+	background-color: $light-gray;
 	
 }
 

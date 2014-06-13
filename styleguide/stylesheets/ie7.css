@@ -1,0 +1,12 @@
+#page
+{
+	width: 480px;
+	max-width: 480px;
+
+}
+
+*
+{
+	box-sizing: border-box; 
+	*behavior: url('/sites/all/themes/custom/unity/javascripts/boxsizing.htc');
+}
