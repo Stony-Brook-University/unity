@@ -2,14 +2,19 @@
 
 module.exports = function (grunt) {
 
+	//GRUNT TASKS
   grunt.initConfig({
 	
+	//BROWSER SYNC TASK
 	browserSync: {
+		//Files to search for
 		files: {
-			src: 'html/stylesheets/{,**/}*.css'
+			src: '{,**/}*.css'
 		},
+		//What to do with the files
 		options: {
-			proxy: "localhost:8080",
+			proxy: "localhost/html",
+			startPath: "/index.htm",
 			injectChanges: false,
 			debugInfo: true,
 			logConnections: true,
@@ -18,7 +23,7 @@ module.exports = function (grunt) {
 				min: 9000,
 				max: 9020
 			},
-			host : "unity.localhost",
+			host : "129.49.20.61",
 			ghostMode: {
 				clicks: true,
 				scroll: true,
@@ -28,52 +33,52 @@ module.exports = function (grunt) {
 		}
     },
   
+	//WATCH TASK
     watch: {
       options: {
-        //livereload: 9001
+        //Removed code->								livereload: 9001
       },
+	  //sass files to watch
       sass: {
         files: ['sass/{,**/}*.scss'],
-        tasks: ['compass:dev'],
+        tasks: ['compass:dev'], //run compass task for sass files
         options: {
           livereload: false
         }
       },
+	  //css files to watch
       css: {
         files: ['stylesheets/{,**/}*.css']
+		//do nothing
       },
+	  //images to watch
       images: {
         files: ['images/**']
+		//do nothing
       },
+	  //javascript to watch
       js: {
         files: [
           'javascripts/{,**/}*.js',
           '!javascripts/{,**/}*.js'
         ],
-        tasks: ['jshint', 'uglify:dev']
-      },
-	  
-	  copy: {
-		files: ['stylesheets/{,**/}*.css', 'images/**', 'javascripts/{,**/}*.js'],
-		tasks: ['copy']
-	  }
-	  
+        tasks: ['jshint', 'uglify:dev'] //run jshint and uglify for javascript
+      }
     },
-
+	
+	//COMPASS TASK
     compass: {
-	  
       options: {
         config: 'config.rb',
-        bundleExec: true,
-		
+        bundleExec: true
       },
+	  //DEV SUBTASK
       dev: {
-		
         options: {
           environment: 'development'
         }
-		
       },
+	  //DIST SUBTASK
       dist: {
         options: {
           environment: 'production',
@@ -82,22 +87,26 @@ module.exports = function (grunt) {
         }
       }
     },
-
+	
+	//JSHINT TASK
     jshint: {
       options: {
         jshintrc: '.jshintrc'
       },
+	  //Javascript to search for and check
       all: [
         'javascripts/{,**/}*.js',
         '!javascripts/{,**/}*.min.js'
       ]
     },
-
+	
+	//IMAGEMIN TASK
     imagemin: {
       dist: {
         options: {
           optimizationLevel: 3
         },
+		//images to search for, compress, and place in the destination
         files: [{
           expand: true,
           cwd: 'images',
@@ -106,8 +115,10 @@ module.exports = function (grunt) {
         }]
       }
     },
-
+	
+	//SVGMIN TASK
     svgmin: {
+	  //DIST SUBTASK
       dist: {
         files: [{
           expand: true,
@@ -117,14 +128,17 @@ module.exports = function (grunt) {
         }]
       }
     },
-
+	
+	//UGLIFY TASK
     uglify: {
+	  //DEV SUBTASK
       dev: {
         options: {
           mangle: false,
           compress: false,
           beautify: true
         },
+		//javascript to look for, minify, and place in the destination
         files: [{
           expand: true,
           cwd: 'javascripts',
@@ -133,11 +147,13 @@ module.exports = function (grunt) {
           ext: '.min.js'
         }]
       },
+	  //DIST SUBTASK
       dist: {
         options: {
           mangle: true,
           compress: true
         },
+		//javascript to look for, minify, and place in the destination
         files: [{
           expand: true,
           cwd: 'javascripts',
@@ -147,43 +163,33 @@ module.exports = function (grunt) {
         }]
       }
     },
-
+	
+	//COPY TASK
     copy: {
+	  //DIST SUBTASK
       dist: {
+	    //Files to look for and move to the destination
         files: [
           {
             expand: true,
             cwd: 'images',
             src: ['**', '!**/*.svg', '!**/*.png', '!**/*.jpg'],
             dest: 'images-min'
-          },
-		  
-		  {
-		  expand: true,
-		  cwd: 'stylesheets',
-		  src: ['**'],
-		  dest: 'drupal/stylesheets'
-		  },
-		  
-		   {
-		  expand: true,
-		  cwd: 'stylesheets',
-		  src: ['**'],
-		  dest: 'html/stylesheets'
-		  }
+          }
         ]
       }
     },
-
+	
+	//PARALLEL TASK
     parallel: {
       assets: {
         grunt: true,
-        tasks: ['imagemin', 'svgmin', 'uglify:dist', 'copy:dist']
+        tasks: ['imagemin', 'svgmin', 'uglify:dist', 'copy:dist'] //Run imagemin, svgmin, uglify:dist and copy:dist simultaneously
       }
     }
   });
 
-
+	
   grunt.event.on('watch', function(action, filepath) {
     grunt.config([
       'compass:dev',
@@ -191,6 +197,8 @@ module.exports = function (grunt) {
     ], filepath);
   });
 
+  
+  //LOAD PLUGINS
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -203,5 +211,5 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', ['parallel', 'compass:dist', 'jshint']);
   grunt.registerTask('default', ['build', 'browserSync', 'watch']);
-  grunt.registerTask('csswatch', ['browserSync', 'watch', 'copy']);
+  grunt.registerTask('csswatch', ['browserSync', 'watch']);
 };
