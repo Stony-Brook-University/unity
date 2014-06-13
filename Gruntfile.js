@@ -9,16 +9,17 @@ module.exports = function (grunt) {
 			src: 'html/stylesheets/{,**/}*.css'
 		},
 		options: {
-			proxy: "localhost:8080",
+			proxy: "styleguide.localhost:8080",
 			injectChanges: false,
 			debugInfo: true,
 			logConnections: true,
 			watchTask: true,
+			startPath: '/text.php',
 			ports: {
 				min: 9000,
 				max: 9020
 			},
-			host : "unity.localhost",
+			host : "styleguide.localhost",
 			ghostMode: {
 				clicks: true,
 				scroll: true,
@@ -29,9 +30,6 @@ module.exports = function (grunt) {
     },
   
     watch: {
-      options: {
-        //livereload: 9001
-      },
       sass: {
         files: ['sass/{,**/}*.scss'],
         tasks: ['compass:dev'],
@@ -163,6 +161,13 @@ module.exports = function (grunt) {
 		  cwd: 'stylesheets',
 		  src: ['**'],
 		  dest: 'drupal/stylesheets'
+		  },
+		  
+		   {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'styleguide/stylesheets'
 		  },
 		  
 		   {
