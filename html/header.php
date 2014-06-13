@@ -38,7 +38,7 @@
 
  	<div id="header">
     			
-		   <a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="http://it.dev.sinc.stonybrook.edu/sites/all/themes/custom/unity/assets/stony-brook-university.png" alt="Stony Brook University Logo" /></a><a id="logo" href="/"><img title="Home" src="http://it.dev.sinc.stonybrook.edu/sites/it.stonybrook.edu/files/doit-logo.png" /></a> 			
+		   <a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="/stylesheets/images/stony-brook-university.png" alt="Stony Brook University Logo" /></a><a id="logo" href="/"><img title="Home" src="/stylesheets/images/doit-logo.png" /></a> 			
        
 	</div>
 	

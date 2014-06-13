@@ -1,7 +1,8 @@
 <?php include("header.php"); ?>	
 	
 
-					
+					<div id="banner"><div id="banner-image"><img src="images/blackboard-logo.png" /></div><div id="login-button"><a href="http://blackboard.stonybrook.edu">Login to Blackboard <span class="icon-arrow-right icon right"></span></a></div></div>
+			
 						
 					
 			
@@ -10,22 +11,17 @@
 
 
 		<div id="main-content">
-
-		<div id="banner" class="brushed-alum green">
-			<div id="banner-image"><img src="images/blackboard-logo.png" /></div>
-			<div id="login-button"><a href="http://blackboard.stonybrook.edu">Login to Blackboard <span class="icon-arrow-right icon right"></span></a></div>
-		</div>
-			
 	 
-		<div class="section red-gradient has-buttons">
-		<div class="section-heading"><h2><span class="icon-cancel-circle icon left"></span>This system is currently offline.</h2> </div>
-		<div class="section-buttons">
-			<a class="section-button gray" href="#"><span class="icon-history icon left"></span>View History</a>
-			<a class="section-button gray" href="#"><span class="icon-pushpin icon left"></span>Subscribe</a></div>
-		<div class="section-content">
+		<div id="system-status-message" class="offline heading-separator">
+		<div class="status-heading"><span class="icon-cancel-circle icon left"></span>This system is currently offline. </div>
+		<div id="system-status-buttons"><a href="#"><span class="icon-history icon left"></span>View History</a><a href="#"><span class="icon-pushpin icon left"></span>Subscribe</a></div>
+		<div class="status-message">
 		
 		<p>Blackboard is currently offline. Our IT Staff has been notified and are currently working on a resolution. <a href="#">View More Details</a></p>
-		<p><strong class="first">Last Updated:</strong> 2 hours ago <strong>Reported On:</strong> May 27th, 1:18pm <strong>Estimated Resolution:</strong> About an Hour</p>
+		
+		<div class="time">
+		<strong class="first">Last Updated:</strong> 2 hours ago<strong>Reported On:</strong> May 27th, 1:18pm<strong>Estimated Resolution:</strong> About an Hour
+		</div>
 		</div>
 		
 		</div>
@@ -337,4 +333,4 @@
 	
 		 		
 	
-<?php include("footer.php"); ?>	
+<?php include(footer.php); ?>
