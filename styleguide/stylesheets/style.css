@@ -2192,68 +2192,73 @@ a:hover, a.selected {
   color: #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003192}}
+.clearboth {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003198}}
 .rtecenter {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003203}}
 .link-separator {
   padding: 0px 10px 0px 10px;
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003210}}
 .background-red {
   background-color: #990000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003215}}
 .background-light-red {
   background-color: #cc0000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003220}}
 .background-dark-red {
   background-color: #660000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003226}}
 .background-blue {
   background-color: #0063a3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003231}}
 .background-light-blue {
   background-color: #0082d6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003236}}
 .background-dark-blue {
   background-color: #004470;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003241}}
 .background-gray {
   background-color: #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003246}}
 .background-light-gray {
   background-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003251}}
 .background-dark-gray {
   background-color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003256}}
 .background-green {
   background-color: #009900;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_design\.scss}line{font-family:\00003261}}
 .background-black {
   background-color: black;
 }
@@ -2745,26 +2750,56 @@ th {
   font-size: 1.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000371}}
+#main-content p.caption {
+  margin: 0px 0px 10px;
+  font-size: 0.8em;
+  color: #333333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000378}}
 #main-content blockquote {
   margin: 0 0 1.25em 0;
   font-size: 1.5em;
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000385}}
+#main-content div.pull-image-right {
+  float: right;
+  margin: 0 0px 6px 12px;
+  width: 50%;
+  padding: 0.5625em 0.857em;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000396}}
+#main-content div.pull-image-right img {
+  width: 50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\00003102}}
+#main-content div.pull-image-left {
+  float: left;
+  margin: 0  12px 6px 0px;
+  width: 50%;
+  padding: 0.5625em 0.857em;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\00003114}}
+#main-content div.pull-image-left img {
+  width: 50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\00003120}}
 #main-content blockquote.pull-quote-right {
   float: right;
   margin: 0 0px 6px 12px;
   width: 50%;
   padding: 0.5625em 0.857em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\00003129}}
 #main-content blockquote.pull-quote-left {
   float: left;
   margin: 0  12px 6px 0px;
   width: 50%;
   padding: 0.5625em 0.857em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_text\.scss}line{font-family:\00003139}}
 #main-content blockquote.pull-quote-border {
   border-right: 5px solid #990000;
 }
@@ -5184,43 +5219,46 @@ a.report-problem-button {
   background-color: #ccc;
   margin: 10px 0px 0px -15px;
   padding: 10px 0px 10px 15px;
+  clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000311}}
 #main-wrap.page-styleguide .examples .examples-example {
   margin: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000317}}
 #main-wrap.page-styleguide .demos {
   padding: 10px 0px;
   margin: 10px 0px;
+  clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000323}}
 #main-wrap.page-styleguide .demos .examples-example {
   margin: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000329}}
 #main-wrap.page-styleguide h1.heading-styleguide, #main-wrap.page-styleguide h2.heading-styleguide, #main-wrap.page-styleguide h3.heading-styleguide, #main-wrap.page-styleguide h4.heading-styleguide, #main-wrap.page-styleguide h5.heading-styleguide, #main-wrap.page-styleguide h6.heading-styleguide {
   font-family: tahoma;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000335}}
 #main-wrap.page-styleguide .swatch {
   width: 100%;
   height: 75px;
   margin-bottom: 5px;
+  color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000341}}
 #main-wrap.page-styleguide .swatch.red {
   background-color: #990000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000346}}
 #main-wrap.page-styleguide .swatch.blue {
   background-color: #0063a3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000351}}
 #main-wrap.page-styleguide .swatch.dark-gray {
   background-color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/_styleguide\.scss}line{font-family:\0000356}}
 #main-wrap.page-styleguide .swatch.light-gray {
   background-color: #eeeeee;
 }

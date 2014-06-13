@@ -4,7 +4,7 @@
 	
 	<div id="main-content">
 		
-		<div class="section three-cards">
+		<div class="section">
 			<h1 class="heading-styleguide">Colors</h1>
 			
 			<p class="intro-text">Color can be used to draw attention to different sections or text. Editors should be careful about using colors in a way that break away from the standard structure of a page. In an effort to keep everyone on the same page we have created the following color classes.</p>
@@ -105,7 +105,7 @@
 
 	<div class="section">
 		<h1 class="heading-styleguide">Paragraphs</h1>
-		<p class="intro-text">Most text on the page will be paragraph text. Paragraphs should of short to medium size and broken apart where it makes sense. Don't try and manipulate a paragraphs breaks using spacing or break tags as different screen sizes and viewports will flow text appropriately.</p>
+		<p class="intro-text">Paragraphs are used for normal blocks of text. </p>
 
 		<div class="demos">
 			<h2 class="heading-styleguide">Demos</h2>
@@ -119,41 +119,11 @@
 				Introduction text should be written in a way that draws the reader into the page being read. It should be a few sentences that describe what you are about to read. Introduction text can be used at the top of pages and immediately after headings. 
 			</p>
 
-	
-			<img alt="placeholder image" src="http://placehold.it/1200x400" />
-			<p class="caption">
-			A caption for this lovely image
-			</p>
-
-			<div class="pull-image-right">
-			<img alt="placeholder image" src="http://placehold.it/600x200" />
-			<p class="caption">
-			Captions are optional, but always include an alt tag!
-			</p>
-			</div>
-
-			<p>
-				Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
-			</p>
-
-			<div class="clearboth">
-			<div class="pull-image-left">
-			<img alt="placeholder image" src="http://placehold.it/600x250" />
-
-
-			</div>
-
-			<p>
-				Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
-			</p>
-
-			<p>
-				Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
-			</p>
-
-			</div>
+			<blockquote>Blockquotes are elements which represent quotes that have been pulled out of the text contained on this page or are quoted from another source. 
+			</blockquote>
 
 			
+
 			
 			
 		
