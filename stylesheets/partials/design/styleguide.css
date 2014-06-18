@@ -1,0 +1,15 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/styleguide\.scss}line{font-family:\000034}}
+.page-styleguide .example {
+  background-color: #ccc;
+  margin: 10px 0px;
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/styleguide\.scss}line{font-family:\0000311}}
+.page-styleguide .demo {
+  padding: 10px;
+  margin: 10px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/hub-git\/unity\/sass\/partials\/design\/styleguide\.scss}line{font-family:\0000317}}
+.page-styleguide h1.heading-styleguide, .page-styleguide h2.heading-styleguide, .page-styleguide h3.heading-styleguide, .page-styleguide h4.heading-styleguide, .page-styleguide h5.heading-styleguide, .page-styleguide h6.heading-styleguide {
+  font-family: tahoma;
+}
