@@ -21,11 +21,11 @@
  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/a8a128e0-bc0f-4153-aa44-ede674f36473.css"/>
   <title>DoIT Unity Style Guide- Division of Information Technology, Stony Brook University</title>
 <style>
-@import url("http://it.dev.sinc.stonybrook.edu/modules/system/system.base.css?n5ycpv");
-@import url("styles/icomoon-style.css");
+@import url("stylesheets/drupal-base.css");
+
 
 @import url("stylesheets/style.css");
-@import url("styles/style.css");
+
 </style>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -54,31 +54,14 @@
 
 			
     <ul class="menu">
-		<li class="first leaf"><a href="/" title="Home">Styleguide Home</a></li>
-		<li class="leaf"><a href="/blocks.php" title="Home">Blocks</a></li>
-		<li class="leaf"><a href="/text.php" title="Home">Text</a></li>
-		<li class="leaf"><a href="/colors.php" title="Home">Colors</a></li>
+		<li class="first leaf"><a href="/" title="Home">About Unity</a></li>
+		<li class="leaf"><a href="/text.php" title="Home">Design</a></li>
 		<li class="leaf"><a href="/layouts.php" title="Home">Layouts</a></li>
 	</ul>
 
 	</div>
 
 
-			<div id="sb-search" class="sb-search">
-				 
-  <div class="content">
-    <form action="/services/wi-fi-wolfienet" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
-      <h2 class="element-invisible">Search form</h2>
-    <div class="form-item form-type-textfield form-item-search-block-form">
-  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
- <input title="Enter the terms you wish to search for." class="sb-search-input sb-search-input form-text" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="40" maxlength="128" />
-</div>
-<div class="form-actions form-wrapper" id="edit-actions"><input class="sb-search-submit sb-search-submit form-submit" type="submit" id="edit-submit" name="op" value="" /></div><input type="hidden" name="form_build_id" value="form-9zCmbOkTXu2NDCvb16WTCJ0xUzquLaDIpNrpvkQIl5k" />
-<input type="hidden" name="form_token" value="BySz9EzP8k8rJ_1QEFgClgZb5PYm7sOerrMbCVu--28" />
-<input type="hidden" name="form_id" value="search_block_form" />
-</div>
-</div></form>  </div>
-</div>
-		
+			
 
 </div>

@@ -125,7 +125,7 @@
 			A caption for this lovely image
 			</p>
 
-			<div class="pull-image-right">
+			<div class="pull-right border-left">
 			<img alt="placeholder image" src="http://placehold.it/600x200" />
 			<p class="caption">
 			Captions are optional, but always include an alt tag!
@@ -137,7 +137,7 @@
 			</p>
 
 			<div class="clearboth">
-			<div class="pull-image-left">
+			<div class="pull-left">
 			<img alt="placeholder image" src="http://placehold.it/600x250" />
 
 
@@ -151,9 +151,28 @@
 				Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
 			</p>
 
+			<p class="callout">
+				Callout Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+			</p>
+
+			<p class="callout warning">
+			Callout warning Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+			</p>
+
+			<p class="callout highlight">
+			Callout highlight Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+			</p>
+
+			<div class="callout alert">
+			<img class="pull-right" alt="placeholder image" src="http://placehold.it/600x250" />
+			<p>
+			Callout alert. Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+			</p>
+
+
 			</div>
 
-			
+			</div>
 			
 			
 		
@@ -190,14 +209,14 @@
 
 			
 
-			<blockquote class="pull-quote-right">Blockquotes can be pulled to the right. And are used to highlight specific quotes or main ideas from the article.
+			<blockquote class="pull-right">Blockquotes can be pulled to the right. And are used to highlight specific quotes or main ideas from the article.
 			</blockquote>
 
 			<p>
 				Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
 			</p>
 
-			<blockquote class="pull-quote-left pull-quote-border">Blockquotes can also be pulled to the left. And are used to highlight specific quotes or main ideas from the article.
+			<blockquote class="pull-left border-right">Blockquotes can also be pulled to the left. And are used to highlight specific quotes or main ideas from the article.
 			</blockquote>
 
 			<p>
@@ -219,7 +238,7 @@
 			</div>
 
 			<div class="examples-example">
-			<?php echo htmlspecialchars('<blockquote class="pull-quote-right pull-quote-border">Blockquotes can be pulled to the right. And are used to highlight specific quotes or main ideas from the article.</blockquote>'); ?>
+			<?php echo htmlspecialchars('<blockquote class="pull-right pull-border-right">Blockquotes can be pulled to the right. And are used to highlight specific quotes or main ideas from the article.</blockquote>'); ?>
 			<br />
 			<?php echo htmlspecialchars('<p>Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. </p>');?>
 			
