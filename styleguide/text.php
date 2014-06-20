@@ -168,7 +168,7 @@
 			<p>
 			Callout alert. Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
 			</p>
-
+			<br clear="all" />
 
 			</div>
 
