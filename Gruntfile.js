@@ -7,62 +7,169 @@ module.exports = function (grunt) {
 	
 	//BROWSER SYNC TASK
 	browserSync: {
-		//Files to search for
-		files: {
-			src: '{,**/}*.css'
-		},
-		//What to do with the files
-		options: {
-			proxy: "styleguide.localhost:8080",
-
-			injectChanges: false,
-			debugInfo: true,
-			logConnections: true,
-			watchTask: true,
-			startPath: '/text.php',
-			ports: {
-				min: 9000,
-				max: 9020
+	
+		styleguide:
+		{
+				//Files to search for
+			files: {
+				src: 'styleguide/**'
 			},
+			//What to do with the files
+			options: {
+				proxy: "styleguide.localhost:8080",
 
-			host : "styleguide.localhost",
-			ghostMode: {
-				clicks: true,
-				scroll: true,
-				links: true,
-			forms: true
+				injectChanges: false,
+				debugInfo: true,
+				logConnections: true,
+				watchTask: true,
+				startPath: '/',
+				ports: {
+					min: 9000,
+					max: 9020
+				},
+
+				host : "styleguide.localhost",
+				ghostMode: {
+					clicks: true,
+					scroll: true,
+					links: true,
+				forms: true
+				}
+			}
+		
+		},
+		
+		classie:
+		{
+				//Files to search for
+			files: {
+				src: 'stylesheets/**'
+			},
+			//What to do with the files
+			options: {
+				proxy: "classie.localhost:8082",
+
+				injectChanges: false,
+				debugInfo: true,
+				logConnections: true,
+				watchTask: true,
+				startPath: '/text.php',
+				ports: {
+					min: 9000,
+					max: 9020
+				},
+
+				host : "classie.localhost",
+				
+				ghostMode: {
+					clicks: true,
+					scroll: true,
+					links: true,
+				forms: true
+				}
+			}
+		
+		},
+
+		it:
+		{
+				//Files to search for
+			files: {
+				src: 'stylesheets/**'
+			},
+			//What to do with the files
+			options: {
+				
+
+				injectChanges: false,
+				debugInfo: true,
+				logConnections: true,
+				watchTask: true,
+				startPath: '/',
+				ports: {
+					min: 9000,
+					max: 9020
+				},
+
+				host : "it.localhost:8080",
+				
+				ghostMode: {
+					clicks: true,
+					scroll: true,
+					links: true,
+				forms: true
+				}
+			}
+		
+		},
+		
+		default: {
+		
+			//Files to search for
+			files: {
+				src: '{,**/}*.css'
+			},
+			//What to do with the files
+			options: {
+				proxy: "styleguide.localhost:8080",
+
+				injectChanges: false,
+				debugInfo: true,
+				logConnections: true,
+				watchTask: true,
+				startPath: '/text.php',
+				ports: {
+					min: 9000,
+					max: 9020
+				},
+
+				host : "styleguide.localhost",
+				ghostMode: {
+					clicks: true,
+					scroll: true,
+					links: true,
+				forms: true
+				}
 			}
 		}
     },
+	
   
 	//WATCH TASK
     watch: {
-      sass: {
-        files: ['sass/{,**/}*.scss'],
-        tasks: ['compass:dev'], //run compass task for sass files
-        options: {
-          livereload: false
-        }
-      },
-	  //css files to watch
-      css: {
-        files: ['stylesheets/{,**/}*.css']
-		//do nothing
-      },
-	  //images to watch
-      images: {
-        files: ['images/**']
-		//do nothing
-      },
-	  //javascript to watch
-      js: {
-        files: [
-          'javascripts/{,**/}*.js',
-          '!javascripts/{,**/}*.js'
-        ],
-        tasks: ['jshint', 'uglify:dev'] //run jshint and uglify for javascript
-      }
-    },
+	
+	  styleguide: {
+		  files: ['sass/{,**/}*.scss'],
+		  tasks: ['compass:dev', 'copy:stylesheets', 'copy:styleguide']
+	 
+		},
+
+		 it: {
+		  files: ['sass/{,**/}*.scss'],
+		  tasks: ['compass:dev', 'copy:stylesheets', 'copy:it']
+	 
+		},
+		
+		sbucommons: {
+		  files: ['sass/{,**/}*.scss'],
+		  tasks: ['compass:dev', 'copy:stylesheets', 'copy:sbucommons']
+	 
+		},
+	
+		sass: {
+			files: ['sass/{,**/}*.scss'],
+			tasks: ['compass:dev', 'copy:stylesheets'], //run compass task for sass files
+		  },
+
+		  //javascript to watch
+		  js: {
+			files: [
+			  'javascripts/{,**/}*.js',
+			  '!javascripts/{,**/}*.js'
+			],
+			tasks: ['jshint', 'uglify:dev', 'copy:javascripts'] //run jshint and uglify for javascript
+		  }
+	},
 	
 	//COMPASS TASK
     compass: {
@@ -164,6 +271,60 @@ module.exports = function (grunt) {
 	
 	//COPY TASK
     copy: {
+	
+	
+	 stylesheets: {
+	  
+	   //Files to look for and move to the destination
+        files: [  
+		   {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'stylesheets'
+		  }
+        ]
+      },
+	
+	  styleguide: {
+	  
+	   //Files to look for and move to the destination
+        files: [  
+		   {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'styleguide/stylesheets'
+		  }
+        ]
+      },
+
+       it: {
+	  
+	   //Files to look for and move to the destination
+        files: [  
+		   {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'e:/git/kerrinpernic/docroot/sites/all/themes/custom/unity/stylesheets'
+		  }
+        ]
+      },
+	  
+	  sbucommons: {
+	  
+	   //Files to look for and move to the destination
+        files: [  
+		   {
+		  expand: true,
+		  cwd: 'stylesheets',
+		  src: ['**'],
+		  dest: 'e:/git/sbucommons/docroot/sites/all/themes/custom/unity/stylesheets'
+		  }
+        ]
+      },
+	  
 	  //DIST SUBTASK
       dist: {
 	    //Files to look for and move to the destination
@@ -198,23 +359,16 @@ module.exports = function (grunt) {
 
         ]
       }
-    },
-	
-	//PARALLEL TASK
-    parallel: {
-      assets: {
-        grunt: true,
-        tasks: ['imagemin', 'svgmin', 'uglify:dist', 'copy:dist'] //Run imagemin, svgmin, uglify:dist and copy:dist simultaneously
-      }
     }
   });
-
-	
-  grunt.event.on('watch', function(action, filepath) {
+  
+  
+  grunt.event.on('watch:styleguide', function(action, filepath) {
     grunt.config([
       'compass:dev',
       'jshint'
     ], filepath);
+	
   });
 
   
@@ -232,4 +386,11 @@ module.exports = function (grunt) {
   grunt.registerTask('build', ['parallel', 'compass:dist', 'jshint']);
   grunt.registerTask('default', ['build', 'browserSync', 'watch']);
   grunt.registerTask('csswatch', ['browserSync', 'watch']);
+    
+  grunt.registerTask('styleguidewatch', ['browserSync:styleguide', 'watch:styleguide']);
+  
+  grunt.registerTask('classiewatch', ['browserSync:classie', 'watch:sbucommons']);
+
+
+  grunt.registerTask('itwatch', ['watch:it']);
 };

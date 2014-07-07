@@ -154,6 +154,24 @@ padding-top: 0px;
 }
 
 
+.row-stripped
+{
+	.views-row-odd
+	{
+		background-color: $gray;
+	}
+}
+
+.row-rounded
+{
+	.views-row
+	{
+
+		border-radius: 5px;
+	}
+
+}
+
 
 .view-unity-polaroid 
 {
@@ -304,4 +322,12 @@ padding-top: 0px;
 		border:2px solid #663333;
 		border-radius:5px;
 
+}
+
+//Used on Blog list on it.stonybrook.edu
+.view.thin-separated-rows .views-row
+{
+	border-bottom: 1px solid #333;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
 }

@@ -28,6 +28,8 @@
 				
 		}
 
+		padding: 0px 10px;
+
 
 
 		#main-content
@@ -35,12 +37,15 @@
 
 			width: 100%;
 			float: left;
-			padding-right: 3%;
+			
+		
 			@include breakpoint($break2) 
 			{
 		
 				width: 75%;		
 			}
+
+
 		}
 
 		#right-prefix

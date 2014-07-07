@@ -1,12 +1,18 @@
 
-#main-content
+#main-wrap
 {
 
+
+	h1,h2,h3,h4,h5,h6
+	{
+		font-family:'ITC Franklin Gothic W01';
+	}
 
 	h1 {
 		
 		font-size: 2.50em;
-		font-family: 'TradeGothicNextW01-Ligh 693250';
+		
+
 
 		margin: 0 0 0.6em 0;
 		padding: 0px;
@@ -14,7 +20,7 @@
 
 	h2 {
 		font-size: 2.25em;
-		font-family: 'TradeGothicNextW01-Ligh 693250';
+	
 
 		margin: 0 0 0.5em 0;
 		padding: 0px;	
@@ -23,7 +29,7 @@
 
 	h3 {
 
-		font-family: 'TradeGothicNextW01-Ligh 693250';		
+	
 		font-size: 2.0em;
 		margin: 0 0 0.4em 0;
 		padding: 0px;
@@ -37,7 +43,7 @@
 
 	h4 {
 
-		font-family: 'TradeGothicNextW01-Ligh 693250';
+	
 		font-size: 1.75em;
 		margin: 0 0 0.3em 0;
 		padding: 0px;
@@ -46,7 +52,7 @@
 
 	h5 {
 
-		font-family: 'TradeGothicNextW01-Ligh 693250';
+	
 		font-size: 1.5em;
 		margin: 0 0 0.3em 0;
 		padding: 0px;
@@ -55,7 +61,7 @@
 
 	h6 {
 
-		font-family: 'TradeGothicNextW01-Ligh 693250';
+	
 		font-size: 1.25em;
 		margin: 0 0 0.3em 0;
 		padding: 0px;
@@ -138,6 +144,17 @@
 	blockquote.pull-quote-border
 	{
 		border-right: 5px solid $stony-brook-red;
+	}
+
+	.callout p
+	{
+		margin-top: 0px;
+	}
+
+	.callout img
+	{
+		margin: 0;
+		padding: 0;
 	}
 
 }

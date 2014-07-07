@@ -73,9 +73,11 @@
 		@include grid-span(3, 1);
 	  }*/
 
-	  @include breakpoint($break2) {
-		@include grid-span(4, 1);
+	  
+	   @include breakpoint($break2) {
+		@include grid-span(8, 5, $options: 'right');
 		
+	  
 	  }
 	}
 
@@ -92,8 +94,9 @@
 		@include grid-span(3, 4, $options: 'right');
 	  }*/
 
+	  
 	  @include breakpoint($break2) {
-		@include grid-span(8, 5, $options: 'right');
+		@include grid-span(4, 13, $options: 'right');
 		
 	  }
 	}
@@ -111,8 +114,11 @@
 		@include grid-span(3, 7, $options: 'right');
 	  }*/
 
-	  @include breakpoint($break2) {
-		@include grid-span(4, 13, $options: 'right');
+	  
+		
+		
+		@include breakpoint($break2) {
+		@include grid-span(4, 1);
 		
 	  }
 	}
