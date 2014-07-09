@@ -6,7 +6,7 @@ $grids: add-grid(12 at $break2);
 $grids: add-grid(12 at $break3);
 
 
-	#main-wrapper-section
+	#content
 	{
 	@include grid-span(1, 1, $options: 'both');
 	 
@@ -22,27 +22,7 @@ $grids: add-grid(12 at $break3);
 		@include grid-span(12, 1, $options: 'right');
 		
 	  }
-	 }
-		
-
-	#main-wrap
-	{
-	   @include grid-span(1, 1, $options: 'both');
-	  
-	   @include breakpoint($break) {
-		@include grid-span(4, 1, $options: 'both');
-	  }
-
-	   /* @include breakpoint($break2) {
-		@include grid-span(9, 1, $options: 'both');
-	  }  */
-	  
-
-	  @include breakpoint($break2) {
-		@include grid-span(12, 1, $options: 'both');
-		}
 	}
-	
 
 	#banner
 	{
@@ -62,6 +42,26 @@ $grids: add-grid(12 at $break3);
 		@include grid-span(12, 1, $options: 'both');
 	  }
 
+	}
+
+	#content-primary
+	{
+	   @include grid-span(1, 1, $options: 'both');
+	  
+	   @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+
+	   /* @include breakpoint($break2) {
+		@include grid-span(9, 1, $options: 'both');
+	  }  */
+	  
+
+	  @include breakpoint($break2) {
+		@include grid-span(12, 1, $options: 'both');
+	  }
+
+	  padding: 0px 10px;
 	}
 
 	#section-a
@@ -163,10 +163,10 @@ $grids: add-grid(12 at $break3);
 	  }
 	}
 
+
 	$grids: add-grid(1);
 $grids: add-grid(4 at $break);
 $grids: add-grid(16 at $break2);
 $grids: add-grid(16 at $break3);
-
 
 }

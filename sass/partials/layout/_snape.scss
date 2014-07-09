@@ -5,7 +5,7 @@ $grids: add-grid(1 at $break);
 $grids: add-grid(12 at $break2);
 
 
-#page
+.fixed-width #page
 {
 width: 100%;
  
@@ -21,6 +21,19 @@ width: 100%;
   margin: 0 auto;
   
   }
+}
+
+.full-width #page
+{
+width: 100%;
+ 
+ background-color:#fff;
+ margin: 0;
+
+ float: none;
+	max-width: 100%;
+
+
 }
 
 	#main-wrapper-section

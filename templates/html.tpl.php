@@ -72,6 +72,7 @@
         
 
   <title><?php print $head_title; ?></title>
+  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/a8a128e0-bc0f-4153-aa44-ede674f36473.css"/>
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <!--[if lt IE 9]>

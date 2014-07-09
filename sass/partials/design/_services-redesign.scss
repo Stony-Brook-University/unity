@@ -1,4 +1,7 @@
 
+#kill
+{
+
 
 a.report-problem-button:hover
 {
@@ -15,13 +18,11 @@ a.report-problem-button:hover
 
 
 
-#main-content  .heading-separator h2
+#main-content  .heading-separator
 {
-	color: #000;
-	font-size: 3.5em;
+	
 	text-align: center;
-	margin: 0px;
-	font-family: 'TradeGothicNextW01-Ligh 693250';
+	
 	
 }
 
@@ -133,20 +134,8 @@ line-height: 0;
 
 
 
-#introduction
-{
 
-font-size: 1.8em;
 
-line-height: 1.60em;
-padding: 30px 30px;
-
-}
-
-#introduction p
-{
-margin: 0px 0px 20px 0px;
-}
 
 
 .cardWrapper {
@@ -352,4 +341,6 @@ text-align: center;
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
 }

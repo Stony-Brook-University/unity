@@ -1,3 +1,16 @@
+.full-width .section
+{
+
+    max-width: 1080px;
+    margin: 0px 20%;
+
+}
+
+.header-image
+{
+	height: 1080px;
+}
+
 .blue-gradient
 {
 
@@ -101,16 +114,6 @@ float: left;
 	padding: 0px;
 }
 
-.section
-{
-	padding: 3.0em 1.75em;
-	font-family: TradeGothicNextW01-Ligh 693250;
-}
-
-.section-contents
-{
-padding: 2.0em;
-}
 
 .section.gray
 {
@@ -128,6 +131,8 @@ padding: 2.0em;
 		padding: 1em 0px 0px 0px;
 	}
 }
+
+
 
 .section.has-buttons
 {
@@ -216,64 +221,8 @@ a.section-button.gray:hover
 } 
 
 
-
-.shadow-grid-3-column
+.section-heading-separator
 {
-	ul
-	{
-		list-style: none;
-		list-style-type: none;
-		padding: 0px;
-		margin: 0px;
-
-		li{
-			width: 30%;
-			float: left;
-			margin: 1.5%;
-			
-			text-align: center;
-			
-			
-			display: block;
-			float: left;
-			border: #B7B5B6 1px solid;
-			background: #FFF;
-			-webkit-box-shadow: 0px 0px 8px #B7B5B6;
-			box-shadow: 0px 0px 8px #B7B5B6;
-			text-align: center;
-			position:relative;
-			padding: 0px;
-			a
-			{
-				display: block;
-				height: 110px;
-				width: 100%;
-				
-				
-
-				img
-				{
-					width: 43.98121796747105%;
-					height: auto;
-					max-width: 60px;
-				}
-
-				span
-				{
-					padding: 5px 10.99530449186776%;
-					display: block;
-				}
-			}
-		}
-
-		li:hover
-		{
-			-webkit-box-shadow: 0px 0px 8px #990000;
-box-shadow: 0px 0px 8px #990000;
-		}
-
-	
-
-
-	}
+	width: 100%;
+	text-align: left;
 }

@@ -75,6 +75,11 @@ body {
  background-color: #ccc;
 }
 
+ body.full-width
+ {
+  margin-top: 0px;
+ }
+
 
 .front .flex-caption
 { 
@@ -92,6 +97,11 @@ background: #fff;
 {
 background-color: #fff;
 padding: 0px;
+
+@include breakpoint($break2)
+ {
+    margin: 0 20%;
+ }
 }
 
 
@@ -124,6 +134,18 @@ width: 100%;
   margin: 1em auto;
   
   }
+}
+
+.full-width #page
+{
+width: 100%;
+ 
+ background-color:#fff;
+ margin: 0px;
+ float: none;  
+ max-width: 100%;
+ 
+ margin: 0px;
 }
 
 #header

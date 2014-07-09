@@ -137,17 +137,6 @@ border-right: 1px solid #ccc;
 	}
 }
 
-.sub-star-pane
-{
-	margin-top: 10px;
-	
-	h2.pane-title
-	{
-
-		margin-bottom: 5px;
-		font-size: 1.2em;
-	}
-}
 
 .green
 {
@@ -296,4 +285,5 @@ border-right: 1px solid #ccc;
 @import 'events';
 
 @import 'drupaloverrides';
+@import 'hacks';
 @import 'styleguide';

@@ -327,7 +327,69 @@ padding-top: 0px;
 //Used on Blog list on it.stonybrook.edu
 .view.thin-separated-rows .views-row
 {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid $gray;
 	margin-bottom: 5px;
 	padding-bottom: 5px;
+}
+
+
+.shadow-grid-3-column
+{
+	ul
+	{
+		list-style: none;
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+
+		li{
+			width: 30%;
+			float: left;
+			margin: 1.5%;
+			
+			text-align: center;
+			
+			
+			display: block;
+			float: left;
+			border: #B7B5B6 1px solid;
+			background: #FFF;
+			-webkit-box-shadow: 0px 0px 8px #B7B5B6;
+			box-shadow: 0px 0px 8px #B7B5B6;
+			text-align: center;
+			position:relative;
+			padding: 0px;
+			a
+			{
+				display: block;
+				height: 110px;
+				width: 100%;
+				
+				
+
+				img
+				{
+					width: 43.98121796747105%;
+					height: auto;
+					max-width: 60px;
+				}
+
+				span
+				{
+					padding: 5px 10.99530449186776%;
+					display: block;
+				}
+			}
+		}
+
+		li:hover
+		{
+			-webkit-box-shadow: 0px 0px 8px #990000;
+box-shadow: 0px 0px 8px #990000;
+		}
+
+	
+
+
+	}
 }

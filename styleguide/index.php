@@ -3,14 +3,17 @@
 	<div id="main-wrap" class="clearfix">
 	
 	<div id="main-content">
-		
+	
+	<header class="header-image" style="background: url(local-images/wolfie.png) no-repeat scroll center center / cover #333;">
+
+	</header>	
 
 			
-			<div id="overview" class="section one-card">
+			<div id="introduction" class="section">
 		  
-					  <div class="heading-separator"><h2>Unity Style Guide</h2></div>
+					  <div class="section-heading"><h1>Unity Style Guide</h1></div>
 		  
-				<div class="card section-contents" id="introduction">
+				<div class="section-contents">
 				
 				<p>
 				The purpose of these documents are to outline the appropriate style usage and CSS Classes to be used in coordination with the <strong>Unity Theme</strong> for Stony Brook University. 
@@ -21,7 +24,7 @@
 				<p>This document will be updated frequently to keep up with additional style requests and demands.  
 
 				<p>You can clone a copy of <strong>Unity</strong> at <a href="http://www.github.com/SBUDoIT">SBUDoIT's GitHub</a>
-				Feedback is welcome through Yammer or <br />E-mail <a href="mailto:Richard.vonRauchhaupt@stonybrook.edu">Richard.vonRauchhaupt@stonybrook.edu</a>.
+				Feedback is welcome through Yammer or E-mail <a href="mailto:Richard.vonRauchhaupt@stonybrook.edu">Richard.vonRauchhaupt@stonybrook.edu</a>
 				</p>
 
 				</div>
@@ -44,9 +47,9 @@
 </div>
 </div>
 
-	<div class="section one-card">
+	<div class="section">
 	
-	<div class="heading-separator"><h2><span class="icon-code icon left"></span>Project Goals</h2></div>
+	<div class="section-heading"><h2><span class="icon-code icon left"></span>Project Goals</h2></div>
 <div class="card">
 <p>
  I want to create rich and rewarding web experiences for our users (faculty, staff, students, prospective students and other members of the campus community). 
