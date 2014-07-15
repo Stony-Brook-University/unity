@@ -205,7 +205,10 @@ width: 100%;
 }*/
 
 
-
+#main-content
+{
+  clear:both;
+}
 
 .unity-region
 {
@@ -351,6 +354,9 @@ width: 100%;
    clear: both;
 }
 
+
+@import 'full-width';
+@import 'fixed-width';
 @import 'front';
 @import 'potter';
 @import 'dumbledore';

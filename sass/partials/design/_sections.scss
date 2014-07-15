@@ -1,10 +1,12 @@
-.full-width .section
-{
+	.section:after, .section-wrapper:after
+	{
+		content: " ";
+   		display: block; 
+   		height: 0; 
+   		clear: both;
+	}
 
-    max-width: 1080px;
-    margin: 0px 20%;
 
-}
 
 .header-image
 {
@@ -115,7 +117,7 @@ float: left;
 }
 
 
-.section.gray
+.section.gray,.section-wrapper.gray-background
 {
 	
 	background-image: image-url('textures/bright-squares.png');

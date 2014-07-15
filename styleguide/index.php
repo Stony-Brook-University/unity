@@ -9,7 +9,7 @@
 	</header>	
 
 			
-			<div id="introduction" class="section">
+			<div id="introduction" class="section intro-text">
 		  
 					  <div class="section-heading"><h1>Unity Style Guide</h1></div>
 		  

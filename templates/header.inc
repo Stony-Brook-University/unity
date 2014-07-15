@@ -1,1 +1,0 @@
-   <a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="/sites/all/themes/custom/unity/assets/stony-brook-university.png" alt="Stony Brook University Logo" /></a><?php if ($logo): ?><a id="logo" href="<?php print $front_page; ?>"><img title="<?php print t('Home'); ?>" src="<?php print $logo; ?>" /></a><?php endif; ?> 

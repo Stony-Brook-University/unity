@@ -5,7 +5,7 @@ require 'aurora'
 http_path = "/sites/all/themes/custom/unity"
 css_dir = "stylesheets"
 sass_dir = "sass"
-images_dir = "assets"
+images_dir = "images"
 javascripts_dir = "javascripts"
 fonts_dir = "stylesheets/fonts"
 

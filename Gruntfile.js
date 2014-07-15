@@ -139,8 +139,8 @@ module.exports = function (grunt) {
     watch: {
 	
 	  styleguide: {
-		  files: ['sass/{,**/}*.scss'],
-		  tasks: ['compass:dev', 'copy:stylesheets', 'copy:styleguide']
+		  files: ['sass/{,**/}*.scss', 'images/*', 'local-images/*'],
+		  tasks: ['compass:dev', 'copy:styleguide']
 	 
 		},
 
@@ -295,6 +295,20 @@ module.exports = function (grunt) {
 		  cwd: 'stylesheets',
 		  src: ['**'],
 		  dest: 'styleguide/stylesheets'
+		  },
+
+		  {
+		  expand: true,
+		  cwd: 'local-images',
+		  src: ['**'],
+		  dest: 'styleguide/local-images'
+		  },
+
+		  {
+		  expand: true,
+		  cwd: 'images',
+		  src: ['**'],
+		  dest: 'styleguide/stylesheets/images'
 		  }
         ]
       },
@@ -387,7 +401,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['build', 'browserSync', 'watch']);
   grunt.registerTask('csswatch', ['browserSync', 'watch']);
     
-  grunt.registerTask('styleguidewatch', ['browserSync:styleguide', 'watch:styleguide']);
+  grunt.registerTask('styleguidewatch', ['compass:dev', 'copy:styleguide', 'browserSync:styleguide', 'watch:styleguide']);
   
   grunt.registerTask('classiewatch', ['browserSync:classie', 'watch:sbucommons']);
 
