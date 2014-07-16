@@ -2,7 +2,8 @@
 require 'aurora'
 
 # Set this to the root of your project when deployed:
-http_path = "/sites/all/themes/custom/unity"
+#http_path = "/"
+http_images_path = "images"
 css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "images"
@@ -15,7 +16,7 @@ fonts_dir = "stylesheets/fonts"
 environment = :development
 
 # To enable relative paths to assets via compass helper functions. Since Drupal themes can be installed in multiple locations, we shouldn't need to worry about the absolute path to the theme from the server root.
-relative_assets = true
+relative_assets = false
 
 # To enable debugging comments that display the original location of your selectors. Comment:
 line_comments = false
