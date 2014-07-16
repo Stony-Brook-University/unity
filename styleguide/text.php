@@ -1,15 +1,16 @@
 <?php include("header.php"); ?>				
 			
-	<div id="main-wrap" class="clearfix page-styleguide">
-	
-	<div id="main-content">
 		
-		<div class="section-wrapper">
-			<div class="section three-cards">
+	<div id="container">
+		
+		<div class="section">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Colors</h1>
 				
 				<p class="intro-text">Color can be used to draw attention to different sections or text. Editors should be careful about using colors in a way that break away from the standard structure of a page. In an effort to keep everyone on the same page we have created the following color classes.</p>
-				
+			</div>
+
+			<div class="section-content has-cards three-cards">
 				<div class="card card-color red">
 					<div class="swatch background-red">.background-red</div>
 					Red (.red)
@@ -61,8 +62,8 @@
 		</div>
 
 
-		<div class="section-wrapper gray-background">
-			<div class="section">
+		<div class="section gray-background">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Headings</h1>
 				<p class="intro-text">Headings are structural elements that dictate importance. Headings should be short and concise. They are used to break up the flow of a document so that the document can easily be scanned. Headings should not be used as a way of changing font face, size, weight or color. </p>
 
@@ -105,9 +106,9 @@
 			</div>	
 		</div>
 
-		<div class="section-wrapper gray-background">
+		<div class="section">
 
-				<div class="section">
+				<div class="section-content">
 					<h1 class="heading-styleguide">Paragraphs</h1>
 					<p class="intro-text">Most text on the page will be paragraph text. Paragraphs should of short to medium size and broken apart where it makes sense. Don't try and manipulate a paragraphs breaks using spacing or break tags as different screen sizes and viewports will flow text appropriately.</p>
 
@@ -205,9 +206,9 @@
 
 			</div>
 	
-		<div class="section-wrapper">
+		<div class="section gray-background">
 
-			<div class="section">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Block Quotes</h1>
 				<p class="intro-text">Blockquotes are elements which represent quotes that have been pulled out of the text contained on this page or are quoted from another source.</p>
 
@@ -268,8 +269,6 @@
 			
 	</div>
 
-
-</div>
 
 	
 <?php include("footer.php"); ?>				

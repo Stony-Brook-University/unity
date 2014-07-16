@@ -1,6 +1,6 @@
-<div id="footer-wrapper">		 		
+<div id="footer">		 		
 	
-	<div id="footer">
+	<div id="footer-content">
 		
 		
 	

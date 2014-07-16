@@ -1,0 +1,121 @@
+
+/*
+
+We support two styles of pages, fixed width and full width. 
+
+Fixed with pages set a hard width on the #page element and then set the container elements like header, 
+sections and footer to be 100% of the #page width.
+
+Full width pages set the #page element to be 100% of the browser width. Container elements are also 100%, 
+but content elements in each container element get set a max-width. This allows us to have elements that can be 
+full width, while still containing our content to widths that make sense. 
+
+These are specified using the .fixed-width or .full-width classes. If no class is specified, the .fixed-width setting is used. 
+
+We currently are targeting three maximum widths: .max-1200, .max-1080, .max-960 these are specified on the body element if no
+class is specified we default to 960. This allows us to stay backward compatible. 
+
+*/
+
+
+//fixed-width is the default view. 
+
+body
+{
+	font-size: 14px;
+}
+
+#page
+{
+	margin: 10px auto;
+	max-width: 960px;
+
+
+}
+
+.max-1200 {
+
+	font-size: 16px;
+	
+	#page
+	{
+		max-width: 1200px;
+		
+	}
+}
+
+.max-1080 {
+
+	font-size: 16px;
+	
+	#page
+	{
+		max-width: 1080px;
+		
+	}
+}
+.max-960 {
+
+
+	#page
+	{
+    	max-width: 960px;
+    }
+}
+
+
+#header, #main-menu, #container, #footer, #header-content, #main-menu-content, .section-content, #footer-content
+{
+	width: 100%;
+}
+
+#container
+{
+	background-color: #fff;
+}
+
+
+.full-width
+{
+
+		
+
+		#page, #header, #main-menu, #container, #footer, .section
+		{
+			width: 100%;
+			max-width: 100%;
+			margin: 0px;
+		}
+
+		#header-content, #main-menu-content, .section-content, #footer-content
+		{
+			margin: 0px auto;
+			max-width: 960px;
+		}
+
+		
+		
+			  &.max-1200 {
+
+    	#header-content, #main-menu-content, .section-content, #footer-content
+    	{
+    		max-width: 1200px;
+    		
+    	}
+    }
+
+    &.max-1080 {
+    	#header-content, #main-menu-content, .section-content, #footer-content
+    	{
+    		max-width: 1080px;
+    		
+    	}
+    }
+    &.max-960 {
+    	#header-content, #main-menu-content, .section-content, #footer-content
+    	{
+	    	max-width: 960px;
+	    }
+    }
+}
+

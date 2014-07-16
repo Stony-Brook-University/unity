@@ -33,21 +33,18 @@ $gutters: add-gutter(.4);
 
 html body
 {
-	margin-top: 0px;
-
-
-	@include breakpoint($break4)
-	{
-    margin: 1em 0;
-	}
-
+	
+	
 	#admin-menu
 	{
 		display: none;
+    margin-top: 0px !important;
 
 		@include breakpoint($break2)
 		{
 			display: block;
+
+        margin-top: 3em !important;
 		}
 
 	}
@@ -55,18 +52,6 @@ html body
 
 }
 
-html body.admin-menu
-{
-		margin-top: 0px !important;
-
-
-	@include breakpoint($break2)
-	{
-		margin-top: 3em !important;
-		
-	}
-
-}
 
 
 body {
@@ -75,10 +60,6 @@ body {
  background-color: #ccc;
 }
 
- body.full-width
- {
-  margin-top: 0px;
- }
 
 
 .front .flex-caption
@@ -88,24 +69,7 @@ display: none;
 
 
 
-#parent
-{
-background: #fff;
-}
-
-#header
-{
-background-color: #fff;
-padding: 0px;
-
-@include breakpoint($break2)
- {
-    margin: 0 20%;
- }
-}
-
-
-
+/*
 
 #page
 {
@@ -148,72 +112,9 @@ width: 100%;
  margin: 0px;
 }
 
-#header
-{
+*/
 
 
-  @include grid-span(1, 1, $options: 'both');
-  
-   @include breakpoint($break) {
-    @include grid-span(4, 1, $options: 'both');
-  }
-
- /*  @include breakpoint($break2) {
-    @include grid-span(9, 1, $options: 'both');
-  }*/  
-  
-
-  @include breakpoint($break2) {
-    @include grid-span(16, 1, $options: 'both');
-  }
-  
- 
-  
-}
-
-#main-menu
-{
-
-
-  @include grid-span(1, 1, $options: 'both');
-  
-   @include breakpoint($break) {
-    @include grid-span(4, 1, $options: 'both');
-  }
-  
- /*    @include breakpoint($break2) {
-    @include grid-span(9, 1, $options: 'both');
-  }*/
-
-  @include breakpoint($break2) {
-    @include grid-span(16, 1, $options: 'both');
-  }
-  
-  
-  
-}
-
-#main
-{
-  float: left;
-}
-
-/*
-#main-wrap
-{
-	padding: 5px 10px 5px 15px;
-}*/
-
-
-#main-content
-{
-  clear:both;
-}
-
-.unity-region
-{
-  margin-bottom: 10px;
-}
 
 
 
@@ -355,8 +256,10 @@ width: 100%;
 }
 
 
-@import 'full-width';
-@import 'fixed-width';
+@import 'page';
+
+//@import 'full-width';
+//@import 'fixed-width';
 @import 'front';
 @import 'potter';
 @import 'dumbledore';

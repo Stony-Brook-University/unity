@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>	
 	
-	<div id="main-content" class="clearfix">
+	<div id="container">
 
-		<div class="section-wrapper">
-			<div class="section">
+		<div class="section">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Header</h1>
 				
 				<p class="intro-text">
@@ -18,8 +18,8 @@
 			</div>
 		</div>
 
-		<div class="section-wrapper gray-background">
-			<div class="section">
+		<div class="section gray-background">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Navigation</h1>
 				
 				<p class="intro-text">
@@ -34,8 +34,8 @@
 			</div>
 		</div>
 
-		<div class="section-wrapper">
-			<div class="section">
+		<div class="section">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Main Wrap</h1>
 				
 				<p class="intro-text">The main wrap div defines the fixed width of our sites view port. Rather than being completely fluid we have opted to use these fixed viewports to ensure a more consistent experience and flow of our content.
@@ -48,8 +48,8 @@
 		</div>
 
 
-		<div class="section-wrapper gray-background">
-			<div class="section">
+		<div class="section gray-background">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Sections</h1>
 				
 				<p class="intro-text">Each Page Is Broken Up Into Sections. Some sections should be controlled by the over all theme, like the header, navigation and footer, while other sections are content dependent allowing editors to have more control. </p>
@@ -67,8 +67,8 @@
 			</div>
 		</div>
 
-		<div class="section-wrapper">
-			<div class="section">
+		<div class="section">
+			<div class="section-content">
 				<h1 class="heading-styleguide">Cards</h1>
 				
 				<p class="intro-text">Sections can contain paragraph text like this, but can also include modular content in blocks called <strong>Cards</strong>.
@@ -87,79 +87,86 @@
 			</div>
 		</div>
 
-		<div class="section-wrapper background-gray">
+		<div class="section gray-background">
 
-<div class="section two-cards">
+<div class="section-content has-cards one-card">
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+			
 				Card 1
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff/" />
+			</div>
+
+
+<div class="section-content has-cards two-cards">
+
+				<div class="card sample-card link-card">
+				<a href="#">Card 1 (Link Card)
+				</a>
+				
+				</div>
+
+				<div class="card sample-card">
+			
 				Card 2
 				</div>
 
 			</div>
 
-			<div class="section three-cards">
+			<div class="section-content has-cards three-cards">
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+			
 				Card 1
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff/" />
+				<div class="card sample-card">
 				Card 2
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+				
 				Card 3
 				</div>
 			</div>
 
-			<div class="section four-cards">
+			<div class="section-content has-cards four-cards">
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card border-card-black">
 				Card 1
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff/" />
+				<div class="card sample-card border-card-black">
 				Card 2
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
 				Card 3
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+				
 				Card 4
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+				
 				Card 5
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+				
 				Card 6
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+				
 				Card 7
 				</div>
 
-				<div class="card">
-				<img src="http://placehold.it/350x150/33ccff" />
+				<div class="card sample-card">
+				
 				Card 8
 				</div>
 			</div>

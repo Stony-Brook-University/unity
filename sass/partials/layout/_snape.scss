@@ -1,40 +1,10 @@
 .panel-layout-snape {
 
-$grids: add-grid(1);
-$grids: add-grid(1 at $break);
-$grids: add-grid(12 at $break2);
+//$grids: add-grid(1);
+//$grids: add-grid(1 at $break);
+//$grids: add-grid(12 at $break2);
 
 
-.fixed-width #page
-{
-width: 100%;
- 
- background-color:#fff;
- margin: 0;
-
- float: none;
-	max-width: 100%;
-
-@include breakpoint($break4)
-{
-  max-width: $break4;
-  margin: 0 auto;
-  
-  }
-}
-
-.full-width #page
-{
-width: 100%;
- 
- background-color:#fff;
- margin: 0;
-
- float: none;
-	max-width: 100%;
-
-
-}
 /*
 	#main-wrapper-section
 	{

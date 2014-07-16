@@ -8,8 +8,23 @@ h1,h2,h3,h4,h5,h6
 
 body
 {
-	font-family:'Helvetica W02', arial;
-	font-size: 16px;
+	font-family:'Helvetica W02', Arial, Verdana, Tahoma, Sans-Serif;
+
+
+/*	font-size: 12px;
+
+	@include breakpoint($break3)
+	{
+		font-size: 14px;
+	}
+
+		@include breakpoint($break4)
+		{
+			font-size: 16px;
+		}
+
+*/
+
 
 }
 
