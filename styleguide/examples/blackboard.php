@@ -1,57 +1,66 @@
-<?php include("header.php"); ?>	
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/header.php";
+   include_once($path);
+?>
 	
-
-					<div id="banner"><div id="banner-image"><img src="images/blackboard-logo.png" /></div><div id="login-button"><a href="http://blackboard.stonybrook.edu">Login to Blackboard <span class="icon-arrow-right icon right"></span></a></div></div>
+<div id="container">
+	
+		<div class="banner-container">
+			<div class="banner" style="">
 			
-						
+			</div>	
+
+				<div class="banner-content">
+
+					<h1>Blackboard</h1>
+
 					
-			
-	<div id="main-wrap" class="clearfix">
-		
 
-
-		<div id="main-content">
-	 
-		<div id="system-status-message" class="offline heading-separator">
-		<div class="status-heading"><span class="icon-cancel-circle icon left"></span>This system is currently offline. </div>
-		<div id="system-status-buttons"><a href="#"><span class="icon-history icon left"></span>View History</a><a href="#"><span class="icon-pushpin icon left"></span>Subscribe</a></div>
-		<div class="status-message">
-		
-		<p>Blackboard is currently offline. Our IT Staff has been notified and are currently working on a resolution. <a href="#">View More Details</a></p>
-		
-		<div class="time">
-		<strong class="first">Last Updated:</strong> 2 hours ago<strong>Reported On:</strong> May 27th, 1:18pm<strong>Estimated Resolution:</strong> About an Hour
-		</div>
-		</div>
-		
-		</div>
-   
-			<div id="overview" class="section">
-		  
-		  <div class="heading-separator"><h2>What Is Blackboard?</h2></div>
-		  
-				<div class="section-contents" id="introduction">
-				
-			
-				
-				<p>Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes. 
-				
-				<p>For students, Blackboard offers an easy way to contact instructors, download and access course documents, and check grades.</p>
-				
-				
+					<a href="#" class="banner-button banner-button-large">Login to Blackboard</a>
 				</div>
 
-			</div>
 			
+
+			
+		</div>
+
+
+		<div class="section red-background-gradient">
+			<div class="section-content">
+				
+				<h2 class="section-heading"><span class="icon-cancel-circle icon left"></span>This system is currently offline. </h2>
 		
 			
-			<div id="support" class="section gray three-cards">
+				
 			
-				<div class="heading-separator"><h2><span class="icon-support icon left"></span>Getting Support</h2></div>
-				<div class="section-contents">
+			</div>
+		</div>
+
+
+<div class="section">
+			<div class="section-content">
+
+					<h1 class="section-heading">What Is Blackboard?</h1>
+
+					<p class="intro-text">Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes. 
+				
+				<p class="intro-text">For students, Blackboard offers an easy way to contact instructors, download and access course documents, and check grades.</p>
+								
+				
+			</div>
+		</div>
+
+			
+			<div class="section gray-background">
+				
+				<div class="section-content has-cards three-cards">			
+				
+				<h1 class="section-heading"><span class="icon-support icon left"></span>Getting Support</h1>
+				
 				<div id="supported-by" class="text-card card">
 			
-					<h2 class="pane-title">Student Support</h2>
+					<h2>Student Support</h2>
 					  
 					  <p>
 					  Support for Student use of Blackboard is provided by the TLT Student Help Desk. 
@@ -70,7 +79,7 @@
 				
 				<div id="supported-by" class="text-card card">
 			
-					<h2 class="pane-title">Instructor Support</h2>
+					<h2>Instructor Support</h2>
 					  
 					  <p>
 					  Support for Instructor use of Blackboard is provided by Instructional Technology Support
@@ -86,12 +95,19 @@
 				</div>
 				
 				<div class="text-card card">
-						<h2 class="pane-title">Report a Problem</h2>
+						<h2>Report a Problem</h2>
 					  
 					  <p>
 					  Difficulty logging in? Not seeing the course content you should? The best way to get help quickly is to submit a ticket and let us know!
 					  </p>
 					  <a href="#" class="report-problem-button"><span class="icon-notification icon left red"></span>Report a Problem</a>
+
+					  <h2>System Status</h2>
+					  
+					  <p>
+					  This system has been up for 6 days, 4 hours and 37 minutes.
+					  </p>
+					  <a href="#" class="report-problem-button">View Outage History</a>
 				
 				</div>
 				
@@ -100,77 +116,69 @@
 			</div>
 			</div>
 			
-				<div id="explore" class="section three-cards">	 
-				<div class="heading-separator"><h2><span class="icon-map left icon"></span>Latest News & Announcements</h2></div>
-				<div class="section-contents">
-				<div id="cardsWrapper">
+			<div class="section">
+				<div class="section-content has-cards three-cards">	 
+				<h1 class="section-heading"><span class="icon-map left icon"></span>News & Announcements</h1>
+				
+				
 				
 					<div class="cardWrapper image-card card">
-						<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="images/blackboard-login.png" alt="Gloabl Initiatives"></a>
-						<h3>Are you having trouble logging into Blackboard?</h3><p>Internet Explorer 11 has released an update which is not allowing Blackboard to function correctly. At this time we are recommending that faculty, staff and students use Google Chrome or Mozilla Firefox. For more information please see Blackboard's Supported Browser list.</p>
+						<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="/local-images/blackboard-login.png" alt="Gloabl Initiatives"></a>
+						<h2>Are you having trouble logging into Blackboard?</h2><p>Internet Explorer 11 has released an update which is not allowing Blackboard to function correctly. At this time we are recommending that faculty, staff and students use Google Chrome or Mozilla Firefox. For more information please see Blackboard's Supported Browser list.</p>
 						</div>
 					</div>
 
 					<div class="cardWrapper image-card card">
-					<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="images/blackboard-91.png" alt="Gloabl Initiatives"></a>
+					<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="/local-images/blackboard-91.png" alt="Gloabl Initiatives"></a>
 					
 					
 					
-					<h3>Blackboard Service Updates</h3><p>Did you know that Blackboard was Upgraded on December 30th, 2013? Take a look at our Upgrade Page for more information about the changes and new features.</p>
+					<h2>Blackboard Service Updates</h2><p>Did you know that Blackboard was Upgraded on December 30th, 2013? Take a look at our Upgrade Page for more information about the changes and new features.</p>
 					</div>
 					</div>
 
 					<div class="cardWrapper image-card card">
-					<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="images/blackboard-mobile.png" alt="Gloabl Initiatives"></a>
-					<h3>Blackboard Mobile</h3><p>Blackboard is now available on your mobile devices. Making it easier than ever to stay connected to your coursework.</p>
+					<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="/local-images/blackboard-mobile.png" alt="Gloabl Initiatives"></a>
+					<h2>Blackboard Mobile</h2><p>Blackboard is now available on your mobile devices. Making it easier than ever to stay connected to your coursework.</p>
 					</div>
 					</div>
 
-				</div>
-				</div>
+				
+				
 			</div>
 		
+		</div>
 			
 		
 
 			
 			
-
-			<div id="userStories" class="section two-cards gray">	
-			<div class="heading-separator"><h2><span class="icon-quotes-left icon left"></span>Campus Buzz</h2></div>			
-			<div class="section-contents">
-				<div id="userStoriesWrapper">
-					
-					<div class="userStoryWrapper user-card card">
-						<div class="userStoryContentWrapper">
-							<div class="image-wrap">
-								<a href="http://www.stonybrook.edu/commcms/global"> <img src="images/harry_potter.png" alt="Gloabl Initiatives"></a>
-							</div>
-							<div class="userStoryContent">
-								<p><em>Blackboard makes it easy for me to stay connected to my course. I'm able to see what assignments are due, download class lecture notes and stay active in course discussion. I wish all my courses used Blackboard. </em><br /><br /> <span class="credit">Harry Potter, Class of 2016</span></p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="userStoryWrapper  user-card card">
-						<div class="userStoryContentWrapper">
-							<div class="image-wrap">
-								<a href="http://www.stonybrook.edu/commcms/global"> <img src="images/dumbledore.png" alt="Gloabl Initiatives"></a>
-							</div>
-							<div class="userStoryContent">
-								<p><em>Blackboard provides a convienent portal for me to manage my course. I no longer need to use multiple services or worry about hosting and coding my own course website. It removes a lot of my day-to-day headaches and lets me focus on being a better instructor.</em><br /><br /> <span class="credit">Albus Dumbledore, Wizardry 101</span></p>
-							</div>
-						</div>
-					</div>
+			<div class="section gray-background">
+			<div class="section-content has-cards two-cards">	
+			<h1 class="section-heading"><span class="icon-quotes-left icon left"></span>Campus Buzz</h1>			
+			
+				<div class="user-story-card card">
+					<img src="/local-images/harry_potter.png" alt="Gloabl Initiatives">
+					<p><em>Blackboard makes it easy for me to stay connected to my course. I'm able to see what assignments are due, download class lecture notes and stay active in course discussion. I wish all my courses used Blackboard. </em><br /><br /> <span class="credit">Harry Potter, Class of 2016</span></p>
 				</div>
-			</div>
-			</div>
+			
 
+					
+					<div class="user-story-card card">
+								<img src="/local-images/dumbledore.png" alt="Gloabl Initiatives">						
+							<p><em>Blackboard provides a convienent portal for me to manage my course. I no longer need to use multiple services or worry about hosting and coding my own course website. It removes a lot of my day-to-day headaches and lets me focus on being a better instructor.</em><br /><br /> <span class="credit">Albus Dumbledore, Wizardry 101</span></p>
+							
+					</div>
+					
+			
+			</div>
+		</div>
 			
 	
 			<div class="section" id="faq">
-			<div class="heading-separator"><h2><span class="icon-question left icon"></span>Frequently Asked Questions</h2></div>
-			<div class="section-contents">
+			<div class="section-content">
+			<h2 class="section-heading"><span class="icon-question left icon"></span>Frequently Asked Questions</h2>
+			
 			<h2>For Everyone</h2>
 			<div class="accordion">
   <h3>How Do I Login to Blackboard?</h3>
@@ -294,9 +302,11 @@
 			
 			
 		  
-				<div id="join-conversation" class="section gray three-cards">
-				<div class="heading-separator"><h2><span class="icon-users left icon"></span>Join The Conversation</h2></div>
-<div class="section-contents">				
+				<div class="section gray-background">
+				<div class="section-content has-cards three-cards">				
+				
+				<h1 class="section-heading"><span class="icon-users left icon"></span>Join The Conversation</h1>
+				
 						<div id="twitter" class="text-card card">  
 							<h2 class="pane-title"><span class="icon-twitter icon left"></span>Twitter</h2>
 				  
@@ -332,5 +342,17 @@
 
 	
 		 		
+<script>
+$( ".accordion" ).accordion({
+            heightStyle: "content",
+            autoHeight: false,
+        clearStyle: true,   
+        });
+</script>
+
 	
-<?php include(footer.php); ?>
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/footer.php";
+   include_once($path);
+?>

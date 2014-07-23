@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 		{
 				//Files to search for
 			files: {
-				src: 'styleguide/**'
+				src: 'styleguide/**/*'
 			},
 			//What to do with the files
 			options: {
@@ -139,7 +139,7 @@ module.exports = function (grunt) {
     watch: {
 	
 	  styleguide: {
-		  files: ['sass/{,**/}*.scss', 'images/*', 'local-images/*'],
+		  files: ['sass/{,**/}*.scss', 'images/{,**/}/*', 'local-images/{,**/}*', 'javascripts/{,**/}*.js'],
 		  tasks: ['compass:dev', 'copy:styleguide']
 	 
 		},
@@ -309,6 +309,13 @@ module.exports = function (grunt) {
 		  cwd: 'images',
 		  src: ['**'],
 		  dest: 'styleguide/stylesheets/images'
+		  },
+		  
+		  {
+		  expand: true,
+		  cwd: 'javascripts',
+		  src: ['**'],
+		  dest: 'styleguide/javascripts'
 		  }
         ]
       },

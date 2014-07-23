@@ -19,9 +19,10 @@
 }
 */
 
-#main-menu-controller
+#main-menu-navigation #main-menu-sidr-button
 {
 	display: block;
+	max-width: 100px;
 
 	@include breakpoint($break2) {
     	display: none;
@@ -37,12 +38,12 @@
   }
 }
 
-#main-menu-navigation
+#main-menu-navigation .main-menu-menu-item
 {
 	display: none;
 
 	@include breakpoint($break2) {
-    	display: block;
+    	display: inline-block;
   }
 
 }

@@ -7,6 +7,7 @@
 // All box model properties go here
 //
 
+/*
 div#main-menu {
     background-color: #990000;
     height: 60px;
@@ -20,7 +21,7 @@ div#main-menu {
     width: 100%;
     #main-menu-content {
 
-    	height: 100%;
+        height: 100%;
 
         #prefix-display-button {
             width: 75px;
@@ -31,7 +32,7 @@ div#main-menu {
 
         #main-menu-navigation
         {
-        	height: 100%;
+            height: 100%;
         }
         ul.menu, ul.links {
            height: 100%;
@@ -48,7 +49,23 @@ div#main-menu {
                 @include breakpoint($break) {
                     display: inline-block;
                 }
-
+                ul
+                {
+                    li
+                    {
+                        display: block;
+                        height: 57px;
+                        ul
+                        {
+                            li
+                            {
+                                display: block;
+                                height: 57px;
+                            }
+                        }
+                    }
+                    
+                }
                 a {
                     padding: 20px 15px 1% 15px;
                     height: 100%;
@@ -66,24 +83,25 @@ div#main-menu {
         }
     }
 }
+*/
 
 /*
-	#search-wrapper
-	{
-		padding: 8px 5px 0px 7px;
-		height: 42px;
-		float: right;
-		.search-box
-		{
-			width: 160px;
-			border: none;
-		
-			margin-left: 7px;
-		}
+    #search-wrapper
+    {
+        padding: 8px 5px 0px 7px;
+        height: 42px;
+        float: right;
+        .search-box
+        {
+            width: 160px;
+            border: none;
+        
+            margin-left: 7px;
+        }
 
-		.search-go
-		{
-			width: 24px!important;
+        .search-go
+        {
+            width: 24px!important;
 height: 24px;
 margin: 0 0 0 2px;
 padding: 0;
@@ -94,24 +112,111 @@ white-space: nowrap;
 background: url(https://www.grad.stonybrook.edu/images/new/home-slider-pager.png) -26px -1px no-repeat;
 border: none;
 cursor: pointer;
-		}
+        }
 
-		
+        
 
-	}
+    }
 
-	
+    
 }
 }
 
 
 #sb-search
 {
-	p
-	{
-		margin: 0px;
-		padding: 0px;
-		text-align: right;
-	}
+    p
+    {
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+    }
 }
 */
+
+#main-menu * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#main-menu {
+    background-color: #990000;
+    width: 100%;
+    min-height: 42px;
+    border: 0px;
+    /*border: 1px solid #982794;*/
+    margin: auto;
+    padding: 0px;
+    #main-menu-parent-list {
+        list-style-type: none;
+        z-index: 1000;
+        a {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #FFF;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: default;
+            display: block;
+        }
+        a:hover {
+            cursor: auto;
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        li {
+            min-width: 110px;
+            //display: inline-block;
+            a {
+                background-color: #990000;
+              /*  border: 1px solid #990000;*/
+                
+                padding: 12px 15px 12px 12px;
+                min-width: 80px;
+            }
+
+            .main-menu-sub-menu {
+                list-style-type: none;
+                border: 1px solid #3d3d3d;
+                border-top: 0px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                box-shadow: 0px 0px 3px #666;
+                display: none;
+                z-index: 1000;
+                position: absolute;
+                opacity: 0.9;
+                li {
+                    border-top: 1px solid #202020;
+                    z-index: 10000;
+
+                    width: 100%;
+
+                }
+                a {
+                    display: block;
+                    margin: 0px;
+                    border: 0px;
+                    background-color: #3d3d3d;
+                    width: auto;
+                    padding: 6px 3px 6px 3px;
+                    text-transform: capitalize;
+                }
+                a:hover {
+                    background-color: #000;
+                }
+            }
+        }
+        li:hover a {
+            background-color: #202020;
+          /*  border: 1px solid #202020;*/
+        }
+        li a:hover {
+           /* border: 1px solid #202020;*/
+        }
+    }
+}

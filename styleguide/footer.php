@@ -52,14 +52,14 @@
 		<div id="social-footer" class="social-footer">
 			    <div id="block-block-30" class="block block-block contextual-links-region">
   <div class="content">
-    <div class="social-icon odd"><a href="https://www.facebook.com/sbudoit"><img src="stylesheets/images/social/facebook.png" /></a></div>
-<div class="social-icon even"><a href="https://twitter.com/sbudoit"><img src="stylesheets/images/social/twitter.png" /></a></div>
-<div class="social-icon odd"><a href="http://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw"><img src="stylesheets/images/social/youtube.png" /></a></div>
-<div class="social-icon even"><a href="https://plus.google.com/u/0/102779299295288343882/posts"><img src="stylesheets/images/social/google-plus.png" /></a></div>
-<div class="social-icon odd"><a href="http://sbudoit.tumblr.com/" title="#SBUDoIT on Tumblr"><img src="stylesheets/images/social/tumblr.png" /></a></div>
-<div class="social-icon even"><a href="http://www.flickr.com/photos/101383158@N02/"><img src="stylesheets/images/social/flickr.png" /></a></div>
-<div class="social-icon odd"><a href="http://instagram.com/sbudoit"><img src="stylesheets/images/social/instagram.png" /></a></div>
-<div class="social-icon even"><a href="https://www.yammer.com/stonybrook.edu/"><img src="stylesheets/images/social/yammer.png" /></a></div>
+    <div class="social-icon odd"><a href="https://www.facebook.com/sbudoit"><img src="/stylesheets/images/social/facebook.png" /></a></div>
+<div class="social-icon even"><a href="https://twitter.com/sbudoit"><img src="/stylesheets/images/social/twitter.png" /></a></div>
+<div class="social-icon odd"><a href="http://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw"><img src="/stylesheets/images/social/youtube.png" /></a></div>
+<div class="social-icon even"><a href="https://plus.google.com/u/0/102779299295288343882/posts"><img src="/stylesheets/images/social/google-plus.png" /></a></div>
+<div class="social-icon odd"><a href="http://sbudoit.tumblr.com/" title="#SBUDoIT on Tumblr"><img src="/stylesheets/images/social/tumblr.png" /></a></div>
+<div class="social-icon even"><a href="http://www.flickr.com/photos/101383158@N02/"><img src="/stylesheets/images/social/flickr.png" /></a></div>
+<div class="social-icon odd"><a href="http://instagram.com/sbudoit"><img src="/stylesheets/images/social/instagram.png" /></a></div>
+<div class="social-icon even"><a href="https://www.yammer.com/stonybrook.edu/"><img src="/stylesheets/images/social/yammer.png" /></a></div>
   </div>
 </div>
 		</div>
@@ -87,13 +87,8 @@
 </div> 
 
 </div> 
- 
-<script>
-$( ".accordion" ).accordion({
-            heightStyle: "content",
-            autoHeight: false,
-        clearStyle: true,   
-        });
-</script>
+
+ <script src="/javascripts/querystring-helper.js"></script> 
+
 </body>
 </html>

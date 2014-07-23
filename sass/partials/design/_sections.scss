@@ -8,21 +8,32 @@
 
 .section
 {
-	padding: 1.875em 3.75em;
+	
+	padding: 1.0em 1.2em;
+
+	@include breakpoint($break-narrow-desktop)
+	{
+
+		padding: 1.875em 3.75em;
+	}
 }
 
-.header-image
+.banner
 {
-	height: 1080px;
+	min-height: 275px;
 }
 
 
 
+/*
 
 .section.banner, .section.banner #banner-image, .section.banner a  {
 display: block;
 }
 
+*/
+
+/*
 #banner-image
 {
 padding-left: 150px;
@@ -38,8 +49,21 @@ float: left;
 }
 
 
+*/
 
 
+#banner-content
+{
+	padding: 0.5em 0em 1.2em 1.2em;
+}
+
+.full-width #banner-content
+{
+	@include breakpoint($break-narrow-desktop)
+	{
+		padding: 0.5em 0em 2.0em 0.0em;	
+	}
+}
 
 
 .section-heading-separator

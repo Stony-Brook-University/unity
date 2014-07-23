@@ -35,15 +35,17 @@ list-style: none;
 
 #footer .sub-footer
 {
-margin-bottom: 20px;
+margin-bottom: 1.2em;
 
 border-bottom: 1px solid #fff;
 
-height: 110px;
+padding-bottom: 1.2em;
 
 	@include breakpoint($break)
 	{
 		border-bottom: 0px;
+		min-height: 155px;
+		padding-bottom: 0px;
 	}
 
 
@@ -153,7 +155,7 @@ text-decoration: none;
 
 .footer-menu h2
 {
-font-size: 14px;
+font-size: 1.0em;
 color: #fff;
 }
 

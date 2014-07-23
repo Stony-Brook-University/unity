@@ -1,104 +1,212 @@
-<?php include("header.php"); ?>				
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/header.php";
+   include_once($path);
+?>
 			
-	<div id="main-wrap" class="clearfix">
-	
-	<div id="main-content">
 		
+	<div id="container">
+		
+		<div class="section">
+			<div class="section-content">
+				<h1 class="section-heading">Examples</h1>
+				
+				<p class="intro-text">This section shows off the different type of example pages that can be created using Unity. </p>
+			</div>
+		</div>
 
+
+		<div class="section gray-background">
+			<div class="section-content">
+				<h1 class="section-heading">Service Pages</h1>
+				<p class="intro-text">Examples of various service pages from our IT Catalog. </p>
+
+				<div class="demos">
 			
-			<div id="overview" class="section one-card">
-		  
-					  <div class="heading-separator"><h2>DoIT Labs Design Prototypes</h2></div>
-		  
-				<div class="card section-contents" id="introduction">
+					<div class="section-content has-cards four-cards">
+						<a href="blackboard.php" class="card button-card">Blackboard</a>
+						<a href="#" class="card button-card">SOLAR</a>
+						<a href="#" class="card button-card">WolfieNet</a>
+						<a href="#" class="card button-card">AccessVIS</a>
+					</div>
+
 				
-				<p>
-				
-				Thank you for taking the time to view our prototype designs. Feedback is welcome through Yammer or <br />E-mail <a href="mailto:Richard.vonRauchhaupt@stonybrook.edu">Richard.vonRauchhaupt@stonybrook.edu</a>.
-				
-				</p>
-				
-				<p>I anticipate changes to this page and these templates to occur often during the next few weeks, so please check-in regularly if your interested. 
 				</div>
 
+							
+				
+					
+				
+
+			</div>	
+		</div>
+<!--
+		<div class="section">
+
+				<div class="section-content">
+					<h1 class="heading-styleguide">Paragraphs</h1>
+					<p class="intro-text">Most text on the page will be paragraph text. Paragraphs should of short to medium size and broken apart where it makes sense. Don't try and manipulate a paragraphs breaks using spacing or break tags as different screen sizes and viewports will flow text appropriately.</p>
+
+					<div class="demos">
+						<h2 class="heading-styleguide">Demos</h2>
+						
+						<p>
+							Most text on the page will be paragraph text. Paragraphs should of short to medium size and broken apart where it makes sense. Don't try and manipulate a paragraphs breaks using spacing or break tags as different screen sizes and viewports will flow text appropriately. 
+						</p>
+
+
+						<p class="intro-text">
+							Introduction text should be written in a way that draws the reader into the page being read. It should be a few sentences that describe what you are about to read. Introduction text can be used at the top of pages and immediately after headings. 
+						</p>
+
+						<div class="media-with-caption">
+							<img alt="placeholder image" src="/local-images/placeholders/1200x400.gif" />
+							<p class="caption">
+							A caption for this lovely image
+							</p>
+						</div>
+
+
+						<div class="pull-right">
+						
+							<div class="media-with-caption border-left">
+								<img alt="placeholder image" src="/local-images/placeholders/600x250.gif" />
+								<p class="caption">
+								Captions are optional, but always include an alt tag!
+								</p>
+							</div>
+					
+
+						<p>
+							Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+						</div>
+
+
+						<div class="pull-left">
+						
+							<div class="media-with-caption">
+								<img alt="placeholder image" src="/local-images/placeholders/600x250.gif" />
+							</div>
+
+							<p>
+								Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+							</p>
+
+						</div>
+
+						
+						<p class="callout">
+							Callout Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+
+						<p class="callout warning">
+						Callout warning Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+
+						<p class="callout highlight">
+						Callout highlight Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+
+						<div class="callout alert">
+						<img class="pull-right" alt="placeholder image" src="/local-images/placeholders/600x250.gif" />
+						<p>
+						Callout alert. Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+						<br clear="all" />
+
+						</div>
+
+						</div>
+						
+						
+					
+					
+
+					<div class="examples">
+						<h2 class="heading-styleguide">Examples</h2>
+					
+						<div class="examples-example">
+						<?php echo htmlspecialchars('<p>Lorem ipsum dolor sit amet, decore molestiae temporibus id pri.</p>'); ?>
+						</div>
+
+						<div class="examples-example">
+						<?php echo htmlspecialchars('<p class="intro-text">Lorem ipsum dolor sit amet, decore molestiae temporibus id pri.</p>'); ?>
+						</div>
+
+					
+					</div>
+
+				</div>	
+
 			</div>
+	
+		<div class="section gray-background">
+
+			<div class="section-content">
+				<h1 class="heading-styleguide">Block Quotes</h1>
+				<p class="intro-text">Blockquotes are elements which represent quotes that have been pulled out of the text contained on this page or are quoted from another source.</p>
+
+				<div class="demos">
+					<h2 class="heading-styleguide">Demos</h2>
+
+					<blockquote>Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. 
+					</blockquote>
+
+
+					
+					<div class="pull-right">
+						<blockquote>
+							Blockquotes can be pulled to the right. And are used to highlight specific quotes or main ideas from the article.
+						</blockquote>
+
+						<p>
+							Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+					</div>
+
+					<div class="pull-left">
+						<blockquote class="border-right">
+							Blockquotes can also be pulled to the left. And are used to highlight specific quotes or main ideas from the article.
+						</blockquote>
+
+						<p>
+							Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
+						</p>
+		
+					</div>
+
+				
+				</div>
+
+				<div class="examples">
+					<h2 class="heading-styleguide">Examples</h2>
+
+					<div class="examples-example">
+					<?php echo htmlspecialchars('<blockquote>Blockquotes are pieces of text quoted from another source</blockquote>'); ?>
+					</div>
+
+					<div class="examples-example">
+					<?php echo htmlspecialchars('<blockquote class="pull-right pull-border-right">Blockquotes can be pulled to the right. And are used to highlight specific quotes or main ideas from the article.</blockquote>'); ?>
+					<br />
+					<?php echo htmlspecialchars('<p>Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. </p>');?>
+					
+					</div>
+					
+				</div>
+
+			</div>	
+		</div>
+
+	
+-->
 			
-				<div class="section gray one-card">
 			
-				<div class="heading-separator"><h2><span class="icon-code icon left"></span>Motivations</h2></div>
-<div class="card">
-<p>The designs that I am presenting here represent a potential move to a more modern web style and design.</p>
-
-<p><strong>These designs are still very raw and require a good deal more polish</strong> - But I believe strongly in getting feedback early and often as aim to enhance our designs</p>
-<p>I can't promise that all of your requests, suggestions and idea's will be implemented or be implemented quickly, but I can promise that I will listen and that I will take all input into consideration while crafting and honing these designs. </p>
-
-<p>These pages are not responsive, so please view them on a traditional wide format monitor. However, because of the 1 column and sectionized nature of the design, making them responsive should be fairly straight forward. </p>
-</div>
-</div>
-
-	<div class="section one-card">
-	
-	<div class="heading-separator"><h2><span class="icon-code icon left"></span>Design Aspirations</h2></div>
-<div class="card">
-<p>
- The foundations to this more modern design revolve around typography, white space and padding. The goal is to make our information more easily scannable and digestable by our audience. We want to prioritize content that we know our users need and want, quick access to logining in, the ability to see the current status of the service and the ability to get help with the service. </p>
-<p>This current iteration has focused only on service pages and an attempt to standardize our look and feel for these pages and balance the different needs some of our services have.</p>
-<p>We want to use a combination of good artwork and icon's to liven up our pages. When possible we want to use pictures of people, ourselves and our users to put the focus of IT as a human to human service.
-
-	</div>
-	
-	</div>
-	
-	
-	<div class="section gray one-card">
-	
-	<div class="heading-separator"><h2><span class="icon-code  icon left"></span>Shifting Content Focus</h2></div>
-	
-	<div class="card">
-
-<p>Service pages should be viewed as jump-off points for users to optionally get into deeper content.</p>
-
-<p>We want to priotize content that focues on the "Why is this service useful?" rather than the How-To content that currently dominates our site.</p>
-<p>You should start thinking about who the top users of your system are, why they use it, how they are using it and how others can learn from them. We want to spotlight these use-cases through quotes or for more in-depth looks through news articles/interviews. </p>
-
-
-<p>The brief introduction should draw focus to the major selling points of the service and who is most affected by it.</p>
-
-<p>The left navigation column has been removed and replaced with area's that highlight a services news and/or sections that invite users to dive deeper. This type of navigation works well in a tree-like structure which our content does not tend to lend itself to. We should strive to move away from this paradigm. </p>
-
-<h3>Building Social</h3>
-<p>We want to build a social community around DoIT and our services, we want to be more open and engaged with our users, to do this we need to provide more inlets into our organization.</p>
-<p> Our twitter page is by far our most active social hub, we can attempt to drive public communication through that channel so that our users can see in real-time our responsiveness and provide a public channel for voicing their concerns or giving praise.</p>
-<p> Yammer is a great tool for internal communication and collaboration. We are hoping that the new Yammer Enterprise service will soon be officially available. I would expect each of our major services and departments to be represented in there, both as private and public groups.</p>
-
-<h3>Self Service Support</h3>
-<p>Our KB Article quality is all over the map. We need to aim to simplify content when possible. We need to identify and focus on our top KB Articles and ensure that they are top notch.</p>
-<p>It is my aim to limit the number of KB Articles shown on each page to only the top 1-3 questions per category/audience. </p>
-<p>We need to make it easy for users to contact our service and support centers. We should drive users to report issues through our Report a Problem interface, doing so now will put us in a better position later to funnel users through whatever ITSM we end up implementing. </p>
-
-</div>
-
-</div>
-
-
-<div class="section white one-card">
-	
-	<div class="heading-separator"><h2><span class="icon-code  icon left"></span>Design Samples</h2></div>
-<div class="card">
-<p>You'll find the pages to offer very similar layouts, but each page does offer some slight nuances. These pages have been designed using straight html and css and are not tied to Drupal. It is my hope that we'll be able to allow service owners some flexibility in what sections are displayed, the wording used in some (not all) sections and the ordering of sections.</p>	
-
-<ul>
-<li><a href="blackboard.htm">Blackboard</a></li>
-<li><a href="solar.htm">SOLAR</a></li>
-<li><a href="wolfienet.htm">WolfieNet</a></li>
-</ul>
-
-</div>
-</div>
-
-
 	</div>
 
-	
-<?php include("footer.php"); ?>				
-	
+
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/footer.php";
+   include_once($path);
+?>	

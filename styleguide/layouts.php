@@ -1,4 +1,8 @@
-<?php include("header.php"); ?>	
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/header.php";
+   include_once($path);
+?>
 	
 	<div id="container">
 
@@ -175,4 +179,8 @@
 	</div>
 
 
-<?php include("footer.php"); ?>
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/footer.php";
+   include_once($path);
+?>

@@ -49,18 +49,23 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
  
   <title>DoIT Unity Style Guide- Division of Information Technology, Stony Brook University</title>
 <style>
-@import url("stylesheets/drupal-base.css");
+@import url("/stylesheets/drupal-base.css");
 
 
-@import url("stylesheets/style.css");
+@import url("/stylesheets/style.css");
 
 </style>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  
+		
+		<script src="/javascripts/main-menu.js"></script>
+    <script src="/javascripts/sidr/jquery.sidr.min.js"></script>
+    <script src="/javascripts/sidr/unity.sidr.js"></script>
+		
 
-  <link rel="icon" type="image/ico" 
-      href="stylesheets/images/favicon.ico">
+  <link rel="icon" type="image/ico" href="/stylesheets/images/favicon.ico">
 
 </head>
 <body class="<?php print $bodystyles ?>" >
@@ -68,25 +73,29 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
 <div id="page" class="clearfix">
 
  	<div id="header">
-    			<div id="header-content"><a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="stylesheets/images/stony-brook-university.png" alt="Stony Brook University Logo" /></a><a id="site-logo" href="/"><img title="Home" src="stylesheets/images/doit-logo.png" /></a></div>
+    			<div id="header-content"><a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="/stylesheets/images/stony-brook-university.png" alt="Stony Brook University Logo" /></a><a id="site-logo" href="/"><img title="Home" src="/stylesheets/images/doit-logo.png" /></a></div>
 	</div>
 	
   <div id="main-menu">
           <div id="main-menu-content">
 
-            	  <div id="main-menu-controller" class="navigation show-phone">
-            	  	<ul class="links clearfix">
-            	  		<li id="prefix-display-button"><a href="#"><span class="sb-icon-menu"></span> Menu</a></li>
-            	  	</ul>
-            	  </div>
-            	  
-                  <div id="main-menu-navigation" class="navigation hide-phone">
+
+                  <div id="main-menu-navigation" class="navigation">
 
             			
-                <ul class="menu">
-            		<li class="first leaf"><a href="/" title="Home">About Unity</a></li>
-            		<li class="leaf"><a href="/text.php" title="Home">Design</a></li>
-            		<li class="leaf"><a href="/layouts.php" title="Home">Layouts</a></li>
+                <ul id="main-menu-parent-list" class="menu main-menu-list">
+                <li id="main-menu-sidr-button" class="main-menu-menu-item main-menu-small-screen"><a href="#"><span class="sb-icon-menu"></span> Menu</a></li>
+            		<li class="first leaf main-menu-menu-item" class="main-menu-menu-item"><a href="/" title="Home">About Unity</a></li>
+            		<li class="leaf main-menu-menu-item"><a href="/text.php" title="Home">Design</a></li>
+            		<li class="leaf main-menu-menu-item"><a href="/layouts.php" title="Home">Layouts</a></li>
+                
+					<li class="leaf main-menu-menu-item"><a href="/examples/index.php" title="Home">Examples</a>
+						<ul class="main-menu-sub-menu">
+							<li><a href="/examples/blackboard.php">Blackboard</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
             	</ul>
 
             	</div>
