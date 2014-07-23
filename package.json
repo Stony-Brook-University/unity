@@ -1,6 +1,10 @@
 {
   "name": "unity",
   "version": "1.0.0",
+  "repository": {
+	"type": "git",
+	"url": "git://github.com/SBUDoIT/unity.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.0",

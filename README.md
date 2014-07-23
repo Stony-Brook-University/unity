@@ -12,7 +12,7 @@ From a command prompt in this directory you should run npm install and it will l
 Gemfile
 =====
 This file is used for our ruby packages
-From a command prompt in this directory
+From a command prompt in this directory type "bundle install"
 
 Gruntfile.js
 =====
