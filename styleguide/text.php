@@ -129,7 +129,7 @@
 						</p>
 
 						<div class="media-with-caption">
-							<img alt="placeholder image" src="/local-images/placeholders/1200x400.gif" />
+							<img alt="ALT tags describe the image incase it cannot be loaded or seen. This is a 600 x 250 placeholder image." title="Title tag text appears in a tooltip when the image is moused over" src="/local-images/placeholders/1200x400.gif" />
 							<p class="caption">
 							A caption for this lovely image
 							</p>
@@ -139,7 +139,7 @@
 						<div class="pull-right">
 						
 							<div class="media-with-caption border-left">
-								<img alt="placeholder image" src="/local-images/placeholders/600x250.gif" />
+								<img alt="ALT tags describe the image incase it cannot be loaded or seen. This is a 600 x 250 placeholder image." title="Title tag text appears in a tooltip when the image is moused over" src="/local-images/placeholders/600x250.gif" />
 								<p class="caption">
 								Captions are optional, but always include an alt tag!
 								</p>
@@ -155,7 +155,7 @@
 						<div class="pull-left">
 						
 							<div class="media-with-caption">
-								<img alt="placeholder image" src="/local-images/placeholders/600x250.gif" />
+								<img alt="ALT tags describe the image incase it cannot be loaded or seen. This is a 600 x 250 placeholder image."  title="Title tag text appears in a tooltip when the image is moused over" src="/local-images/placeholders/600x250.gif" />
 							</div>
 
 							<p>
@@ -178,7 +178,7 @@
 						</p>
 
 						<div class="callout alert">
-						<img class="pull-right" alt="placeholder image" src="/local-images/placeholders/600x250.gif" />
+						<img class="pull-right" alt="placeholder image" src="/local-images/placeholders/600x250.gif" title="Title tag text appears in a tooltip when the image is moused over" />
 						<p>
 						Callout alert. Paragraphs will wrap around items that are pulled to their right or left. Lorem ipsum dolor sit amet, decore molestiae temporibus id pri. No cum tantas euripidis, ea labore conclusionemque mel, ut nam sale deserunt adipisci. No eum elit inimicus, et vide argumentum pri. Usu et quidam vituperata efficiendi, et elit accusata delicata ius, tibique gubergren pertinacia ex sed.Mollis accusamus ei eam, dico stet assentior eam ei. Aliquip invenire voluptatum eu usu. No sea inimicus qualisque. Id eirmod nominati vim, ei cum stet tamquam convenire. Ad saepe populo vel, mei idque everti cu. Mundi impedit phaedrum ad vix, numquam ancillae constituto at eam, pro sale apeirian posidonium no.
 						</p>

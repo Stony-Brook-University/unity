@@ -148,6 +148,46 @@
 			</div>
 		
 		</div>
+
+
+			<div class="section">
+				<div class="section-content has-cards three-cards">	 
+				<h1 class="section-heading"><span class="icon-map left icon"></span>News & Announcements</h1>
+				
+				
+				
+					<div class="cardWrapper news-card card">
+					
+					<h2>Are you having trouble logging into Blackboard?</h2>
+					<span class="date">August 1st 2014</span>
+					<p>An update to IE 11 is causing issues with Blackboard. At this time we are recommending using Google Chrome or Mozilla Firefox. <a href="#" class="more-link">Read More</a></p>
+					
+					
+					</div>
+
+					<div class="cardWrapper news-card card">
+					<h2>Blackboard Service Updates</h2>
+					
+					<span class="date">August 1st 2014</span>
+					<p>Did you know that Blackboard was Upgraded on December 30th, 2013? Take a look at our Upgrade Page for more information about the changes and new features. <a href="#" class="more-link">Read More</a> </p>
+					
+					
+					</div>
+
+					<div class="cardWrapper news-card card">
+					<h2>Blackboard Mobile</h2>
+					
+					<span class="date">August 1st 2014</span>
+					<p>Blackboard is now available on your mobile devices. Making it easier than ever to stay connected to your coursework. <a href="#" class="more-link">Read More</a></p>
+					
+					</div>
+					
+
+				
+				
+			</div>
+		
+		</div>
 			
 		
 
