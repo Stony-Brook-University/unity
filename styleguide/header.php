@@ -65,7 +65,7 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
     <script src="/javascripts/sidr/unity.sidr.js"></script>
 		
 
-  <link rel="icon" type="image/ico" href="/stylesheets/images/favicon.ico">
+  <link rel='shortcut icon' href='/stylesheets/images/favicon.ico' />
 
 </head>
 <body class="<?php print $bodystyles ?>" >

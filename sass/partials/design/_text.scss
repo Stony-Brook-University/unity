@@ -485,6 +485,48 @@ span.icon.right
 }
 
 
+a.more-link
+{
+/*	padding: 5px;
+	color: #fff;
+	width: 160px;
+	display: block;
+	margin-top: 5px;
+
+	font-family: inherit;
+font-size: 100%;
+padding: .5em 1em;
+color: #444;
+border: 1px solid #999;
+
+background-color: #E6E6E6;
+text-decoration: none;
+border-radius: 2px;*/
+display: block;
+margin-top: 10px;
+}
+
+a.more-link:hover
+{
+	text-decoration: none;
+	color: $dark-red;
+	//box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+}
+
+a.more-link:after
+{
+	font-family: 'icomoon';
+        content: '\e732';
+        speak: none;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+	margin-left: 15px;
+}
+
+
 .heading-separator
 {
 	text-align: center;

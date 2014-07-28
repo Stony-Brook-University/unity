@@ -150,7 +150,7 @@
 		</div>
 
 
-			<div class="section">
+			<div class="section gray-background">
 				<div class="section-content has-cards three-cards">	 
 				<h1 class="section-heading"><span class="icon-map left icon"></span>News & Announcements</h1>
 				
@@ -189,6 +189,55 @@
 		
 		</div>
 			
+
+
+			<div class="section">
+				<div class="section-content has-cards one-card">	 
+				<h1 class="section-heading"><span class="icon-map left icon"></span>Instructor Guide</h1>
+				
+				
+				<div class="card video-card">
+						<iframe width="560" height="315" src="//www.youtube.com/embed/22BgazfK-yw" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+				<div class="section-content has-cards three-cards">
+	
+				<a href="#" class="icon-card border-card hover-card card">
+					<img src="/local-images/announcement_on.gif">
+					Announcements
+				</a>
+
+
+				<a href="#" class="icon-card border-card hover-card card">
+					<img src="/local-images/blog_on.gif">
+					Blogs
+				</a>
+
+
+				<a href="#" class="icon-card border-card hover-card card">
+					<img src="/local-images/grades_on.gif">Gradebook
+				</a>
+
+
+				<a href="#" class="icon-card border-card hover-card card">
+					<img src="/local-images/discussion_on.gif">Discussion Board
+				</a>
+
+
+				<a href="#" class="icon-card border-card hover-card card">
+					<img src="/local-images/calendar_on.gif">Calendar
+				</a>
+
+
+				<a href="#" class="icon-card border-card hover-card card">
+					<img src="/local-images/classroom_on.gif">Classroom Tools
+				</a>
+
+
+				
+			</div>
+		
+		</div>
 		
 
 			
