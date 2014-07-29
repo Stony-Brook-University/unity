@@ -7,9 +7,9 @@
 <div id="container">
 	
 		<div class="banner-container">
-			<div class="banner" style="">
+			<div class="banner blackboard">
 			
-			</div>	
+			
 
 				<div class="banner-content">
 
@@ -17,19 +17,19 @@
 
 					
 
-					<a href="#" class="banner-button banner-button-large">Login to Blackboard</a>
+					<a href="#" class="banner-button banner-button-large">Login with NetID</a>
 				</div>
 
-			
+			</div>	
 
 			
 		</div>
 
 
-		<div class="section red-background-gradient">
+		<div class="section section-system-status red-background-gradient">
 			<div class="section-content">
 				
-				<h2 class="section-heading"><span class="icon-cancel-circle icon left"></span>This system is currently offline. </h2>
+				<h1 class="section-heading"><span class="icon-cancel-circle icon left"></span>This system is currently offline. </h1>
 		
 			
 				
@@ -100,7 +100,7 @@
 					  <p>
 					  Difficulty logging in? Not seeing the course content you should? The best way to get help quickly is to submit a ticket and let us know!
 					  </p>
-					  <a href="#" class="report-problem-button"><span class="icon-notification icon left red"></span>Report a Problem</a>
+					  <a href="#" class="report-problem-button glassy-button"><span class="icon-notification icon left"></span>Report a Problem</a>
 
 					  <h2>System Status</h2>
 					  
@@ -125,6 +125,7 @@
 					<div class="cardWrapper image-card card">
 						<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="/local-images/blackboard-login.png" alt="Gloabl Initiatives"></a>
 						<h2>Are you having trouble logging into Blackboard?</h2><p>Internet Explorer 11 has released an update which is not allowing Blackboard to function correctly. At this time we are recommending that faculty, staff and students use Google Chrome or Mozilla Firefox. For more information please see Blackboard's Supported Browser list.</p>
+						 <a href="#" class="more-link">Read More</a>
 						</div>
 					</div>
 
@@ -134,12 +135,14 @@
 					
 					
 					<h2>Blackboard Service Updates</h2><p>Did you know that Blackboard was Upgraded on December 30th, 2013? Take a look at our Upgrade Page for more information about the changes and new features.</p>
+					 <a href="#" class="more-link">Read More</a>
 					</div>
 					</div>
 
 					<div class="cardWrapper image-card card">
 					<div class="cardContentWrapper"><a href="http://www.stonybrook.edu/commcms/global"> <img src="/local-images/blackboard-mobile.png" alt="Gloabl Initiatives"></a>
 					<h2>Blackboard Mobile</h2><p>Blackboard is now available on your mobile devices. Making it easier than ever to stay connected to your coursework.</p>
+					 <a href="#" class="more-link">Read More</a>
 					</div>
 					</div>
 
@@ -197,46 +200,128 @@
 				
 				
 				<div class="card video-card">
-						<iframe width="560" height="315" src="//www.youtube.com/embed/22BgazfK-yw" frameborder="0" allowfullscreen></iframe>
+						<iframe src="//www.youtube.com/embed/22BgazfK-yw" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 				<div class="section-content has-cards three-cards">
 	
-				<a href="#" class="icon-card border-card hover-card card">
-					<img src="/local-images/announcement_on.gif">
-					Announcements
+				<a href="#" class="blurb-card-descriptive card">
+					<div class="blurb-card-icon">
+						<img src="/local-images/announcement_on.gif">
+					</div>
+					<div class="blurb-card-content">
+						<h2>Announcements</h2>
+						<p>
+						Keep your class in tune by posting announcements to blackboard
+						</p>
+					</div>
 				</a>
 
 
-				<a href="#" class="icon-card border-card hover-card card">
-					<img src="/local-images/blog_on.gif">
-					Blogs
+				<a href="#" class="blurb-card-descriptive card">
+						<div class="blurb-card-icon">
+						<img src="/local-images/blog_on.gif">
+					</div>
+					<div class="blurb-card-content">
+						<h2>Blogs</h2>
+						<p>
+						Student blogging creates the opportunity for self-reflection and enhances learning.
+						</p>
+					</div>
+
+					
+					
 				</a>
 
 
-				<a href="#" class="icon-card border-card hover-card card">
-					<img src="/local-images/grades_on.gif">Gradebook
+				<a href="#" class="blurb-card-descriptive card">
+				
+
+					<div class="blurb-card-icon">
+							<img src="/local-images/grades_on.gif">
+					</div>
+					<div class="blurb-card-content">
+						<h2>Gradebook</h2>
+						<p>
+						Centrally Manage and Publish Your Course Grades
+						</p>
+					</div>
+
 				</a>
 
 
-				<a href="#" class="icon-card border-card hover-card card">
-					<img src="/local-images/discussion_on.gif">Discussion Board
+				<a href="#" class="blurb-card border-card hover-card card">
+					
+					<div class="blurb-card-icon">
+							<img src="/local-images/discussion_on.gif">
+					</div>
+					<div class="blurb-card-content">
+						<h2>Discussion Board</h2>
+						<p>
+						Moderate and facillitate discussion and collaboration within your course online. 
+						</p>
+					</div>
+
+					
 				</a>
 
 
-				<a href="#" class="icon-card border-card hover-card card">
-					<img src="/local-images/calendar_on.gif">Calendar
+				<a href="#" class="blurb-card border-card hover-card card">
+						<div class="blurb-card-icon">
+					<img src="/local-images/calendar_on.gif">
+					</div>
+					<div class="blurb-card-content">
+						<h2>Calendar</h2>
+						<p>
+						Keep everyone on track and on schedule with the calendar tool.
+						</p>
+					</div>
+
+
 				</a>
 
 
-				<a href="#" class="icon-card border-card hover-card card">
-					<img src="/local-images/classroom_on.gif">Classroom Tools
+				<a href="#" class="blurb-card border-card hover-card card">
+<div class="blurb-card-icon">
+					<img src="/local-images/classroom_on.gif">
+					</div>
+					<div class="blurb-card-content">
+						<h2>Cutting Edge Technology</h2>
+						<p>
+						Don't Let This Icon Fool You, we employ the latest web technology. 
+						</p>
+					</div>				
+					
 				</a>
 
 
 				
 			</div>
 		
+		</div>
+
+
+			<div class="section background-blue blackboard-mobile">
+				<div class="section-content promo">	 
+					
+				
+				
+					<div class="promo-image-left"><img title="Introducing Blackboard Mobile" src="/local-images/blackboard-mobile-phone.png" /></div>
+					<div class="promo-content">
+						<h1>Blackboard Mobile</h1>
+						<p class="intro-text">
+						Stay connected with your class wherever you may wander. 
+						</p>
+
+						<p>
+							Stony Brook's Blackboard Mobile Learn features have been upgraded. All phone service providers should now provide access to the Blackboard Application for Stony Brook. The Blackboard Learn Mobile App can be downloaded from the App Store on iOS devices and the Android Marketplace (Google Play) for Android devices. The mobile app allows students and Faculty to view their classes and content including submitting assignments and works with the discussion board as well.
+						</p>
+
+
+						<a class="button glassy-button" href="#">Getting Started</a>	
+
+					</div>
+			</div>	
 		</div>
 		
 
@@ -247,14 +332,14 @@
 			<h1 class="section-heading"><span class="icon-quotes-left icon left"></span>Campus Buzz</h1>			
 			
 				<div class="user-story-card card">
-					<img src="/local-images/harry_potter.png" alt="Gloabl Initiatives">
+					<img src="/local-images/harry_potter-circle.png" alt="Gloabl Initiatives">
 					<p><em>Blackboard makes it easy for me to stay connected to my course. I'm able to see what assignments are due, download class lecture notes and stay active in course discussion. I wish all my courses used Blackboard. </em><br /><br /> <span class="credit">Harry Potter, Class of 2016</span></p>
 				</div>
 			
 
 					
 					<div class="user-story-card card">
-								<img src="/local-images/dumbledore.png" alt="Gloabl Initiatives">						
+								<img src="/local-images/dumbledore-circle.png" alt="Gloabl Initiatives">						
 							<p><em>Blackboard provides a convienent portal for me to manage my course. I no longer need to use multiple services or worry about hosting and coding my own course website. It removes a lot of my day-to-day headaches and lets me focus on being a better instructor.</em><br /><br /> <span class="credit">Albus Dumbledore, Wizardry 101</span></p>
 							
 					</div>

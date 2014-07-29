@@ -54,8 +54,14 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
 
 @import url("/stylesheets/style.css");
 
+@import url("/local-styles/local-styles.css");
+
 </style>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+  <link rel='shortcut icon' href='/stylesheets/images/favicon.ico' />
+
+
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   
@@ -65,7 +71,7 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
     <script src="/javascripts/sidr/unity.sidr.js"></script>
 		
 
-  <link rel='shortcut icon' href='/stylesheets/images/favicon.ico' />
+  
 
 </head>
 <body class="<?php print $bodystyles ?>" >

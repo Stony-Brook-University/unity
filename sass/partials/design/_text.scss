@@ -55,7 +55,15 @@ body
 body.unity
 {
 
-	font-size: 14px;
+	font-size: 12px;
+
+	@include breakpoint($break-phone)
+	{
+		font-size: 14px;
+	}
+
+
+
 	line-height: 1.55;
 
 	@include breakpoint($break-narrow-desktop)

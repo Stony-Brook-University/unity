@@ -1,0 +1,24 @@
+
+@media (min-width: 420px)
+{
+
+
+.banner.blackboard
+{
+	background: url(/local-images/banners/blackboard.png) no-repeat scroll center center/cover #333333;
+
+}
+
+
+
+}
+
+
+
+.section.blackboard-mobile
+{
+	background-color: #00afce;
+	background-image: url(/local-images/blackboard-plus-pattern.png);
+
+	color: #333;
+}
