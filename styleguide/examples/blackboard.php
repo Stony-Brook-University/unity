@@ -18,6 +18,9 @@
 					
 
 					<a href="#" class="banner-button banner-button-large">Login with NetID</a>
+
+					<div class="system-status" style="margin-top: 15px;"><span class="icon-cancel-circle icon left"></span>This system is currently offline.
+					</div>
 				</div>
 
 			</div>	
@@ -25,17 +28,13 @@
 			
 		</div>
 
-
-		<div class="section section-system-status red-background-gradient">
+			<div class="section breadcrumb gray-background">
 			<div class="section-content">
-				
-				<h1 class="section-heading"><span class="icon-cancel-circle icon left"></span>This system is currently offline. </h1>
-		
-			
-				
-			
+				<h5><a href="examples.php">Services</a> > Blackboard</h5>
 			</div>
 		</div>
+
+		
 
 
 <div class="section">
@@ -234,7 +233,7 @@
 				</a>
 
 
-				<a href="#" class="blurb-card-descriptive card">
+				<a href="blackboard-gradebook.php" class="blurb-card-descriptive card">
 				
 
 					<div class="blurb-card-icon">
