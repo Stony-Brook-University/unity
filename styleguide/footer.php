@@ -8,13 +8,12 @@
 		    <div id="block-menu-menu-menu-about-us" class="block block-menu contextual-links-region">
 
     
- <div class="panel-title-div"><h2>About Us</h2></div>
+ <div class="panel-title-div"><h2>Resources</h2></div>
 
   <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="/about-us/departments" title="">Departments</a></li>
-<li class="leaf"><a href="/about-us/staff-directory" title="">Staff Directory</a></li>
-<li class="leaf"><a href="/policies" title="">Policies</a></li>
-<li class="last leaf"><a href="/about-us" title="">more...</a></li>
+    <ul class="menu"><li class="first leaf"><a href="http://github.com/sbudoit" title="">SBU DoIT Github</a></li>
+    	<li><a href="http://slides.com/richardvonrauchhaupt/doit-content-contributors#/">DoIT Content Contributors 2014</a></li>
+
 </ul>  </div>
 </div>
 		</div>
@@ -24,11 +23,11 @@
 			  <div id="block-menu-menu-community" class="block block-menu contextual-links-region">
 
     
- <div class="panel-title-div"><h2>Community</h2></div>
+ <div class="panel-title-div"><h2>Libraries</h2></div>
 	
   <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="/about-us/it-partners" title="">IT Partners</a></li>
-<li class="last leaf"><a href="http://you.stonybrook.edu" title="">SB You</a></li>
+    <ul class="menu"><li class="first leaf"><a href="#" title="">SASS</a></li>
+<li class="last leaf"><a href="#" title="">Grunt</a></li>
 </ul>  </div>
 </div>
 		</div>
@@ -42,8 +41,8 @@
 
   
   <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="/help/report-a-problem" title="">Report a Problem</a></li>
-<li class="last leaf"><a href="/feedback" title="">Provide Feedback</a></li>
+    <ul class="menu"><li class="first leaf"><a href="mailto:richard.vonrauchhaupt@stonybrook.edu" title="">E-mail</a></li>
+
 </ul>  </div>
 </div>
 		</div>

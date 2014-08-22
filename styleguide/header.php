@@ -98,8 +98,8 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
 					<li class="leaf main-menu-menu-item"><a href="/examples/index.php" title="Home">Examples</a>
 						<ul class="main-menu-sub-menu">
 							<li><a href="/examples/blackboard.php">Blackboard</a></li>
-							<li><a href="followed.html">menu item</a></li>
-							<li><a href="followed.html">menu item</a></li>
+							<li><a href="/examples/blackboard-gradebook.php">Blackboard Gradebook</a></li>
+							
 						</ul>
 					</li>
             	</ul>
