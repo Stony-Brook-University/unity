@@ -310,6 +310,7 @@ text-decoration: none;
         margin: 0px;
         padding: 0px;
         border-bottom: 0px;
+        font-weight: bold;
       }
 
     }
@@ -346,7 +347,7 @@ cursor: pointer;
 
 
 
-
+/*
 a.unity-button.report-a-problem
 {
 width: 100%;
@@ -419,65 +420,7 @@ left: 50%;
 margin: -8px 0 0 -8px;
 }
 
-
-div.system-status
-{
-  height: 60px;
-  color: #fff;
-  
-  padding: 5px;
-}
-
-
-div.unity-button.system-status, a.unity-button.system-status
-{
-  height: 32px;
-  padding: 0px;
-
-  .icon
-  {
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-  }
-}
-
-a.unity-button.system-status.offline .icon
-{
-  background-color: red;
-  background-image: url('/sites/all/themes/custom/unity/stylesheets/images/system-status/offline.png');
- 
-}
-
-a.unity-button.system-status.online .icon, div.unity-button.system-status.online .icon
-{
-  background-color: green;
-  background-image: url('/sites/all/themes/custom/unity/stylesheets/images/system-status/online.png');
- 
-}
-
-a.unity-button.system-status.upcoming-outage .icon
-{
-  background-color: blue;
-  background-image: url('/sites/all/themes/custom/unity/stylesheets/images/system-status/scheduled.png');
- 
-}
-
-a.unity-button.system-status.disruptions .icon
-{
-  background-color: orange;
-  background-image: url('/sites/all/themes/custom/unity/stylesheets/images/system-status/disruptions.png');
- 
-}
-
-
-
-div.system-status span.title
-{
-  text-transform: uppercase;
-  width: 100%;
-  font-size: 1.2em;
-}
-
+*/
 
 
 a.section-button.gray

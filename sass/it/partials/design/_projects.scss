@@ -1,0 +1,89 @@
+.view-projects
+{
+
+	.views-field-field-projectstatus
+	{
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+	span.Green-Dot, span.Yellow-Dot, span.Red-Dot, span.Green-Check
+	{
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+		width: 100px;
+		padding-left: 20px;
+	}
+
+	caption
+	{
+		color: #990000;
+		text-decoration: none;
+		text-align: left;
+		font-weight: bold;
+		font-size: 1.3em;
+		color: #990000;
+		margin: 0;
+		padding: 10px 0;
+		font-family: "news-gothic-std", Arial, sans serif;
+	}
+
+	.Green-Dot
+	{
+		background-image: url('/sites/all/themes/minit/css/images/status/green-circle.gif');
+
+	}
+	
+	th
+	{
+		text-align: left;
+	}
+	
+	th.views-field-nothing
+	{
+		width: 65%;
+	}
+
+	th.views-field-field-phase
+	{
+		width: 68px;
+		
+	}
+
+	th.views-field-field-projectstatus
+	{
+		width: 47px;
+		text-align: center;
+	}
+
+	th.views-field-field-projectstatus-1
+	{
+		width: 71px;
+		text-align: center;
+	}
+
+	th.views-field-field-project-manager
+	{
+		width: 90px;
+	}
+
+	th.views-field-field-project-end-date
+	{
+		width: 100px;
+	}
+
+	.Yellow-Dot
+	{
+		background-image: url('/sites/all/themes/minit/css/images/status/yellow-circle.gif');
+	}
+
+	.Red-Dot
+	{
+		background-image: url('/sites/all/themes/minit/css/images/status/red-circle.gif');
+	}
+
+	.Green-Check
+	{
+		background-image: url('/sites/all/themes/minit/css/images/status/green-check.gif');
+	}
+}

@@ -91,7 +91,7 @@ module.exports = function (grunt) {
 					max: 9020
 				},
 
-				host : "it.localhost:8080",
+				host : "it.local:8080",
 				
 				ghostMode: {
 					clicks: true,
@@ -145,7 +145,7 @@ module.exports = function (grunt) {
 		},
 
 		 it: {
-		  files: ['sass/{,**/}*.scss'],
+		  files: ['sass/{,**/}*.scss', 'images/{,**/}/*', 'local-images/{,**/}*', 'javascripts/{,**/}*.js'],
 		  tasks: ['compass:dev', 'copy:stylesheets', 'copy:it']
 	 
 		},
@@ -187,8 +187,6 @@ module.exports = function (grunt) {
       dist: {
         options: {
           environment: 'production',
-          imagesDir: 'images-min',
-          force: true
         }
       }
     },
@@ -328,7 +326,20 @@ module.exports = function (grunt) {
 		  expand: true,
 		  cwd: 'stylesheets',
 		  src: ['**'],
-		  dest: 'e:/git/kerrinpernic/docroot/sites/all/themes/custom/unity/stylesheets'
+		  dest: '/Users/rich/git/kerrinpernic/docroot/sites/all/themes/custom/unity2/stylesheets'
+		  },
+		   {
+		  expand: true,
+		  cwd: 'images',
+		  src: ['**'],
+		  dest: '/Users/rich/git/kerrinpernic/docroot/sites/all/themes/custom/unity2/stylesheets/images'
+		  },
+		  
+		  {
+		  expand: true,
+		  cwd: 'javascripts',
+		  src: ['**'],
+		  dest: '/Users/rich/git/kerrinpernic/docroot/sites/all/themes/custom/unity2/javascripts'
 		  }
         ]
       },
@@ -413,5 +424,5 @@ module.exports = function (grunt) {
   grunt.registerTask('classiewatch', ['browserSync:classie', 'watch:sbucommons']);
 
 
-  grunt.registerTask('itwatch', ['watch:it']);
+  grunt.registerTask('itwatch', ['compass:dev', 'copy:it', 'browserSync:it', 'watch:it']);
 };

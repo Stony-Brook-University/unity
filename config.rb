@@ -22,7 +22,7 @@ relative_assets = false
 line_comments = false
 
 # In development, we can turn on the debug_info to use with FireSass or Chrome Web Inspector. Uncomment:
-debug = true
+debug = false
 
 
 ##############################

@@ -5,6 +5,10 @@ $grids: add-grid(4 at $break);
 $grids: add-grid(12 at $break2);
 $grids: add-grid(12 at $break3);
 
+#page #main-wrap
+{
+	padding: 0px;
+}
 
 	#content
 	{

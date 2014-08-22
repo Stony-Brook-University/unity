@@ -3,14 +3,14 @@
 	background-color: #990000;/*2F4765*/
 	padding: 3px 0;
 	margin: 0 0 8px 0;
-	height: 20px;
+	min-height: 20px;
 	
 }
 
 .view-id-events_calendar div .date {
 	float: left;
 	width: 60px;
-	height: 60px;
+	min-height: 60px;
 	margin: 0;
 	padding: 0;
 	background: white;
