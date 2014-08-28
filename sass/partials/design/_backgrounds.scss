@@ -76,6 +76,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', end
 }
 
 
+.panel-layout-ciuffo
+{
+	#section-a
+	{
+		.pane-content
+		{
+			div.section:nth-child(even)
+			{
+
+				background-image: image-url('textures/bright-squares.png');
+	background-repeat: repeat;
+	background-color: $light-gray;
+	
+				
+			}
+		}
+	}
+}
+
 .red-background-gradient
 {
 

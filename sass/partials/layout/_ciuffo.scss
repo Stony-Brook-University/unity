@@ -1,4 +1,4 @@
-.panel-layout-ciuffo
+.panel-layout-ciuffo.not-front 
 {
 
 
@@ -31,6 +31,10 @@
 	  }
 	}
 
+#main-content
+{
+	padding: 0px 0px;
+}
 
 	#banner
 	{
@@ -69,8 +73,7 @@
 	  @include breakpoint($break2) {
 		@include grid-span(16, 1, $options: 'both');
 	  }
-
-	  padding: 0px 20px;
+	  
 	}
 
 	#section-a
@@ -92,6 +95,33 @@
 		
 	  
 	  }
+	}
+}
+
+
+
+.panel-layout-ciuffo
+{
+
+	h1.title
+	{
+		display: none;
+	}
+
+	#section-a
+	{
+		.pane-content
+		{
+			div.section:nth-child(even)
+			{
+
+				background-image: image-url('textures/bright-squares.png');
+	background-repeat: repeat;
+	background-color: $light-gray;
+	
+				
+			}
+		}
 	}
 }
 

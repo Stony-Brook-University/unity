@@ -47,13 +47,13 @@ module.exports = function (grunt) {
 			},
 			//What to do with the files
 			options: {
-				proxy: "classie.localhost:8082",
+				proxy: "classie.drupal.local:8080",
 
 				injectChanges: false,
 				debugInfo: true,
 				logConnections: true,
 				watchTask: true,
-				startPath: '/text.php',
+				startPath: '/',
 				ports: {
 					min: 9000,
 					max: 9020
@@ -340,11 +340,21 @@ module.exports = function (grunt) {
 		  cwd: 'javascripts',
 		  src: ['**'],
 		  dest: '/Users/rich/git/kerrinpernic/docroot/sites/all/themes/custom/unity2/javascripts'
-		  }
+		  },
+
+		  {
+		  expand: true,
+		  cwd: 'fonts',
+		  src: ['**'],
+		  dest: '/Users/rich/git/kerrinpernic/docroot/sites/all/themes/custom/unity2/stylesheets/fonts'
+		  },
+
+
+
         ]
       },
 	  
-	  sbucommons: {
+	   sbucommons: {
 	  
 	   //Files to look for and move to the destination
         files: [  
@@ -352,7 +362,20 @@ module.exports = function (grunt) {
 		  expand: true,
 		  cwd: 'stylesheets',
 		  src: ['**'],
-		  dest: 'e:/git/sbucommons/docroot/sites/all/themes/custom/unity/stylesheets'
+		  dest: '/Users/rich/git/sbucommons/docroot/sites/all/themes/custom/unity2/stylesheets'
+		  },
+		   {
+		  expand: true,
+		  cwd: 'images',
+		  src: ['**'],
+		  dest: '/Users/rich/git/sbucommons/docroot/sites/all/themes/custom/unity2/stylesheets/images'
+		  },
+		  
+		  {
+		  expand: true,
+		  cwd: 'javascripts',
+		  src: ['**'],
+		  dest: '/Users/rich/git/sbucommons/docroot/sites/all/themes/custom/unity2/javascripts'
 		  }
         ]
       },
@@ -421,7 +444,7 @@ module.exports = function (grunt) {
     
   grunt.registerTask('styleguidewatch', ['compass:dev', 'copy:styleguide', 'browserSync:styleguide', 'watch:styleguide']);
   
-  grunt.registerTask('classiewatch', ['browserSync:classie', 'watch:sbucommons']);
+  grunt.registerTask('classiewatch', ['compass:dev', 'copy:sbucommons', 'browserSync:classie', 'watch:sbucommons']);
 
 
   grunt.registerTask('itwatch', ['compass:dev', 'copy:it', 'browserSync:it', 'watch:it']);

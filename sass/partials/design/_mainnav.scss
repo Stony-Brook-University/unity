@@ -136,7 +136,16 @@ cursor: pointer;
 
 #main-menu-wrap
 {
-    background-color: $red;
+       background-color: $red;
+       width: 100%;
+}
+
+#main-menu-menu-wrap
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 #main-menu * {

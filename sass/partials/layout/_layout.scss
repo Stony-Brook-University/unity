@@ -167,7 +167,7 @@ width: 100%;
 
 
 
-#footer
+#footer-content
 {
 
   @include grid-span(1, 1, $options: 'both');
@@ -305,13 +305,10 @@ width: 100%;
 
 @import 'banner';
 
-//@import 'full-width';
-//@import 'fixed-width';
 @import 'front';
 @import 'potter';
 @import 'dumbledore';
 @import 'notfront';
-@import 'service';
 @import 'mainnav';
 @import 'snape';
 @import 'ciuffo';

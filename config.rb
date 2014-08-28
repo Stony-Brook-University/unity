@@ -9,6 +9,7 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 fonts_dir = "stylesheets/fonts"
+http_fonts_path = "fonts"
 
 # Change this to :production when ready to deploy the CSS to the live server.
 # Note: If you are using grunt.js, these variables will be overriden.

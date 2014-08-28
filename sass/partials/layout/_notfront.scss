@@ -15,7 +15,7 @@
 
 .not-front.unity-no-sidebars
 {
-	#main-wrap
+	#main-content
 	{
 		@include grid-span(1, 1, $options: 'both');
 
@@ -28,11 +28,11 @@
 				
 		}
 
-		padding: 0px 10px;
+		padding: 0px 20px;
 
 
 
-		#main-content
+		#main-content-section
 		{
 
 			width: 100%;
@@ -45,7 +45,7 @@
 				width: 75%;		
 			}
 
-			padding: 0px 10px 0px 0px;
+			padding: 0px 20px 0px 0px;
 
 		}
 
@@ -129,10 +129,10 @@
 			}
 		}
 		
-		#main-wrap
+		#main-content
 		{
 
-			padding: 5px 10px 5px 10px;
+			padding: 5px 20px 5px 20px;
 
 			@include grid-span(1, 1, $options: 'both');
 			
@@ -149,7 +149,7 @@
 
 			@include breakpoint($break2) {
 
-				padding: 5px 10px 5px 0px;
+				padding: 5px 20px 5px 0px;
 				@include grid-span(12, 5, $options: 'right');
 				
 				
@@ -157,8 +157,7 @@
 			}
 
 
-
-				#main-content
+				#main-content-section
 		{
 
 			width: 100%;
@@ -287,7 +286,7 @@
 
 
 
-				#main-content
+				#main-content-section
 		{
 
 			width: 100%;
