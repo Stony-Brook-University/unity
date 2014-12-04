@@ -1,0 +1,83 @@
+.panel-layout-snape {
+
+//$grids: add-grid(1);
+//$grids: add-grid(1 at $break);
+//$grids: add-grid(12 at $break2);
+
+
+/*
+	#main-wrapper-section
+	{
+	@include grid-span(1, 1, $options: 'both');
+	 
+
+	  @include breakpoint($break2) {
+		@include grid-span(16, 1, $options: 'right');
+		
+	  }
+	 }
+		
+
+	#main-wrap
+	{
+	   @include grid-span(1, 1, $options: 'both');
+	    
+
+	  @include breakpoint($break2) {
+		@include grid-span(12, 1, $options: 'both');
+		}
+	}
+	
+
+	#banner
+	{
+
+	  @include grid-span(1, 1, $options: 'both');
+
+	  @include breakpoint($break2) {
+		@include grid-span(12, 1, $options: 'both');
+	  }
+
+	  #banner-image
+	  {
+		@include grid-span(1, 1, $options: 'both');
+	
+		
+	  	@include breakpoint($break2)
+	  	{
+	  		@include grid-span(6, 1);
+	  	}
+	  }
+
+	  #login-button
+	  {
+		
+	  	@include grid-span(1, 1, $options: 'both');
+		padding: 1em;
+		min-height: 100px;
+
+	  	@include breakpoint($break2)
+	  	{
+			@include grid-span(6, 7, $options: 'right');
+			height: 300px;
+		}
+	  }
+
+	}
+
+
+	.section
+	{
+		 @include grid-span(1, 1, $options: 'both');
+	 
+
+	  @include breakpoint($break2) {
+		@include grid-span(12, 1, $options: 'both');
+		
+	  }
+	}
+*/
+
+
+
+}

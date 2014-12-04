@@ -1,0 +1,346 @@
+
+#kill
+{
+
+
+a.report-problem-button:hover
+{
+	background: rgba(175,175,175,1.0);
+}
+
+
+
+#main-content .heading-separator
+{
+	
+	clear: both;
+}
+
+
+
+#main-content  .heading-separator
+{
+	
+	text-align: center;
+	
+	
+}
+
+#system-status-message.heading-separator
+{
+	
+	
+	
+	padding: 60px 30px;
+}
+
+
+
+
+#system-status-message
+{
+float: left;
+width: 100%;
+font-size: 1.5em;
+
+
+}
+
+
+#system-status-message .status-heading
+{
+	float: left;
+	width: 65%;
+	font-size: 2.0em;
+}
+
+#system-status-message .status-message
+{
+clear: both;
+padding: 20px 60px;
+
+}
+
+#system-status-message.scheduled-maintenance .status-message
+{
+padding: 20px 0px;
+}
+
+
+
+#system-status-message .status-message p
+{
+	margin-top: 0px;
+}
+
+#system-status-message .status-message .time
+{
+	
+}
+#system-status-message .status-message .time strong
+{
+	margin-left: 15px;
+}
+
+#system-status-message .status-message .time strong.first
+{
+	margin-left: 0px;
+}
+
+
+
+
+
+span.icon.left
+{
+	margin-right: 15px;
+}
+
+span.icon.right
+{
+	margin-left: 15px;
+	
+}
+
+span.icon.red, a span.icon.red
+{
+color: #990000;
+}
+
+a.report-a-problem  span.icon
+{
+	font-size: 1.8em;
+}
+
+#login-button .icon
+{
+font-size: 0.8em;
+}
+
+
+
+
+
+.clear { /* Also commonly known as clearfix */
+clear: both; /* At the very least, you must have this. All extra declarations are for fine-tuning */
+height: 0;
+font-size: 0;
+overflow: hidden;
+margin: 0;
+padding: 0;
+width: 0;
+line-height: 0;
+}
+
+
+
+
+
+
+
+.cardWrapper {
+text-align: left;
+display: block;
+float: left;
+
+
+
+}
+
+.cardWrapper .cardContentWrapper {
+margin: 0px;
+padding: 10px;
+}
+
+.cardWrapper .cardContentWrapper img {
+width: 100%;
+height: auto;
+padding-bottom: 10px;
+}
+
+
+
+.userStoryWrapper {
+text-align: left;
+display: block;
+float: left;
+margin-bottom: 12px;
+margin-left: 12px;
+width: 570px;
+min-height: 260px;
+border: #B7B5B6 1px solid;
+background: #FFF;
+
+}
+
+.userStoryWrapper .userStoryContentWrapper {
+margin: 0px;
+padding: 10px;
+}
+
+.userStoryWrapper .userStoryContentWrapper img {
+
+float: left;
+width: 170px;
+height: 240px;
+
+}
+
+.userStoryWrapper .userStoryContent {
+
+float: left;
+margin-left: 10px;
+width: 300px;
+
+}
+
+.userStoryWrapper .userStoryContent p
+{
+margin-top: 0px;
+}
+
+.userStoryWrapper .userStoryContent em {
+
+font-size: 1.5em;
+
+}
+
+.userStoryWrapper .userStoryContent .credit
+{
+clear: both;
+margin-top: 10px;
+font-size: 1.2em;
+}
+
+.accordion .ui-state.default
+{
+
+}
+
+.accordion h3.ui-accordion-header.ui-state-default.ui-state-active
+{
+font-size: 1.4em;
+
+	background-color: #eee;
+}
+
+.accordion h3.ui-accordion-header.ui-state-default
+{
+background-image: url(images/asfalt-light.png);
+	background-repeat: repeat-both;
+	background-color: #bbb;
+}
+
+.accordion p a 
+{
+color: #990000;
+}
+
+
+#faq p
+{
+font-size: 1.4em;
+}
+
+#footer
+{
+padding: 30px 30px;
+}
+
+a.report-problem-button
+{
+width: 75%;
+text-align: left;
+float: left;
+margin: 0px;
+}
+
+
+
+#login-button a
+{
+	
+	padding: 2em;
+	text-decoration: none;
+
+	font-family: TradeGothicNextW01-Ligh 693250;
+    color:#ffffff;
+    text-align:center;
+  
+    font-weight:bold;
+
+    padding:0.5em;
+
+    text-shadow: /* Simulating Text Stroke */
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    background: rgba(0,0,0,0.15);
+
+    box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+
+    -o-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+  
+  color: #fff;
+  
+width: 75%;
+position: static;
+display: block;
+margin: 0px auto;
+
+font-size: 3.0em;
+text-align: center;
+}
+
+#login-button a:hover
+{
+	background: rgba(0,0,0,0.25);
+}
+
+
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+}

@@ -1,0 +1,29 @@
+.node-type-webform fieldset
+{
+border: 0px;
+border-bottom: 0px #000 solid;
+margin-bottom: 25px;
+padding-bottom: 10px;
+}
+
+.node-type-webform fieldset legend
+{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+.form-textarea-wrapper
+{
+	width: 95%;
+}
+
+
+.page-node-submissions table, .page-node-submissions table th, .page-node-submissions table td
+{
+	padding: 15px;
+}
+
+.view-your-submissions .views-field-is-draft
+{
+	text-transform: uppercase;
+}
