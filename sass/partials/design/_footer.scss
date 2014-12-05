@@ -1,39 +1,47 @@
-#footer
+#footer-wrap
 {
-background-color: #000000;
-padding: 18px 10px 18px 10px;
-color: #fff;
-
+	background-color:#000;
 }
 
+#footer-content
+{
+	margin: 0 auto;
+}
+
+#footer-content
+{
+background-color: #000000;
+padding: 18px 20px 18px 20px;
+color: #fff;
 
 
-#footer a
+
+ a
 {
 color: #fff;
 text-decoration: none;
 
 }
 
-#footer a:hover
+a:hover
 {
 text-decoration: underline;
 }
 
-#footer h2
+h2
 {
 border-bottom: 0px;
 color: #fff;
 }
 
-#footer ul, #footer ul li
+ul, ul li
 {
 margin: 0px;
 padding: 0px;
 list-style: none;
 }
 
-#footer .sub-footer
+ .sub-footer
 {
 margin-bottom: 1.2em;
 
@@ -53,7 +61,7 @@ padding-bottom: 1.2em;
 
 
 
-#footer .sub-footer.odd
+.sub-footer.odd
 {
 	@include breakpoint($break)
 	{
@@ -70,7 +78,7 @@ padding-bottom: 1.2em;
 }
 
 
-#footer .sub-footer.even
+ .sub-footer.even
 {
 	
 	@include breakpoint($break2)
@@ -82,10 +90,7 @@ padding-bottom: 1.2em;
 }
 
 
-
-
-
-#footer .sub-footer.last
+.sub-footer.last
 {
 
 
@@ -103,14 +108,12 @@ padding-bottom: 1.2em;
 
 }
 
-#footer #social-footer .social-icon
+ #social-footer .social-icon
 {
 float: left;
 margin: 5px 10% 0px 0px;
 }
 
-#footer
-{
 	#bottom-footer
 	{
 		ul
@@ -126,9 +129,9 @@ margin: 5px 10% 0px 0px;
 			
 		}
 	}
+
+
 }
-
-
 
 
 .footer-menu ul
@@ -159,7 +162,7 @@ font-size: 1.0em;
 color: #fff;
 }
 
-#footer #bottom-footer ul.menu
+#footer-content #bottom-footer ul.menu
 {
 	width: 100%;
 	margin: 0px;

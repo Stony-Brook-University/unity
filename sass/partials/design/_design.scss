@@ -39,7 +39,14 @@ a:hover, a.selected {
 }
 
 
-
+#header
+{
+	#logo, #logo img
+	{
+		width: 64.166666666667%;
+		max-width: 616px;
+	}
+}
 
 #main-prefix
 {
@@ -49,6 +56,8 @@ border-right: 1px solid #ccc;
 
 #page
 {
+
+	background-color: #fff;
 	@include breakpoint($break2)
 	{
 		-moz-box-shadow: 0 0 5px 5px #888;
@@ -59,7 +68,7 @@ border-right: 1px solid #ccc;
 
 }
 
-.field-name-body h2, #main-content h2
+.field-name-body h2, #main-content-section h2
 {
 	border-bottom: 0px;
 	color: #000000;
@@ -106,9 +115,25 @@ border-right: 1px solid #ccc;
 		padding: 3px 10px;
 		color: #fff;
 		border: 0px;
-		font-family: Calibri;
+		
 		font-weight: normal;
+				font-size: 1.4em;
+		margin: 0 0 0 10px;
 	}
+
+
+
+.sub-star-pane
+{
+	margin-top: 10px;
+	
+	h2.pane-title
+	{
+
+		margin-bottom: 5px;
+		font-size: 1.2em;
+	}
+}
 
 	.panel-title-red-bar
 	{
@@ -280,11 +305,7 @@ border-right: 1px solid #ccc;
 @import 'search';
 @import 'slider';
 @import 'webforms';
-@import 'services-redesign';
+//@import 'services-redesign';
 
 
-@import 'events';
 
-@import 'drupaloverrides';
-@import 'hacks';
-@import 'styleguide';

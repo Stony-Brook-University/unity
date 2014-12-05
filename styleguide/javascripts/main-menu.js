@@ -1,6 +1,9 @@
+(function($)
+{
+
 
 $(document).ready(function() {
-    $("li.main-menu-menu-item").each(
+    $("#main-menu ul.menu li").each(
         function() {
 
 
@@ -8,17 +11,19 @@ $(document).ready(function() {
 
             if($(this).width() > 200)
                 menuItemWidth = $(this).width()-2;
-            $('ul.main-menu-sub-menu', this).width(menuItemWidth);
-            $('ul.main-menu-sub-menu li', this).width(menuItemWidth);
+            $('#main-menu ul.menu ul', this).width(menuItemWidth);
+            $('#main-menu ul.menu ul li', this).width(menuItemWidth);
         }
     );
 
-    $('li.main-menu-menu-item').hover(
+    $('#main-menu ul.menu li').hover(
         function() {
-            $('ul', this).slideDown(200);
+            $('ul.menu', this).slideDown(200);
         },
         function() {
-            $('ul', this).stop(true, true).slideUp(200);
+            $('ul.menu', this).stop(true, true).slideUp(200);
         }
     );
 });
+
+})(jQuery);

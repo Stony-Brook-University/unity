@@ -82,8 +82,9 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
     			<div id="header-content"><a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="/stylesheets/images/stony-brook-university.png" alt="Stony Brook University Logo" /></a><a id="site-logo" href="/"><img title="Home" src="/stylesheets/images/doit-logo.png" /></a></div>
 	</div>
 	
-  <div id="main-menu">
-          <div id="main-menu-content">
+  <div id="main-menu-wrap">
+    <div id="main-menu-menu-wrap">
+          <div id="main-menu">
 
 
                   <div id="main-menu-navigation" class="navigation">
@@ -107,7 +108,12 @@ else if (isset($_GET['w']) && $_GET['w'] == '960')
             	</div>
 
             </div>
- 			
+
+        <div id="sb-search">
+Search
+        </div>
+
+          </div>
 
 </div>
 

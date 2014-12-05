@@ -41,7 +41,7 @@ html body
 {
 	
 	
-	#admin-menu
+	/*#admin-menu
 	{
 		display: none;
     margin-top: 0px !important;
@@ -53,7 +53,7 @@ html body
         margin-top: 3em !important;
 		}
 
-	}
+	}*/
 
 
 }
@@ -64,6 +64,45 @@ body {
   margin: 0;
   padding: 0;
  background-color: #ccc;
+}
+
+
+html body
+{
+  margin-top: 0px;
+
+
+  @include breakpoint($break2)
+  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #admin-menu
+  {
+    display: none;
+
+    @include breakpoint($break2)
+    {
+      display: block;
+    }
+
+  }
+
+
+}
+
+html body.admin-menu
+{
+    margin-top: 0px !important;
+
+
+  @include breakpoint($break2)
+  {
+    margin-top: 39px !important;
+    
+  }
+
 }
 
 
@@ -128,7 +167,7 @@ width: 100%;
 
 
 
-#footer
+#footer-content
 {
 
   @include grid-span(1, 1, $options: 'both');
@@ -266,15 +305,12 @@ width: 100%;
 
 @import 'banner';
 
-//@import 'full-width';
-//@import 'fixed-width';
 @import 'front';
 @import 'potter';
 @import 'dumbledore';
 @import 'notfront';
-@import 'service';
 @import 'mainnav';
 @import 'snape';
-
+@import 'ciuffo';
 
 

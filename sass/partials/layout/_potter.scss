@@ -1,5 +1,18 @@
 .panel-layout-potter
 {
+
+
+#page #main-wrap
+{
+	padding: 0px;
+}
+
+
+.panel-pane
+{
+	margin-bottom: 20px;
+}
+
 	#content
 	{
 	@include grid-span(1, 1, $options: 'both');
@@ -57,7 +70,7 @@
 		@include grid-span(16, 1, $options: 'both');
 	  }
 
-	  padding: 0px 10px;
+	  padding: 0px 20px;
 	}
 
 	#section-a
