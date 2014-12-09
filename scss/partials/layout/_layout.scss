@@ -39,29 +39,40 @@ $gutters: add-gutter(.4);
 
 html body
 {
-	
-	
-	#admin-menu
-	{
-		display: none;
-    margin-top: 0px !important;
+  margin-top: 0px;
 
-		@include breakpoint($break2)
-		{
-			display: block;
-		}
 
-	}
+  @include breakpoint($break2)
+  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #admin-menu
+  {
+    display: none;
+
+    @include breakpoint($break2)
+    {
+      display: block;
+    }
+
+  }
 
 
 }
 
+html body.admin-menu
+{
+    margin-top: 0px !important;
 
 
-body {
-  margin: 0;
-  padding: 0;
- background-color: #ccc;
+  @include breakpoint($break2)
+  {
+    margin-top: 39px !important;
+    
+  }
+
 }
 
 
@@ -265,6 +276,14 @@ width: 100%;
 }
 
 
+#main-content-header
+{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
 @import 'page';
 
 @import 'banner';
@@ -272,9 +291,11 @@ width: 100%;
 //@import 'full-width';
 //@import 'fixed-width';
 @import 'front';
+@import 'notfront';
 @import 'potter';
 @import 'dumbledore';
-@import 'notfront';
+@import 'ciuffo';
+@import 'responsive-2col';
 @import 'service';
 @import 'mainnav';
 @import 'snape';

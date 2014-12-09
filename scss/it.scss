@@ -94,3 +94,36 @@
 .view.view-featured-services ul li.views-row-odd, .view.view-featured-services ul li.views-row-even {
   background-color: #fff;
 }
+
+
+.support-contact
+{
+  width: 100%;
+  .support-image
+  {
+    width: 150px;
+    float: left;
+  }
+  .support-text
+  {
+    float: left;
+    margin-left: 1em;
+  }
+
+  a.button.report-a-problem
+  {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  clear: both;
+}
+
+.view-related-kb-articles
+{
+  margin-top: 1em;
+}
+.view-related-kb-articles caption h3
+{
+  margin: 0;
+}

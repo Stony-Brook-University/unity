@@ -1,10 +1,8 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\000031}}
 .view-projects .views-field-field-projectstatus {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\000035}}
 .view-projects span.Green-Dot, .view-projects span.Yellow-Dot, .view-projects span.Red-Dot, .view-projects span.Green-Check {
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -12,7 +10,6 @@
   padding-left: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000311}}
 .view-projects caption {
   color: #990000;
   text-decoration: none;
@@ -25,64 +22,52 @@
   font-family: "news-gothic-std", Arial, sans serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000322}}
 .view-projects .Green-Dot {
   background-image: url("/sites/all/themes/minit/css/images/status/green-circle.gif");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000325}}
 .view-projects th {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000328}}
 .view-projects th.views-field-nothing {
   width: 65%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000331}}
 .view-projects th.views-field-field-phase {
   width: 68px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000334}}
 .view-projects th.views-field-field-projectstatus {
   width: 47px;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000338}}
 .view-projects th.views-field-field-projectstatus-1 {
   width: 71px;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000342}}
 .view-projects th.views-field-field-project-manager {
   width: 90px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000345}}
 .view-projects th.views-field-field-project-end-date {
   width: 100px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000348}}
 .view-projects .Yellow-Dot {
   background-image: url("/sites/all/themes/minit/css/images/status/yellow-circle.gif");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000351}}
 .view-projects .Red-Dot {
   background-image: url("/sites/all/themes/minit/css/images/status/red-circle.gif");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000354}}
 .view-projects .Green-Check {
   background-image: url("/sites/all/themes/minit/css/images/status/green-check.gif");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000358}}
 .view-id-events_calendar div.date .top {
   color: #fff;
   background-color: #990000;
@@ -92,7 +77,6 @@
   min-height: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000367}}
 .view-id-events_calendar div .date {
   float: left;
   width: 60px;
@@ -105,25 +89,46 @@
   font-size: 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000379}}
 .view-id-events_calendar .views-row {
   margin-bottom: 10px;
   clear: both;
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000385}}
 .view-id-events_calendar .event-details {
   float: left;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000390}}
 .event-clear {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/it\.scss}line{font-family:\0000394}}
 .view.view-featured-services ul li.views-row-odd, .view.view-featured-services ul li.views-row-even {
   background-color: #fff;
+}
+
+.support-contact {
+  width: 100%;
+  clear: both;
+}
+.support-contact .support-image {
+  width: 150px;
+  float: left;
+}
+.support-contact .support-text {
+  float: left;
+  margin-left: 1em;
+}
+.support-contact a.button.report-a-problem {
+  font-size: 1em;
+  padding: 1em;
+}
+
+.view-related-kb-articles {
+  margin-top: 1em;
+}
+
+.view-related-kb-articles caption h3 {
+  margin: 0;
 }

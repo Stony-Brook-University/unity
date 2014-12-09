@@ -1,34 +1,28 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/toolkit-1\.0\.0\/stylesheets\/toolkit\/_border-box\.scss}line{font-family:\000036}}
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/toolkit-1\.0\.0\/stylesheets\/toolkit\/_fluid-media\.scss}line{font-family:\000034}}
 img, video {
   max-width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/partials\/global\/_extendables\.scss}line{font-family:\0000314}}
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/partials\/global\/_extendables\.scss}line{font-family:\0000319}}
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/partials\/global\/_base\.scss}line{font-family:\0000326}}
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/git\/unity\/scss\/partials\/global\/_base\.scss}line{font-family:\0000331}}
 h2 {
   margin-top: 0px;
 }

@@ -14,7 +14,7 @@ border-top: 0px;
 
 body
 {
-		background: #fff;
+		background: #ccc;
 }
 
 a:link, a:visited, a:active {
@@ -33,6 +33,12 @@ a:hover, a.selected {
 }
 
 
+#main
+{
+	padding: 0px 10px;
+}
+
+
 #header
 {
 	#logo, #logo img
@@ -42,43 +48,27 @@ a:hover, a.selected {
 	}
 }
 
-#main
-{
-	padding: 0px 10px;
-}
-
-#main-wrap-full
-{
-	width: 100%;
-	background-color: #fff;
-}
-
-
-
-#main-wrap-restricted
-{
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-#header-content
-{
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-#page
-{
-	background-color: #fff;
-}
-
 #main-prefix
 {
 padding: 10px 5px 5px 5px;
 border-right: 1px solid #ccc;
 }
 
-.field-name-body h2, #main-content h2
+#page
+{
+
+	background-color: #fff;
+	@include breakpoint($break2)
+	{
+		-moz-box-shadow: 0 0 5px 5px #888;
+		-webkit-box-shadow: 0 0 5px 5px#888;
+		box-shadow: 0 0 5px 5px #888;
+	}
+
+
+}
+
+.field-name-body h2, #main-content-section h2
 {
 	border-bottom: 0px;
 	color: #000000;
@@ -109,7 +99,7 @@ border-right: 1px solid #ccc;
 }
 
 
-#main-content .star-title
+.star-title
 {
 	.panel-title-div
 	{
@@ -125,9 +115,25 @@ border-right: 1px solid #ccc;
 		padding: 3px 10px;
 		color: #fff;
 		border: 0px;
-		font-family: Calibri;
+		
 		font-weight: normal;
+				font-size: 1.4em;
+		margin: 0 0 0 10px;
 	}
+
+
+
+.sub-star-pane
+{
+	margin-top: 10px;
+	
+	h2.pane-title
+	{
+
+		margin-bottom: 5px;
+		font-size: 1.2em;
+	}
+}
 
 	.panel-title-red-bar
 	{
@@ -273,15 +279,7 @@ border-right: 1px solid #ccc;
 
 
 
-body .section-heading {
-  text-align: center;
-  line-height: 1.25;
-  margin: 0px;
-}
-body h2.section-heading {
-  font-size: 2.5em;
-  margin: 0.5em 0 1em 0;
-}
+
 
 
 
@@ -307,11 +305,7 @@ body h2.section-heading {
 @import 'search';
 @import 'slider';
 @import 'webforms';
-@import 'services-redesign';
+//@import 'services-redesign';
 
 
-@import 'events';
 
-@import 'drupaloverrides';
-@import 'hacks';
-@import 'styleguide';
