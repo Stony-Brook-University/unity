@@ -1,0 +1,44 @@
+.styleguide {
+    .examples {
+        background-color: #ccc;
+        margin: 10px -15px 0px -15px;
+        padding: 10px 15px 10px 15px;
+        clear: both;
+        .examples-example {
+            margin: 10px;
+        }
+    }
+    .demos {
+        padding: 10px 0px;
+        margin: 10px 0px;
+        clear: both;
+        .examples-example {
+            margin: 10px;
+        }
+    }
+    .swatch {
+        width: 100%;
+        height: 75px;
+        margin-bottom: 5px;
+        color: #fff;
+        &.red {
+            background-color: $stony-brook-red;
+        }
+        &.blue {
+            background-color: $blue;
+        }
+        &.dark-gray {
+            background-color: $dark-gray;
+        }
+        &.light-gray {
+            background-color: $light-gray;
+        }
+    }
+
+
+    .sample-card
+    {
+    	height: 200px;
+    	background-color: $blue;
+    }
+}

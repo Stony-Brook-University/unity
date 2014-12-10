@@ -1,0 +1,106 @@
+body.panel-layout-ciuffo.not-front.unity-no-sidebars
+{
+
+
+
+.panel-pane
+{
+	margin-bottom: 20px;
+}
+
+#main-wrap-restricted
+{
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#main-wrap-content
+{
+	padding: 0px;
+}
+
+		
+
+	#content-primary
+	{
+	   @include grid-span(1, 1, $options: 'both');
+	  
+	   @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+
+	   /* @include breakpoint($break2) {
+		@include grid-span(9, 1, $options: 'both');
+	  }  */
+	  
+
+	  @include breakpoint($break2) {
+		@include grid-span(16, 1, $options: 'both');
+	  }
+	  
+	}
+
+	#section-a
+	{
+
+	 @include grid-span(1, 1, $options: 'both');
+	 
+	  @include breakpoint($break) {
+		@include grid-span(4, 1, $options: 'both');
+	  }
+	  
+	 /*  @include breakpoint($break2) {
+		@include grid-span(3, 1);
+	  }*/
+
+	  
+	   @include breakpoint($break2) {
+		@include grid-span(16, 1, $options: 'both');
+		
+	  
+		.entity-paragraphs-item .content
+		{
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+	  }
+	}
+}
+
+body.panel-layout-ciuffo.not-front.unity-no-sidebars.node-type-service-page #main-wrap-restricted
+{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+.panel-layout-ciuffo
+{
+
+	h1.title
+	{
+		display: none;
+	}
+
+	#section-a
+	{
+		.pane-content
+		{
+			div.section:nth-child(even)
+			{
+
+				background-image: image-url('textures/bright-squares.png');
+	background-repeat: repeat;
+	background-color: $light-gray;
+	
+				
+			}
+		}
+	}
+}
+
+

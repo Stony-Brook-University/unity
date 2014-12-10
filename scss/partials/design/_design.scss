@@ -1,0 +1,317 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+tbody
+{
+border-top: 0px;
+}
+
+body
+{
+		background: #fff;
+}
+
+a:link, a:visited, a:active {
+		background-color: transparent;
+		color: #990000;
+		text-decoration: none;
+}
+
+/*
+**		Set link color to darker gray (#444444) for link hover.
+*/
+a:hover, a.selected {
+		background-color: transparent;
+		color: #444444;
+		text-decoration: underline;
+}
+
+
+#header
+{
+	#logo, #logo img
+	{
+		width: 64.166666666667%;
+		max-width: 616px;
+	}
+}
+
+#main
+{
+	padding: 0px 10px;
+}
+
+#main-wrap-full
+{
+	width: 100%;
+	background-color: #fff;
+}
+
+
+
+#main-wrap-restricted
+{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#header-content
+{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#page
+{
+	background-color: #fff;
+}
+
+#main-prefix
+{
+padding: 10px 5px 5px 5px;
+border-right: 1px solid #ccc;
+}
+
+.field-name-body h2, #main-content h2
+{
+	border-bottom: 0px;
+	color: #000000;
+	margin-bottom: 0.4em;
+}
+
+#right-prefix, #right-postfix, #main-suffix 
+{
+	h2
+	{
+		margin-bottom: 5px;
+	}
+
+	.panel-pane
+	{
+		margin-bottom: 15px;
+	}
+
+	.panel-pane .panel-pane
+	{
+		margin-bottom: 3px;
+	}
+}
+
+#main-content .panel-pane
+{
+	margin-bottom: 15px;
+}
+
+
+#main-content .star-title
+{
+	.panel-title-div
+	{
+	 	background-color: #000;
+	 	height: 34px;
+	 	border-top-right-radius: 15px;
+
+
+	}
+
+	.panel-title-div h2
+	{
+		padding: 3px 10px;
+		color: #fff;
+		border: 0px;
+		font-family: Calibri;
+		font-weight: normal;
+	}
+
+	.panel-title-red-bar
+	{
+		background-image: url('/sites/all/themes/custom/unity/stylesheets/images/red-star.gif');
+	 	background-repeat: no-repeat;
+	 	background-position: 0px 0px;
+		height: 13px;
+		background-color: #990000;
+	}
+
+	.panel-title-red-triangle
+	{
+
+	 	background-image: url('/sites/all/themes/custom/unity/stylesheets/images/red-triangle.gif');
+	 	background-repeat: no-repeat;
+	 	background-position: 0px 0px;
+		color: #fff;
+		height: 15px;
+
+		margin-bottom: 5px;
+
+	}
+}
+
+
+.green
+{
+	color: $green;
+}
+
+.red
+{
+	color: $red;
+}
+
+.dark-red
+{
+	color: $dark-red;
+}
+
+.light-red{
+	color: $light-red;
+}
+
+.black
+{
+	color: $black;
+}
+
+.blue
+{
+	color: $blue;
+}
+
+.dark-gray
+{
+	color: $dark-gray;
+}
+
+.light-gray
+{
+	color: $light-gray;
+}
+
+.gray
+{
+	color: $gray;
+}
+
+.clearboth
+{
+	clear: both;
+}
+
+
+.rtecenter
+{
+	text-align: center;
+}
+
+.link-separator
+{
+	padding: 0px 10px 0px 10px;
+	display: inline;
+}
+
+
+.background-red
+{
+	background-color: $red;
+}
+
+.background-light-red
+{
+	background-color: $light-red;
+}
+
+.background-dark-red
+{
+	background-color: $dark-red;
+}
+
+
+.background-blue
+{
+	background-color: $blue;
+}
+
+.background-light-blue
+{
+	background-color: $light-blue;
+}
+
+.background-dark-blue
+{
+	background-color: $dark-blue;
+}
+
+.background-gray
+{
+	background-color: $gray;
+}
+
+.background-light-gray
+{
+	background-color: $light-gray;
+}
+
+.background-dark-gray
+{
+	background-color: $dark-gray;
+}
+
+.background-green
+{
+	background-color: $green;
+}
+
+.background-black
+{
+	background-color: $black;
+}
+
+
+
+body .section-heading {
+  text-align: center;
+  line-height: 1.25;
+  margin: 0px;
+}
+body h2.section-heading {
+  font-size: 2.5em;
+  margin: 0.5em 0 1em 0;
+}
+
+
+
+@import 'normalize';
+@import 'header';
+@import 'mainnav';
+@import 'footer';
+
+@import 'text';
+@import 'sections';
+@import 'cards';
+@import 'promo';
+@import 'panels';
+
+
+
+@import 'sidr-light';
+
+@import 'secondarynav';
+@import 'buttons';
+@import 'backgrounds';
+@import 'views-styles';
+@import 'search';
+@import 'slider';
+@import 'webforms';
+@import 'services-redesign';
+
+
+@import 'events';
+
+@import 'drupaloverrides';
+@import 'hacks';
+@import 'styleguide';

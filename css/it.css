@@ -1,0 +1,134 @@
+.view-projects .views-field-field-projectstatus {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.view-projects span.Green-Dot, .view-projects span.Yellow-Dot, .view-projects span.Red-Dot, .view-projects span.Green-Check {
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  width: 100px;
+  padding-left: 20px;
+}
+
+.view-projects caption {
+  color: #990000;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #990000;
+  margin: 0;
+  padding: 10px 0;
+  font-family: "news-gothic-std", Arial, sans serif;
+}
+
+.view-projects .Green-Dot {
+  background-image: url("/sites/all/themes/minit/css/images/status/green-circle.gif");
+}
+
+.view-projects th {
+  text-align: left;
+}
+
+.view-projects th.views-field-nothing {
+  width: 65%;
+}
+
+.view-projects th.views-field-field-phase {
+  width: 68px;
+}
+
+.view-projects th.views-field-field-projectstatus {
+  width: 47px;
+  text-align: center;
+}
+
+.view-projects th.views-field-field-projectstatus-1 {
+  width: 71px;
+  text-align: center;
+}
+
+.view-projects th.views-field-field-project-manager {
+  width: 90px;
+}
+
+.view-projects th.views-field-field-project-end-date {
+  width: 100px;
+}
+
+.view-projects .Yellow-Dot {
+  background-image: url("/sites/all/themes/minit/css/images/status/yellow-circle.gif");
+}
+
+.view-projects .Red-Dot {
+  background-image: url("/sites/all/themes/minit/css/images/status/red-circle.gif");
+}
+
+.view-projects .Green-Check {
+  background-image: url("/sites/all/themes/minit/css/images/status/green-check.gif");
+}
+
+.view-id-events_calendar div.date .top {
+  color: #fff;
+  background-color: #990000;
+  /*2F4765*/
+  padding: 3px 0;
+  margin: 0 0 8px 0;
+  min-height: 20px;
+}
+
+.view-id-events_calendar div .date {
+  float: left;
+  width: 60px;
+  min-height: 60px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.view-id-events_calendar .views-row {
+  margin-bottom: 10px;
+  clear: both;
+  height: 100%;
+}
+
+.view-id-events_calendar .event-details {
+  float: left;
+  margin-left: 10px;
+}
+
+.event-clear {
+  clear: both;
+}
+
+.view.view-featured-services ul li.views-row-odd, .view.view-featured-services ul li.views-row-even {
+  background-color: #fff;
+}
+
+.support-contact {
+  width: 100%;
+  clear: both;
+}
+.support-contact .support-image {
+  width: 150px;
+  float: left;
+}
+.support-contact .support-text {
+  float: left;
+  margin-left: 1em;
+}
+.support-contact a.button.report-a-problem {
+  font-size: 1em;
+  padding: 1em;
+}
+
+.view-related-kb-articles {
+  margin-top: 1em;
+}
+
+.view-related-kb-articles caption h3 {
+  margin: 0;
+}

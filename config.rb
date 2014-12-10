@@ -4,8 +4,8 @@ require 'aurora'
 # Set this to the root of your project when deployed:
 #http_path = "/"
 http_images_path = "images"
-css_dir = "stylesheets"
-sass_dir = "sass"
+css_dir = "css"
+sass_dir = "scss"
 images_dir = "images"
 javascripts_dir = "javascripts"
 fonts_dir = "stylesheets/fonts"
