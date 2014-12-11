@@ -97,14 +97,20 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		width: 100%;
 		max-width: 1200px;
 		margin: 0 auto;
+		padding: 0 1em;
 
 		h1
 		{
-			font-size: 4em;
+			font-size: 2em;
+			color: #000;
 			text-transform: uppercase;
 			font-weight: 400;
-			text-shadow: 2px 2px 5px #000000;
-			margin-top: 0;
+			@include breakpoint($break) {
+				font-size: 4em;
+				text-shadow: 2px 2px 5px #000000;
+				margin-top: 0;
+				color: #fff;
+			}
 
 		}
 
@@ -333,6 +339,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 }
 
+/*
 .banner .banner-content-wrap .banner-content-text, .hero .hero-content-wrap .hero-content-text
 {
 
@@ -343,11 +350,11 @@ text-align: left;
 
 	@include breakpoint($break) {
 		margin: 0 auto;
-		padding: 0px;
+		
 		text-align: left;
 	}
 
-}
+}*/
 
 .banner .banner-image img
 {
