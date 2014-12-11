@@ -101,6 +101,7 @@
   width: 100%;
   .support-image
   {
+
     width: 75px;
     float: left;
   }
@@ -108,6 +109,13 @@
   {
     float: left;
     margin-left: 1em;
+    max-width: 290px;
+
+  }
+
+  .unity-no-sidebars .support-text
+  {
+     max-width: 225px;
   }
 
   a.button.report-a-problem
