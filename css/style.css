@@ -2407,7 +2407,6 @@ body {
 .hero .hero-content-wrap .hero-content-text {
   padding: 0 1em;
   text-align: center;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -2423,6 +2422,11 @@ body {
 
 }
 */
+.banner-minimal {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
 .banner-banner-box .banner-content-wrap {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
@@ -2435,16 +2439,85 @@ body {
   }
 }
 
-.banner-banner-box .banner-image {
+.banner-banner-box .banner-image, .banner-minimal .banner-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 @media (min-width: 420px) {
-  .banner-banner-box .banner-image {
+  .banner-banner-box .banner-image, .banner-minimal .banner-image {
     height: 550px;
   }
+}
+
+@media (min-width: 420px) {
+  .banner-minimal .banner-content-wrap {
+    width: 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 80%;
+  }
+}
+@media (min-width: 800px) {
+  .banner-minimal .banner-content-wrap {
+    min-width: 600px;
+  }
+}
+.banner-minimal .banner-content-text {
+  color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner-minimal .banner-content-text h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #000000;
+  margin-top: 0;
+}
+.banner-minimal .banner-content-text .banner-buttons {
+  max-width: 800px;
+}
+.banner-minimal .banner-content-text .outline-button {
+  margin: 0 1em 1em 0;
+}
+.banner-minimal .banner-content-text .outline-button-maintenance {
+  background: rgba(30, 115, 144, 0.8);
+  text-transform: none;
+}
+.banner-minimal .banner-content-text .outline-button-maintenance:hover {
+  background: rgba(153, 0, 0, 0.8);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-000, .banner-minimal .banner-content-text .outline-button-system-status-000:hover {
+  text-transform: none;
+  background: rgba(48, 136, 43, 0.8);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-310 {
+  text-transform: none;
+  background: rgba(26, 76, 161, 0.8);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-307 {
+  text-transform: none;
+  background: rgba(153, 0, 0, 0.6);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-308 {
+  text-transform: none;
+  background: rgba(249, 196, 30, 0.8);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-309 {
+  text-transform: none;
+  background: rgba(153, 0, 0, 0.6);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-307:hover, .banner-minimal .banner-content-text .outline-button-system-status-308:hover, .banner-minimal .banner-content-text .outline-button-system-status-309:hover, .banner-minimal .banner-content-text .outline-button-system-status-310:hover {
+  background: rgba(153, 0, 0, 0.8);
 }
 
 .banner-content-box {
@@ -2466,19 +2539,19 @@ body {
 
 @media (min-width: 420px) {
   .banner.banner-banner-box.system-status-308 .banner-content-wrap .banner-content-text.system-status-307 {
-    background: rgba(0, 0, 153, 0.7);
+    background: rgba(0, 0, 153, 0.5);
   }
 }
 
 @media (min-width: 420px) {
   .banner.banner-banner-box.system-status-308 .banner-content-wrap .banner-content-text {
-    background: rgba(0, 0, 153, 0.7);
+    background: rgba(0, 0, 153, 0.5);
   }
 }
 
 @media (min-width: 420px) {
   .banner.banner-banner-box.system-status-000 .banner-content-wrap .banner-content-text {
-    background: rgba(0, 153, 0, 0.7);
+    background: rgba(0, 153, 0, 0.5);
   }
 }
 
@@ -2516,7 +2589,7 @@ body {
 @media (min-width: 420px) {
   .banner.banner-banner-box .banner-content-wrap .banner-content-text {
     width: 100%;
-    background: rgba(153, 0, 0, 0.7);
+    background: rgba(113, 113, 113, 0.5);
     color: #fff;
     padding: 1em 2em;
   }
@@ -2534,9 +2607,6 @@ body {
   .banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-system-status a, .banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-system-status a:hover {
     color: #fff;
   }
-}
-.banner.banner-banner-box .banner-content-wrap .banner-content-text .glassy-button {
-  float: left;
 }
 .banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-buttons .glassy-button {
   width: 100%;
@@ -2622,7 +2692,6 @@ body {
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
   box-sizing: border-box;
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #303030;
   overflow-x: hidden;
@@ -6919,6 +6988,21 @@ a.glassy-button {
 a.glassy-button:hover {
   text-decoration: none;
   background: rgba(153, 0, 0, 0.85);
+}
+
+.outline-button, a.outline-button {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1em;
+  display: inline-block;
+}
+
+.outline-button:hover, a.outline-button:hover {
+  background: rgba(153, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 .blue-gradient {

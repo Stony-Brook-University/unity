@@ -1,9 +1,12 @@
 
 
+
+
+
 .hero .hero-content-wrap .hero-content-text{
 	padding: 0 1em;
 	text-align: center;
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	
 }
 
 /*
@@ -19,6 +22,15 @@
 
 }
 */
+
+
+.banner-minimal
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+
 
 .banner-banner-box .banner-content-wrap
 {
@@ -39,7 +51,7 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 }
 
-.banner-banner-box .banner-image
+.banner-banner-box .banner-image, .banner-minimal .banner-image
 {
 	@include breakpoint($break) {
 		height: 550px;
@@ -51,6 +63,110 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   background-size: cover;
 	
 
+}
+
+.banner-minimal
+{
+		.banner-content-wrap
+		{
+			@include breakpoint($break) {
+			width: 100%;
+			
+			display: block;
+			position: absolute;
+			width: 100%;
+
+			top: 0;
+			bottom: 0;
+			left: 0;	
+			right: 0;
+			margin: auto;
+			height: 80%;
+			
+		}
+
+		@include breakpoint($break2) {
+			
+			min-width: 600px;
+
+		}
+
+	}
+	.banner-content-text{
+		color: #fff;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		h1
+		{
+			font-size: 4em;
+			text-transform: uppercase;
+			font-weight: 400;
+			text-shadow: 2px 2px 5px #000000;
+			margin-top: 0;
+
+		}
+
+		.banner-buttons
+		{
+			max-width: 800px;
+		}
+
+
+		.outline-button
+		{
+			margin: 0 1em 1em 0;
+		}
+
+		.outline-button-maintenance
+		{
+			background: rgba(30,115,144,0.8);
+			text-transform: none;
+		}
+
+		.outline-button-maintenance:hover
+		{
+			background: rgba(153,0,0,0.8);
+		}
+
+		.outline-button-system-status-000,.outline-button-system-status-000:hover
+		{
+			text-transform: none;
+			background: rgba(48,136,43,0.8);
+		}
+
+		.outline-button-system-status-310
+		{
+			text-transform: none;
+			background: rgba(26,76,161,0.8);
+		}
+
+		.outline-button-system-status-307
+		{
+			text-transform: none;
+			background: rgba(153,0,0,0.6);
+		}
+
+		.outline-button-system-status-308
+		{
+			text-transform: none;
+			background: rgba(249,196,30,0.8);
+		}
+
+		.outline-button-system-status-309
+		{
+			text-transform: none;
+			background: rgba(153,0,0,0.6);
+		}
+
+
+		.outline-button-system-status-307:hover, .outline-button-system-status-308:hover,.outline-button-system-status-309:hover,.outline-button-system-status-310:hover
+		{
+				background: rgba(153,0,0,0.8);	
+		}
+  }
+	
 }
 
 .banner-content-box
@@ -71,21 +187,21 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 .banner.banner-banner-box.system-status-308 .banner-content-wrap .banner-content-text.system-status-307
 {
 	@include breakpoint($break) {
-	background: rgba(0,0,153,0.7);
+	background: rgba(0,0,153,0.5);
 	}
 }
 
 .banner.banner-banner-box.system-status-308 .banner-content-wrap .banner-content-text
 {
 	@include breakpoint($break) {
-	background: rgba(0,0,153,0.7);
+	background: rgba(0,0,153,0.5);
 	}
 }
 
 .banner.banner-banner-box.system-status-000 .banner-content-wrap .banner-content-text
 {
 	@include breakpoint($break) {
-	background: rgba(0,153,0,0.7);
+	background: rgba(0,153,0,0.5);
 	}
 }
 
@@ -96,7 +212,7 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 	@include breakpoint($break) {
 		width: 100%;
-		background: rgba(153,0,0,0.7);
+		background: rgba(113,113,113,0.5);
 		color: #fff;
 		padding: 1em 2em;
 	}
@@ -126,11 +242,7 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 
 
-	.glassy-button
-	{
-		float: left;
-		
-	}
+	
 /*
 	.banner-buttons.three-buttons .glassy-button
 	{
@@ -250,7 +362,7 @@ text-align: left;
 box-sizing: border-box;
 
 display: block;
-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
 font-size: 18px;
 	color: #303030;
 
