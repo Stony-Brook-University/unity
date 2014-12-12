@@ -22,12 +22,22 @@
 
 }
 */
-
+#banner
+{
+	background-color: #000;
+}
 
 .banner-minimal
 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
+
+	background-color: #000;
+
+	.banner-image
+	{
+		background-color: #000;
+	}
 }
 
 
@@ -67,6 +77,8 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 .banner-minimal
 {
+		background-color: #000;
+
 		.banner-content-wrap
 		{
 			@include breakpoint($break) {
@@ -102,7 +114,7 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		h1
 		{
 			font-size: 2em;
-			color: #000;
+			color: #fff;
 			text-transform: uppercase;
 			font-weight: 400;
 			@include breakpoint($break) {
@@ -300,10 +312,12 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 .banner.banner-service-page .banner-image
 {
-	
+
+	background-color: #000;
 
 	@include breakpoint($break) {
 		height: 300px;
+
 	}
 	@include breakpoint($break2) {
 	height: 550px;
