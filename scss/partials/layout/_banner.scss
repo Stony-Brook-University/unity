@@ -139,49 +139,67 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 		.outline-button-maintenance
 		{
+			background: #1e7390;
 			background: rgba(30,115,144,0.8);
 			text-transform: none;
 		}
 
 		.outline-button-maintenance:hover
 		{
+			background: #990000;
 			background: rgba(153,0,0,0.8);
 		}
 
 		.outline-button-system-status-000,.outline-button-system-status-000:hover
 		{
 			text-transform: none;
+			background: #30882b;
 			background: rgba(48,136,43,0.8);
+			max-width: 300px;
 		}
 
 		.outline-button-system-status-310
 		{
 			text-transform: none;
+			background: #1a4ca1;
 			background: rgba(26,76,161,0.8);
 		}
 
 		.outline-button-system-status-307
 		{
 			text-transform: none;
+			background: #990000;
 			background: rgba(153,0,0,0.6);
 		}
 
 		.outline-button-system-status-308
 		{
 			text-transform: none;
+			background: #f9c41e;
 			background: rgba(249,196,30,0.8);
+
+			a
+			{
+				color: #000;
+			}
 		}
 
 		.outline-button-system-status-309
 		{
 			text-transform: none;
+			background: #990000;
 			background: rgba(153,0,0,0.6);
 		}
 
 
 		.outline-button-system-status-307:hover, .outline-button-system-status-308:hover,.outline-button-system-status-309:hover,.outline-button-system-status-310:hover
 		{
+			background-color: #660000;
 				background: rgba(153,0,0,0.8);	
+				a
+				{
+					color: #fff;
+				}
 		}
   }
 	

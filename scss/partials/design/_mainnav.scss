@@ -185,6 +185,9 @@ cursor: pointer;
   list-style-type: none;
   list-style-image: none;
   display: inline-block;
+  zoom: 1;
+    *display: inline;
+    max-width: 200px;
 }
 #main-menu ul.menu li a, #main-menu ul.menu li span {
   /*  border: 1px solid #990000;*/
@@ -229,6 +232,8 @@ cursor: pointer;
 #main-menu #sidr-wrapper-0 #sidr-0-button {
   color: #fff;
   display: inline-block;
+  zoom: 1;
+    *display: inline;
   background-color: #990000;
   height: 42px;
   border-radius: 0px;
