@@ -9,19 +9,7 @@
 	
 }
 
-/*
-.banner.banner-banner-box
-{
-	@include breakpoint($break) {
-		height: 300px;
-	}
-	@include breakpoint($break2) {
-		height: 550px;
-	}
-	
 
-}
-*/
 #banner
 {
 	background-color: #000;
@@ -81,7 +69,7 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 		.banner-content-wrap
 		{
-			@include breakpoint($break) {
+		
 			width: 100%;
 			
 			display: block;
@@ -93,17 +81,15 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 			left: 0;	
 			right: 0;
 			margin: auto;
-			height: 80%;
+
+			@include breakpoint($break2)
+			{
+				height: 80%;
+			}
+			
 			
 		}
 
-		@include breakpoint($break2) {
-			
-			min-width: 600px;
-
-		}
-
-	}
 	.banner-content-text{
 		color: #fff;
 		width: 100%;
@@ -111,13 +97,15 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		margin: 0 auto;
 		padding: 0 1em;
 
+	
 		h1
 		{
-			font-size: 2em;
+			font-size: 3em;
 			color: #fff;
+			text-shadow: 2px 2px 5px #000000;
 			text-transform: uppercase;
 			font-weight: 400;
-			@include breakpoint($break) {
+			@include breakpoint($break2) {
 				font-size: 4em;
 				text-shadow: 2px 2px 5px #000000;
 				margin-top: 0;
@@ -134,7 +122,14 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 		.outline-button
 		{
-			margin: 0 1em 1em 0;
+			margin: 0 1em 0.80em 0;
+			font-size: 0.8em;
+
+			@include breakpoint($break2) {
+
+				margin: 0 1em 1em 0;
+				font-size: 1.0em;
+			}
 		}
 
 		.outline-button-maintenance
@@ -275,56 +270,6 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		}
 
 	}
-
-
-
-	
-/*
-	.banner-buttons.three-buttons .glassy-button
-	{
-		width: 100%;
-		margin-right: 0;
-		max-width: 400px;
-
-		@include breakpoint($break2) {
-		margin-right: 1%;
-		width: 49%;
-		}
-	}
-
-	.banner-buttons.two-buttons .glassy-button
-	{
-		width: 100%;
-		margin-right: 0;
-		max-width: 400px;
-		
-		@include breakpoint($break2) {
-
-		margin-right: 1%;
-		width: 49%;
-		}
-	}*/
-
-	.banner-buttons .glassy-button
-	{
-		width: 100%;
-		margin-right: 0;
-		max-width: 400px;
-
-		@include breakpoint($break2) {
-		width:80%;
-		}
-	}
-
-	.banner-buttons .glassy-button.last
-	{
-		margin-right: 0%;
-	}
-
-	.banner-system-status
-	{
-		clear:both;
-	}
 }
 
 
@@ -332,19 +277,20 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 {
 
 	background-color: #000;
-
-	@include breakpoint($break) {
-		height: 300px;
-
-	}
-	@include breakpoint($break2) {
 	height: 550px;
-	}
-		 -webkit-background-size: cover;
+	
+   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	
+}
+
+.banner.banner-bottom-fade .banner-text
+{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1em;
 }
 
  .banner.banner-bottom-fade .banner-content-wrap, .hero .hero-content-wrap
@@ -414,7 +360,12 @@ position: relative;
 transform: matrix(1, 0, 0, 1, 0, 0);
 width: 100%;
 
-margin-bottom: 2em;
+
+}
+
+
+#banner{
+	margin-bottom: 2em;
 }
 
 

@@ -2409,22 +2409,17 @@ body {
   text-align: center;
 }
 
-/*
-.banner.banner-banner-box
-{
-	@include breakpoint($break) {
-		height: 300px;
-	}
-	@include breakpoint($break2) {
-		height: 550px;
-	}
-	
-
+#banner {
+  background-color: #000;
 }
-*/
+
 .banner-minimal {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  background-color: #000;
+}
+.banner-minimal .banner-image {
+  background-color: #000;
 }
 
 .banner-banner-box .banner-content-wrap {
@@ -2451,23 +2446,23 @@ body {
   }
 }
 
-@media (min-width: 420px) {
-  .banner-minimal .banner-content-wrap {
-    width: 100%;
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 80%;
-  }
+.banner-minimal {
+  background-color: #000;
+}
+.banner-minimal .banner-content-wrap {
+  width: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 @media (min-width: 800px) {
   .banner-minimal .banner-content-wrap {
-    min-width: 600px;
+    height: 80%;
   }
 }
 .banner-minimal .banner-content-text {
@@ -2475,49 +2470,80 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1em;
 }
 .banner-minimal .banner-content-text h1 {
-  font-size: 4em;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000000;
   text-transform: uppercase;
   font-weight: 400;
-  text-shadow: 2px 2px 5px #000000;
-  margin-top: 0;
+}
+@media (min-width: 800px) {
+  .banner-minimal .banner-content-text h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 5px #000000;
+    margin-top: 0;
+    color: #fff;
+  }
 }
 .banner-minimal .banner-content-text .banner-buttons {
   max-width: 800px;
 }
 .banner-minimal .banner-content-text .outline-button {
-  margin: 0 1em 1em 0;
+  margin: 0 1em 0.80em 0;
+  font-size: 0.8em;
+}
+@media (min-width: 800px) {
+  .banner-minimal .banner-content-text .outline-button {
+    margin: 0 1em 1em 0;
+    font-size: 1.0em;
+  }
 }
 .banner-minimal .banner-content-text .outline-button-maintenance {
+  background: #1e7390;
   background: rgba(30, 115, 144, 0.8);
   text-transform: none;
 }
 .banner-minimal .banner-content-text .outline-button-maintenance:hover {
+  background: #990000;
   background: rgba(153, 0, 0, 0.8);
 }
 .banner-minimal .banner-content-text .outline-button-system-status-000, .banner-minimal .banner-content-text .outline-button-system-status-000:hover {
   text-transform: none;
+  background: #30882b;
   background: rgba(48, 136, 43, 0.8);
+  max-width: 300px;
 }
 .banner-minimal .banner-content-text .outline-button-system-status-310 {
   text-transform: none;
+  background: #1a4ca1;
   background: rgba(26, 76, 161, 0.8);
 }
 .banner-minimal .banner-content-text .outline-button-system-status-307 {
   text-transform: none;
+  background: #990000;
   background: rgba(153, 0, 0, 0.6);
 }
 .banner-minimal .banner-content-text .outline-button-system-status-308 {
   text-transform: none;
+  background: #f9c41e;
   background: rgba(249, 196, 30, 0.8);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-308 a {
+  color: #000;
 }
 .banner-minimal .banner-content-text .outline-button-system-status-309 {
   text-transform: none;
+  background: #990000;
   background: rgba(153, 0, 0, 0.6);
 }
 .banner-minimal .banner-content-text .outline-button-system-status-307:hover, .banner-minimal .banner-content-text .outline-button-system-status-308:hover, .banner-minimal .banner-content-text .outline-button-system-status-309:hover, .banner-minimal .banner-content-text .outline-button-system-status-310:hover {
+  background-color: #660000;
   background: rgba(153, 0, 0, 0.8);
+}
+.banner-minimal .banner-content-text .outline-button-system-status-307:hover a, .banner-minimal .banner-content-text .outline-button-system-status-308:hover a, .banner-minimal .banner-content-text .outline-button-system-status-309:hover a, .banner-minimal .banner-content-text .outline-button-system-status-310:hover a {
+  color: #fff;
 }
 
 .banner-content-box {
@@ -2560,31 +2586,6 @@ body {
   padding: 1em 10px;
   margin: 0;
   border-radius: 25px;
-  /*
-  	.banner-buttons.three-buttons .glassy-button
-  	{
-  		width: 100%;
-  		margin-right: 0;
-  		max-width: 400px;
-  
-  		@include breakpoint($break2) {
-  		margin-right: 1%;
-  		width: 49%;
-  		}
-  	}
-  
-  	.banner-buttons.two-buttons .glassy-button
-  	{
-  		width: 100%;
-  		margin-right: 0;
-  		max-width: 400px;
-  		
-  		@include breakpoint($break2) {
-  
-  		margin-right: 1%;
-  		width: 49%;
-  		}
-  	}*/
 }
 @media (min-width: 420px) {
   .banner.banner-banner-box .banner-content-wrap .banner-content-text {
@@ -2608,38 +2609,20 @@ body {
     color: #fff;
   }
 }
-.banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-buttons .glassy-button {
-  width: 100%;
-  margin-right: 0;
-  max-width: 400px;
-}
-@media (min-width: 800px) {
-  .banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-buttons .glassy-button {
-    width: 80%;
-  }
-}
-.banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-buttons .glassy-button.last {
-  margin-right: 0%;
-}
-.banner.banner-banner-box .banner-content-wrap .banner-content-text .banner-system-status {
-  clear: both;
-}
 
 .banner.banner-service-page .banner-image {
+  background-color: #000;
+  height: 550px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-@media (min-width: 420px) {
-  .banner.banner-service-page .banner-image {
-    height: 300px;
-  }
-}
-@media (min-width: 800px) {
-  .banner.banner-service-page .banner-image {
-    height: 550px;
-  }
+
+.banner.banner-bottom-fade .banner-text {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 .banner.banner-bottom-fade .banner-content-wrap, .hero .hero-content-wrap {
@@ -2669,20 +2652,22 @@ body {
   /* IE6-9 */
 }
 
-.banner .banner-content-wrap .banner-content-text, .hero .hero-content-wrap .hero-content-text {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 1em;
-  text-align: left;
-}
-@media (min-width: 420px) {
-  .banner .banner-content-wrap .banner-content-text, .hero .hero-content-wrap .hero-content-text {
-    margin: 0 auto;
-    padding: 0px;
-    text-align: left;
-  }
-}
+/*
+.banner .banner-content-wrap .banner-content-text, .hero .hero-content-wrap .hero-content-text
+{
 
+	width: 100%;
+max-width: 1200px;
+padding: 0 1em;
+text-align: left;
+
+	@include breakpoint($break) {
+		margin: 0 auto;
+		
+		text-align: left;
+	}
+
+}*/
 .banner .banner-image img {
   width: 100%;
   max-width: 100%;
@@ -2701,6 +2686,9 @@ body {
   position: relative;
   transform: matrix(1, 0, 0, 1, 0, 0);
   width: 100%;
+}
+
+#banner {
   margin-bottom: 2em;
 }
 
@@ -5274,6 +5262,9 @@ cursor: pointer;
   list-style-type: none;
   list-style-image: none;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
+  max-width: 200px;
 }
 
 #main-menu ul.menu li a, #main-menu ul.menu li span {
@@ -5326,6 +5317,8 @@ cursor: pointer;
 #main-menu #sidr-wrapper-0 #sidr-0-button {
   color: #fff;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   background-color: #990000;
   height: 42px;
   border-radius: 0px;
@@ -5602,8 +5595,9 @@ body {
   word-wrap: break-word;
 }
 
-.intro-text p {
-  font-size: 1.4em;
+.intro-text p, .field-name-field-introduction {
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .visually-hidden {
@@ -6993,14 +6987,18 @@ a.glassy-button:hover {
 .outline-button, a.outline-button {
   border: 1px solid #fff;
   border-radius: 5px;
+  background: #333333;
   background: rgba(51, 51, 51, 0.8);
   color: #fff;
   text-transform: uppercase;
   padding: 1em;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
 .outline-button:hover, a.outline-button:hover {
+  background: #990000;
   background: rgba(153, 0, 0, 0.8);
   text-decoration: none;
 }

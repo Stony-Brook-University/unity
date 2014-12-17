@@ -119,6 +119,10 @@
 .support-contact .support-text {
   float: left;
   margin-left: 1em;
+  max-width: 290px;
+}
+.support-contact .unity-no-sidebars .support-text {
+  max-width: 225px;
 }
 .support-contact a.button.report-a-problem {
   font-size: 1em;
