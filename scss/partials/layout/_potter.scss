@@ -46,6 +46,7 @@
 	  
 	   @include breakpoint($break) {
 		@include grid-span(4, 1, $options: 'both');
+		padding: 0px 15px;
 	  }
 
 	   /* @include breakpoint($break2) {

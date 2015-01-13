@@ -57,3 +57,20 @@
   }
 
 }
+
+
+#sidr-0
+{
+	.sidr-inner:nth-child(2)
+	{
+		@include breakpoint($break2) {
+		display: none;
+		}
+	}
+}
+
+.sidr-class-panel-title-div:hover
+{
+	color: #fff;
+	background-color: #000;
+}

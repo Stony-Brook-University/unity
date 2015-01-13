@@ -187,8 +187,28 @@ cursor: pointer;
   display: inline-block;
   zoom: 1;
     *display: inline;
-    max-width: 200px;
 }
+
+#main-menu ul.menu li.expanded > a:after
+{
+      content: "\edc6";
+      font-size: 0.9em;
+    margin-left: 5px; 
+
+    font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 #main-menu ul.menu li a, #main-menu ul.menu li span {
   /*  border: 1px solid #990000;*/
   padding: 12px 20px 12px 20px;
@@ -305,6 +325,7 @@ cursor: pointer;
 }
 #sidr-0 .sidr-inner a {
   border-bottom: 1px solid #cccccc;
+  color: $red;
 }
 #sidr-0 .sidr-inner a:hover {
   background-color: black;
@@ -331,10 +352,52 @@ cursor: pointer;
 
 #sidr-0 h2 {
   background: none;
-  font-size: 1.8em;
-  margin: 1.25em 0 0 0;
+  font-size: 1.4em;
   box-shadow: none;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 1em;
+  
+}
+
+
+
+
+#sidr-0  .sidr-inner:nth-child(2) li a
+{
+  text-transform: none;
+}
+
+#sidr-0 .sidr-class-panel-title-div
+{
+
+  border-bottom: 1px solid #ccc;
+
+   h2
+  {
+    padding: 0px;
+    text-transform: uppercase;
+  }
+
+  a
+  {
+    display: block;
+    padding: 30px 15px 18px 12px;
+  }
+
+}
+#sidr-0 .sidr-class-panel-title-div:hover
+{
+  color: #fff;
+  background-color: #000;
+
+ a
+  {
+    color: #fff;
+  }
+ 
+
+}
+
+#sidr-0 .sidr-inner h2 a
+{
+  border-bottom: 0px;
 }
 

@@ -27,3 +27,42 @@ padding-bottom: 10px;
 {
 	text-transform: uppercase;
 }
+
+
+.node-type-webform .webform-client-form .form-item
+{
+	padding: 10px 0px;
+}
+
+
+.node-type-webform .webform-client-form .form-item label
+{
+	display: block;
+	font-size: 1.2em;
+	padding-bottom: 5px;
+}
+
+.node-type-webform .webform-client-form .form-item input, .node-type-webform .webform-client-form .form-item textarea
+{
+	font-size: 1.4em;
+	padding: 5px;
+	max-width: 95%;
+	
+}
+
+.node-type-webform .webform-client-form .form-actions input[type=submit]
+{
+	padding: 20px 40px;
+}
+
+.node-type-webform .webform-client-form .form-item .description
+{
+	padding: 5px 0px;
+	font-style: italic;
+}
+
+
+.node-type-webform .webform-client-form .form-item .form-required
+{
+	color: #990000;
+}
