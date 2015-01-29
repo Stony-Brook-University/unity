@@ -30,12 +30,17 @@ body
 }
 
 
+#main-content .section-content>h2
+{
+	font-size: 2.5em;
+	margin-bottom: 1em;
+}
 
-
-.intro-text p, .field-name-field-introduction
+.intro-text p, .field-name-field-introduction, .introduction p
 {
 	font-size: 1.3em;
 	line-height: 1.5em;
+	text-align: center;
 }
 
 

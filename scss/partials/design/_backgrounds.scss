@@ -76,6 +76,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', end
 }
 
 
+.red-background-squares
+{
+	
+	background-image: image-url('textures/bright-squares.png');
+	background-repeat: repeat;
+	background-color: $dark-red;
+	color: #fff;
+
+	a
+	{
+		color: #ccc;
+	}
+	
+}
+
+
 .red-background-gradient
 {
 

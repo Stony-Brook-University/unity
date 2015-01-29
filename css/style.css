@@ -2288,7 +2288,7 @@ width: 100%;
 
 #main-content-header {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1.25em auto 0px;
 }
 
 /*
@@ -2446,6 +2446,18 @@ body {
   }
 }
 
+.banner-minimal.banner-format-small .banner-image, .banner-minimal.branding-format-banner .banner-image {
+  height: 350px;
+}
+
+.banner-minimal.banner-format-medium .banner-image, .banner-minimal.branding-format-hero .banner-image {
+  height: 550px;
+}
+
+.banner-minimal.banner-format-large .banner-image, .banner-minimal.branding-format-superhero .banner-image {
+  height: 750px;
+}
+
 .banner-minimal {
   background-color: #000;
 }
@@ -2567,7 +2579,6 @@ body {
 
 .banner.banner-service-page .banner-image {
   background-color: #000;
-  height: 550px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2641,10 +2652,6 @@ text-align: left;
   position: relative;
   transform: matrix(1, 0, 0, 1, 0, 0);
   width: 100%;
-}
-
-#banner {
-  margin-bottom: 2em;
 }
 
 .view-hero-news .field-name-field-hero-image img {
@@ -3767,6 +3774,85 @@ body.panel-layout-ciuffo.not-front.unity-no-sidebars.node-type-service-page #mai
   background-repeat: repeat;
   background-color: #eeeeee;
 }
+.panel-layout-ciuffo #main-content .panel-pane {
+  margin: 0px;
+}
+.panel-layout-ciuffo .pane-sharethis-sharethis-block {
+  text-align: center;
+}
+.panel-layout-ciuffo .section-wrapper {
+  width: 100%;
+  padding: 1.1em 0;
+}
+.panel-layout-ciuffo .section-content.centered {
+  text-align: center;
+}
+.panel-layout-ciuffo .section-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.panel-layout-ciuffo .section-content h2 {
+  text-align: center;
+  font-size: 1.6em;
+}
+.panel-layout-ciuffo .section-content .inline-list, .panel-layout-ciuffo .section-content ul.four-items, .panel-layout-ciuffo .section-content ul.three-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.panel-layout-ciuffo .section-content .inline-list > li, .panel-layout-ciuffo .section-content ul.four-items > li, .panel-layout-ciuffo .section-content ul.three-items > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.panel-layout-ciuffo .section-content ul.four-items > li {
+  width: 24%;
+  margin: 0 0.5%;
+}
+.panel-layout-ciuffo .section-content ul.three-items > li {
+  width: 380px;
+  margin: 0 15px;
+  padding: 10px;
+}
+.panel-layout-ciuffo .section-content ul.three-items > li:nth-child(3n+1) {
+  margin-left: 0px;
+}
+.panel-layout-ciuffo .section-content ul.three-items > li:nth-child(3n+3) {
+  margin-right: 0px;
+}
+.panel-layout-ciuffo .section-content ul.two-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.panel-layout-ciuffo .section-content ul.two-items > li {
+  width: 49%;
+  margin: 0 0.5%;
+}
+.panel-layout-ciuffo .section-content ul.one-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.panel-layout-ciuffo .section-content ul.one-item > li {
+  width: 75%;
+}
+
+.node-type-event .banner-events-page h1 {
+  font-size: 3em;
+}
+.node-type-event .banner-events-page .event-time {
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #000;
+}
+.node-type-event .banner-events-page .event-room {
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #000;
+}
+.node-type-event .banner-events-page .banner-buttons {
+  margin-top: 1.5em;
+}
 
 .panel-layout-responsive-2col #content {
   margin: 5px;
@@ -4643,9 +4729,8 @@ a:hover, a.selected {
   border-right: 1px solid #ccc;
 }
 
-.field-name-body h2, #main-content h2 {
+.field-name-body h2 {
   border-bottom: 0px;
-  color: #000000;
   margin-bottom: 0.4em;
 }
 
@@ -5616,7 +5701,7 @@ cursor: pointer;
   width: 100%;
   color: #fff;
   float: left;
-  padding: 10px 0px;
+  padding: 1.25em 0px;
 }
 
 #footer-wrap {
@@ -5647,7 +5732,6 @@ cursor: pointer;
 
 #footer .sub-footer {
   margin-bottom: 1.2em;
-  border-bottom: 1px solid #fff;
   padding-bottom: 1.2em;
 }
 @media (min-width: 420px) {
@@ -5658,39 +5742,57 @@ cursor: pointer;
   }
 }
 
-@media (min-width: 420px) {
-  #footer .sub-footer.odd {
-    border-right: 1px solid #fff;
-    border-bottom: 0px;
-  }
-}
-@media (min-width: 800px) {
-  #footer .sub-footer.odd {
-    border-right: 1px solid #fff;
-    border-bottom: 0px;
-  }
-}
-
-@media (min-width: 800px) {
-  #footer .sub-footer.even {
-    border-right: 1px solid #fff;
-    border-bottom: 0px;
-  }
+/*
+#footer .sub-footer.odd
+{
+	@include breakpoint($break)
+	{
+		border-right: 1px solid #fff;
+		border-bottom: 0px;
+	}
+	
+	@include breakpoint($break2)
+	{
+		border-right: 1px solid #fff;
+		border-bottom: 0px;
+	}
+	
 }
 
-@media (min-width: 420px) {
-  #footer .sub-footer.last {
-    border-right: 1px solid #fff;
-    border-bottom: 0px;
-  }
-}
-@media (min-width: 800px) {
-  #footer .sub-footer.last {
-    border-right: 0px;
-    border-bottom: 0px;
-  }
+
+#footer .sub-footer.even
+{
+	
+	@include breakpoint($break2)
+	{
+		border-right: 1px solid #fff;
+		border-bottom: 0px;
+	}
+	
 }
 
+*/
+/*
+
+#footer .sub-footer.last
+{
+
+
+@include breakpoint($break)
+	{
+		border-right: 1px solid #fff;
+		border-bottom: 0px;
+	}
+	
+	@include breakpoint($break2)
+	{
+		border-right: 0px;
+		border-bottom: 0px;
+	}
+
+}
+
+*/
 #footer #social-footer .social-icon {
   float: left;
   margin: 5px 10% 0px 0px;
@@ -5738,7 +5840,6 @@ cursor: pointer;
 #footer #bottom-footer ul.menu li {
   display: inline;
   padding: 0px 10px;
-  border-right: 1px #fff solid;
 }
 #footer #bottom-footer ul.menu li.last {
   border: 0px;
@@ -5766,9 +5867,15 @@ body {
   word-wrap: break-word;
 }
 
-.intro-text p, .field-name-field-introduction {
+#main-content .section-content > h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.intro-text p, .field-name-field-introduction, .introduction p {
   font-size: 1.3em;
   line-height: 1.5em;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -7268,6 +7375,16 @@ a.glassy-button:hover {
   background-color: #eeeeee;
 }
 
+.red-background-squares {
+  background-image: url('images/textures/bright-squares.png');
+  background-repeat: repeat;
+  background-color: #660000;
+  color: #fff;
+}
+.red-background-squares a {
+  color: #ccc;
+}
+
 .red-background-gradient {
   background: #38010e;
   background: -moz-linear-gradient(-45deg, #38010e 0%, #990000 33%, #990000 66%, #38010e 100%);
@@ -8503,6 +8620,15 @@ html[xmlns] .slides {
 
 .event-clear {
   clear: both;
+}
+
+.resource-card a {
+  display: block;
+  margin-bottom: 1em;
+}
+.resource-card a img {
+  width: 100px;
+  height: 100px;
 }
 
 div.system-status h2 {

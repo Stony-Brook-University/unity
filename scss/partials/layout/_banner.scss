@@ -63,6 +63,27 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 }
 
+.banner-minimal.banner-format-small .banner-image, .banner-minimal.branding-format-banner .banner-image
+{
+	
+		height: 350px;
+	
+}
+
+.banner-minimal.banner-format-medium .banner-image, .banner-minimal.branding-format-hero .banner-image
+{
+	
+		height: 550px;
+	
+}
+
+.banner-minimal.banner-format-large .banner-image, .banner-minimal.branding-format-superhero .banner-image
+{
+	
+		height: 750px;
+	
+}
+
 .banner-minimal
 {
 		background-color: #000;
@@ -214,7 +235,6 @@ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 {
 
 	background-color: #000;
-	height: 550px;
 	
    -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -302,7 +322,7 @@ width: 100%;
 
 
 #banner{
-	margin-bottom: 2em;
+	//margin-bottom: 2em;
 }
 
 
