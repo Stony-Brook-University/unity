@@ -1,24 +1,31 @@
 .panel-layout-potter
 {
-	#content
-	{
-	@include grid-span(1, 1, $options: 'both');
-	 
-	  @include breakpoint($break) {
-		@include grid-span(4, 1, $options: 'right');
-	  }
-	  /*
-	   @include breakpoint($break2) {
-		@include grid-span(4, 6, $options: 'right');
-	  }*/
 
-	  @include breakpoint($break2) {
-		@include grid-span(16, 1, $options: 'right');
-		
-	  }
+	.unity-region
+	{
+		margin-bottom: 1em;
+	}
+
+	#main-content-header
+	{
+		margin: 1em auto 0;
 	}
 
 
+	#main-wrap-content
+	{
+		padding: 0 1em;
+
+		 @include breakpoint($break4) {
+			padding: 0;
+	  }
+
+	  .panel-pane
+	  {
+	  	margin: 0;
+	  }
+
+	}
 	#banner
 	{
 
@@ -42,11 +49,13 @@
 
 	#content-primary
 	{
+		padding: 0;
+
 	   @include grid-span(1, 1, $options: 'both');
 	  
 	   @include breakpoint($break) {
 		@include grid-span(4, 1, $options: 'both');
-		padding: 0px 15px;
+		
 	  }
 
 	   /* @include breakpoint($break2) {
@@ -56,7 +65,10 @@
 
 	  @include breakpoint($break2) {
 		@include grid-span(16, 1, $options: 'both');
+
 	  }
+
+	  
 
 	  
 	}

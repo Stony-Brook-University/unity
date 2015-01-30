@@ -1,0 +1,22 @@
+.panel-pane
+{
+	margin-bottom: 10px;
+}
+
+#right-prefix, #right-postfix, #main-suffix 
+{
+	h2
+	{
+		margin-bottom: 5px;
+	}
+
+	.panel-pane
+	{
+		margin-bottom: 15px;
+	}
+
+	.panel-pane .panel-pane
+	{
+		margin-bottom: 3px;
+	}
+}

@@ -25,3 +25,25 @@ $normal-spacing: 10px;
 $large-spacing: 20px;
 $small-spacing: 5px;
 
+
+
+$break: 420px;
+$break2: 800px;
+$break3: 960px;
+$break4: 1200px;
+
+$break-phone: 420px;
+$break-tablet: 800px;
+$break-narrow-desktop: 960px;
+$break-desktop: 1200px;
+$break-wide-desktop: 1600px;
+
+
+$grids: add-grid(1);
+$grids: add-grid(4 at $break);
+$grids: add-grid(16 at $break2);
+$grids: add-grid(16 at $break3);
+$grids: add-grid(16 at $break4);
+
+
+$gutters: add-gutter(.4);

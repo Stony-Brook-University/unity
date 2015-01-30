@@ -25,13 +25,14 @@ $legacy-support-for-mozilla: false;
 @import 'partials/global/base';
 
 
+////////////////////////
+// Third Party
+////////////////////////
 @import 'third-party/icomoon/icomoon';
 @import 'third-party/superfish/superfish';
+@import 'third-party/sidr/sidr-light';
+@import 'third-party/flexslider/flexslider';
 
-////////////////////////
-// Import Style Guide
-////////////////////////
-@import 'partials/styleguide/style-guide';
 
 ////////////////////////
 // Import Layout
@@ -43,6 +44,15 @@ $legacy-support-for-mozilla: false;
 ////////////////////////
 @import 'partials/design/design';
 
+////////////////////////
+// Import Design
+////////////////////////
+@import 'partials/components/components';
 
+
+
+////////////////////////
+// Page Overrides
+////////////////////////
 @import 'partials/pages/pages';
 

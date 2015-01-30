@@ -4,7 +4,7 @@ require 'aurora'
 # Set this to the root of your project when deployed:
 #http_path = "/"
 http_images_path = "images"
-css_dir = "css"
+css_dir = ".working/css/dev"
 sass_dir = "scss"
 images_dir = "images"
 javascripts_dir = "javascripts"
@@ -14,16 +14,16 @@ http_fonts_path = "fonts"
 # Change this to :production when ready to deploy the CSS to the live server.
 # Note: If you are using grunt.js, these variables will be overriden.
 #environment = :development
-environment = :development
+#environment = :development
 
 # To enable relative paths to assets via compass helper functions. Since Drupal themes can be installed in multiple locations, we shouldn't need to worry about the absolute path to the theme from the server root.
 relative_assets = false
 
 # To enable debugging comments that display the original location of your selectors. Comment:
-line_comments = false
+#line_comments = true
 
 # In development, we can turn on the debug_info to use with FireSass or Chrome Web Inspector. Uncomment:
-debug = false
+#debug = true
 
 
 ##############################
@@ -35,8 +35,8 @@ asset_cache_buster :none
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-output_style = (environment == :development) ? :expanded : :compressed
+#output_style = (environment == :development) ? :expanded : :compressed
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the debug config variable above is true.
-sass_options = (environment == :development && debug == true) ? {:debug_info => true} : {}
+#sass_options = (environment == :development && debug == true) ? {:debug_info => true} : {}

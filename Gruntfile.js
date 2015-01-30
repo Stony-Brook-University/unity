@@ -13,27 +13,78 @@ module.exports = function (grunt) {
 	
 	  scss: {
 		  files: ['scss/{,**/}*.scss'],
-		  tasks: ['compass:dev', 'copy:css']
+		  tasks: ['clean:css', 'compass:dev', 'compass:dist', 'copy:cssdev', 'copy:cssdist']
 		},
   
 	  
 	  js: {
 	     files: ['js/{,**/}/*.js'],
-		 tasks: ['copy:js']
+		 tasks: ['clean:js', 'copy:js']
 	  },
 
 	  images: {
 	     files: ['images/{,**/}/*'],
-		 tasks: ['copy:images']
+		 tasks: ['clean:images', 'copy:images']
 	  },
 
 	  fonts: {
 	     files: ['fonts/{,**/}/*'],
-		 tasks: ['copy:fonts']
+		 tasks: ['clean:fonts', 'copy:fonts']
 	  },
 
 	
 	 },
+
+
+clean: {
+ 
+   css: {
+    src: [".working/css", ".release/css"],
+    options: {
+      force:true
+    }
+  },
+
+  js: {
+    src: [".working/js", ".release/js"],
+    options: {
+      force:true
+    }
+  },
+
+  images: {
+    src: [".release/images"],
+    options: {
+      force:true
+    }
+  },
+
+  fonts: {
+    src: [".release/fonts"],
+    options: {
+      force:true
+    }
+  },
+
+  working:
+  {
+  	 src: [".working"],
+    options: {
+      force:true
+    }
+  },
+
+  release:
+  {
+  	 src: [".release"],
+    options: {
+      force:true
+    }
+},
+
+  
+},
+
 
 
 
@@ -44,18 +95,22 @@ module.exports = function (grunt) {
         config: 'config.rb',
         bundleExec: true
       },
-	  //DEV SUBTASK
-      dev: {
-        options: {
-          environment: 'development'
-        }
+
+      dev:
+      {
+      	environment: 'development',
+        cssDir: '.working/css/dev',
+        debugInfo: true,
       },
-	  //DIST SUBTASK
+
       dist: {
-        options: {
-          environment: 'production',
-        }
-      }
+      options: {
+        environment: 'production',
+        cssDir: '.working/css/dist',
+        debugInfo: false,
+
+      },
+    },
     },
 
  	
@@ -63,17 +118,37 @@ module.exports = function (grunt) {
 	//COPY TASK
     copy: {
 	
-	  css: {
+	  cssdist: {
 	  
 	   //Files to look for and move to the destination
         files: [  
 		  {
 		  expand: true,
-		  cwd: 'css',
+		  cwd: '.working/css/dist/',
 		  src: ['**'],
-		  dest: 'release/stylesheets'
-		  } ]
+		  dest: '.release/css/',
+      rename: function(dest, src)
+      {
+        return dest + src.replace('.css', '.dist.css');
+      } 
+    }]
 		},
+
+    cssdev: {
+    
+     //Files to look for and move to the destination
+        files: [  
+      {
+      expand: true,
+      cwd: '.working/css/dev/',
+      src: ['**'],
+      dest: '.release/css/',
+      rename: function(dest, src)
+      {
+        return dest + src.replace('.css', '.dev.css');
+      }
+    }]
+    },
 
 		images: {
 
@@ -82,7 +157,7 @@ module.exports = function (grunt) {
 		  expand: true,
 		  cwd: 'images',
 		  src: ['**'],
-		  dest: 'release/stylesheets/images'
+		  dest: '.release/images'
 		  }
 		  ]
 		},
@@ -94,7 +169,7 @@ module.exports = function (grunt) {
 		  expand: true,
 		  cwd: 'js',
 		  src: ['**'],
-		  dest: 'release/javascripts'
+		  dest: '.release/js'
 		  } ]
 		 },
 
@@ -104,7 +179,7 @@ module.exports = function (grunt) {
 		  expand: true,
 		  cwd: 'fonts',
 		  src: ['**'],
-		  dest: 'release/stylesheets/fonts'
+		  dest: '.release/fonts'
 		  },
         ]
       },
@@ -126,12 +201,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-bower-concat');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   //grunt.registerTask('build', ['parallel', 'compass:dist', 'jshint']);
   //grunt.registerTask('default', ['build', 'browserSync', 'watch']);
 
-  grunt.registerTask('default', ['compass:dev', 'copy', 'watch']);
+  grunt.registerTask('default', ['clean:working', 'clean:release', 'compass:dev', 'compass:dist', 'copy', 'watch']);
 
-  grunt.registerTask('drupal', ['compass:dev', 'copy:drupal', 'watch']);
+//  grunt.registerTask('drupal', ['compass:dev', 'copy:drupal', 'watch']);
     
 };

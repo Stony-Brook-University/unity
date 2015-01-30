@@ -1,3 +1,19 @@
+a:link, a:visited, a:active {
+		background-color: transparent;
+		color: #990000;
+		text-decoration: none;
+}
+
+/*
+**		Set link color to darker gray (#444444) for link hover.
+*/
+a:hover, a.selected {
+		background-color: transparent;
+		color: #444444;
+		text-decoration: underline;
+}
+
+
 
 h1,h2,h3,h4,h5,h6
 {
@@ -558,4 +574,74 @@ span.icon-after:after, a.action-link-after.icon-after {
 
 a.action-link:hover {
   text-decoration: none;
+}
+
+
+.green
+{
+	color: $green;
+}
+
+.red
+{
+	color: $red;
+}
+
+.dark-red
+{
+	color: $dark-red;
+}
+
+.light-red{
+	color: $light-red;
+}
+
+.black
+{
+	color: $black;
+}
+
+.blue
+{
+	color: $blue;
+}
+
+.dark-gray
+{
+	color: $dark-gray;
+}
+
+.light-gray
+{
+	color: $light-gray;
+}
+
+.gray
+{
+	color: $gray;
+}
+
+.field-name-body h2//, #main-content h2
+{
+	border-bottom: 0px;
+	margin-bottom: 0.4em;
+}
+
+
+.link-separator
+{
+	padding: 0px 10px 0px 10px;
+	display: inline;
+}
+
+
+
+body .section-heading {
+  text-align: center;
+  line-height: 1.25;
+  margin: 0px;
+}
+body h2.section-heading {
+  font-size: 2.5em;
+  margin: 0.5em 0 1em 0;
 }

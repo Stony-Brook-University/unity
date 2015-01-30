@@ -104,3 +104,62 @@ background: -ms-linear-gradient(-45deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%,
 background: linear-gradient(135deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%, rgba(153,0,0,1) 66%, rgba(56,1,14,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38010e', endColorstr='#38010e', GradientType=1 );
 }
+
+
+
+.background-red
+{
+	background-color: $red;
+}
+
+.background-light-red
+{
+	background-color: $light-red;
+}
+
+.background-dark-red
+{
+	background-color: $dark-red;
+}
+
+
+.background-blue
+{
+	background-color: $blue;
+}
+
+.background-light-blue
+{
+	background-color: $light-blue;
+}
+
+.background-dark-blue
+{
+	background-color: $dark-blue;
+}
+
+.background-gray
+{
+	background-color: $gray;
+}
+
+.background-light-gray
+{
+	background-color: $light-gray;
+}
+
+.background-dark-gray
+{
+	background-color: $dark-gray;
+}
+
+.background-green
+{
+	background-color: $green;
+}
+
+.background-black
+{
+	background-color: $black;
+}
+

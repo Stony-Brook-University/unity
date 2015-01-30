@@ -6,6 +6,9 @@
 // Toolkit imports all of Compass, so there is no need to import it separately.
 ////////////////////////
 
+
+@import 'normalize';
+
 ////////////////////////
 // Compass Extensions
 ////////////////////////
@@ -23,12 +26,10 @@
 @import 'extendables';
 
 
+
+
 *, *:before, *:after {
   @include box-sizing('border-box');
 }
 
-h2
-{
-margin-top: 0px;
-}
 
