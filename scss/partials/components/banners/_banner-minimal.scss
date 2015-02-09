@@ -1,0 +1,107 @@
+.banner-minimal
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+
+	background-color: #000;
+
+	.banner-image
+	{
+		background-color: #000;
+	}
+}
+
+.banner-minimal.banner-format-small .banner-image
+{
+	
+		height: 350px;
+	
+}
+
+.banner-minimal.banner-format-medium .banner-image
+{
+	
+		height: 550px;
+	
+}
+
+.banner-minimal.banner-format-large .banner-image
+{
+	
+		height: 750px;
+	
+}
+
+.banner-minimal
+{
+		background-color: #000;
+
+		.banner-content-wrap
+		{
+		
+			width: 100%;
+			
+			display: block;
+			position: absolute;
+			width: 100%;
+
+			top: 0;
+			bottom: 0;
+			left: 0;	
+			right: 0;
+			margin: auto;
+
+			@include breakpoint($break2)
+			{
+				height: 80%;
+			}
+			
+			
+		}
+
+	.banner-content-text{
+		color: #fff;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1em;
+
+	
+		h1
+		{
+			font-size: 3em;
+			color: #fff;
+			text-shadow: 2px 2px 5px #000000;
+			text-transform: uppercase;
+			font-weight: 400;
+			@include breakpoint($break2) {
+				font-size: 4em;
+				text-shadow: 2px 2px 5px #000000;
+				margin-top: 0;
+				color: #fff;
+			}
+
+		}
+
+		.banner-buttons
+		{
+			max-width: 800px;
+		}
+
+
+		.outline-button
+		{
+			margin: 0 1em 0.80em 0;
+			font-size: 0.8em;
+
+			@include breakpoint($break2) {
+
+				margin: 0 1em 1em 0;
+				font-size: 1.0em;
+			}
+		}
+
+	
+  }
+	
+}

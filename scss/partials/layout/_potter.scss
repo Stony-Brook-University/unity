@@ -28,7 +28,8 @@
 	}
 	#banner
 	{
-
+		margin-bottom: 0px;
+		
 	  @include grid-span(1, 1, $options: 'both');
 	  
 	   @include breakpoint($break) {
