@@ -1,6 +1,6 @@
 unity
 =====
-This is a theme for Stony Brook University
+This is a theme for Stony Brook University; See it in action at http://it.stonybrook.edu
 
 
 package.json
