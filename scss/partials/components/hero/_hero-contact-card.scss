@@ -1,10 +1,35 @@
-.hero-bottom-fade {
+.hero-contact-card {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
 
+box-sizing: border-box;
 
+display: block;
 
-    .hero-content-wrap {
+font-size: 18px;
+    color: #303030;
+
+overflow-x: hidden;
+overflow-y: hidden;
+padding-bottom: 0px;
+
+padding-top: 0px;
+position: relative;
+transform: matrix(1, 0, 0, 1, 0, 0);
+width: 100%;
+
+    .hero-image
+    {
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+        height: 450px;
+    }
+
+    .hero-wrap {
         position: relative;
-        color: #000;
+        color: #fff;
         background: none;
         background-color: #fff;
         @include breakpoint($break-phone) {
@@ -33,32 +58,58 @@
             /* IE6-9 */
         }
 
-        .hero-content-text {
+        .hero-content
+        {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1em;
+        }
 
-            h1
+        .contact-card
+        {
+            background-color: #fff;
+            background-color: rgba(255,255,255,0.7);
+            padding: 1em;
+            width: 600px;
+            border: 1px solid #ccc;
+            color: #000;
+            float: left;
+
+            .contact-card-image
             {
-            	font-size: 1.7em;
+                max-width: 120px;
+                float: left;
+            }
 
-            	@include breakpoint($break-phone)
-            	{
-            		font-size: 2em;
-            	}
+            .contact-card-text
+            {
+                float: left;
+                margin-left: 1em;
+
+                h1, h2
+                {
+                    margin-top: 0;
+                }
+                h1
+                {
+                    margin-bottom: 0.2em;
+                }
+
+                span:before
+                {
+                    margin-right: 0.7em;
+                }
+                span:after
+                {
+                    margin-right: 0.2em;
+                }
+
+                span
+                {
+                    margin-bottom: 0.2em;
+                }
             }
         }
 
-        .field-name-field-summary
-        {
-        	padding-bottom: 2em;
-        	border-bottom: 1px solid #ccc;
-
-        	@include breakpoint($break-phone)
-        	{
-        		border: 0px;
-        		padding-bottom: 0px;
-        	}
-        }
+       
     }
 }

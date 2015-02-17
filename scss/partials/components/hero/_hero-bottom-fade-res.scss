@@ -1,10 +1,18 @@
-.hero-bottom-fade {
+.hero-bottom-fade-res {
 
-
+    .hero-image
+    {
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+        height: 550px;
+    }
 
     .hero-content-wrap {
         position: relative;
-        color: #000;
+        color: #fff;
         background: none;
         background-color: #fff;
         @include breakpoint($break-phone) {
@@ -49,16 +57,5 @@
             }
         }
 
-        .field-name-field-summary
-        {
-        	padding-bottom: 2em;
-        	border-bottom: 1px solid #ccc;
-
-        	@include breakpoint($break-phone)
-        	{
-        		border: 0px;
-        		padding-bottom: 0px;
-        	}
-        }
     }
 }
