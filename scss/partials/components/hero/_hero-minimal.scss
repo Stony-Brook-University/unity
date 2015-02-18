@@ -8,24 +8,29 @@
 	.hero-image
 	{
 		background-color: #000;
+		         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
 	}
 }
 
-.hero-minimal.hero-format-small .hero-image
+.hero-minimal.hero-format-small .hero-image, .hero-minimal.hero-format-banner .hero-image
 {
 	
 		height: 350px;
 	
 }
 
-.hero-minimal.hero-format-medium .hero-image
+.hero-minimal.hero-format-medium .hero-image, .hero-minimal.hero-format-hero .hero-image
 {
 	
 		height: 550px;
 	
 }
 
-.hero-minimal.hero-format-large .hero-image
+.hero-minimal.hero-format-large .hero-image, .hero-minimal.hero-format-superhero .hero-image
 {
 	
 		height: 750px;
