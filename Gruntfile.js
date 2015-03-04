@@ -9,185 +9,244 @@ module.exports = function (grunt) {
 	
   
 //WATCH TASK
-    watch: {
+watch: {
 	
-	  scss: {
-		  files: ['scss/{,**/}*.scss'],
-		  tasks: ['clean:css', 'compass:dev', 'compass:dist', 'copy:cssdev', 'copy:cssdist']
-		},
-  
-	  
-	  js: {
-	     files: ['js/{,**/}/*.js'],
-		 tasks: ['clean:js', 'copy:js']
-	  },
+  scss: {
+	  files: ['scss/{,**/}*.scss'],
+	  tasks: ['clean:css', 'compass:dev', 'compass:dist', 'copy:cssdev', 'copy:cssdist', 'notify:css']
+	},
 
-	  images: {
-	     files: ['images/{,**/}/*'],
-		 tasks: ['clean:images', 'copy:images']
-	  },
+  js_headers:
+  {
+    files: ['js/header/{,**/}/*.js'],
+    tasks: ['clean:js_header', 'concat:header', 'uglify:header', 'copy:js', 'notify:js']
+  },
 
-	  fonts: {
-	     files: ['fonts/{,**/}/*'],
-		 tasks: ['clean:fonts', 'copy:fonts']
-	  },
+  js_footers:
+  {
+    files: ['js/footer/{,**/}/*.js'],
+    tasks: ['clean:js_footer', 'concat:footer', 'uglify:footer', 'copy:js', 'notify:js']
+  },
 
-	
-	 },
+  images: {
+     files: ['images/{,**/}/*'],
+	 tasks: ['clean:images', 'copy:images']
+  },
+
+  fonts: {
+     files: ['fonts/{,**/}/*'],
+	 tasks: ['clean:fonts', 'copy:fonts']
+  },
+
+},
+
+notify: {
+  css: {
+    options: {
+      title: 'Unity CSS',  // optional
+      message: 'SASS and Uglify finished running', //required
+    }
+  },
+  js: {
+    options: {
+      title: 'Unity JS',  // optional
+      message: 'JS concatenated and minified', //required
+    }
+  },
+},
 
 
 clean: {
  
-   css: {
+  css: {
     src: [".working/css", ".release/css"],
     options: {
       force:true
     }
   },
 
-  js: {
-    src: [".working/js", ".release/js"],
+  js_header: {
+    src: [".working/js/header", ".release/js/header"],
+    options: {
+      force:true
+    }
+  },
+
+  js_footer: {
+    src: [".working/js/footer", ".release/js/footer"],
     options: {
       force:true
     }
   },
 
   images: {
-    src: [".release/images"],
+    src: [".release/assets/unity-images"],
     options: {
       force:true
     }
   },
 
   fonts: {
-    src: [".release/fonts"],
+    src: [".release/assets/unity-fonts"],
     options: {
       force:true
     }
   },
 
-  working:
-  {
-  	 src: [".working"],
+  working: {
+    src: [".working"],
     options: {
       force:true
     }
   },
 
-  release:
-  {
-  	 src: [".release"],
+  release: {
+    src: [".release"],
     options: {
       force:true
     }
+  },
+
 },
 
+
+concat: {
   
+  options: {
+    separator: ';',
+  },
+    
+  header: {
+    src: ['js/header/{,**/}/*.js'],
+    dest: '.working/js/header/header.dev.js',
+  },
+
+  footer: {
+    src: ['js/footer/{,**/}/*.js'],
+    dest: '.working/js/footer/footer.dev.js',
+  },
+
 },
 
 
 
+uglify: {
+  
+  header: {
+    files: {
+      '.working/js/header/header.min.js': ['.working/js/header/header.dev.js']
+    }
+  },
+
+  footer: {
+    files: {
+        '.working/js/footer/footer.min.js': ['.working/js/footer/footer.dev.js']
+    }
+  }
+
+},
 
 
-	//COMPASS TASK
-    compass: {
-      options: {
-        config: 'config.rb',
-        bundleExec: true
-      },
+compass: {
+  
+  options: {
+    config: 'config.rb',
+    bundleExec: true
+  },
 
-      dev:
-      {
-      	environment: 'development',
-        cssDir: '.working/css/dev',
-        debugInfo: true,
-      },
+  dev: {
+    environment: 'development',
+    cssDir: '.working/css/dev',
+    debugInfo: true,
+  },
 
-      dist: {
-      options: {
-        environment: 'production',
-        cssDir: '.working/css/dist',
-        debugInfo: false,
-
-      },
+  dist: {
+    options: {
+      environment: 'production',
+      cssDir: '.working/css/dist',
+      debugInfo: false,
     },
-    },
+  },
+},
 
- 	
+browserSync: {
+   
+  css: {
+    bsFiles: {
+      src : ['.release/css/*.css','styleguide/*.html']
+    },
+      
+    options: {
+        watchTask: true,         
+    }
+  },
+},
+
+copy: {
+		  
+  cssdist: {
 	
-	//COPY TASK
-    copy: {
-	
-	  cssdist: {
-	  
-	   //Files to look for and move to the destination
-        files: [  
-		  {
+   files: [{
 		  expand: true,
 		  cwd: '.working/css/dist/',
 		  src: ['**'],
 		  dest: '.release/css/',
+     
       rename: function(dest, src)
       {
         return dest + src.replace('.css', '.dist.css');
       } 
     }]
-		},
+	},
 
-    cssdev: {
-    
-     //Files to look for and move to the destination
-        files: [  
-      {
+  cssdev: {
+  
+    files: [{
       expand: true,
       cwd: '.working/css/dev/',
       src: ['**'],
       dest: '.release/css/',
+      
       rename: function(dest, src)
       {
         return dest + src.replace('.css', '.dev.css');
       }
     }]
-    },
+  },
 
-		images: {
+	images: {
 
-			files: [
-		  {
+		files: [{
 		  expand: true,
 		  cwd: 'images',
 		  src: ['**'],
-		  dest: '.release/images'
-		  }
-		  ]
-		},
+		  dest: '.release/assets/images'
+		}]
+	},
 
 			
-		js: {
-			files: [
-		  {
+	js: {
+			
+    files: [{
 		  expand: true,
-		  cwd: 'js',
+		  cwd: '.working/js',
 		  src: ['**'],
 		  dest: '.release/js'
-		  } ]
-		 },
+		}]
+	},
 
-		 fonts: {
-		 	files: [
-		  {
-		  expand: true,
-		  cwd: 'fonts',
-		  src: ['**'],
-		  dest: '.release/fonts'
-		  },
-        ]
-      },
+  
+	fonts: {
+	 files: [{
+	   expand: true,
+	   cwd: 'fonts',
+	   src: ['**'],
+	   dest: '.release/assets/fonts'
+		}]
+  },
+}
 
-       
-
-    }
-  });
+});
   
   
   //LOAD PLUGINS
@@ -202,11 +261,12 @@ clean: {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
-
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-notify');
   //grunt.registerTask('build', ['parallel', 'compass:dist', 'jshint']);
   //grunt.registerTask('default', ['build', 'browserSync', 'watch']);
 
-  grunt.registerTask('default', ['clean:working', 'clean:release', 'compass:dev', 'compass:dist', 'copy', 'watch']);
+  grunt.registerTask('default', ['clean:working', 'clean:release', 'compass:dev', 'compass:dist', 'concat', 'uglify', 'copy', 'browserSync', 'watch']);
 
 //  grunt.registerTask('drupal', ['compass:dev', 'copy:drupal', 'watch']);
     

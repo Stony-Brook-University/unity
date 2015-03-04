@@ -1,7 +1,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: 'icomoon';
-        src: url('fonts/icomoon/icomoon.svg?sstxvv#icomoon') format('svg');
+        src: url('../assets/fonts/icomoon/icomoon.svg?sstxvv#icomoon') format('svg');
     }
 }
 
@@ -9,11 +9,11 @@
 @font-face
 {
     font-family: 'icomoon';
-	src:url('fonts/icomoon/icomoon.eot?sstxvv');
-	src:url('fonts/icomoon/icomoon.eot?#iefixsstxvv') format('embedded-opentype'),
-		url('fonts/icomoon/icomoon.woff?sstxvv') format('woff'),
-		url('fonts/icomoon/icomoon.ttf?sstxvv') format('truetype'),
-		url('fonts/icomoon/icomoon.svg?sstxvv#icomoon') format('svg');
+	src:url('../assets/fonts/icomoon/icomoon.eot?sstxvv');
+	src:url('../assets/fonts/icomoon/icomoon.eot?#iefixsstxvv') format('embedded-opentype'),
+		url('../assets/fonts/icomoon/icomoon.woff?sstxvv') format('woff'),
+		url('../assets/fonts/icomoon/icomoon.ttf?sstxvv') format('truetype'),
+		url('../assets/fonts/icomoon/icomoon.svg?sstxvv#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
