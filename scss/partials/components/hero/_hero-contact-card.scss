@@ -42,6 +42,7 @@
             margin: 0 auto;
         }
 
+
         .contact-card
         {
             background-color: #fff;
@@ -75,6 +76,15 @@
                 
             }
 
+
+            .contact-card-image-small
+            {
+                width: 100px;
+                float: left;
+                margin-right: 1em;
+               
+            }
+
             .contact-card-text
             {
                 float: left;
@@ -105,6 +115,5 @@
             }
         }
 
-       
     }
 }

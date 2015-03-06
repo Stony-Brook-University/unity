@@ -1,0 +1,39 @@
+.presenter-card
+        {
+            .presenter-card-image
+            {
+                width: 125px;
+                float: left;
+                margin-right: 1em;
+            }
+
+            .presenter-card-title
+            {
+                float: left;
+
+                h4, h5
+                {
+                    margin-top: 0;
+                }
+            }
+
+            .presenter-card-text
+            {
+                clear: both;
+                padding: 1em 0 0 0;
+
+                span:before
+                {
+                    margin-right: 0.7em;
+                }
+                span:after
+                {
+                    margin-right: 0.2em;
+                }
+
+                span
+                {
+                    margin-bottom: 0.2em;
+                }
+            }
+        }
