@@ -40,14 +40,15 @@ $legacy-support-for-mozilla: false;
 @import 'third-party/bootstrap/bootstrap-fixes';
 
 ////////////////////////
+// Import Design
+////////////////////////
+@import 'partials/design/design';
+
+////////////////////////
 // Import Layout
 ////////////////////////
 @import 'partials/layout/layout';
 
-////////////////////////
-// Import Design
-////////////////////////
-@import 'partials/design/design';
 
 ////////////////////////
 // Import Design

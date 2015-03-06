@@ -86,22 +86,17 @@ body.panel-layout-ciuffo.not-front.unity-no-sidebars.node-type-service-page #mai
 		display: none;
 	}
 
-	#section-a
-	{
-		.pane-content
-		{
+	
 			div.section:nth-child(even)
 			{
 
-				background-image: image-url('textures/bright-squares.png');
+				background-image: url('../assets/images/textures/bright-squares.png');
 	background-repeat: repeat;
 	background-color: $light-gray;
 	
 				
 			}
-		}
-	}
-
+	
 	#main-content .panel-pane
 	{
 		margin: 0px;
