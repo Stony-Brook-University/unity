@@ -1,0 +1,45 @@
+.card1 
+{
+	background-color: #990000;
+}
+.card1_col_1_3 
+{
+	background: #900;
+	border: 2px solid red;
+	width: 320px;
+	position: relative;
+	padding-top: 20px 15px 20px 15px;
+}
+.card1_col 
+{
+	float: left;
+	margin-right: 60px;
+}
+.card1_text_center 
+{
+	text-align: center;
+}
+.card1_text 
+{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.card1_align_left 
+{
+	text-align: left;
+}
+.card1_text_content 
+{
+	max-width: 550px;
+	margin: 0 auto;
+	position: relative;
+}
+.image 
+{
+	position: relative;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+}

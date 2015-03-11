@@ -2,22 +2,23 @@
   "name": "unity",
   "version": "1.0.0",
   "repository": {
-	"type": "git",
-	"url": "git://github.com/SBUDoIT/unity.git"
+    "type": "git",
+    "url": "git://github.com/SBUDoIT/unity.git"
   },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-watch": "~0.4.3",
+    "grunt-browser-sync": "~0.9.1",
+    "grunt-contrib-clean": "",
     "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-imagemin": "~0.1.4",
     "grunt-contrib-jshint": "~0.1.1",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-notify": "^0.4.1",
     "grunt-parallel": "~0.1.0",
-    "grunt-svgmin": "~0.1.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-clean":"",
-	"grunt-browser-sync": "~0.9.1"
+    "grunt-svgmin": "~0.1.0"
   },
   "engines": {
     "node": ">=0.8.0"
