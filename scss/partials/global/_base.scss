@@ -6,17 +6,6 @@
 // Toolkit imports all of Compass, so there is no need to import it separately.
 ////////////////////////
 
-
-@import 'normalize';
-
-////////////////////////
-// Compass Extensions
-////////////////////////
-@import 'singularitygs';
-@import 'toolkit';
-@import 'sassy-buttons';
-
-
 ////////////////////////
 // Private Imports
 ////////////////////////
@@ -27,9 +16,12 @@
 
 
 
+html {
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  @include box-sizing('border-box');
+  box-sizing: inherit;
 }
 
 

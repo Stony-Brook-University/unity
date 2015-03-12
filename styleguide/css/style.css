@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .logo-container {
 	background-color: #fff;
 	padding: 0;
@@ -61,10 +65,16 @@ header.carousel {
 .bg-light-gray {
 	background-color: #eee;
 }
+.bg-light-red {
+  background-color: #FF9898;
+}
 .text-primary {
 	color: #000;
 }
-
+.center-text {
+  width: 600px;
+  margin: 0 auto;
+}
 .panel {
   margin-bottom: 20px;
   background-color: #eee;
@@ -83,7 +93,6 @@ a.glassy-button {
 	border: 2px solid #600;
 	background-color: #333;
 	color: #fff;
-	text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
 	border: 1px solid rgba(0,0,0,.5);
 	border-bottom: 3px solid rgba(0,0,0,.5);
 	border-radius: 3px;
@@ -100,7 +109,6 @@ a.glassy-button {
 	color: #900;
 }
 /* see http://cssarrowplease.com/ */
-
     .arrow-below {
         position: relative;
     }
@@ -114,7 +122,6 @@ a.glassy-button {
         position: absolute;
         pointer-events: none;
     }
-
     /* the arrow */
     .arrow-below:after {
         border-top-color: #fff;
@@ -132,11 +139,9 @@ a.glassy-button {
         margin-left: -36px;
         */
     }
-
     .arrow-below-grey:after {
         border-top-color: #e2e2e2;
     }
-
     .arrow-below-white:after {
         border-top-color: #fff;
     }
@@ -148,12 +153,10 @@ a.glassy-button {
     .arrow-below-red:after {
         border-top-color: #900;
     }
-
     .arrow-below + section,
     section.arrow-above {
         padding: 50px 0 0 0;
     }
-
 /* cards */
 .panel-cards {
   margin-bottom: 20px;
@@ -174,5 +177,75 @@ a.glassy-button {
 }
 .panel-default-cards {
 	border-color: #000;
+}
 
+i.icon-folder{
+  font-size: 4em;
+}
+
+/* Form */
+.contactForm {
+    max-width: 600px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    color: #000;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.contactForm h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    padding-bottom: 15px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: 10px 0px 20px 1px;;
+    color: #000;
+}
+.contactForm label {
+    display: block;
+    margin: 0px;
+}
+.contactForm input[type="text"], .contactForm input[type="email"], .contactForm textarea, .contactForm select {
+    border: 1px solid #DBDBDB;
+    color: #000;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+}
+.contactForm textarea{
+    padding: 5px 3px 3px 5px;
+}
+.contactForm select {
+    text-indent: 0.01px;
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+.contactForm textarea{
+    height:100px;
+}
+.contactForm .button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #900000;
+  border-color: #900000;
+}
+.form-control {
+  border-radius: 0px;
+  width: auto;
 }

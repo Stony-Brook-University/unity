@@ -10,25 +10,25 @@
       margin-bottom: 0.5em;
    }
 }
-#main-prefix ul
+#main-prefix ul, ul.lined-menu
 {
 margin: 0px 0px 0px 0px;
 padding: 0px;
 }
 
-#main-prefix ul ul
+#main-prefix ul ul, ul.lined-menu ul
 {
 margin: 15px 0px 0px 10px;
 padding: 0px;
 border-top: 1px solid #ccc;
 }
 
-#main-prefix ul li:last-child
+#main-prefix ul li:last-child, ul.lined-menu li:last-child
 {
 border-bottom: 0px;
 }
 
-#main-prefix ul li {
+#main-prefix ul li, ul.lined-menu li {
    list-style: none;
    
    padding: 0px 0px 5px 0px;
@@ -38,7 +38,7 @@ border-bottom: 0px;
    border-bottom: 1px solid #ccc;
  }
  
- #main-prefix ul li a 
+ #main-prefix ul li a, ul.lined-menu li a 
  {
  text-decoration: none;
  }
