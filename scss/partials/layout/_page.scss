@@ -20,101 +20,27 @@ class is specified we default to 960. This allows us to stay backward compatible
 
 //fixed-width is the default view. 
 
+
+html, body
+{
+		background: #fff;
+		margin: 0px;
+		height: 100%;
+}
+
+
 body
 {
 	font-size: 14px;
 }
 
-#page
+
+#page, #header, #main-menu, #container, #footer, .section
 {
-
-	margin: 0px;
-	width: 100%;
-	max-width: 960px;
-	
-	@include breakpoint($break-narrow-desktop)
-	{
-		margin: 10px auto;
-		
-		width: 960px;
-	}
-	
-	
-
-
+			width: 100%;
+			max-width: 100%;
+			margin: 0px;
 }
-
-.max-1200 {
-
-	font-size: 16px;
-	
-	#page
-	{
-		max-width: 1200px;
-		margin: 0px;
-		width: 100%;
-	
-
-		@include breakpoint($break-narrow-desktop)
-	{
-		margin: 10px auto;
-		
-		width: 960px;
-	}
-	@include breakpoint($break-desktop)
-	{
-		margin: 10px auto;
-		
-		width: 1080px;
-	}
-
-	@include breakpoint($break-wide-desktop)
-	{
-		margin: 10px auto;
-		
-		width: 1200px;
-	}
-		
-	}
-}
-
-.max-1080 {
-
-	font-size: 16px;
-	
-	#page
-	{
-		max-width: 1080px;
-		margin: 0px;
-		width: 100%;
-		
-
-	@include breakpoint($break-narrow-desktop)
-	{
-		margin: 10px auto;
-		
-		width: 960px;
-	}
-	@include breakpoint($break-desktop)
-	{
-		margin: 10px auto;
-		
-		width: 1080px;
-	}
-	
-		
-	}
-}
-.max-960 {
-
-
-	#page
-	{
-    	max-width: 960px;
-    	width: 960px;
-    }
-}
-
 
 #header, #main-menu, #container, #footer, #header-content, #main-menu-content, .section-content, #footer-content, #banner-content
 {
@@ -124,54 +50,6 @@ body
 #container
 {
 	background-color: #fff;
-}
-
-
-.full-width
-{
-
-		
-
-		#page, #header, #main-menu, #container, #footer, .section
-		{
-			width: 100%;
-			max-width: 100%;
-			margin: 0px;
-		}
-
-		#header-content, #main-menu-content, .section-content, #footer-content, #banner-content
-		{
-			margin: 0px auto;
-			max-width: 960px;
-		}
-
-
-
-		
-		
-			  &.max-1200 {
-
-    	#header-content, #main-menu-content, .section-content, #footer-content, #banner-content
-    	{
-    		max-width: 1200px;
-    		
-    	}
-    }
-
-    &.max-1080 {
-    	#header-content, #main-menu-content, .section-content, #footer-content, #banner-content
-    	{
-    		max-width: 1080px;
-    		
-    	}
-    }
-    &.max-960 {
-    	#header-content, #main-menu-content, .section-content, #footer-content, #banner-content
-    	{
-	    	max-width: 960px;
-	    }
-    }
-
 }
 
 

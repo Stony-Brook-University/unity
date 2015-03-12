@@ -1,94 +1,57 @@
-/*	.section-content:after, .section:after
-	{
-		content: " ";
-   		display: block; 
-   		height: 0; 
-   		clear: both;
-	}*/
+/* see http://cssarrowplease.com/ */
+    .arrow-below {
+        position: relative;
+    }
+    .arrow-below:after, .arrow-below:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    /* the arrow */
+    .arrow-below:after {
+        border-top-color: #fff;
+        border-width: 30px;
+        margin-left: -30px;
+        z-index: 1000;
+    }
+    /* the border */
+    .arrow-below:before {
+        border-top-color: #000;
+        border-width: 0;
+        margin-left: 0;
+        /*
+        border-width: 36px;
+        margin-left: -36px;
+        */
+    }
+    .arrow-below-grey:after {
+        border-top-color: #e2e2e2;
+    }
+    .arrow-below-white:after {
+        border-top-color: #fff;
+    }
 
-.section
+    .arrow-below-black:after {
+        border-top-color: #000;
+    }
+
+    .arrow-below-red:after {
+        border-top-color: #900;
+    }
+  
+  /*  .arrow-below + section,
+    section.arrow-above {
+        padding: 50px 0 0 0;
+    }*/
+
+/* end arrows */ 
+
+.section-header
 {
-	
-	padding: 1.0em 1.2em;
-
-	@include breakpoint($break-narrow-desktop)
-	{
-
-		padding: 1.875em 3.75em;
-	}
-}
-
-.full-width .section
-{
-	padding: 1.0em 1.2em;
-
-	@include breakpoint($break-narrow-desktop)
-	{
-
-		padding: 1.875em 0em;
-	}
-
-}
-
-
-.section.breadcrumb
-{
-	padding: 0.5em 3.75em;
-}
-
-
-
-.section.section-system-status
-{
-	h1.section-heading
-	{
-		font-size: 1.5em;
-		color: #fff;
-	}
-
-	background: rgba(56,1,14,1);
-background: -moz-linear-gradient(-45deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%, rgba(153,0,0,1) 66%, rgba(56,1,14,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(56,1,14,1)), color-stop(33%, rgba(153,0,0,1)), color-stop(66%, rgba(153,0,0,1)), color-stop(100%, rgba(56,1,14,1)));
-background: -webkit-linear-gradient(-45deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%, rgba(153,0,0,1) 66%, rgba(56,1,14,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%, rgba(153,0,0,1) 66%, rgba(56,1,14,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%, rgba(153,0,0,1) 66%, rgba(56,1,14,1) 100%);
-background: linear-gradient(135deg, rgba(56,1,14,1) 0%, rgba(153,0,0,1) 33%, rgba(153,0,0,1) 66%, rgba(56,1,14,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38010e', endColorstr='#38010e', GradientType=1 );
-}	
-
-
-
-/*
-
-.section.banner, .section.banner #banner-image, .section.banner a  {
-display: block;
-}
-
-*/
-
-/*
-#banner-image
-{
-padding-left: 150px;
-padding-top: 50px;
-width: 50%;
-float: left;
-
-}
-
-#banner.section
-{
-	padding: 0px;
-}
-
-
-*/
-
-
-
-
-.section-heading-separator
-{
-	width: 100%;
-	text-align: left;
+    text-align: center;
 }

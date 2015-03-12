@@ -51,8 +51,64 @@
 }
 
 
+.fluffy
+{
+	padding: 6em 0em;
+}
+
+.light
+{
+	padding: 5em 0em;
+}
+
+.spacey
+{
+	padding: 4em 0em;
+}
+
+.comfy
+{
+	padding: 3em 0em;
+}
+
+.cozy
+{
+	padding: 2em 0em;
+}
+
+.snug
+{
+	padding: 1em 0em;
+}
+
+.tight
+{
+	padding: 0;
+}
+
+.full-width
+{
+	width: 100%;
+}
+
+.half-width
+{
+	width: 50%;
+}
+
+.third-width
+{
+	width: 33.3333%
+}
+
+
 .col-centered{
     float: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+.centered, .center-text
+{
+	text-align: center;
 }
