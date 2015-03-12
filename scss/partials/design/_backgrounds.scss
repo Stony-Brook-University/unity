@@ -123,6 +123,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38010e', end
 }
 
 
+.background-facebook
+{
+	background-color: $facebook !important;
+}
+
+.background-yammer
+{
+	background-color: $yammer !important;
+}
+
+.background-twitter
+{
+	background-color: $twitter !important;
+}
+
 .background-blue
 {
 	background-color: $blue;
@@ -130,12 +145,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38010e', end
 
 .background-light-blue
 {
-	background-color: $light-blue;
+	background-color: $light-blue !important;
 }
 
 .background-dark-blue
 {
-	background-color: $dark-blue;
+	background-color: $dark-blue !important;
 }
 
 .background-gray

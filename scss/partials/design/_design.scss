@@ -83,11 +83,18 @@ body
 	width: 50%;
 }
 
+.third-width
+{
+	width: 33.3333%
+}
+
 
 @import 'text';
 @import 'backgrounds';
 @import 'views-styles';
 @import 'webforms';
 @import 'inline-list';
+@import 'images';
+@import 'boxmodel';
 
 
