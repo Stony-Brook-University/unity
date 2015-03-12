@@ -173,11 +173,12 @@ browserSync: {
    
   css: {
     bsFiles: {
-      src : ['.release/css/*.css','styleguide/*.html']
+      src : ['.release/css/*.css','styleguide/*']
     },
       
     options: {
         watchTask: true,         
+        proxy: "styleguide.unity.dev:8080"
     }
   },
 },
@@ -259,7 +260,7 @@ copy: {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-bower-concat');
+  //grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-notify');

@@ -11,39 +11,7 @@
 
 html body
 {
-  margin-top: 0px;
-
-
-  @include breakpoint($break2)
-  {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  #admin-menu
-  {
-    display: none;
-
-    @include breakpoint($break2)
-    {
-      display: block;
-    }
-
-  }
-
-
-}
-
-html body.admin-menu
-{
-    margin-top: 0px !important;
-
-
-  @include breakpoint($break2)
-  {
-    margin-top: 39px !important;
-    
-  }
+ margin: 0px;
 
 }
 

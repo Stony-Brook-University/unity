@@ -1,0 +1,107 @@
+<html>
+
+<head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+
+<style>
+
+.body
+{
+	background-color: #33ccff;
+}
+
+.col
+{
+	float: left;
+	width: 30%;
+	margin-left: 3%;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<div class="items-container">
+<div class="col">
+<h1>Test</h1>
+<div class="body item" data-match-height="items-a">
+This is some text, it will be variable height.
+</div>
+
+<div class="buttons">
+<a class="button" href="#">Button 1</a>
+<a class="button" href="#">Button 2</a>
+</div>
+
+</div>
+
+
+<div class="col">
+<h1>Test</h1>
+<div class="body item" data-match-height="items-a">
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+This is some text, it will be variable height.
+</div>
+
+<div class="buttons">
+<a class="button" href="#">Button 1</a>
+<a class="button" href="#">Button 2</a>
+</div>
+
+</div>
+
+
+<div class="col">
+<h1>Test</h1>
+<div class="body item" data-match-height="items-a">
+This is some text, it will be variable height.
+</div>
+
+<div class="buttons">
+<a class="button" href="#">Button 1</a>
+<a class="button" href="#">Button 2</a>
+</div>
+
+</div>
+
+</div>
+
+
+ <script type="text/javascript">
+
+                    // apply matchHeight to each item container's items
+                    $('.items-container').each(function() {
+
+                    	console.log($(this));
+
+                        $(this).children('.item').matchHeight({
+                            byRow: true
+                            //property: 'min-height'
+                        });
+                    });
+
+
+        </script>
+
+</body>
+
+</html>

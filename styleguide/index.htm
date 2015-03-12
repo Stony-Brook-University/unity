@@ -1,146 +1,503 @@
-<html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="../.release/css/style.dev.css">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="/.release/js/header/header.dev.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	</head>
-	<body class="panel-layout-ciuffo unity-no-sidebars">
-		<div id="header">
-			<div id="header-content">
-				<a href="http://www.stonybrook.edu" title="Stonybrook University" rel="home" id="university-logo"><img src="/.release/assets/images/stony-brook-university.png" alt="Stony Brook University Logo"></a>
-			</div>
-		</div>
-		<div id="main-menu-wrap">
-			<div id="main-menu-menu-wrap">
-				<div id="main-menu">
-					<div id="sidr-wrapper-0" style="display: none;"><a id="sidr-0-button" href="#sidr-0">Menu</a></div><ul class="menu responsive-menus-sidr-processed"><li class="first leaf"><a href="/" title="Home" class="active">Home</a></li>
-					<li class="leaf"><a href="/news" title="">News</a></li>
-					<li class="expanded"><a href="/events/calendar" title="">Events</a><ul class="menu"><li class="first leaf"><a href="/events/listing" title="">Event Listing</a></li>
-					<li class="leaf"><a href="/events/calendar/month" title="">Events Calendar</a></li>
-					<li class="last leaf"><a href="/events/workshop-catalog" title="">Workshop Catalog</a></li>
-				</ul></li>
-				<li class="expanded"><a href="/services/catalog/a-z/all" title="">Services</a><ul class="menu"><li class="first leaf"><a href="/services/catalog/a-z/all" title="">Services A-Z</a></li>
-				<li class="last leaf"><a href="/services/catalog/category" title="">Services By Category</a></li>
-			</ul></li>
-			<li class="leaf"><a href="/projects" title="">Projects</a></li>
-			<li class="last leaf"><a href="/help">Help</a></li>
-		</ul>  </div>
-		
-		
-		</div> <!-- /#main-menu -->
-		
-		
-		
-		
-	</div>
-	
-</div>
+    <title>Stony Brook University</title>
 
-<div id="banner">
-    <div class="banner landing-page banner-bottom-fade"><div class="banner-image"><img src="http://it.stonybrook.edu/sites/it.stonybrook.edu/files/styles/full_banner/public/landing-page/10161/images/banner/help-banner.png?itok=4ncj3hrQ"></div><div class="banner-content-wrap"><div class="banner-content-text"><h1>Help</h1></div></div></div>  </div>
-
-
-
-<div class="section field field-name-field-top-sections field-type-paragraphs field-label-hidden">
-      
-
-
-<div class="entity entity-paragraphs-item paragraphs-item-rich-text-section clearfix" about="" typeof="">
-  <div class="content">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
-  <h2 class="section-heading field field-name-field-heading field-type-text field-label-hidden">
-    <p><span class="icon icon-bell">Report a Problem</span></p>
-  </h2>
+    <!-- Bootstrap Core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/.release/css/style.dev.css" rel="stylesheet">
 
-  <div class="field field-name-field-section-text field-type-text-long field-label-hidden">
-    <div class="section-content has-cards three-cards">
-<div class="card">
-<h3>SOLAR Issues</h3>
-<p>Have an issue logging into or using SOLAR? Use these forms to submit your ticket so that it gets routed to right team.</p>
-<p><a href="https://issue.it.stonybrook.edu/MRcgi/MRlogin.pl?PROJECTID=30" class="glassy-button button button-block">I Know My NetID and Password</a> <a href="http://it.cc.stonybrook.edu/solarhelpframe/form" class="glassy-button button button-block">I Can't Login With My NetID</a></p></div>
-<div class="card">
-<h3>All Other Services</h3>
-<p>Have a problem with any other DoIT Service? Use this form to ensure your issue gets routed to the right team.</p>
-<p><a href="/help/report-a-problem/form" class="glassy-button button button-block">Report Problem Online</a> <a href="/about-us/departments" class="glassy-button button button-block">Department Contact List</a></p></div>
-<div class="card">
-<h3>View System Status</h3>
-<p>Check if any of our systems have any maintenance scheduled or for unancticipated outages and disruptions.</p>
-<p><a href="/status" class="glassy-button button button-block">Current System Status</a> <a href="/status/scheduled-maintenance" class="glassy-button button button-block">Scheduled Maintenance</a></p></div>
-</div>
-  </div>
-  </div>
-</div>
+    <!-- Custom CSS -->
+    
+    <link href="/styleguide/css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+   
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
+</head>
+
+<body>
+    <!-- Navigation -->
+        <div class="logo-container">
+            <div class="container">
+                <a href="http://www.stonybrook.edu/"><img src="images/stony-brook-university.png" /></a>
+                <a href="/"><img title="Home" src="http://it.stonybrook.edu/sites/it.stonybrook.edu/files/doit-text.png"></a>
+            </div>
+        </div>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">News</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Events</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <section class="bg-light-red">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="page-header"><i class="fa fa-fw fa-exclamation-circle"></i>Attention
+                    </h2>
+                </div>
+                <div class="col-md-12">
+                        <div class="panel-body page-header center-text">
+                            <p>SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information. Students use SOLAR to register for classes, print schedules, view and pay bills, update personal contact information, view transcripts, and submit student employment timesheets. Employees use SOLAR to update personal contact information, view vacation/sick accruals, print class rosters, submit grades, and much more.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </section>
+        <!-- Marketing Icons Section -->
+    <section id="icon" class="arrow-below arrow-below-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Self Help Knowledge Base Articles!!!
+                    </h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Blackboard</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Google Apps</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">NetID</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Qualtrics</h4>
+                </div>
+            </div><!-- /.row -->
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">SINC Sites</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Software Catalog</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Solar</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">WolfieNet</h4>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Report a Problem</h2>
+                </div>
+                    <div class="col-md-4">
+                            <div class="panel-body" data-match-height="items-a">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="glassy-button btn btn-default">Learn More</a>
+
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                            <div class="panel-body" data-match-height="items-a">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="glassy-button btn btn-default">Learn More</a>
+
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="panel-body" data-match-height="items-a">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="glassy-button btn btn-default">Learn More</a>
+                            </div>
+                    </div>
+                </div>    
+            </div><!-- /.row -->
+    </section>   
+
+        <!-- Features Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Training and Professional Development</h2>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="panel-heading">
+                            <h4>Bootstrap v3.2.0</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="panel-heading">
+                            <h4>Free &amp; Open Source</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <p>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="panel-heading">
+                            <h4>Easy to Use</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt 
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </section>
+    <section class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Learn About Current Career Opportunities in your Area of Interest</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel-default-cards">
+                        <div class="panel-cards">
+                            <div class="panel-heading-cards">
+                                <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
+                            </div>
+                            <div class="panel-body-cards">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                <a href="#" class="btn btn-default">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel2 panel-default">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <a href="#" class="btn btn-default">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel2 panel-default">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <a href="#" class="btn btn-default">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 form-control-static">
+                <form name="sentMessage" class="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <h1>Report a Problem</h1>
+                        <p>When you submit this trouble ticket, it will automatically trigger a notification message to appropriate technical staff for resolution.</p>
+                        <div class="controls">
+                            <label>NetID:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>First Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Last Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Services:</label>
+                            <select>
+                                <option value="" disabled="disabled" selected="selected">-select-</option>
+                                <option value="1">Audio Visual Services</option>
+                                <option value="2">Blackboard</option>
+                                <option value="2">Campus Announcements</option>
+                                <option value="2">Campus Television Service</option>
+                                <option value="2">Classroom Equiment & Consumable Supplies</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Issue:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    
+        <hr>
+    <div class="container">
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </footer>
     </div>
-    
+    <!-- jQuery -->
 
-<div id="footer">
-	<div id="footer-wrap">
-		<div id="footer-content">
-			
-			
-			
-			<div id="left-menu-footer" class="sub-footer first odd">
-				
-				
-				<h2>About Us</h2>
-				
-				<ul class="menu"><li class="first leaf"><a href="/about-us/departments" title="">Departments</a></li>
-				<li class="leaf"><a href="/about-us/staff-directory" title="">Staff Directory</a></li>
-				<li class="leaf"><a href="/policies" title="">Policies</a></li>
-				<li class="last leaf"><a href="/about-us" title="">more...</a></li>
-			</ul>
-		</div>
-		
-		
-		<div id="middle-menu-footer" class="sub-footer even">
-			
-			
-			<h2>Community</h2>
-			
-			<ul class="menu"><li class="first leaf"><a href="/about-us/it-partners" title="">IT Partners</a></li>
-			<li class="last leaf"><a href="http://you.stonybrook.edu" title="">SB You</a></li>
-		</ul>
-	</div>
-	
-	
-	<div id="right-menu-footer" class="sub-footer last odd">
-		
-		
-		<h2>Feedback</h2>
-		<ul class="menu"><li class="first leaf"><a href="/help/report-a-problem" title="">Report a Problem</a></li>
-		<li class="leaf"><a href="/feedback" title="">Provide Feedback</a></li>
-		<li class="last leaf"><a href="/status" title="">System Status</a></li>
-	</ul>
-</div>
-<div id="social-footer" class="social-footer">
-	
-	<div class="social-icon odd"><a href="https://www.facebook.com/sbudoit"><img src="/.release/assets/images/social/facebook.png"></a></div>
-	<div class="social-icon even"><a href="https://twitter.com/sbudoit"><img src="/.release/assets/images/social/twitter.png"></a></div>
-	<div class="social-icon odd"><a href="http://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw"><img src="/.release/assets/images/social/youtube.png"></a></div>
-	<div class="social-icon even"><a href="https://plus.google.com/u/0/102779299295288343882/posts"><img src="/.release/assets/images/social/google-plus.png"></a></div>
-	<div class="social-icon odd"><a href="http://sbudoit.tumblr.com/" title="#SBUDoIT on Tumblr"><img src="/.release/assets/images/social/tumblr.png"></a></div>
-	<div class="social-icon even"><a href="http://www.flickr.com/photos/101383158@N02/"><img src="/.release/assets/images/social/flickr.png"></a></div>
-	<div class="social-icon odd"><a href="http://instagram.com/sbudoit"><img src="/.release/assets/images/social/instagram.png"></a></div>
-	<div class="social-icon even"><a href="https://www.yammer.com/stonybrook.edu/"><img src="/.release/assets/images/social/yammer.png"></a></div>
-</div>
-<div id="bottom-footer">
-	
-	<p style="text-align: center;">Copyright © 2008-2014 Stony Brook University Division of Information Technology - All Rights Reserved</p><p style="text-align: center;">Phone: (631) 632-9800 | Email: <a href="mailto:supportteam@stonybrook.edu">supportteam@stonybrook.edu</a></p>
-	<ul class="menu"><li class="first last leaf menu-mlid-2082"><a href="/cas?destination=home" title="">Site Login</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+    <script src="/.release/js/footer/footer.dev.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
-<script src="/.release/js/footer/footer.dev.js"></script>
+
+
 <script type='text/javascript' id="__bs_script__">//<![CDATA[
-document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("HOST", location.hostname));
+document.write("<script type='text/javscript' async src='http://HOST:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
+
 </body>
+
 </html>
+
