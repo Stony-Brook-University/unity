@@ -2,14 +2,18 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.logo-container {
-	background-color: #fff;
-	padding: 0;
-	max-height: 92px;
+/* accordion */
+#accordion p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
 }
-header.carousel {
-	height: 75%
+#accordion h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
+/* end accordion */
+
+/* Navigation */
 .navbar-nav {
 	display: table;
 	float: none;
@@ -25,14 +29,12 @@ header.carousel {
 	border-radius: 0px;
 	border: 0px;
 }
-/* float nav bar to left
 .navbar ul {
 	width: 100%;
 	padding: 0;
 	float: left;
 	margin: 0;
 }
-*/ 
 .navbar-nav>li>a {
 	text-transform: uppercase;
 }
@@ -54,7 +56,8 @@ header.carousel {
 .navbar-inverse .navbar-nav>li>a {
 	color: #ffffff;
 }
-/* End Nav */
+/* End Navigation */
+
 .page-header {
 	text-align: center;
 }
@@ -62,52 +65,27 @@ header.carousel {
 	padding-top: 25px;
 	padding-bottom: 35px;
 }
+
+/* section styles */
 .bg-light-gray {
-	background-color: #eee;
+  background-color: #eee;
 }
 .bg-light-red {
   background-color: #FF9898;
-}
-.text-primary {
-	color: #000;
 }
 .center-text {
   width: 600px;
   margin: 0 auto;
 }
-.panel {
-  margin-bottom: 20px;
-  background-color: #eee;
-  border: 1px solid transparent;
-  border-radius: 0px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+/* end section styles */
+
+
+/* font awesome styles */
+.text-primary {
+	color: #000;
 }
-.panel-default {
-	border-color: #000;
-}
-a.glassy-button {
-	padding: 1em;
-	display: block;
-	margin-top: 15px;
-	border: 2px solid #600;
-	background-color: #333;
-	color: #fff;
-	border: 1px solid rgba(0,0,0,.5);
-	border-bottom: 3px solid rgba(0,0,0,.5);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	background: rgba(51,51,51,.85);
-	box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
-	-o-box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
-	-moz-box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
-	text-align: center;
-}
-.btn-default {
-	color: #900;
-}
+/* end font awesome styles */
+
 /* see http://cssarrowplease.com/ */
     .arrow-below {
         position: relative;
@@ -157,6 +135,8 @@ a.glassy-button {
     section.arrow-above {
         padding: 50px 0 0 0;
     }
+/* end arrows */    
+
 /* cards */
 .panel-cards {
   margin-bottom: 20px;
@@ -178,10 +158,29 @@ a.glassy-button {
 .panel-default-cards {
 	border-color: #000;
 }
-
-i.icon-folder{
-  font-size: 4em;
+a.glassy-button {
+  padding: 1em;
+  display: block;
+  margin-top: 15px;
+  border: 2px solid #600;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.5);
+  border-bottom: 3px solid rgba(0,0,0,.5);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: rgba(51,51,51,.85);
+  box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
+  -o-box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 2px 8px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.3),inset 0 10px rgba(255,255,255,.2),inset 0 10px 20px rgba(255,255,255,.25),inset 0 -15px 30px rgba(0,0,0,.3);
+  text-align: center;
 }
+.btn-default {
+  color: #900;
+}
+/* end cards */
 
 /* Form */
 .contactForm {
@@ -240,7 +239,6 @@ i.icon-folder{
     text-shadow: 1px 1px 1px #9E3F3F;
     cursor: pointer;
 }
-
 .btn-primary {
   background-color: #900000;
   border-color: #900000;
@@ -249,3 +247,6 @@ i.icon-folder{
   border-radius: 0px;
   width: auto;
 }
+/* end Form */
+
+

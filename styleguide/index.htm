@@ -18,6 +18,9 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="jquery/jquery-ui.min.css" rel="stylesheet">
+    <link href="jquery/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="jquery/jquery-ui.theme.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="icomoon/style.css" rel="stylesheet" type="text/css">
@@ -362,22 +365,22 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel2 panel-default">
-                        <div class="panel-heading">
+                    <div class="panel-cards">
+                        <div class="panel-heading-cards">
                             <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body-cards">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                             <a href="#" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel2 panel-default">
-                        <div class="panel-heading">
+                    <div class="panel-cards">
+                        <div class="panel-heading-cards">
                             <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body-cards">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                             <a href="#" class="btn btn-default">Learn More</a>
                         </div>
@@ -389,7 +392,121 @@
     <section>
         <div class="container">
             <div class="row">
-            <div class="col-md-12 form-control-static">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Frequently Asked Questions</h2>
+                </div>
+                <div class="col-md-6">
+                    <div id="accordion">
+                        <h3>Where can I learn more about Google Calendar?</h3>
+                        <div>
+                            <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                            </p>
+                        </div>
+                        <h3>Can I get notifications of upcoming events and appointments on my Google Calendar?</h3>
+                        <div>
+                            <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                            </p>
+                        </div>
+                        <h3>Can I print Google Calendar items?</h3>
+                        <div>
+                            <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            </p>
+                            <ul>
+                              <li>List item one</li>
+                              <li>List item two</li>
+                              <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3>How can I get to my calendar?</h3>
+                        <div>
+                            <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                            </p>
+                            <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                            </p>
+                        </div>
+                        <h3>How do I add web calendars and events to Google Calendar?</h3>
+                        <div>
+                            <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                            </p>
+                            <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                            </p>
+                        </div>
+                        <h3>How do I create a new Google Calendar?</h3>
+                        <div>
+                            <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                            </p>
+                            <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                            </p>
+                        </div>
+                        <h3>How do I customize my Calendar?</h3>
+                        <div>
+                            <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                            </p>
+                            <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                            </p>
+                        </div>
+                        <h3>How do I view my calendars on my mobile device?</h3>
+                        <div>
+                            <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                            </p>
+                            <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                            </p>
+                        </div>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 form-control-static">
                 <form name="sentMessage" class="contactForm" novalidate>
                     <div class="control-group form-group">
                         <h1>Report a Problem</h1>
@@ -450,7 +567,7 @@
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-
+            </div>
         </div>
         </div>
     </section>
@@ -481,6 +598,7 @@
     </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="jquery/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/jquery.matchHeight-min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -491,7 +609,79 @@
         interval: 5000 //changes the speed
     })
     </script>
-
+    <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      event: "click hoverintent"
+    });
+  });
+ 
+  /*
+   * hoverIntent | Copyright 2011 Brian Cherne
+   * http://cherne.net/brian/resources/jquery.hoverIntent.html
+   * modified by the jQuery UI team
+   */
+  $.event.special.hoverintent = {
+    setup: function() {
+      $( this ).bind( "mouseover", jQuery.event.special.hoverintent.handler );
+    },
+    teardown: function() {
+      $( this ).unbind( "mouseover", jQuery.event.special.hoverintent.handler );
+    },
+    handler: function( event ) {
+      var currentX, currentY, timeout,
+        args = arguments,
+        target = $( event.target ),
+        previousX = event.pageX,
+        previousY = event.pageY;
+ 
+      function track( event ) {
+        currentX = event.pageX;
+        currentY = event.pageY;
+      };
+ 
+      function clear() {
+        target
+          .unbind( "mousemove", track )
+          .unbind( "mouseout", clear );
+        clearTimeout( timeout );
+      }
+ 
+      function handler() {
+        var prop,
+          orig = event;
+ 
+        if ( ( Math.abs( previousX - currentX ) +
+            Math.abs( previousY - currentY ) ) < 7 ) {
+          clear();
+ 
+          event = $.Event( "hoverintent" );
+          for ( prop in orig ) {
+            if ( !( prop in event ) ) {
+              event[ prop ] = orig[ prop ];
+            }
+          }
+          // Prevent accessing the original event since the new event
+          // is fired asynchronously and the old event is no longer
+          // usable (#6028)
+          delete event.originalEvent;
+ 
+          target.trigger( event );
+        } else {
+          previousX = currentX;
+          previousY = currentY;
+          timeout = setTimeout( handler, 100 );
+        }
+      }
+ 
+      timeout = setTimeout( handler, 100 );
+      target.bind({
+        mousemove: track,
+        mouseout: clear
+      });
+    }
+  };
+  </script>
 </body>
 
 </html>
