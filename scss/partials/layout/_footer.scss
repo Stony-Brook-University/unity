@@ -1,121 +1,161 @@
-.footer
-{
-background-color: #000000;
-width: 100%;
-color: #fff;
-float: left;
-
-padding: 1.25em 1em;
-
-@include breakpoint($break3)
-{
-	padding: 1.25em 0px;	
-}
+footer.site-footer {
+    display: block;
+    background: #252525;
+    color: #ccc;
+    border-bottom: 1px solid #aaa;
+    padding: 40px 0;
+    text-align: center;
+    font-family:'Trade Gothic Next W01';
+    font-size: 1em;
+    position: relative;
+    z-index: 1;
 }
 
 
-.footer a
-{
-color: #fff;
-text-decoration: none;
-
+footer.site-footer .col-4 .code {
+    display: block;
 }
 
-.footer a:hover
-{
-text-decoration: underline;
-text-color: #fff;
+footer.site-footer .address,
+footer.site-footer .address a,
+footer.site-footer .codes {
+    line-height: 1.7em;
 }
 
-.footer h2
-{
-border-bottom: 0px;
-color: #fff;
+footer.site-footer .codes {
+    display: block;
+    line-height: 1.7em;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 10px 0;
+    background: #191919;
 }
 
-.footer ul, #footer ul li
-{
-margin: 0px;
-padding: 0px;
-list-style: none;
+footer.site-footer .address .serif-italic,
+footer.site-footer .codes .serif-italic {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin: 0 0 4px;
+    display: block;
+    /*color: #00ffff;*/
+}
+
+footer.site-footer a {
+    color: #ccc;
+    display: block;
+    width: auto;
+    line-height: 1.8em;
+    margin: 0 0 10px;
+}
+
+footer.site-footer a:hover {
+    color: #fff;
+}
+
+footer.site-footer .address-link .icon {
+    display: inline-block;
+    margin: 0 6px 0 0;
+    font-size: 1.2em;
+}
+
+footer.site-footer .small-button,
+footer.site-footer .phone a,
+.footer-bar span a {
+    font-size: .8em;
+    display: inline-block;
+    padding: 1px 8px 3px;
+    border: 1px solid #383838;
+    margin: 8px auto;
+    background: #222;
+    border-radius: 3px;
+}
+
+footer.site-footer .phone {
+    display: block;
+}
+
+footer.site-footer .phone a {
+    color: #ddd;
+    width: 100px;
+    padding-top: 0px 8px 1px;
+}
+
+footer.site-footer .col-1 a:after {
+    display: inline-block;
+    content: "\f105";
+    margin: 0 0 0 8px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+}
+
+footer.site-footer a.external-link:hover:after {
+    content: "\f08e";
+}
+
+footer.site-footer .social h5 {
+    font-size: 1.4em;
+    font-family: 'ITCFranklinGothicW01-Md 812695';
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    color: #ccc;
+}
+
+footer.site-footer .social-links a {
+    display: inline-block;
+    padding: 10px 10px 0;
+    margin: 0 4px;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    border: 1px solid #383838;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    line-height: 0;
+}
+
+footer.site-footer .social-links a em {
+    text-shadow: 0 0 4px rgba(70,70,70,.3);
+}
+
+footer.site-footer .social-links a:hover em {
+    color: #fff;
+}
+
+footer.site-footer .social .small-button {
+    margin: 15px 0 5px;
+}
+
+footer.site-footer .social .small-button:after {
+    content: " ";
 }
 
 
-
-#footer #social-footer .social-icon
+.footer-links
 {
-float: left;
-margin: 5px 10% 0px 0px;
+    @include breakpoint($screen-md)
+    {
+        text-align: left;    
+    }
+    
 }
 
-#footer
+footer .col
 {
-	#bottom-footer
-	{
-		ul
-		{
-			margin: 10px auto;
-			text-align: center;
-			width: 100px;
-		}
+    margin: 3em 0;
 
-		.content a 
-		{
-			color: #fff;
-			
-		}
-	}
-}
-
-
-
-
-.footer-menu ul
-{
-list-style-type: none;
-margin: 0px;
-padding: 0px;
-list-style-image: none;
-
-}			
-.footer-menu ul li
-{
-margin: 0px;
-padding: 0px;
-list-style-image: none;
-list-style-type: none;
-}
-
-.footer-menu a
-{
-color: #fff;
-text-decoration: none;
-}
-
-.footer-menu h2
-{
-font-size: 1.0em;
-color: #fff;
-}
-
-#footer #bottom-footer ul.menu
-{
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-
-	li
-	{
-		display: inline;
-		padding: 0px 10px;
-		//border-right: 1px #fff solid;	
-	}
-	
-	li.last
-	{
-		border: 0px;
-	}
-
-
+    @include breakpoint($screen-md)
+    {
+        margin: 1em 0;
+    }
 }

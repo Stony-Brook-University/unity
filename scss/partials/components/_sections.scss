@@ -55,3 +55,35 @@
 {
     text-align: center;
 }
+
+
+
+
+section.text-section
+{
+    h3
+    {
+        font-family: 'Trade Gothic W01 Light';
+text-transform: none;
+text-align: left;
+font-size: 1.8em;
+padding: 0 0 1em;
+color: #900;
+border-bottom: 1px solid #777;
+
+@include breakpoint($screen-md)
+{
+    font-size: 2.8em;
+    margin: 1.1em 0 1.0em;
+}
+    }
+
+    p
+    {
+        font-size: 1em;
+        line-height: 1.6em;
+        font-family: 'Trade Gothic Next W01', Arial, sans-serif;
+        margin: 0 0 1em 0;
+    }
+
+}

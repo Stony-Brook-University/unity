@@ -1,0 +1,60 @@
+a.dual-tone-card
+{
+	-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 100%;
+border: 1px solid #000;
+color: #fff;
+padding: 5px;
+background: #fff;
+display: block;
+border-radius: 2px;
+margin: 0 0 10px;
+box-shadow: 3px 3px 5px #aaa;
+
+span
+{
+	display: block;
+padding: 5px 0 0 0;
+background: #900;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border-radius: 2px;
+box-shadow: 0 0 3px #500 inset;
+text-align: center;
+font-size: 1.2em;
+
+@include breakpoint($screen-md)
+	{
+		padding: 25px 0 0 0;
+	}
+}
+
+span:after
+{
+	text-align: center;
+display: block;
+content: "\f061";
+background: #000;
+margin: 5px 0 0 0;
+padding: 5px 0 8px;
+border-radius: 0 0 2px 2px;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+z-index: 1;
+font-size: 1em;
+
+@include breakpoint($screen-md)
+{
+margin: 15px 0 0 0;
+padding: 10px 0 13px;
+}
+}
+}
