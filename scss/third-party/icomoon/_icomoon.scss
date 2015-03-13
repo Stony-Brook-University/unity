@@ -31,6 +31,19 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	margin-right: 1em;
+}
+
+.heading-icon:before
+{
+	margin: 0;
+	font-size: 4em;
+}
+
+i.heading-icon
+{
+	display:block;
+	margin-bottom: 2em;
 }
 
 a.link-icon:before {
