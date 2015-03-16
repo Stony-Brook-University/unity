@@ -11,43 +11,19 @@
 ////////////////////////
 // Base Import
 ////////////////////////
-@import 'partials/global/base';
+@import 'global/base';
 
 
-////////////////////////
-// Third Party
-////////////////////////
-@import 'third-party/icomoon/icomoon';
-@import 'third-party/icomoon/icomoon-customizations';
-@import 'third-party/superfish/superfish';
-@import 'third-party/sidr/sidr-light';
-@import 'third-party/flexslider/flexslider';
-@import 'third-party/flexslider/flexslider-customizations';
-
-@import 'third-party/bootstrap/bootstrap';
-//@import 'third-party/bootstrap/bootstrap-theme';
-//@import 'third-party/bootstrap/bootstrap-fixes';
-
+@import 'libraries/base';
 ////////////////////////
 // Import Design
 ////////////////////////
-@import 'partials/design/design';
-
-////////////////////////
-// Import Layout
-////////////////////////
-@import 'partials/layout/layout';
+@import 'elements/base';
 
 
 ////////////////////////
 // Import Design
 ////////////////////////
-@import 'partials/components/components';
+@import 'components/base';
 
-
-
-////////////////////////
-// Page Overrides
-////////////////////////
-@import 'partials/pages/pages';
 
