@@ -1,15 +1,24 @@
-a.arrow-link:after
-{
-	display: inline-block;
-content: "\f105";
-margin: 0 0 0 8px;
-font-family: FontAwesome;
-font-style: normal;
-font-weight: normal;
-line-height: 1;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-position: relative;
-z-index: 1;
-font-size: 1em;
+a:link, a:visited, a:active {
+    background-color: transparent;
+    color: $red;
+    text-decoration: none;
+}
+a:hover, a.selected {
+    background-color: transparent;
+    color: $dark-gray;
+    text-decoration: underline;
+}
+a.arrow-link:after {
+    display: inline-block;
+    content: "\f105";
+    margin: 0 0 0 8px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
 }

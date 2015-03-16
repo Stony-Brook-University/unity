@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 1em 0;
+    &.cap {
+        text-transform: capitalize;
+    }
+    &.small-title-1 {
+        text-align: center;
+        padding: 20px 0;
+        margin: 25px 0;
+    }
+}
+h2.small-title-1 {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: 'Trade Gothic Next W01';
+    letter-spacing: .025em;
+    word-spacing: .025em;
+    text-align: center;
+    @include breakpoint($screen-md) {
+        margin: 20px 0 40px;
+    }
+}

@@ -6,16 +6,12 @@
 //
 // All styling, non box model properties go here
 ////////////////////////
-
-
-
-
-@import 'boxmodel';
-@import 'forms';
-@import 'images';
-@import 'inline-list';
-@import 'links';
-@import 'lists';
-@import 'tables';
-@import 'text';
-
+@import "boxmodel";
+@import "forms";
+@import "images";
+@import "inline-list";
+@import "lists";
+@import "tables";
+@import "text";
+@import "headings";
+@import "links";

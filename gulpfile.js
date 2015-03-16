@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var compass = require('gulp-compass');
+var gutil = require('gulp-util');
 var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
@@ -9,16 +10,24 @@ var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync');
 var clean = require('gulp-clean');
+var todo = require('gulp-todo');
 
-
-gulp.task('cleantemp', function () {
-    return gulp.src('.temp', {read: false})
-        .pipe(clean({force: true}));
+gulp.task('cleantemp', function() {
+    return gulp.src('.temp', {
+            read: false
+        })
+        .pipe(clean({
+            force: true
+        }));
 });
 
-gulp.task('cleandist', function () {
-    return gulp.src('.dist', {read: false})
-        .pipe(clean({force: true}));
+gulp.task('cleandist', function() {
+    return gulp.src('.dist', {
+            read: false
+        })
+        .pipe(clean({
+            force: true
+        }));
 });
 
 // Lint Task
@@ -31,9 +40,9 @@ gulp.task('lint', function() {
 // Concatenate & Minify JS
 gulp.task('headerjs', function() {
     return gulp.src('js/header/**/*.js')
-        .pipe(concat('all.js'))
+        .pipe(concat('header.dev.js'))
         .pipe(gulp.dest('.dist/js/header'))
-        .pipe(rename('all.min.js'))
+        .pipe(rename('header.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('.dist/js/header'));
 });
@@ -41,9 +50,9 @@ gulp.task('headerjs', function() {
 // Concatenate & Minify JS
 gulp.task('footerjs', function() {
     return gulp.src('js/footer/**/*.js')
-        .pipe(concat('all.js'))
+        .pipe(concat('footer.dev.js'))
         .pipe(gulp.dest('.dist/js/footer'))
-        .pipe(rename('all.min.js'))
+        .pipe(rename('footer.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('.dist/js/footer'));
 });
@@ -58,24 +67,36 @@ gulp.task('images', function() {
         .pipe(gulp.dest('.dist/assets/images'));
 });
 
+// output once in markdown and then output a json file as well 
+gulp.task('todo-scss', function() {
+    gulp.src('scss/**/*.scss')
+        .pipe(todo({fileName: 'scss-todo.md' }))
+        .pipe(gulp.dest('./styleguide/todo')) //output todo.md as markdown 
+});
+
 gulp.task('styles', function() {
-  gulp.src('./scss/*.scss')
-    .pipe(compass({
-      css: '.temp/css',
-      sass: 'scss',
-      fonts: 'fonts',
-      debug: false,
-      style: 'expanded',
-      comments: true,
-      require: ['breakpoint']
-    }))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))        
+    gulp.src('./scss/*.scss')
+        .pipe(compass({
+            css: '.temp/css',
+            sass: 'scss',
+            fonts: 'fonts',
+            debug: false,
+            style: 'expanded',
+            comments: true,
+            sourcemap: false,
+            require: ['breakpoint']
+        })).on('error', gutil.log)
+        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest('.dist/css'))
-    //.pipe(gulp.dest('app/assets/temp'))
-    .pipe(rename({suffix: '.min'}))
+        //.pipe(gulp.dest('app/assets/temp'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(minifycss())
         .pipe(gulp.dest('.dist/css'))
-    .pipe(notify({message: 'Styles task complete'}));
+        .pipe(notify({
+            message: 'Styles task complete'
+        }));
 });
 
 gulp.task('browser-sync', function() {
@@ -83,6 +104,7 @@ gulp.task('browser-sync', function() {
         proxy: "styleguide.unity.dev:8080"
     });
 });
+
 
 
 gulp.task('watch', function() {
@@ -93,11 +115,11 @@ gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['lint', 'fonts', 'styles', 'headerjs', 'footerjs', 'watch']);
+gulp.task('default', ['lint', 'fonts', 'styles', 'todo-scss', 'headerjs', 'footerjs', 'watch']);
 
 
 
-gulp.task('bswatch', ['browser-sync'], function () {
+gulp.task('bswatch', ['browser-sync'], function() {
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
