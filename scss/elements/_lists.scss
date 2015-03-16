@@ -1,0 +1,28 @@
+ul.star-bullets
+{
+	list-style-type: none;
+
+	li
+	{
+		margin-left: 30px;
+		text-indent: -25px;
+		margin-bottom: 14px;
+		list-style-type: none;
+	}
+
+	li:before
+	{
+		content: "✭";
+margin: 0 10px 0 0;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+position: relative;
+z-index: 1;
+font-size: 1em;
+width: 10px;
+text-align: center;
+	}
+	
+}
+

@@ -5,3 +5,6 @@ stylesheets/
 
 .working
 .release
+
+.dist
+.temp

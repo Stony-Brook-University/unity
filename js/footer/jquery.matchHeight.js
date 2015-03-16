@@ -111,7 +111,9 @@
         }
 
         if (this.length <= 1)
-            return this;
+        {
+             return this;
+        }   
 
         // keep track of this group so we can re-apply later on load and resize events
         matchHeight._groups.push({
@@ -216,7 +218,9 @@
 
                 // find the max height (including padding, but not margin)
                 if ($that.outerHeight(false) > maxHeight)
+                {
                     maxHeight = $that.outerHeight(false);
+                }
 
                 // revert display block
                 $that.css('display', '');
@@ -246,7 +250,9 @@
 
         // restore scroll position if enabled
         if (matchHeight._maintainScroll)
-            $(window).scrollTop((scrollTop / htmlHeight) * $('html').outerHeight(true));
+        {
+           $(window).scrollTop((scrollTop / htmlHeight) * $('html').outerHeight(true));
+        }
 
         return this;
     };
@@ -283,14 +289,18 @@
 
     var _update = function(event) {
         if (matchHeight._beforeUpdate)
+        {
             matchHeight._beforeUpdate(event, matchHeight._groups);
+        }
 
         $.each(matchHeight._groups, function() {
             matchHeight._apply(this.elements, this.options);
         });
 
         if (matchHeight._afterUpdate)
+        {
             matchHeight._afterUpdate(event, matchHeight._groups);
+        }
     };
 
     matchHeight._update = function(throttle, event) {
@@ -300,7 +310,10 @@
         if (event && event.type === 'resize') {
             var windowWidth = $(window).width();
             if (windowWidth === _previousResizeWidth)
-                return;
+            {
+               return;
+            }
+            
             _previousResizeWidth = windowWidth;
         }
 
