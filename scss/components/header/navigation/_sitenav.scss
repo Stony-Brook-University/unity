@@ -129,92 +129,7 @@ nav
 	font-size: 16px;
 }
 
-/* Primary styles for logo container on $page_cat='main' */
-
-.logo-container {
-	background-color: #fff;
-	padding: 16px 10px 16px;
-	box-shadow: 0px 8px 11px -12px #555 inset, 0px -8px 11px -11px #333 inset;
-	width: 100%;
-}
-
-.logo-container .logo {
-	max-width: 357px;
-	height: auto;
-	margin: 0 auto;
-}
-
-.logo-wrapper img {
-	width: 80%;
-	margin: 0 auto;
-	display: block;
-	padding-right: 10px;
-}
-
-.logo-wrapper .site-tagline {
-	display: none;
-}
-
-.logo-wrapper .site-tagline span {
-	font-family:'Trade Gothic W01 Bold';
-}
-
-	/* Override styles for other $page_cat's e.g. 'sub' */
-
-	.page-cat-sub.logo-container {
-		background-color: #fff;
-		padding: 16px 0 0;
-		box-shadow: 0px -8px 11px -11px #333 inset;
-		width: 100%;
-	}
-
-	.page-cat-sub.logo-container .logo {
-		max-width: 357px;
-		height: auto;
-		margin: 0 auto;
-	}
-
-	.page-cat-sub.logo-container h1.site-name {
-		width: 100%;
-		font-size: 1.6em;
-		text-align: center;
-		border-top: 1px solid #ddd;
-		margin: 15px 0 0 0;
-		padding: 12px 0 17px 0;
-		box-shadow: 0px 8px 11px -12px #555 inset;
-		background: #f9f9f9;
-		text-shadow: 0 1px 0 #fff;
-	}
-
-	.page-cat-sub.logo-container h1.site-name a,
-	.page-cat-sub.logo-container h1.site-name a:link,
-	.page-cat-sub.logo-container h1.site-name a:visited,
-	.page-cat-sub.logo-container h1.site-name a:active {
-		color: #000;
-	}
-
-	.page-cat-sub .logo-wrapper img {
-		width: 80%;
-		margin: 0 auto;
-		display: block;
-		padding-right: 10px;
-	}
-
-	.page-cat-sub .logo-wrapper .site-tagline {
-		display: none;
-	}
-
-	.page-cat-sub .logo-wrapper .site-tagline span {
-		font-family:'Trade Gothic W01 Bold';
-	}
-
-
-
-
-
-
-
-
+	
 .site-nav,
 .sub-nav {
 	height: auto;
@@ -899,14 +814,6 @@ nav
 	
 }
 
-@media only screen and (min-width: 640px) {
-
-	.page-cat-sub.logo-container h1.site-name {
-		font-size: 2.2em;
-	}
-
-}
-
 @media only screen and (min-width: 768px) {
     .more-nav ul {
 	    padding-left: 4%;
@@ -1092,61 +999,6 @@ nav
 		background: #a00 !important;
 	}
 
-	.logo-container .logo {
-		width: 357px;
-		display: inline-block;
-		float: left;
-	}
-
-	.logo-wrapper img {
-		width: 100%;
-		padding-right: 10px;
-	}
-		.page-cat-sub.logo-container {
-			padding: 4px 10px 21px;
-		}
-
-		.page-cat-sub.logo-container .logo {
-			width: 262px;
-			display: inline-block;
-			float: left;
-		}
-
-		.page-cat-sub .logo-wrapper img {
-			width: 100%;
-			padding-right: 10px;
-		}
-		.page-cat-sub.logo-container h1.site-name {
-			width: 607px;
-			font-size: 2em;
-			text-align: left;
-			border-top: 0 none;
-			margin: 8px 0 0 20px;
-			padding: 0 0 0 20px;
-			box-shadow: none;
-			background: #fff;
-			text-shadow: none;
-			float: left;
-			display: inline-block;
-			border-left: 1px solid #555;
-			-webkit-box-sizing: border-box;
-		    -moz-box-sizing: border-box;
-		    box-sizing: border-box;
-		}
-
-	.logo-wrapper .site-tagline {
-		width: auto;
-		display: inline-block;
-		text-align: left;
-		margin: 28px 0 0 15px;
-		padding: 0 0 0 15px;
-		float: left;
-		border-left: 1px solid #777;
-	}
-
-	.logo-wrapper .site-tagline span {
-		font-family:'Trade Gothic W01 Bold';
-	}
 
 }
 
@@ -1197,21 +1049,6 @@ nav
 	.more-nav .label {
 		margin-top: 0;
 	}
-
-	.logo-container {
-		padding: 0px 10px 18px;
-		box-shadow: 0px -8px 11px -11px #333 inset;
-	}
-
-	.logo-wrapper {
-	    width: auto;
-	    float: left;
-	}
-		.page-cat-sub.logo-container h1.site-name {
-			width: 640px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
 
 	.site-nav,
 	.sub-nav {

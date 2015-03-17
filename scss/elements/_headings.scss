@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 25px 0;
     }
 }
+
 h2.small-title-1 {
     font-size: 1.3em;
     font-weight: normal;
@@ -19,5 +20,42 @@ h2.small-title-1 {
     text-align: center;
     @include breakpoint($screen-md) {
         margin: 20px 0 40px;
+    }
+}
+
+h1.site-name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'CenturyExpandedLTW01-Ro';
+    font-weight: 400;
+    text-transform: none;
+    color: #000;
+    @include breakpoint($screen-md) {
+        float: left;
+        width: auto;
+        display: inline-block;
+        padding: 0;
+        margin: 16px 0 8px 0;
+    }
+
+    a {
+        color: #000;
+        font-family: 'CenturyExpandedLTW01-Ro';
+        margin: 0 0 20px;
+        padding: 0 10px;
+        @include breakpoint($screen-md) {
+            font-size: 26px;
+            width: 585px;
+            text-align: left;
+            margin: 7px 0 0;
+            border-left: 1px solid #333;
+            padding: 0 0 0 16px;
+            line-height: 1;
+        }
+    }
+    a:hover {
+        text-decoration: none;
+        
     }
 }
