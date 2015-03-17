@@ -1,9 +1,11 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     margin: 1em 0;
+
     &.cap {
         text-transform: capitalize;
     }
+
     &.small-title-1 {
         text-align: center;
         padding: 20px 0;
@@ -18,6 +20,7 @@ h2.small-title-1 {
     letter-spacing: .025em;
     word-spacing: .025em;
     text-align: center;
+
     @include breakpoint($screen-md) {
         margin: 20px 0 40px;
     }
@@ -31,12 +34,13 @@ h1.site-name {
     font-weight: 400;
     text-transform: none;
     color: #000;
+
     @include breakpoint($screen-md) {
         float: left;
         width: auto;
         display: inline-block;
         padding: 0;
-        margin: 16px 0 8px 0;
+        margin: 5px 0 8px 0;
     }
 
     a {
@@ -44,6 +48,7 @@ h1.site-name {
         font-family: 'CenturyExpandedLTW01-Ro';
         margin: 0 0 20px;
         padding: 0 10px;
+
         @include breakpoint($screen-md) {
             font-size: 26px;
             width: 585px;
@@ -54,8 +59,130 @@ h1.site-name {
             line-height: 1;
         }
     }
+
     a:hover {
         text-decoration: none;
-        
     }
+}
+
+h1,
+h2,
+h3,
+h5 {
+    font-family: 'ITCFranklinGothicW01-Md 812695', Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #444;
+    cursor: default;
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+h1.serif,
+h2.serif,
+h3.serif,
+.inside-content h1.serif,
+.inside-content h2.serif,
+.inside-content h3.serif,
+.inside-content h4.serif,
+.inside-content h5.serif {
+    font-family: 'CenturyExpandedLTW01-Ro' !important;
+    font-weight: 400;
+    text-transform: none;
+    color: #000;
+}
+
+h4,
+.subtitle {
+    display: block;
+    font-family: 'CenturySchoolbookW01-It 927458';
+    font-weight: 400;
+    cursor: default;
+    margin: 20px 0;
+    padding: 0;
+}
+
+h5 {
+    font-family: 'Trade Gothic Next W01';
+    text-transform: none;
+    color: #222;
+}
+
+.caption {
+    font-family: 'CenturySchoolbookW01-It 927458';
+}
+
+.mega {
+    font-size: 4.85em;
+}
+
+h1 {
+    font-size: 3.3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.9em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+}
+
+.sbu-text {
+    font-size: 1em;
+    color: #222;
+    line-height: 1.5em;
+}
+
+h2.small-title-1 {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: 'Trade Gothic Next W01';
+    letter-spacing: .025em;
+    word-spacing: .025em;
+}
+
+h2.small-title-2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'CenturySchoolbookW01-It 927458';
+    text-transform: none;
+    margin: 0;
+}
+
+h2.small-title-3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'TradeGothicW01-BoldCn20 675334';
+    text-transform: none;
+    margin: 0;
+}
+
+h3.medium-title-2 {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: 'Trade Gothic Next W01';
+    text-transform: none;
+    margin: 0;
+}
+
+.medium-title-3 {
+    font-size: 1.8em;
+    font-family: 'Trade Gothic W01 Bold 2';
+    text-transform: none;
 }

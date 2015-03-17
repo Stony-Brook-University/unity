@@ -20,8 +20,6 @@
 
     <!-- Custom Fonts -->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/8b09d344-baa0-42a8-bbac-175ff46c86d5.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +38,7 @@
                 
             <div class="logo-wrapper clearfix">
                <div class="logo"><a href="http://www.stonybrook.edu/"><img src="/styleguide/images/stony-brook-university-logo.jpg" alt="Stony Brook University" width="357" height="68"></a></div>
-               <h1 class="site-name"><a href="/">Unity Styleguide</a></h1>
+               <h1 class="site-name"><a href="/">SBU Unity Framework</a></h1>
             </div>
 
                 
@@ -54,19 +52,19 @@
                     <div class="menu-trigger"><i class="icon fa fa-bars"></i>
                     </div>
                     <ul class="main-nav-list border-box hide-accessible-mobile clearfix">
-                        <li class="clearfix smaller">
-                            <a href="http://www.stonybrook.edu/sb/aboutsb.shtml" class="clearfix">
-                                <span class="label clearfix">About Unity</span>
+                        <li>
+                            <a href="/styleguide/">
+                                <span class="site-nav-label">About Unity</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/">
-                                <span class="label">Styleguide</span>
+                            <a href="/styleguide/icon-demo.htm">
+                                <span class="site-nav-label">SBU Icons</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/styleguide/todo/scss-todo.md" class="clearfix">
-                                <span class="label clearfix">SCSS TODO</span>
+                            <a href="/styleguide/todo/scss-todo.md">
+                                <span class="site-nav-label">SCSS TODO</span>
                             </a>
                         </li>
                     </ul>
@@ -122,7 +120,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="section-header">
-                        Unity Style Guide
+                       What is the Unity Framework?
                     </h1>
                     </div>
                 </div>
@@ -130,7 +128,7 @@
                 <div class="col-sm-12">
                 <p>The purpose of these documents are to outline the appropriate style usage and CSS Classes to be used in coordination with the Unity Theme for Stony Brook University.</p>
                 <p>
-Unity is DoIT's attempt to define a set of consistent standards for designing modern websites that align with the University's branding guidelines. We are developing Unity in a modular way to ensure that it can support varying Content Management Systems and Web Frameworks.
+Unity is an attempt to define a set of consistent standards for designing modern websites that align with the University's branding guidelines. We are developing Unity in a modular way to ensure that it can support varying Content Management Systems and Web Frameworks.
 </p>
 <p>
 This document will be updated frequently to keep up with additional style requests and demands.
@@ -140,108 +138,60 @@ This document will be updated frequently to keep up with additional style reques
         </section>
 
         <!-- Portfolio Section -->
-        <section class="bg-light-gray bg-texture-bright-squares fluffy">
+        <section class="bg-light-gray bg-texture-bright-squares spacey">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-header">Report a Problem</h2>
-                    </div>
-                    <div class="col-md-4">
-                        <h3 class="centered">Card Heading</h3>
-                        <div class="panel-body" data-match-height="items-a">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="#" class="glassy-button btn btn-default">Learn More</a>
+                    <div class="col-sm-12 col-md-6">
+                            <h3>Motivations</h3>
+                           <p>
+Stony Brook University's web presence is enmormous and is only growing larger. Branding, styling and accessibility compliance across our web properities is inconsistent (at best). And we are seeing an increase in the number of mobile computing devices.
+</p><p>
+Many departments, teams and individuals (faculty, staff and students) have a need for a web presence, often times the work of maintaining the web server, creating the sites design, developing the information architecture and maintaining its content falls on one person, with varying ability in this area and who is often overwhelmed by the amount of work required to properly maintain a large site.
+</p><p>
+<strong>Our current web dev support model is inefficent.</strong> Our teams cannot easily take advantage of the front-end work each of us is doing and because of this our sites often fall out of sync with branding requirements and designs, leading to inconsistent experiences for our end users.
+</p><p>
+Rather than constantly reinvent the wheel with each new project, Unity will provide a framework that our sites can start with in an effort to decrease our workload and increase user satisfaction and compliance with University policies. 
+</p>
 
-                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h3 class="centered">Card Heading</h3>
-                        <div class="panel-body" data-match-height="items-a">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="#" class="glassy-button btn btn-default">Learn More</a>
+                    <div class="col-sm-12 col-md-6">
+ <h3>Goals</h3>
+                        This project pledges that to the best of our ability, sites using this theme and following the guidelines provided will:
+<ul>
+<li>Provide a great experience to desktop, widescreen and mobile users</li>
+<li>Fully Support Modern Browsers (IE10, Chrome, FF, Safari)</li>
+<li>Be built upon modern UX and Design Tools</li>
+<li>Follow University Branding Guidelines</li>
+<li>Be Section 508 Compliant</li>
+<li>Degrade Nicely on legacy browsers</li>
+<li>Be backend independent</li>
+<li>Be extensible and flexible to allow for custom modifications</li>
+<li>Incorporate feedback and modifications from developers like YOU</li>
+                    </div>
 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3 class="centered">Card Heading</h3>
-                        <div class="panel-body" data-match-height="items-a">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="#" class="glassy-button btn btn-default">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
             <!-- /.row -->
         </section>
 
-        <!-- Features Section -->
-        <section class="airy">
+  
+        <section class="bg-light-gray cozy">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="section-header">Training and Professional Development</h2>
-                    </div>
-                    <div class="col-md-4">
-                        <div>
-                            <div class="panel-heading">
-                                <h4>Bootstrap v3.2.0</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div>
-                            <div class="panel-heading">
-                                <h4>Free &amp; Open Source</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div>
-                            <div class="panel-heading">
-                                <h4>Easy to Use</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt
-                                    <p>
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-            </div>
-        </section>
-        <section class="bg-light-gray light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-header">Learn About Current Career Opportunities in your Area of Interest</h2>
+                        <h2 class="section-header">Get Started</h2>
                     </div>
                     <div class="col-md-4">
                         <div class="panel-default-cards">
                             <div class="panel-cards">
                                 <div class="panel-heading-cards">
-                                    <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
+                                    <h3>Clone Unity from GitHub</h3>
                                 </div>
                                 <div class="panel-body-cards">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                    <a href="#" class="btn btn-default">Learn More</a>
+                                    <p>
+                                        The work done on Unity is freely available on GitHub.
+                                    </p>
+                                    <a href="http://www.github.com/SBUDoIT" class="btn btn-default">SBUDoIT GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -249,22 +199,22 @@ This document will be updated frequently to keep up with additional style reques
                     <div class="col-md-4">
                         <div class="panel-cards">
                             <div class="panel-heading-cards">
-                                <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                                <h3>BootStrap Docs</h3>
                             </div>
                             <div class="panel-body-cards">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                <a href="#" class="btn btn-default">Learn More</a>
+                                <p>Unity uses Bootstrap as a base framework to build upon.</p>
+                                <a href="http://getbootstrap.com/2.3.2/" class="btn btn-default">Read Docs</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="panel-cards">
                             <div class="panel-heading-cards">
-                                <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                                <h3>Questions and Feedback</h3>
                             </div>
                             <div class="panel-body-cards">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                <a href="#" class="btn btn-default">Learn More</a>
+                                <p>Feel free to post questions to Yammer</p>
+                                <a href="https://www.yammer.com/stonybrook.edu/#/threads/inGroup?type=in_group&feedId=5440674" class="btn btn-default">Yammer It</a>
                             </div>
                         </div>
                     </div>
@@ -272,277 +222,29 @@ This document will be updated frequently to keep up with additional style reques
                 <!-- /.row -->
             </div>
         </section>
-        <section class="spacey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-header">Frequently Asked Questions</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="accordion">
-                            <h3>Where can I learn more about Google Calendar?</h3>
-                            <div>
-                                <p>
-                                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                                </p>
-                            </div>
-                            <h3>Can I get notifications of upcoming events and appointments on my Google Calendar?</h3>
-                            <div>
-                                <p>
-                                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
-                                </p>
-                            </div>
-                            <h3>Can I print Google Calendar items?</h3>
-                            <div>
-                                <p>
-                                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                                </p>
-                                <ul>
-                                    <li>List item one</li>
-                                    <li>List item two</li>
-                                    <li>List item three</li>
-                                </ul>
-                            </div>
-                            <h3>How can I get to my calendar?</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </div>
-                            <h3>How do I add web calendars and events to Google Calendar?</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </div>
-                            <h3>How do I create a new Google Calendar?</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </div>
-                            <h3>How do I customize my Calendar?</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </div>
-                            <h3>How do I view my calendars on my mobile device?</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 form-control-static">
-                        <form name="sentMessage" class="contactForm" novalidate>
-                            <div class="control-group form-group">
-                                <h1>Report a Problem</h1>
-                                <p>When you submit this trouble ticket, it will automatically trigger a notification message to appropriate technical staff for resolution.</p>
-                                <div class="controls">
-                                    <label>NetID:</label>
-                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <label>First Name:</label>
-                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <label>Last Name:</label>
-                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <label>Email Address:</label>
-                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <label>Phone Number:</label>
-                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <label>Services:</label>
-                                    <select>
-                                        <option value="" disabled="disabled" selected="selected">-select-</option>
-                                        <option value="1">Audio Visual Services</option>
-                                        <option value="2">Blackboard</option>
-                                        <option value="2">Campus Announcements</option>
-                                        <option value="2">Campus Television Service</option>
-                                        <option value="2">Classroom Equiment & Consumable Supplies</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <label>Issue:</label>
-                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                                </div>
-                            </div>
-                            <div id="success"></div>
-                            <!-- For success/fail messages -->
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-        <div class="container">
-            <!-- Call to Action Section -->
-            <div class="well">
-                <div class="row">
-                    <div class="col-md-8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <section class="text-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h3>Diversity at Stony Brook</h3>
-                        <p>Stony Brook University expresses and demonstrates its commitment to equal opportunity for all persons in the University community, regardless of race, color, sex, age, ethnicity, religion, national origin, sexual orientation, disability, marital status, or status as disabled veteran. This policy applies to all University offices, departments, and affiliates, including part-time students, faculty and staff members. Affirmative action and equal opportunity affect all employment practices including, but not limited to, recruitment, hiring, transfers, promotions, benefits, compensation, training, educational opportunities, and terminations. To further ensure the goals of equal opportunity and affirmative action with respect to employment and education, the University endeavors to increase the availability of opportunities for students, staff, and faculty from groups that have been previously excluded or underrepresented. Students or employees having disabilities that require reasonable accommodations or auxiliary aids may be accommodated through the Office of the ADA Coordinator.</p>
-                        <p><a href="http://www.stonybrook.edu/diversity/">Read more information about Diversity at Stony Brook.</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="background-red fluffy boxes-wrapper clearfix">
-            <div class="container">
-                <div class="row equal-heights">
-                    <div class="col-md-4 equal-height-col">
-                        <div class="star-list-card">
-                            <h3 class="clearfix"><span>For</span> Students</h3>
-                            <ul class="star-bullets clearfix">
-                                <li><a href="http://career.stonybrook.edu/" target="_blank">Career Counseling</a>
-                                </li>
-                                <li><a href="http://career.stonybrook.edu/students/connect/internship-coop-services" target="_blank">Internships</a>
-                                </li>
-                                <li><a href="http://www.stonybrook.edu/ureca/" target="_blank">Undergraduate Research</a>
-                                </li>
-                                <li><a href="http://www.stonybrook.edu/commcms/finaid/typesofaid/fws.html" target="_blank">Work Study Programs</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 equal-height-col">
-                        <div class="equal-height-col star-list-card">
-                            <h3 class="clearfix"><span>For</span> Employers</h3>
-                            <ul class="star-bullets clearfix">
-                                <li><a href="http://career.stonybrook.edu/employers/hiring-sb-students/on-campus-recruiting" target="_blank">On-Campus Student Recruitment</a>
-                                </li>
-                                <li><a href="http://career.stonybrook.edu/employers/hiring-sb-students/post-a-job-or-internship" target="_blank">Post Jobs for Students</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 equal-height-col">
-                        <div class="equal-height-col star-list-card">
-                            <h3 class="clearfix"><span>General</span> Info</h3>
-                            <ul class="star-bullets clearfix">
-                                <li><a href="http://www.stonybrook.edu/sb/directions.shtml" target="_blank">Directions</a>
-                                </li>
-                                <li><a href="jobs/how-to-apply">How to Apply Online</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-
-        <section class="background-gray fluffy">
-            <div class="container">
-                <div class="row">
-                    <h2 class="white-fade-background red cap small-title-1">Learn about current career opportunities in your area of interest.</h2>
-                    <div class="col-md-4">
-                        <a href="http://stonybrook.edu/hr/prospective-employees.shtml" class="dual-tone-card"><span>Jobs @ Stony Brook <br>University</span></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="http://stonybrookmedicine.edu/careers" class="dual-tone-card"><span>Jobs @ Stony Brook <br>Medicine</span></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="http://www.listateveteranshome.org/employment_opportunities.html" class="dual-tone-card"><span>Jobs @ Long Island State <br>Veterans Home</span></a>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
 
         <footer class="site-footer clearfix">
+            <div class="container">
+            <div class="row">
             <nav class="wrapper">
                 <div class="col col-md-4 footer-links" data-match-height="items-footer">
-                    <a class="arrow-link" href="http://it.stonybrook.edu/services/solar/" title="Log in to SOLAR">SOLAR</a>
-                    <a class="arrow-link" href="http://www.stonybrook.edu/mycloud/" title="Log in to Google Apps for Education">Gmail</a>
-                    <a class="arrow-link" href="https://blackboard.stonybrook.edu/" target="blank" title="Log in to Blackboard">Blackboard</a>
-                    <a class="arrow-link" href="http://sb.cc.stonybrook.edu/bulletin/current/" title="View the Undergraduate Bulletin">Undergraduate Bulletin</a>
-                    <a class="arrow-link" href="http://www.stonybrook.edu/gradbulletin" title="View the Graduate Bulletin">Graduate Bulletin</a>
                 </div>
-                <div class="col col-md-4 footer-address" data-match-height="items-footer">
-                    <span class="address">
-                                <span class="serif-italic">Stony Brook University</span>
-                    <span class="nowrap">Stony Brook, NY 11794-3364</span>
-                    <br>
-                    <a class="address-link small-button" href="https://www.google.com/maps/preview?q=Stony+Brook+University+Stony+Brook,+NY+11794-3364" target="_blank" title="View map of Stony Brook University"><em class="fa fa-map-marker icon"></em>View map</a>
-                    <span class="phone nowrap">(631) 632-6000</span>
-                    </span>
-                </div>
-                <div class="col col-md-4 footer-social" data-match-height="items-footer">
-                    <h5>We’re Social</h5>
+                <div class="col col-md-4 social" data-match-height="items-footer">
+                 <h5>#sbuunity</h5>
                     <div class="social-links">
-                        <a class="facebook-blue-bkg" href="https://www.facebook.com/stonybrooku" title="Stony Brook Facebook" target="_blank"><em class="fa fa-facebook"></em></a>
-                        <a class="youtube-red-bkg" href="https://www.youtube.com/user/sbcomm" title="Stony Brook YouTube" target="_blank"><em class="fa fa-youtube-play"></em></a>
-                        <a class="twitter-blue-bkg" href="https://twitter.com/stonybrooku" title="Stony Brook Twitter" target="_blank"><em class="fa fa-twitter"></em></a>
-                        <a class="instagram-blue-bkg" href="https://instagram.com/stonybrooku" title="Stony Brook Instagram" target="_blank"><em class="fa fa-instagram"></em></a>
+                        <a class="bg-yammer" href="https://www.yammer.com/stonybrook.edu/#/threads/inGroup?type=in_group&feedId=5440674" title="Stony Brook Twitter" target="_blank"><em class="sbuicon-yammer"></em></a>
+                        <a class="bg-twitter" href="https://twitter.com/sbubaron" title="Stony Brook Twitter" target="_blank"><em class="sbuicon-twitter"></em></a>
+                         <a class="bg-red" href="https://github.com/sbudoit" title="SBUDoIT GitHub" target="_blank"><em class="sbuicon-git"></em></a>
+                        
                     </div>
-                    <a class="small-button" href="http://stonybrook.edu/social" title="Social Media Feed">View Social Media Wall</a>
+                </div>
+                <div class="col col-md-4" data-match-height="items-footer">
+                   
+                    
                 </div>
             </nav>
+            </div>
+            </div>
         </footer>
 
 

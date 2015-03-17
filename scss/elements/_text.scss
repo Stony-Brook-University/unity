@@ -2,3 +2,42 @@
     font-size: 1.3em;
     line-height: 1.5em;
 }
+
+.caps,
+.cap {
+    text-transform: uppercase;
+}
+
+.proper-case {
+    text-transform: capitalize;
+}
+
+.serif {
+    font-family: 'CenturyExpandedLTW01-Ro';
+    font-weight: 400;
+}
+
+.serif-italic {
+    font-family: 'CenturySchoolbookW01-It 927458';
+    font-weight: 400;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.wrap {
+    white-space: wrap;
+}
+
+.less-spacing {
+    letter-spacing: -0.075em;
+}
+
+.sub-text {
+    font-size: .85em;
+}
+
+.no-border {
+    border-bottom: 0 none !important;
+}
