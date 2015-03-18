@@ -1,59 +1,48 @@
-.logo-wrapper
-{
-	width: 100%;
+.logo-wrapper {
+    width: 100%;
 
-	@include breakpoint($screen-md)
-	{
-		position: relative;
-	}
+    @include breakpoint($screen-md) {
+        position: relative;
+    }
 }
 
-.logo
-{
+.logo {
+    border: 0 none;
+    width: 100%;
+    display: block;
+    max-width: 357px;
+    margin: 12px auto 14px;
 
-  border: 0 none;
-  width: 100%;
-  display: block;
-  max-width: 357px;
-  margin: 12px auto 14px;
+    @include breakpoint($screen-md) {
+        width: 262px;
+        float: left;
+        display: inline-block;
+    }
 
-	@include breakpoint($screen-md)
-	{
-		width: 262px;
-		float: left;
-  		display: inline-block;
-	}
+    img {
+        border: 0 none;
+        display: block;
+        max-width: 70%;
+        width: 357px;
+        height: auto;
+        margin: 0 15%;
 
-	img
-	{
-		border: 0 none;
-  		display: block;
-  		max-width: 70%;
-  		width: 357px;
-  		height: auto;
-  		margin: 0 15%;
-  
-		@include breakpoint($screen-sm)
-		{
-			max-width: 80%;
-  			margin: 0 10%;
-		}
+        @include breakpoint($screen-sm) {
+            max-width: 80%;
+            margin: 0 10%;
+        }
 
-		@include breakpoint($screen-md)
-		{
-			 border: 0 none;
-  			display: block;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  padding: 1px 14px 0 0;
-  margin: 0;
-		}
-	}
+        @include breakpoint($screen-md) {
+            border: 0 none;
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            padding: 1px 14px 0 0;
+            margin: 0;
+        }
+    }
 }
-
-
-
 
 /*#header, #header-content
 {
@@ -99,10 +88,10 @@
 	margin: 0 auto;
 }*/
 
-@import 'mainnav';
-@import 'sbunav';
-@import 'navigation/quicknav';
-@import 'navigation/sitenav';
-@import 'navigation/sbunav';
-@import 'search';
-@import 'secondarynav';
+//@import 'mainnav';
+//@import 'sbunav';
+@import "navigation/quicknav";
+@import "navigation/sitenav";
+@import "navigation/sbunav";
+@import "search";
+@import "secondarynav";

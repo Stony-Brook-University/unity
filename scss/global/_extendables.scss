@@ -38,3 +38,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.hide-accessible-mobile {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    //TODO: Why do we set width and height on this?
+    //width: 2000px;
+    //height: 2000px;
+
+    @include breakpoint($screen-md) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

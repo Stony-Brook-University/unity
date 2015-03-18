@@ -38,7 +38,7 @@ nav {
 }
 
 .main-nav-list a span:before {
-    font-family: FontAwesome;
+    @extend .sbuicon;
     content: "\f005";
     margin-right: 13px;
     font-size: 9px;
@@ -489,7 +489,7 @@ nav {
 
 .site-nav ul,
 .sub-nav ul {
-    margin: 48px 0 0 0;
+    //margin: 48px 0 0 0;
     padding: 0;
     /*display: none;*/
     overflow: hidden;

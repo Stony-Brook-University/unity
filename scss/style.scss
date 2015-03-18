@@ -5,25 +5,24 @@
 ////////////////////////
 
 @import "breakpoint";
-
-
+@import "libraries/bootstrap/bootstrap";
 
 ////////////////////////
 // Base Import
 ////////////////////////
-@import 'global/base';
+@import "global/base";
 
+////////////////////////
+// Import Third
+////////////////////////
+@import "libraries/base";
 
-@import 'libraries/base';
 ////////////////////////
 // Import Design
 ////////////////////////
-@import 'elements/base';
-
+@import "elements/base";
 
 ////////////////////////
 // Import Design
 ////////////////////////
-@import 'components/base';
-
-
+@import "components/base";
