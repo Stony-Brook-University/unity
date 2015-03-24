@@ -8,26 +8,18 @@
 ////////////////////////
 // Private Imports
 ////////////////////////
-@import 'variables';
-@import 'functions';
-@import 'mixins';
-@import 'extendables';
-@import 'backgrounds';
-@import 'box-model';
-@import 'colors';
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "extendables";
+@import "backgrounds";
+@import "box-model";
+@import "colors";
+
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
-}
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
 }

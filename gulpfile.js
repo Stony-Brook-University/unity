@@ -115,7 +115,7 @@ gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['lint', 'fonts', 'styles', 'todo-scss', 'headerjs', 'footerjs', 'watch']);
+gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'headerjs', 'footerjs', 'watch']);
 
 
 

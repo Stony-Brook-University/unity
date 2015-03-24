@@ -41,3 +41,27 @@
 .no-border {
     border-bottom: 0 none !important;
 }
+
+.sbu-3d-shadow {
+    -webkit-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+    -moz-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+    text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+}
+
+.sbu-text-shadow {
+    -webkit-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #aaa;
+    -moz-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #aaa;
+    text-shadow: -1px 1px 0 #eee, -2px 2px 2px #aaa;
+}
+
+.centered, .center-text, .center-aligned-text {
+    text-align: center;
+}
+
+.left-aligned-text {
+    text-align: left;
+}
+
+.right-aligned-text {
+    text-align: right;
+}

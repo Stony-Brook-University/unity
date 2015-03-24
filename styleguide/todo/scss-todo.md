@@ -1,9 +1,10 @@
 ### TODOs
 | Filename | line # | TODO
 |:------|:------:|:------
-| elements\_links.scss | 13 | fix font-awesome reference
-| elements\_links.scss | 34 | fix icomoon reference
 | global\_backgrounds.scss | 104 | Figure out which red gradient is right.
 | global\_backgrounds.scss | 116 | Determine naming scheme for side vs top bottom fades
+| global\_extendables.scss | 46 | Why do we set width and height on this?
+| components\cards\_polaroid-card.scss | 1 | Needs refactoring
+| components\lists\_shadow-grid.scss | 1 | Refactor and test
 | libraries\bootstrap\bootstrap\_dropdowns.scss | 180 | abstract this so that the navbar fixed styles are not placed here?
 | libraries\bootstrap\bootstrap\_variables.scss | 194 | Rename `$input-border-radius` to `$input-border-radius-base` in v4

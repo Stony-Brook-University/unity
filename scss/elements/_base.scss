@@ -6,7 +6,10 @@
 //
 // All styling, non box model properties go here
 ////////////////////////
-@import "boxmodel";
+@import "box-model/borders";
+@import "box-model/margins";
+@import "box-model/paddings";
+@import "box-model/widths";
 @import "forms";
 @import "images";
 @import "inline-list";
