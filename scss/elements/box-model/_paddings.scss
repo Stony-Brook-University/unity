@@ -1,41 +1,21 @@
 .fluffy {
     padding: 6em 0em;
-
-    .section-header {
-        margin: 2em 0;
-    }
 }
 
-.light {
+.cushy {
     padding: 5em 0em;
-
-    .section-header {
-        margin: 2em 0;
-    }
 }
 
 .airy {
     padding: 4.5em 0em;
-
-    .section-header {
-        margin: 2em 0;
-    }
 }
 
 .spacey {
     padding: 4em 0em;
-
-    .section-header {
-        margin: 1.5em 0;
-    }
 }
 
 .comfy {
     padding: 3em 0em;
-
-    .section-header {
-        margin: 1.5em 0;
-    }
 }
 
 .cozy {
@@ -48,6 +28,26 @@
 
 .tight {
     padding: 0;
+}
+
+.padding-em-1 {
+    padding: 1em;
+}
+
+.padding-em-1-0 {
+    padding: 1em 0;
+}
+
+.padding-em-0-1 {
+    padding: 0 1em;
+}
+
+.padding-em-1-0-0-0 {
+    padding: 1em 0 0 0;
+}
+
+.padding-em-0-0-1-0 {
+    padding: 0 0 1em 0;
 }
 
 .padding-5 {

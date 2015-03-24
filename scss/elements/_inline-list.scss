@@ -1,81 +1,57 @@
-ul.inline-list
-{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
-	
-	li
-	{
-		display: inline-block;
-	}
+//TODO Refactor this -- do  we want a list class for inline links?
 
+ul.inline-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+        display: inline-block;
+    }
 }
 
-
-.inline-list.large-inline-3
-{
-	li
-	{
-
-
-	@include breakpoint($break-desktop)
-	{
-		width: 30%;
-		padding: 1.5em;
-		margin: 0 1.5%;
-		vertical-align: top;
-	}
+.inline-list.large-inline-3 {
+    li {
+        @include breakpoint($break-desktop) {
+            width: 30%;
+            padding: 1.5em;
+            margin: 0 1.5%;
+            vertical-align: top;
+        }
+    }
 }
 
+.inline-5 {
+    ul {
+        margin: 0 auto;
+        padding: 0px;
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        width: 19.5%;
+        min-width: 115px;
+        vertical-align: top;
+
+        span.title {
+            display: block;
+            text-align: center;
+            margin: 10px 0px;
+        }
+    }
 }
 
+.pagination {
+    ul {
+        margin: 10px 0px;
+        padding: 0px;
 
-
-.inline-5
-{
-	ul
-	{
-		margin: 0 auto;
-		padding: 0px;
-		text-align: center;
-	}
-
-	li
-	{
-		display: inline-block;
-	width: 19.5%;
-		
-		min-width: 115px;
-	vertical-align: top;
-
-		span.title
-		{
-			display: block;
-			text-align: center;
-			margin: 10px 0px;
-		
-		}
-
-	}
-
-}
-
-
-
-
-.pagination
-{
-	ul
-	{
-		margin: 10px 0px;
-		padding: 0px;
-
-		li
-		{
-			margin: 0px 5px;
-			padding: 0px 5px;
-			display: inline-block;
-		}
-	}
+        li {
+            margin: 0px 5px;
+            padding: 0px 5px;
+            display: inline-block;
+        }
+    }
 }

@@ -22,3 +22,27 @@ i.heading-icon {
     display: block;
     margin-bottom: 2em;
 }
+
+//TODO Line spacing seems different between styleguides -- doesn't seem to be set on these links, perhaps theres a global line height that needs to be adjusted
+a[href$=".pdf"]:after {
+    content: "\f1c1";
+    @extend .sbuicon-after;
+}
+
+a[href$=".xls"]:after,
+a[href$=".xlsx"]:after {
+    content: "\f1c3";
+    @extend .sbuicon-after;
+}
+
+a[href$=".doc"]:after,
+a[href$=".docx"]:after {
+    content: "\f1c2";
+    @extend .sbuicon-after;
+}
+
+a[href$=".ppt"]:after,
+a[href$=".pptx"]:after {
+    content: "\f1c4";
+    @extend .sbuicon-after;
+}

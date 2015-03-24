@@ -101,7 +101,8 @@ gulp.task('styles', function() {
 
 gulp.task('browser-sync', function() {
     browserSync({
-        proxy: "styleguide.unity.dev:8080"
+        proxy: "styleguide.unity.dev:8080",
+        startPath: "styleguide/index.htm"
     });
 });
 
@@ -119,13 +120,13 @@ gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'headerj
 
 
 
-gulp.task('bswatch', ['browser-sync'], function() {
+gulp.task('browsersync', ['browser-sync'], function() {
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
     //gulp.watch("js/*.js", ['js', browserSync.reload]);
-
-    gulp.watch('js/header**/*.js', ['lint', 'headerjs', browserSync.reload]);
+    gulp.watch('styleguide/**/*', browserSync.reload);
+    gulp.watch('js/header/**/*.js', ['lint', 'headerjs', browserSync.reload]);
     gulp.watch('js/footer/**/*.js', ['lint', 'footerjs', browserSync.reload]);
     gulp.watch('fonts/**/*', ['fonts', browserSync.reload]);
     gulp.watch('images/**/*', ['images', browserSync.reload]);

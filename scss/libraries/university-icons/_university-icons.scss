@@ -7,7 +7,7 @@
 }
 
 
-[class^="sbuicon-"], [class*="sbuicon-"] {
+[class^="sbuicon-"]:before, [class*="sbuicon-"]:before {
     font-family: 'sbu-icons';
     speak: none;
     font-style: normal;
@@ -25,6 +25,10 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-large:before {
+    font-size: 2em;
 }
 
 .sbuicon-sbu-shield:before {

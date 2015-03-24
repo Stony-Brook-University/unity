@@ -33,7 +33,7 @@ h1.site-name {
     font-family: 'CenturyExpandedLTW01-Ro';
     font-weight: 400;
     text-transform: none;
-    color: #000;
+    color: #33ccff;
 
     @include breakpoint($screen-md) {
         float: left;
@@ -68,6 +68,7 @@ h1.site-name {
 h1,
 h2,
 h3,
+h4,
 h5 {
     font-family: 'ITCFranklinGothicW01-Md 812695', Helvetica, Helvetica Neue, Arial, sans-serif;
     font-weight: 200;
@@ -84,18 +85,14 @@ h5 {
 h1.serif,
 h2.serif,
 h3.serif,
-.inside-content h1.serif,
-.inside-content h2.serif,
-.inside-content h3.serif,
-.inside-content h4.serif,
-.inside-content h5.serif {
+h4.serif,
+h5.serif {
     font-family: 'CenturyExpandedLTW01-Ro' !important;
     font-weight: 400;
     text-transform: none;
     color: #000;
 }
 
-h4,
 .subtitle {
     display: block;
     font-family: 'CenturySchoolbookW01-It 927458';
@@ -103,12 +100,6 @@ h4,
     cursor: default;
     margin: 20px 0;
     padding: 0;
-}
-
-h5 {
-    font-family: 'Trade Gothic Next W01';
-    text-transform: none;
-    color: #222;
 }
 
 .caption {
@@ -185,4 +176,10 @@ h3.medium-title-2 {
     font-size: 1.8em;
     font-family: 'Trade Gothic W01 Bold 2';
     text-transform: none;
+}
+
+.content-header {
+    padding: 0 0 15px;
+    color: #900;
+    border-bottom: 1px solid #777;
 }

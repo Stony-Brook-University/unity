@@ -1,28 +1,83 @@
-ul.star-bullets
-{
-	list-style-type: none;
-
-	li
-	{
-		margin-left: 30px;
-		text-indent: -25px;
-		margin-bottom: 14px;
-		list-style-type: none;
-	}
-
-	li:before
-	{
-		content: "✭";
-		margin: 0 10px 0 0;
-		font-style: normal;
-		font-weight: normal;
-		line-height: 1;
-		position: relative;
-		z-index: 1;
-		font-size: 1em;
-		width: 10px;
-		text-align: center;
-	}
-	
+ul, li {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
 }
 
+//TODO: Why are star bullets indented differently than normal bullets?
+ul.star-bullets {
+    li {
+        margin-left: 20px;
+        text-indent: -15px;
+        margin-bottom: 14px;
+    }
+
+    li:before {
+        content: "\2605";
+        margin: 0 10px 0 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 10px;
+        text-align: center;
+    }
+}
+
+.default-bullets {
+    li {
+        margin-left: 20px;
+        text-indent: -15px;
+    }
+
+    li:before {
+        display: inline-block;
+        content: "\2022";
+        margin: 0 0 0 0;
+        font-style: normal;
+        font-weight: normal;
+        font-family: arial;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        z-index: 1;
+        font-size: 1.2em;
+        width: 10px;
+        text-align: center;
+        color: #900;
+    }
+}
+
+.arrow-bullets {
+    li:before {
+        content: "\f061";
+        @extend .sbuicon;
+    }
+}
+
+ol.number {
+    list-style: none !important;
+    counter-reset: number-counter;
+
+    > li {
+        margin: 0 0 4px;
+        position: relative;
+    }
+
+    > li:before {
+        content: counter(number-counter) ".";
+        counter-increment: number-counter;
+        padding: 0 8px 0 0;
+        position: absolute;
+        left: -20px;
+    }
+}
+
+ol.upper-alpha > li {
+    list-style: upper-alpha !important;
+}
