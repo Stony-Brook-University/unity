@@ -249,4 +249,26 @@ a.glassy-button {
 }
 /* end Form */
 
+/*sidebar menu*/
+#sidebar-menu {
 
+}
+
+.sidebar-nav {
+
+}
+.sidebar-nav > .sidebar-header {
+
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+.sidebar-nav > .sidebar-header a {
+  color: #000;
+}
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
