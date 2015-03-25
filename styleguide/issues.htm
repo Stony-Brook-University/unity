@@ -1,0 +1,75 @@
+<!--#include file="header.htm" -->
+
+<script src="js/marked.js"></script>
+
+
+<section class="tight">
+  <div class="container">
+    <div class="row">
+                <div class="col-sm-12"><h2 class="centered">Project Issues</h2></div>
+  
+    </div>
+  </div>
+</section>
+
+
+<section class="cozy">
+  <div class="container">
+    <div class="row">
+                <div class="col-sm-12"><h3 class="centered">Required Features</h3></div>
+              <div class="col-sm-12">
+                <ul class="default-bullets">
+                <li>Site Navigation - Implement Hover Dropdowns, Mobile Friendly</li>
+                <li>Responsive Tables & Tablesaw</li>
+                <li>Searchable Icons</li>
+                </ul>
+              </div>
+</div>
+</div>
+</section>
+
+
+
+	<section class="cozy">
+	<div class="container">
+		<div class="row">
+            		<div class="col-sm-12"><h3 class="centered">SASS TODOs</h3></div>
+
+
+  <div id="md-content"></div>
+  <script>
+
+   $.ajax({
+            url: 'scss-todo.md',
+            type: 'get',
+            async: false,
+            success: function(md) {
+                    document.getElementById('md-content').innerHTML = marked(md);
+            }
+    });
+
+  </script>
+
+</div>
+</div>
+</section>
+
+
+
+  <section class="cozy">
+  <div class="container">
+    <div class="row">
+                <div class="col-sm-12"><h3 class="centered">JS Lint</h3></div>
+
+
+                <div class="col-sm-12">
+                    <!--#include file="jshint-output.htm" -->
+                </div>
+  
+
+</div>
+</div>
+</section>
+
+<!--#include file="footer.htm" -->
+

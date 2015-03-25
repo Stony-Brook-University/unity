@@ -38,7 +38,11 @@ gulp.task('cleandist', function() {
 gulp.task('lint', function() {
     return gulp.src('js/**/*.js')
         .pipe(jshint())
-        .pipe(jshint.reporter('default'));
+        .pipe(jshint.reporter('default'))
+        .pipe(jshint.reporter('gulp-jshint-html-reporter', {
+            filename: __dirname + '/styleguide/jshint-output.htm'
+        }));
+        
 });
 
 // Concatenate & Minify JS
@@ -75,29 +79,10 @@ gulp.task('images', function() {
 gulp.task('todo-scss', function() {
     gulp.src('scss/**/*.scss')
         .pipe(todo({fileName: 'scss-todo.md' }))
-        .pipe(gulp.dest('./styleguide/todo')) //output todo.md as markdown 
+        .pipe(gulp.dest('./styleguide')) //output todo.md as markdown 
 });
 
 
-gulp.task('todo-template-scss', function() {
-    gulp.src('scss/**/*.scss')
-      .pipe(todo())
-        .pipe(through.obj(function (file, enc, cb) {
-            //read and interpolate template 
-            var newContents = template(fs.readFileSync('./styleguide/todo/scss-template.md'), {
-                marker: file.contents.toString()
-            });
-            //change file name 
-            file.path = path.join(file.base, 'scss-todo-from-template.md');
-            //replace old contents 
-            file.contents = new Buffer(newContents.toString());
-            //console.log(newContents);
-            //push new file 
-            this.push(file);
-            cb();
-        }))
-        .pipe(gulp.dest('./'));
-});
 
 gulp.task('styles', function() {
     gulp.src('./scss/*.scss')
