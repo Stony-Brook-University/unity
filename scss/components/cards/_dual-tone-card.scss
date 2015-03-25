@@ -27,6 +27,7 @@ a.dual-tone-card {
         }
     }
     span:after {
+        @extend .sbuicon;
         text-align: center;
         display: block;
         content: "\f061";
@@ -34,15 +35,6 @@ a.dual-tone-card {
         margin: 5px 0 0 0;
         padding: 5px 0 8px;
         border-radius: 0 0 2px 2px;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        position: relative;
-        z-index: 1;
-        font-size: 1em;
         @include breakpoint($screen-md) {
             margin: 15px 0 0 0;
             padding: 10px 0 13px;

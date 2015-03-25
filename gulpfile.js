@@ -11,6 +11,10 @@ var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync');
 var clean = require('gulp-clean');
 var todo = require('gulp-todo');
+var fs = require('fs');
+var path = require('path');
+var template = require('lodash.template');
+var through = require('through2');
 
 gulp.task('cleantemp', function() {
     return gulp.src('.temp', {
@@ -72,6 +76,27 @@ gulp.task('todo-scss', function() {
     gulp.src('scss/**/*.scss')
         .pipe(todo({fileName: 'scss-todo.md' }))
         .pipe(gulp.dest('./styleguide/todo')) //output todo.md as markdown 
+});
+
+
+gulp.task('todo-template-scss', function() {
+    gulp.src('scss/**/*.scss')
+      .pipe(todo())
+        .pipe(through.obj(function (file, enc, cb) {
+            //read and interpolate template 
+            var newContents = template(fs.readFileSync('./styleguide/todo/scss-template.md'), {
+                marker: file.contents.toString()
+            });
+            //change file name 
+            file.path = path.join(file.base, 'scss-todo-from-template.md');
+            //replace old contents 
+            file.contents = new Buffer(newContents.toString());
+            //console.log(newContents);
+            //push new file 
+            this.push(file);
+            cb();
+        }))
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('styles', function() {

@@ -1,5 +1,15 @@
 ///SOLID COLORS
 
+.bg-white, .background-white
+{
+    background-color: #fff !important; 
+}
+
+.bg-black, .background-black
+{
+    background-color: #000 !important;
+}
+
 .bg-red, .background-red {
     background-color: $red !important;
 }
@@ -244,6 +254,11 @@
     background-repeat: repeat;
 }
 
+
+.bg-texture-crossed {
+    background: url("../assets/images/textures/thin-diagonal-stripe-pattern.png") repeat 0 0 scroll;
+}
+
 .bg-texture-dark-mosaic {
     background-image: url("../assets/images/textures/dark-mosaic.png");
     background-repeat: repeat;
@@ -273,8 +288,8 @@
     background: url("../assets/images/textures/transparent-black-65.png") repeat scroll 0 0;
 }
 
-.bg-texture-crossed {
-    background: url("../assets/images/textures/thin-diagonal-stripe-pattern.png") repeat 0 0 scroll;
+.bg-texture-halftone {
+    background: url("../assets/images/textures/black-dots-pattern.png") repeat 0 0;
 }
 
 .red-grad-background {
@@ -331,11 +346,8 @@
     background: url("../assets/images/textures/white-fade-bottom-3.png") repeat-x left bottom;
 }
 
-.halftone-background {
-    background: url("../assets/images/textures/black-dots-pattern.png") repeat 0 0;
-}
 
-.black-opac-cover {
+.bg-black-opac-cover {
     background: url("../assets/images/textures/transparent-black-65.png") repeat scroll 0 0;
     background: rgba(0, 0, 0, 0.8);
     padding: 40px 0;
