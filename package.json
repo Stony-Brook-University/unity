@@ -5,7 +5,9 @@
     "type": "git",
     "url": "git://github.com/SBUDoIT/unity.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-jshint-html-reporter": "^0.1.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.2.4",
     "grunt": "~0.4.0",
