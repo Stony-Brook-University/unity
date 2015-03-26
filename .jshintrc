@@ -1,14 +1,19 @@
 {
+    "asi": true,
+    "boss": true,
     "browser": true,
     "bitwise": true,
     "devel": true,
     "curly": true,
-    "eqeqeq": true,
+ //   "eqeqeq": true,
+    "expr": true,
     "forin": true,
     "immed": true,
     "indent": 2,
     "jquery": true,
     "latedef": true,
+    "laxcomma": true,
+    "laxbreak": true,
     "newcap": true,
     "noarg": true,
     "quotmark": true,
@@ -17,8 +22,11 @@
     "unused": true,
     "trailing": true,
     "smarttabs": true,
+    "validthis" : true,
+
     "predef": [
         "Drupal",
         "Modernizr"
     ]
+
 }

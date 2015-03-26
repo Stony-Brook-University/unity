@@ -1,0 +1,67 @@
+.introduction, .intro-text {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.caps,
+.cap {
+    text-transform: uppercase;
+}
+
+.proper-case {
+    text-transform: capitalize;
+}
+
+.serif {
+    font-family: 'CenturyExpandedLTW01-Ro';
+    font-weight: 400;
+}
+
+.serif-italic {
+    font-family: 'CenturySchoolbookW01-It 927458';
+    font-weight: 400;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.wrap {
+    white-space: wrap;
+}
+
+.less-spacing {
+    letter-spacing: -0.075em;
+}
+
+.sub-text {
+    font-size: .85em;
+}
+
+.no-border {
+    border-bottom: 0 none !important;
+}
+
+.sbu-3d-shadow {
+    -webkit-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+    -moz-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+    text-shadow: -1px 1px 0 #eee, -2px 2px 0 #888;
+}
+
+.sbu-text-shadow {
+    -webkit-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #aaa;
+    -moz-text-shadow: -1px 1px 0 #eee, -2px 2px 0 #aaa;
+    text-shadow: -1px 1px 0 #eee, -2px 2px 2px #aaa;
+}
+
+.centered, .center-text, .center-aligned-text {
+    text-align: center;
+}
+
+.left-aligned-text {
+    text-align: left;
+}
+
+.right-aligned-text {
+    text-align: right;
+}

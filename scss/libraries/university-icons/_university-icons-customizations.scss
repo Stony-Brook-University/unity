@@ -1,0 +1,26 @@
+/*used for icomoon font rebranding*/
+
+//scheduled maintenance
+.icon-system-status-307 {
+    content: "\ea5f";
+}
+
+//disruption
+.icon-system-status-308 {
+    content: "\ed4c";
+}
+
+//outage
+.icon-system-status-309 {
+    content: "\ed62";
+}
+
+//information
+.icon-system-status-310 {
+    content: "\ed61";
+}
+
+.heading-icon:before {
+    margin: 0;
+    font-size: 4em;
+}

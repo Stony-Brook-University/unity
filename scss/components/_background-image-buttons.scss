@@ -1,0 +1,59 @@
+/* BACKGROUND IMAGE BUTTONS */
+.background-image-buttons {
+  	display: block;
+  	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 25px;  
+}
+span.image-label {
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #00acc6;
+        font-family: 'Trade Gothic W01 Bold 2';
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        display: block;
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        @include breakpoint($screen-sm) {
+            padding: 18px 25px;
+            font-size: 2em;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        span:after {
+            display: inline-block;
+            content: "\f105";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            z-index: 1;
+            font-size: 1em;
+            padding: 0 0 0 13px;
+        }
+}
+span.image-label-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 170px;
+    text-align: center;
+    @include breakpoint($screen-md) {
+        width: 250px;
+    }     
+}
+
+.money-bkg {
+  background: url('../../images/money.jpg') 50% 50% no-repeat transparent;
+  background-size: cover;
+}

@@ -173,11 +173,12 @@ browserSync: {
    
   css: {
     bsFiles: {
-      src : ['.release/css/*.css','styleguide/*.html']
+      src : ['.release/css/*.css','styleguide/*']
     },
       
     options: {
         watchTask: true,         
+        proxy: "styleguide.unity.dev:8080"
     }
   },
 },

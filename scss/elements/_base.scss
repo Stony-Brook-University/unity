@@ -1,0 +1,20 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+@import "box-model/borders";
+@import "box-model/margins";
+@import "box-model/paddings";
+@import "box-model/widths";
+@import "forms";
+@import "images";
+@import "inline-list";
+@import "lists";
+@import "tables";
+@import "text";
+@import "headings";
+@import "links";

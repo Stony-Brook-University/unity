@@ -1,0 +1,48 @@
+a:link, a:visited, a:active {
+    background-color: transparent;
+    color: $red;
+    text-decoration: none;
+}
+
+a:hover, a.selected {
+    color: $dark-gray;
+}
+
+a.arrow-link:after {
+    display: inline-block;
+    content: "\f105";
+    margin: 0 0 0 8px;
+    @extend .sbuicon;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+}
+
+i.heading-icon {
+    display: block;
+    margin-bottom: 2em;
+}
+
+//TODO Line spacing seems different between styleguides -- doesn't seem to be set on these links, perhaps theres a global line height that needs to be adjusted
+a[href$=".pdf"]:after {
+    content: "\f1c1";
+    @extend .sbuicon-after;
+}
+
+a[href$=".xls"]:after,
+a[href$=".xlsx"]:after {
+    content: "\f1c3";
+    @extend .sbuicon-after;
+}
+
+a[href$=".doc"]:after,
+a[href$=".docx"]:after {
+    content: "\f1c2";
+    @extend .sbuicon-after;
+}
+
+a[href$=".ppt"]:after,
+a[href$=".pptx"]:after {
+    content: "\f1c4";
+    @extend .sbuicon-after;
+}

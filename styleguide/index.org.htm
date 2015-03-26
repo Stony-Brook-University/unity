@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stony Brook University</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/.dist/css/style.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/.dist/js/header/header.dev.js"></script>
+</head>
+
+<body>
+    <div id="page">
+
+        <div class="nav-elements-container">
+            <!-- <quick-nav> -->
+            <nav class="quick-nav clearfix" data-search-style="default">
+                <div class="quick-nav-wrapper">
+                    <ul class="wrapper border-box clearfix">
+                        <li>
+                            <a href="http://www.stonybrook.edu/sb/calendars.shtml" class="clearfix">
+                                <i class="icon fa fa-calendar clearfix"></i>
+                                <span class="quick-nav-label">Calendars</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.stonybrook.edu/sb/directories.shtml">
+                                <i class="icon fa fa-book clearfix"></i>
+                                <span class="quick-nav-label">Directory</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs-block">
+                            <a href="http://www.stonybrook.edu/sb/jobs.shtml">
+                                <i class="icon fa fa-briefcase clearfix"></i>
+                                <span class="quick-nav-label">Jobs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://it.stonybrook.edu/services/solar/">
+                                <i class="icon fa fa-shield clearfix"></i>
+                                <span class="quick-nav-label">Solar</span>
+                            </a>
+                        </li>
+                        <li class="visible-sm-block">
+                            <a href="http://www.stonybrook.edu/mycloud/">
+                                <i class="icon fa fa-envelope-o clearfix"></i>
+                                <span class="quick-nav-label">Google Apps</span>
+                            </a>
+                        </li>
+                        <li class="visible-sm-block">
+                            <a href="https://blackboard.stonybrook.edu/" class="clearfix">
+                                <i class="icon fa fa-desktop clearfix"></i>
+                                <span class="quick-nav-label">Blackboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="more-trigger">
+                                        <i class="icon fa fa-ellipsis-h clearfix"></i>
+                                        <span class="quick-nav-label">More<span class="extra-label"> Links</span></span>
+                            </span>
+                        </li>
+                        <li class="visible-md-block visible-lg-block for-info">
+                            <span class="audience-trigger">
+                                        <i class="icon fa fa-ellipsis-h clearfix"></i>
+                                        <span class="quick-nav-label"><i class="icon fa fa-caret-right clearfix"></i>Info for</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- </quick-nav> -->
+            <!-- <more-nav> -->
+            <nav class="more-nav closed clearfix">
+                <ul class="no-pad-wrapper border-box clearfix">
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/a-z" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-sort-alpha-asc clearfix"></i></span>
+                            <span class="quick-nav-label">A-Z Guide</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/arts" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-music clearfix"></i></span>
+                            <span class="quick-nav-label">Arts &amp; Culture</span>
+                        </a>
+                    </li>
+                    <li class="clearfix no-tablet">
+                        <a href="https://blackboard.stonybrook.edu/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-desktop clearfix"></i></span>
+                            <span class="quick-nav-label">Blackboard</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/maps" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-map-marker clearfix"></i></span>
+                            <span class="quick-nav-label">Campus Maps</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/safety/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-eye clearfix"></i></span>
+                            <span class="quick-nav-label">Campus Safety</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/toolkit/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-wrench clearfix"></i></span>
+                            <span class="quick-nav-label">Comm. Toolkit</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/contact" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-mobile clearfix"></i></span>
+                            <span class="quick-nav-label">Contact SB</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/directions" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-arrow-circle-right clearfix"></i></span>
+                            <span class="quick-nav-label">Directions</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="https://stonybrook.digication.com/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-folder-open-o clearfix"></i></span>
+                            <span class="quick-nav-label">ePortfolios</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://calendar.activedatax.com/stonybrook/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-calendar clearfix"></i></span>
+                            <span class="quick-nav-label">Events Calendar</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/external_relations/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-bullhorn clearfix"></i></span>
+                            <span class="quick-nav-label">External Relations</span>
+                        </a>
+                    </li>
+                    <li class="clearfix no-tablet">
+                        <a href="http://www.stonybrook.edu/mycloud/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-envelope-o clearfix"></i></span>
+                            <span class="quick-nav-label">Google Apps</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://it.stonybrook.edu/status/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-check clearfix"></i></span>
+                            <span class="quick-nav-label">IT System Status</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/jobs" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-briefcase clearfix"></i></span>
+                            <span class="quick-nav-label">Jobs</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.library.stonybrook.edu/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-book clearfix"></i></span>
+                            <span class="quick-nav-label">Libraries</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="https://webmail.sbumed.org/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-user-md clearfix"></i></span>
+                            <span class="quick-nav-label">Medicine Webmail</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/sb/majors" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-list clearfix"></i></span>
+                            <span class="quick-nav-label">Majors &amp; Minors</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/parking/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-car clearfix"></i></span>
+                            <span class="quick-nav-label">Parking</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/registrar/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-building-o clearfix"></i></span>
+                            <span class="quick-nav-label">Registrar</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://studentaffairs.stonybrook.edu/stu/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-question clearfix"></i></span>
+                            <span class="quick-nav-label">Student Affairs</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/summer/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-sun-o clearfix"></i></span>
+                            <span class="quick-nav-label">Summer Sessions</span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://www.stonybrook.edu/winter/" class="clearfix">
+                            <span class="icon-wrapper"><i class="icon fa fa-asterisk clearfix"></i></span>
+                            <span class="quick-nav-label">Winter Session</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- </more-nav> -->
+            <!-- <audience-nav> -->
+            <nav class="audience-nav clearfix">
+                <div class="dropdown-nav clearfix">
+                    <div class="cd-dropdown"><span class="cd-dropdown-element cd-dropdown-label needsclick" style="z-index: 1006;">View information for...</span>
+                        <input type="hidden" name="cd-dropdown" value="-1">
+                        <ul style="height: auto;">
+                            <li data-value="1" style="z-index: 1005; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 200ms ease; -webkit-transition: all 200ms ease;"><a href="http://www.stonybrook.edu/for-students/" class="cd-dropdown-element">For Students</a>
+                            </li>
+                            <li data-value="2" style="z-index: 1004; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 200ms ease; -webkit-transition: all 200ms ease;"><a href="http://www.stonybrook.edu/sb/faculty.shtml" class="cd-dropdown-element">Faculty &amp; Staff</a>
+                            </li>
+                            <li data-value="3" style="z-index: 1003; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 200ms ease; -webkit-transition: all 200ms ease;"><a href="http://www.stonybrook.edu/sb/alumni.shtml" class="cd-dropdown-element">Alumni &amp; Friends</a>
+                            </li>
+                            <li data-value="4" style="z-index: 1002; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 200ms ease; -webkit-transition: all 200ms ease;"><a href="http://www.stonybrook.edu/sb/parents.shtml" class="cd-dropdown-element">Parents</a>
+                            </li>
+                            <li data-value="5" style="z-index: 1001; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; width: 100px; transition: all 200ms ease; -webkit-transition: all 200ms ease;"><a href="http://www.stonybrook.edu/commcms/community_relations" class="cd-dropdown-element">Neighbors</a>
+                            </li>
+                            <li data-value="6" style="z-index: 1000; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; width: 100px; transition: all 200ms ease; -webkit-transition: all 200ms ease;"><a href="http://www.stonybrook.edu/economic-development" class="cd-dropdown-element">Economic Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- </audience-nav> -->
+        </div>
+
+        <!-- Navigation -->
+        <div class="logo-container">
+            <div class="container">
+                <a href="http://www.stonybrook.edu/"><img src="images/stony-brook-university.png" />
+                </a>
+                <a href="/"><img title="Home" src="http://it.stonybrook.edu/sites/it.stonybrook.edu/files/doit-text.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="main-nav-container clearfix">
+            <!-- <site-nav> -->
+            <nav class="site-nav default border-box clearfix">
+                <div class="container">
+                    <div class="menu-trigger border-box clearfix"><i class="icon fa fa-bars"></i>
+                    </div>
+                    <ul class="main-nav-list border-box hide-accessible-mobile clearfix">
+                        <li class="clearfix smaller">
+                            <a href="http://www.stonybrook.edu/sb/aboutsb.shtml" class="clearfix">
+                                <span class="label clearfix">About</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="http://www.stonybrook.edu/sb/admissions.shtml" class="clearfix">
+                                <span class="label clearfix">Admissions</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="http://www.stonybrook.edu/sb/academics.shtml" class="clearfix">
+                                <span class="label clearfix">Academics</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="http://www.stonybrook.edu/research/" class="clearfix">
+                                <span class="label clearfix">Research</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="http://www.library.stonybrook.edu/" class="clearfix">
+                                <span class="label clearfix">Libraries</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="http://goseawolves.cstv.com/" class="clearfix">
+                                <span class="label clearfix">Athletics</span>
+                            </a>
+                        </li>
+                        <li class="clearfix smaller">
+                            <a href="http://www.stonybrook.edu/sb/arts.shtml" class="clearfix">
+                                <span class="label clearfix">Arts</span>
+                            </a>
+                        </li>
+                        <li class="clearfix smaller">
+                            <a href="http://www.stonybrook.edu/sb/giving" class="clearfix">
+                                <span class="label clearfix">Giving</span>
+                            </a>
+                        </li>
+                        <li class="clearfix medicine larger">
+                            <a href="http://www.stonybrookmedicine.edu/" class="clearfix">
+                                <span class="label clearfix">Medicine</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- </site-nav> -->
+        </div>
+
+
+
+
+
+        <!-- Header Carousel -->
+        <header id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <img src="https://placeimg.com/1000/300/tech/1" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example headline.</h1>
+                            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                            <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="https://placeimg.com/1000/300/tech/2" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://placeimg.com/1000/300/tech/3" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </header>
+
+        <section class="bg-light-red cozy alert-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-header"><i class="icon-film"></i>Attention
+                    </h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel-body center-text">
+                            <p>SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information. Students use SOLAR to register for classes, print schedules, view and pay bills, update personal contact information, view transcripts, and submit student employment timesheets. Employees use SOLAR to update personal contact information, view vacation/sick accruals, print class rosters, submit grades, and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+        </section>
+        <!-- Marketing Icons Section -->
+        <section id="icon" class="arrow-below arrow-below-white cozy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="section-header">
+                        Self Help Knowledge Base Articles!!!
+                    </h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+
+                        <h2 class="service-heading">Blackboard</h2>
+                        <p>
+                            Blackboard is a great system that is an LMS.
+                        </p>
+                    </div>
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">Google Apps</h2>
+                    </div>
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">NetID</h2>
+                    </div>
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">Qualtrics</h2>
+                    </div>
+
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">SINC Sites</h2>
+                    </div>
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">Software Catalog</h2>
+                    </div>
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">Solar</h2>
+                    </div>
+                    <div data-match-height="items-b" class="col-xs-6 col-sm-3 image-card">
+                        <i class="icon-film heading-icon"></i>
+                        <h2 class="service-heading">WolfieNet</h2>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="bg-light-gray bg-texture-bright-squares fluffy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-header">Report a Problem</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="centered">Card Heading</h3>
+                        <div class="panel-body" data-match-height="items-a">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="glassy-button btn btn-default">Learn More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="centered">Card Heading</h3>
+                        <div class="panel-body" data-match-height="items-a">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="glassy-button btn btn-default">Learn More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="centered">Card Heading</h3>
+                        <div class="panel-body" data-match-height="items-a">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="glassy-button btn btn-default">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </section>
+
+        <!-- Features Section -->
+        <section class="airy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-header">Training and Professional Development</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <div class="panel-heading">
+                                <h4>Bootstrap v3.2.0</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <div class="panel-heading">
+                                <h4>Free &amp; Open Source</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <div class="panel-heading">
+                                <h4>Easy to Use</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt
+                                    <p>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </section>
+        <section class="bg-light-gray light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-header">Learn About Current Career Opportunities in your Area of Interest</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-default-cards">
+                            <div class="panel-cards">
+                                <div class="panel-heading-cards">
+                                    <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
+                                </div>
+                                <div class="panel-body-cards">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                    <a href="#" class="btn btn-default">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-cards">
+                            <div class="panel-heading-cards">
+                                <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                            </div>
+                            <div class="panel-body-cards">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                <a href="#" class="btn btn-default">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-cards">
+                            <div class="panel-heading-cards">
+                                <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            </div>
+                            <div class="panel-body-cards">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                <a href="#" class="btn btn-default">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </section>
+        <section class="spacey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-header">Frequently Asked Questions</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accordion">
+                            <h3>Where can I learn more about Google Calendar?</h3>
+                            <div>
+                                <p>
+                                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                                </p>
+                            </div>
+                            <h3>Can I get notifications of upcoming events and appointments on my Google Calendar?</h3>
+                            <div>
+                                <p>
+                                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                                </p>
+                            </div>
+                            <h3>Can I print Google Calendar items?</h3>
+                            <div>
+                                <p>
+                                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                </p>
+                                <ul>
+                                    <li>List item one</li>
+                                    <li>List item two</li>
+                                    <li>List item three</li>
+                                </ul>
+                            </div>
+                            <h3>How can I get to my calendar?</h3>
+                            <div>
+                                <p>
+                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                                </p>
+                                <p>
+                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                            </div>
+                            <h3>How do I add web calendars and events to Google Calendar?</h3>
+                            <div>
+                                <p>
+                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                                </p>
+                                <p>
+                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                            </div>
+                            <h3>How do I create a new Google Calendar?</h3>
+                            <div>
+                                <p>
+                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                                </p>
+                                <p>
+                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                            </div>
+                            <h3>How do I customize my Calendar?</h3>
+                            <div>
+                                <p>
+                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                                </p>
+                                <p>
+                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                            </div>
+                            <h3>How do I view my calendars on my mobile device?</h3>
+                            <div>
+                                <p>
+                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                                </p>
+                                <p>
+                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 form-control-static">
+                        <form name="sentMessage" class="contactForm" novalidate>
+                            <div class="control-group form-group">
+                                <h1>Report a Problem</h1>
+                                <p>When you submit this trouble ticket, it will automatically trigger a notification message to appropriate technical staff for resolution.</p>
+                                <div class="controls">
+                                    <label>NetID:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>First Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Last Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Email Address:</label>
+                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Services:</label>
+                                    <select>
+                                        <option value="" disabled="disabled" selected="selected">-select-</option>
+                                        <option value="1">Audio Visual Services</option>
+                                        <option value="2">Blackboard</option>
+                                        <option value="2">Campus Announcements</option>
+                                        <option value="2">Campus Television Service</option>
+                                        <option value="2">Classroom Equiment & Consumable Supplies</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Issue:</label>
+                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                            <!-- For success/fail messages -->
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <div class="container">
+            <!-- Call to Action Section -->
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <section class="text-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Diversity at Stony Brook</h3>
+                        <p>Stony Brook University expresses and demonstrates its commitment to equal opportunity for all persons in the University community, regardless of race, color, sex, age, ethnicity, religion, national origin, sexual orientation, disability, marital status, or status as disabled veteran. This policy applies to all University offices, departments, and affiliates, including part-time students, faculty and staff members. Affirmative action and equal opportunity affect all employment practices including, but not limited to, recruitment, hiring, transfers, promotions, benefits, compensation, training, educational opportunities, and terminations. To further ensure the goals of equal opportunity and affirmative action with respect to employment and education, the University endeavors to increase the availability of opportunities for students, staff, and faculty from groups that have been previously excluded or underrepresented. Students or employees having disabilities that require reasonable accommodations or auxiliary aids may be accommodated through the Office of the ADA Coordinator.</p>
+                        <p><a href="http://www.stonybrook.edu/diversity/">Read more information about Diversity at Stony Brook.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-red fluffy boxes-wrapper clearfix">
+            <div class="container">
+                <div class="row equal-heights">
+                    <div class="col-md-4 equal-height-col">
+                        <div class="star-list-card">
+                            <h3 class="clearfix"><span>For</span> Students</h3>
+                            <ul class="star-bullets clearfix">
+                                <li><a href="http://career.stonybrook.edu/" target="_blank">Career Counseling</a>
+                                </li>
+                                <li><a href="http://career.stonybrook.edu/students/connect/internship-coop-services" target="_blank">Internships</a>
+                                </li>
+                                <li><a href="http://www.stonybrook.edu/ureca/" target="_blank">Undergraduate Research</a>
+                                </li>
+                                <li><a href="http://www.stonybrook.edu/commcms/finaid/typesofaid/fws.html" target="_blank">Work Study Programs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 equal-height-col">
+                        <div class="equal-height-col star-list-card">
+                            <h3 class="clearfix"><span>For</span> Employers</h3>
+                            <ul class="star-bullets clearfix">
+                                <li><a href="http://career.stonybrook.edu/employers/hiring-sb-students/on-campus-recruiting" target="_blank">On-Campus Student Recruitment</a>
+                                </li>
+                                <li><a href="http://career.stonybrook.edu/employers/hiring-sb-students/post-a-job-or-internship" target="_blank">Post Jobs for Students</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 equal-height-col">
+                        <div class="equal-height-col star-list-card">
+                            <h3 class="clearfix"><span>General</span> Info</h3>
+                            <ul class="star-bullets clearfix">
+                                <li><a href="http://www.stonybrook.edu/sb/directions.shtml" target="_blank">Directions</a>
+                                </li>
+                                <li><a href="jobs/how-to-apply">How to Apply Online</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="background-gray fluffy">
+            <div class="container">
+                <div class="row">
+                    <h2 class="white-fade-background red cap small-title-1">Learn about current career opportunities in your area of interest.</h2>
+                    <div class="col-md-4">
+                        <a href="http://stonybrook.edu/hr/prospective-employees.shtml" class="dual-tone-card"><span>Jobs @ Stony Brook <br>University</span></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="http://stonybrookmedicine.edu/careers" class="dual-tone-card"><span>Jobs @ Stony Brook <br>Medicine</span></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="http://www.listateveteranshome.org/employment_opportunities.html" class="dual-tone-card"><span>Jobs @ Long Island State <br>Veterans Home</span></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer clearfix">
+            <nav class="wrapper">
+                <div class="col col-md-4 footer-links" data-match-height="items-footer">
+                    <a class="arrow-link" href="http://it.stonybrook.edu/services/solar/" title="Log in to SOLAR">SOLAR</a>
+                    <a class="arrow-link" href="http://www.stonybrook.edu/mycloud/" title="Log in to Google Apps for Education">Gmail</a>
+                    <a class="arrow-link" href="https://blackboard.stonybrook.edu/" target="blank" title="Log in to Blackboard">Blackboard</a>
+                    <a class="arrow-link" href="http://sb.cc.stonybrook.edu/bulletin/current/" title="View the Undergraduate Bulletin">Undergraduate Bulletin</a>
+                    <a class="arrow-link" href="http://www.stonybrook.edu/gradbulletin" title="View the Graduate Bulletin">Graduate Bulletin</a>
+                </div>
+                <div class="col col-md-4 footer-address" data-match-height="items-footer">
+                    <span class="address">
+                                <span class="serif-italic">Stony Brook University</span>
+                    <span class="nowrap">Stony Brook, NY 11794-3364</span>
+                    <br>
+                    <a class="address-link small-button" href="https://www.google.com/maps/preview?q=Stony+Brook+University+Stony+Brook,+NY+11794-3364" target="_blank" title="View map of Stony Brook University"><em class="fa fa-map-marker icon"></em>View map</a>
+                    <span class="phone nowrap">(631) 632-6000</span>
+                    </span>
+                </div>
+                <div class="col col-md-4 footer-social" data-match-height="items-footer">
+                    <h5>We’re Social</h5>
+                    <div class="social-links">
+                        <a class="facebook-blue-bkg" href="https://www.facebook.com/stonybrooku" title="Stony Brook Facebook" target="_blank"><em class="fa fa-facebook"></em></a>
+                        <a class="youtube-red-bkg" href="https://www.youtube.com/user/sbcomm" title="Stony Brook YouTube" target="_blank"><em class="fa fa-youtube-play"></em></a>
+                        <a class="twitter-blue-bkg" href="https://twitter.com/stonybrooku" title="Stony Brook Twitter" target="_blank"><em class="fa fa-twitter"></em></a>
+                        <a class="instagram-blue-bkg" href="https://instagram.com/stonybrooku" title="Stony Brook Instagram" target="_blank"><em class="fa fa-instagram"></em></a>
+                    </div>
+                    <a class="small-button" href="http://stonybrook.edu/social" title="Social Media Feed">View Social Media Wall</a>
+                </div>
+            </nav>
+        </footer>
+
+
+
+
+
+        <!-- jQuery -->
+
+
+
+
+
+
+        <script src="/.dist/js/footer/footer.dev.js"></script>
+        <!-- Script to Activate the Carousel -->
+        <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script>
+
+        <script type="text/javascript">
+        $(function() {
+
+            $('#cd-dropdown').dropdown({
+                gutter: 0
+            });
+        });
+
+        $(function() { // apply matchHeight to each item container's items
+            $('.row.equal-heights').each(function() {
+
+                $(this).find('.equal-height-col').matchHeight(true);
+            });
+        });
+        </script>
+
+
+
+
+
+
+        <script type='text/javascript' id="__bs_script__">
+        //<![CDATA[
+        document.write("<script type='text/javscript' async src='http://HOST:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("HOST", location.hostname));
+        //]]>
+        </script>
+
+
+
+
+        </div>
+
+
+
+</body>
+
+</html>

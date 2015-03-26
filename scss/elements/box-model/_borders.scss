@@ -1,0 +1,152 @@
+.green-border {
+    border: 1px solid $green;
+}
+
+.red-border {
+    border: 1px solid $red;
+}
+
+.dark-red-border {
+    border: 1px solid $dark-red;
+}
+
+.light-red-border {
+    border: 1px solid $light-red;
+}
+
+.black-border {
+    border: 1px solid $black;
+}
+
+.blue-border {
+    border: 1px solid $blue;
+}
+
+.dark-gray-border {
+    border: 1px solid $dark-gray;
+}
+
+.light-gray-border {
+    border: 1px solid $light-gray;
+}
+
+.gray-border {
+    border: 1px solid $gray;
+}
+
+.white-border {
+    border: 1px solid  #fff;
+}
+
+.lime-green-border {
+    border: 1px solid $lime-green;
+}
+
+.steel-blue-border {
+    border: 1px solid $steel-blue;
+}
+
+.aqua-border {
+    border: 1px solid $aqua;
+}
+
+.muted-aqua-border {
+    border: 1px solid $muted-aqua;
+}
+
+.sbu-border-bottom {
+    border-bottom: 1px solid #EEE;
+    -webkit-box-shadow: 0px 2px 6px -5px #333;
+    -moz-box-shadow: 0px 2px 6px -5px #333;
+    box-shadow: 0px 2px 6px -5px #333;
+}
+
+.border-thin-dark {
+    padding: 0;
+}
+
+.double-border {
+    border: 4px double #333333;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #999999;
+}
+
+.rounded-corners-10px, .rounded-corners10 {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rounded-corners-5px, .rounded-corners5 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.shadow-blue {
+    box-shadow: 0 5px 0 #08578C;
+}
+
+.shadow-blue:hover {
+    top: 2px;
+    box-shadow: 0 3px 0 #08578C;
+    position: relative;
+}
+
+.shadow-blue:active {
+    top: 5px;
+    box-shadow: 0 0 0 #08578C;
+}
+
+//TODO Why these colors/combo's?
+.shadow-orange {
+    box-shadow: 0 5px 0 #e67e22;
+}
+
+.shadow-orange:hover {
+    top: 2px;
+    box-shadow: 0 3px 0 #e67e22;
+    position: relative;
+}
+
+.shadow-orange:active {
+    top: 5px;
+    box-shadow: 0 0 0 #e67e22;
+}
+
+.border-bottom-aaa {
+    border-bottom: 3px solid #AAAAAA;
+}
+
+.reflectBelow {
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
+}
+
+.border-shadow {
+    border-bottom: 1px solid #444444;
+    border-top: 1px solid #444444;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 8px 7px -8px #111111, 0 -8px 7px -8px #111111, 0 0 60px #222222 inset;
+    -moz-box-shadow: 0 8px 7px -8px #111111, 0 -8px 7px -8px #111111, 0 0 60px #222222 inset;
+    box-shadow: 0 8px 7px -8px #111111, 0 -8px 7px -8px #111111, 0 0 60px #222222 inset;
+}
+
+.bottom-shadow {
+    -webkit-box-shadow: 0 10px 8px -8px #000000;
+    -moz-box-shadow: 0 10px 8px -8px #000000;
+    box-shadow: 0 10px 8px -8px #000000;
+}
+
+.top-shadow {
+    -webkit-box-shadow: 0 -10px 8px -8px #000000;
+    -moz-box-shadow: 0 -10px 8px -8px #000000;
+    box-shadow: 0 -10px 8px -8px #000000;
+}
+
+.top-and-bottom-shadow {
+    -webkit-box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+    -moz-box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+    box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+}

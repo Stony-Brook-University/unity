@@ -1,0 +1,57 @@
+/* world icon */
+.rounded-button-1.world-icon .button-label:before {
+  content: "\f0ac";
+  font-size: 2.2em;
+  top: 8px;
+  left: 13px;
+}
+
+/* list icon */
+.rounded-button-1.list-icon .button-label:before {
+  content: "\f0ca";
+  font-size: 1.6em;
+  top: 14px;
+  left: 17px;
+}
+
+/* users icon */
+.rounded-button-1.sbuicon-users .button-label:before {
+  content: "\f0c0";
+  font-size: 1.6em;
+  top: 14px;
+  left: 17px;
+}
+
+/* marker icon */
+.sbuicon-location, .sbuicon-users, .sbuicon-tablet {
+  font-size: 2.2em;
+  margin: 0px 0px 0px 10px;
+  color: #900;
+}
+
+/* school icon */
+.rounded-button-1.school-icon .button-label:before {
+  content: "\f19c";
+  font-size: 1.5em;
+  top: 11px;
+  left: 15px;
+  color: #900;
+}
+
+/* tablet icon */
+.rounded-button-1.tablet-icon .button-label:before {
+  content: "\f10a";
+  font-size: 2em;
+  top: 10px;
+  left: 18px;
+  color: #900;
+}
+
+
+.rounded-button-1 .button-label:before {
+ 
+  font-size: 2em;
+  top: 10px;
+  left: 18px;
+  color: #900;
+}

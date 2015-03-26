@@ -1,0 +1,37 @@
+////////////////////////
+// Base Partials
+//
+// These files will be shared across all three of your output CSS files. Generally included here are only Compass Extension imports and imports for variables, functions, mixins, and extendables.
+//
+// Toolkit imports all of Compass, so there is no need to import it separately.
+////////////////////////
+////////////////////////
+// Private Imports
+////////////////////////
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "extendables";
+@import "backgrounds";
+
+//@import 'box-model';
+@import "colors";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
