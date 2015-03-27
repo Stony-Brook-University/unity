@@ -81,3 +81,7 @@ ol.number {
 ol.upper-alpha > li {
     list-style: upper-alpha !important;
 }
+
+ol.linenums, ol.linenums li {
+    list-style-type: decimal;
+}

@@ -1,8 +1,10 @@
-  $(function() {
+  (function( $ ) {
+
     $( "#accordion" ).accordion({
       event: "click hoverintent"
     });
-  });
+  
+  })(jQuery);
  
   /*
    * hoverIntent | Copyright 2011 Brian Cherne
