@@ -87,7 +87,7 @@ gulp.task('todo-scss', function() {
 gulp.task('styles', function() {
     gulp.src('./scss/*.scss')
         .pipe(compass({
-            css: '.temp/css',
+            css: '.dist/css',
             sass: 'scss',
             fonts: 'fonts',
             debug: false,
@@ -97,7 +97,7 @@ gulp.task('styles', function() {
             require: ['breakpoint']
         })).on('error', gutil.log)
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(gulp.dest('.dist/css'))
+        //.pipe(gulp.dest('.dist/css'))
         //.pipe(gulp.dest('app/assets/temp'))
         .pipe(rename({
             suffix: '.min'
