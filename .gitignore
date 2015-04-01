@@ -10,4 +10,4 @@ stylesheets/
 .dist
 .temp
 
-compiled-assets/
+compiled-assets/*
