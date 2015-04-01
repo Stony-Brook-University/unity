@@ -6,6 +6,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px 0;
+  img {
+    width: 239px;
+    height: 150px;
+    border-radius: 15px;
+  }
 }
 .rounded-image-buttons a {
   display: table;
@@ -25,7 +30,6 @@
   border-radius: 15px;
   box-shadow: rgba(6, 169, 191, 1) -110px 0 140px -30px inset;
   cursor: pointer;
-  background-image: url("../../images/sports.jpg");
   background-position: 50% 40%;
   background-size: cover;
   .image-label {
@@ -37,7 +41,7 @@
         cursor: pointer;
   } 
   @include breakpoint($screen-sm) {
-        width: 100%;
+        width: 21%;
         height: 150px;
         margin: 2%;
         font-size: 1.5em;

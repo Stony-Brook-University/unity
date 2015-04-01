@@ -1,0 +1,52 @@
+/*PROMO BOXES*/
+
+@media only screen and (min-width: 960px){
+.promo-box-round-title-1 {
+  width: 31.333%;
+  float: none;
+  margin: 0 1% 15px;
+  max-width: 280px;
+  padding: 60px 15px;
+}
+}
+
+.promo-box-round-title-1 {
+  display: inline-block;
+  border: 1px solid #675757;
+  box-shadow: 0 0 10px rgba(103, 87, 87, .2);
+  padding: 60px 15px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  width: 90%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 5% 15px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  background-image: url('../../images/students-walking.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 80%;
+}
+
+.promo-box-round-title-1 span {
+  display: inline-block;
+  font-family: 'Trade Gothic Next W01';
+  text-transform: uppercase;
+  border-radius: 30px;
+  background: #000;
+  color: #fff;
+  padding: 6px 0 7px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  max-width: 260px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}

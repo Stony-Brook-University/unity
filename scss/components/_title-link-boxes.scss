@@ -1,0 +1,133 @@
+/*TITLE LINK BOXES*/
+
+.title-link-box-1 div{
+  margin-bottom: 30px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@media only screen and (min-width: 960px) {
+h2.small-title-2 {
+  font-size: 1.3em;
+  margin: 0;
+  text-align: left;
+}
+}
+h2.small-title-2 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+h2.small-title-2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-family: 'CenturySchoolbookW01-It 927458';
+  text-transform: none;
+  margin: 0;
+}
+
+
+
+h3.medium-title-2 {
+  font-family: 'Trade Gothic W01 Light';
+  text-transform: none;
+  text-align: left;
+  font-size: 1.8em;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #777;
+}
+
+@media only screen and (min-width: 960px){
+.small-title-2 {
+  font-size: 2.9em;
+}
+}
+
+@media only screen and (min-width: 560px){
+.small-title-2 {
+  font-size: 2.6em;
+}
+}
+
+@include breakpoint($screen-sm) {
+    font-size: 2.6em;
+    ext-align: left;
+}
+
+@media only screen and (min-width: 960px){
+h3.medium-title-2 {
+  font-size: 1.6em;
+  margin: 0 0 15px;
+  text-align: left;
+}
+}
+
+h3.medium-title-2 {
+  font-size: 1.75em;
+  margin: 0 0 15px;
+}
+
+.link-boxes-container {
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@media only screen and (min-width: 960px){
+.link-boxes-container a {
+  display: block;
+  width: auto;
+  margin: 0 0 6px 20px;
+  padding: 0;
+  height: auto;
+  font-size: 1em;
+  background: transparent;
+  border: 0 none;
+  color: #111;
+  text-decoration: underline !important;
+}
+}
+
+a.more-button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'TradeGothicW01-BoldCn20 675334';
+  border: 1px solid #000;
+  background: #900;
+  color: #fff;
+  margin: 10px 0;
+  padding: 4px 10px 6px;
+  line-height: normal;
+  border-radius: 2px;
+  box-shadow: 0 0 3px #500 inset;
+  font-size: 18px;
+}
+
+/*font awesome styles
+.link-boxes-container a:after, .fa-arrow-after:after {
+  content: "\f105";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  padding: 0 0 0 9px;
+}
+*/
+.video-thumb {
+  position: relative;
+}
