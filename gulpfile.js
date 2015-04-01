@@ -40,7 +40,7 @@ gulp.task('lint', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(jshint.reporter('gulp-jshint-html-reporter', {
-            filename: __dirname + '/styleguide/jshint-output.htm'
+            filename: __dirname + '/styleguide/compiled-assets/jshint-output.html'
         }));
         
 });
@@ -78,11 +78,21 @@ gulp.task('images', function() {
 // output once in markdown and then output a json file as well 
 gulp.task('todo-scss', function() {
     gulp.src('scss/**/*.scss')
-        .pipe(todo({fileName: 'scss-todo.md' }))
-        .pipe(gulp.dest('./styleguide')) //output todo.md as markdown 
+        .pipe(todo({fileName: 'todo-scss.md' }))
+        .pipe(gulp.dest('./styleguide/compiled-assets/')) //output todo.md as markdown 
 });
 
+gulp.task('todo-js', function() {
+    gulp.src('js/**/*.js')
+        .pipe(todo({fileName: 'todo-js.md' }))
+        .pipe(gulp.dest('./styleguide/compiled-assets/')) //output todo.md as markdown 
+});
 
+gulp.task('todo-html', function() {
+    gulp.src('styleguide/**/*.html')
+        .pipe(todo({fileName: 'todo-html.md' }))
+        .pipe(gulp.dest('./styleguide/compiled-assets/')) //output todo.md as markdown 
+});
 
 gulp.task('styles', function() {
     gulp.src('./scss/*.scss')
@@ -112,7 +122,7 @@ gulp.task('styles', function() {
 gulp.task('browser-sync', function() {
     browserSync({
         proxy: "styleguide.unity.dev:8080",
-        startPath: "styleguide/index.htm"
+        startPath: "styleguide/index.html"
     });
 });
 
@@ -126,7 +136,7 @@ gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'headerjs', 'footerjs', 'watch']);
+gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js', 'headerjs', 'footerjs', 'watch']);
 
 
 

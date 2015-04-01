@@ -1,4 +1,4 @@
-<!--#include file="header.htm" -->
+<!--#include file="header.html" -->
 
 <script src="js/marked.js"></script>
 
@@ -40,7 +40,7 @@
   <script>
 
    $.ajax({
-            url: 'scss-todo.md',
+            url: '/styleguide/compiled-assets/scss-todo.md',
             type: 'get',
             async: false,
             success: function(md) {
@@ -63,7 +63,7 @@
 
 
                 <div class="col-sm-12">
-                    <!--#include file="jshint-output.htm" -->
+                    <!--#include file="compiled-assets/jshint-output.htm" -->
                 </div>
   
 
@@ -71,5 +71,5 @@
 </div>
 </section>
 
-<!--#include file="footer.htm" -->
+<!--#include file="footer.html" -->
 
