@@ -14,28 +14,7 @@ nav {
     font-family: 'CenturyExpandedLTW01-It';
 }
 
-.dropdown-nav {
-    margin: 0 auto;
-    float: none;
-}
 
-.dropdown-nav a {
-    border-bottom: 0 none;
-}
-
-.dropdown-nav a:before {
-    font-family: FontAwesome;
-    content: "\f005";
-    margin-right: 8px;
-    font-size: 10px;
-    display: inline-block;
-    float: left;
-    color: #a00;
-}
-
-.dropdown-nav a:hover:before {
-    color: #fff;
-}
 
 .main-nav-list a span:before {
     @extend .sbuicon;
@@ -52,71 +31,6 @@ nav {
     color: #fff;
 }
 
-.more-nav {
-    background-color: #333;
-    display: none;
-    overflow: hidden;
-    box-shadow: 0px 12px 20px -16px #000 inset, 0px -12px 20px -12px #000 inset;
-}
-
-.more-nav ul {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 8px 0;
-}
-
-.more-nav ul li {
-    display: block;
-    width: 100%;
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.more-nav a {
-    text-decoration: none;
-    border: 0 none;
-    color: #ddd;
-    display: block;
-    padding: 10px 5px;
-    text-shadow: 0 1px 0 #000;
-    font-size: 14px;
-    font-family: 'Trade Gothic W01 Cn 18';
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 45px;
-}
-
-.more-nav a:hover {
-    background-color: #990000;
-    color: #f7f7f7;
-}
-
-.more-nav .icon-wrapper {
-    float: left;
-    display: block;
-    width: 40px;
-    text-align: center;
-    margin: 0 4px 0 0;
-}
-
-.more-nav .icon {
-    font-size: 22px;
-}
-
-.more-nav .icon.fa-mobile {
-    font-size: 30px;
-    line-height: 17px;
-}
-
-.more-nav .label {
-    margin: 2px 0 0;
-    float: left;
-    font-size: 16px;
-}
 
 .site-nav,
 .sub-nav {
