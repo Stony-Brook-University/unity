@@ -1,3 +1,4 @@
+.DS_Store
 node_modules
 .sass-cache
 styleguide/stylesheets
@@ -8,3 +9,5 @@ stylesheets/
 
 .dist
 .temp
+
+compiled-assets/
