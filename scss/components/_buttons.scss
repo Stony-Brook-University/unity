@@ -1,3 +1,7 @@
+.full-width {
+    width: 80%;
+}
+
 .check-button {
     background: url("../assets/images/icons/check.png") 20px 13px no-repeat;
     display: block;
@@ -38,7 +42,7 @@
     .button-label {
         display: inline-block;
         color: #900;
-        padding: 15px 16px 19px 58px;
+        padding: 15px 16px 19px 25px;
     }
 
     //todo figure out the spacing issues here
