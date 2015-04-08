@@ -1,0 +1,30 @@
+/*ROUNDED FLAT BUTTONS*/
+
+a.rounded-flat-button {
+    background: #188cdf;
+    color: #93e6fa;
+    font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
+    text-transform: uppercase;
+    font-weight: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 7px;
+    display: inline-block;
+    text-shadow: none;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+
+    @include breakpoint($screen-sm) {
+        font-size: 1.2em;
+        //margin: 0 1% 12px;
+    }
+
+    @include breakpoint($screen-md) {
+        // margin: 0 .75% 12px;
+        font-size: 1.5em;
+        padding: 16px 12px;
+    }
+}

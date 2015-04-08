@@ -28,6 +28,13 @@ ul.star-bullets {
     }
 }
 
+.bullets {
+    li {
+        margin-left: 20px;
+        text-indent: -15px;
+    }
+}
+
 .default-bullets {
     li {
         margin-left: 20px;
@@ -56,6 +63,13 @@ ul.star-bullets {
 .arrow-bullets {
     li:before {
         content: "\f061";
+        @extend .sbuicon;
+    }
+}
+
+.check-bullets {
+    li:before {
+        content: "\f00c";
         @extend .sbuicon;
     }
 }
