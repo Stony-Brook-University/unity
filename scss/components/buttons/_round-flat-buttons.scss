@@ -12,7 +12,7 @@ a.rounded-flat-button {
     padding: 12px 7px;
     display: inline-block;
     text-shadow: none;
-    width: 100%;
+    width: 169px;
     border-radius: 4px;
     text-align: center;
     font-size: 1em;
@@ -23,7 +23,7 @@ a.rounded-flat-button {
     }
 
     @include breakpoint($screen-md) {
-        // margin: 0 .75% 12px;
+        margin: 0 .75% 12px;
         font-size: 1.5em;
         padding: 16px 12px;
     }
