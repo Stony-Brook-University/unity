@@ -6,6 +6,19 @@
 //
 // All styling, non box model properties go here
 ////////////////////////
+
+.float-left {
+    float: left;
+}
+
+.float-none {
+    float: none;
+}
+
+.float-right {
+    float: right;
+}
+
 @import "box-model/borders";
 @import "box-model/margins";
 @import "box-model/paddings";

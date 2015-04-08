@@ -1,0 +1,51 @@
+/*EXPLORE BUTTON*/
+
+@media only screen and (min-width: 1022px){
+.img-button > span {
+  top: 42%;
+  font-size: 1.4em;
+}
+}
+.img-button {
+  max-width: 100%
+}
+.img-button > span {
+	position: absolute;
+	top: 44%;
+	left: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1022px){
+.img-button > span > span {
+  padding: 8px;
+}
+}
+
+.img-button > span > span {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 6px;
+  background: url("../../img/bkg/transparent-black-40.png") repeat scroll 0 0;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+}
+
+/*
+.link-boxes-container a:after, .sbuicon-arrow-right3:after {
+  content: "\edb6";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  padding: 0 0 0 9px;
+}
+*/

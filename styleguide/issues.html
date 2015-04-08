@@ -36,15 +36,40 @@
             		<div class="col-sm-12"><h3 class="centered">SASS TODOs</h3></div>
 
 
-  <div id="md-content"></div>
+  <div id="todo-scss-content"></div>
   <script>
 
    $.ajax({
-            url: '/styleguide/compiled-assets/scss-todo.md',
+            url: '/styleguide/compiled-assets/todo-scss.md',
             type: 'get',
             async: false,
             success: function(md) {
-                    document.getElementById('md-content').innerHTML = marked(md);
+                    document.getElementById('todo-scss-content').innerHTML = marked(md);
+            }
+    });
+
+  </script>
+
+</div>
+</div>
+</section>
+
+
+<section class="cozy">
+  <div class="container">
+    <div class="row">
+                <div class="col-sm-12"><h3 class="centered">JS TODOs</h3></div>
+
+
+  <div id="todo-js-content"></div>
+  <script>
+
+   $.ajax({
+            url: '/styleguide/compiled-assets/todo-js.md',
+            type: 'get',
+            async: false,
+            success: function(md) {
+                    document.getElementById('todo-js-content').innerHTML = marked(md);
             }
     });
 
@@ -63,7 +88,7 @@
 
 
                 <div class="col-sm-12">
-                    <!--#include file="compiled-assets/jshint-output.htm" -->
+                    <!--#include file="compiled-assets/jshint-output.html" -->
                 </div>
   
 
