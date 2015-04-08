@@ -1,5 +1,7 @@
+/*ROUNDED BUTTON*/
+
 .full-width {
-    width: 80%;
+    width: 100%;
 }
 
 .check-button {
@@ -39,17 +41,23 @@
         background: #fcfcfc;
     }
 
-    .button-label {
-        display: inline-block;
-        color: #900;
-        padding: 15px 16px 19px 25px;
-    }
 
-    //todo figure out the spacing issues here
-    .button-label:before {
-        font-size: 2em;
-        top: 10px;
-        left: 18px;
-        color: #900;
-    }
+}    
+.button-label {
+    display: inline-block;
+    color: #900;
+    padding: 10px 16px 14px 25px;
+}
+
+//todo figure out the spacing issues here
+/*.button-label:before {
+    font-size: 2em;
+    top: 10px;
+    left: 18px;
+    color: #900;
+}*/
+.rounded-button-1 i {
+    font-size: 1.6em;
+    top: 14px;
+    left: 17px;
 }
