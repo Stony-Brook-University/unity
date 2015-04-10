@@ -50,14 +50,40 @@
     transition: all 300ms ease-in-out;
 }
 
-.screenshots figcaption #turquoise {
+.screenshots figcaption.turquoise {
 
-    background-color: #fff;
+    background-color: $turquoise;
+}
+
+.screenshots figcaption.alizarin {
+
+    background-color: $alizarin;
+}
+
+.screenshots figcaption.amethyst {
+
+    background-color: $amethyst;
+}
+
+.screenshots figcaption.river {
+
+    background-color: $river;
+}
+
+.screenshots figcaption.sun {
+
+    background-color: $sun;
+}
+
+.screenshots figcaption.asphalt {
+
+    background-color: $asphalt;
 }
 
 .screenshots figcaption a {
-    color: #fff
+    color: #fff;
 }
+
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
     color: #eee
 }
