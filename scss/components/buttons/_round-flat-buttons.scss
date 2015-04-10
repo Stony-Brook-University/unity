@@ -1,8 +1,8 @@
 /*ROUNDED FLAT BUTTONS*/
 
 a.rounded-flat-button {
-    background: #188cdf;
-    color: #93e6fa;
+    background: #900;
+    color: #fff;
     font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
     text-transform: uppercase;
     font-weight: normal;
@@ -16,15 +16,17 @@ a.rounded-flat-button {
     border-radius: 4px;
     text-align: center;
     font-size: 1em;
-
     @include breakpoint($screen-sm) {
         font-size: 1.2em;
         //margin: 0 1% 12px;
     }
-
     @include breakpoint($screen-md) {
         margin: 0 .75% 12px;
         font-size: 1.5em;
         padding: 16px 12px;
     }
+}
+
+.rounded-flat-button:hover {
+    background-color: #000;
 }
