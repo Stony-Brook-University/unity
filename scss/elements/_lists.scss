@@ -99,3 +99,9 @@ ol.upper-alpha > li {
 ol.linenums, ol.linenums li {
     list-style-type: decimal;
 }
+
+dl.cozy {
+    dd, dt {
+        padding: 1em 0;
+    }
+}
