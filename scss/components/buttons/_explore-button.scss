@@ -1,7 +1,7 @@
 /*EXPLORE BUTTON*/
 
 @media only screen and (min-width: 1022px){
-.img-button > span {
+.img-button span {
   top: 42%;
   font-size: 1.4em;
 }
@@ -9,9 +9,9 @@
 .img-button {
   max-width: 100%
 }
-.img-button > span {
+.img-button span {
 	position: absolute;
-	top: 44%;
+	top: 34%;
 	left: 0;
 	right: 0;
 	color: #fff;
@@ -24,7 +24,7 @@
 }
 }
 
-.img-button > span > span {
+.img-button span {
   display: block;
   width: 200px;
   margin: 0 auto;

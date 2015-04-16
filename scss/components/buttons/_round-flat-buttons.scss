@@ -1,41 +1,32 @@
 /*ROUNDED FLAT BUTTONS*/
 
-.rounded-flat-button-wrapper {
-  display: block;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 20px 10px;
+a.rounded-flat-button {
+    background: #900;
+    color: #fff;
+    font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
+    text-transform: uppercase;
+    font-weight: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 7px;
+    display: inline-block;
+    text-shadow: none;
+    width: 169px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+    @include breakpoint($screen-sm) {
+        font-size: 1.2em;
+        //margin: 0 1% 12px;
+    }
+    @include breakpoint($screen-md) {
+        margin: 0 .75% 12px;
+        font-size: 1.5em;
+        padding: 16px 12px;
+    }
 }
 
-.rounded-flat-button-wrapper a {
-  background: #188cdf;
-  color: #93e6fa;
-  font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
-  text-transform: uppercase;
-  font-weight: normal;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 12px 7px;
-  display: inline-block;
-  text-shadow: none;
-  float: left;
-  width: 48%;
-  margin: 0 1% 5px;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 1em;
-  @include breakpoint($screen-sm) {
-    font-size: 1.2em;
-    width: 31.333%;
-    margin: 0 1% 12px;
-  }
-  @include breakpoint($screen-md) {
-    width: 15.16%;
-    margin: 0 .75% 12px;
-    font-size: 1.5em;
-    padding: 16px 12px;
-  }
+.rounded-flat-button:hover {
+    background-color: #000;
 }

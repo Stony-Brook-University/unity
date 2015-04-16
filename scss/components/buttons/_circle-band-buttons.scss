@@ -1,101 +1,109 @@
 /*CIRCLE BAND BUTTONS*/
 
-.circle-band-buttons-wrapper a {
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 25px;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-    span {
+a.circle-band-button {
     display: block;
-    opacity: .75;
-    background: #000;
-    height: 36px;
-    color: #fff;
-    font-size: 1.5em;
-    font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: .01em;
-    text-rendering: optimizeLegibility;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 82px 0 0 0;
-    padding: 5px 0 0 0;
-    -webkit-transition: box-shadow .3s;
-    -moz-transition: box-shadow .3s;
-    transition: box-shadow .3s;
-    box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);
-  }
+
+    span {
+        display: block;
+        opacity: .75;
+        background: #000;
+        height: 36px;
+        color: #fff;
+        font-size: 1.5em;
+        font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: normal;
+        letter-spacing: .01em;
+        text-rendering: optimizeLegibility;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 82px 0 0 0;
+        padding: 5px 0 0 0;
+        -webkit-transition: box-shadow .3s;
+        -moz-transition: box-shadow .3s;
+        transition: box-shadow .3s;
+        box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);
+    }
 }
 
-@media only screen and (min-width: 560px){
-  .circle-band-buttons-wrapper a span {
-    height: 40px;
-    font-size: 1.9em;
-    margin: 94px 0 0 -2%;
-    padding: 3px 0 0 0;
-    width: 104%;
-  }
+/*
+@media only screen and (min-width: 560px) {
+    a.circle-band-button span {
+        height: 40px;
+        font-size: 1.9em;
+        margin: 94px 0 0 -2%;
+        padding: 3px 0 0 0;
+        width: 104%;
+    }
+}
+*/
+
+@media only screen and (min-width: 480px) {
+    a.circle-band-button span {
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
 }
 
-@media only screen and (min-width: 480px){
-  .circle-band-buttons-wrapper a span {
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-  }
+/*
+@media only screen and (min-width: 480px) {
+    a.circle-band-button:nth-child(n) {
+        margin: 0 15px;
+    }
 }
 
-@media only screen and (min-width: 480px){
-  .circle-band-buttons-wrapper a:nth-child(n) {
-    margin: 0 15px;
-  }
+@media only screen and (min-width: 560px) {
+    a.circle-band-button {
+        width: 224px;
+        height: 224px;
+        float: none;
+        display: inline-block;
+        margin: 0 15px 30px;
+    }
 }
 
-@media only screen and (min-width: 560px){
-  .circle-band-buttons-wrapper a {
-    width: 224px;
-    height: 224px;
-    float: none;
-    display: inline-block;
-    margin: 0 15px 30px;
-  }
+@media only screen and (min-width: 480px) {
+    a.circle-band-button {
+        float: none;
+        display: inline-block;
+        margin: 0 15px 30px;
+    }
 }
 
-@media only screen and (min-width: 480px){
-  .circle-band-buttons-wrapper a {
-    
-    float: none;
-    display: inline-block;
-    margin: 0 15px 30px;
-  }
+@media only screen and (min-width: 768px) {
+    a.circle-band-button:nth-child(3n) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
-@media only screen and (min-width: 768px){
-  .circle-band-buttons-wrapper a:nth-child(3n) {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+
+@media only screen and (min-width: 480px) {
+    a.circle-band-button:nth-child(3n) {
+        margin-right: 145px;
+        margin-left: 145px;
+    }
 }
-@media only screen and (min-width: 480px){
-  .circle-band-buttons-wrapper a:nth-child(3n) {
-    margin-right: 145px;
-    margin-left: 145px;
-  }
+
+@media only screen and (min-width: 480px) {
+    a.circle-band-button:nth-child(n) {
+        margin: 0 35px;
+    }
 }
-@media only screen and (min-width: 480px){
-  .circle-band-buttons-wrapper a:nth-child(n) {
-    margin: 0 35px;
-  }
-}
+
+*/
