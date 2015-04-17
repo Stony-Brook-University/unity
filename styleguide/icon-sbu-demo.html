@@ -8,6 +8,7 @@
   float: left;
   margin: 5px;
   padding: 10px;
+  text-align: center;
  }
 
  ul.icons li span:before
@@ -24,12 +25,14 @@
    
 
 
-                    <h1>Icons</h1>
+                    <h1 class="centered">Icons</h1>
 
-                                      <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="contents">
-    Filter
-  </button>
+                                      <form id="live-search" action="" class="styled" method="post">
+    <fieldset>
+        Search for Icons: <input type="text" class="text-input" id="filter" value="" />
+        <span id="filter-count"></span>
+    </fieldset>
+</form>
 
 
 <ul class="icons">
@@ -3802,16 +3805,34 @@ f20c<br />
 </div>
 </section>
 
-
-
-<script src="http://listjs.com/no-cdn/list.js"></script>
-<script src="http://listjs.com/no-cdn/list.fuzzysearch.js"></script>
-
 <script>
-var monkeyList = new List('icons', { 
-  valueNames: ['contents'], 
-  plugins: [ ListFuzzySearch() ] 
+
+$(document).ready(function(){
+    $("#filter").keyup(function(){
+ 
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+ 
+        // Loop through the comment list
+        $(".icons li").each(function(){
+ 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+ 
+        // Update the count
+        var numberItems = count;
+        $("#filter-count").text("Number of Comments = "+count);
+    });
 });
+
 </script>
 <!--#include file="footer.html" -->
 
