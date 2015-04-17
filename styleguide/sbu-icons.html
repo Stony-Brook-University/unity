@@ -1,0 +1,219 @@
+<!--#include file="header.html" -->
+
+<style>
+ ul.icons li
+ {
+ 	width: 60px;
+  border: 3px solid #ccc;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+ }
+
+ ul.icons li:hover
+ {
+  border: 3px solid #990000;
+ }
+
+ ul.icons li span:before
+ {
+ 	
+ 	font-size: 1.5em;
+ }
+
+
+ .popbox {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    width: 400px;
+    padding: 10px;
+    background: #EEEFEB;
+    color: #000000;
+    border: 1px solid #4D4F53;
+    margin: 0px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+    box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+}
+.popbox h2
+{
+    background-color: #4D4F53;
+    color:  #E3E5DD;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin: -10px 0px 8px -10px;
+    padding: 5px 10px;
+}
+ </style>
+
+   <section id="icon" class="introduction arrow-below arrow-below-white cozy">
+                <div class="container">
+                    <div class="row">
+
+   
+
+
+                    <h1 class="centered">Icons</h1>
+
+                                      <form id="live-search" action="" class="styled" method="post">
+    <fieldset>
+        Search for Icons:<br /> <input type="text" class="text-input" id="filter" value="" /><br />
+        <span id="filter-count"></span>
+    </fieldset>
+</form>
+
+
+
+ 
+<div id="popups"></div>
+ 
+
+
+<ul class="icons">
+
+
+
+
+</ul>
+
+</div>
+</div>
+</section>
+
+<script>
+
+$(document).ready(function(){
+
+// The Google Geocoding API url used to get the JSON data
+var icons = "/.dist/assets/fonts/sbu-icons/sbu-icons.json";
+
+$.getJSON(icons, function (json) {
+
+    // Set the variables from the results array
+    var iconSets = json.iconSets;
+    var output = '';
+    var popups = '';
+    $.each(iconSets, function(index, set)
+    {
+      $.each(set.selection, function(iconIndex, icon) 
+      {
+        var lig = '';
+        var name = '';
+        if(icon.ligatures != null)
+          lig = icon.ligatures;
+
+        if(icon.name != null)
+        {
+          name = icon.name;
+
+          if(name.indexOf(",") > 0)
+          {
+            name = name.substring(0, name.indexOf(","));
+          }
+        }
+
+        if(icon.order != '0')
+        {
+
+          popups += '<div id="' + name + '" class="popbox"><h2>' + name + '</h2><p>' + lig + '</p></div>';
+          output += '<li class="popper" data-popbox="' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div></li>';  
+        }
+      });
+    });
+    
+    $('#popups').html(popups);
+    $('ul.icons').html(output);
+
+    $('ul.icons li .contents').matchHeight({
+      byRow: false,
+      property: 'height'
+    });
+
+    $(function() {
+    var moveLeft = 0;
+    var moveDown = 0;
+    $('li.popper').hover(function(e) {
+   
+        var target = '#' + ($(this).attr('data-popbox'));
+         
+        $(target).show();
+        moveLeft = $(this).outerWidth();
+        moveDown = ($(target).outerHeight() / 2);
+    }, function() {
+        var target = '#' + ($(this).attr('data-popbox'));
+        $(target).hide();
+    });
+ 
+    $('li.popper').mousemove(function(e) {
+        var target = '#' + ($(this).attr('data-popbox'));
+         
+        leftD = e.pageX + parseInt(moveLeft);
+        maxRight = leftD + $(target).outerWidth();
+        windowLeft = $(window).width() - 40;
+        windowRight = 0;
+        maxLeft = e.pageX - (parseInt(moveLeft) + $(target).outerWidth() + 20);
+         
+        if(maxRight > windowLeft && maxLeft > windowRight)
+        {
+            leftD = maxLeft;
+        }
+     
+        topD = e.pageY - parseInt(moveDown);
+        maxBottom = parseInt(e.pageY + parseInt(moveDown) + 20);
+        windowBottom = parseInt(parseInt($(document).scrollTop()) + parseInt($(window).height()));
+        maxTop = topD;
+        windowTop = parseInt($(document).scrollTop());
+        if(maxBottom > windowBottom)
+        {
+            topD = windowBottom - $(target).outerHeight() - 20;
+        } else if(maxTop < windowTop){
+            topD = windowTop + 20;
+        }
+     
+        $(target).css('top', topD).css('left', leftD);
+     
+     
+    });
+ 
+});
+});
+
+
+});
+
+
+$(document).ready(function(){
+    $("#filter").keyup(function(){
+ 
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+ 
+        // Loop through the comment list
+        $(".icons li").each(function(){
+ 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+ 
+        // Update the count
+        var numberItems = count;
+        $("#filter-count").text("Number of Icons = "+count);
+    });
+});
+
+
+
+</script>
+
+
+<!--#include file="footer.html" -->
+
