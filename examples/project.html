@@ -1,0 +1,567 @@
+<!--#include file="header.html" -->
+
+<style>
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+
+a {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+
+.learn-btn {
+    display: inline-block;
+    padding: 18px 46px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.learn-btn:hover, .learn-btn:focus {
+    border-color: #990000;
+    color: #990000;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero {
+    position: relative;
+    padding: 60px 0 60px 0;
+    min-height: 800px;
+    background: rgb(40, 70, 102) url('https://download.unsplash.com/photo-1422640805998-18a4dd89bec2') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.hero h1 {
+    margin: 200px 0 45px 0;
+    font-weight: 300;
+    font-size: 45px;
+}
+.hero h1 span {
+    display: inline-block;
+    color: #fff;
+}
+#home {
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+}
+header i {
+    margin-left: 5px
+}
+
+/* ==========================================================================
+Waypoints
+========================================================================== */
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
+    visibility: hidden
+}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+    visibility: visible
+}
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+
+.timeline {
+list-style: none;
+padding: 20px 0 20px;
+position: relative;
+}
+
+.timeline:before {
+top: 0;
+bottom: 0;
+position: absolute;
+content: " ";
+width: 3px;
+background-color: #eeeeee;
+left: 50%;
+margin-left: -1.5px;
+margin-bottom: 20px;
+}
+
+.timeline > li {
+margin-bottom: 20px;
+position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+content: " ";
+display: table;
+}
+
+.timeline > li:after {
+clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+content: " ";
+display: table;
+}
+
+.timeline > li:after {
+clear: both;
+}
+
+.timeline > li > .timeline-panel {
+width: 46%;
+float: left;
+border: 1px solid #d4d4d4;
+border-radius: 2px;
+padding: 20px;
+position: relative;
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+position: absolute;
+top: 26px;
+right: -15px;
+display: inline-block;
+border-top: 15px solid transparent;
+border-left: 15px solid #ccc;
+border-right: 0 solid #ccc;
+border-bottom: 15px solid transparent;
+content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+position: absolute;
+top: 27px;
+right: -14px;
+display: inline-block;
+border-top: 14px solid transparent;
+border-left: 14px solid #fff;
+border-right: 0 solid #fff;
+border-bottom: 14px solid transparent;
+content: " ";
+}
+
+.timeline > li > .timeline-badge {
+color: #fff;
+width: 50px;
+height: 50px;
+line-height: 50px;
+font-size: 1.4em;
+text-align: center;
+position: absolute;
+top: 16px;
+left: 50%;
+margin-left: -25px;
+background-color: #999999;
+z-index: 100;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+border-bottom-right-radius: 50%;
+border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+border-left-width: 0;
+border-right-width: 15px;
+left: -15px;
+right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+border-left-width: 0;
+border-right-width: 14px;
+left: -14px;
+right: auto;
+}
+
+
+.timeline-title {
+margin-top: 0;
+color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+margin-top: 5px;
+}
+
+
+
+</style>
+
+			<section class="hero">
+				<div class="texture-overlay"></div>
+				<div class="container">
+				
+					<div class="row hero-content">
+						<div class="col-sx-12 col-sm-12 col-md-12">
+							<h1 class="centered animated fadeInDown white">Space Scheduling System</h1>
+							<p class="centered" style="font-size:1.8em"> The Vice Provost for Undergraduate Colleges and Senior Vice President for Finance and Administration seek improved space and course scheduling capabilities for Stony Brook University. This is with the view to maximize utilization of available space in the university.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section class="fluffy">
+                <div class="texture-overlay"></div>
+                <div class="container">
+                
+                    <div class="row hero-content">
+                        <div class="col-sx-12 col-sm-12 col-md-12">
+                            <h2 class="centered">Background</h2>
+                           <p class="introduction">
+                          
+                           </p>
+
+                            <p class="introduction">
+                           This project will assess current processes and systems, analyze current state, design desired state, implement process and system improvements, upgrades and associated analytical reports and tools to establish robust capabilities for scheduling courses and events in Stony Brook University classrooms and other meeting spaces.
+                            </p>
+                           <p class="introduction">
+The objective of this project is to implement 25 Live by June 1, 2014 and to roll it out to  faculty, and staff.  An effective implementation will facilitate university educational goals  and encourage scheduling efficiencies on campus.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fluffy background-red white">
+                <div class="texture-overlay"></div>
+                <div class="container">
+                
+                    <div class="row">
+                        <div class="col-sx-12 col-sm-12 col-md-12">
+                            <h2 class="white centered">Benefits</h2>
+                          <p class="centered introduction">The objective of this project is to implement 25 Live by October 1, 2014 and to roll it out to  faculty, and staff.  An effective implementation will facilitate university educational goals  and encourage scheduling efficiencies on campus.
+                          </p>
+                        </div>
+                          <div class="col-md-3">
+                    <div class="text-card">
+                        
+                        <div class="text-card-body" data-match-height="items-a" style="height: 304px;">
+                          <h2 class="sbuicon-search centered white"></h2>
+                            <p class="centered">Enable Stony Brook University to optimize use of classroom, meeting, and other spaces through consolidation of  space usage onto one platform (25Live)</p>
+                        </div>
+                    </div>
+                    </div>
+
+                           <div class="col-md-3">
+                    <div class="text-card">
+                        
+                        <div class="text-card-body" data-match-height="items-a" style="height: 304px;">
+                         <h2 class="sbuicon-calendar-o white centered"></h2>
+                            <p class="centered">Simplify the room request/reservation and course scheduling process</p>
+                        </div>
+                    </div>
+                    </div>
+
+                           <div class="col-md-3">
+                    <div class="text-card">
+                        
+                        <div class="text-card-body" data-match-height="items-a" style="height: 304px;">
+                            <h2 class="sbuicon-lightbulb-o centered white"></h2>
+                            <p class="centered">Provide robust analytics to support decision-making on space needs and assignments, establishing a benchmark for efficient space usage (X25)</p>
+                        </div>
+                    </div>
+                    </div>
+
+                           <div class="col-md-3">
+                    <div class="text-card">
+                        
+                        <div class="text-card-body" data-match-height="items-a" style="height: 304px;">
+                            <h2 class="centered sbuicon-lock2 white"></h2>
+                            <p class="centered">Provide a platform for managing security and energy usage based on information about when a space is in use.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                   
+
+                        
+                    </div>
+                </div>
+            </section>
+
+<section class="cozy">
+
+<div class="container">
+
+   
+    <div class="page-header">
+        <h1 id="timeline">Timeline</h1>
+    </div>
+
+  <div class="row">
+
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="fa fa-check"></i></div>
+          <div class="timeline-panel">
+            
+              <h4 class="timeline-title">September 1, 2013</h4>
+          
+            <div class="timeline-body">
+              <p>Define and confirm the strategic requirements of the project,  project governance,formulate a schedule,procure / obtain software,identify relevant constituencies</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-search"></i></div>
+          <div class="timeline-panel">
+          
+              <h4 class="timeline-title">November 1, 2013</h4>
+           
+            <div class="timeline-body">
+              <p>Form project teams and launch project, investigate current R25 system configurations and usage across SBU campus documenting requirements and pain points, understand 25Live capabilities. Document future state for Course scheduling/space scheduling/event scheduling, understand hosting environment and design migration to hosted environment.</p>
+
+              <p>Draft preliminary communication plan</p>
+
+              <p>Formulate strategies for supporting faculty, and staff using 25 Live and X25.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="fa fa-cloud"></i></div>
+          <div class="timeline-panel">
+           
+              <h4 class="timeline-title">June 30, 2014</h4>
+           
+            <div class="timeline-body">
+              <p>Establish connectivity to the cloud environment, migrate to the cloud, configure 25LIve Software, build and test interfaces, finalize Communication Plan</p>
+            </div>
+          </div>
+        </li>  
+
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-pencil-square-o"></i></div>
+          <div class="timeline-panel">
+            
+              <h4 class="timeline-title">July 31, 2014</h4>
+            
+            <div class="timeline-body">
+              <p>Perform system and user testing, send/deliver communications and training, ensure support staff is well-prepared to provide assistance</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="fa fa-arrow-right"></i></div>
+          <div class="timeline-panel">
+          
+              <h4 class="timeline-title">September 30, 2014</h4>
+            
+            <div class="timeline-body">
+              <p>Cut over to new system, validate system functionality, announce to users, monitor & deliver post go-live support, transfer production support activities to Systems</p>
+            </div>
+          </div>
+        </li>
+
+           <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-file-text"></i></div>
+          <div class="timeline-panel">
+            
+              <h4 class="timeline-title">November 1, 2014</h4>
+           
+            <div class="timeline-body">
+              <p>Implement and Test X25 reporting.</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+</section>
+
+             <section class="cozy bg-light-gray">
+                <div class="texture-overlay"></div>
+                <div class="container">
+                
+                    <div class="row">
+                        <div class="col-sx-12 col-sm-12 col-md-12">
+                            <h2 class="centered">Updates</h2>
+                      
+                        <dl class="dl-horizontal cozy">
+                        <dt>04/01/2015</dt><dd>Preparation of the larger X25 data upload continues. Patches and updates continue to be released by the vendor with increased success this past month.</dd>
+
+                        <dt>03/01/2015</dt><dd>Sample data has been prepared and loaded into X25. A larger upload of data is being prepared and will hopefully be ready by the end of the month. Patches and updates continue to be released by the vendor.</dd>
+                        
+
+                        <dt>01/30/2015</dt><dd>X25 configuration continues. Patches and updates from the vendor continue to add time for testing and validation.</dd>
+                        <dt>12/31/2014</dt><dd>A recent version update and patches to the 25Live application have fixed a number application issues. X25 Implementation is nearing completion.</dd>
+                        <dt>12/01/2014</dt><dd>Academic Cycle was successfully run. X25 testing continues.</dd>
+                        <dt>11/01/2014</dt><dd>Project is nearing the end of execution phase. Academic Cycle has been run and testing and X25 Implementation tasks continue.</dd>
+                        <dt>10/01/2014</dt><dd>Project sponsorship approved a change request to extend the end date of the project from 9/1/2014 to 11/15/2014. More time was required for X25 implementation.</dd>
+                                      
+
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+             <section class="cozy">
+
+                <div class="container">
+                
+                    <div class="row">
+                        <div class="col-sx-12 col-sm-12 col-md-12">
+                            <h2 class="centered">Project Team</h2>
+                      </div>
+                      </div>
+                      <div class="row cozy">
+                      <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Matthew Paplin</h3>
+                       <p>Project Manager</p>
+                       </div>
+                       </div>
+                    </div>
+
+
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Diane Bello</h3>
+                       <p>Office of the Registrar</p>
+                       </div>
+                       </div>
+                    </div>
+
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Linda Sandberg</h3>
+                       <p>Office of the Registrar</p>
+                       </div>
+                       </div>
+                    </div>
+
+
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Michael Mooney</h3>
+                       <p>Office of the Registrar</p>
+                       </div>
+                       </div>
+                    </div>
+
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Howard Gunston</h3>
+                       <p>Student Activities Center</p>
+                       </div>
+                       </div>
+                    </div>
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Hedieh Resciniti</h3>
+                        <p>Student Activities Center</p>
+                       </div>
+                       </div>
+                    </div>
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Anthony Laviscount</h3>
+                       <p>Student Activities Center</p>
+                       </div>
+                       </div>
+                    </div>
+                     <div class="col-sm-6 col-md-3">
+                       <div class="presenter-card">
+                       <div class="presenter-card-image">
+                       <img class="circle-image" src="images/unknown-profile.png">
+                       </div>
+                  
+                       <div class="presenter-card-text">
+                       <h3>Carl Wiltscher</h3>
+                       <p>Undergraduate Colleges</p>
+                       </div>
+                       </div>
+                    </div>
+                             </div>         
+
+                         </div>
+                    </div>
+            </section>
+
+<!--#include file="footer.html" -->

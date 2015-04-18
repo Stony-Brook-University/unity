@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 
+=======
+.container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+>>>>>>> 08decc8f78418460308d8a26e4db52863c028511
 
 /* --------------------------
 
@@ -8,70 +15,50 @@ Comparison Box Main Colors
 
 .flt, .flt-red, .flt-turquoise, .flt-alizarin,
 .flt-amethyst, .flt-river, .flt-sun, .flt-asphalt {
-    
-    background:#fff;
+    background: #fff;
     float: center;
     text-align: center;
     margin: 20px 0;
-
 }
 
-
 .flt {
-
-    border:2px solid #cccccc;
-    border-bottom:10px solid #cccccc;
-    
+    border: 2px solid #cccccc;
+    border-bottom: 10px solid #cccccc;
 }
 
 .flt-red {
-
-
-    border:2px solid #b42828;
-    border-bottom:10px solid #b42828;
-
+    border: 2px solid #b42828;
+    border-bottom: 10px solid #b42828;
 }
 
 .flt-turquoise {
-
-    border:2px solid #1abc9c;
-    border-bottom:10px solid #1abc9c;
-
+    border: 2px solid #1abc9c;
+    border-bottom: 10px solid #1abc9c;
 }
 
 .flt-alizarin {
-
-    border:2px solid #e74c3c;
-    border-bottom:10px solid #e74c3c;
-
+    border: 2px solid #e74c3c;
+    border-bottom: 10px solid #e74c3c;
 }
 
 .flt-amethyst {
-
-    border:2px solid #9b59b6;
-    border-bottom:10px solid #9b59b6;
-
+    border: 2px solid #9b59b6;
+    border-bottom: 10px solid #9b59b6;
 }
 
 .flt-sun {
-
-    border:2px solid #f39c12;
-    border-bottom:10px solid #f39c12;
-
+    border: 2px solid #f39c12;
+    border-bottom: 10px solid #f39c12;
 }
 
 .flt-river {
-
-    border:2px solid #3498db;
-    border-bottom:10px solid #3498db;
-
+    border: 2px solid #3498db;
+    border-bottom: 10px solid #3498db;
 }
 
 .flt-asphalt {
-
-    border:2px solid #34495e;
-    border-bottom:10px solid #34495e;
-
+    border: 2px solid #34495e;
+    border-bottom: 10px solid #34495e;
 }
 
 /* --------------------------
@@ -83,65 +70,47 @@ Comparison Box Headers Background Color
 
 .flt-header, .flt-header-red, .flt-header-turquoise, .flt-header-alizarin,
 .flt-header-amethyst, .flt-header-river, .flt-header-sun, .flt-header-asphalt {
-
-padding: 5px 0 5px 0;
-
+    padding: 5px 0 5px 0;
 }
 
 .flt-header {
- 
     background: #eeeeee;
-    border-bottom:10px solid #cccccc;
-
+    border-bottom: 10px solid #cccccc;
 }
 
 .flt-header-red {
-
     background: #990000;
-    border-bottom:10px solid #b42828;
-
+    border-bottom: 10px solid #b42828;
 }
 
 .flt-header-turquoise {
-
     background: #1abc9c;
-    border-bottom:10px solid #2bd3b2;
-
+    border-bottom: 10px solid #2bd3b2;
 }
 
 .flt-header-alizarin {
-
     background: #e74c3c;
-    border-bottom:10px solid #e56d61;
-
+    border-bottom: 10px solid #e56d61;
 }
 
 .flt-header-amethyst {
-
     background: #9b59b6;
     border-bottom: 10px solid #b06fca;
-
 }
 
 .flt-header-sun {
-
     background: #f39c12;
-    border-bottom: 10px solid #fcb036
-
+    border-bottom: 10px solid #fcb036;
 }
 
 .flt-header-river {
-
     background: #3498db;
     border-bottom: 10px solid #45acf1;
-
 }
 
 .flt-header-asphalt {
-
     background: #34495e;
     border-bottom: 10px solid #4a6279;
-
 }
 
 /* --------------------------
@@ -154,9 +123,7 @@ Comparison Box Header Text Colors
 
 .flt-header-red h3, .flt-header-turquoise h3, .flt-header-alizarin h3,
 .flt-header-amethyst h3, .flt-header-river h3, .flt-header-sun h3, .flt-header-asphalt h3 {
-    
-    color:#FFF;  
-
+    color: #FFF;
 }
 
 /* --------------------------
@@ -165,17 +132,13 @@ Comparison Box Body
 
 ----------------------------- */
 
-
 .flt-features {
-    
-    padding: 15px 25px 15px 25px; 
+    padding: 15px 25px 15px 25px;
     text-align: left;
     line-height: 24px;
     font-size: 16px;
     color: #888;
-
 }
-
 
 /* --------------------------
 
@@ -192,43 +155,40 @@ Common Button Features
 
 .flt-button, .flt-button-red, .flt-button-turquoise, .flt-button-alizarin,
 .flt-button-amethyst, .flt-button-river, .flt-button-sun, .flt-button-asphalt {
+<<<<<<< HEAD
 
     margin: 15px 10px 10px 10px;
     padding: 15px 0px 15px 0px;
+=======
+    margin: 15px 10px 0 10px;
+    padding: 15px 0 15px 0;
+>>>>>>> 08decc8f78418460308d8a26e4db52863c028511
     border-top: 1px dashed #888;
-
 }
 
 .flt-button a, .flt-button-red a, .flt-button-turquoise a, .flt-button-alizarin a,
-.flt-button-amethyst a, .flt-button-river a, .flt-button-sun a, .flt-button-asphalt a{
-
+.flt-button-amethyst a, .flt-button-river a, .flt-button-sun a, .flt-button-asphalt a {
     display: inline-block;
-    width:50%;
+    width: 50%;
     height: 50px;
     line-height: 50px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-
 }
 
 .flt-button-red a:hover, .flt-button-turquoise a:hover, .flt-button-alizarin a:hover,
 .flt-button-amethyst a:hover, .flt-button-river a:hover, .flt-button-sun a:hover, .flt-button-asphalt a:hover {
-
-    background-color:#cccccc;
+    background-color: #cccccc;
     text-decoration: none;
     color: #fff;
-
 }
 
 .flt-button-red a:active, .flt-button-turquoise a:active, .flt-button-alizarin a:active,
 .flt-button-amethyst a:active, .flt-button-river a:active, .flt-button-sun a:active, .flt-button-asphalt a:active {
-
-    background-color:#cccccc;
+    background-color: #cccccc;
     color: #fff;
-
 }
-
 
 /* --------------------------
 
@@ -236,23 +196,16 @@ Comparison Button Defaults
 
 -------------------------- */
 
-
 .flt-button a {
- 
     background: #cccccc;
-    
 }
 
 .flt-button a:hover {
-
     background: #b42828;
-
 }
 
 .flt-button a:active {
-   
     background: #b42828;
-
 }
 
 /* --------------------------
@@ -261,48 +214,32 @@ Comparison Button Colors
 
 -------------------------- */
 
-
 .flt-button-red a {
-   
     background: #b42828;
-   
 }
 
 .flt-button-turquoise a {
-
     background: #1abc9c;
-
 }
 
 .flt-button-alizarin a {
-   
     background: #e74c3c;
-
 }
 
 .flt-button-amethyst a {
-
     background: #9b59b6;
-   
 }
 
 .flt-button-sun a {
-   
     background: #f39c12;
- 
 }
 
 .flt-button-river a {
-
     background: #3498db;
-   
 }
 
 .flt-button-asphalt a {
-
     background: #34495e;
-
 }
 
 /* -------------------------- */
-
