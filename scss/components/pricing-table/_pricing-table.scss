@@ -39,21 +39,23 @@ padding-bottom: 50px;
 }
 
 .pricing-table-button {
-color: #fff;
-background-color: $red;
-border: 1px solid $red;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
+display: inline-block;
+padding: 18px 46px;
+border: 2px solid $red;
+border-radius: 3px;
+color: #ffffff;
+font-size: 16px;
 }
 
 .pricing-table-button:hover {
-color: #fff;
-background-color: $red;
-border: none;
+border: 2px solid $dark-gray;
+border-radius: 3px;
+color: $dark-gray;
+
 }
 
-
 .pricing-table {
+font-size: 16px;
 margin-bottom: 30px;
 margin-top: 50px;
 text-align: center;
@@ -115,4 +117,5 @@ padding: 20px;
 .pricing-table.popular {
 margin-top: 10px;
 }
+
 
