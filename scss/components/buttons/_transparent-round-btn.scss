@@ -7,23 +7,25 @@
     border-radius: 35px;
     font-size: 16px;
     color: #fff;
-    background: 0 0;
+    background-color: #fff;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+
 }
 
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+    background: rgba(255,255,255,.5);
 }
 
 .btn-service {
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 400;
+    color: #fff;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
