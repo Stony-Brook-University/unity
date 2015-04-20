@@ -71,12 +71,12 @@
  
 
 
-<ul class="icons">
+<div class="icon-container">
 
 
 
 
-</ul>
+</div>
 
 </div>
 </div>
@@ -97,10 +97,15 @@ $.getJSON(icons, function (json) {
     var popups = '';
     $.each(iconSets, function(index, set)
     {
+        output += '<ul class="icons"><h2>' + set.metadata.name + '</h2>';
       $.each(set.selection, function(iconIndex, icon) 
       {
         var lig = '';
         var name = '';
+        var id = '';
+        var tags = '';
+        var aliases = '';
+
         if(icon.ligatures != null)
           lig = icon.ligatures;
 
@@ -111,20 +116,65 @@ $.getJSON(icons, function (json) {
           if(name.indexOf(",") > 0)
           {
             name = name.substring(0, name.indexOf(","));
+
+            aliases = icon.name.substring(icon.name.indexOf(",")+1);
           }
         }
 
-        if(icon.order != '0')
+        id = icon.id;
+
+        tags = '';
+        console.log(id);
+
+        $.each(set.icons, function(iconIndex2, icon2)
         {
 
-          popups += '<div id="' + name + '" class="popbox"><h2>' + name + '</h2><p>' + lig + '</p></div>';
-          output += '<li class="popper" data-popbox="' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div></li>';  
+            if(id == icon2.id+1)
+            {
+                console.log(icon2.id);
+                console.log(icon2.tags);
+                tags = icon2.tags;
+            }
+        });
+
+        if(icon.order != '0')
+        {
+            if(tags != null && tags != '')
+            {
+
+                tags = 'Tags: ' + tags + '<br />';
+            }
+            else
+            {
+                tags = '';
+            }
+
+            if(lig != null && lig != '')
+            {
+                lig = 'Ligatures: ' + lig + '<br />';
+            }
+            else 
+            {
+                lig = '';
+            }
+
+            if(aliases != null && aliases  != '')
+            {
+                aliases = 'Aliases: ' + aliases + '<br />';
+            }
+            else
+                aliases = '';
+
+
+          popups += '<div id="' + set.id + '-' + name + '" class="popbox"><h2>' + name + '</h2>' + aliases + lig + tags + '</p></div>';
+          output += '<li class="popper" data-popbox="' + set.id + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div></li>';  
         }
       });
+output += "</ul>";
     });
     
     $('#popups').html(popups);
-    $('ul.icons').html(output);
+    $('div.icon-container').html(output);
 
     $('ul.icons li .contents').matchHeight({
       byRow: false,
