@@ -35,6 +35,7 @@
     margin: 0px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
     box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+    padding: 0px;
 }
 .popbox h2
 {
@@ -43,8 +44,14 @@
     font-size: 14px;
     display: block;
     width: 100%;
-    margin: -10px 0px 8px -10px;
+    margin: 0px;
     padding: 5px 10px;
+}
+
+.popbox p 
+{
+    text-align: left;
+    padding: 10px;
 }
  </style>
 
@@ -124,16 +131,15 @@ $.getJSON(icons, function (json) {
         id = icon.id;
 
         tags = '';
-        console.log(id);
+        
 
         $.each(set.icons, function(iconIndex2, icon2)
         {
 
             if(id == icon2.id+1)
             {
-                console.log(icon2.id);
-                console.log(icon2.tags);
                 tags = icon2.tags;
+
             }
         });
 
@@ -143,6 +149,7 @@ $.getJSON(icons, function (json) {
             {
 
                 tags = 'Tags: ' + tags + '<br />';
+                tags = tags.replace(',', ', ');
             }
             else
             {
@@ -166,14 +173,14 @@ $.getJSON(icons, function (json) {
                 aliases = '';
 
 
-          popups += '<div id="' + set.id + '-' + name + '" class="popbox"><h2>' + name + '</h2>' + aliases + lig + tags + '</p></div>';
-          output += '<li class="popper" data-popbox="' + set.id + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div></li>';  
+          popup = '<div id="' + set.id + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>' + aliases + lig + tags + '</p></div>';
+          output += '<li class="popper" data-popbox="' + set.id + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' + popup + '</li>';  
         }
       });
 output += "</ul>";
     });
     
-    $('#popups').html(popups);
+    //$('#popups').html(popups);
     $('div.icon-container').html(output);
 
     $('ul.icons li .contents').matchHeight({
