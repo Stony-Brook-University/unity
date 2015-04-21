@@ -8,18 +8,26 @@ $stony-brook-red: $red;
 $dark-red: darken($red, 10%);
 $light-red: #ff9999;
 
+$alizarin: #E74C3C;
+$sun: #F39C12;
+
 $gray: #cccccc;
 $dark-gray: #333333;
 $light-gray: #eeeeee;
-
-$blue: #0063a3;
-$dark-blue: darken($blue, 10%);
-$light-blue: lighten($blue, 10%);
+$asphalt: #34495E;
 
 $lime-green: #bac045;
 $steel-blue: #6ec0f3;
 $aqua: #47c2c8;
 $muted-aqua: #9dbbb5;
+
+$blue: #0063a3;
+$dark-blue: darken($blue, 10%);
+$light-blue: lighten($blue, 10%);
+$turquoise: #1ABC9C;
+$river: #3498DB;
+
+$amethyst: #9B59B6;
 
 $black: black;
 $green: #009900;
@@ -42,6 +50,9 @@ $break-tablet: 800px;
 $break-narrow-desktop: 960px;
 $break-desktop: 1200px;
 $break-wide-desktop: 1600px;
+
+
+
 
 /*
 $grids: add-grid(1);

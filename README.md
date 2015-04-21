@@ -16,6 +16,7 @@ You will need ruby installed https://www.ruby-lang.org/en/ and the bundler exten
 
 gulpfile.js
 =====
+<<<<<<< HEAD
 This file contains our gulp scripts which sare used to automate the build process.
 Simply run gulp to build things from within the unity directory.
 
@@ -29,6 +30,11 @@ This file contains our grunt scripts which are used to automate the build proces
 This is a scratch directory used by the grunt script, it can be safely deleted, but will be recreated the next time the script runs. 
 
 .release
+=======
+This file contains our gulp scripts which are used to automate the build process
+
+
+.dist
 =====
 This is the directory where the final produced assets (stylesheets, javascripts, images and fonts) are copied to. It can be safely deleted, but will be recreated the next time the script runs. 
 
@@ -43,6 +49,7 @@ Collection of images referenced inside the CSS.
 js
 =====
 All javascripts should be placed in the appropriate folder inside JS, scripts can be targeted for inclusion in either the header of footer. 
+If the JS Script is from a library it should be placed in the appropriate libraries folder.
 
 scss
 =====
@@ -59,3 +66,8 @@ bundle clean
 bundle update
 
 IIS - new web site, ssinc in handlers for the site, add for server side include for html
+=======
+	- Libraries: this is where third party css/scss files should be placed. You should not directly modify those libraries so that in the future we can easily upgrade without losing any customizations.
+	- Global: these are a collection of files aimed at scaffolding this project, includes variables, mix-ins and extensions.
+	- Elements: these are styles that apply to a single tag (link, table, ul) or type of tag (headings), they are useful for defining simple styles that can be incorporated in more complex components.
+	- Components: these are patterns built from multiple html elements to form a style component.

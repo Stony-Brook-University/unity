@@ -138,7 +138,7 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js', 'headerjs', 'footerjs', 'watch']);
 
-
+gulp.task('release', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js', 'headerjs', 'footerjs']);
 
 gulp.task('browsersync', ['browser-sync'], function() {
 
