@@ -1,59 +1,5 @@
 <!--#include file="header.html" -->
 
-<style>
- ul.icons li
- {
- 	width: 60px;
-  border: 3px solid #ccc;
-  display: inline-block;
-  margin: 5px;
-  text-align: center;
-  padding: 5px;
- }
-
- ul.icons li:hover
- {
-  border: 3px solid #990000;
- }
-
- ul.icons li span:before
- {
- 	
- 	font-size: 1.5em;
- }
-
-
- .popbox {
-    display: none;
-    position: absolute;
-    z-index: 99999;
-    width: 400px;
-    padding: 10px;
-    background: #EEEFEB;
-    color: #000000;
-    border: 1px solid #4D4F53;
-    margin: 0px;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
-    box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
-    padding: 0px;
-}
-.popbox h2
-{
-    background-color: #4D4F53;
-    color:  #E3E5DD;
-    font-size: 14px;
-    display: block;
-    width: 100%;
-    margin: 0px;
-    padding: 5px 10px;
-}
-
-.popbox p 
-{
-    text-align: left;
-    padding: 10px;
-}
- </style>
 
    <section id="icon" class="introduction arrow-below arrow-below-white cozy">
                 <div class="container">
@@ -94,57 +40,71 @@
 $(document).ready(function(){
 
 // The Google Geocoding API url used to get the JSON data
-var icons = "/.dist/assets/fonts/sbu-icons/sbu-icons.json";
+var icons = "/.dist/assets/fonts/sbu-icons/selection.json";
 
 $.getJSON(icons, function (json) {
 
     // Set the variables from the results array
-    var iconSets = json.iconSets;
+    var icons = json.icons;
+
+    var iconSets = {};
+    iconSets[9] = 'Font Awesome';
+    iconSets[8] = 'SBU Custom Icons';
+    iconSets[5] = 'IcoMoon Premium';
+        
+
     var output = '';
     var popups = '';
-    $.each(iconSets, function(index, set)
+
+    var curSet = -1;
+
+    var iconCount=0;
+
+    $.each(icons, function(index, icon)
     {
-        output += '<ul class="icons"><h2>' + set.metadata.name + '</h2>';
-      $.each(set.selection, function(iconIndex, icon) 
-      {
-        var lig = '';
-        var name = '';
-        var id = '';
+        iconCount++;
+
+        if(curSet != icon.setId)
+        {
+            curSet = icon.setId;
+            output += '<h2>' + iconSets[curSet] + '</h2>' + '<ul class="icons">';
+            
+        }   
+      
+        var lig = icon.properties.ligatures;
+        var name = icon.properties.name;
+        var id = icon.properties.id;
         var tags = '';
         var aliases = '';
 
-        if(icon.ligatures != null)
-          lig = icon.ligatures;
+        
 
-        if(icon.name != null)
+        if(icon.properties.ligatures != null)
         {
-          name = icon.name;
+           icon.properties.ligatures;
+        }  
 
+        if(icon.properties.name != null)
+        {
           if(name.indexOf(",") > 0)
           {
             name = name.substring(0, name.indexOf(","));
-
-            aliases = icon.name.substring(icon.name.indexOf(",")+1);
+            aliases = icon.properties.name.substring(icon.properties.name.indexOf(",")+1);
           }
         }
-
-        id = icon.id;
-
-        tags = '';
+              
         
-
-        $.each(set.icons, function(iconIndex2, icon2)
-        {
-
-            if(id == icon2.id+1)
+        
+        
+            $.each(icon.icon.tags, function(tagIndex, tag)
             {
-                tags = icon2.tags;
+                    tags += ', ' + tag;
+            });
 
-            }
-        });
+            if(tags.length > 3)
+                tags = tags.substring(2);
 
-        if(icon.order != '0')
-        {
+    
             if(tags != null && tags != '')
             {
 
@@ -173,15 +133,15 @@ $.getJSON(icons, function (json) {
                 aliases = '';
 
 
-          popup = '<div id="' + set.id + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>' + aliases + lig + tags + '</p></div>';
-          output += '<li class="popper" data-popbox="' + set.id + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' + popup + '</li>';  
-        }
+          popup = '<div id="' + curSet + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>' + aliases + lig + tags + '</p></div>';
+          output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' + popup + '</li>';  
       });
 output += "</ul>";
-    });
     
     //$('#popups').html(popups);
     $('div.icon-container').html(output);
+
+    $('#filter-count').text('Number of Icons = ' + iconCount);
 
     $('ul.icons li .contents').matchHeight({
       byRow: false,
@@ -198,6 +158,7 @@ output += "</ul>";
         $(target).show();
         moveLeft = $(this).outerWidth();
         moveDown = ($(target).outerHeight() / 2);
+        
     }, function() {
         var target = '#' + ($(this).attr('data-popbox'));
         $(target).hide();

@@ -1,0 +1,71 @@
+<!--#include file="header.html" -->
+
+  <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 form-control-static">
+                        <form name="sentMessage" class="contactForm" novalidate>
+                            <div class="control-group form-group">
+                                <h1>Report a Problem</h1>
+                                <p>When you submit this trouble ticket, it will automatically trigger a notification message to appropriate technical staff for resolution.</p>
+                                <div class="controls">
+                                    <label>NetID:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>First Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Last Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Email Address:</label>
+                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Services:</label>
+                                    <select>
+                                        <option value="" disabled="disabled" selected="selected">-select-</option>
+                                        <option value="1">Audio Visual Services</option>
+                                        <option value="2">Blackboard</option>
+                                        <option value="2">Campus Announcements</option>
+                                        <option value="2">Campus Television Service</option>
+                                        <option value="2">Classroom Equiment & Consumable Supplies</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Issue:</label>
+                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                            <!-- For success/fail messages -->
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--#include file="footer.html" -->
