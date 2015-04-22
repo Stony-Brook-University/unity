@@ -1,5 +1,474 @@
 <!--#include file="header.html" -->
 
+<!--
+  - Just some notes.  The names in the sample person finder came from the IT
+  - staff directory and were parsed using the following regular expressions.
+  - First, replace:
+  - ^ +<tr.*\r\n.*\r\n +([^<]+) *<br>\r\n([^<]+) *<br>\r\n.*\r\n.*\r\n +<a href="mailto:([^"]*).*\r\n([^ ]+ [^ ]+).*\r\n.*
+  - with:
+  -   , \{ "Name" : "\1", "Title" : "\2", "Email" : "\3", "Phone" : "\4" \}
+  - Then replace:
+  - ^.*[<>].*\r\n
+  - with the empty string.
+  -
+  - Also, to get the JSON file to work with IIS, add a JSON mime type.
+  -->
+
+
+<style type="text/css">
+    /* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+	
+	#myScrollspy {
+			width: 16.6667%;
+		}
+			
+		#myScrollspy .sbuicon-th-list {
+				display: none;
+			}
+	
+	@media (min-width: 1440px) {
+		#myScrollspy {
+			position: absolute;
+			left: -110px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.container {
+			position: relative
+		}
+	}
+	@media (max-width: 1000px) {
+		#myScrollspy {
+				/*position: absolute;*/
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+				width: auto;
+				z-index: 2;
+			}
+			
+			#myScrollspy ul.nav-tabs {
+					width: auto;
+					display: inline-block;
+					border-top-left-radius: 0px;
+				}
+			
+				#myScrollspy ul.nav-tabs li:first-child {
+						border-top: auto;
+					}
+			
+				#myScrollspy .list-icon-wrapper {
+						display: inline-block;
+						width: 32px;
+						height: 38px;
+						padding-bottom: 29px;
+						position: absolute;
+						top: 21px;
+						left: 0px;
+						color: #08C;
+						padding-left: 4px;
+						padding-top: 6px;
+						font-size: 22px;
+						background-color: #FFF;
+						
+						border-radius: 4px 0px 4px 4px;
+						border: 1px solid #DDD;
+						box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.067);
+					}
+				
+					#myScrollspy .sbuicon-th-list {
+							display: inline;
+							border-radius: 4px 0px 0px 0px;
+							border: 1px solid #08C;
+							width: 32px;
+							height: 38px;
+							padding-bottom: 29px;
+							position: absolute;
+							color: #08C;
+							padding-left: 4px;
+							font-size: 22px;
+							background-color: #FFF;
+							padding-top: 6px;
+							top: 0px;
+							left: 0px;
+						}
+			
+			#myScrollspy .affix {
+					color: blue;
+					top: auto;
+					position: relative;
+				}
+				
+			#myScrollspy li {
+					display: none;
+				}
+				
+			#myScrollspy li.active {
+					display: block;
+				}
+		.container {
+			/*position: relative*/
+		}
+	}
+</style>
+
+<style type="text/css">ul.Menu {  margin:0 1.5em 1.5em 1.5em; } ul.Outline li { list-style-type:disc; } </style>
+
+<script type="text/javascript">document.getElementsByTagName("BODY")[0].setAttribute("data-spy", "scroll"); document.getElementsByTagName("BODY")[0].setAttribute("data-target", "#myScrollspy");</script>
+
+<section>
+    <div class="container">
+		<form class="form-horizontal" enctype="multipart/form-data">
+			<div class="col-xs-2" id="myScrollspy">
+				<span class="list-icon-wrapper"><span class="sbuicon-th-list">
+				
+				</span></span>
+                <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="195">
+                    <li class="active"><a href="#basic-information">Basic Information</a></li>
+                    <li><a href="#primary-contact">Primary Contact</a></li>
+                    <li><a href="#secondary-contact">Secondary Contact</a></li>
+                    <li><a href="#select-a-few-things">Select a Few Things</a></li>
+                    <li><a href="#tabular-data">Tabular Data</a></li>
+                    <li><a href="#known-issues">Known Issues</a></li>
+                    <li><a href="#filler">Filler</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-10">
+<!--                <div class="container">-->
+                    <h2>Here's a Complicated Form</h2>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <fieldset>
+                                <legend id="basic-information">Basic Information</legend>
+                                <div>
+                                    <label for="example-input-email-1">Email address</label>
+                                    <input type="email" class="form-control" id="example-input-email-1" placeholder="Enter email" />
+                                    <p class="help-block">A help message might go here.</p>
+                                </div>
+                                <div>
+                                    <label for="example-input-password-1">Password</label>
+                                    <input type="password" class="form-control" id="example-input-password-1" placeholder="Password" />
+                                </div>                      
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 find-person-destination">
+                            <fieldset>
+                                <legend id="primary-contact">Primary Contact</legend>
+                                <div>
+                                    <label for="example-input-primary-name-text">Name</label>
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control person-name" id="example-input-secondary-name-text" placeholder="Name" style="width: 70%;" />
+                                        <button
+                                           type="button"
+                                           class="btn btn-default find-person-button"
+                                           style="margin-bottom: 16px; margin-top: 2px; border-top-width: 1px; padding-top: 3px; padding-bottom: 3px; border-bottom-width: 1px; height: 30px; margin-left: -49px;"
+                                           data-toggle="modal"
+                                           data-target="#find-primary-contact-modal"
+                                           >
+                                           <span class="sbuicon-search2"></span><span class="sr-only">Find</span></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="example-input-primary-email-text">E-Mail</label>
+                                    <input type="text" readonly="reaodnly" class="form-control person-email" id="example-input-primary-email-text" placeholder="E-Mail" />
+                                </div>
+                                <div>
+                                    <label for="example-input-primary-title-text">Title</label>
+                                    <input type="text" readonly="reaodnly" class="form-control person-title" id="example-input-primary-title-text" placeholder="Title" />
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-sm-6 find-person-destination">
+                            <fieldset>
+                                <legend id="secondary-contact">Secondary Contact</legend>
+                                <div>
+                                    <label for="example-input-secondary-name-text">Name</label>
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control person-name" id="example-input-secondary-name-text" placeholder="Name" style="width: 70%;" />
+                                        <button
+                                           type="button"
+                                           class="btn btn-default find-person-button"
+                                           style="margin-bottom: 16px; margin-top: 2px; border-top-width: 1px; padding-top: 3px; padding-bottom: 3px; border-bottom-width: 1px; height: 30px; margin-left: -49px;"
+                                           data-toggle="modal"
+                                           data-target="#find-primary-contact-modal"
+                                           >
+                                           <span class="sbuicon-search2"></span><span class="sr-only">Find</span></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="example-input-secondary-email-text">E-Mail</label>
+                                    <input type="text" readonly="reaodnly" class="form-control person-email" id="example-input-secondary-email-text" placeholder="E-Mail" />
+                                </div>
+                                <div>
+                                    <label for="example-input-primary-title-text">Title</label>
+                                    <input type="text" readonly="reaodnly" class="form-control person-title" id="example-input-primary-title-text" placeholder="Title" />
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-sm-12">
+                            <fieldset>
+                                <legend id="select-a-few-things">Select a Few Things</legend>
+                                <div class="col-sm-4">
+                                    <label for="example-select">Things</label>
+                                    <select id="example-select" class="form-control">
+                                        <option>Thing 1</option>
+                                        <option>Thing 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Lorem Ipsuem</label>
+                                    <p class="form-control-static">Dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            Option one is this and that&mdash;be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            Option two can be something else and selecting it will deselect option one
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <fieldset class="Container">
+                    <legend id="tabular-data">Tabular Data</legend>
+                        <div class="row  form-inline">
+                            <div class="col-sm-6">
+                                <label for="start-year-text">Start Year: <input value="2007" type="number" class="form-control year-boundary" id="start-year-text" style="width:6em" min="2000" max="2020" step="1" /></label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="end-year-text">End Year: <input value="2011" type="number" class="form-control year-boundary" id="end-year-text" style="width:6em" min="2000" max="2020" step="1" /></label>
+                            </div>
+                        </div>
+                        <table class="table width-100-percent" id="dynamic-table">
+                            <thead>
+                                <tr>
+                                    <th id="category-th">Category</th>
+                                    <th id="total-th">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers="category-th">
+                                        <label class="sr-only" for="dynamic-select-0">Category for Row 1:</label>
+                                        <select id="dynamic-select-0">
+                                            <option value=""></option>
+                                            <option value="1">Melville Library</option>
+                                            <option value="2">Educational Computing Center</option>
+                                            <option value="3">Old Engineering</option>
+                                        </select>
+                                    </td>
+                                    <td data-year="2007" headers="table-2007-th">
+                                        <label for="dynamic-2007-0" class="sr-only">Year 2007 for Row 1:</label>
+                                        <input id="dynamic-2007-0" class="form-control row-summand" min="0" max="100" style="width:6em" type="number" />
+                                    </td>
+                                    <td data-year="2008" headers="table-2008-th">
+                                        <label for="dynamic-2008-0" class="sr-only">Year 2008 for Row 1:</label>
+                                        <input id="dynamic-2008-0" class="form-control row-summand" min="0" max="100" style="width:6em" type="number" />
+                                    </td>
+                                    <td data-year="2009" headers="table-2009-th">
+                                        <label for="dynamic-2009-0" class="sr-only">Year 2009 for Row 1:</label>
+                                        <input id="dynamic-2009-0" class="form-control row-summand" min="0" max="100" style="width:6em" type="number" />
+                                    </td>
+                                    <td data-year="2010" headers="table-2010-th">
+                                        <label for="dynamic-2010-0" class="sr-only">Year 2010 for Row 1:</label>
+                                        <input id="dynamic-2010-0" class="form-control row-summand" min="0" max="100" style="width:6em" type="number" />
+                                    </td>
+                                    <td data-year="2011" headers="table-2011-th">
+                                        <label for="dynamic-2011-0" class="sr-only">Year 2011 for Row 1:</label>
+                                        <input id="dynamic-2011-0" class="form-control row-summand" min="0" max="100" style="width:6em" type="number" />
+                                    </td>
+                                    <td headers="total-th">
+                                        <label class="sr-only" for="dynamic-total-0">Total for Row 1:</label>
+                                        <input class="form-control row-sum" min="0" max="100" readonly="readonly" id="dynamic-total-0" style="width:6em" type="number" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class='button-collection'>
+                                        <button type="button" class="btn btn-default" id="table-add-row-button">Add Row</button>
+                                        <button type="button" class="btn btn-default" id="table-show-screenreader-elements-button" data-toggle="button">Show Screenreader Elements</button>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </fieldset>
+<!--                </div>-->
+
+				<h2 id="known-issues">Known Issues</h2>
+				<ul class="Outline">
+					<li>There's some inline CSS that might be done in a more boostrappy way.</li>
+					<li>It's only been tested on FireFox.</li>
+					<li>Using <span style='font-family:monospace'>&lt;input type='number' /&gt;</span> is ugly.</li>
+					<li>There are no bullet points in this list?</li>
+					<li>The JavaScript, especially the AJAX, is a little off.</li>
+					<li>Comments are lacking.</li>
+					<li>Some of the spacing is off.</li>
+					<li>What are our naming conventions for CSS classes, CSS IDs, JavaScript variables, JavaScript event handlers, etc?  I would <em class='blink'>love</em> to have that standardized.</li>
+					<li>This page is dependent on JavaScript, but I think almost all of our forms are!</li>
+					<li>The toggle button looks the same when it has the focus and when it's toggled on.</li>
+					<li>The ugliest JavaScript in the world to get the scroll spy to work.</li>
+					<li>The primary and secondary contact legends aren't "spied on" correctly because they are vertically equivalent.</li>
+					<li>The scroll spy isn't responsive.</li>
+					<li>There are <span style="font-family:monospace">style</span> tags in the body.</li>
+				</ul>
+				<h2 id="filler">Filler</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+				<p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+				<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus. Suspendisse ultrices placerat accumsan. Mauris quis dapibus orci. In dapibus velit blandit pharetra tincidunt. Quisque non sapien nec lacus condimentum facilisis ut iaculis enim. Sed viverra interdum bibendum. Donec ac sollicitudin dolor. Sed fringilla vitae lacus at rutrum. Phasellus congue vestibulum ligula sed consequat.</p>
+				<p>Vestibulum consectetur scelerisque lacus, ac fermentum lorem convallis sed. Nam odio tortor, dictum quis malesuada at, pellentesque vitae orci. Vivamus elementum, felis eu auctor lobortis, diam velit egestas lacus, quis fermentum metus ante quis urna. Sed at facilisis libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum bibendum blandit dolor. Nunc orci dolor, molestie nec nibh in, hendrerit tincidunt ante. Vivamus sem augue, hendrerit non sapien in, mollis ornare augue.</p>
+			</div>
+		</form>
+    </div>
+</section>
+
+
+<!-- Button trigger modal -->
+<!--
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+-->
+
+<!-- Modal -->
+<!--
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+<div class="modal-body">
+          <h4 id="text-in-a-modal">Text in a modal<a class="anchorjs-link" href="#text-in-a-modal"><span class="anchorjs-icon"></span></a></h4>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+          <h4 id="popover-in-a-modal">Popover in a modal<a class="anchorjs-link" href="#popover-in-a-modal"><span class="anchorjs-icon"></span></a></h4>
+          <p>This <a data-original-title="A Title" href="#" role="button" class="btn btn-default popover-test" title="" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+
+          <h4 id="tooltips-in-a-modal">Tooltips in a modal<a class="anchorjs-link" href="#tooltips-in-a-modal"><span class="anchorjs-icon"></span></a></h4>
+          <p><a data-original-title="Tooltip" href="#" class="tooltip-test" title="">This link</a> and <a data-original-title="Tooltip" href="#" class="tooltip-test" title="">that link</a> should have tooltips on hover.</p>
+
+          <hr>
+
+          <h4 id="overflowing-text-to-show-scroll-behavior">Overflowing text to show scroll behavior<a class="anchorjs-link" href="#overflowing-text-to-show-scroll-behavior"><span class="anchorjs-icon"></span></a></h4>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="modal fade" id="find-primary-contact-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Select a Person</h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal row form-inline">
+                <div class="controls-row">
+                    <label class="col-md-3 control-label" for="person-picker-name-text">Name:</label>  
+                    <input id="person-picker-name-text" name="textinput" placeholder="name search" class="form-control input-md" style="width: 70%;" type="text" />
+
+                    <button
+                        id="in-dialog-find-person-button"
+                        type="button"
+                        class="btn"
+                        style="margin-bottom: 16px; margin-top: 2px; border-top-width: 1px; padding-top: 3px; padding-bottom: 3px; border-bottom-width: 1px; height: 30px; margin-left: -49px;"
+                        data-toggle="modal"
+                        data-target="#find-primary-contact-modal"
+                       >
+                   <span class="sbuicon-search2"></span><span class="sr-only">Find</span></button>
+                </div>
+                <div class="controls-row">
+                    <table class="table width-90-percent people-result" style="margin-left: auto; margin-right: auto;">
+                        <thead>
+                            <tr>
+                                <th id="person-picker-name-th">Name</th>
+                                <th id="person-picker-title-th">Title</th>
+                            </tr>
+                        </thead>
+                        <tbody id="person-picker-results-tbody">
+                        </tbody>
+                    </table>
+
+                    <div class="progress" class="table width-90-percent" style="margin-left: auto; margin-right: auto;">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
   <section>
             <div class="container">
                 <div class="row">
@@ -68,4 +537,8 @@
             </div>
         </section>
 
+<script type="text/javascript" src="js/forms.js"></script>
 <!--#include file="footer.html" -->
+<script type="text/javascript">setInterval(function() { $(".blink").fadeOut(500).fadeIn(500); }, 1000);</script>
+
+
