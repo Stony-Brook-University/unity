@@ -65,6 +65,20 @@
     padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+.double-border {
+    border: 4px double #333333;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #999999;
+}
+
+.top-and-bottom-border {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+}
+
+>>>>>>> b98bae4c41f7d40d559d79eca537150fbd8accb2
 .rounded-corners-10px, .rounded-corners10 {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
