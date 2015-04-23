@@ -18,14 +18,33 @@
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
+
+.flipper {	
+	h2 {
+		position: absolute;
+		top: 40px;
+	  	left: 0;
+	  	right: 0;
+	  	text-align: center;
+	  	font-size: 24px;
+	}
+	p {
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		padding: 0 20px;           
+		font-size: 18px;
+	}
+} 
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
+	padding: 0 15px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -60,8 +79,13 @@
 		transform: rotateX(-180deg);
 	}
  
-/* IE support
 
+
+
+
+
+
+/* IE support
 .flip-container {
 	perspective: 1000;
 	transform-style: preserve-3d;
