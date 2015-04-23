@@ -41,19 +41,21 @@ ul.inline-list {
         padding: 0px;
         text-align: center;
     }
-
     li {
-        display: inline-block;
-        width: 19.5%;
+        padding: .5em;
         min-width: 115px;
         vertical-align: top;
-        @include breakpoint($screen-xs) {
+        @include breakpoint($screen-sm) {
             display: block;
             width: 100%;
-            padding: .5em;
         }
         @include breakpoint($screen-md) {
-            width: 16%;
+            display: inline-block;
+            width: 33.03%;
+            padding: 1.9em;
+        }
+        @include breakpoint($screen-lg) {
+            width: 33.08%;
         }
         span.title {
             display: block;
@@ -69,19 +71,18 @@ ul.inline-list {
         padding: 0px;
         text-align: center;
     }
-
     li {
-        display: inline-block;
-        width: 19.5%;
+        padding: .5em;
         min-width: 115px;
         vertical-align: top;
-        @include breakpoint($screen-xs) {
+        @include breakpoint($screen-sm) {
             display: block;
             width: 100%;
-            padding: .5em;
         }
         @include breakpoint($screen-md) {
-            width: 16%;
+            display: inline-block;
+            width: 24.5%;
+            padding: 2.4em;
         }
         span.title {
             display: block;
@@ -97,19 +98,21 @@ ul.inline-list {
         padding: 0px;
         text-align: center;
     }
-
     li {
-        display: inline-block;
-        width: 16.5%;
+        padding: .6em;
         min-width: 115px;
         vertical-align: top;
-        @include breakpoint($screen-xs) {
+        @include breakpoint($screen-sm) {
             display: block;
             width: 100%;
-            padding: .5em;
         }
         @include breakpoint($screen-md) {
-            width: 16%;
+            display: inline-block;
+            width: 19.63%;
+            padding: 1.9em;
+        }
+        @include breakpoint($screen-lg) {
+            width: 19.7%;
         }
         span.title {
             display: block;
@@ -125,19 +128,20 @@ ul.inline-list {
         padding: 0px;
         text-align: center;
     }
-
     li {
-        display: inline-block;
-        width: 16%;
+        padding: .6em;
         min-width: 115px;
         vertical-align: top;
-        @include breakpoint($screen-xs) {
+        @include breakpoint($screen-sm) {
             display: block;
             width: 100%;
-            padding: .5em;
         }
         @include breakpoint($screen-md) {
-            width: 16%;
+            display: inline-block;
+            width: 16.28%;
+        }
+        @include breakpoint($screen-lg) {
+            width: 16.3%;
         }
         span.title {
             display: block;

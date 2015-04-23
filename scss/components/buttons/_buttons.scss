@@ -22,6 +22,7 @@
     box-shadow: 3px 3px 7px #bbb;
 }
 
+/*
 .rounded-button-1 {
     display: block;
     font-family: 'Trade Gothic Next W01';
@@ -40,13 +41,13 @@
     &:hover {
         background: #fcfcfc;
     }
-
-
-}    
+}
+*/
+ 
 .button-label {
     display: inline-block;
-    color: #900;
-    padding: 10px 16px 14px 25px;
+    vertical-align: middle;
+    padding: 10px 10px 14px 16px;
 }
 
 //todo figure out the spacing issues here
@@ -56,8 +57,20 @@
     left: 18px;
     color: #900;
 }*/
-.rounded-button-1 i {
-    font-size: 1.6em;
-    top: 14px;
-    left: 17px;
+a.rounded-button-1 {
+    background: #fff;
+    display: inline-block;
+    font-family: 'Trade Gothic Next W01';
+    font-size: 1.4em;
+    border: 1px solid #900;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px #ddd;
+    text-align: left;
+    width: 100%;
+    &:hover {
+        background: #fcfcfc;
+    }
+    i {
+        font-size: 1.5em;
+    }
 }
