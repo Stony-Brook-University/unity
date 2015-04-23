@@ -1,4 +1,5 @@
 /*PROMO BOXES*/
+<<<<<<< HEAD
 
 @media only screen and (min-width: 960px){
   .promo-box-round-title-1 {
@@ -10,44 +11,42 @@
   }
 }
 
+=======
+//TODO: Should these have a hover effect?
+//TODO: Should the border color either be added to our list of colors or use one of our existing colors?
+>>>>>>> 801ee1a7e281f2eeee7c3997449da789f712bdae
 .promo-box-round-title-1 {
-  display: inline-block;
-  border: 1px solid #675757;
-  box-shadow: 0 0 10px rgba(103, 87, 87, .2);
-  padding: 60px 15px;
-  text-transform: uppercase;
-  border-radius: 15px;
-  width: 90%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 5% 15px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  transition: all 0.1s;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 80%;
-  text-align: center;
+    display: inline-block;
+    border: 1px solid #675757;
+    box-shadow: 0 0 10px rgba(103, 87, 87, 0.2);
+    padding: 60px 15px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 80%;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 
 .promo-box-round-title-1 span {
-  display: inline-block;
-  font-family: 'Trade Gothic Next W01';
-  text-transform: uppercase;
-  border-radius: 30px;
-  background: #000;
-  color: #fff;
-  padding: 6px 0 7px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  text-align: center;
-  border: 1px solid #fff;
-  max-width: 508px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  transition: all 0.1s;
+    display: inline-block;
+    font-family: 'Trade Gothic Next W01';
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+    max-width: 508px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
 }

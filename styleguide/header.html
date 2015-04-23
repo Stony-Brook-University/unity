@@ -13,10 +13,10 @@
         <!-- Bootstrap Core CSS -->
         <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
         <link href="/.dist/css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <!-- Custom Fonts -->
         <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/8b09d344-baa0-42a8-bbac-175ff46c86d5.css"/>
-
-
+        
         <link rel="apple-touch-icon" href="/.dist/assets/images/favicons/apple-touch-icon-144x144-precomposed.png">
         <link rel="icon" href="/.dist/assets/images/favicons/icon.png">
         <!--[if IE]>
@@ -48,9 +48,11 @@
                     
                 </div>
             </div>
-            <div class="main-nav-container clearfix">
+            
+            
+            <!--<div class="main-nav-container clearfix">-->
                 <!-- <site-nav> -->
-                <nav class="site-nav default">
+                <!--<nav class="site-nav default">
                     <div class="container">
                         <ul class="main-nav-list">
                             <li>
@@ -81,8 +83,15 @@
                                 </a>
                             </li>
 
+
+                              <li>
+                                <a href="/styleguide/Forms.html">
+                                    <span class="site-nav-label">Forms</span>
+                                </a>
+                            </li>
+
                             <li>
-                                <a href="/styleguide/icon-demo.html">
+                                <a href="/styleguide/sbu-icons.html">
                                     <span class="site-nav-label">SBU Icons</span>
                                 </a>
                             </li>
@@ -93,6 +102,74 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </nav>-->
                 <!-- </site-nav> -->
+            <!--</div>-->
+            
+            <!-- Based on first example in http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-dropdowns.php -->
+            
+            <div class="main-nav-container sbu-nav clearfix">
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                Menu
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="" id="bs-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="/styleguide/">About Unity</a>
+                                </li>
+                                 <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Style Guide <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="/styleguide/text.html">Text & Fonts</a>
+                                        </li>
+                                        <li>
+                                            <a href="/styleguide/colors.html">Colors</a>
+                                        </li>
+                                        <li>
+                                            <a href="/styleguide/box-model.html">Box Model</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/styleguide/forms.html">Forms</a>
+                                        </li>
+                                        <li>
+                                            <a href="/styleguide/tables.html">Tables</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="/styleguide/sections.html">Sections</a>
+                                </li>                              
+
+                                <li>
+                                    <a href="/styleguide/sbu-icons.html">SBU Icons</a>
+                                </li>
+
+                                <li>
+                                    <a href="/styleguide/issues.html">Issues</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu on Right <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">First Option</a></li>
+                                        <li><a href="javascript:void(0)">Another Option</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">A Separate Option</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
             </div>
