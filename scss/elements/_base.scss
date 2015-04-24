@@ -19,6 +19,10 @@
     float: right;
 }
 
+.valign-top {
+	vertical-align: top;
+}
+
 @import "box-model/borders";
 @import "box-model/margins";
 @import "box-model/paddings";
