@@ -27,6 +27,7 @@ h2.small-title-1 {
 }
 
 h1.site-name {
+    font-size: 1.8em;
     display: block;
     width: 100%;
     text-align: center;
@@ -36,6 +37,7 @@ h1.site-name {
     color: #33ccff;
 
     @include breakpoint($screen-md) {
+        font-size: 3.3em;
         float: left;
         width: auto;
         display: inline-block;
