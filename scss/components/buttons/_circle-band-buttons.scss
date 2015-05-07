@@ -5,8 +5,8 @@ a.circle-band-button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto 25px;
     border-radius: 50%;
     overflow: hidden;
@@ -22,7 +22,7 @@ a.circle-band-button {
         background: #000;
         height: 36px;
         color: #fff;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
         text-transform: uppercase;
         text-align: center;
@@ -32,16 +32,22 @@ a.circle-band-button {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin: 82px 0 0 0;
+        margin: 57px 0 0 0;
         padding: 5px 0 0 0;
         -webkit-transition: box-shadow .3s;
         -moz-transition: box-shadow .3s;
         transition: box-shadow .3s;
         box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);    
     }
+    @include breakpoint($screen-xs) {
+        width: 200px;
+        height: 200px;
+        span {
+            font-size: 1.5em;
+            margin: 82px 0 0 0;
+        } 
+    }
 }
-
-
 
 /*
 @media only screen and (min-width: 560px) {
@@ -55,7 +61,7 @@ a.circle-band-button {
 }
 */
 
-@media only screen and (min-width: 480px) {
+@include breakpoint($screen-xs) {
     a.circle-band-button span {
         -moz-transform: rotate(-30deg);
         -ms-transform: rotate(-30deg);
