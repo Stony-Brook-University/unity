@@ -1,0 +1,1124 @@
+<!--#include file="includes/headers/header.html" -->
+
+ <style>
+
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------- */
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left !important;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.leftauto {
+	right: 0 !important;
+	left: auto !important;
+}
+
+.side-image {
+  position: absolute;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.position-relative {
+	position: relative;
+}
+
+.pt-70 {
+
+	padding-top: 70px;
+}
+
+.background-dark-gray a {
+	color: #aaa;
+}
+
+.background-dark-gray a:hover, .background-dark-gray a:focus {
+	color: #fff;
+}
+
+
+/* ------------------------------------------------------------------
+Call To Action
+------------------------------------------------------------------- */
+
+
+.callout-text {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.callout-title {
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	margin: 0;
+}
+
+.callout-btn-box {
+	text-align: center;
+	padding-top: 4px;
+	display: block;
+}
+
+.btn .btn-w { 
+	background: rgba(255, 255, 255, .8);
+	color: #111;
+}
+
+.btn.btn-w:hover,
+.btn.btn-w:focus {
+	background: rgba(255, 255, 255, 1);
+	color: #111;
+}
+
+/* ------------------------------------------------------------------
+Accordion
+------------------------------------------------------------------- */
+
+.panel-group .panel {
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+		 -o-border-radius: 2px;
+			border-radius: 2px;
+}
+.panel-title {
+	font-size: 14px;
+}
+
+.panel-heading a {
+	position: relative;
+	display: block;
+}
+
+.panel-heading a:after {
+	position: absolute;
+	content: "\f106";
+	top: 50%;
+	right: 0px;
+	font-family: "FontAwesome";
+	line-height: 1;
+	font-size: 14px;
+	margin-top: -7px;
+}
+
+.panel-heading a.collapsed:after {
+	content: "\f107";
+}
+
+
+/* ------------------------------------------------------------------
+Typography
+------------------------------------------------------------------- */
+
+
+.font-serif {
+	font-family: "Century Old Style", "Times New Roman", sans-serif;
+	font-style: italic;
+}
+
+.font-alt {
+	font-family: 'Trade Gothic Next W01', Arial, sans-serif;
+	line-height: 1.7em;
+}
+
+
+
+/* -------------------------------------------------------------------
+Sections
+------------------------------------------------------------------- */
+
+
+.intro-module,
+.intro-module-small {
+	position: relative;
+	padding: 50px 0;z
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+/* Module header */
+
+.intro-module-small {
+	padding: 70px 0;
+}
+
+.intro-module-title {
+	position: relative;
+	letter-spacing: 4px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	color: #111;
+	margin: 0 0 70px;
+}
+
+.intro-module-subtitle {
+	text-align: center;
+	font-size: 16px;
+	color: #111;
+	margin-bottom: 70px;
+}
+
+.intro-module-icon {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.intro-module-title + .intro-module-subtitle {
+	margin-top: -35px;
+}
+
+.intro-module-title-link {
+
+	color: #990000;
+}
+
+.intro-module-title-link:hover {
+
+	color: #111;
+}
+
+/* Restaurant module header */
+
+.alt-module-subtitle {
+	display: table;
+}
+
+.alt-module-subtitle h5 {
+	display: table-cell;
+	white-space: pre;
+	padding: 0 8px;
+	color: #111;
+}
+
+
+/* -------------------------------------------------------------------
+Services, Content box
+------------------------------------------------------------------- */
+
+.features-item {
+	margin: 20px 0;
+	text-align: left;
+}
+
+.features-icon,
+.features-icon {
+	line-height: 1.2;
+	font-size: 42px;
+	color: #111;
+}
+
+.features-title,
+.features-title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #111;
+	margin: 16px 0 15px;
+}
+
+.features-item {
+	position: relative;
+	padding-left: 55px;
+	margin: 65px 0 0 0;
+	text-align: left;
+}
+
+.features-icon {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 28px;
+	display: inline-block;
+	line-height: 1;
+}
+
+.features-title {
+	font-size: 13px;
+	margin: 0 0 10px;
+}
+
+
+
+/* -------------------------------------------------------------------
+Vertical Align Bottom Image
+------------------------------------------------------------------- */
+
+.align-btm {
+
+	vertical-align: bottom;
+}
+
+/* -------------------------------------------------------------------
+Half-Image
+------------------------------------------------------------------- */
+
+.side-image {
+	position: absolute;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.side-image-text {
+	background: #fff;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 140px 60px 140px;
+}
+
+/* -------------------------------------------------------------------
+Price-tables
+------------------------------------------------------------------- */
+
+.simple-table {
+	background: #fff;
+	border: 1px solid #eaeaea;
+	padding: 25px 20px;
+	margin: 15px 0 30px;
+	border-radius: 2px;
+	text-align: left;
+}
+
+.simple-table.best {
+	margin: 0 0 30px;
+	border-color: #990000	;
+}
+
+.simple-table .small {
+	margin: 0;
+}
+
+.borderline {
+	position: relative;
+	background: #eaeaea;
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 20px 0 15px;
+}
+
+.simple-table h4 {
+	color: #111;
+	margin: 0;
+}
+
+
+.simple-table-details {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 23px;
+}
+
+.simple-table-details li {
+	padding: 7px 0;
+}
+
+.simple-table-details li > span {
+	text-decoration: line-through;
+	color: #aaa;
+}
+
+/* -------------------------------------------------------------------
+Button Styles
+------------------------------------------------------------------- */
+
+.btn {
+	font-family: "Trade Gotic", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	padding: 10px 35px;
+}
+
+
+.btn.btn-r {
+	background: rgba(155, 0, 0, .8);
+	color: #fff;
+}
+
+.btn .btn-b {
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+}
+
+.btn.btn-d:hover,
+.btn.btn-d:focus {
+	background: rgba(155, 0, 0, 1);
+}
+
+.btn .btn-b:hover,
+.btn .btn-b:focus {
+	background: rgba(0, 0, 0, 1);
+}
+
+.btn .btn-round {
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+.btn .btn-border-w {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 1);
+  color: #000;
+}
+
+.btn .btn-border-w:hover,
+.btn .btn-border-w:focus {
+	background: #000;
+	border-color: transparent;
+	color: #111;
+}
+
+/* -------------------------------------------------------------------
+Count to
+------------------------------------------------------------------- */
+
+.count-item {
+	text-align: center;
+}
+
+.count-icon {
+	line-height: 1.2;
+	font-size: 42px;
+}
+
+
+/* -------------------------------------------------------------------
+Responsive Media Querries
+------------------------------------------------------------------- */
+
+
+@media (max-width: 1200px) {
+
+	/* Features */
+
+	.features-item {
+		margin: 20px 0 0;
+	}
+
+}
+
+@media (max-width: 991px) {
+
+.side-image {
+  position: relative;
+  height: 300px;
+
+}
+
+}
+/* -------------------------------------------------------------------
+Features
+------------------------------------------------------------------- */
+
+.features-item {
+	margin: 0 0 30px;
+}
+
+.features-item {
+	padding-left: 0;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.features-icon {
+	position: static;
+	width: auto;
+	margin: 0 auto 8px;
+}
+
+/* -------------------------------------------------------------------
+Vertical Align 
+------------------------------------------------------------------- */
+
+.btm-image {
+
+	max-height: 400px;
+	padding: 0;
+}
+
+.v-align-btm {
+	vertical-align: bottom;
+
+}
+
+.v-align-middle {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.no-padding {
+	padding: 0;
+	margin: 0;	
+}
+
+/* -------------------------------------------------------------------
+Clear Box
+------------------------------------------------------------------- */
+
+.clear-box{
+	max-width:640px;
+	margin: 0;
+	padding: 20px 20px;
+	background:rgba(255,255,255,0.2);
+	border:1px solid rgba(255,255,255,0.5);
+	border-radius:4px;
+	box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.clear-box ul li{
+	list-style: disc;
+	list-style-position: inside;
+	color: #fff;
+	
+}
+
+.clear-box ul li a{
+
+	color: #fff;
+	text-decoration: underline;
+	
+}
+
+.clear-box ul li a:hover{
+	
+	color: #111;
+	
+}
+
+@media (max-width:500px){
+	.clear-box{
+		margin-top:50px;
+	}
+	..clear-box h2{
+		font-size:25px;
+	}
+}
+.clear-box p{
+
+	color:#fff;
+}
+
+@media (max-width:767px){
+	.clear-box{
+		margin-left:20px;
+		margin-right:20px;
+	}
+}
+
+
+</style>
+
+
+<section class="intro-module-small background-dark-gray">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 centered">
+
+				<div class="callout-btn-box">
+					<a href="#solar" class="btn btn-w btn-round">SOLAR</a>
+				</div>
+
+				<div class="callout-btn-box">
+					<a href="#sincprint" class="btn btn-w btn-round">Sinc Sites & Printing</a>
+				</div>
+
+
+				<div class="callout-btn-box">
+					<a href="#sincprint" class="btn btn-w btn-round">WolfieNet</a>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 centered">
+
+				<div class="callout-btn-box">
+					<a href="#gapps" class="btn btn-w btn-round">Google Apps</a>
+				</div>
+
+
+				<div class="callout-btn-box">
+					<a href="#software" class="btn btn-w btn-round">Software</a>
+				</div>
+
+
+				<div class="callout-btn-box">
+					<a href="#hardware" class="btn btn-w btn-round">Hardware</a>
+				</div>
+			</div>
+
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 centered">
+
+				<div class="callout-btn-box">
+					<a href="#academictools" class="btn btn-w btn-round">Academic Tools</a>
+				</div>
+
+
+				<div class="callout-btn-box">
+					<a href="#cybersecurity" class="btn btn-w btn-round">Cybersecurity</a>
+				</div>
+
+
+				<div class="callout-btn-box">
+					<a href="#support" class="btn btn-w btn-round">Support</a>
+				</div>
+			</div>
+
+
+		</div><!-- .row -->
+	</div>
+</section>
+
+
+
+<section id="solar" class="intro-module">
+	<div class="container">	
+
+		<div class="row">
+
+			<div class="animated fadeInDown col-sm-12">
+
+				<h2 class="intro-module-title font-alt">SOLAR</h2>
+				<div class="intro-module-subtitle font-serif">
+					SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information. Students use SOLAR to register for classes, print schedules, view and pay bills, update personal contact information, view transcripts, and submit student employment timesheets.
+				</div>
+			</div>
+		</div>
+
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="features-item" data-match-height="items-c">
+					<div class="features-icon">
+						<i class="sbuicon-file-text2"></i>
+					</div>
+					<h3 class="features-title font-alt">Access Records</h3>
+					<p class="font-alt">You can review transcripts, medical recrods, agreements and other records in SOLAR.</p>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="features-item" data-match-height="items-c">
+					<div class="features-icon">
+						<i class="sbuicon-graduation-cap"></i>
+					</div>
+					<h3 class="features-title font-alt">View Grades</h3>
+					<p class="font-alt">Keep track of your course history and your grades.</p>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+			
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="features-item" data-match-height="items-c">
+					<div class="features-icon">
+						<i class="sbuicon-sign-in"></i>
+					</div>
+					<h3 class="features-title font-alt">Register For Classes</h3>
+					<p class="font-alt">Access course cescriptions and register for classes.</p>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="features-item" data-match-height="items-c">
+					<div class="features-icon">
+						<i class="sbuicon-envelope"></i>
+					</div>
+					<h3 class="features-title font-alt">View Messages and Holds</h3>
+					<p class="font-alt">Communications from the Bursar and Registrar will be administered through SOLAR.</p>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+
+	<div class="container">
+
+		<div class="animated fadeInRight col-md-6 col-lg-6 hidden-xs hidden-sm centered">
+
+			<div class="btm-image v-align-btm">
+			<img src="https://farm8.staticflickr.com/7790/17188168139_6c28a9f60e_n_d.jpg">
+			</div>
+		</div>
+
+		<div class="animated fadeInRight col-md-6 col-lg-6 col-xs-12 col-sm-12">
+
+			<div class="simple-table font-alt">
+					<h4>SOLAR Mobile Updates</h4>
+					<p class="font-alt">Coming Fall 2015!</p>
+					<div class="borderline"></div>
+						<ul class="simple-table-details">
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sincprint" class="intro-module background-dark-gray white">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="animated fadeInDown col-sm-12">
+
+				<h2 class="intro-module-title font-alt white">Sinc Sites and Printers</h2>
+				<div class="intro-module-subtitle font-serif white">
+				 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites page</a>.
+				 </div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="animated fadeInUp col-sm-12 col-md-4 col-lg-4">
+				<div class="count-item">
+					<div class="count-icon">
+						<span class="fa fa-desktop fa-2x"></span>
+					</div>
+					<h3 class="count-to font-alt white" data-countto="17"></h3>
+					<h5 class="font-alt white">Total Sinc Sites</h5>
+				</div>
+			</div>
+
+			<div class="animated fadeInUp col-sm-12 col-md-4 col-lg-4">
+				<div class="count-item">
+					<div class="count-icon">
+						<span class="fa fa-print fa-2x"></span>
+					</div>
+					<h3 class="count-to font-alt white" data-countto="30"></h3>
+					<h5 class="font-alt white">Total Number Of Printers</h5>
+				</div>
+			</div>
+
+			<div class="animated fadeInUp col-sm-12 col-md-4 col-lg-4">
+				<div class="count-item">
+					<div class="count-icon">
+						<span class="fa fa-file-text-o fa-2x"></span>
+					</div>
+					<h3 class="count-to font-alt white" data-countto="140"></h3>
+					<h5 class="font-alt white">Weekly Page Print Quota</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="wolfienet" class="intro-module">
+	<div class="container">
+
+	<div class="animated fadeInDown col-sm-12">
+
+		<h2 class="intro-module-title font-alt">WolfieNet</h2>
+		<div class="intro-module-subtitle font-serif">
+		 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites page</a>.
+		 </div>
+
+	</div>
+
+		<div class="row">
+
+			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
+
+				<div class="simple-table font-alt" data-match-height="items-b">
+					<h4>Get-Connected</h4>
+					<div class="borderline"></div>
+					<ul class="simple-table-details">
+						<li>Use for the first time when connecting to WolfieNet. This
+						option will configure Wi-Fi enabled devices to use WolfieNet.
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
+
+				<div class="simple-table font-alt" data-match-height="items-b">
+					<h4>Open</h4>
+					<div class="borderline"></div>
+					<ul class="simple-table-details">
+						<li>The recommended network that should be used on a day-to-day
+						basis after successfully configuring Wi-Fi devices through WolfieNet- Get-Connected.
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
+
+				<div class="simple-table best font-alt" >
+					<h4>Secured</h4>
+					<p class="small">Best Option</p>
+					<div class="borderline"></div>
+					<ul class="simple-table-details">
+						<li>Available only in residence halls
+						for gaming systems. Do not use for academic work or transactions such as banking or shopping.
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
+
+				<div class="simple-table font-alt" data-match-height="items-b">
+					<h4>Guest</h4>
+					<div class="borderline"></div>
+					<ul class="simple-tables-details">
+						<li>To be used by visitors to the University who do not have a NetID. Users must authenticate and agree to the Wireless Internet Policy.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="gapps" class="intro-module no-padding">
+
+	<div class="row position-relative">
+
+		<div class="col-xs-12 col-md-6 side-image" data-background="https://farm4.staticflickr.com/3922/14344555674_7ccd880c4b_o_d.jpg">
+		</div>
+
+		<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<h2 class="intro-module-title font-alt">Google Apps</h2>
+					<div class="intro-module-subtitle font-serif">
+						Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and collaboration across campus.
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+
+						<div class="features-item" data-match-height="items-g">
+							<div class="features-icon">
+								<i class="sbuicon-google-drive"></i>
+							</div>
+							<a href="#"><h3 class="features-title font-alt">Drive</h3></a>
+							<p class="font-alt">Unlimted Storage!</p>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+
+
+						<div class="features-item" data-match-height="items-g">
+							<div class="features-icon">
+								<i class="sbuicon-envelop4"></i>
+							</div>
+							<a href="#"><h3 class="features-title font-alt">Gmail</h3></a>
+							<p class="font-alt">Stay in touch.</p>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+
+						<div class="features-item" data-match-height="items-g">
+							<div class="features-icon">
+								<i class="sbuicon-calendar-o"></i>
+							</div>
+							<a href="#"><h3 class="features-title font-alt">Calendar</h3></a>
+							<p class="font-alt">Keep track of assignments.</p>
+						</div>	
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+						
+						<div class="features-item" data-match-height="items-g">
+							<div class="features-icon">
+								<i class="sbuicon-bubbles2"></i>
+							</div>
+							<a href="#"><h3 class="features-title font-alt">Hangouts</h3></a>
+							<p class="font-alt">Work smarter, together.</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row">
+
+			<div class="intro-module col-sm-12 centered">
+
+				<a href="http://it.stonybrook.edu/services/google-apps-email-calendar-docs-etc"><h2 class="intro-module-title-link font-alt">More About Google Apps</h2></a>
+						
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="software" class="intro-module">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-12">
+
+				<h2 class="intro-module-title font-alt">Software</h2>
+						
+				<div class="intro-module-subtitle font-serif">
+					Stony Brook University offers a variety of software to aid students when completing academic assignments. Listed below are several of our important software assests.
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-sm-12">
+
+				<!-- Accordions start -->
+				<div class="panel-group" id="accordion">
+
+					<!-- Accordion item start -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title font-alt">
+								<a data-toggle="collapse" data-parent="#accordion" href="#office365">
+									Office 365
+								</a>
+							</h4>
+						</div>
+
+						<div id="office365" class="panel-collapse collapse in">
+							<div class="panel-body font-alt">
+								<ul>
+									<h5>Free Microsoft Office for Windows and Mac</h5>
+									<li>Log in to <a href="office365.com" alt="office365.com">office365.com</a> with your @stonybrook.edu email address</li>	
+									<li>Go to Office365 Settings > Software</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- Accordion item end -->
+
+					<!-- Accordion item start -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title font-alt">
+								<a data-toggle="collapse" data-parent="#accordion" href="#osu">
+									Operating System Upgrade
+								</a>
+							</h4>
+						</div>
+
+						<div id="osu" class="panel-collapse collapse">
+							<div class="panel-body font-alt">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+							</div>
+						</div>
+					</div>
+					<!-- Accordion item end -->
+
+					<!-- Accordion item start -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title font-alt">
+								<a data-toggle="collapse" data-parent="#accordion" href="#antivirus">
+									Antivirus
+								</a>
+							</h4>
+						</div>
+
+						<div id="antivirus" class="panel-collapse collapse">
+							<div class="panel-body font-alt">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+							</div>
+						</div>
+					</div>
+					<!-- Accordion item end -->
+
+					<!-- Accordion item start -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title font-alt">
+								<a data-toggle="collapse" data-parent="#accordion" href="#vss">
+									Virtual SINC Site
+								</a>
+							</h4>
+						</div>
+
+						<div id="vss" class="panel-collapse collapse">
+							<div class="panel-body font-alt">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+							</div>
+						</div>
+					</div>
+					<!-- Accordion item end -->
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="intro-module col-sm-12 centered">
+
+				<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h2 class="intro-module-title-link font-alt">Browse All Software</h2></a>
+						
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="hardware" class="intro-module" style="background-image: url('https://farm6.staticflickr.com/5325/16760518034_be2e76886d_o_d.jpg');">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-12">
+
+				<h2 class="intro-module-title font-alt white">Hardware</h2>
+						
+				<div class="intro-module-subtitle font-serif white">
+					Stony Brook has relationships with several manufacturers to provide discounts on products to students. We also offer limited troubleshooting services via Client Support. 
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+				<div class="clear-box" data-match-height="items-g">
+					<h3 class="white">Discounts</h3>
+
+					<p class="font-alt">Get Discounts on Apple, Dell, HP, Lenovo</p>
+
+					<p class="font-alt">Stony Brook has worked with each manufacturer to provide options for different student needs.</p>
+
+					<p class="font-alt">
+						<ul>
+							<li>	
+								Visit <a href="https://it.stonybrook.edu/services/hardware/personal-computer-recommendations" alt="Personal Computer Recommendations">it.stonybrook.edu/hardware</a>, for more information.
+							</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+				<div class="clear-box" data-match-height="items-g">
+					<h3 class="white">Recommended Specs</h3>
+
+					<p class="font-alt">
+					These recommendations will meet the requirements for most academic needs. Students should be sure to check with their school or college for additional requirements and/or recommendations.
+					</p>
+
+					<p class="font-alt">
+						<ul>
+							<li>Processor: Intel Core i5</li> 
+							<li>Hard Drive: 250 GB</li>
+							<li>Memory: 4 GB</li>
+							<li>Warranty: 3-Year</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+				<div class="clear-box" data-match-height="items-g">
+					<h3 class="white">Client Support</h3>
+
+					<p class="font-alt">
+					Stony Brook's Client Support Service Center offers limited hardware diagnostic services.
+					It is your responsibility to contact an outside vendor for hardware repairs.
+					</p>
+
+					<ul>
+						<li>
+						<p class="font-alt"><a href="it.stonybrook.edu/helpme" alt="Contact Client Support">Contact Client Support</a>
+						</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="academictools" class="intro-module">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<h2 class="intro-module-title font-alt">Academic Tools</h2>
+							
+					<div class="intro-module-subtitle font-serif">
+						The SBU Division of Information Technology offers a variety of academic tools and services that will help you succeed in your academic endeavors.
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="intro-module col-sm-12 centered">
+
+					<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h2 class="intro-module-title-link font-alt">View All Academic Tools</h2></a>			
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+
+
+<!--#include file="includes/footers/simple.html" -->
