@@ -1,0 +1,24 @@
+.overlay-card-wrapper {
+	position: relative;
+	img {
+		width: 100%;
+	}
+	a:link, a:visited {
+		color:#fff;
+	}
+	a:active, a:hover {
+		color:#ccc;
+	}
+}
+.overlay-card {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	background-color: rgba(0,0,0,.8);
+	text-align: center;
+	padding: .4em 1em;
+    margin: 0;
+    line-height: 1.5em;
+}

@@ -1,5 +1,18 @@
 //TODO Refactor this -- do  we want a list class for inline links?
 
+.pagination {
+    ul {
+        margin: 10px 0px;
+        padding: 0px;
+
+        li {
+            margin: 0px 5px;
+            padding: 0px 5px;
+            display: inline-block;
+        }
+    }
+}
+
 ul.inline-list {
     margin: 0;
     padding: 0;
@@ -22,19 +35,28 @@ ul.inline-list {
     }
 }
 
-.inline-5 {
+.inline-3 {
     ul {
         margin: 0 auto;
         padding: 0px;
         text-align: center;
     }
-
     li {
-        display: inline-block;
-        width: 19.5%;
+        padding: .5em;
         min-width: 115px;
         vertical-align: top;
-
+        @include breakpoint($screen-sm) {
+            display: block;
+            width: 100%;
+        }
+        @include breakpoint($screen-md) {
+            display: inline-block;
+            width: 33.03%;
+            padding: 1.9em;
+        }
+        @include breakpoint($screen-lg) {
+            width: 33.08%;
+        }
         span.title {
             display: block;
             text-align: center;
@@ -43,15 +65,89 @@ ul.inline-list {
     }
 }
 
-.pagination {
+.inline-4 {
     ul {
-        margin: 10px 0px;
+        margin: 0 auto;
         padding: 0px;
-
-        li {
-            margin: 0px 5px;
-            padding: 0px 5px;
+        text-align: center;
+    }
+    li {
+        padding: .5em;
+        min-width: 115px;
+        vertical-align: top;
+        @include breakpoint($screen-sm) {
+            display: block;
+            width: 100%;
+        }
+        @include breakpoint($screen-md) {
             display: inline-block;
+            width: 24.5%;
+            padding: 2.4em;
+        }
+        span.title {
+            display: block;
+            text-align: center;
+            margin: 10px 0px;
         }
     }
 }
+
+.inline-5 {
+    ul {
+        margin: 0 auto;
+        padding: 0px;
+        text-align: center;
+    }
+    li {
+        padding: .6em;
+        min-width: 115px;
+        vertical-align: top;
+        @include breakpoint($screen-sm) {
+            display: block;
+            width: 100%;
+        }
+        @include breakpoint($screen-md) {
+            display: inline-block;
+            width: 19.63%;
+            padding: 1.9em;
+        }
+        @include breakpoint($screen-lg) {
+            width: 19.7%;
+        }
+        span.title {
+            display: block;
+            text-align: center;
+            margin: 10px 0px;
+        }
+    }
+}
+
+.inline-6 {
+    ul {
+        margin: 0 auto;
+        padding: 0px;
+        text-align: center;
+    }
+    li {
+        padding: .6em;
+        min-width: 115px;
+        vertical-align: top;
+        @include breakpoint($screen-sm) {
+            display: block;
+            width: 100%;
+        }
+        @include breakpoint($screen-md) {
+            display: inline-block;
+            width: 16.28%;
+        }
+        @include breakpoint($screen-lg) {
+            width: 16.3%;
+        }
+        span.title {
+            display: block;
+            text-align: center;
+            margin: 10px 0px;
+        }
+    }
+}
+

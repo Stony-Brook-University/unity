@@ -71,6 +71,12 @@
     box-shadow: 0 0 2px #999999;
 }
 
+.top-and-bottom-border {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+}
+
+
 .rounded-corners-10px, .rounded-corners10 {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -149,4 +155,47 @@
     -webkit-box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
     -moz-box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
     box-shadow: 0 -10px 8px -8px #000000, 0 10px 8px -8px #000000;
+}
+
+/*border style*/
+.border-dotted {
+    border-style: dotted;
+}
+.border-dashed {
+    border-style: dashed;
+}
+.border-solid {
+    border-style: solid;
+}
+.border-double {
+   border-style: double;
+}
+.border-groove {
+    border-style: groove;
+}
+.border-ridge {
+    border-style: ridge;
+}
+.border-inset {
+    border-style: inset;
+}
+.border-outset {
+    border-style: outset;
+}
+
+/*border width*/
+.border-width-1 {
+    border-width: 1px;
+}
+.border-width-2 {
+    border-width: 2px;
+}
+.border-width-3 {
+    border-width: 3px;
+}
+.border-width-4 {
+    border-width: 4px;
+}
+.border-width-5 {
+    border-width: 5px;
 }

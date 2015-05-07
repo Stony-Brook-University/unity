@@ -84,6 +84,14 @@
     }
 }
 
+.hide-accessible {
+    position: absolute !important;
+    top: -99999px !important;
+    left: -99999px !important;
+    width: 2000px;
+    height: 2000px;
+}
+
 .visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -120,28 +128,30 @@
         float: left;
     }
 }
+
 @media (min-width: 992px) {
     .col-md-5ths {
         width: 20%;
         float: left;
     }
 }
+
 @media (min-width: 1200px) {
     .col-lg-5ths {
         width: 20%;
         float: left;
     }
 }
+
 /* end 5 column bootstrap*/
 
 .spacer {
-  display: block;
-  width: 100%;
-  background: #fff;
-  height: 28px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 28px;
 }
 
 .padding-top-btm-15 {
     padding: 15px 0px;
 }
-

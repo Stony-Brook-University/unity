@@ -5,16 +5,18 @@
 @import "cards/base";
 @import "sections/base";
 
-@import "panels";
 @import "title-link-boxes";
 @import "promo-boxes";
 @import "star-title";
 @import "text-reveal";
 
+
 @import "buttons/base";
 
 @import "carousel";
 @import "gallery";
+
+@import "accordion/drop-accordion";
 
 @import "lists/pager";
 
@@ -27,5 +29,3 @@
 @import "digital-media/image-blocks";
 
 @import "pricing-table/pricing-table";
-
-
