@@ -1,10 +1,19 @@
 <!--#include file="includes/headers/header.html" -->
+<style>
 
- <style>
+/*
+
+Stylings for the Student Orientation Guide Only
+
+
+*/
+
+
 
 /* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------- */
+
 
 .align-center {
 	text-align: center;
@@ -20,7 +29,7 @@ General Styles
 
 .leftauto {
 	right: 0 !important;
-	left: auto !important;
+	left: auto !important;					
 }
 
 .side-image {
@@ -100,6 +109,10 @@ Accordion
 	font-size: 14px;
 }
 
+.panel-body li {
+	text-align: left;
+}
+
 .panel-heading a {
 	position: relative;
 	display: block;
@@ -139,26 +152,13 @@ Typography
 
 
 /* -------------------------------------------------------------------
-Sections
+Intro Module
 ------------------------------------------------------------------- */
 
 
-.intro-module,
-.intro-module-small {
-	position: relative;
-	padding: 50px 0;z
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-}
-
-/* Module header */
-
-.intro-module-small {
-	padding: 70px 0;
+.intro-module {
+position: relative;
+padding: 50px 0;
 }
 
 .intro-module-title {
@@ -297,7 +297,7 @@ Half-Image
 }
 
 /* -------------------------------------------------------------------
-Price-tables
+Simple Table
 ------------------------------------------------------------------- */
 
 .simple-table {
@@ -438,6 +438,40 @@ Responsive Media Querries
 }
 
 }
+
+@media (max-width: 768px) {
+
+	.clear-box {
+		margin: 25px 20px;
+}
+}	
+
+
+@media (max-width: 500px) {
+
+	.clear-box {
+		padding: 25px 20px;
+		margin-top:50px;
+	}
+
+	.clear-box h2{
+		font-size:25px;
+	}
+}
+
+.clear-box p {
+
+	color:#fff;
+}
+
+@media (max-width:767px){
+	.clear-box{
+
+		margin-left:20px;
+		margin-right:20px;
+	}
+}
+
 /* -------------------------------------------------------------------
 Features
 ------------------------------------------------------------------- */
@@ -489,8 +523,8 @@ Clear Box
 ------------------------------------------------------------------- */
 
 .clear-box{
-	max-width:640px;
-	margin: 0;
+
+	margin: 15px 0 30px;
 	padding: 20px 20px;
 	background:rgba(255,255,255,0.2);
 	border:1px solid rgba(255,255,255,0.5);
@@ -518,29 +552,104 @@ Clear Box
 	
 }
 
-@media (max-width:500px){
-	.clear-box{
-		margin-top:50px;
-	}
-	..clear-box h2{
-		font-size:25px;
-	}
-}
-.clear-box p{
+/* -------------------------------------------------------------------
+Vertical Bars
+------------------------------------------------------------------- */
 
-	color:#fff;
+.vbar {
+	max-width: 100%;
+}
+.vbar .bar-item {
+	max-width: 100px;
+	margin: 20px auto;
+	position: realtive;
+}
+.vbar .bar-item .vertical-bar {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 200px;
+	cursor: pointer;
+	background: transparent;
+}
+.vbar .bar-item .vertical-bar .vbar-fill {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 30%;
+}
+.vbar .bar-item .vertical-bar .vbar-fill span {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 600;
+}
+.vbar .bar-item .details{
+	text-align: center;
+}	
+.vbar .bar-item p { 
+	margin-top: 10px;
+	font-size: 16px; 
+	font-weight: 600;
+	text-transform:	uppercase;
 }
 
-@media (max-width:767px){
-	.clear-box{
-		margin-left:20px;
-		margin-right:20px;
-	}
+/* -------------------------------------------------------------------
+Tabs
+------------------------------------------------------------------- */
+
+.tab-content {
+	padding: 20px 0;
+}
+
+.nav-tabs > li > a {
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+		 -o-border-radius: 2px;
+			border-radius: 2px;
+}
+
+
+/* -------------------------------------------------------------------
+Video
+------------------------------------------------------------------- */
+
+
+.video {
+	padding: 40px 0;
+}
+
+.video-icon {
+	text-align: center;
+}
+
+.video-icon > a > i,
+.video-icon > a > span {
+	line-height: 1.8;
+	font-size: 40px;
+	color: #fff;
+}
+
+.video-title {
+	letter-spacing: 4px;
+	font-size: 30px;
+	margin: 10px 0 0;
+	vertical-align: center;
+}
+
+.video-subtitle {
+	color: rgba(255, 255, 255, .5);
+	vertical-align: center;
 }
 
 
 </style>
-
 
 <section class="intro-module-small background-dark-gray">
 	<div class="container">
@@ -675,24 +784,27 @@ Clear Box
 
 	<div class="container">
 
-		<div class="animated fadeInRight col-md-6 col-lg-6 hidden-xs hidden-sm centered">
+		<div class="row">
 
-			<div class="btm-image v-align-btm">
-			<img src="https://farm8.staticflickr.com/7790/17188168139_6c28a9f60e_n_d.jpg">
+			<div class="animated fadeInRight col-md-6 col-lg-6 hidden-xs hidden-sm centered">
+
+				<div class="btm-image v-align-btm">
+				<img src="https://farm8.staticflickr.com/7790/17188168139_6c28a9f60e_n_d.jpg">
+				</div>
 			</div>
-		</div>
 
-		<div class="animated fadeInRight col-md-6 col-lg-6 col-xs-12 col-sm-12">
+			<div class="animated fadeInRight col-md-6 col-lg-6 col-xs-12 col-sm-12">
 
-			<div class="simple-table font-alt">
-					<h4>SOLAR Mobile Updates</h4>
-					<p class="font-alt">Coming Fall 2015!</p>
-					<div class="borderline"></div>
-						<ul class="simple-table-details">
-							<li>Lorem Ipsum</li>
-							<li>Lorem Ipsum</li>
-							<li>Lorem Ipsum</li>
-						</ul>
+				<div class="simple-table font-alt">
+						<h4>SOLAR Mobile Updates</h4>
+						<p class="font-alt">Coming Fall 2015!</p>
+						<div class="borderline"></div>
+							<ul class="simple-table-details">
+								<li>Lorem Ipsum</li>
+								<li>Lorem Ipsum</li>
+								<li>Lorem Ipsum</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -714,6 +826,9 @@ Clear Box
 				 </div>
 			</div>
 		</div>
+	</div>
+
+	<div class="contatiner">
 
 		<div class="row">
 
@@ -751,16 +866,16 @@ Clear Box
 </section>
 
 <section id="wolfienet" class="intro-module">
+	
 	<div class="container">
 
-	<div class="animated fadeInDown col-sm-12">
+		<div class="animated fadeInDown col-sm-12">
 
-		<h2 class="intro-module-title font-alt">WolfieNet</h2>
-		<div class="intro-module-subtitle font-serif">
-		 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites page</a>.
-		 </div>
-
-	</div>
+			<h2 class="intro-module-title font-alt">WolfieNet</h2>
+			<div class="intro-module-subtitle font-serif">
+			 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites page</a>.
+			 </div>
+		</div>
 
 		<div class="row">
 
@@ -784,8 +899,8 @@ Clear Box
 					<h4>Open</h4>
 					<div class="borderline"></div>
 					<ul class="simple-table-details">
-						<li>The recommended network that should be used on a day-to-day
-						basis after successfully configuring Wi-Fi devices through WolfieNet- Get-Connected.
+						<li>Available only in residence halls
+						for gaming systems. Do not use for academic work or transactions such as banking or shopping.
 						</li>
 					</ul>
 				</div>
@@ -799,8 +914,9 @@ Clear Box
 					<p class="small">Best Option</p>
 					<div class="borderline"></div>
 					<ul class="simple-table-details">
-						<li>Available only in residence halls
-						for gaming systems. Do not use for academic work or transactions such as banking or shopping.
+						<li>
+						The recommended network that should be used on a day-to-day
+						basis after successfully configuring Wi-Fi devices through WolfieNet-Get-Connected.
 						</li>
 					</ul>
 				</div>
@@ -824,14 +940,15 @@ Clear Box
 
 <section id="gapps" class="intro-module no-padding">
 
-	<div class="row position-relative">
+	<div class="container-fluid">
 
-		<div class="col-xs-12 col-md-6 side-image" data-background="https://farm4.staticflickr.com/3922/14344555674_7ccd880c4b_o_d.jpg">
-		</div>
+		<div class="row position-relative">
 
-		<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+			<div class="col-xs-12 col-md-6 side-image" data-background="https://farm4.staticflickr.com/3922/14344555674_7ccd880c4b_o_d.jpg">
+			</div>
 
-			<div class="row">
+
+			<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
 
 				<div class="col-sm-12">
 
@@ -885,15 +1002,15 @@ Clear Box
 						</div>
 					</div>	
 				</div>
-			</div>
 
-			<div class="row">
+				<div class="row">
 
-			<div class="intro-module col-sm-12 centered">
+				<div class="intro-module col-sm-12 centered">
 
-				<a href="http://it.stonybrook.edu/services/google-apps-email-calendar-docs-etc"><h2 class="intro-module-title-link font-alt">More About Google Apps</h2></a>
-						
-			</div>
+					<a href="http://it.stonybrook.edu/services/google-apps-email-calendar-docs-etc"><h2 class="intro-module-title-link font-alt no-padding">More About Google Apps</h2></a>
+							
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -955,7 +1072,10 @@ Clear Box
 
 						<div id="osu" class="panel-collapse collapse">
 							<div class="panel-body font-alt">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+								<ul>
+									<li>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -973,7 +1093,10 @@ Clear Box
 
 						<div id="antivirus" class="panel-collapse collapse">
 							<div class="panel-body font-alt">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+								<ul>
+									<li>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -991,7 +1114,10 @@ Clear Box
 
 						<div id="vss" class="panel-collapse collapse">
 							<div class="panel-body font-alt">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+								<ul>
+									<li>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -1118,6 +1244,118 @@ Clear Box
 	</div>
 </section>
 
+
+<section class="intro-module" data-background="https://farm4.staticflickr.com/3874/14345265045_9789ef49e1_k_d.jpg">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-12">
+
+				<div class="video">
+					<div class="video-icon">
+						<a href="https://www.youtube.com/watch?v=i26eE0_KHTI" class="video-pop-up"><span class="sbuicon-play-circle-o"></span></a>
+					</div>
+					<div class="intro-module-title font-alt white">
+						Blackboard
+					</div>
+					<div class="intro-module-subtitle font-serif white">
+						Learn more about blackboard watching this video. 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="cybersecurity" class="intro-module background-dark-gray">
+
+	<div class="vbar">
+		
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<h2 class="video-title font-alt white">Cybersecurity</h2>
+							
+					<div class="video-subtitle font-serif white">
+						Email phishing scams and the spread of malware are commonplace online, especially on college campuses.
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+
+				<div class="bar-item">
+					<div class="bar">
+
+						<div class="vertical-bar">
+							<div class="vbar-fill background-turquoise" data-limit="95"><span></span></div>
+						</div>
+					</div>
+					<div class="details">
+						<p><a href="#">Sample Stat</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-3">
+
+				<div class="bar-item">
+					<div class="bar">
+
+						<div class="vertical-bar">
+							<div class="vbar-fill background-sun" data-limit="72"><span></span></div>
+						</div>
+					</div>
+					<div class="details">
+
+						<p><a href="#">Sample Stat</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-3">
+
+				<div class="bar-item">
+					<div class="bar">
+
+						<div class="vertical-bar">
+							<div class="vbar-fill background-amethyst" data-limit="83"><span></span></div>
+						</div>
+					</div>
+					<div class="details">
+
+						<p><a href="#">Sample Stat</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6 col-md-3">
+
+				<div class="bar-item">
+					<div class="bar">
+
+						<div class="vertical-bar">
+							<div class="vbar-fill background-alizarin" data-limit="37"><span></span></div>
+						</div>
+					</div>
+					<div class="details">
+
+						<p><a href="#">Sample Stat</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
