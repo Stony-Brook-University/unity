@@ -32,7 +32,7 @@
 				
 					$('.vbar-fill').each(function() {
 						var me = $(this);
-						var perc = me.attr("data-limit");
+						var perc = me.attr('data-limit');
 						var current_perc = 0;
 						
 						if(!$(this).hasClass('stop')){
@@ -44,7 +44,7 @@
 								} else {
 									current_perc +=1;
 									me.css('height', (current_perc)+'%');
-									me.children("span").html(current_perc+'%');
+									me.children('span').html(current_perc+'%');
 								}
 						
 							}, 15);
@@ -58,7 +58,5 @@
 				}, 0);
 				
 			});
-
-
 
 })(jQuery);
