@@ -1,8 +1,10 @@
 (function($){
 
+		/* ---------------------------------------------- /*
+		 * CountTo Animation
+		/* ---------------------------------------------- */
 
-
-		$('.count-item').each(function(i) {
+		$('.count-item').each(function() {
 			$(this).appear(function() {
 				var number = $(this).find('.count-to').data('countto');
 				$(this).find('.count-to').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
@@ -14,7 +16,7 @@
 		/* ---------------------------------------------- */
 
 		var module = $('.intro-module, .intro-module-small, .side-image');
-		module.each(function(i) {
+		module.each(function() {
 			if ($(this).attr('data-background')) {
 				$(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
 			}
@@ -23,7 +25,6 @@
 		/* ---------------------------------------------- /*
 		 * Vertical Bar Stats Fill
 		/* ---------------------------------------------- */
-
 
 			$(function() {
 					
