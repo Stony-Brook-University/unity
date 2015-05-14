@@ -10,7 +10,7 @@
 		});
 
 		/* ---------------------------------------------- /*
-		 * Section Backgrounds
+		 * Image Backgrounds
 		/* ---------------------------------------------- */
 
 		var module = $('.intro-module, .intro-module-small, .side-image');
@@ -19,6 +19,45 @@
 				$(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
 			}
 		});
+
+		/* ---------------------------------------------- /*
+		 * Vertical Bar Stats Fill
+		/* ---------------------------------------------- */
+
+
+			$(function() {
+					
+				setTimeout(function(){
+				
+					$('.vbar-fill').each(function() {
+						var me = $(this);
+						var perc = me.attr("data-limit");
+						var current_perc = 0;
+						
+						if(!$(this).hasClass('stop')){
+						
+							var progress = setInterval(function() {
+															
+								if (current_perc>=perc) {
+									clearInterval(progress);
+								} else {
+									current_perc +=1;
+									me.css('height', (current_perc)+'%');
+									me.children("span").html(current_perc+'%');
+								}
+						
+							}, 15);
+							
+							me.addClass('stop');
+							
+						}
+						
+					});
+					
+				}, 0);
+				
+			});
+
 
 
 })(jQuery);

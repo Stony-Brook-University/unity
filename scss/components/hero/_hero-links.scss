@@ -1,0 +1,15 @@
+.hero-links {
+
+a:link, a:visited, a:active {
+    background-color: rgba(153,0,0,.7);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover, a.selected {
+    outline: 0;
+    color: #ffffff;
+    background: rgba(153,0,0,.9);
+
+}
+}
