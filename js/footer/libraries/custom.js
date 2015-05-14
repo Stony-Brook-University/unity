@@ -59,4 +59,13 @@
 				
 			});
 
+		/* ---------------------------------------------- /*
+		 * Initlaize Nivo Lightbox
+		/* ---------------------------------------------- */
+
+		var lightbox = $('.lightbox, .nivo-lightbox');
+		lightbox.each(function() {
+			$(this).nivoLightbox();
+		});
+
 })(jQuery);
