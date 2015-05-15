@@ -9,7 +9,6 @@ Stylings for the Student Orientation Guide Only
 */
 
 
-
 /* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------- */
@@ -640,9 +639,18 @@ Video
 	        background-size: cover;
 }
 
+.video-img-position-50 {
+	max-height: 50%;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
 </style>
 
-<section class="intro-module-small background-dark-gray">
+<section class="intro-module background-dark-gray">
 	<div class="container">
 
 		<div class="row">
@@ -771,7 +779,7 @@ Video
 	</div>
 </section>
 
-<section>
+<section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm4.staticflickr.com/3941/15487768325_4407b8140c_k_d.jpg">
 
 	<div class="container">
 
@@ -780,17 +788,17 @@ Video
 			<div class="animated fadeInRight col-md-6 col-lg-6 hidden-xs hidden-sm centered">
 
 				<div class="btm-image v-align-btm">
-				<img src="https://farm8.staticflickr.com/7790/17188168139_6c28a9f60e_n_d.jpg">
+				<img src="images/student-og/ism.png">
 				</div>
 			</div>
 
 			<div class="animated fadeInRight col-md-6 col-lg-6 col-xs-12 col-sm-12">
 
-				<div class="simple-table font-alt">
-						<h4>SOLAR Mobile Updates</h4>
-						<p class="font-alt">Coming Fall 2015!</p>
+				<div class="clear-box font-alt">
+						<h4 class="white no-padding">SOLAR Mobile Updates</h4>
+						<p class="font-alt no-padding">Coming Fall 2015!</p>
 						<div class="borderline"></div>
-							<ul class="simple-table-details">
+							<ul class="simple-table-details no-padding">
 								<li>Lorem Ipsum</li>
 								<li>Lorem Ipsum</li>
 								<li>Lorem Ipsum</li>
@@ -852,6 +860,28 @@ Video
 		</div>
 	</div>
 </section>
+
+<section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm8.staticflickr.com/7674/17645959825_f48d22d9a9_k_d.jpg">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-12">
+
+				<div class="video-title">
+					
+					<div class="intro-module-title font-alt white">
+						<a href="http://maps.php-apps.demo.it.stonybrook.edu:8080/" class="video-pop-up white"><span class="sbuicon-location"></span> Sinc Site Locations</a>
+					</div>
+					<div class="intro-module-subtitle font-serif white no-padding">
+						This map gives a detailed explanation of all our Sinc Sites, CoLA's, and Printer locations.    
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <section id="wolfienet" class="intro-module">
 	
@@ -926,16 +956,13 @@ Video
 	</div>
 </section>
 
-<section id="gapps" class="intro-module no-padding">
+<section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm4.staticflickr.com/3922/14344555674_7ccd880c4b_o_d.jpg">
 
-	<div class="container-fluid">
+	<div class="container">
 
-		<div class="row position-relative">
+		<div class="row">
 
-			<div class="col-xs-12 col-md-12 side-image" data-background="https://farm4.staticflickr.com/3922/14344555674_7ccd880c4b_o_d.jpg">
-			</div>
-
-			<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+			<div class="col-xs-12 col-md-12">
 
 				<div class="col-sm-12">
 
@@ -1277,9 +1304,9 @@ Video
 
 				<div class="col-sm-12">
 
-					<h2 class="video-title font-alt white">Cybersecurity</h2>
+					<h2 class="intro-module font-alt white">Cybersecurity</h2>
 							
-					<div class="video-subtitle font-serif white">
+					<div class="intro-module-subtitle font-serif white">
 						Email phishing scams and the spread of malware are commonplace online, especially on college campuses.
 					</div>
 				</div>
