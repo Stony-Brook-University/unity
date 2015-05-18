@@ -5,12 +5,11 @@ footer.site-footer {
     border-bottom: 1px solid #aaa;
     padding: 40px 0;
     text-align: center;
-    font-family:'Trade Gothic Next W01';
+    font-family: 'Trade Gothic Next W01';
     font-size: 1em;
     position: relative;
     z-index: 1;
 }
-
 
 footer.site-footer .col-4 .code {
     display: block;
@@ -43,10 +42,6 @@ footer.site-footer .codes .serif-italic {
 
 footer.site-footer a {
     color: #ccc;
-    display: block;
-    width: auto;
-    line-height: 1.8em;
-    margin: 0 0 10px;
 }
 
 footer.site-footer a:hover {
@@ -125,7 +120,7 @@ footer.site-footer .social-links a {
 }
 
 footer.site-footer .social-links a em {
-    text-shadow: 0 0 4px rgba(70,70,70,.3);
+    text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
 }
 
 footer.site-footer .social-links a:hover em {
@@ -140,22 +135,16 @@ footer.site-footer .social .small-button:after {
     content: " ";
 }
 
-
-.footer-links
-{
-    @include breakpoint($screen-md)
-    {
-        text-align: left;    
+.footer-links {
+    @include breakpoint($screen-md) {
+        text-align: left;
     }
-    
 }
 
-footer .col
-{
+footer .col {
     margin: 3em 0;
 
-    @include breakpoint($screen-md)
-    {
+    @include breakpoint($screen-md) {
         margin: 1em 0;
     }
 }
