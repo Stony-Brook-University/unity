@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var compass = require('gulp-compass');
+var sass = require('gulp-sass');
 var gutil = require('gulp-util');
 var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
@@ -96,15 +97,14 @@ gulp.task('todo-html', function() {
 
 gulp.task('styles', function() {
     gulp.src('./scss/*.scss')
-        .pipe(compass({
+        .pipe(sass({
             css: '.dist/css',
             sass: 'scss',
             fonts: 'fonts',
             debug: false,
             style: 'expanded',
             comments: true,
-            sourcemap: false,
-            require: ['breakpoint']
+            sourcemap: false
         })).on('error', gutil.log)
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         //.pipe(gulp.dest('.dist/css'))
@@ -136,7 +136,17 @@ gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['styles']);
 });
 
+
+gulp.task('watch-simple', function() {
+    gulp.watch('js/header**/*.js', ['headerjs']);
+    gulp.watch('js/footer/**/*.js', ['footerjs']);
+    gulp.watch('scss/**/*.scss', ['styles']);
+});
+
 gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js', 'headerjs', 'footerjs', 'watch']);
+
+gulp.task('simple', ['styles', 'headerjs', 'footerjs', 'watch-simple']);
+
 
 gulp.task('release', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js', 'headerjs', 'footerjs']);
 
