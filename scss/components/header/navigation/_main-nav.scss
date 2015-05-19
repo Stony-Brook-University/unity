@@ -91,7 +91,9 @@ div.main-site-nav ul {
         }
 
             div.main-site-nav ul li a:hover,
-            div.main-site-nav ul li a:focus {
+            div.main-site-nav ul li a:focus,
+            div.main-site-nav ul li a:active,
+            div.main-site-nav ul li a.active {
                 background-color: #a00;
                 border: 1px solid #a00;
             }
