@@ -54,7 +54,7 @@ General Styles
 
 .pt-70 {
 
-	padding-top: 70px;
+	padding-top: 70px !important;
 	padding-left: 70px;
 }
 
@@ -77,6 +77,25 @@ General Styles
   z-index:0;
   background-color: rgba(51,51,51,0.5);
 }
+
+.offset-block
+
+ {
+    padding: 100px 60px 50px;
+    color: #333;
+}
+
+@media(max-width:768px) {
+    .offset-block
+					{
+        padding: 50px 20px 50px;
+    }
+}
+
+
+
+
+
 
 /* ------------------------------------------------------------------
 Call To Action
@@ -117,6 +136,10 @@ Call To Action
 	text-align: center;
 	padding-top: 4px;
 	display: block;
+}
+
+.callout-btn-box a {
+	color: #ffffff;
 }
 
 .btn .btn-w { 
@@ -175,7 +198,7 @@ Typography
 
 
 .font-serif {
-	font-family: "Century Old Style", "Times New Roman", sans-serif;
+	font-family: "CenturyExpd BT Roman", serif;	
 	font-style: italic;
 }
 
@@ -208,9 +231,10 @@ padding: 50px 0;
 
 .intro-module-subtitle {
 	text-align: center;
-	font-size: 16px;
+	font-size: 18px;
 	color: #111;
 	margin-bottom: 70px;
+	line-height: 1.7em;
 }
 
 .intro-module-icon {
@@ -694,7 +718,44 @@ Tabs
 /* -------------------------------------------------------------------
 Video
 ------------------------------------------------------------------- */
+.iPadFrame {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
 
+.iPadContent  {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 78.4%;     
+  padding-top: 25px;
+  height: 0;
+}
+
+.iPadVideo {
+
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+}
+
+
+
+
+.video-frame {
+	position: static;
+	background: url('images/student-og/ipadplayer.png');
+	padding-right: 69px;
+	padding-left: 71px;
+	padding-top: 27px;
+	padding-bottom:	24px;
+	max-height: 475px;
+	max-width: 100%;
+}
 
 .video {
 	padding: 40px 0;
@@ -727,8 +788,21 @@ Video
 
 </style>
 
-<section class="intro-module background-dark-gray">
+<section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm3.staticflickr.com/2950/15301051890_40ea1c95dd_k_d.jpg">
 	<div class="container">
+
+		<div class="row">
+
+			<div class="animated fadeInDown col-sm-12">
+
+				<h2 class="intro-module-title font-alt white">Student IT Orientation Guide</h2>
+				<div class="intro-module-subtitle font-serif white">
+					The Stony Brook University IT Orientation guide page is intended to provide an overview of the most important services you will need to be successful in your academic career. Utilizing services like SOLAR, Google Apps and Blackboard (among others) will be paramount in guaranteeing a positive academic experience. 
+
+				</div>
+			</div>
+		</div>
+
 
 		<div class="row">
 
@@ -798,7 +872,7 @@ Video
 
 			<div class="animated fadeInDown col-sm-12">
 
-				<h2 class="intro-module-title font-alt">SOLAR</h2>
+				<h2 class="intro-module-title font-alt turquoise">SOLAR</h2>
 				<div class="intro-module-subtitle font-serif">
 					SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information. Students use SOLAR to register for classes, print schedules, view and pay bills, update personal contact information, view transcripts, and submit student employment timesheets.
 				</div>
@@ -808,7 +882,7 @@ Video
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
 				<hr class="featurette-divider">
 				<div class="blurb-item" data-match-height="items-c">
-					<div class="blurb-icon">
+					<div class="blurb-icon turquoise">
 						<i class="sbuicon-file-text2"></i>
 					</div>
 					<h3 class="blurb-title font-alt">Access Records</h3>
@@ -820,7 +894,7 @@ Video
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
 				<hr class="featurette-divider">
 				<div class="blurb-item" data-match-height="items-c">
-					<div class="blurb-icon">
+					<div class="blurb-icon turquoise">
 						<i class="sbuicon-graduation-cap"></i>
 					</div>
 					<h3 class="blurb-title font-alt">View Grades</h3>
@@ -832,7 +906,7 @@ Video
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
 				<hr class="featurette-divider">
 				<div class="blurb-item" data-match-height="items-c">
-					<div class="blurb-icon">
+					<div class="blurb-icon turquoise">
 						<i class="sbuicon-sign-in"></i>
 					</div>
 					<h3 class="blurb-title font-alt">Register For Classes</h3>
@@ -844,7 +918,7 @@ Video
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
 				<hr class="featurette-divider">
 				<div class="blurb-item" data-match-height="items-c">
-					<div class="blurb-icon">
+					<div class="blurb-icon turquoise">
 						<i class="sbuicon-envelope"></i>
 					</div>
 					<h3 class="blurb-title font-alt">View Messages and Holds</h3>
@@ -877,7 +951,7 @@ Video
 							<h4 class="white no-padding">Coming Fall 2015!</h4>
 						</div>
 
-						<p class="white">Solar Mobile can be accessed on your mobile device by going to your browser and typing http://stonybrook.edu/solar</p>
+						<p class="white">Solar Mobile can be accessed on your mobile device by going to your browser and entering http://stonybrook.edu/solar</p>
 
 					</div>
 				</div>
@@ -893,24 +967,24 @@ Video
 
 				<div class="row">
 
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-12 col-sm-4 centered">
 
 						<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h4 class="login-button-white login-button-white__text-white">Login To Solar</h4></a>
 								
 					</div>
 
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-4 centered">
 
 						<h4 class="font-alt no-padding white">Password</h4>
 						<p class="font-alt no-padding white">Your initial SOLAR password is your birth date in MMDDYY format.</p>
 						<p class="font-alt no-padding white">Example: July 1st, 1992 would be 072592</p>
 					</div>
 
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-4 centered">
 
 						<h4 class="font-alt no-padding white">Help</h4>
 						<p class="font-alt no-padding white">Having trouble logging in to SOLAR?</p>
-						<p class="font-alt no-padding white">Visit <a class="white" href="http://it.stonybrook.edu/help">it.stonybrook.edu/help</p>
+						<p class="font-alt no-padding white">Visit <a class="white" href="http://it.stonybrook.edu/help">it.stonybrook.edu/help</a></p>
 					</div>
 
 				</div>
@@ -918,6 +992,90 @@ Video
 		</div>
 	</div>
 </section>
+
+
+<section id="solar" class="intro-module">
+	<div class="container">	
+
+		<div class="row">
+
+			<div class="animated fadeInDown col-sm-12">
+
+				<h2 class="intro-module-title font-alt pom">NetID</h2>
+				<div class="intro-module-subtitle font-serif">
+
+					Information regarding your NetID and NetID password is obtained by logging into <a href="http://stonybrook.edu/solar" alt="Link to Solar service page">SOLAR</a> and selecting the NetID Maintenance link. This is where you find out what your NetID is, how you set your security question, establish and change your NetID password, and test your NetID password to make sure it is working properly. 
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+	        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	            <h5>NETID Provides access to a myriad of SBU services</h5>
+
+	            <p>
+		            <ul>
+						<li>Blackboard</li>
+						<li>Google Apps</li>
+						<li>Library databases</li>
+						<li>SINC Site computers and printers</li>
+						<li>Virtual SINC Site</li>
+						<li>Wi-Fi (WolfieNet)</li>
+						<li>Yammer</li>
+					</ul>
+	            </p>
+	        </div>
+
+	        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+	            <h5>Changing Your NetID Password</h5>
+
+	            <p>
+		            <ul>
+		            	<li>Log into SOLAR (stonybrook.edu/solar)</li>
+						<li>Under Security and Personal Data, select NetID Maintenance</li>
+						<li>Enter your new password</li>
+						<li>Wait 10 minutes for your NetID password to take effect</li>
+					</ul>
+	            </p>
+	        </div>
+
+	        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+	            <h5>Password Tips</h5>
+
+	            <p>
+	            	<ul>
+
+					<li>NetID passwords must be at least eight characters</li>
+					<li>Must contain at least one number (0-9) and one letter (A-Z)</li>
+					<li>Change your NetID password every six months</li>
+
+				</p>
+	        </div>
+   		</div>
+   	</div>
+</section>
+
+<section class="call-to-action background-pom">
+
+	<div class="container">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-12 centered">
+
+						<h5 class="font-alt no-padding white">The <b>NetID</b> and <b>SOLAR ID</b> are two different identifiers. Each ID has its own password and its own special uses.</h5>
+								
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 
 
 
@@ -931,7 +1089,7 @@ Video
 
 				<h2 class="intro-module-title font-alt white">Sinc Sites and Printers</h2>
 				<div class="intro-module-subtitle font-serif white">
-				 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites page</a>.
+				 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites service page</a>.
 				 </div>
 			</div>
 		</div>
@@ -999,9 +1157,9 @@ Video
 
 		<div class="animated fadeInDown col-sm-12">
 
-			<h2 class="intro-module-title font-alt">WolfieNet</h2>
+			<h2 class="intro-module-title font-alt river">WolfieNet</h2>
 			<div class="intro-module-subtitle font-serif">
-			 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. You can find a list of SINC Site locations and their hours of operation by visiting the <a href="it.stonybrook.edu/services/sinc-sites">SINC Sites page</a>.
+			 WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests. New locations continue to be added as wireless technology and equipment continues to be upgraded and enhanced in order to handle the growing number of devices seeking to connect to the network. To get more information about WolfieNet visit the  <a href="http://it.stonybrook.edu/services/wi-fi-wolfienet">WolfieNet service page</a>.
 			 </div>
 		</div>
 
@@ -1010,7 +1168,7 @@ Video
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
 				<div class="simple-table font-alt" data-match-height="items-b">
-					<h4>Get-Connected</h4>
+					<h4 class="river">Get-Connected</h4>
 					<div class="borderline"></div>
 					<ul class="simple-table-details">
 						<li>Use for the first time when connecting to WolfieNet. This
@@ -1024,7 +1182,7 @@ Video
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
 				<div class="simple-table font-alt" data-match-height="items-b">
-					<h4>Open</h4>
+					<h4 class="river">Open</h4>
 					<div class="borderline"></div>
 					<ul class="simple-table-details">
 						<li>Available only in residence halls
@@ -1038,7 +1196,7 @@ Video
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
 				<div class="simple-table best font-alt" >
-					<h4>Secured</h4>
+					<h4 class="river">Secured</h4>
 					<p class="small">Best Option</p>
 					<div class="borderline"></div>
 					<ul class="simple-table-details">
@@ -1054,7 +1212,7 @@ Video
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
 				<div class="simple-table font-alt" data-match-height="items-b">
-					<h4>Guest</h4>
+					<h4 class="river">Guest</h4>
 					<div class="borderline"></div>
 					<ul class="simple-tables-details">
 						<li>To be used by visitors to the University who do not have a NetID. Users must authenticate and agree to the Wireless Internet Policy.
@@ -1165,7 +1323,26 @@ Video
 	</div>
 </section>
 
-<section id="software" class="intro-module background-light-gray">
+<section id="mdn" class="intro-module">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-10 col-xs-offset-1" class="movieSection">    
+				<img class="iPadFrame" src="images/student-og/ipadplayer.png" alt="iPad Video Frame">
+					<div class="iPadContent">
+						
+
+						<iframe class="iPadVideo" src="https://www.youtube.com/embed/rK7EQsF7h88" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</img>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="software" class="intro-module">
 
 	<div class="container">
 
@@ -1173,7 +1350,7 @@ Video
 
 			<div class="col-sm-12">
 
-				<h2 class="intro-module-title font-alt">Software</h2>
+				<h2 class="intro-module-title font-alt asphalt">Software</h2>
 						
 				<div class="intro-module-subtitle font-serif">
 					Stony Brook University offers a variety of software to aid students when completing academic assignments. Listed below are several of our important software assests.
@@ -1183,95 +1360,52 @@ Video
 
 		<div class="row">
 
-			<div class="col-sm-12">
-
-				<!-- Accordions start -->
-				<div class="panel-group" id="accordion">
-
-					<!-- Accordion item start -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title font-alt">
-								<a data-toggle="collapse" data-parent="#accordion" href="#office365">
-									Office 365
-								</a>
-							</h4>
-						</div>
-
-						<div id="office365" class="panel-collapse collapse in">
-							<div class="panel-body font-alt">
-								<ul>
-									<h5>Free Microsoft Office for Windows and Mac</h5>
-									<li>Log in to <a href="office365.com" alt="office365.com">office365.com</a> with your @stonybrook.edu email address</li>	
-									<li>Go to Office365 Settings > Software</li>
-								</ul>
-							</div>
-						</div>
-					</div><!-- Accordion item end -->
-
-					<!-- Accordion item start -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title font-alt">
-								<a data-toggle="collapse" data-parent="#accordion" href="#osu">
-									Operating System Upgrade
-								</a>
-							</h4>
-						</div>
-
-						<div id="osu" class="panel-collapse collapse">
-							<div class="panel-body font-alt">
-								<ul>
-									<li>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-									</li>
-								</ul>
-							</div>
-						</div>
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="blurb-item" data-match-height="items-aa">
+					<div class="blurb-icon asphalt">
+						<i class="sbuicon-file-word-o"></i>
 					</div>
-					<!-- Accordion item end -->
-
-					<!-- Accordion item start -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title font-alt">
-								<a data-toggle="collapse" data-parent="#accordion" href="#antivirus">
-									Antivirus
-								</a>
-							</h4>
-						</div>
-
-						<div id="antivirus" class="panel-collapse collapse">
-							<div class="panel-body font-alt">
-								<ul>
-									<li>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Accordion item end -->
-
-					<!-- Accordion item start -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title font-alt">
-								<a data-toggle="collapse" data-parent="#accordion" href="#vss">
-									Virtual SINC Site
-								</a>
-							</h4>
-						</div>
-
-						<div id="vss" class="panel-collapse collapse">
-							<div class="panel-body font-alt">
-								<ul>
-									<li>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Accordion item end -->
+					<h3 class="blurb-title font-alt">Office 365</h3>
+					<p class="font-alt">You can review transcripts, medical recrods, agreements and other records in SOLAR.</p>
 				</div>
+				<hr class="featurette-divider">
+			</div>
+
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="blurb-item" data-match-height="items-aa">
+					<div class="blurb-icon asphalt">
+						<i class="sbuicon-windows"></i>
+					</div>
+					<h3 class="blurb-title font-alt">Operating System Upgrade</h3>
+					<p class="font-alt">Keep track of your course history and your grades.</p>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+			
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="blurb-item" data-match-height="items-aa">
+					<div class="blurb-icon asphalt">
+						<i class="sbuicon-lock"></i>
+					</div>
+					<h3 class="blurb-title font-alt">Antivirus</h3>
+					<p class="font-alt">Access course cescriptions and register for classes.</p>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+
+			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
+				<hr class="featurette-divider">
+				<div class="blurb-item" data-match-height="items-aa">
+					<div class="blurb-icon asphalt">
+						<i class="sbuicon-cloud"></i>
+					</div>
+					<h3 class="blurb-title font-alt">Virtual Sinc Site</h3>
+					<p class="font-alt">Communications from the Bursar and Registrar will be administered through SOLAR.</p>
+				</div>
+				<hr class="featurette-divider">
 			</div>
 		</div>
 	</div>
@@ -1402,35 +1536,26 @@ Video
 	</div>
 </section>
 
+<section>
 
-<section class="intro-module video-img-position overlay-gray" data-background="https://farm4.staticflickr.com/3874/14345265045_9789ef49e1_k_d.jpg">
-	<div class="container">
+<div class="container-fluid">
 
-		<div class="row">
+	<div class="row">
 
-			<div class="col-sm-12">
+		<div class="intro-module col-xs-12 col-sm-6 col-md-6 col-lg-6 video-img-position overlay-gray" data-background="https://farm4.staticflickr.com/3874/14345265045_9789ef49e1_k_d.jpg">
 
-				<div class="video-title">
-					
-					<div class="intro-module-title font-alt white">
-						<a href="https://www.youtube.com/watch?v=i26eE0_KHTI" class="video-pop-up white"><span class="sbuicon-play-circle"></span> Blackboard</a>
-					</div>
-					<div class="intro-module-subtitle font-serif white no-padding">
-						Learn more about Blackboard watching this video. 
-					</div>
+			<div class="video-title">
+				
+				<div class="intro-module-title font-alt white">
+					<a href="https://www.youtube.com/watch?v=i26eE0_KHTI" class="video-pop-up white"><span class="sbuicon-play-circle"></span> Blackboard</a>
+				</div>
+				<div class="intro-module-subtitle font-serif white no-padding">
+					Learn more about Blackboard watching this video. 
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
 
-
-<section class="intro-module video-img-position overlay-gray" data-background="https://farm8.staticflickr.com/7697/16667445844_efebcc6724_k_d.jpg">
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-sm-12">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 intro-module video-img-position overlay-gray" data-background="https://farm8.staticflickr.com/7697/16667445844_efebcc6724_k_d.jpg">
 
 				<div class="video-title">
 					
@@ -1444,36 +1569,27 @@ Video
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
-<section class="intro-module video-img-position overlay-gray" data-background="https://farm8.staticflickr.com/7697/16667445844_efebcc6724_k_d.jpg">
-	<div class="container">
 
-		<div class="row">
+<div class="container-fluid">
 
-			<div class="col-sm-12">
+	<div class="row">
 
-				<div class="video-title">
-					
-					<div class="intro-module-title font-alt white">
-						<a href="https://www.youtube.com/watch?v=i26eE0_KHTI" class="video-pop-up white"><span class="sbuicon-play-circle"></span>Lynda.com</a>
-					</div>
-					<div class="intro-module-subtitle font-serif white no-padding">
-						Learn more about Lynda.com watching this video. 
-					</div>
+		<div class="intro-module col-xs-12 col-sm-6 col-md-6 col-lg-6 video-img-position overlay-gray" data-background="https://farm4.staticflickr.com/3874/14345265045_9789ef49e1_k_d.jpg">
+
+			<div class="video-title">
+				
+				<div class="intro-module-title font-alt white">
+					<a href="https://www.youtube.com/watch?v=i26eE0_KHTI" class="video-pop-up white"><span class="sbuicon-play-circle"></span>Lynda.com</a>
+				</div>
+				<div class="intro-module-subtitle font-serif white no-padding">
+					Learn more about Blackboard watching this video. 
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
 
-
-<section class="intro-module video-img-position overlay-gray" data-background="https://farm8.staticflickr.com/7697/16667445844_efebcc6724_k_d.jpg">
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-sm-12">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 intro-module video-img-position overlay-gray" data-background="https://farm8.staticflickr.com/7697/16667445844_efebcc6724_k_d.jpg">
 
 				<div class="video-title">
 					
@@ -1481,14 +1597,14 @@ Video
 						<a href="https://www.youtube.com/watch?v=i26eE0_KHTI" class="video-pop-up white"><span class="sbuicon-play-circle"></span>echo360</a>
 					</div>
 					<div class="intro-module-subtitle font-serif white no-padding">
-						Learn more about Lynda.com watching this video. 
+						Learn more about SB YOU watching this video. 
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </section>
-
 
 
 <section id="cybersecurity" class="intro-module background-dark-gray">
