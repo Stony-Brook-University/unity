@@ -13,11 +13,11 @@ General Styles
 ------------------------------------------------------------------- */
 
 
-.align-center {
+.text-center {
 	text-align: center !important;
 }
 
-.align-left {
+.text-left {
 	text-align: left !important;
 }
 
@@ -25,10 +25,6 @@ General Styles
 
 	height: 90px;
 	line-height: 90px;
-}
-
-.position-relative {
-	position: relative;
 }
 
 .leftauto {
@@ -58,6 +54,14 @@ General Styles
 	padding-left: 70px;
 }
 
+.padding-btm-0 {
+    padding-bottom: 0px !important;
+}
+
+.padding-0{
+   padding: 0 !important;
+}
+
 .background-dark-gray a {
 	color: #aaa;
 }
@@ -66,17 +70,6 @@ General Styles
 	color: #fff;
 }
 
-.overlay-gray:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(51,51,51,0.5);
-}
 
 .offset-block
 
@@ -400,10 +393,11 @@ Button Styles
 ------------------------------------------------------------------- */
 
 .login-button-white {
-	font-size: 20px;
+  font-size: 20px;
   font-weight: 500;
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; 
   padding: 10px 20px;
   line-height: 1.7em;
   background: transparent;
@@ -724,7 +718,6 @@ Video
   width: 100%;
   height: auto;
 }
-
 .iPadContent  {
   float: none;
   clear: both;
@@ -734,17 +727,12 @@ Video
   padding-top: 25px;
   height: 0;
 }
-
 .iPadVideo {
-
 	position: absolute;
 	height: 100%;
 	width: 100%;
-
+	padding: 3% 3% 10% 10%;
 }
-
-
-
 
 .video-frame {
 	position: static;
@@ -787,6 +775,18 @@ Video
 }
 
 </style>
+
+<script type="text/javascript">
+$(function() {
+    $('.callout-btn-box a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top 
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+</script>
 
 <section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm3.staticflickr.com/2950/15301051890_40ea1c95dd_k_d.jpg">
 	<div class="container">
@@ -930,7 +930,7 @@ Video
 	</div>
 </section>
 
-<section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm4.staticflickr.com/3941/15487768325_4407b8140c_k_d.jpg">
+<section class="intro-module video-img-position-50 overlay-gray padding-btm-0" data-background="https://farm4.staticflickr.com/3941/15487768325_4407b8140c_k_d.jpg">
 
 	<div class="container">
 
@@ -1329,17 +1329,25 @@ Video
 
 		<div class="row">
 
-			<div class="col-xs-10 col-xs-offset-1" class="movieSection">    
+			<div class="col-xs-10 col-md-10 col-md-offset-1" class="movieSection">    
+
 				<img class="iPadFrame" src="images/student-og/ipadplayer.png" alt="iPad Video Frame">
+
 					<div class="iPadContent">
 						
 
 						<iframe class="iPadVideo" src="https://www.youtube.com/embed/rK7EQsF7h88" frameborder="0" allowfullscreen></iframe>
+
 					</div>
+
 				</img>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </section>
 
 <section id="software" class="intro-module">
@@ -1607,7 +1615,7 @@ Video
 </section>
 
 
-<section id="cybersecurity" class="intro-module background-dark-gray">
+<section id="cybersecurity" class="intro-module">
 
 	<div class="vbar">
 		
@@ -1617,9 +1625,9 @@ Video
 
 				<div class="col-sm-12">
 
-					<h2 class="intro-module font-alt white">Cybersecurity</h2>
+					<h2 class="intro-module font-alt">Cybersecurity</h2>
 							
-					<div class="intro-module-subtitle font-serif white">
+					<div class="intro-module-subtitle font-serif">
 						Email phishing scams and the spread of malware are commonplace online, especially on college campuses.
 					</div>
 				</div>
@@ -1673,11 +1681,11 @@ Video
         </div>
 
 	        <div class="row">
-	            <div class="col-md-4 nopadding">
+	            <div class="col-md-4 padding-0">
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-blue">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1686,11 +1694,11 @@ Video
 	                    </div>
 	                </div>
 	            </div>
-	            <div class="col-md-4 nopadding">
+	            <div class="col-md-4 padding-0">
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-lime-green">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1699,11 +1707,11 @@ Video
 	                    </div>
 	                </div>
 	            </div>
-	            <div class="col-md-4 nopadding">
+	            <div class="col-md-4 padding-0">
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-alizarin">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-university fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1713,11 +1721,11 @@ Video
 	                </div>
 	            </div>
 	          
-	            <div class="col-md-4 nopadding">
+	            <div class="col-md-4 padding-0">
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-amethyst">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-calculator fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1726,11 +1734,11 @@ Video
 	                    </div>
 	                </div>
 	            </div>    
-	            <div class="col-md-4 nopadding">    
+	            <div class="col-md-4 padding-0">    
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-sun">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1739,11 +1747,11 @@ Video
 	                    </div>
 	                </div>
 	            </div>    
-	            <div class="col-md-4 nopadding">
+	            <div class="col-md-4 padding-0">
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-river">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-star fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1753,7 +1761,7 @@ Video
 	                </div>
 	            </div>
 	          
-	            <div class="col-md-4 nopadding">
+	            <div class="col-md-4 padding-0">
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-asphalt">
 	                        <span class="fa-stack fa-2x">
@@ -1766,11 +1774,11 @@ Video
 	                    </div>
 	                </div>
 	            </div> 
-	            <div class="col-md-4 nopadding">   
+	            <div class="col-md-4 padding-0">   
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-green">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-user fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
@@ -1779,11 +1787,11 @@ Video
 	                    </div>
 	                </div>
 	            </div>
-	            <div class="col-md-4 nopadding">    
+	            <div class="col-md-4 padding-0">    
 	                <div class="media padding-1em" data-match-height="items-h">
 	                    <div class="pull-left icon-square-bg bg-aqua">
 	                        <span class="fa-stack fa-2x">
-	                              <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
+	                              <i class="fa fa-book fa-stack-1x fa-inverse"></i>
 	                        </span> 
 	                    </div>
 	                    <div class="media-body bg-white effect6 padding-1em">
