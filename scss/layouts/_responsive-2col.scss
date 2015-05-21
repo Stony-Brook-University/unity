@@ -1,0 +1,20 @@
+.panel-layout-responsive-2col {
+    #right-prefix {
+        margin-bottom: 2em;
+
+        @include breakpoint($screen-md) {
+            float: right;
+        }
+    }
+
+    #right-prefix, #right-postfix {
+        h2 {
+            font-size: 1.6em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

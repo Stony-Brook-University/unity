@@ -1,36 +1,20 @@
-.pane-contact-mini-panel
-{
+.contact-card {
+    width: 40%;
+    border: 1px solid #ccc;
+    padding: 1em;
 
-	width: 40%;
-	border: 1px solid #ccc;
-	padding: 1em;
-
-	.panel-title-div
-	{
-		h2
-		{
-			margin-top: 0px;
-		}
-	}
-
-	.panel-2col-stacked
-	{
-		.panel-col-first
-		{
-			width: 120px;
-
-			/*img
-			{
-				margin: 0 auto 20px;
-				display: block;
-				border: 0 solid #eee;
-				border-radius: 50px;
-				box-shadow: 0 0 14px #000;
-			}*/
-		}
-		.panel-col-last
-		{
-			width: auto;
-		}
-	}
+    h2 {
+        margin-top: 0px;
+    }
+    /*
+        .panel-2col-stacked {
+            .panel-col-first {
+                width: 120px;
+            }
+    
+            .panel-col-last {
+                width: auto;
+            }
+        }
+       */
 }

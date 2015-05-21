@@ -1,0 +1,43 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    background: #fff;
+}
+
+body {
+    font-size: 14px;
+}
+
+.main-content-wrap {
+    margin: 2em 0;
+}
+
+.unity-no-sidebars {
+    #main-prefix {
+        display: none;
+    }
+
+    #main-suffix {
+        display: none;
+    }
+
+    #main-content {
+        @include make-sm-column(12);
+    }
+}
+
+.unity-sidebar-prefix {
+    #main-prefix {
+        @include make-lg-column(3);
+
+        h2 {
+            font-size: 1.6em;
+        }
+    }
+
+    #main-content {
+        @include make-lg-column(9);
+    }
+}
+
+@import "responsive-2col";
