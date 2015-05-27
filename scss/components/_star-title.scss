@@ -1,42 +1,39 @@
-.star-title
-{
-	.panel-title-div
-	{
-	 	background-color: #000;
-	 	height: 34px;
-	 	border-top-right-radius: 15px;
+.star-title {
+    .panel-title-div {
+        background-color: #000;
+        height: 34px;
+        border-top-right-radius: 15px;
+    }
 
+    .panel-title-div h2 {
+        padding: 3px 10px;
+        color: #fff;
+        border: 0px;
+        font-family: Calibri;
+        font-weight: normal;
+        font-size: 1.7em;
+    }
 
-	}
+    .panel-title-red-bar {
+        background-image: url("../assets/images/star-title/red-star.gif");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        height: 13px;
+        background-color: #990000;
+    }
 
-	.panel-title-div h2
-	{
-		padding: 3px 10px;
-		color: #fff;
-		border: 0px;
-		font-family: Calibri;
-		font-weight: normal;
-	}
+    .panel-title-red-triangle {
+        background-image: url("../assets/images/star-title/red-triangle.gif");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        color: #fff;
+        height: 15px;
+        margin-bottom: 5px;
+    }
+}
 
-	.panel-title-red-bar
-	{
-		background-image: url('/sites/all/themes/custom/unity/stylesheets/images/red-star.gif');
-	 	background-repeat: no-repeat;
-	 	background-position: 0px 0px;
-		height: 13px;
-		background-color: #990000;
-	}
-
-	.panel-title-red-triangle
-	{
-
-	 	background-image: url('/sites/all/themes/custom/unity/stylesheets/images/red-triangle.gif');
-	 	background-repeat: no-repeat;
-	 	background-position: 0px 0px;
-		color: #fff;
-		height: 15px;
-
-		margin-bottom: 5px;
-
-	}
+.sub-star-pane {
+    h2 {
+        font-size: 1.5em;
+    }
 }

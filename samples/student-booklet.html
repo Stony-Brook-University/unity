@@ -14,11 +14,11 @@ General Styles
 ------------------------------------------------------------------- */
 
 
-.align-center {
+.text-center {
 	text-align: center !important;
 }
 
-.align-left {
+.text-left {
 	text-align: left !important;
 }
 
@@ -31,10 +31,6 @@ General Styles
 
 	height: 90px;
 	line-height: 90px;
-}
-
-.position-relative {
-	position: relative;
 }
 
 .leftauto {
@@ -94,6 +90,14 @@ General Styles
 	padding-bottom: 50px !important;
 }
 
+.padding-btm-0 {
+    padding-bottom: 0px !important;
+}
+
+.padding-0{
+   padding: 0 !important;
+}
+
 .background-dark-gray a {
 	color: #aaa;
 }
@@ -102,17 +106,6 @@ General Styles
 	color: #fff;
 }
 
-.overlay-gray:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(51,51,51,0.5);
-}
 
 
 .overlay-river:before{
@@ -492,9 +485,14 @@ Button Styles
 
 .login-button {
 	font-size: 20px;
+
+.login-button-white {
+  font-size: 20px;
+
   font-weight: 500;
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; 
   padding: 10px 20px;
   line-height: 1.7em;
   background: transparent;
@@ -875,7 +873,6 @@ Video
   width: 100%;
   height: auto;
 }
-
 .iPadContent  {
   float: none;
   clear: both;
@@ -885,17 +882,12 @@ Video
   padding-top: 25px;
   height: 0;
 }
-
 .iPadVideo {
-
 	position: absolute;
 	height: 100%;
 	width: 100%;
-
+	padding: 3% 3% 10% 10%;
 }
-
-
-
 
 .video-frame {
 	position: static;
@@ -940,7 +932,24 @@ Video
 
 </style>
 
+
 <section class="">
+
+<script type="text/javascript">
+$(function() {
+    $('.callout-btn-box a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top 
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+</script>
+
+<section class="intro-module video-img-position-50 overlay-gray" data-background="https://farm3.staticflickr.com/2950/15301051890_40ea1c95dd_k_d.jpg">
+	<div class="container">
+
 
 	<div class="container-fluid">
 
@@ -1020,9 +1029,24 @@ Video
 			<div class="col-sm-12">
 
 				<hr class="featurette-divider">
+
 				
 				<p class="font-alt-medium white ptb-50 centered">SOLAR is your one stop shop to take care of all your administrative tasks here at Stony Brook. Take a moment to find out more about what you will be using SOLAR for during your time here at Stony Brook University.
 				</p>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="intro-module video-img-position-50 overlay-gray padding-btm-0" data-background="https://farm4.staticflickr.com/3941/15487768325_4407b8140c_k_d.jpg">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="animated fadeInRight col-md-6 col-lg-6 hidden-xs hidden-sm centered">
+
 
 			</div>
 
@@ -1283,10 +1307,17 @@ Video
 
 		<div class="row">
 
+=
 			<div class="col-sm-12">
 
 				<h2 class="font-alt white centered">Mobile Digital Now</h2>
-						
+
+			<div class="col-xs-10 col-md-10 col-md-offset-1" class="movieSection">    
+
+				<img class="iPadFrame" src="images/student-og/ipadplayer.png" alt="iPad Video Frame">
+
+					<div class="iPadContent">
+
 				<p class="font-alt-medium ptb-50 white centered">
 					Mobile Digital Now is a Stony Brook University initiative designed to bring the power of mobile technology into the classroom.
 				</p>
@@ -1315,9 +1346,20 @@ Video
 				<div class="col-sm-12">
 					<a href="#"><h4 class="login-button login-button__text-white">Learn More About MDN</h4></a>
 				</div>
+=======
+						<iframe class="iPadVideo" src="https://www.youtube.com/embed/rK7EQsF7h88" frameborder="0" allowfullscreen></iframe>
+
+					</div>
+
+				</img>
+
+>>>>>>> 9d9090f39a2c4310d9fa4d1e296f91f1cade78ce
 			</div>
+
 		</div>
+
 	</div>
+
 </section>
 
 <section id="software" class="intro-module">
@@ -1524,7 +1566,11 @@ Video
 
 <section class="">
 
+
 	<div class="container-fluid">
+
+<section id="cybersecurity" class="intro-module">
+
 
 		<div class="row position-relative m-0">
 
@@ -1532,9 +1578,205 @@ Video
 
 				<h2 class="font-alt align-left no-padding">Need Assistance?</h2>
 
+
 				<hr class="featurette-divider">
 				
 				<p class="font-alt-medium pb-50">
+
+					<h2 class="intro-module font-alt">Cybersecurity</h2>
+							
+					<div class="intro-module-subtitle font-serif">
+						Email phishing scams and the spread of malware are commonplace online, especially on college campuses.
+					</div>
+				</div>
+			</div>
+			<div class="row">
+            <div class="col-lg-12">
+
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#BLACKBOARD" data-toggle="tab"><i class="fa fa-database"></i> BLACKBOARD</a>
+                    </li>
+                    <li class=""><a href="#ECHO360" data-toggle="tab"><i class="fa fa-database"></i> ECHO360</a>
+                    </li>
+                    <li class=""><a href="#LYNDA" data-toggle="tab"><i class="fa fa-database"></i> LYNDA</a>
+                    </li>
+                    <li class=""><a href="#CLICKERS" data-toggle="tab"><i class="fa fa-database"></i> CLICKERS</a>
+                    </li>
+                    <li class=""><a href="#SBYOU" data-toggle="tab"><i class="fa fa-database"></i> SB YOU</a>
+                    </li>
+                    <li class=""><a href="#EVALUATIONS" data-toggle="tab"><i class="fa fa-database"></i> COURSE EVALUATIONS</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="BLACKBOARD">
+                        <h4>BLACKBOARD</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                    <div class="tab-pane fade" id="ECHO360">
+                        <h4>ECHO360</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                    <div class="tab-pane fade" id="LYNDA">
+                        <h4>LYNDA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                    <div class="tab-pane fade" id="CLICKERS">
+                        <h4>CLICKERS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                    <div class="tab-pane fade" id="SBYOU">
+                        <h4>SB YOU</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                    <div class="tab-pane fade" id="EVALUATIONS">
+                        <h4>COURSE EVALUATIONS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+	        <div class="row">
+	            <div class="col-md-4 padding-0">
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-blue">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Blackboard</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4 padding-0">
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-lime-green">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Echo360</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4 padding-0">
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-alizarin">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-university fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Lynda</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>
+	          
+	            <div class="col-md-4 padding-0">
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-amethyst">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-calculator fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Clickers</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>    
+	            <div class="col-md-4 padding-0">    
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-sun">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">SB You</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>    
+	            <div class="col-md-4 padding-0">
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-river">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Online Course Evaluations</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>
+	          
+	            <div class="col-md-4 padding-0">
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-asphalt">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Studymate Class</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div> 
+	            <div class="col-md-4 padding-0">   
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-green">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Digication ePortfolio</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4 padding-0">    
+	                <div class="media padding-1em" data-match-height="items-h">
+	                    <div class="pull-left icon-square-bg bg-aqua">
+	                        <span class="fa-stack fa-2x">
+	                              <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+	                        </span> 
+	                    </div>
+	                    <div class="media-body bg-white effect6 padding-1em">
+	                        <h4 class="media-heading">Library Journals</h4>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>			
+			<div class="col-sm-6 col-md-3">
+
+				<div class="bar-item">
+					<div class="bar">
+
+						<div class="vertical-bar">
+							<div class="vbar-fill background-turquoise" data-limit="95"><span></span></div>
+						</div>
+					</div>
+					<div class="details">
+						<p><a href="#">Sample Stat</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-3">
+
 
 				Use the links below to find answers to your questions 
 				

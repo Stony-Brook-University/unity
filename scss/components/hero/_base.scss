@@ -1,7 +1,7 @@
-.hero
+/*.hero
 {
 
-	    font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: #000;
     -webkit-background-size: cover;
@@ -37,12 +37,10 @@ width: 100%;
             margin: auto;
         }
       }
-}
+}*/
 
-
-
-@import 'hero-bottom-fade';
-@import 'hero-minimal';
-@import 'hero-contact-card';
-@import 'hero-events';
-@import 'hero-height-800';
+@import "hero-bottom-fade";
+@import "hero-minimal";
+@import "hero-contact-card";
+@import "hero-events";
+@import "hero-height-800";

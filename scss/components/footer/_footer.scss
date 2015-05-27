@@ -1,161 +1,164 @@
-footer .top-footer {
-    display: block;
+.site-footer {
     background: #252525;
-    color: #ccc;
-    border-bottom: 1px solid #aaa;
-    padding: 40px 0;
-    font-family: 'Trade Gothic Next W01';
-    font-size: 1em;
-    position: relative;
-    z-index: 1;
-}
 
-footer .bottom-footer {
-    display: block;
-    background: #121212;
-    color: #ccc;
-    padding: 40px 0;
-    font-family: 'Trade Gothic Next W01';
-    font-size: 1em;
-    position: relative;
-    z-index: 1;
-}
+    .top-footer {
+        display: block;
+        background: #252525;
+        color: #ccc;
+        border-bottom: 1px solid #aaa;
+        padding: 40px 0;
+        font-family: 'Trade Gothic Next W01';
+        font-size: 1em;
+        position: relative;
+        z-index: 1;
 
-footer.site-footer {}
+        h1, h2, h3, h4, h5 {
+            color: #eee;
+        }
 
-footer.site-footer .col-4 .code {
-    display: block;
-}
+        h1 {
+            font-size: 2em;
+        }
 
-footer.site-footer .address,
-footer.site-footer .address a,
-footer.site-footer .codes {
-    line-height: 1.7em;
-}
+        h2 {
+            font-size: 1.7em;
+        }
 
-footer.site-footer .codes {
-    display: block;
-    line-height: 1.7em;
-    width: 200px;
-    margin: 0 auto;
-    border: 1px solid #000;
-    padding: 10px 0;
-    background: #191919;
-}
-
-footer.site-footer .address .serif-italic,
-footer.site-footer .codes .serif-italic {
-    font-size: 1.3em;
-    line-height: 1.4em;
-    margin: 0 0 4px;
-    display: block;
-}
-
-footer.site-footer a {
-    color: #ccc;
-}
-
-footer.site-footer a:hover {
-    color: #fff;
-}
-
-footer.site-footer .address-link .icon {
-    display: inline-block;
-    margin: 0 6px 0 0;
-    font-size: 1.2em;
-}
-
-footer.site-footer .small-button,
-footer.site-footer .phone a,
-.footer-bar span a {
-    font-size: .8em;
-    display: inline-block;
-    padding: 1px 8px 3px;
-    border: 1px solid #383838;
-    margin: 8px auto;
-    background: #222;
-    border-radius: 3px;
-}
-
-footer.site-footer .phone {
-    display: block;
-}
-
-footer.site-footer .phone a {
-    color: #ddd;
-    width: 100px;
-    padding-top: 0px 8px 1px;
-}
-
-footer.site-footer .col-1 a:after {
-    display: inline-block;
-    content: "\f105";
-    margin: 0 0 0 8px;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    z-index: 1;
-    font-size: 1em;
-}
-
-footer.site-footer a.external-link:hover:after {
-    content: "\f08e";
-}
-
-footer.site-footer .social h5 {
-    font-size: 1.4em;
-    font-family: 'ITCFranklinGothicW01-Md 812695';
-    text-transform: uppercase;
-    margin: 0 0 15px;
-    color: #ccc;
-}
-
-footer.site-footer .social-links a {
-    display: inline-block;
-    padding: 10px 10px 0;
-    margin: 0 4px;
-    width: 42px;
-    height: 42px;
-    border-radius: 21px;
-    border: 1px solid #383838;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 1.4em;
-    line-height: 0;
-}
-
-footer.site-footer .social-links a em {
-    text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
-}
-
-footer.site-footer .social-links a:hover em {
-    color: #fff;
-}
-
-footer.site-footer .social .small-button {
-    margin: 15px 0 5px;
-}
-
-footer.site-footer .social .small-button:after {
-    content: " ";
-}
-
-.footer-links {
-    @include breakpoint($screen-md) {
-        text-align: left;
+        h3 {
+            font-size: 1.2em;
+        }
     }
-}
 
-footer .col {
-    margin: 3em 0;
+    .bottom-footer {
+        display: block;
+        background: #121212;
+        color: #ccc;
+        padding: 1em 0;
+        font-family: 'Trade Gothic Next W01';
+        font-size: 1em;
+        position: relative;
+        z-index: 1;
+    }
 
-    @include breakpoint($screen-md) {
-        margin: 1em 0;
+    ul.menu {
+        li {
+            list-style-image: none;
+            list-style-type: none;
+            margin-left: 0;
+
+            a:after {
+                display: inline-block;
+                content: "\f105";
+                margin: 0 0 0 8px;
+                @extend .sbuicon;
+                position: relative;
+                z-index: 1;
+                font-size: 1em;
+            }
+        }
+    }
+
+    .address, .address a, .codes {
+        line-height: 1.7em;
+    }
+
+    .codes {
+        display: block;
+        line-height: 1.7em;
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        padding: 10px 0;
+        background: #191919;
+    }
+
+    .address .serif-italic,
+    .codes .serif-italic {
+        font-size: 1.3em;
+        line-height: 1.4em;
+        margin: 0 0 4px;
+        display: block;
+    }
+
+    a {
+        color: #ccc;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .address-link .icon {
+        display: inline-block;
+        margin: 0 6px 0 0;
+        font-size: 1.2em;
+    }
+
+    .small-button,
+    .phone a,
+    .footer-bar span a {
+        font-size: .8em;
+        display: inline-block;
+        padding: 1px 8px 3px;
+        border: 1px solid #383838;
+        margin: 8px auto;
+        background: #222;
+        border-radius: 3px;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .phone a {
+        color: #ddd;
+        width: 100px;
+        padding-top: 0px 8px 1px;
+    }
+
+    .social h5 {
+        font-size: 1.4em;
+        font-family: 'ITCFranklinGothicW01-Md 812695';
+        text-transform: uppercase;
+        margin: 0 0 15px;
+        color: #ccc;
+    }
+
+    .social-links a {
+        display: inline-block;
+        padding: 10px 10px 0;
+        margin: 0 4px;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        border: 1px solid #383838;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 1.4em;
+        line-height: 0;
+    }
+
+    .social-links a em {
+        text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
+    }
+
+    .social-links a:hover em {
+        color: #fff;
+    }
+
+    .social .small-button {
+        margin: 15px 0 5px;
+    }
+
+    .social .small-button:after {
+        content: " ";
+    }
+
+    .footer-links {
+        @include breakpoint($screen-md) {
+            text-align: left;
+        }
     }
 }

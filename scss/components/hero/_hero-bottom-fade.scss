@@ -1,12 +1,9 @@
 .hero-bottom-fade {
-
-    .hero-image
-    {
-         -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    
+    .hero-image {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         height: 550px;
     }
 
@@ -15,6 +12,7 @@
         color: #fff;
         background: none;
         background-color: #fff;
+
         @include breakpoint($break-phone) {
             margin: 0;
             padding: 1em 2em;
@@ -41,21 +39,23 @@
             /* IE6-9 */
         }
 
+        h1, h2, h3, h4, h5, h6 {
+            color: #fff;
+        }
+
         .hero-content-text {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1em;
 
-            h1
-            {
-            	font-size: 1.7em;
+            h1 {
+                font-size: 1.7em;
+                color: #fff;
 
-            	@include breakpoint($break-phone)
-            	{
-            		font-size: 2em;
-            	}
+                @include breakpoint($break-phone) {
+                    font-size: 2.5em;
+                }
             }
         }
-
     }
 }

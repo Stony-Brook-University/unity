@@ -6,23 +6,12 @@
 
 @import "libraries/breakpoint/breakpoint";
 @import "libraries/bootstrap/bootstrap";
-
-////////////////////////
-// Base Import
-////////////////////////
 @import "global/base";
 
-////////////////////////
-// Import Third
-////////////////////////
 @import "libraries/base";
 
-////////////////////////
-// Import Design
-////////////////////////
+@import "layouts/base";
+
 @import "elements/base";
 
-////////////////////////
-// Import Design
-////////////////////////
 @import "components/base";
