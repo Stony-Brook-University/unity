@@ -1,0 +1,76 @@
+
+
+
+
+/* -------------------------------------------------------------------
+Responsive Media Querries
+------------------------------------------------------------------- */
+
+
+@media (max-width: 768px) {
+
+	.clear-box {
+		margin: 25px 20px;
+}
+}	
+
+
+@media (max-width: 500px) {
+
+	.clear-box {
+		padding: 25px 20px;
+		margin-top:50px;
+	}
+
+	.clear-box h2{
+		font-size:25px;
+	}
+}
+
+.clear-box p {
+
+	color:#fff;
+}
+
+@media (max-width:767px){
+	.clear-box{
+
+		margin-left:20px;
+		margin-right:20px;
+	}
+}
+
+
+/* -------------------------------------------------------------------
+Clear Box
+------------------------------------------------------------------- */
+
+.clear-box{
+
+	margin: 15px 0 30px;
+	padding: 20px 20px;
+	background:rgba(255,255,255,0.2);
+	border:1px solid rgba(255,255,255,0.5);
+	border-radius:4px;
+	box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.clear-box ul li{
+	list-style: disc;
+	list-style-position: inside;
+	color: #fff;
+	
+}
+
+.clear-box ul li a{
+
+	color: #fff;
+	text-decoration: underline;
+	
+}
+
+.clear-box ul li a:hover{
+	
+	color: #111;
+	
+}

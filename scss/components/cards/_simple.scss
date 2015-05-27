@@ -1,0 +1,51 @@
+/* -------------------------------------------------------------------
+Simple Card
+------------------------------------------------------------------- */
+
+.simple__card {
+	background: transparent;
+	border: 1px solid #eaeaea;
+	padding: 25px 20px;
+	margin: 15px 0 30px;
+	border-radius: 2px;
+	text-align: left;
+}
+
+.simple__card.best {
+	margin: 0 0 30px;
+	border-color: #990000	;
+}
+
+.simple__card .small {
+	margin: 0;
+}
+
+.borderline {
+	position: relative;
+	background: #eaeaea;
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 20px 0 15px;
+}
+
+.simple__card h4 {
+	color: #111;
+	margin: 0;
+}
+
+
+.simple__card-details {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 23px;
+}
+
+.simple__card-details li {
+	padding: 7px 0;
+}
+
+.simple__card-details li > span {
+	text-decoration: line-through;
+	color: #aaa;
+}

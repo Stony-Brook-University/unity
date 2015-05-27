@@ -1,0 +1,23 @@
+.side-image {
+  position: absolute;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.side-image__text {
+	padding: 80px 60px 80px;
+}
+
+@media (max-width: 991px) {
+
+.side-image {
+  position: relative;
+  height: 300px;
+
+}
+}

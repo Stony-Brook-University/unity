@@ -1,0 +1,56 @@
+/* -------------------------------------------------------------------
+Blurbs
+------------------------------------------------------------------- */
+
+.blurb__item {
+	margin: 20px 0;
+	text-align: left;
+}
+
+.blurb__icon,
+.blurb__icon {
+	line-height: 1.2;
+	font-size: 42px;
+	color: #111;
+}
+
+
+.blurb__title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #111;
+	font-size: 13px;
+	margin: 0 0 10px;
+}
+
+.blurb__item {
+	position: relative;
+	padding-left: 55px;
+	margin: 65px 0 0 0;
+	text-align: left;
+}
+
+.blurb__icon {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 28px;
+	display: inline-block;
+	line-height: 1;
+}
+
+@media (max-width: 1200px) {
+
+	/* blurb */
+
+	.blurb__item {
+		margin: 20px 0 0;
+	}
+
+}
