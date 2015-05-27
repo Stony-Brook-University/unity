@@ -1,956 +1,16 @@
 <!--#include file="includes/headers/header.html" -->
 
 <style>
-
-/*
-
-Stylings for the Student Orientation Guide Only
-
-*/
-
-
-/* ------------------------------------------------------------------
-General Styles
-------------------------------------------------------------------- */
-
-
-.align-center {
-	text-align: center !important;
+.container-fluid {
+	padding: 0;
 }
-
 .align-left {
 	text-align: left !important;
 }
-
-.fit-img {
-	width: 100%; 
-	height: auto !important;
-}
-
-.vcenter { 
-
-	height: 90px;
-	line-height: 90px;
-}
-
 .position-relative {
 	position: relative;
 }
-
-.leftauto {
-	right: 0 !important;
-	left: auto !important;					
-}
-
-.side-image {
-  position: absolute;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.height-300 {
-
-	min-height: 300px !important;
-}
-
-.side-image__text {
-	padding: 80px 60px 80px;
-}
-
-.position-relative {
-	position: relative;
-}
-
-.m-0 {
-	margin: 0px !important!;
-}
-
-.pt-0 {
-	padding-top: 0px !important;
-}
-
-.pb-0 {
-	padding-bottom: 0px !important;
-}
-
-.pb-50 {
-
-	padding-bottom: 50px !important;
-}
-
-.pt-70 {
-
-	padding-top: 70px !important;
-}
-
-.ptb-50 {
-
-	padding-top: 50px !important;
-	padding-bottom: 50px !important;
-}
-
-.background-dark-gray a {
-	color: #aaa;
-}
-
-.background-dark-gray a:hover, .background-dark-gray a:focus {
-	color: #fff;
-}
-
-.overlay-gray:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(51,51,51,0.5);
-}
-
-
-.overlay-river:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(52,152,219,0.5);
-}
-
-.overlay-turquoise:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(26,188,156,0.5);
-}
-
-.overlay-red:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(153,0,0,0.5);
-}
-
-.offset-block
-
- {
-    padding: 100px 60px 50px;
-    color: #333;
-}
-
-@media(max-width:768px) {
-    .offset-block
-					{
-        padding: 50px 20px 50px;
-    }
-}
-
-
-.feature {
-  position: relative;
-  padding-left: 60px;
-}
-
-.feature__icon {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  padding-right: 10;
-  top: 0;
-  text-align: center;
-  line-height: 50px;
-  font-size: 32px;
- }
-
-
-
-/* ------------------------------------------------------------------
-Call To Action
-------------------------------------------------------------------- */
-
-.call-to-action {
-
-	position: relative;
-	padding: 50px;
-
-}
-
-.call-to-action__blurb {
-
-	font-family: 'Trade Gothic Next W01', Arial, sans-serif;
-	font-size: 20px;
-	line-height: 1.4em;
-
-}
-
-.call-to-action__feature {
-	
-	position: relative;
-	padding-left: 60px;
-
-}
-
-.call-to-action__feature-icon {
-	
-position: absolute;
-height: 50px;
-width: 50px;
-left: 0;
-top: 0;
-text-align: center;
-
-font-size: 32px;
-
-}
-
-
-.call-to-action__link {
-
-	color: rgba(255,255,255, .7);
-
-}
-
-.call-to-action__link:hover {
-
-	color: rgba(255,255,255,1)
-
-}
-
-
-/* ------------------------------------------------------------------
-Accordion
-------------------------------------------------------------------- */
-
-.panel-group .panel {
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-		 -o-border-radius: 2px;
-			border-radius: 2px;
-}
-.panel-title {
-	font-size: 14px;
-}
-
-.panel-body li {
-	text-align: left;
-}
-
-.panel-heading a {
-	position: relative;
-	display: block;
-}
-
-.panel-heading a:after {
-	position: absolute;
-	content: "\f106";
-	top: 50%;
-	right: 0px;
-	font-family: "FontAwesome";
-	line-height: 1;
-	font-size: 14px;
-	margin-top: -7px;
-}
-
-.panel-heading a.collapsed:after {
-	content: "\f107";
-}
-
-
-/* ------------------------------------------------------------------
-Typography
-------------------------------------------------------------------- */
-
-
-.font-serif {
-	font-family: "CenturyExpd BT Roman", serif;	
-	font-style: italic;
-}
-
-.font-alt {
-	font-family: 'Trade Gothic Next W01', Arial, sans-serif;
-	line-height: 1.7em;
-}
-
-.font-alt-medium {
-	font-family: 'Trade Gothic Next W01', Arial, sans-serif;
-	font-size: 20px;
-	line-height: 1.7em;
-}
-
-
-
-
-/* -------------------------------------------------------------------
-Intro Module
-------------------------------------------------------------------- */
-
-
-.intro-module {
-position: relative;
-padding: 50px 0;
-}
-
-.intro-module-title {
-	position: relative;
-	letter-spacing: 4px;
-	text-align: center;
-	font-weight: 400;
-	font-size: 30px;
-	color: #111;
-	margin: 0 0 70px;
-}
-
-.intro-module-subtitle {
-	text-align: center;
-	font-size: 18px;
-	color: #111;
-	margin-bottom: 70px;
-	line-height: 1.7em;
-}
-
-.intro-module-icon {
-	text-align: center;
-	font-size: 32px;
-	margin-bottom: 20px;
-}
-
-.intro-module-title + .intro-module-subtitle {
-	margin-top: -35px;
-}
-
-.intro-module-title-link {
-
-	color: #990000;
-}
-
-.intro-module-title-link:hover {
-
-	color: #111;
-}
-
-
-
-/* -------------------------------------------------------------------
-Services, Content box
-------------------------------------------------------------------- */
-
-.blurb-item {
-	margin: 20px 0;
-	text-align: left;
-}
-
-.blurb-icon,
-.blurb-icon {
-	line-height: 1.2;
-	font-size: 42px;
-	color: #111;
-}
-
-.blurb-title,
-.blurb-title {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 400;
-	font-size: 14px;
-	color: #111;
-	margin: 16px 0 15px;
-}
-
-.blurb-item {
-	position: relative;
-	padding-left: 55px;
-	margin: 65px 0 0 0;
-	text-align: left;
-}
-
-.blurb-icon {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	left: 0;
-	top: 0;
-	text-align: center;
-	line-height: 40px;
-	font-size: 28px;
-	display: inline-block;
-	line-height: 1;
-}
-
-.blurb-title {
-	font-size: 13px;
-	margin: 0 0 10px;
-}
-
-
-
-/* -------------------------------------------------------------------
-Vertical Align Bottom Image
-------------------------------------------------------------------- */
-
-.align-btm {
-
-	vertical-align: bottom;
-}
-
-/* -------------------------------------------------------------------
-Half-Content
-------------------------------------------------------------------- */
-
-.half-content__red {
-	position: absolute;
-	height: 100%;
-	background-color: #990000;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-}
-
-.half-content__text {
-	background: #fff;
-	border-top: 1px solid #e5e5e5;
-	border-bottom: 1px solid #e5e5e5;
-	padding: 140px 60px 60px 50px;
-}
-
-/* -------------------------------------------------------------------
-Simple Table
-------------------------------------------------------------------- */
-
-.simple-table {
-	background: transparent;
-	border: 1px solid #eaeaea;
-	padding: 25px 20px;
-	margin: 15px 0 30px;
-	border-radius: 2px;
-	text-align: left;
-}
-
-.simple-table.best {
-	margin: 0 0 30px;
-	border-color: #990000	;
-}
-
-.simple-table .small {
-	margin: 0;
-}
-
-.borderline {
-	position: relative;
-	background: #eaeaea;
-	display: block;
-	height: 1px;
-	width: 100%;
-	margin: 20px 0 15px;
-}
-
-.simple-table h4 {
-	color: #111;
-	margin: 0;
-}
-
-
-.simple-table-details {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 23px;
-}
-
-.simple-table-details li {
-	padding: 7px 0;
-}
-
-.simple-table-details li > span {
-	text-decoration: line-through;
-	color: #aaa;
-}
-
-/* -------------------------------------------------------------------
-Button Styles
-------------------------------------------------------------------- */
-
-.login-button {
-	font-size: 20px;
-  font-weight: 500;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  padding: 10px 20px;
-  line-height: 1.7em;
-  background: transparent;
-  border: 2px solid;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  position: relative;	
-
-}
-
-
-.login-button__text-red {
-
-	text-align: center;g
-	text-transform: uppercase;
-	font-family: "Trade Gotic", sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	color: rgba(153,0,0,.8);
-}
-
-.login-button__text-red:hover {
-	background: rgba( 153, 0, 0, 0.2 );
-	border: 2px solid transparent; 
-	padding: 10px 34px 10px 10px !important; 
-}
-
-.login-button__text-red:after {
-	
-	font-size: 32px;
-	line-height: 1em;
-	content: "\35";
-	opacity: 0;
-	position: absolute;
-	margin-left: -20px;
-		-moz-transition: all 0.2s;
-		-webkit-transition: all 0.2s;
-		transition: all 0.2s;
-	top: 7px;
-	right: 5px;
-}
-
-.login-button__text-dark {
-
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Trade Gotic", sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	color: rgba(51,0,0,.8);
-}
-
-.login-button__text-dark:hover {
-	background: rgba( 51, 0, 0, 0.2 );
-	border: 2px solid transparent; 
-	padding: 10px 34px 10px 10px !important; 
-}
-
-.login-button__text-dark:after {
-	
-	font-size: 32px;
-	line-height: 1em;
-	content: "\35";
-	opacity: 0;
-	position: absolute;
-	margin-left: -20px;
-		-moz-transition: all 0.2s;
-		-webkit-transition: all 0.2s;
-		transition: all 0.2s;
-	top: 7px;
-	right: 5px;
-}
-.login-button__text-white {
-
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Trade Gotic", sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	color: rgba(255,255,255,.8);
-}
-
-.login-button__text-white:hover {
-	background: rgba( 255, 255, 255, 0.2 );
-	border: 2px solid transparent; 
-	padding: 10px 34px 10px 10px !important; 
-}
-
-.login-button__text-white:after {
-	
-	font-size: 32px;
-	line-height: 1em;
-	content: "\35";
-	opacity: 0;
-	position: absolute;
-	margin-left: -20px;
-		-moz-transition: all 0.2s;
-		-webkit-transition: all 0.2s;
-		transition: all 0.2s;
-	top: 7px;
-	right: 5px;
-}
-
-
-.btn {
-	font-family: "Trade Gotic", sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 11px;
-	padding: 10px 35px;
-}
-
-
-.btn.btn-r {
-	background: rgba(155, 0, 0, .8);
-	color: #fff;
-}
-
-.btn .btn-b {
-	background: rgba(0, 0, 0, .8);
-	color: #fff;
-}
-
-.btn.btn-d:hover,
-.btn.btn-d:focus {
-	background: rgba(155, 0, 0, 1);
-}
-
-.btn .btn-b:hover,
-.btn .btn-b:focus {
-	background: rgba(0, 0, 0, 1);
-}
-
-.btn .btn-round {
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
-}
-
-.btn .btn-border-w {
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 1);
-  color: #000;
-}
-
-.btn .btn-border-w:hover,
-.btn .btn-border-w:focus {
-	background: #000;
-	border-color: transparent;
-	color: #111;
-}
-
-/* -------------------------------------------------------------------
-Count to
-------------------------------------------------------------------- */
-
-.count-item {
-	text-align: center;
-}
-
-.count-icon {
-	line-height: 1.2;
-	font-size: 42px;
-}
-
-
-/* -------------------------------------------------------------------
-Responsive Media Querries
-------------------------------------------------------------------- */
-
-
-@media (max-width: 1200px) {
-
-	/* blurb */
-
-	.blurb-item {
-		margin: 20px 0 0;
-	}
-
-}
-
-@media (max-width: 991px) {
-
-.side-image {
-  position: relative;
-  height: 300px;
-
-}
-
-}
-
-@media (max-width: 768px) {
-
-	.clear-box {
-		margin: 25px 20px;
-}
-}	
-
-
-@media (max-width: 500px) {
-
-	.clear-box {
-		padding: 25px 20px;
-		margin-top:50px;
-	}
-
-	.clear-box h2{
-		font-size:25px;
-	}
-}
-
-.clear-box p {
-
-	color:#fff;
-}
-
-@media (max-width:767px){
-	.clear-box{
-
-		margin-left:20px;
-		margin-right:20px;
-	}
-}
-
-/* -------------------------------------------------------------------
-blurb
-------------------------------------------------------------------- */
-
-.blurb-item {
-	margin: 0 0 30px;
-}
-
-.blurb-item {
-	padding-left: 0;
-	margin: 0 0 30px;
-	text-align: center;
-}
-
-.blurb-icon {
-	position: static;
-	width: auto;
-	margin: 0 auto 8px;
-}
-
-/* -------------------------------------------------------------------
-Vertical Align 
-------------------------------------------------------------------- */
-
-.btm-image {
-
-	max-height: 400px;
-	padding: 0;
-}
-
-.v-align-btm {
-	vertical-align: bottom;
-
-}
-
-.v-align-middle {
-	display: inline-block;
-	float: none;
-	vertical-align: middle;
-}
-
-.no-padding {
-	padding: 0;
-	margin: 0;	
-}
-
-/* -------------------------------------------------------------------
-Clear Box
-------------------------------------------------------------------- */
-
-.clear-box{
-
-	margin: 15px 0 30px;
-	padding: 20px 20px;
-	background:rgba(255,255,255,0.2);
-	border:1px solid rgba(255,255,255,0.5);
-	border-radius:4px;
-	box-shadow:0px 0px 15px rgba(0,0,0,0.1);
-}
-
-.clear-box ul li{
-	list-style: disc;
-	list-style-position: inside;
-	color: #fff;
-	
-}
-
-.clear-box ul li a{
-
-	color: #fff;
-	text-decoration: underline;
-	
-}
-
-.clear-box ul li a:hover{
-	
-	color: #111;
-	
-}
-
-/* -------------------------------------------------------------------
-Vertical Bars
-------------------------------------------------------------------- */
-
-.vbar {
-	max-width: 100%;
-}
-.vbar .bar-item {
-	max-width: 100px;
-	margin: 20px auto;
-	position: realtive;
-}
-.vbar .bar-item .vertical-bar {
-	position: relative;
-	width: 100%;
-	max-width: 100%;
-	margin: 0 auto;
-	height: 200px;
-	cursor: pointer;
-	background: transparent;
-}
-.vbar .bar-item .vertical-bar .vbar-fill {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding-top: 30%;
-}
-.vbar .bar-item .vertical-bar .vbar-fill span {
-	position: absolute;
-	bottom: 0px;
-	text-align: center;
-	width: 100%;
-	color: #fff;
-	font-size: 16px;
-	line-height: 40px;
-	font-weight: 600;
-}
-.vbar .bar-item .details{
-	text-align: center;
-}	
-.vbar .bar-item p { 
-	margin-top: 10px;
-	font-size: 16px; 
-	font-weight: 600;
-	text-transform:	uppercase;
-}
-
-/* -------------------------------------------------------------------
-Tabs
-------------------------------------------------------------------- */
-
-.tab-content {
-	padding: 20px 0;
-}
-
-.nav-tabs > li > a {
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-		 -o-border-radius: 2px;
-			border-radius: 2px;
-}
-
-
-/* -------------------------------------------------------------------
-Video
-------------------------------------------------------------------- */
-.iPadFrame {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: auto;
-}
-
-.iPadContent  {
-  float: none;
-  clear: both;
-  width: 100%;
-  position: relative;
-  padding-bottom: 78.4%;     
-  padding-top: 25px;
-  height: 0;
-}
-
-.iPadVideo {
-
-	position: absolute;
-	height: 100%;
-	width: 100%;
-
-}
-
-
-
-
-.video-frame {
-	position: static;
-	background: url('images/student-og/ipadplayer.png');
-	padding-right: 69px;
-	padding-left: 71px;
-	padding-top: 27px;
-	padding-bottom:	24px;
-	max-height: 475px;
-	max-width: 100%;
-}
-
-.video {
-	padding: 40px 0;
-}
-
-.video-title {
-	letter-spacing: 4px;
-	font-size: 30px;
-	margin: 10px 0 0;
-	vertical-align: center;
-}
-
-.video-img-position {
-	max-height: 30%;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-}
-
-.video-img-position-50 {
-	max-height: 50%;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-}
-
-
 </style>
-
-<script type="text/javascript">
-$(function() {
-    $('login-button a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top 
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-</script>
 
 <section class="">
 
@@ -965,7 +25,7 @@ $(function() {
 
 				<hr class="featurette-divider">
 				
-				<p class="font-alt-medium">
+				<p class="font-alt-medium ptb-50">
 
 				Jump to a specific section by selecting a service below. 
 				
@@ -975,18 +35,18 @@ $(function() {
 
 					<div class="col-xs-12 col-sm-12 col-md-6">
 
-					<a href="#solar"><h4 class="login-button login-button__text-red">SOLAR & NetID</h4></a>
-					<a href="#wolfienet"><h4 class="login-button login-button__text-red">WolfieNET</h4></a>
-					<a href="#sincsites"><h4 class="login-button login-button__text-red">SINC Sites & Printing</h4></a>
-					<a href="#mdn"><h4 class="login-button login-button__text-red">Mobile Digital Now</h4></a>
+					<a href="#solar"><h4 class="simple-btn simple-btn__text-red">SOLAR & NetID</h4></a>
+					<a href="#wolfienet"><h4 class="simple-btn simple-btn__text-red">WolfieNET</h4></a>
+					<a href="#sincsites"><h4 class="simple-btn simple-btn__text-red">SINC Sites & Printing</h4></a>
+					<a href="#mdn"><h4 class="simple-btn simple-btn__text-red">Mobile Digital Now</h4></a>
 					
 				</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-6">
-					<a href="#software"><h4 class="login-button login-button__text-red">Software</h4></a>
-					<a href="#academic"><h4 class="login-button login-button__text-red">Academic Tools</h4></a>
-					<a href="#cybersecurity"><h4 class="login-button login-button__text-red">Cybersecurity</h4></a>
-					<a href="#support"><h4 class="login-button login-button__text-red">Support</h4></a>
+					<a href="#software"><h4 class="simple-btn simple-btn__text-red">Software</h4></a>
+					<a href="#academic"><h4 class="simple-btn simple-btn__text-red">Academic Tools</h4></a>
+					<a href="#cybersecurity"><h4 class="simple-btn simple-btn__text-red">Cybersecurity</h4></a>
+					<a href="#support"><h4 class="simple-btn simple-btn__text-red">Support</h4></a>
 					
 					</div>				
 				</div>	
@@ -1003,7 +63,7 @@ $(function() {
 
 <!-- SOLAR SECTION BEGIN -->
 
-<section class="intro-module video-img-position-50 overlay-gray" data-background="images/student-og/solar.jpg" id="solar">
+<section class="intro__pt-50" style="background-image: url('../.dist/assets/images/backgrounds/solar.jpg');" id="solar">
 
 	<div class="container">
 
@@ -1048,7 +108,7 @@ $(function() {
 					<div class="clear-box font-alt" data-match-height="items-cc">
 						<h4 class="white">SOLAR ID</h4>
 					<div class="borderline"></div>
-						<ul class="simple-table-details white">
+						<ul class="simple__card-details white">
 							<li>
 							Your SOLAR ID is an 8-digit number that will be provided to you during the orientation process.
 							</li>
@@ -1065,7 +125,7 @@ $(function() {
 					<div class="clear-box font-alt" data-match-height="items-cc">
 						<h4 class="white">SOLAR ID Password</h4>
 					<div class="borderline"></div>
-						<ul class="simple-table-details white">
+						<ul class="simple__card-details white">
 							<li>
 							Your initial SOLAR ID password is your birthday date in MMDDYY format.
 							</li>
@@ -1082,7 +142,7 @@ $(function() {
 					<div class="clear-box font-alt" data-match-height="items-cc">
 						<h4 class="white">NETID & PASSWORD</h4>
 					<div class="borderline"></div>
-						<ul class="simple-table-details white">
+						<ul class="simple__card-details white">
 							<li>Your NetID is your key to online academic tools and services provided by Stony Brook University.
 							</li>
 								
@@ -1101,13 +161,13 @@ $(function() {
 
 
 
-<section class="intro-module overlay-turquoise" style="background-image: url('../.dist/assets/images/patterns/lodyas-light.jpg');"id="wolfienet">
+<section class="intro__pt-50  overlay-turquoise" style="background-image: url('../.dist/assets/images/patterns/lodyas-light.jpg');"id="wolfienet">
 
 	<div class="container">
 		<div class="row">
 
 			<div class="col-sm-12">
-				<a href="https://it.stonybrook.edu/solar"><h4 class="login-button login-button__text-white">Login to SOLAR</h4></a>
+				<a href="https://it.stonybrook.edu/solar"><h4 class="simple-btn simple-btn__text-white">Login to SOLAR</h4></a>
 			</div>
 		</div>
 	</div>
@@ -1117,7 +177,7 @@ $(function() {
 
 <!-- WOLFIENET SECTION BEGIN -->
 
-<section id="wolfienet" class="intro-module">
+<section id="wolfienet" class="intro__pt-50 ">
 	
 	<div class="container">
 
@@ -1144,10 +204,10 @@ $(function() {
 
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
-				<div class="simple-table font-alt" data-match-height="items-b">
+				<div class="simple__card font-alt" data-match-height="items-b">
 					<h4 class="river">Get-Connected</h4>
 					<div class="borderline"></div>
-					<ul class="simple-table-details">
+					<ul class="simple__card-details">
 						<li>Use for the first time when connecting to WolfieNet. This
 						option will configure Wi-Fi enabled devices to use WolfieNet.
 						</li>
@@ -1158,10 +218,10 @@ $(function() {
 
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
-				<div class="simple-table font-alt" data-match-height="items-b">
+				<div class="simple__card font-alt" data-match-height="items-b">
 					<h4 class="river">Open</h4>
 					<div class="borderline"></div>
-					<ul class="simple-table-details">
+					<ul class="simple__card-details">
 						<li>Available only in residence halls
 						for gaming systems. Do not use for academic work or transactions such as banking or shopping.
 						</li>
@@ -1172,11 +232,11 @@ $(function() {
 
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
-				<div class="simple-table best font-alt" >
+				<div class="simple__card best font-alt" >
 					<h4 class="river">Secured</h4>
 					<p class="small">Best Option</p>
 					<div class="borderline"></div>
-					<ul class="simple-table-details">
+					<ul class="simple__card-details">
 						<li>
 						The recommended network that should be used on a day-to-day
 						basis after successfully configuring Wi-Fi devices through WolfieNet-Get-Connected.
@@ -1188,10 +248,10 @@ $(function() {
 
 			<div class="animated fadeInUp col-sm-6 col-md-3 col-lg-3">
 
-				<div class="simple-table font-alt" data-match-height="items-b">
+				<div class="simple__card font-alt" data-match-height="items-b">
 					<h4 class="river">Guest</h4>
 					<div class="borderline"></div>
-					<ul class="simple-tables-details">
+					<ul class="simple__cards-details">
 						<li>To be used by visitors to the University who do not have a NetID. Users must authenticate and agree to the Wireless Internet Policy.
 						</li>
 					</ul>
@@ -1202,13 +262,13 @@ $(function() {
 	</div>
 </section>
 
-<section class="intro-module overlay-river" style="background-image: url('../.dist/assets/images/patterns/pentagon.png');">
+<section class="intro__pt-50  overlay-river" style="background-image: url('../.dist/assets/images/patterns/pentagon.png');">
 
 	<div class="container">
 		<div class="row">
 
 			<div class="col-sm-12">
-				<a href="https://it.stonybrook.edu/services/wi-fi-wolfienet"><h4 class="login-button login-button__text-white">WolfieNET Service Page</h4></a>
+				<a href="https://it.stonybrook.edu/services/wi-fi-wolfienet"><h4 class="simple-btn simple-btn__text-white">WolfieNET Service Page</h4></a>
 			</div>
 		</div>
 	</div>
@@ -1222,7 +282,7 @@ $(function() {
 
 
 
-<section id="sincsites" class="intro-module background-dark-gray white">
+<section id="sincsites" class="intro__pt-50  background-dark-gray white">
 
 	<div class="container">
 
@@ -1231,12 +291,11 @@ $(function() {
 				
 				<div class="animated fadeInDown col-sm-12 centered">
 
-				<h1 class="font-alt white">SINC Sites and Printers</h1>
+				<h2 class="font-alt white">SINC Sites and Printers</h2>
 
 				</div>
 
 				<div class="col-sm-12">
-
 
 					<p class="font-alt-medium centered ptb-50">
 					 Public computer labs are equipped with Windows and Mac computers, printers, and scanners. SINC Sites are monitored by undergraduate students and administered by the Division of Information Technology. 
@@ -1280,7 +339,7 @@ $(function() {
 	</div>
 </section>
 
-<section class="intro-module overlay-gray" data-background="https://farm8.staticflickr.com/7674/17645959825_f48d22d9a9_k_d.jpg">
+<section class="intro__pt-50  overlay-gray" style="background-image: url('https://farm8.staticflickr.com/7674/17645959825_f48d22d9a9_k_d.jpg');">
 	<div class="container">
 
 		<div class="row">
@@ -1318,28 +377,30 @@ $(function() {
 
 				<div class="background-red col-md-6 col-md-offset-6 side-image__text">
 
-				<h2 class="font-alt centered white">Mobile Digital Now</h2>
+					<h2 class="font-alt centered white">Mobile Digital Now</h2>
 
-				<hr class="featurette-divider white">
-				
-				<p class="font-alt-medium ptb-50 centered white">
-					Mobile Digital Now is a Stony Brook University initiative designed to bring the power of mobile technology into the classroom.
-				</p>
+					<hr class="featurette-divider white">
+					
+					<p class="font-alt-medium ptb-50 centered white">
+						Mobile Digital Now is a Stony Brook University initiative designed to bring the power of mobile technology into the classroom.
+					</p>
 
-			<div class="col-sm-12">
+					<div class="col-sm-12">
 
-				<div class="clear-box font-alt" data-match-height="items-b">
-						<h4 class="white">MDN Fall 2015</h4>
-						<div class="borderline"></div>
-						<ul class="simple-tables-details white">
-						
-						This fall the Division of Information Technology at Stony Brook University will provide Athletics and EOP students with iPad's to aid in managing their academic coursework and providing instructional support. 
+						<div class="clear-box font-alt" data-match-height="items-b">
+								<h4 class="white">MDN Fall 2015</h4>
+								<div class="borderline"></div>
+								<ul class="simple__cards-details white">
+								
+								This fall the Division of Information Technology at Stony Brook University will provide Athletics and EOP students with iPad's to aid in managing their academic coursework and providing instructional support. 
 
-						</ul>
-				</div>
+								</ul>
+						</div>
+					</div>
 
-				<div class="col-sm-12">
-					<a href="#"><h4 class="login-button login-button__text-white">Learn More About MDN</h4></a>
+					<div class="col-sm-12">
+							<a href="#"><h4 class="simple-btn simple-btn__text-white">Learn More About MDN</h4></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1350,17 +411,17 @@ $(function() {
 
 <!-- SOFTWARE SECTION BEGIN -->
 
-<section id="software" class="intro-module">
+<section id="software" class="intro__pt-50 ">
 
 	<div class="container">
 
 		<div class="row">
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 centered">
 
-				<h2 class="intro-module-title font-alt asphalt">Software</h2>
+				<h2 class="font-alt asphalt">Software</h2>
 						
-				<p class="font-alt-medium pb-50 centered">
+				<p class="font-alt-medium ptb-50">
 					Stony Brook University offers a variety of software to aid students when completing academic assignments. Listed below are several of our important software assests.
 				</p>
 			</div>
@@ -1369,48 +430,48 @@ $(function() {
 		<div class="row">
 
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
-				<hr class="featurette-divider">
-				<div class="blurb-item" data-match-height="items-aa">
-					<div class="blurb-icon asphalt">
+				
+				<div class="blurb__item" data-match-height="items-aa">
+					<div class="blurb__icon asphalt">
 						<i class="sbuicon-file-word-o"></i>
 					</div>
-					<h3 class="blurb-title font-alt">Office 365</h3>
+					<h3 class="blurb__title font-alt">Office 365</h3>
 					<p class="font-alt">Log in to <a href="http://office365.com" alt="Office 365 Website">office365.com</a> with your @stonybrook.edu email address to download Office 365.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
 
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
-				<hr class="featurette-divider">
-				<div class="blurb-item" data-match-height="items-aa">
-					<div class="blurb-icon asphalt">
+			
+				<div class="blurb__item" data-match-height="items-aa">
+					<div class="blurb__icon asphalt">
 						<i class="sbuicon-windows"></i>
 					</div>
-					<h3 class="blurb-title font-alt">Operating System Upgrade</h3>
+					<h3 class="blurb__title font-alt">Operating System Upgrade</h3>
 					<p class="font-alt">Visit <a href="http://stonybrook.onthehub.com" alt="Operating System Upgrade via On The Hub download link">stonybrook.onthehub.com</a> to install the latest version of Microsoft Windows.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
 			
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
-				<hr class="featurette-divider">
-				<div class="blurb-item" data-match-height="items-aa">
-					<div class="blurb-icon asphalt">
+	
+				<div class="blurb__item" data-match-height="items-aa">
+					<div class="blurb__icon asphalt">
 						<i class="sbuicon-lock"></i>
 					</div>
-					<h3 class="blurb-title font-alt">Free Antivirus</h3>
+					<h3 class="blurb__title font-alt">Free Antivirus</h3>
 					<p class="font-alt">Use your NetID to log in at <a href="http://softweb.cc.stonybrook.edu" alt="Free Antivirus Download link">softweb.cc.stonybrook.edu</a> and download the unmanaged client for your personal computer.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
 
 			<div class="animated fadeInLeft col-sm-6 col-md-3 col-lg-3">
-				<hr class="featurette-divider">
-				<div class="blurb-item" data-match-height="items-aa">
-					<div class="blurb-icon asphalt">
+
+				<div class="blurb__item" data-match-height="items-aa">
+					<div class="blurb__icon asphalt">
 						<i class="sbuicon-cloud"></i>
 					</div>
-					<h3 class="blurb-title font-alt">Virtual Sinc Site</h3>
+					<h3 class="blurb__title font-alt">Virtual Sinc Site</h3>
 					<p class="font-alt">Access a variety of academic software from your personal computer by going to the Stony Brook University<a href="http://it.stonybrook.edu/services/virtual-sinc-site" alt="Virtual Sinc Site login"> Virtual SINC Site</a>.</p>
 				</div>
 				<hr class="featurette-divider">
@@ -1419,11 +480,11 @@ $(function() {
 	</div>
 </section>
 
-<section class="call-to-action background-asphalt">
+<section class="background-asphalt">
 
 	<div class="container">
 
-				<div class="row">
+				<div class="row pt-50 pb-50">
 
 					<div class="col-xs-12 col-sm-6">
 
@@ -1435,7 +496,7 @@ $(function() {
 
 					<div class="col-xs-12 col-sm-6">
 
-						<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h4 class="login-button login-button__text-white">Browse All Software</h4></a>
+						<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h4 class="simple-btn simple-btn__text-white">Browse All Software</h4></a>
 								
 					</div>
 
@@ -1472,18 +533,18 @@ $(function() {
 
 					<div class="col-xs-12 col-sm-6">
 
-					<a href="http://it.stonybrook.edu/services/blackboard"><h4 class="login-button login-button__text-white">Blackboard</h4></a>
-					<a href="http://google.stonybrook.edu/"><h4 class="login-button login-button__text-white">Google Apps</h4></a>
-					<a href="http://lynda.stonybrook.edu"><h4 class="login-button login-button__text-white">Lynda.com</h4></a>
-					<a href="http://library.stonybrook.edu/"><h4 class="login-button login-button__text-white">Library Journals</h4></a>
+					<a href="http://it.stonybrook.edu/services/blackboard"><h4 class="simple-btn simple-btn__text-white">Blackboard</h4></a>
+					<a href="http://google.stonybrook.edu/"><h4 class="simple-btn simple-btn__text-white">Google Apps</h4></a>
+					<a href="http://lynda.stonybrook.edu"><h4 class="simple-btn simple-btn__text-white">Lynda.com</h4></a>
+					<a href="http://library.stonybrook.edu/"><h4 class="simple-btn simple-btn__text-white">Library Journals</h4></a>
 
 				</div>
 
 					<div class="col-xs-12 col-sm-6">
-					<a href="https://it.stonybrook.edu/software/title/studymate-class/"><h4 class="login-button login-button__text-white">StudyMate</h4></a>
-					<a href="http://you.stonybrook.edu/"><h4 class="login-button login-button__text-white">SB You</h4></a>
-					<a href="http://classie-evals.stonybrook.edu/"><h4 class="login-button login-button__text-white">Class Evaluations</h4></a>
-					<a href="http://it.stonybrook.edu/services/catalog/a-z/all"><h4 class="login-button login-button__text-white">View All</h4></a>
+					<a href="https://it.stonybrook.edu/software/title/studymate-class/"><h4 class="simple-btn simple-btn__text-white">StudyMate</h4></a>
+					<a href="http://you.stonybrook.edu/"><h4 class="simple-btn simple-btn__text-white">SB You</h4></a>
+					<a href="http://classie-evals.stonybrook.edu/"><h4 class="simple-btn simple-btn__text-white">Class Evaluations</h4></a>
+					<a href="http://it.stonybrook.edu/services/catalog/a-z/all"><h4 class="simple-btn simple-btn__text-white">View All</h4></a>
 					
 					</div>				
 				</div>	
@@ -1549,13 +610,13 @@ $(function() {
 
 </section>
 
-<section class="intro-module overlay-red" style="background-image: url('../.dist/assets/images/patterns/pentagon.png');">
+<section class="intro__pt-50  overlay-red" style="background-image: url('../.dist/assets/images/patterns/pentagon.png');">
 
 	<div class="container">
 		<div class="row">
 
 			<div class="col-sm-12">
-				<a href="https://it.stonybrook.edu/services/training-and-development/cyber-security"><h4 class="login-button login-button__text-white">More Cybersecurity Tips</h4></a>
+				<a href="https://it.stonybrook.edu/services/training-and-development/cyber-security"><h4 class="simple-btn simple-btn__text-white">More Cybersecurity Tips</h4></a>
 			</div>
 		</div>
 	</div>
