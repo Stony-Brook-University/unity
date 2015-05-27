@@ -940,6 +940,18 @@ Video
 
 </style>
 
+<script type="text/javascript">
+$(function() {
+    $('login-button a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top 
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+</script>
+
 <section class="">
 
 	<div class="container-fluid">
@@ -966,15 +978,15 @@ Video
 					<a href="#solar"><h4 class="login-button login-button__text-red">SOLAR & NetID</h4></a>
 					<a href="#wolfienet"><h4 class="login-button login-button__text-red">WolfieNET</h4></a>
 					<a href="#sincsites"><h4 class="login-button login-button__text-red">SINC Sites & Printing</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-red">Mobile Digital Now</h4></a>
+					<a href="#mdn"><h4 class="login-button login-button__text-red">Mobile Digital Now</h4></a>
 					
 				</div>
 
 					<div class="col-xs-12 col-sm-6">
-					<a href="#solar"><h4 class="login-button login-button__text-red">Software</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-red">Academic Tools</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-red">Cybersecurity</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-red">Support</h4></a>
+					<a href="#software"><h4 class="login-button login-button__text-red">Software</h4></a>
+					<a href="#academic"><h4 class="login-button login-button__text-red">Academic Tools</h4></a>
+					<a href="#cybersecurity"><h4 class="login-button login-button__text-red">Cybersecurity</h4></a>
+					<a href="#support"><h4 class="login-button login-button__text-red">Support</h4></a>
 					
 					</div>				
 				</div>	
@@ -989,6 +1001,7 @@ Video
 	</div>
 </section>
 
+<!-- SOLAR SECTION BEGIN -->
 
 <section class="intro-module video-img-position-50 overlay-gray" data-background="images/student-og/solar.jpg" id="solar">
 
@@ -1003,15 +1016,18 @@ Video
 
 				<div class="col-xs-12 col-sm-4 col-md-4 centered">
 						
+					<h3 class="white"><i class="sbuicon-sign-in"></i></h3>
 					<h3 class="white">REGISTER for classes</h3>
 				</div>
 
+
 				<div class="col-xs-12 col-sm-4 col-md-4 centered">
+					<h3 class="white"><i class="sbuicon-dollar	"></i></h3>
 					<h3 class="white">Pay your bills</h3>
 				</div>
 
 				<div class="col-xs-12 col-sm-4 col-md-4 centered">
-
+					<h3 class="white"><i class="sbuicon-key"></i></h3>
 					<h3 class="white">Manage Your NETID</h3>
 				</div>
 
@@ -1083,19 +1099,23 @@ Video
 	</div>
 </section>
 
-<section class="intro-module overlay-turquoise" style="background-image: url('../.dist/assets/images/patterns/lodyas-light.jpg');">
+
+
+<section class="intro-module overlay-turquoise" style="background-image: url('../images/patterns/lodyas-light.jpg');"id="wolfienet">
 
 	<div class="container">
 		<div class="row">
 
 			<div class="col-sm-12">
-				<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h4 class="login-button login-button__text-white">Login to SOLAR</h4></a>
+				<a href="https://it.stonybrook.edu/solar"><h4 class="login-button login-button__text-white">Login to SOLAR</h4></a>
 			</div>
 		</div>
 	</div>
 </section>
 
+<!-- SOLAR SECTION END -->
 
+<!-- WOLFIENET SECTION BEGIN -->
 
 <section id="wolfienet" class="intro-module">
 	
@@ -1107,7 +1127,7 @@ Video
 			
 			<div class="animated fadeInDown col-sm-12 centered">
 
-				<h1 class="font-alt river">WolfieNet</h1>
+				<h1 class="font-alt river"><i class="sbuicon-wifi"></i>&nbsp;WolfieNet</h1>
 			</div>
 
 
@@ -1182,17 +1202,24 @@ Video
 	</div>
 </section>
 
-<section class="intro-module overlay-river" style="background-image: url('../.dist/assets/images/patterns/pentagon.png');">
+<section class="intro-module overlay-river" style="background-image: url('../images/patterns/pentagon.png');">
 
 	<div class="container">
 		<div class="row">
 
 			<div class="col-sm-12">
-				<a href="https://it.stonybrook.edu/services/software-catalog/browse"><h4 class="login-button login-button__text-white">WolfieNET Service Page</h4></a>
+				<a href="https://it.stonybrook.edu/services/wi-fi-wolfienet"><h4 class="login-button login-button__text-white">WolfieNET Service Page</h4></a>
 			</div>
 		</div>
 	</div>
 </section>
+
+
+<!-- WOLFIENET SECTION END -->
+
+
+<!-- SINCSITES SECTION BEGIN -->
+
 
 
 <section id="sincsites" class="intro-module background-dark-gray white">
@@ -1276,8 +1303,11 @@ Video
 	</div>
 </section>
 
+<!-- SINCSITES SECTION END -->
 
-<section class="intro-module overlay-gray" data-background="https://farm9.staticflickr.com/8856/17945219620_1e925130f8_h_d.jpg">
+<!-- MDN SECTION BEGIN -->
+
+<section id="mdn" class="intro-module overlay-gray" data-background="https://farm9.staticflickr.com/8856/17945219620_1e925130f8_h_d.jpg">
 
 	<div class="container">
 
@@ -1320,6 +1350,10 @@ Video
 	</div>
 </section>
 
+<!-- MDN SECTION END -->
+
+<!-- SOFTWARE SECTION BEGIN -->
+
 <section id="software" class="intro-module">
 
 	<div class="container">
@@ -1345,7 +1379,7 @@ Video
 						<i class="sbuicon-file-word-o"></i>
 					</div>
 					<h3 class="blurb-title font-alt">Office 365</h3>
-					<p class="font-alt">You can review transcripts, medical recrods, agreements and other records in SOLAR.</p>
+					<p class="font-alt">Log in to <a href="http://office365.com" alt="Office 365 Website">office365.com</a> with your @stonybrook.edu email address to download Office 365.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
@@ -1357,7 +1391,7 @@ Video
 						<i class="sbuicon-windows"></i>
 					</div>
 					<h3 class="blurb-title font-alt">Operating System Upgrade</h3>
-					<p class="font-alt">Keep track of your course history and your grades.</p>
+					<p class="font-alt">Visit <a href="http://stonybrook.onthehub.com" alt="Operating System Upgrade via On The Hub download link">stonybrook.onthehub.com</a> to install the latest version of Microsoft Windows.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
@@ -1368,8 +1402,8 @@ Video
 					<div class="blurb-icon asphalt">
 						<i class="sbuicon-lock"></i>
 					</div>
-					<h3 class="blurb-title font-alt">Antivirus</h3>
-					<p class="font-alt">Access course cescriptions and register for classes.</p>
+					<h3 class="blurb-title font-alt">Free Antivirus</h3>
+					<p class="font-alt">Use your NetID to log in at <a href="http://softweb.cc.stonybrook.edu" alt="Free Antivirus Download link">softweb.cc.stonybrook.edu</a> and download the unmanaged client for your personal computer.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
@@ -1381,7 +1415,7 @@ Video
 						<i class="sbuicon-cloud"></i>
 					</div>
 					<h3 class="blurb-title font-alt">Virtual Sinc Site</h3>
-					<p class="font-alt">Communications from the Bursar and Registrar will be administered through SOLAR.</p>
+					<p class="font-alt">Access a variety of academic software from your personal computer by going to the Stony Brook University<a href="http://it.stonybrook.edu/services/virtual-sinc-site" alt="Virtual Sinc Site login"> Virtual SINC Site</a>.</p>
 				</div>
 				<hr class="featurette-divider">
 			</div>
@@ -1398,7 +1432,7 @@ Video
 					<div class="col-xs-12 col-sm-6">
 
 						<h4 class="font-alt no-padding white">See all Stony Brook Has To Offer</h4>
-						<p class="font-alt no-padding white">Our software catalog features </p>
+						<p class="font-alt no-padding white">Our software catalog features a variety of academic software titles covering business, design, math, science, and more!</p>
 								
 					</div>
 
@@ -1415,7 +1449,11 @@ Video
 	</div>
 </section>
 
-<section class="">
+<!-- SOFTWARE SECTION END -->
+
+<!-- ACADEMIC TOOLS SECTION BEGIN -->
+
+<section id="academic">
 
 	<div class="container-fluid">
 
@@ -1438,18 +1476,18 @@ Video
 
 					<div class="col-xs-12 col-sm-6">
 
-					<a href="#solar"><h4 class="login-button login-button__text-white">Blackbaord</h4></a>
-					<a href="#wolfienet"><h4 class="login-button login-button__text-white">Google Apps</h4></a>
-					<a href="#sincsites"><h4 class="login-button login-button__text-white">Lynda.com</h4></a>
-					<a href="#sincsites"><h4 class="login-button login-button__text-white">Library Journals</h4></a>
+					<a href="http://it.stonybrook.edu/services/blackboard"><h4 class="login-button login-button__text-white">Blackboard</h4></a>
+					<a href="http://google.stonybrook.edu/"><h4 class="login-button login-button__text-white">Google Apps</h4></a>
+					<a href="http://lynda.stonybrook.edu"><h4 class="login-button login-button__text-white">Lynda.com</h4></a>
+					<a href="http://library.stonybrook.edu/"><h4 class="login-button login-button__text-white">Library Journals</h4></a>
 
 				</div>
 
 					<div class="col-xs-12 col-sm-6">
-					<a href="#solar"><h4 class="login-button login-button__text-white">StudyMate</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-white">SB You</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-white">Class Evaluations</h4></a>
-					<a href="#solar"><h4 class="login-button login-button__text-white">View All</h4></a>
+					<a href="https://it.stonybrook.edu/software/title/studymate-class/"><h4 class="login-button login-button__text-white">StudyMate</h4></a>
+					<a href="http://you.stonybrook.edu/"><h4 class="login-button login-button__text-white">SB You</h4></a>
+					<a href="http://classie-evals.stonybrook.edu/"><h4 class="login-button login-button__text-white">Class Evaluations</h4></a>
+					<a href="http://it.stonybrook.edu/services/catalog/a-z/all"><h4 class="login-button login-button__text-white">View All</h4></a>
 					
 					</div>				
 				</div>	
@@ -1457,6 +1495,11 @@ Video
 		</div>
 	</div>
 </section>
+
+<!-- ACADEMIC TOOLS SECTION END -->
+
+<!-- CEYBERSECURITY SECTION BEGIN -->
+
 
 <section>
 
@@ -1510,7 +1553,7 @@ Video
 
 </section>
 
-<section class="intro-module overlay-red" style="background-image: url('../.dist/assets/images/patterns/pentagon.png');">
+<section class="intro-module overlay-red" style="background-image: url('../images/patterns/pentagon.png');">
 
 	<div class="container">
 		<div class="row">
@@ -1522,7 +1565,11 @@ Video
 	</div>
 </section>
 
-<section class="">
+<!-- CEYBERSECURITY SECTION END -->
+
+<!-- SUPPORT SECTION BEGIN -->
+
+<section id="support">
 
 	<div class="container-fluid">
 
@@ -1606,11 +1653,12 @@ Video
 			<div class="hidden-xs col-md-6 col-md-offset-6 side-image" data-background="https://farm4.staticflickr.com/3941/15487768325_4407b8140c_k_d.jpg"></div>
 
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg" data-background="https://farm4.staticflickr.com/3941/15487768325_4407b8140c_k_d.jpg"></div>
-
-
 		</div>
 	</div>
 </section>
+
+<!-- SUPPORT SECTION END-->
+
 
 
 
