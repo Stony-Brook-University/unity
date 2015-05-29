@@ -1,0 +1,452 @@
+<!--#include file="includes/headers/header.html" -->
+
+<style>
+
+.align-left {
+	text-align: left !important;
+}
+.position-relative {
+	position: relative;
+}
+
+.small-10 {
+	font-family: inherit;
+	font-size: 10px;
+	text-transform: none;
+}
+
+.full-width__padding-50 {
+
+	padding: 50px 50px;
+	width: 100%;
+	height: auto;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.text-shadow {
+
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.v-align-middle {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 240px) { 
+    .v-align-middle {
+        display: block;
+        align-items: center;
+    }
+}
+
+@media (min-width: 480px) { 
+    .v-align-middle {
+        display: block;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) { 
+    .v-align-middle {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.section-bottom__shadow {
+
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.metro-box {
+	padding: 25px 10px;
+	float: left;
+	display: block;
+
+}
+
+.service-box {  
+    background: -webkit-linear-gradient(#767676,#333);  
+    background: -moz-linear-gradient(#767676,#333);  
+    background: -o-linear-gradient(#767676,#333);  
+    background: linear-gradient(#767676,#333);  
+
+    -webkit-transition: background 1s ease-out;  
+    -moz-transition: background 1s ease-out;  
+    -o-transition: background 1s ease-out;  
+    transition: background 1s ease-out;  
+
+    background-size:1px 100px;  
+    cursor:pointer; 
+}  
+.metro-box:hover{  
+    background-position: 50px; 
+}
+.metro-box:hover a{  
+   text-decoration: underline;
+}  
+
+.metro-box__text {
+	text-align: center;
+	padding-top: 0;
+	text-transform: uppercase;
+	font-family: 'Trade Gothic Next W01', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.7em;
+	color: white;
+}
+.metro-box__text a{
+	color: white;
+}
+
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 1%;
+}
+
+.grid-item {
+  height: auto;
+  float: left;
+  background: #eee;
+
+}
+
+
+.blog-masonry__10 { width:  10%; }
+.blog-masonry__20 { width:  20%; }
+.blog-masonry__30 { width:  30%; }
+.blog-masonry__40 { width:  40%; }
+.blog-masonry__60 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 400px; }
+
+
+
+</style>	
+
+<script>
+
+$(function(){
+  $('#Container').mixItUp({
+    load: {
+      filter: '.ap'
+    }
+  });
+});
+
+$(document).ready( function() {
+
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+  
+});
+
+</script>
+
+<section class="section-bottom__shadow text-shadow" id="news"><!-- News Section Begin -->
+	<div class="container-fluid"><!-- Container Begin -->
+		<div class="row"><!-- Row Begin -->
+			<div class="grid">
+				<div class="grid-sizer">
+				    <div class="grid-item blog-masonry__40 grid-item--height4 overlay-gray v-align-middle" style="background-image: url('https://farm8.staticflickr.com/7798/17862050485_5065fded5f_z_d.jpg');">
+				    	
+				    	<div class="col-md-12 centered">
+				    		<h4 class="white">News Title</h4>
+				    		<p class="white">Lorem ipsum dolor sit amet.</p>
+
+				    	</div>
+				    </div>
+
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 overlay-gray v-align-middle" style="background-image: url('https://farm9.staticflickr.com/8887/18156153352_a1b2f529d6_z_d.jpg');">
+
+				  		<div class="col-md-12">
+					    	
+					    	<h4 class="white">News Title</h4>
+					    	<p class="white">Lorem ipsum dolor sit amet.</p>
+					    </div>
+					</div>
+
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 overlay-gray v-align-middle" style="background-image: url('https://farm8.staticflickr.com/7769/18133207886_8046b4a9b4_z_d.jpg');">
+
+				  		<div class="col-md-12">
+						    		
+						    <h4 class="white">News Title</h4>
+						   	<p class="white">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 overlay-gray v-align-middle" style="background-image: url('https://farm9.staticflickr.com/8834/17971795038_e8e07a39c9_z_d.jpg');">
+
+				  		<div class="col-md-12">
+						    <h4 class="white">News Title</h4>
+							<p class="white">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 overlay-gray v-align-middle" style="background-image: url('https://farm8.staticflickr.com/7798/17862050485_5065fded5f_z_d.jpg');">
+
+				  		<div class="col-md-12">
+						    
+						    <h4 class="white">News Title</h4>
+						    <p class="white">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+		  		</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="top-services" class="background-dark-gray full-width__padding-50 section-bottom__shadow"><!-- Top Services Section Begin -->
+	<div class="container"><!-- Container Begin -->
+		<div class="row"><!-- Row Begin -->
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-pencil centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to Blackboard">Blackboard</a>
+						<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-space-shuttle centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to SOLAR">SOLAR</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray  centered">
+				<h4 class="sbuicon-google centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to GMAIL and Google Apps">Google</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-file-stats centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to Qualtrics">Qualtrics</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray  centered">
+				<h4 class="sbuicon-wifi centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in the WolfieNet">WolfieNet</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-cloud centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="View All Services">Virtual SINC Sites</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+			
+		</div><!-- Row End -->
+
+		<div class="row"><!-- Row Begin -->
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-photo centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to Blackboard">Digication ePortfolios</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-lan centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to SOLAR">Network (Wired)</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-user centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to GMAIL and Google Apps">Peoplesoft</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-user centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in to Qualtrics">Talent Management</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray  centered">
+				<h4 class="sbuicon-phone centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="Log in the WolfieNet">Telephone Systems</a>
+					<p class="small-10 white">System Online</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-2 metro-box background-dark-gray centered">
+				<h4 class="sbuicon-plus-circle centered white"></h4>
+				<div class="metro-box__text">
+					<a href="http://stonybrook.edu/blackboard" alt="View All Services">All</a>
+				</div>
+			</div>
+			
+		</div><!-- Row End -->
+
+
+	</div><!-- Container End -->
+</section><!-- Top Services Section End -->
+
+
+
+<section class="section-bottom__shadow" id="help"><!-- Help Section Begin-->
+
+	<div class="container-fluid">
+
+		<div class="row position-relative m-0">
+
+			<div class="col-xs-12 col-md-6 hidden-xs side-image v-align-middle" data-background="https://farm8.staticflickr.com/7765/18053885468_918fdf73bd_z_d.jpg">
+
+
+			</div>
+
+			<div class="row">
+
+				<div class="background-pom col-md-6 col-md-offset-6 side-image__text">
+
+
+					<h2 class="font-alt white">DoIT To The Rescue</h2>
+					
+					<p class="font-alt-medium white pb-50">
+						The SBU Division of Information Technology offers a variety of academic tools and services that will help you succeed in your academic endeavors.
+					</p>
+
+					<a href="#"><h4 class="simple-btn simple-btn__text-white">Client Support</h4></a>
+					<a href="#"><h4 class="simple-btn simple-btn__text-white">Knowledge Base</h4></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- Help Section End -->
+
+<section id="media"><!-- Media Section Begin -->
+	<div class="container-fluid"><!-- Container Begin -->
+		<div class="row"><!-- Row Begin -->
+
+			<div class="col-md-6 overlay-gray v-align-middle" style="background-image: url('https://farm9.staticflickr.com/8890/18155625232_8fe209aa5e_c.jpg');" data-match-height="items-video">
+			</div>
+
+
+			<div class="col-md-6 p-50" data-match-height="items-video">
+
+				<h2 class="">Community Voices</h2>
+
+				<hr class="featurette-divider">
+
+	
+			</div><!-- Column End -->
+		</div><!-- Row End -->
+	</div><!-- Container End -->
+</section><!-- Media Section End -->
+
+
+<section class="full-width__padding-50 section-bottom__shadow" style="background-image: url('https://farm8.staticflickr.com/7310/13701187764_440ddd06f4_k_d.jpg');" id="blogs"><!-- News Section Begin -->
+	<div class="container-fluid"><!-- Container Begin -->
+		<div class="row">
+			<div class="grid">
+				<div class="grid-sizer">
+				    <div class="grid-item blog-masonry__40 grid-item--height4 overlay-gray v-align-middle" style="background-image: url('https://farm8.staticflickr.com/7360/15871405574_cc268a789b_z_d.jpg');">
+				    	
+				    	<div class="col-md-12">
+				    		<h4 class="white">Office of the VP for IT & CIO</h4>
+				    		<p class="white">Lorem ipsum dolor sit amet.</p>
+
+				    	</div>
+				    </div>
+
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 background-pom v-align-middle">
+
+				  		<div class="col-md-12">
+					    	
+					    	<h4 class="white">Vision</h4>
+					    	<p class="white">Lorem ipsum dolor sit amet.</p>
+					    </div>
+					</div>
+
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 background-river v-align-middle">
+
+				  		<div class="col-md-12">
+						    		
+						    <h4 class="white">Core Values</h4>
+						   	<p class="white">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 background-turquoise v-align-middle">
+
+				  		<div class="col-md-12">
+						    <h4 class="white">Senior Leadership</h4>
+							<p class="white">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+
+			  		<div class="grid-item blog-masonry__30 grid-item--height2 background-dark-gray v-align-middle">
+
+				  		<div class="col-md-12">
+						    
+						    <h4 class="white">Governance</h4>
+						    <p class="white">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+		  		</div>
+			</div>
+		</div>
+</section>
+
+<section id="social"><!-- Social Section Begin -->
+	<div class="container"><!-- Container Begin -->
+		<div class="row"><!-- Row Begin -->
+
+		</div><!-- Row End -->
+	</div><!-- Container End -->
+</section><!-- Social Section Begin -->
+
+
+<!--#include file="includes/footers/simple.html" -->
