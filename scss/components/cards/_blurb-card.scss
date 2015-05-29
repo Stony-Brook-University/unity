@@ -1,0 +1,7 @@
+.blurb-cards {
+    .blurb-card {
+        margin-bottom: 1em;
+        text-align: center;
+        @extend .clearfix;
+    }
+}

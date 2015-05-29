@@ -24,3 +24,8 @@
     margin: 0;
     font-size: 4em;
 }
+
+.icon-checkmark-circle:before {
+    @extend .sbuicon;
+    content: "\f058";
+}

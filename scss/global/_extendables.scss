@@ -142,6 +142,7 @@
         float: left;
     }
 }
+
 /* end 5 column bootstrap */
 
 .spacer {
@@ -161,4 +162,16 @@
     line-height: 70px;
     text-align: center;
     padding-right: 0px !important; //override pull-left padding
+}
+
+.light-theme {
+    h1, h2, h3, h4, h5, h6, p, a, div, span {
+        color: #FFF;
+    }
+}
+
+.dark-theme {
+    h1, h2, h3, h4, h5, h6, p, a, div, span {
+        color: #333;
+    }
 }

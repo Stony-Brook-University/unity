@@ -1,5 +1,4 @@
-a:link, a:visited, a:active {
-    background-color: transparent;
+a, a:visited, a:active {
     color: $red;
     text-decoration: none;
 }
@@ -45,4 +44,20 @@ a[href$=".ppt"]:after,
 a[href$=".pptx"]:after {
     content: "\f1c4";
     @extend .sbuicon-after;
+}
+
+a.btn {
+    font-family: "Trade Gotic", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    padding: 10px 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: rgba(155, 0, 0, 0.8);
+}
+
+a.btn:hover {
+    background-color: #fff;
+    color: #990000;
 }
