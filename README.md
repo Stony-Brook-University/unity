@@ -16,7 +16,6 @@ You will need ruby installed https://www.ruby-lang.org/en/ and the bundler exten
 
 gulpfile.js
 =====
-<<<<<<< HEAD
 This file contains our gulp scripts which sare used to automate the build process.
 Simply run gulp to build things from within the unity directory.
 
