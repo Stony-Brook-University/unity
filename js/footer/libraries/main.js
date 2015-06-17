@@ -1,4 +1,6 @@
-jQuery(document).ready(function($){
+(function($){
+
+$(document).ready(function($){
 	//open/close lateral filter
 	$('.cd-filter-trigger').on('click', function(){
 		triggerFilter(true);
@@ -56,9 +58,16 @@ jQuery(document).ready(function($){
 	});
 
 	function fixGallery() {
+		if($('.cd-main-content').length)
+		{
+
+
 		var offsetTop = $('.cd-main-content').offset().top,
 			scrollTop = $(window).scrollTop();
 		( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('is-fixed') : $('.cd-main-content').removeClass('is-fixed');
+		
+		}
+
 	}
 
 	/************************************
@@ -206,3 +215,5 @@ var buttonFilter = {
 		}
   	}
 };
+
+})(jQuery);

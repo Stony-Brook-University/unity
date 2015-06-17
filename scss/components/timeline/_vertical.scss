@@ -50,6 +50,7 @@
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    background-color: #ccc;
 }
 
 .vertical-timeline > li > .vertical-timeline-panel:before {
@@ -70,8 +71,8 @@
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
+    border-left: 14px solid #ccc;
+    border-right: 0 solid #ccc;
     border-bottom: 14px solid transparent;
     content: " ";
 }
