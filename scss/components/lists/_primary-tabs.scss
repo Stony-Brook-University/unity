@@ -1,0 +1,32 @@
+ul.tabs.primary {
+    height: auto;
+    line-height: normal;
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+}
+
+ul.tabs.primary li {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #990000;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin: 0.3em;
+}
+
+ul.tabs.primary li.active {
+    background-color: #fff;
+}
+
+ul.tabs.primary li a {
+    display: block;
+}
+
+ul.tabs.primary li:hover {
+    background-color: #990000;
+}
+
+ul.tabs.primary li:hover a {
+    color: #fff;
+}
