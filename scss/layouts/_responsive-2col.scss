@@ -17,4 +17,8 @@
             height: auto;
         }
     }
+
+    #right-prefix > .panel-pane, #right-postfix > .panel-pane {
+        margin: 1em 0;
+    }
 }

@@ -6,8 +6,7 @@
     margin: auto;
     padding: 0px;
     position: relative;
-    cursor: pointer;
-    z-index: 1;
+    z-index: 10;
 
     .main-site-nav {
         ul {
@@ -83,6 +82,22 @@
                 }
             }
 
+            li.expanded {
+                list-style-image: none;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li.expanded > a:after {
+                @include breakpoint($screen-lg) {
+                    @extend .sbuicon;
+                    content: "\edc6";
+                    margin-left: 5px;
+                    top: 1px;
+                }
+            }
+
             li:first-child a {
                 min-width: 80px;
             }
@@ -145,10 +160,8 @@
         }
 
         .main-nav-trigger {
-            content: "\f0c9";
             float: left;
             padding-top: 6px;
-            font-family: FontAwesome;
             font-size: 24px;
             color: #fff;
             text-shadow: 0 1px 0 #500;
@@ -162,7 +175,33 @@
             text-align: right;
             display: block;
             position: relative;
+
+            em {
+                cursor: pointer;
+            }
         }
+    }
+
+    .main-nav-search-trigger {
+        float: left;
+        padding-top: 6px;
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 0 1px 0 #500;
+        padding-left: 0;
+        padding-right: 3%;
+        padding-bottom: 2px;
+        height: 100%;
+        background: #900;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+        display: block;
+        position: relative;
+    }
+
+    .main-nav-search-trigger:hover {
+        text-decoration: none;
     }
 }
 
@@ -208,6 +247,10 @@
         margin-right: 10px;
         font-size: 8px;
         color: #fff;
+    }
+
+    .main-site-nav-cols {
+        padding: 0px 10px;
     }
 }
 
@@ -262,5 +305,93 @@
         .main-site-nav .main-nav-trigger {
             display: none;
         }
+
+        .main-site-nav-cols {
+            padding: 0px 30px;
+        }
+    }
+
+    /* line 4, ../../../scss/partials/layout/header/_search.scss */
+    #sb-search {
+        float: right;
+        width: 200px;
+    }
+
+    @media (min-width: 420px) {
+        /* line 4, ../../../scss/partials/layout/header/_search.scss */
+        #sb-search {
+            width: 242px;
+            font-size: 14px;
+        }
+    }
+
+    /* line 17, ../../../scss/partials/layout/header/_search.scss */
+    input[type="text"].sb-search-input {
+        float: left;
+        border: none;
+        outline: none;
+        background: #fff;
+        width: 158px;
+        height: 30px;
+        margin: 6px 0px;
+        padding: 10px 3px 10px 3px;
+        font-family: inherit;
+        font-size: 10px;
+        color: #000;
+    }
+
+    @media (min-width: 420px) {
+        /* line 17, ../../../scss/partials/layout/header/_search.scss */
+        input[type="text"].sb-search-input {
+            width: 200px;
+            font-size: 14px;
+        }
+    }
+
+    /* line 43, ../../../scss/partials/layout/header/_search.scss */
+    input[type="text"].sb-search-input::-webkit-input-placeholder {
+        color: #000;
+    }
+
+    /* line 47, ../../../scss/partials/layout/header/_search.scss */
+    input[type="text"].sb-search-input:-moz-placeholder {
+        color: #000;
+    }
+
+    /* line 51, ../../../scss/partials/layout/header/_search.scss */
+    input[type="text"].sb-search-input::-moz-placeholder {
+        color: #000;
+    }
+
+    /* line 55, ../../../scss/partials/layout/header/_search.scss */
+    input[type="text"].sb-search-input:-ms-input-placeholder {
+        color: #000;
+    }
+
+    /* line 60, ../../../scss/partials/layout/header/_search.scss */
+    input[type="submit"].sb-search-submit {
+        width: 42px;
+        height: 42px;
+        display: block;
+        float: right;
+        padding: 0;
+        margin: 0;
+        line-height: 42px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #990000;
+        background: url("../assets/images/search.png") no-repeat 50% 50%;
+        border: 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    /* line 83, ../../../scss/partials/layout/header/_search.scss */
+    .sb-search-submit:hover {
+        background-color: #000000;
+    }
+
+    .main-site-nav-wrap .main-nav-search-trigger {
+        display: none;
     }
 }
