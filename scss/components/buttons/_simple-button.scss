@@ -20,6 +20,26 @@ Simple Button
     display: block;
 }
 
+.simple-btn:hover {
+    background: inherit;
+    border: 2px solid transparent;
+    padding: 10px 34px 10px 10px !important;
+}
+
+.simple-btn:after {
+    font-size: 32px;
+    line-height: 1em;
+    content: "\35";
+    opacity: 0;
+    position: absolute;
+    margin-left: -20px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    top: 7px;
+    right: 5px;
+}
+
 .simple-btn__text-red {
     text-align: center;
     text-transform: uppercase;
