@@ -97,6 +97,36 @@ gulp.task('todo-html', function() {
         .pipe(gulp.dest('./styleguide/compiled-assets/')) //output todo.md as markdown 
 });
 
+gulp.task('styles-prod', ['styles'], function() {
+    gulp.src('./.dist/css/style.css')
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(minifycss())
+        .pipe(gulp.dest('.dist/css'));
+        
+    
+
+
+    gulp.src('./.dist/css/style.min.css')
+        .pipe(rename({
+            suffix: '.blessed.ie89'
+        }))
+        .pipe(bless())
+        .pipe(gulp.dest('.dist/css'));
+        
+    
+
+    gulp.src('./.dist/css/style.min.css')
+        .pipe(mqRemove({ width: "1280px" }))
+        .pipe(rename({
+            suffix: '.blessed.ie7'
+        }))
+        .pipe(bless())
+        .pipe(gulp.dest('.dist/css'));
+        
+});
+
 gulp.task('styles', function() {
     gulp.src('./scss/*.scss')
         .pipe(sass({
@@ -110,30 +140,14 @@ gulp.task('styles', function() {
             sourcemap: false
         })).on('error', gutil.log)
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(gulp.dest('.dist/css'))
+        .pipe(gulp.dest('.dist/css'));
         //.pipe(gulp.dest('app/assets/temp'))
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(minifycss())
-
-        .pipe(gulp.dest('.dist/css'))
-        .pipe(bless())
-        .pipe(rename({
-            suffix: '.blessed'
-        }))
-        .pipe(gulp.dest('.dist/css'))
-
-        .pipe(mqRemove({ width: "1280px" }))
-        .pipe(rename({
-            suffix: '.nomq'
-        }))
-        .pipe(gulp.dest(".dist/css"))
+        
+        notify({
+            message: 'Styles task complete'
+        });
 
         
-        .pipe(notify({
-            message: 'Styles task complete'
-        }));
 });
 
 gulp.task('browser-sync', function() {
@@ -165,7 +179,7 @@ gulp.task('default', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js
 gulp.task('simple', ['styles', 'headerjs', 'footerjs', 'watch-simple']);
 
 
-gulp.task('release', ['lint', 'fonts', 'images', 'styles', 'todo-scss', 'todo-js', 'headerjs', 'footerjs']);
+gulp.task('release', ['fonts', 'images', 'styles', 'styles-prod', 'headerjs', 'footerjs']);
 
 gulp.task('browsersync', ['browser-sync'], function() {
 

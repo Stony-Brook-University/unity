@@ -1,4 +1,4 @@
-ul, li {
+ul, ul li {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -35,10 +35,22 @@ ul.star-bullets {
     }
 }
 
-.default-bullets {
+#main-content ul, #main-content ul li
+{
+    list-style: initial;
+    list-style-type: initial;
+    margin-left: 20px;
+}
+
+ul.default-bullets, {
+        list-style: none;
+    list-style-type: none;
+
     li {
         margin-left: 20px;
         text-indent: -15px;
+            list-style: none;
+    list-style-type: none;
     }
 
     li:before {

@@ -1,7 +1,8 @@
 ul.tabs.primary {
     height: auto;
     line-height: normal;
-    list-style: none;
+        list-style: none;
+    list-style-type: none;
     margin: 1em 0;
     padding: 0;
 }
@@ -14,10 +15,18 @@ ul.tabs.primary li {
   line-height: 1;
   color: #fff;
   text-align: center;
-
+      list-style: none;
+    list-style-type: none;
   background-color: #666;
   border-radius: .25em;
 
+}
+
+ul.tabs.primary li:before
+{
+  display: none;
+  content: '';
+  
 }
 
 ul.tabs.primary li.active {
