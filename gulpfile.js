@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var bless = require('gulp-bless');
+var mqRemove = require("gulp-mq-remove");
 var compass = require('gulp-compass');
 var sass = require('gulp-sass');
 var gutil = require('gulp-util');
@@ -114,7 +116,21 @@ gulp.task('styles', function() {
             suffix: '.min'
         }))
         .pipe(minifycss())
+
         .pipe(gulp.dest('.dist/css'))
+        .pipe(bless())
+        .pipe(rename({
+            suffix: '.blessed'
+        }))
+        .pipe(gulp.dest('.dist/css'))
+
+        .pipe(mqRemove({ width: "1280px" }))
+        .pipe(rename({
+            suffix: '.nomq'
+        }))
+        .pipe(gulp.dest(".dist/css"))
+
+        
         .pipe(notify({
             message: 'Styles task complete'
         }));
