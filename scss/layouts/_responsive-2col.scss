@@ -1,24 +1,75 @@
-.panel-layout-responsive-2col {
-    #right-prefix {
-        margin-bottom: 2em;
+.panel-layout-responsive-2col
+{
+  #content
+  {
+    margin: 5px;
+  }
 
-        @include breakpoint($screen-md) {
-            float: right;
-        }
+  
+}
+
+
+.panel-layout-responsive-2col
+{
+
+    #main-content-section
+    {
+
+      width: 100%;
+      float: left;
+      
+    
+      @include breakpoint($screen-md) 
+      {
+    
+        width: 70%;   
+      }
+
+      padding: 0px 10px 0px 0px;
+
     }
 
-    #right-prefix, #right-postfix {
-        h2 {
-            font-size: 1.6em;
-        }
+    #right-prefix
+    {
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+      width: 100%;
+      float: left;
+
+      @include breakpoint($screen-md) 
+      {
+    
+        width: 25%;   
+        float: right;
+      }
+
+      .panel-pane
+      {
+        float: left;
+        clear: both;
+        width: 100%;
+      }
     }
 
-    #right-prefix > .panel-pane, #right-postfix > .panel-pane {
-        margin: 1em 0;
+    #right-postfix
+    {
+
+      width: 100%;
+      float: left;
+
+      @include breakpoint($screen-md) 
+      {
+    
+        width: 25%;   
+        float: right;
+        clear: right;
+      }
+
+      .panel-pane
+      {
+        float: left;
+        clear: both;
+        width: 100%;
+      }
     }
+
 }

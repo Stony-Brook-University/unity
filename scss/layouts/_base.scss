@@ -46,6 +46,24 @@ body {
             }
         }
 
+        ul ul {
+          margin: 15px 0 0 10px;
+          padding: 0;
+            
+                @include breakpoint($screen-lg) {
+                border-top: 1px solid #ccc;
+            }
+        }
+
+
+
+        ul li:last-child
+        {
+            @include breakpoint($screen-lg) {
+                border-bottom: 0px solid #ccc;
+            }
+        }
+
         ul li a:after {
             display: inline-block;
             content: "\f105";
@@ -66,5 +84,25 @@ body {
         @include make-lg-column-push(3);
     }
 }
+
+
+ #right-prefix {
+        margin-bottom: 2em;
+    }
+
+    #right-prefix, #right-postfix {
+        h2 {
+            font-size: 1.6em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    #right-prefix > .panel-pane, #right-postfix > .panel-pane {
+        margin: 1em 0;
+    }
 
 @import "responsive-2col";
