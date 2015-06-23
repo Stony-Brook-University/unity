@@ -29,3 +29,24 @@
     @extend .sbuicon;
     content: "\f058";
 }
+
+
+.icon-info2:before {
+	   @extend .sbuicon;
+    content: "\ed61";
+}
+
+.icon-calendar:before {
+	   @extend .sbuicon;
+    content: "\f073";
+}
+
+.icon-cancel-circle:before {
+	   @extend .sbuicon;
+    content: "\ed62";
+}
+
+.icon-warning:before {
+    @extend .sbuicon;
+    content: "\ed4c";
+}
