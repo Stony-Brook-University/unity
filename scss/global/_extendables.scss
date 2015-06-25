@@ -165,13 +165,20 @@
 }
 
 .light-theme {
+    
+    .section-header, .section-footer
+    {
+
+
     h1, h2, h3, h4, h5, h6, p, a, a:visited, a:active, div, span {
         color: #FFF;
     }
 
+
     a:hover {
         color: #ccc;
     }
+}
 }
 
 .dark-theme {

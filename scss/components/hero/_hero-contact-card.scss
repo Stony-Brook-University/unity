@@ -1,4 +1,7 @@
 .hero-contact-card {
+
+    position: relative;
+    background-size: cover;
  
     @include breakpoint($break-phone)
     {
@@ -48,7 +51,7 @@
         {
             background-color: #fff;
             background-color: rgba(255,255,255,0.75);
-            padding: 1em;
+            
             width: 100%;
             max-width: 800px;
             border: 1px solid #ccc;
@@ -64,31 +67,22 @@
 
             .contact-card-image
             {
-                width: 140px;
-                float: left;
-                margin-right: 1em;
-                
-                @include breakpoint($break-tablet)
+                img
                 {
-                    width: 200px;
+                    width:100%;
+                    height: auto;
                 }
-                
-
-                
-            }
-
-
-            .contact-card-image-small
-            {
-                width: 100px;
-                float: left;
-                margin-right: 1em;
-               
             }
 
             .contact-card-text
             {
+                  
                 float: left;
+
+                 @include breakpoint($break-tablet)
+                {
+                    margin-left: 2em;
+                }
                 
 
                 h1, h2
