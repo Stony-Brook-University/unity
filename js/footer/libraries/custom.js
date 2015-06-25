@@ -15,7 +15,7 @@
 		 * Image Backgrounds
 		/* ---------------------------------------------- */
 
-		var module = $('.intro-module, .intro-module-small, .side-image');
+		var module = $('.intro-module, .intro-module-small, .side-image, .intro__pt-50');
 		module.each(function() {
 			if ($(this).attr('data-background')) {
 				$(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');

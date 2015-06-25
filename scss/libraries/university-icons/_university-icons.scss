@@ -31,6 +31,14 @@
     font-size: 2em;
 }
 
+.icon-larger:before {
+    font-size: 4em;
+}
+
+.icon-x-large:before {
+    font-size: 6em;
+}
+
 .sbuicon-glass:before {
     content: "\f000";
 }
@@ -70,6 +78,10 @@
 .sbuicon-th-large:before {
     content: "\f009";
 }
+
+.sbuicon-blackboard:before {
+    content: "\e602";
+}  
 
 .sbuicon-th:before {
     content: "\f00a";
@@ -866,7 +878,9 @@
 .sbuicon-google-plus:before {
     content: "\f0d5";
 }
-
+.sbuicon-google2:before {
+    content: "\eee3";
+}
 .sbuicon-money:before {
     content: "\f0d6";
 }
@@ -1542,7 +1556,12 @@
 .sbuicon-flickr:before {
     content: "\f16e";
 }
-
+.sbuicon-flickr3:before {
+    content: "\eefc";
+}
+.sbuicon-flickr2:before {
+    content: "\eefd";
+}
 .sbuicon-adn:before {
     content: "\f170";
 }
@@ -1621,6 +1640,18 @@
 
 .sbuicon-gittip:before {
     content: "\f184";
+}
+
+.sbuicon-github2:before {
+    content: "\ef0d";
+}
+
+.sbuicon-tumblr3:before {
+    content: "\ef17";
+}
+
+.sbuicon-tumblr2:before {
+    content: "\ef18";
 }
 
 .sbuicon-gratipay:before {
