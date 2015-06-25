@@ -1,5 +1,10 @@
 /*used for icomoon font rebranding*/
 
+a[class^="sbuicon-"]:before, a[class*="sbuicon-"]:before, span[class^="sbuicon-"]:before, span[class*="sbuicon-"]:before
+{
+    margin-right: 10px;
+}
+
 //scheduled maintenance
 .icon-system-status-307 {
     content: "\ea5f";

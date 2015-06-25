@@ -16,6 +16,21 @@
     margin-bottom: 20px;
 }
 
+.vertical-timeline
+{
+    .vertical-timeline-panel
+    {
+
+
+        #{$theme-selectors}
+        {
+            color: #000;
+        }
+    }
+
+
+}
+
 .vertical-timeline > li {
     margin-bottom: 20px;
     position: relative;
