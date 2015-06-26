@@ -1,204 +1,159 @@
 <!--#include file="header.html" -->
 
-
    <section id="icon" class="introduction arrow-below arrow-below-white cozy">
-                <div class="container">
-                    <div class="row">
-
-   
-
-
-                    <h1 class="centered">Icons</h1>
-
-                                      <form id="live-search" action="" class="styled" method="post">
-    <fieldset>
-        Search for Icons:<br /> <input type="text" class="text-input" id="filter" value="" /><br />
-        <span id="filter-count"></span>
-    </fieldset>
-</form>
-
-
-
- 
-<div id="popups"></div>
- 
-
-
-<div class="icon-container">
-
-
-
-
-</div>
-
-</div>
-</div>
-</section>
+        <div class="container">
+           <div class="row">
+                <h1 class="centered">Icons</h1>
+                <form id="live-search" action="" class="styled" method="post">
+                    <fieldset>
+                        Search for Icons:<b />
+                        <input type="text" class="text-input" id="filter" value="" /><br />
+                        <span id="filter-count"></span>
+                    </fieldset>
+                </form>
+                <div id="popups"></div>
+                <div class="icon-container"></div>
+            </div>
+        </div>
+    </section>
 
 <script>
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-// The Google Geocoding API url used to get the JSON data
-var icons = "/.dist/assets/fonts/sbu-icons/selection.json";
+    // The Google Geocoding API url used to get the JSON data
+    var icons = "/.dist/assets/fonts/sbu-icons/selection.json";
 
-$.getJSON(icons, function (json) {
+    $.getJSON(icons, function (json) {
 
-    // Set the variables from the results array
-    var icons = json.icons;
+        // Set the variables from the results array
+        var icons = json.icons;
 
-    var iconSets = {};
-    iconSets[9] = 'Font Awesome';
-    iconSets[8] = 'SBU Custom Icons';
-    iconSets[5] = 'IcoMoon Premium';
-        
+        var iconSets = {};
+        iconSets[9] = 'Font Awesome';
+        iconSets[8] = 'SBU Custom Icons';
+        iconSets[5] = 'IcoMoon Premium';
 
-    var output = '';
-    var popups = '';
+        var output = '';
+        var popups = '';
 
-    var curSet = -1;
+        var curSet = -1;
 
-    var iconCount=0;
+        var iconCount=0;
 
-    $.each(icons, function(index, icon)
-    {
-        iconCount++;
-
-        if(curSet != icon.setId)
-        {
-            curSet = icon.setId;
-            output += '<h2>' + iconSets[curSet] + '</h2>' + '<ul class="icons">';
+        $.each(icons, function(index, icon) {
             
-        }   
-      
-        var lig = icon.properties.ligatures;
-        var name = icon.properties.name;
-        var id = icon.properties.id;
-        var tags = '';
-        var aliases = '';
+            iconCount++;
 
-        
+            if(curSet != icon.setId) {
+                curSet = icon.setId;
+                output += '<h2>' + iconSets[curSet] + '</h2>' + '<ul class="icons">';
+            }   
+          
+            var lig = icon.properties.ligatures;
+            var name = icon.properties.name;
+            var id = icon.properties.id;
+            var tags = '';
+            var aliases = '';
 
-        if(icon.properties.ligatures != null)
-        {
-           icon.properties.ligatures;
-        }  
+            if(icon.properties.ligatures != null) {
+               icon.properties.ligatures;
+            }  
 
-        if(icon.properties.name != null)
-        {
-          if(name.indexOf(",") > 0)
-          {
-            name = name.substring(0, name.indexOf(","));
-            aliases = icon.properties.name.substring(icon.properties.name.indexOf(",")+1);
-          }
-        }
-              
-        
-        
-        
-            $.each(icon.icon.tags, function(tagIndex, tag)
-            {
-                    tags += ', ' + tag;
+            if(icon.properties.name != null) {
+                if(name.indexOf(",") > 0) {
+                    name = name.substring(0, name.indexOf(","));
+                    aliases = icon.properties.name.substring(icon.properties.name.indexOf(",")+1);
+                }
+            }
+                          
+            $.each(icon.icon.tags, function(tagIndex, tag) {
+                tags += ', ' + tag;
             });
 
-            if(tags.length > 3)
+            if(tags.length > 3) {
                 tags = tags.substring(2);
+            }
 
-    
-            if(tags != null && tags != '')
-            {
-
+            if(tags != null && tags != '') {
                 tags = 'Tags: ' + tags + '<br />';
                 tags = tags.replace(',', ', ');
-            }
-            else
-            {
+            } else {
                 tags = '';
             }
-
-            if(lig != null && lig != '')
-            {
+            
+            if(lig != null && lig != '') {
                 lig = 'Ligatures: ' + lig + '<br />';
-            }
-            else 
-            {
+            } else {
                 lig = '';
             }
-
-            if(aliases != null && aliases  != '')
-            {
+            
+            if(aliases != null && aliases  != '') {
                 aliases = 'Aliases: ' + aliases + '<br />';
-            }
-            else
+            } else {
                 aliases = '';
+            }
 
+            popup = '<div id="' + curSet + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>Class: sbuicon-' + name + '<br />' + aliases + lig + tags + '</p></div>';
+            output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' + popup + '</li>';  
+        });
 
-          popup = '<div id="' + curSet + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>' + aliases + lig + tags + '</p></div>';
-          output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' + popup + '</li>';  
-      });
-output += "</ul>";
-    
-    //$('#popups').html(popups);
-    $('div.icon-container').html(output);
-
-    $('#filter-count').text('Number of Icons = ' + iconCount);
-
-    $('ul.icons li .contents').matchHeight({
-      byRow: false,
-      property: 'height'
-    });
-
-    $(function() {
-    var moveLeft = 0;
-    var moveDown = 0;
-    $('li.popper').hover(function(e) {
-   
-        var target = '#' + ($(this).attr('data-popbox'));
-         
-        $(target).show();
-        moveLeft = $(this).outerWidth();
-        moveDown = ($(target).outerHeight() / 2);
+        output += "</ul>";
         
-    }, function() {
-        var target = '#' + ($(this).attr('data-popbox'));
-        $(target).hide();
-    });
- 
-    $('li.popper').mousemove(function(e) {
-        var target = '#' + ($(this).attr('data-popbox'));
-         
-        leftD = e.pageX + parseInt(moveLeft);
-        maxRight = leftD + $(target).outerWidth();
-        windowLeft = $(window).width() - 40;
-        windowRight = 0;
-        maxLeft = e.pageX - (parseInt(moveLeft) + $(target).outerWidth() + 20);
-         
-        if(maxRight > windowLeft && maxLeft > windowRight)
-        {
-            leftD = maxLeft;
-        }
-     
-        topD = e.pageY - parseInt(moveDown);
-        maxBottom = parseInt(e.pageY + parseInt(moveDown) + 20);
-        windowBottom = parseInt(parseInt($(document).scrollTop()) + parseInt($(window).height()));
-        maxTop = topD;
-        windowTop = parseInt($(document).scrollTop());
-        if(maxBottom > windowBottom)
-        {
-            topD = windowBottom - $(target).outerHeight() - 20;
-        } else if(maxTop < windowTop){
-            topD = windowTop + 20;
-        }
-     
-        $(target).css('top', topD).css('left', leftD);
-     
-     
-    });
- 
-});
-});
+        //$('#popups').html(popups);
+        $('div.icon-container').html(output);
 
+        $('#filter-count').text('Number of Icons = ' + iconCount);
 
+        $('ul.icons li .contents').matchHeight({
+            byRow: false,
+            property: 'height'
+        });
+
+        $(function() {
+            var moveLeft = 0;
+            var moveDown = 0;
+            $('li.popper').hover(function(e) {
+                var target = '#' + ($(this).attr('data-popbox'));
+                 
+                $(target).show();
+                moveLeft = $(this).outerWidth();
+                moveDown = ($(target).outerHeight() / 2);
+            }, 
+            function() {
+                var target = '#' + ($(this).attr('data-popbox'));
+                $(target).hide();
+            });
+     
+            $('li.popper').mousemove(function(e) {
+                var target = '#' + ($(this).attr('data-popbox'));
+                 
+                leftD = e.pageX + parseInt(moveLeft);
+                maxRight = leftD + $(target).outerWidth();
+                windowLeft = $(window).width() - 40;
+                windowRight = 0;
+                maxLeft = e.pageX - (parseInt(moveLeft) + $(target).outerWidth() + 20);
+                 
+                if(maxRight > windowLeft && maxLeft > windowRight) {
+                    leftD = maxLeft;
+                }
+         
+                topD = e.pageY - parseInt(moveDown);
+                maxBottom = parseInt(e.pageY + parseInt(moveDown) + 20);
+                windowBottom = parseInt(parseInt($(document).scrollTop()) + parseInt($(window).height()));
+                maxTop = topD;
+                windowTop = parseInt($(document).scrollTop());
+
+                if(maxBottom > windowBottom) {
+                    topD = windowBottom - $(target).outerHeight() - 20;
+                } else if (maxTop < windowTop) {
+                    topD = windowTop + 20;
+                }
+             
+                $(target).css('top', topD).css('left', leftD);
+            });   
+        });
+    });
 });
 
 
@@ -227,8 +182,6 @@ $(document).ready(function(){
         $("#filter-count").text("Number of Icons = "+count);
     });
 });
-
-
 
 </script>
 
