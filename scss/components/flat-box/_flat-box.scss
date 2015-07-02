@@ -156,7 +156,8 @@ Common Button Features
 .flt-button a, .flt-button-red a, .flt-button-turquoise a, .flt-button-alizarin a,
 .flt-button-amethyst a, .flt-button-river a, .flt-button-sun a, .flt-button-asphalt a {
     display: inline-block;
-    width: 50%;
+    padding: 0 2em;
+    overflow: hidden;
     height: 50px;
     line-height: 50px;
     color: #fff;
