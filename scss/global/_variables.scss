@@ -5,7 +5,7 @@
 ////////////////////////
 $red: #990000;
 $stony-brook-red: $red;
-$dark-red: darken($red, 10%);
+$dark-red: #890000;
 $light-red: #ff9999;
 $pom: #c0392b;
 
@@ -17,22 +17,17 @@ $dark-gray: #333333;
 $light-gray: #eeeeee;
 $asphalt: #34495E;
 
-$lime-green: #bac045;
-$emerald: #2ecc71;
-$steel-blue: #6ec0f3;
-$aqua: #47c2c8;
-$muted-aqua: #9dbbb5;
 
-$blue: #0063a3;
-$dark-blue: darken($blue, 10%);
-$light-blue: lighten($blue, 10%);
+$emerald: #2ecc71;
+
 $turquoise: #1ABC9C;
 $river: #3498DB;
 
 $amethyst: #9B59B6;
 
-$black: black;
-$green: #009900;
+$black: #000;
+$white: #fff;
+
 
 $facebook: #4c66a4;
 $twitter: #55acee;

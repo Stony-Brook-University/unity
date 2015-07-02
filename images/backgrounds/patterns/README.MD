@@ -1,0 +1,1 @@
+Patterns are background images which are not transparent. In order to change their color you'll need to specify an overlay. 

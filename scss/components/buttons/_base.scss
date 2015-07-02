@@ -1,10 +1,22 @@
-@import "background-image-buttons";
-@import "button-icon";
-@import "buttons";
-@import "circle-band-buttons";
+@import "background-image-button";
+@import "sbu-button";
+@import "circle-band-button";
 @import "explore-button";
-@import "round-flat-buttons";
-@import "round-image-buttons";
+@import "round-flat-button";
+@import "round-image-button";
 @import "transparent-round-btn";
 @import "outline-button";
+@import "rounded-outline-button";
 @import "simple-button";
+
+
+.button-half-width {
+	    width: 48% !important;
+	    margin-right: 1% !important;
+	}
+
+	.button-third-width {
+	    width: 31% !important;
+	    margin-right: 1% !important;
+	}
+

@@ -1,0 +1,1 @@
+Textures are backgrounds which have a level of transparency, to change their color you need to specify a bg-COLOR

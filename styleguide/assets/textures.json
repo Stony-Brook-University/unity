@@ -1,0 +1,63 @@
+{
+	"60-lines": {
+		"bgWhitelist": ["bg-gray", "bg-light-gray", "bg-white"],
+		"bgDefault": "bg-gray"
+	},
+	"asfalt-light": {
+		"bgBlacklist": ["bg-gray", "bg-light-gray", "bg-white", "bg-turquoise", "bg-sun"],
+		"bgDefault": "bg-asphalt"
+	},
+	"az-subtle": {
+		"bgBlacklist": ["bg-black"],
+		"bgDefault": "bg-red"
+	},
+	"binding-dark": {
+		"bgBlacklist": ["bg-gray", "bg-light-gray", "bg-white"],
+		"bgDefault": "bg-dark-red"
+	},
+	"black-dots-pattern": {
+		"bgWhitelist": ["bg-dark-red", "bg-dark-gray", "bg-asphalt"],
+		"bgDefault": "bg-dark-gray"
+	},
+	"black-felt": {
+		"bgBlacklist": ["bg-dark-gray", "bg-light-gray", "bg-black", "bg-white"],
+		"bgDefault": "bg-asphalt"
+	},
+	"black-paper": {
+		"bgBlacklist": ["bg-dark-gray", "bg-white", "bg-black"],
+		"bgDefault": "bg-dark-red"
+	},
+	"blu-stripes": {
+		"bgWhitelist": ["bg-dark-gray", "bg-asphalt"],
+		"bgDefault": "bg-dark-gray"
+	},
+	"bright-squares": {
+		"bgWhitelist": ["bg-dark-red", "bg-dark-gray", "bg-black", "bg-asphalt"],
+		"bgDefault": "bg-red"
+	},
+	"brushed-alum-dark": {
+		"bgWhitelist": ["bg-dark-red", "bg-red", "bg-dark-gray", "bg-black", "bg-pom", "bg-alizarin", "bg-asphalt"],
+		"bgDefault": "bg-alizarin"
+	},
+	"brushed-alum": {
+		"bgWhitelist": ["bg-dark-red", "bg-red", "bg-dark-gray", "bg-black", "bg-pom", "bg-alizarin", "bg-asphalt"],
+		"bgDefault": "bg-dark-gray"
+	},
+	"dark-mosaic": {
+		"bgWhitelist": ["bg-dark-red", "bg-red", "bg-pom", "bg-alizarian", "bg-asphalt"],
+		"bgDefault": "bg-red"
+	},
+	
+	"egg-shell": {
+		"bgBlacklist": ["bg-dark-gray", "bg-black"],
+		"bgDefault": "bg-red"
+	},
+	"hexellence": {
+		"bgBlacklist": ["bg-red", "bg-light-gray", "bg-white", "bg-black", "bg-turquoise", "bg-sun"],
+		"bgDefault": "bg-red"
+	},
+	"thin-diagonal-stripe-pattern": {
+		"bgBlacklist": ["bg-light-gray", "bg-white", "bg-black"],
+		"bgDefault": "bg-red"
+	}
+}

@@ -47,3 +47,29 @@ ul.icons li span:before {
     text-align: left;
     padding: 10px;
 }
+
+
+.overlay-card, .color-card {
+  height: 100px;
+  margin: 0 0 1em;
+}
+
+.color-picker li, .overlay-picker li
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.padding-picker li
+{
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #fff;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;    
+}

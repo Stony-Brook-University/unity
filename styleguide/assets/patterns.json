@@ -1,0 +1,17 @@
+{
+	
+	"lodyas-light": {
+		"overlayBlacklist": ["overlay-white"],
+		"overlayDefault": "overlay-gray"
+	},
+	
+	"pentagon": {
+		"overlayBlacklist": ["overlay-black", "overlay-white"],
+		"overlayDefault": "overlay-river"
+	},
+
+	"starring": {
+		"overlayWhitelist": ["overlay-black", "overlay-gray"],
+		"overlayDefault": "overlay-black"
+	}
+}

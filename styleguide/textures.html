@@ -1,0 +1,389 @@
+<!--#include file="header.html" -->
+
+<section id="colors" class="fluffy">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="section-header">Backgrounds and Colors</h2>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Official University Colors</h3>
+            <p class="introduction">These colors are officially sanctioned and used in University designs</p>
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-red">
+                    Red .red / .bg-red
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-dark-red white">
+                    Dark Red .dark-red / .bg-dark-red
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-gray">
+                    Gray .gray / .bg-gray
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-light-gray">
+                    light-gray .light-gray / .bg-light-gray
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-dark-gray white">
+                    dark-gray .dark-gray / .bg-dark-gray
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-white">
+                    white .white / .bg-white
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-black white">
+                    black  .black / .bg-black
+                </div>
+            </div>  
+        </div>
+
+        <div class="row">
+        	<h3>Supplemental UI Colors</h3>
+        	<p class="introduction">These should be used to highlight specific interface elements and should be used sparingly on a page.</p>
+
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-pom white">
+                    Pomegranate .pom / .bg-pom
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-turquoise white">
+                    Turquoise .turquiose / .bg-turquoise
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-alizarin white">
+                    Alizarin .alizarin / .bg-alizarin
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-amethyst">
+                    Amethyst .amethyst / .bg-amethyst
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-sun">
+                    Sun .sun / .bg-sun
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-asphalt white">
+                    Asphalt .asphalt / .bg-asphalt
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            
+                <h3>Corporate Colors</h3>
+                <p class="introduction">These colors should only be used in conjunction with their corporate counter-part.</p>
+          <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-facebook">
+                    facebook .facebook / .bg-facebook
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-twitter">
+                    twitter .twitter / .bg-twitter
+                </div>
+            </div>
+            
+            <div class="col-sm-3 col-md-2">
+                <div class="color-card bg-yammer">
+                    yammer .yammer / .bg-yammer
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Overlays</h3>
+            <p class="introduction">Overlays are placed over backgrounds to add contrast</p>
+            <div class="col-sm-3 col-md-2">
+                <div class="overlay-card overlay-black">
+                    Overlay Black .overlay-black
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="overlay-card overlay-gray">
+                    Overlay Gray .overlay-gray
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="overlay-card overlay-red">
+                    Overlay Red .overlay-red
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="overlay-card overlay-river">
+                    Overlay River .overlay-river
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="overlay-card overlay-turquoise">
+                    Overlay Turquoise .overlay-turquoise
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <div class="overlay-card overlay-white">
+                    Overlay White .overlay-white
+                </div>
+            </div>
+    </div>
+    <!-- /.row -->
+</section>
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+function getColors()
+{
+	colors = [];
+	//foreach color card
+	
+	$("#colors .color-card").each(function() {
+
+		classList = $(this).attr('class').split(/\s+/);
+	 	
+	 	$.each(classList, function(index, item) {
+	 		
+	 		if(item.indexOf('bg-') == 0)
+	 		{
+	 			colors.push(item);
+	 		}
+	 	});
+ 	});
+
+ 	return colors;
+}
+
+function getOverlays()
+{
+	colors = [];
+	//foreach color card
+	
+	$("#colors .overlay-card").each(function() {
+
+		classList = $(this).attr('class').split(/\s+/);
+	 	
+	 	$.each(classList, function(index, item) {
+	 		
+	 		if(item.indexOf('overlay-') == 0 && item != 'overlay-card')
+	 		{
+	 			colors.push(item);
+	 		}
+	 	});
+ 	});
+
+ 	return colors;
+}
+
+function load()
+{
+  	
+  	//get array of colors, build into html list
+  	colors = getColors();
+  	colorList='';
+  	$.each(colors, function(index, item) {
+  		colorList += "<li class=" + item + "></li>";
+  	});
+
+  	overlays = getOverlays();
+  	overlayList='';
+  	$.each(overlays, function(index, item) {
+  		overlayList += "<li class=" + item + "></li>";
+  	});
+
+  	//create array of paddings, build into html list
+  	paddings = ['fluffy', 'cushy', 'airy', 'spacey', 'comfy', 'cozy', 'snug', 'tight'];
+  	paddingList = '';
+
+  	$.each(paddings, function(index, item) {
+  		paddingList += "<li class=" + item + ">" + item + "</li>";
+  	});
+
+  	//read list of textures from json
+  	$.getJSON("compiled-assets/textures.json", function ( data ) { 
+
+		var items = [];
+		items.push("<section class='fluffy'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header'>Textures</h2></div></div></div></section>");
+
+		var i = 0;
+		var texture="";
+		var container = '';
+		var bgColor = '';
+		$.each(data, function (key, val) {
+
+			if(i%3 == 0)
+				bgColor = 'bg-gray'
+			else if(i%3 == 1)
+				bgColor = 'bg-dark-gray'
+			else
+				bgColor = 'bg-red';
+
+			texture = key;
+			texture = texture.substr(0, texture.indexOf('.'));
+			texture = "bg-texture-" + texture;
+			 items.push( "<section id='" + i + "' class='" + bgColor + " fluffy " + texture + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header white'>" + texture + "</h2><ul class='color-picker'>" + colorList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
+			 i++;
+		});
+
+ 		$( "#bg-content").append(items.join(""));
+
+ 		//when a color gets clicked on...
+		$('.color-picker li').click( function() {
+
+		 	li = $(this); //what got clicked
+ 			section = $(this).parent().closest("section"); //the section the clicked item lives in
+ 			classList = section.attr('class').split(/\s+/); //build array of classes on that section
+			
+			//search class array looking for bg-color 				
+ 			$.each(classList, function(index, item) {
+ 		
+		 		if(item.indexOf('bg-') == 0 && item.indexOf('bg-texture') < 0)
+		 		{
+		 			section.removeClass(item);
+		 		}
+ 			});
+
+ 			//add clicked bg-color to section
+ 			section.addClass(li.attr('class'));
+ 		});
+
+		//when a padding size gets clicked on...
+	 	$('.padding-picker li').click( function() {
+
+		 	li = $(this); //padding that got clicked on
+	 		section = $(this).parent().closest("section"); //section the padding item lives in
+	 		classList = section.attr('class').split(/\s+/); //build array of classes on that section
+
+		 	$.each(classList, function(index, item) { //search classes remove existing padding
+
+		 		if($.inArray(item, paddings) > 0)
+		 		{
+		 			console.log("found: " + item);
+		 			section.removeClass(item);
+		 		}
+		 	});
+
+	 		section.addClass(li.attr('class')); //add clicked padding to section
+	 	});
+ 	});
+
+
+	$.getJSON("compiled-assets/patterns.json", function ( data ) { 
+
+		var items = [];
+
+				items.push("<section class='fluffy'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header'>Patterns</h2></div></div></div></section>");
+
+		var i = 0;
+		var pattern="";
+		var container = '';
+		var overlayColor = '';
+		$.each(data, function (key, val) {
+
+			if(i%3 == 0)
+				overlayColor = 'overlay-gray'
+			else if(i%3 == 1)
+				overlayColor = 'overlay-dark-gray'
+			else
+				overlayColor = 'overlay-red';
+
+			pattern = key;
+			pattern = pattern.substr(0, pattern.indexOf('.'));
+			pattern = "bg-pattern-" + pattern;
+			 items.push( "<section id='" + i + "' class='" + overlayColor + " fluffy " + pattern + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header white'>" + pattern + "</h2><ul class='color-picker'>" + overlayList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
+			 i++;
+		});
+
+ 		$( "#bg-content").append(items.join(""));
+
+ 		//when a color gets clicked on...
+		$('.color-picker li').click( function() {
+
+		 	li = $(this); //what got clicked
+ 			section = $(this).parent().closest("section"); //the section the clicked item lives in
+ 			classList = section.attr('class').split(/\s+/); //build array of classes on that section
+			
+			//search class array looking for bg-color 				
+ 			$.each(classList, function(index, item) {
+ 		
+		 		if(item.indexOf('overlay-') == 0)
+		 		{
+		 			section.removeClass(item);
+		 		}
+ 			});
+
+ 			//add clicked bg-color to section
+ 			section.addClass(li.attr('class'));
+ 		});
+
+		//when a padding size gets clicked on...
+	 	$('.padding-picker li').click( function() {
+
+		 	li = $(this); //padding that got clicked on
+	 		section = $(this).parent().closest("section"); //section the padding item lives in
+	 		classList = section.attr('class').split(/\s+/); //build array of classes on that section
+
+		 	$.each(classList, function(index, item) { //search classes remove existing padding
+
+		 		if($.inArray(item, paddings) > 0)
+		 		{
+		 			console.log("found: " + item);
+		 			section.removeClass(item);
+		 		}
+		 	});
+
+	 		section.addClass(li.attr('class')); //add clicked padding to section
+	 	});
+ 	});
+}
+
+ 
+ 	
+function setup()
+{
+
+
+
+load();
+
+
+
+}
+  
+
+
+  $(document).ready(setup);
+</script>
+
+
+<div id="bg-content">
+
+</div>
+
+<!--#include file="footer.html" -->

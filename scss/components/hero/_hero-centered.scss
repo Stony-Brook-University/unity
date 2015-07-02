@@ -22,7 +22,7 @@ Hero
         margin-left: 5px;
     }
 
-    &.small {
+    &.hero-format-small, &.hero-format-banner {
         min-height: 400px;
 
         .hero-content {
@@ -31,7 +31,7 @@ Hero
         }
     }
 
-    &.medium {
+    &.hero-format-medium, &.hero-format-hero {
         min-height: 600px;
 
         .hero-content {
@@ -40,7 +40,7 @@ Hero
         }
     }
 
-    &.large {
+    &.hero-format-large, &.hero-format-superhero {
         min-height: 800px;
 
         .hero-content {
@@ -49,9 +49,36 @@ Hero
         }
     }
 
+    .hero-lead
+    {
+        margin-bottom: 2em;
+    }
+
+    .hero-status
+    {
+        font-size: 1.3em;
+        a
+        {
+            color: $gray;
+            border-bottom: 1px dashed $gray;
+        }
+        a:hover
+        {
+            color: #AAA;
+            border-bottom: 1px solid #AAA;
+        }
+    }
 
     .hero-buttons
     {
-        padding: 2em 0;
+        
+        margin-bottom: 2em;
+
+            a
+            {
+                display: block;
+                text-align: center;
+
+            }
     }
 }

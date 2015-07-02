@@ -18,6 +18,7 @@ var fs = require('fs');
 var path = require('path');
 var template = require('lodash.template');
 var through = require('through2');
+var directoryMap = require("gulp-directory-map");
 
 gulp.task('cleantemp', function() {
     return gulp.src('.temp', {
@@ -77,6 +78,27 @@ gulp.task('images', function() {
     return gulp.src('images/**/*')
         .pipe(gulp.dest('.dist/assets/images'));
 });
+
+gulp.task('textures-json', function() {
+
+    gulp.src(['images/backgrounds/textures/*.jpg', 'images/backgrounds/textures/*.png'])
+        .pipe(directoryMap({
+        filename: 'textures.json'
+    }))
+    .pipe(gulp.dest('styleguide/compiled-assets'));
+
+});
+
+gulp.task('patterns-json', function() {
+
+    gulp.src(['images/backgrounds/patterns/**/*.jpg', 'images/backgrounds/patterns/**/*.png'])
+        .pipe(directoryMap({
+        filename: 'patterns.json'
+    }))
+    .pipe(gulp.dest('styleguide/compiled-assets'));
+
+});
+
 
 // output once in markdown and then output a json file as well 
 gulp.task('todo-scss', function() {
