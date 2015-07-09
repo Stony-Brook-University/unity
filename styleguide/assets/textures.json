@@ -44,7 +44,7 @@
 		"bgDefault": "bg-dark-gray"
 	},
 	"dark-mosaic": {
-		"bgWhitelist": ["bg-dark-red", "bg-red", "bg-pom", "bg-alizarian", "bg-asphalt"],
+		"bgWhitelist": ["bg-dark-red", "bg-red", "bg-pom", "bg-alizarin", "bg-asphalt"],
 		"bgDefault": "bg-red"
 	},
 	

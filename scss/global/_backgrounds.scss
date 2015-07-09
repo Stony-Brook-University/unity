@@ -3,62 +3,73 @@
 //Official Colors
 
 .bg-black, .background-black {
+    @extend .section-light-theme;
     background-color: $black !important;
 }
 
 .bg-red, .background-red {
+    @extend .section-light-theme;
     background-color: $red !important;
 }
 
 .bg-dark-red, .background-dark-red {
+    @extend .section-light-theme;
     background-color: $dark-red !important;
 }
 
 .bg-white, .background-white {
+    @extend .section-dark-theme;
     background-color: $white !important;
 }
 
 .bg-gray, .background-gray {
+    @extend .section-dark-theme;
     background-color: $gray !important;
 }
 
-.bg-dark-gray, .background-dark-gray
-{
+.bg-dark-gray, .background-dark-gray {
+    @extend .section-light-theme;
     background-color: $dark-gray !important;
 }
 
-
 .bg-light-gray, .background-light-gray {
+    @extend .section-dark-theme;
     background-color: $light-gray !important;
 }
 
 //Secondary Colors
 .bg-alizarin, .background-alizarin {
+    @extend .section-light-theme;
     background-color: $alizarin !important;
 }
 
 .bg-amethyst, .background-amethyst {
+    @extend .section-light-theme;
     background-color: $amethyst !important;
 }
 
 .bg-asphalt, .background-asphalt {
+    @extend .section-light-theme;
     background-color: $asphalt !important;
 }
 
 .bg-pom, .background-pom {
+    @extend .section-light-theme;
     background-color: $pom !important;
 }
 
 .bg-sun, .background-sun {
+    @extend .section-dark-theme;
     background-color: $sun !important;
 }
 
-
 .bg-river, .background-river {
+    @extend .section-light-theme;
     background-color: $river !important;
 }
 
 .bg-turquoise, .background-turquoise {
+    @extend .section-light-theme;
     background-color: $turquoise !important;
 }
 
@@ -75,14 +86,12 @@
     background-color: $twitter !important;
 }
 
-
 ///TEXTURES
 
 .bg-texture-60-lines {
     background-image: url("../assets/images/backgrounds/textures/60-lines.png");
     background-repeat: repeat;
 }
-
 
 .bg-texture-asfalt-light {
     background-image: url("../assets/images/backgrounds/textures/asfalt-light.png");
@@ -134,7 +143,6 @@
     background-repeat: repeat;
 }
 
-
 .bg-texture-dark-mosaic {
     background-image: url("../assets/images/backgrounds/textures/dark-mosaic.png");
     background-repeat: repeat;
@@ -150,8 +158,6 @@
     background-repeat: repeat;
 }
 
-
-
 .bg-texture-egg-shell {
     background-image: url("../assets/images/backgrounds/textures/egg-shell.png");
     background-repeat: repeat;
@@ -162,12 +168,10 @@
     background-repeat: repeat;
 }
 
-.bg-texture-thin-diagonal-stripe-pattern
-{
- background-image: url("../assets/images/backgrounds/textures/thin-diagonal-stripe-pattern.png");
-    background-repeat: repeat;   
+.bg-texture-thin-diagonal-stripe-pattern {
+    background-image: url("../assets/images/backgrounds/textures/thin-diagonal-stripe-pattern.png");
+    background-repeat: repeat;
 }
-
 
 //PATTERNS
 
@@ -191,15 +195,14 @@
     background-repeat: repeat;
 }
 
-
 ///OVERLAYS
 
-.overlay-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red
-{
+.overlay-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red {
     position: relative;
 }
 
 .overlay-black:before {
+    @extend .section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -215,6 +218,7 @@
 }
 
 .overlay-gray:before {
+    @extend .section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -229,44 +233,47 @@
     background-color: rgba(51, 51, 51, 0.5);
 }
 
-
-.overlay-red:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(153,0,0,0.5);
+.overlay-red:before {
+    @extend .section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(153, 0, 0, 0.5);
 }
 
-.overlay-river:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(52,152,219,0.5);
+.overlay-river:before {
+    @extend .section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(52, 152, 219, 0.5);
 }
 
-.overlay-turquoise:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(26,188,156,0.5);
+.overlay-turquoise:before {
+    @extend .section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(26, 188, 156, 0.5);
 }
 
 .overlay-white:before {
+    @extend .section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -280,9 +287,3 @@
     z-index: 0;
     background-color: rgba(255, 255, 255, 0.7);
 }
-
-
-
-
-
-
