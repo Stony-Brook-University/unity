@@ -1,11 +1,5 @@
-///SOLID COLORS
-
-//Official Colors
-
-
 
 //COLORS
-
 @each $current-color in $darkColorsList {
     $i: index($darkColorsList, $current-color);
     
