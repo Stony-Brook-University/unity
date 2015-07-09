@@ -4,7 +4,7 @@
 		"bgDefault": "bg-gray"
 	},
 	"asfalt-light": {
-		"bgBlacklist": ["bg-gray", "bg-light-gray", "bg-white", "bg-turquoise", "bg-sun"],
+		"bgBlacklist": ["bg-gray", "bg-light-gray", "bg-white", "bg-turquoise", "bg-sun", "bg-emerald", "bg-river"],
 		"bgDefault": "bg-asphalt"
 	},
 	"az-subtle": {
@@ -53,7 +53,7 @@
 		"bgDefault": "bg-red"
 	},
 	"hexellence": {
-		"bgBlacklist": ["bg-red", "bg-light-gray", "bg-white", "bg-black", "bg-turquoise", "bg-sun"],
+		"bgBlacklist": ["bg-red", "bg-light-gray", "bg-white", "bg-black", "bg-turquoise", "bg-sun", "bg-emerald", "bg-river"],
 		"bgDefault": "bg-red"
 	},
 	"thin-diagonal-stripe-pattern": {
