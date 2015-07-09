@@ -1,0 +1,76 @@
+.section-light-theme {
+    .section-themeable {
+        color: #FFF;
+        a {
+            color: $light-gray;
+        }
+        a:hover {
+            color: $gray;
+        }
+    }
+
+    .section-themeable.simple-btn
+    {
+        @extend .simple-btn__text-white;
+    }
+
+    .section-themeable.simple-btn:hover
+    {
+        @extend .simple-btn__text-white:hover;
+    }
+
+
+}
+
+.section-dark-theme {
+    .section-themeable {
+        color: #000;
+        a {
+            color: $red;
+        }
+        a:hover {
+            color: $light-red;
+        }
+    }
+
+     .section-themeable.simple-btn
+    {
+        @extend .simple-btn__text-dark;
+    }
+
+    .section-themeable.simple-btn:hover
+    {
+        @extend .simple-btn__text-dark:hover;
+    }
+}
+
+/*
+.section-gray-theme {
+    .section-themeable {
+        color: $gray;
+        a {
+            color: $light-gray;
+        }
+        a:hover {
+            color: $gray;
+        }
+    }
+}*/
+
+.blurb-light-theme {
+    .blurb-card {
+        color: #FFF;
+        a {
+            color: $light-gray;
+        }
+        a:hover {
+            color: $gray;
+        }
+    }
+}
+
+.dark-theme {
+    h1, h2, h3, h4, h5, h6, p, a, div, span {
+        color: #333;
+    }
+}

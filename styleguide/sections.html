@@ -883,4 +883,43 @@ Todays status
 </div>
 </section>
 
+<script type="text/javascript">
+
+
+function getColors()
+{
+    colors = ['bg-red','bg-dark-red','bg-gray','bg-light-gray','bg-dark-gray','bg-white','bg-black','bg-pom','bg-turquoise','bg-alizarin','bg-amethyst','bg-sun','bg-asphalt'];
+  
+    return colors;
+}
+
+function addColorsToSections()
+{
+    var colors = getColors();
+
+    var colorList = '';
+
+    $.each(colors, function(index, item) {
+        colorList += "<li class=" + item + "></li>";
+    }); 
+
+    colorList = '<ul class="color-picker">' + colorList + '</ul>';
+
+    $('.section-example').join(colorList);
+
+
+}
+
+function load()
+{
+    addColorsToSections();
+
+    $('.section-example').join()
+    {
+
+    }
+}
+
+</script>
+
 <!--#include file="footer.html" -->

@@ -3,35 +3,48 @@
 //
 // All of your variables should go in this file.
 ////////////////////////
-$red: #990000;
-$stony-brook-red: $red;
-$dark-red: #890000;
-$light-red: #ff9999;
-$pom: #c0392b;
-
-$alizarin: #E74C3C;
-$sun: #F39C12;
-
-$gray: #cccccc;
-$dark-gray: #333333;
-$light-gray: #eeeeee;
-$asphalt: #34495E;
 
 
-$emerald: #2ecc71;
 
-$turquoise: #1ABC9C;
-$river: #3498DB;
-
-$amethyst: #9B59B6;
+//Official Colors
 
 $black: #000;
 $white: #fff;
 
 
+$red: #990000;
+$stony-brook-red: $red;
+$dark-red: #890000;
+$light-red: #ff9999;
+
+$gray: #cccccc;
+$dark-gray: #333333;
+$light-gray: #eeeeee;
+
+
+//Supplemental Colors
+$alizarin: #E74C3C;
+$amethyst: #9B59B6;
+$asphalt: #34495E;
+$emerald: #2ecc71;
+$pom: #c0392b;
+$river: #3498DB;
+$sun: #F39C12;
+$turquoise: #1ABC9C;
+
+
+//Corproate Colors
 $facebook: #4c66a4;
 $twitter: #55acee;
 $yammer: #0072c6;
+
+
+$darkColorsList: black red dark-red dark-gray asphalt alizarin amethyst emerald pom river turquoise;
+$darkColorsList-vars: $black $red $dark-red $dark-gray $asphalt $alizarin $amethyst $emerald $pom $river $turquoise;
+
+$lightColorsList: white light-red gray light-gray sun;
+$lightColorsList-vars: $white $light-red $gray $light-gray $sun;
+
 
 $normal-spacing: 10px;
 $large-spacing: 20px;

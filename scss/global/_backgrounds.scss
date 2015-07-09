@@ -2,83 +2,31 @@
 
 //Official Colors
 
-.bg-black, .background-black {
-    background-color: $black !important;
-}
 
-.bg-red, .background-red {
-    background-color: $red !important;
-}
 
-.bg-dark-red, .background-dark-red {
-    background-color: $dark-red !important;
-}
+//COLORS
 
-.bg-white, .background-white {
-    background-color: $white !important;
-}
-
-.bg-gray, .background-gray {
-    background-color: $gray !important;
-}
-
-.bg-dark-gray, .background-dark-gray
-{
-    background-color: $dark-gray !important;
+@each $current-color in $darkColorsList {
+    $i: index($darkColorsList, $current-color);
+    
+    .bg-#{$current-color}, .background-#{$current-color} {
+        @extend .section-light-theme; 
+        background-color: nth($darkColorsList-vars, $i);
+    }
 }
 
 
-.bg-light-gray, .background-light-gray {
-    background-color: $light-gray !important;
-}
-
-//Secondary Colors
-.bg-alizarin, .background-alizarin {
-    background-color: $alizarin !important;
-}
-
-.bg-amethyst, .background-amethyst {
-    background-color: $amethyst !important;
-}
-
-.bg-asphalt, .background-asphalt {
-    background-color: $asphalt !important;
+@each $current-color in $lightColorsList {
+    $i: index($lightColorsList, $current-color);
+    
+    .bg-#{$current-color}, .background-#{$current-color} { 
+        @extend .section-dark-theme; 
+        background-color: nth($lightColorsList-vars, $i);
+    }
 }
 
 
-.bg-emerald, .background-emerald, .bg-green {
-    background-color: $emerald !important;
-}
 
-.bg-pom, .background-pom {
-    background-color: $pom !important;
-}
-
-.bg-river, .background-river, .bg-blue {
-    background-color: $river !important;
-}
-
-.bg-sun, .background-sun {
-    background-color: $sun !important;
-}
-
-
-.bg-turquoise, .background-turquoise {
-    background-color: $turquoise !important;
-}
-
-//CORPORATE COLORS
-.bg-facebook, .background-facebook {
-    background-color: $facebook !important;
-}
-
-.bg-yammer, .background-yammer {
-    background-color: $yammer !important;
-}
-
-.bg-twitter, .background-twitter {
-    background-color: $twitter !important;
-}
 
 
 ///TEXTURES
@@ -87,7 +35,6 @@
     background-image: url("../assets/images/backgrounds/textures/60-lines.png");
     background-repeat: repeat;
 }
-
 
 .bg-texture-asfalt-light {
     background-image: url("../assets/images/backgrounds/textures/asfalt-light.png");
@@ -139,7 +86,6 @@
     background-repeat: repeat;
 }
 
-
 .bg-texture-dark-mosaic {
     background-image: url("../assets/images/backgrounds/textures/dark-mosaic.png");
     background-repeat: repeat;
@@ -155,8 +101,6 @@
     background-repeat: repeat;
 }
 
-
-
 .bg-texture-egg-shell {
     background-image: url("../assets/images/backgrounds/textures/egg-shell.png");
     background-repeat: repeat;
@@ -167,12 +111,10 @@
     background-repeat: repeat;
 }
 
-.bg-texture-thin-diagonal-stripe-pattern
-{
- background-image: url("../assets/images/backgrounds/textures/thin-diagonal-stripe-pattern.png");
-    background-repeat: repeat;   
+.bg-texture-thin-diagonal-stripe-pattern {
+    background-image: url("../assets/images/backgrounds/textures/thin-diagonal-stripe-pattern.png");
+    background-repeat: repeat;
 }
-
 
 //PATTERNS
 
@@ -196,15 +138,14 @@
     background-repeat: repeat;
 }
 
-
 ///OVERLAYS
 
-.overlay-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red
-{
+.overlay-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red {
     position: relative;
 }
 
 .overlay-black:before {
+    @extend .section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -219,7 +160,24 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.overlay-dark-gray:before {
+    @extend .section-light-theme;
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
 .overlay-gray:before {
+    @extend .section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -234,44 +192,47 @@
     background-color: rgba(51, 51, 51, 0.5);
 }
 
-
-.overlay-red:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(153,0,0,0.5);
+.overlay-red:before {
+    @extend .section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(153, 0, 0, 0.5);
 }
 
-.overlay-river:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(52,152,219,0.5);
+.overlay-river:before {
+    @extend .section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(52, 152, 219, 0.5);
 }
 
-.overlay-turquoise:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(26,188,156,0.5);
+.overlay-turquoise:before {
+    @extend .section-light-theme;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(26, 188, 156, 0.5);
 }
 
 .overlay-white:before {
+    @extend .section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -285,9 +246,3 @@
     z-index: 0;
     background-color: rgba(255, 255, 255, 0.7);
 }
-
-
-
-
-
-

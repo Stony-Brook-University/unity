@@ -1,122 +1,35 @@
 
-.red {
-    color: $red !important;
-}
+//COLORS
 
-.dark-red {
-    color: $dark-red !important;
-}
+@each $current-color in $darkColorsList {
+    $i: index($darkColorsList, $current-color);
+    .#{$current-color} { 
+        color: nth($darkColorsList-vars, $i) !important;
+    }
 
-.black {
-    color: $black !important;
-}
+    .#{$current-color}-before:before { 
+        color: nth($darkColorsList-vars, $i) !important;
+    }
 
-
-.dark-gray {
-    color: $dark-gray !important;
-}
-
-.light-gray {
-    color: $light-gray !important;
-}
-
-.gray {
-    color: $gray !important;
-}
-
-.white {
-    color: #fff !important;
+    .#{$current-color}-before-children *:before { 
+        color: nth($darkColorsList-vars, $i) !important;
+    }
 }
 
 
-.turquoise {
-    color: $turquoise !important;
-}
+@each $current-color in $lightColorsList {
+    $i: index($lightColorsList, $current-color);
+    .#{$current-color} { 
+        color: nth($lightColorsList-vars, $i) !important;
+    }
 
-.alizarin {
-    color: $alizarin !important;
-}
+    .#{$current-color}-before:before { 
+        color: nth($lightColorsList-vars, $i) !important;
+    }
 
-.amethyst { 
-    color: $amethyst !important;
-}
-
-.sun {
-    color: $sun !important;
-}
-
-.pom {
- 
-    color: $pom !important;
-}
-
-.river {
-    color: $river !important;
-}
-
-.asphalt {
-    color: $asphalt !important;
-}
-
-
-
-.red-before-children *:before {
-    color: $red !important;
-}
-
-.dark-red-before-children *:before {
-    color: $dark-red !important;
-}
-
-.black-before-children *:before {
-    color: $black !important;
-}
-
-.dark-gray-before-children *:before {
-    color: $dark-gray !important;
-}
-
-.light-gray-before-children *:before {
-    color: $light-gray !important;
-}
-
-.gray-before-children *:before {
-    color: $gray !important;
-}
-
-.white-before-children *:before {
-    color: #fff !important;
-}
-
-
-.red-before:before {
-    color: $red !important;
-}
-
-.dark-red-before:before {
-    color: $dark-red !important;
-}
-
-
-.black-before:before {
-    color: $black !important;
-}
-
-
-.dark-gray-before:before {
-    color: $dark-gray !important;
-}
-
-.light-gray-before:before {
-    color: $light-gray !important;
-}
-
-.gray-before:before {
-    color: $gray !important;
-}
-
-.white-before:before {
-    color: #fff !important;
+    .#{$current-color}-before-children *:before { 
+        color: nth($lightColorsList-vars, $i) !important;
+    }
 }
 
 

@@ -22,6 +22,18 @@ Hero
         margin-left: 5px;
     }
 
+    a{
+        color: #fff;
+        border-bottom: 1px dashed #fff;
+        text-transform: uppercase;
+    }
+
+    a:hover
+    {
+        color: $gray;
+        border-bottom: 1px solid $gray;
+    }
+
     &.hero-format-small, &.hero-format-banner {
         min-height: 400px;
 

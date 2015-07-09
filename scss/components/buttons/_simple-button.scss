@@ -18,10 +18,19 @@ Simple Button
     transition: all 0.2s;
     position: relative;
     display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Trade Gotic", sans-serif;
+    
+    border-color: rgba(51, 0, 0, 0.8);
+    color: rgba(51, 0, 0, 0.8);
 }
 
+
+
 .simple-btn:hover {
-    background: inherit;
+      background: rgba(51, 0, 0, 0.2);
     border: 2px solid transparent;
     padding: 10px 34px 10px 10px !important;
 }
@@ -46,6 +55,7 @@ Simple Button
     font-family: "Trade Gotic", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    border-color:rgba(153, 0, 0, 0.8);
     color: rgba(153, 0, 0, 0.8);
 }
 
@@ -69,12 +79,14 @@ Simple Button
     right: 5px;
 }
 
+
 .simple-btn__text-dark {
     text-align: center;
     text-transform: uppercase;
     font-family: "Trade Gotic", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    border-color: rgba(51, 0, 0, 0.8);
     color: rgba(51, 0, 0, 0.8);
 }
 
@@ -104,6 +116,7 @@ Simple Button
     font-family: "Trade Gotic", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    border-color: rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
 }
 
