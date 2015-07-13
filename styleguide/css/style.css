@@ -73,3 +73,10 @@ ul.icons li span:before {
     padding-left: 10px;
     padding-right: 10px;    
 }
+
+
+
+.highlightcard
+{
+    border-width: 5px;
+}

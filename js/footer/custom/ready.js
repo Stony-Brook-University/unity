@@ -41,3 +41,6 @@ $('.drop-accordion .tab').on('click',function() {
 });
 
 })(jQuery);
+
+
+ new WOW().init();

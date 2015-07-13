@@ -1,0 +1,243 @@
+
+@each $i in $paddingList {
+    $name: nth($i,1);
+    $value: nth($i,2);
+
+    .#{$name} 
+    {
+        padding: $value 0;
+    }
+
+    .#{$name}-row
+    {
+        .row
+        {
+            padding: $value 0;    
+        }
+        
+    }
+
+
+}
+
+
+//padding / margin em's
+
+$num: 6;
+$dec: 1;
+
+@while $num >= 0 {
+ 
+    .padding-#{$num}em {
+        padding: 1em * $num !important;
+    }
+
+    .padding-left-#{$num}em
+    {
+        padding-left: 1em * $num !important;
+    }
+
+    .padding-right-#{$num}em
+    {
+        padding-right: 1em * $num !important;
+    }
+
+    .padding-top-#{$num}em
+    {
+        padding-top: 1em * $num !important;
+    }
+
+    .padding-bottom-#{$num}em
+    {
+        padding-bottom: 1em * $num !important;
+    }
+
+    .margin-#{$num}em {
+        margin: 1em * $num !important;
+    }
+
+    .margin-left-#{$num}em
+    {
+        margin-left: 1em * $num !important;
+    }
+
+    .margin-right-#{$num}em
+    {
+        margin-right: 1em * $num !important;
+    }
+
+    .margin-top-#{$num}em
+    {
+        margin-top: 1em * $num !important;
+    }
+
+    .margin-bottom-#{$num}em
+    {
+        margin-bottom: 1em * $num !important;
+    }
+
+    $num: $num - $dec;
+}
+
+
+//padding / margins pixels
+$num: 100;
+$dec: 10;
+
+@while $num >= 0 {
+ 
+    .p-#{$num} {
+        padding: 1px * $num !important;
+    }
+
+    .pl-#{$num}
+    {
+        padding-left: 1px * $num !important;
+    }
+
+    .pr-#{$num}
+    {
+        padding-right: 1px * $num !important;
+    }
+
+    .pt-#{$num}
+    {
+        padding-top: 1px * $num !important;
+    }
+
+    .pb-#{$num}
+    {
+        padding-bottom: 1px * $num !important;
+    }
+
+    .ptb-#{$num}
+    {
+        padding-top: 1px * $num !important;
+        padding-bottom: 1px * $num !important;
+    }
+
+    .m-#{$num} {
+        margin: 1px * $num !important;
+    }
+
+    .ml-#{$num}
+    {
+        margin-left: 1px * $num !important;
+    }
+
+    .mr-#{$num}
+    {
+        margin-right: 1px * $num !important;
+    }
+
+    .mt-#{$num}
+    {
+        margin-top: 1px * $num !important;
+    }
+
+    .mb-#{$num}
+    {
+        margin-bottom: 1px * $num !important;
+    }
+
+    $num: $num - $dec;
+}
+
+@import "borders";
+@import "widths";
+
+
+
+
+
+/*---------------
+
+KEY:
+
+p:  padding
+
+pt: padding-top
+
+pb: padding-bottom
+
+ptb: padding-top, padding-bottom
+
+m: margin
+
+----------------*/
+
+
+/*----------------
+
+Margins 
+
+----------------*/
+
+.m-0 {
+    margin: 0px !important;
+}
+
+
+/*----------------
+
+Padding
+
+----------------*/
+
+
+
+
+.p-50 {
+
+    padding: 50px !important;
+}
+
+
+/*----------------
+
+Padding Top
+
+----------------*/
+
+.pt-0 {
+    padding-top: 0px !important;
+}
+
+.pt-50 {
+
+    padding-top: 50px !important;
+}
+
+.pt-70 {
+
+    padding-top: 70px !important;
+}
+
+
+/*----------------
+
+Padding Bottom
+
+----------------*/
+
+.pb-0 {
+    padding-bottom: 0px !important;
+}
+
+.pb-50 {
+
+    padding-bottom: 50px !important;
+}
+
+
+/*----------------
+
+Padding Top, Bottom
+----------------*/
+
+.ptb-50 {
+
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+
+}

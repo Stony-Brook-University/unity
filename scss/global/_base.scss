@@ -12,7 +12,11 @@
 @import "functions";
 @import "mixins";
 @import "extendables";
-@import "paddings-margins";
+
+
+@import "borders";
+@import "box-model";
+@import "widths";
 
 @import "backgrounds";
 

@@ -43,11 +43,15 @@ $instagram: #3f729b;
 
 
 
-$darkColorsList: black red dark-red dark-gray asphalt alizarin amethyst emerald pom river turquoise facebook twitter youtube google-plus yammer tumblr instagram;
-$darkColorsList-vars: $black $red $dark-red $dark-gray $asphalt $alizarin $amethyst $emerald $pom $river $turquoise $facebook $twitter $youtube $google-plus $yammer $tumblr $instagram;
+$paddingList: ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em)  ("tight" 0em);
 
-$lightColorsList: white light-red gray light-gray sun;
-$lightColorsList-vars: $white $light-red $gray $light-gray $sun;
+$darkColorsList: ("black" $black) ("red" $red) ("dark-red" $dark-red) ("dark-gray" $dark-gray) ("asphalt" $asphalt) ("alizarin" $alizarin) ("amethyst" $amethyst) ("emerald" $emerald) ("pom" $pom) ("river" $river) ("turquoise" $turquoise) ("facebook" $facebook) ("twitter" $twitter) ("youtube" $youtube) ("google-plus" $google-plus) ("yammer" $yammer) ("tumblr" $tumblr) ("instagram" $instagram);
+
+//$darkColorsList: black red dark-red dark-gray asphalt alizarin amethyst emerald pom river turquoise facebook twitter youtube google-plus yammer tumblr instagram;
+//$darkColorsList-vars: $black $red $dark-red $dark-gray $asphalt $alizarin $amethyst $emerald $pom $river $turquoise $facebook $twitter $youtube $google-plus $yammer $tumblr $instagram;
+
+$lightColorsList: ("white" $white) ("light-red" $light-red) ("gray" $gray) ("light-gray" $light-gray) ("sun" $sun);
+
 
 
 $normal-spacing: 10px;

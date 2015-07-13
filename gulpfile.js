@@ -51,7 +51,7 @@ gulp.task('lint', function() {
 
 // Concatenate & Minify JS
 gulp.task('headerjs', function() {
-    return gulp.src('js/header/**/*.js')
+    return gulp.src(['js/header/libraries/*.js', 'js/header/custom/*.js'])
         .pipe(concat('header.dev.js'))
         .pipe(gulp.dest('.dist/js/header'))
         .pipe(rename('header.min.js'))
@@ -61,7 +61,7 @@ gulp.task('headerjs', function() {
 
 // Concatenate & Minify JS
 gulp.task('footerjs', function() {
-    return gulp.src('js/footer/**/*.js')
+    return gulp.src(['js/footer/libraries/*.js', 'js/footer/custom/*.js'])
         .pipe(concat('footer.dev.js'))
         .pipe(gulp.dest('.dist/js/footer'))
         .pipe(rename('footer.min.js'))

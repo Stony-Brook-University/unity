@@ -48,6 +48,16 @@
             $(this).find('.equal-height-col').matchHeight(true);
             });
             });
+
+
+            $(function() { // apply matchHeight to each item container's items
+            
+             $('section .simple__card .heading').matchHeight();
+             $('section .simple__card .simple__card-details').matchHeight();
+             $('section .simple__card .simple__card-links').matchHeight();
+             $('section .simple__card').matchHeight();
+            
+            });
             </script>
         </div>
     </body>

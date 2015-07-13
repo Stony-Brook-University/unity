@@ -1,21 +1,25 @@
 
 //COLORS
-@each $current-color in $darkColorsList {
-    $i: index($darkColorsList, $current-color);
-    
-    .bg-#{$current-color}, .background-#{$current-color} {
+@each $i in $darkColorsList {
+
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .bg-#{$colorName}, .background-#{$colorName} { 
         @extend .section-light-theme; 
-        background-color: nth($darkColorsList-vars, $i);
+        background-color: $colorVar !important;
     }
 }
 
 
-@each $current-color in $lightColorsList {
-    $i: index($lightColorsList, $current-color);
-    
-    .bg-#{$current-color}, .background-#{$current-color} { 
+@each $i in $lightColorsList {
+
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .bg-#{$colorName}, .background-#{$colorName} { 
         @extend .section-dark-theme; 
-        background-color: nth($lightColorsList-vars, $i);
+        background-color: $colorVar !important;
     }
 }
 

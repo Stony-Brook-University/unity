@@ -1,7 +1,8 @@
 /**
-* jquery.matchHeight.js v0.5.2
+* jquery.matchHeight.js master
 * http://brm.io/jquery-match-height/
 * License: MIT
+* 03a4317067b632981ece1a75e587f0b7ce584fb2
 */
 
 ;(function($) {
@@ -11,6 +12,16 @@
 
     var _previousResizeWidth = -1,
         _updateTimeout = -1;
+
+    /*
+    *  _parse
+    *  value parse utility function
+    */
+
+    var _parse = function(value) {
+        // parse value and convert NaN to 0
+        return parseFloat(value) || 0;
+    };
 
     /*
     *  _rows
@@ -51,25 +62,16 @@
     };
 
     /*
-    *  _parse
-    *  value parse utility function
-    */
-
-    var _parse = function(value) {
-        // parse value and convert NaN to 0
-        return parseFloat(value) || 0;
-    };
-
-    /*
     *  _parseOptions
     *  handle plugin options
     */
 
     var _parseOptions = function(options) {
         var opts = {
-            byRow: true,
-            remove: false,
-            property: 'height'
+            byRow: false,
+            property: 'height',
+            target: null,
+            remove: false
         };
 
         if (typeof options === 'object') {
@@ -110,10 +112,9 @@
             return this;
         }
 
-        if (this.length <= 1)
-        {
-             return this;
-        }   
+        if (this.length <= 1 && !opts.target) {
+            return this;
+        }
 
         // keep track of this group so we can re-apply later on load and resize events
         matchHeight._groups.push({
@@ -164,12 +165,17 @@
         $hiddenParents.css('display', 'block');
 
         // get rows if using byRow, otherwise assume one row
-        if (opts.byRow) {
+        if (opts.byRow && !opts.target) {
 
             // must first force an arbitrary equal height so floating elements break evenly
             $elements.each(function() {
                 var $that = $(this),
-                    display = $that.css('display') === 'inline-block' ? 'inline-block' : 'block';
+                    display = $that.css('display');
+
+                // temporarily force a usable display value
+                if (display !== 'inline-block' && display !== 'inline-flex') {
+                    display = 'block';
+                }
 
                 // cache the original inline style
                 $that.data('style-cache', $that.attr('style'));
@@ -198,38 +204,52 @@
 
         $.each(rows, function(key, row) {
             var $row = $(row),
-                maxHeight = 0;
+                targetHeight = 0;
 
-            // skip apply to rows with only one item
-            if (opts.byRow && $row.length <= 1) {
-                $row.css(opts.property, '');
-                return;
-            }
-
-            // iterate the row and find the max height
-            $row.each(function(){
-                var $that = $(this),
-                    display = $that.css('display') === 'inline-block' ? 'inline-block' : 'block';
-
-                // ensure we get the correct actual height (and not a previously set height value)
-                var css = { 'display': display };
-                css[opts.property] = '';
-                $that.css(css);
-
-                // find the max height (including padding, but not margin)
-                if ($that.outerHeight(false) > maxHeight)
-                {
-                    maxHeight = $that.outerHeight(false);
+            if (!opts.target) {
+                // skip apply to rows with only one item
+                if (opts.byRow && $row.length <= 1) {
+                    $row.css(opts.property, '');
+                    return;
                 }
 
-                // revert display block
-                $that.css('display', '');
-            });
+                // iterate the row and find the max height
+                $row.each(function(){
+                    var $that = $(this),
+                        display = $that.css('display');
+
+                    // temporarily force a usable display value
+                    if (display !== 'inline-block' && display !== 'inline-flex') {
+                        display = 'block';
+                    }
+
+                    // ensure we get the correct actual height (and not a previously set height value)
+                    var css = { 'display': display };
+                    css[opts.property] = '';
+                    $that.css(css);
+
+                    // find the max height (including padding, but not margin)
+                    if ($that.outerHeight(false) > targetHeight) {
+                        targetHeight = $that.outerHeight(false);
+                    }
+
+                    // revert display block
+                    $that.css('display', '');
+                });
+            } else {
+                // if target set, use the height of the target element
+                targetHeight = opts.target.outerHeight(false);
+            }
 
             // iterate the row and apply the height to all elements
             $row.each(function(){
                 var $that = $(this),
                     verticalPadding = 0;
+
+                // don't apply to a target
+                if (opts.target && $that.is(opts.target)) {
+                    return;
+                }
 
                 // handle padding and border correctly (required when not using border-box)
                 if ($that.css('box-sizing') !== 'border-box') {
@@ -238,7 +258,7 @@
                 }
 
                 // set the height (accounting for padding and border)
-                $that.css(opts.property, maxHeight - verticalPadding);
+                $that.css(opts.property, (targetHeight - verticalPadding) + 'px');
             });
         });
 
@@ -249,9 +269,8 @@
         });
 
         // restore scroll position if enabled
-        if (matchHeight._maintainScroll)
-        {
-           $(window).scrollTop((scrollTop / htmlHeight) * $('html').outerHeight(true));
+        if (matchHeight._maintainScroll) {
+            $(window).scrollTop((scrollTop / htmlHeight) * $('html').outerHeight(true));
         }
 
         return this;
@@ -268,7 +287,8 @@
         // generate groups by their groupId set by elements using data-match-height
         $('[data-match-height], [data-mh]').each(function() {
             var $this = $(this),
-                groupId = $this.attr('data-match-height') || $this.attr('data-mh');
+                groupId = $this.attr('data-mh') || $this.attr('data-match-height');
+
             if (groupId in groups) {
                 groups[groupId] = groups[groupId].add($this);
             } else {
@@ -288,8 +308,7 @@
     */
 
     var _update = function(event) {
-        if (matchHeight._beforeUpdate)
-        {
+        if (matchHeight._beforeUpdate) {
             matchHeight._beforeUpdate(event, matchHeight._groups);
         }
 
@@ -297,8 +316,7 @@
             matchHeight._apply(this.elements, this.options);
         });
 
-        if (matchHeight._afterUpdate)
-        {
+        if (matchHeight._afterUpdate) {
             matchHeight._afterUpdate(event, matchHeight._groups);
         }
     };
@@ -309,11 +327,9 @@
         // fixes an event looping bug in IE8
         if (event && event.type === 'resize') {
             var windowWidth = $(window).width();
-            if (windowWidth === _previousResizeWidth)
-            {
-               return;
+            if (windowWidth === _previousResizeWidth) {
+                return;
             }
-            
             _previousResizeWidth = windowWidth;
         }
 

@@ -4,15 +4,18 @@ Simple Card
 
 .simple__card {
 	background: transparent;
-	border: 1px solid #eaeaea;
+	border: 1px solid #000;
 	padding: 25px 20px;
 	margin: 15px 0 30px;
 	border-radius: 2px;
 	text-align: left;
+	background-color: #fff;
 }
 
 .simple__card.best {
 	border-color: #990000	;
+	box-shadow: 10px 10px 5px 0px #666666;
+  	border-width: 3px;
 }
 
 .simple__card .small {
@@ -47,4 +50,58 @@ Simple Card
 .simple__card-details li > span {
 	text-decoration: line-through;
 	color: #aaa;
+}
+
+
+
+
+.simple-card {
+	background: transparent;
+	border: 1px solid #000;
+	padding: 25px 20px;
+	margin: 15px 0 30px;
+	border-radius: 2px;
+	text-align: left;
+	background-color: #fff;
+
+
+&.best {
+	border-color: #990000	;
+	box-shadow: 10px 10px 5px 0px #666666;
+  	border-width: 3px;
+}
+
+.small {
+	margin: 0;
+}
+
+.borderline {
+	position: relative;
+	background: #eaeaea;
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 20px 0 15px;
+}
+
+h4 {
+	color: #111;
+	margin: 0;
+}
+
+
+.card-details {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 23px;
+}
+
+.card-details li {
+	padding: 7px 0;
+}
+
+.card-details li > span {
+	text-decoration: line-through;
+	color: #aaa;
+}
 }

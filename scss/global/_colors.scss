@@ -1,35 +1,41 @@
 
 //COLORS
 
-@each $current-color in $darkColorsList {
-    $i: index($darkColorsList, $current-color);
-    .#{$current-color} { 
-        color: nth($darkColorsList-vars, $i) !important;
+
+@each $i in $darkColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .#{$colorName} { 
+        color: $colorVar !important;
     }
 
-    .#{$current-color}-before:before { 
-        color: nth($darkColorsList-vars, $i) !important;
+    .#{$colorName}-before:before { 
+        color: $colorVar !important;
     }
 
-    .#{$current-color}-before-children *:before { 
-        color: nth($darkColorsList-vars, $i) !important;
+    .#{$colorName}-before-children *:before { 
+        color: $colorVar !important;
+    }
+}
+
+@each $i in $lightColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .#{$colorName} { 
+        color: $colorVar !important;
+    }
+
+    .#{$colorName}-before:before { 
+        color: $colorVar !important;
+    }
+
+    .#{$colorName}-before-children *:before { 
+        color: $colorVar !important;
     }
 }
 
 
-@each $current-color in $lightColorsList {
-    $i: index($lightColorsList, $current-color);
-    .#{$current-color} { 
-        color: nth($lightColorsList-vars, $i) !important;
-    }
-
-    .#{$current-color}-before:before { 
-        color: nth($lightColorsList-vars, $i) !important;
-    }
-
-    .#{$current-color}-before-children *:before { 
-        color: nth($lightColorsList-vars, $i) !important;
-    }
-}
 
 
