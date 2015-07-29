@@ -4,13 +4,10 @@
 // All of your variables should go in this file.
 ////////////////////////
 
-
-
 //Official Colors
 
-$black: #000;
-$white: #fff;
-
+$black: black;
+$white: white;
 
 $red: #990000;
 $stony-brook-red: $red;
@@ -21,16 +18,15 @@ $gray: #cccccc;
 $dark-gray: #333333;
 $light-gray: #eeeeee;
 
-
 //Supplemental Colors
-$alizarin: #E74C3C;
-$amethyst: #9B59B6;
-$asphalt: #34495E;
+$alizarin: #e74c3c;
+$amethyst: #9b59b6;
+$asphalt: #34495e;
 $emerald: #2ecc71;
 $pom: #c0392b;
-$river: #3498DB;
-$sun: #F39C12;
-$turquoise: #1ABC9C;
+$river: #3498db;
+$sun: #f39c12;
+$turquoise: #1abc9c;
 
 //Corproate Colors
 $facebook: #3b5998;
@@ -41,9 +37,7 @@ $yammer: #0072c6;
 $tumblr: #35465c;
 $instagram: #3f729b;
 
-
-
-$paddingList: ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em)  ("tight" 0em);
+$paddingList: ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em) ("tight" 0em);
 
 $darkColorsList: ("black" $black) ("red" $red) ("dark-red" $dark-red) ("dark-gray" $dark-gray) ("asphalt" $asphalt) ("alizarin" $alizarin) ("amethyst" $amethyst) ("emerald" $emerald) ("pom" $pom) ("river" $river) ("turquoise" $turquoise) ("facebook" $facebook) ("twitter" $twitter) ("youtube" $youtube) ("google-plus" $google-plus) ("yammer" $yammer) ("tumblr" $tumblr) ("instagram" $instagram);
 
@@ -51,8 +45,6 @@ $darkColorsList: ("black" $black) ("red" $red) ("dark-red" $dark-red) ("dark-gra
 //$darkColorsList-vars: $black $red $dark-red $dark-gray $asphalt $alizarin $amethyst $emerald $pom $river $turquoise $facebook $twitter $youtube $google-plus $yammer $tumblr $instagram;
 
 $lightColorsList: ("white" $white) ("light-red" $light-red) ("gray" $gray) ("light-gray" $light-gray) ("sun" $sun);
-
-
 
 $normal-spacing: 10px;
 $large-spacing: 20px;
@@ -69,9 +61,7 @@ $break-narrow-desktop: 960px;
 $break-desktop: 1200px;
 $break-wide-desktop: 1600px;
 
-
 $theme-selectors: "h1, h2, h3, h4, h5, h6, p, a, a:visited, a:active, div, span";
-
 
 /*
 $grids: add-grid(1);
