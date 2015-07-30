@@ -30,6 +30,12 @@ Blurbs
     margin: 65px 0 0 0;
     text-align: left;
 }
+.blurb__item--small {
+    position: relative;
+    padding-left: 55px;
+    margin: 0;
+    text-align: left;
+}
 
 .blurb__icon {
     position: absolute;
@@ -48,5 +54,8 @@ Blurbs
     /* blurb */
     .blurb__item {
         margin: 20px 0 0;
+    }
+    .blurb__item--small {
+        margin: 0;
     }
 }
