@@ -10,90 +10,75 @@ Hero
     background-position: center center;
     color: #fff;
     width: 100%;
-    height: 100%;
     h1 {}
-
     h1 span {
         display: inline-block;
         color: #fff;
     }
-
     header i {
         margin-left: 5px;
     }
-
-    a{
+    a {
         color: #fff;
         border-bottom: 1px dashed #fff;
         text-transform: uppercase;
     }
-
-    a:hover
-    {
+    a:hover {
         color: $gray;
         border-bottom: 1px solid $gray;
     }
-
     &.hero-format-small, &.hero-format-banner {
         min-height: 400px;
-
         .hero-content {
             margin: 100px 0 100px 0;
             font-weight: 300;
         }
     }
-
     &.hero-format-medium, &.hero-format-hero {
         min-height: 600px;
-
         .hero-content {
             margin: 150px 0 150px 0;
             font-weight: 300;
         }
     }
-
     &.hero-format-large, &.hero-format-superhero {
         min-height: 800px;
-
         .hero-content {
             margin: 200px 0 200px 0;
             font-weight: 300;
         }
     }
-
-    .hero-lead
-    {
+    .hero-lead {
         margin-bottom: 2em;
     }
-
-/*
-    .hero-status
-    {
-        font-size: 1.3em;
-        a
+    /*
+        .hero-status
         {
-            color: $gray;
-            border-bottom: 1px dashed $gray;
-        }
-        a:hover
-        {
-            color: #AAA;
-            border-bottom: 1px solid #AAA;
-        }
-    }
-
-    .hero-buttons
-    {
-        
-        margin-bottom: 2em;
-
+            font-size: 1.3em;
             a
             {
-                display: block;
-                text-align: center;
-
+                color: $gray;
+                border-bottom: 1px dashed $gray;
             }
-    }
-
-    */
+            a:hover
+            {
+                color: #AAA;
+                border-bottom: 1px solid #AAA;
+            }
+        }
+    
+        .hero-buttons
+        {
+            
+            margin-bottom: 2em;
+    
+                a
+                {
+                    display: block;
+                    text-align: center;
+    
+                }
+        }
+    
+        */
 }
