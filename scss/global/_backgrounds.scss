@@ -6,7 +6,7 @@
     $colorVar: nth($i, 2);
 
     .bg-#{$colorName}, .background-#{$colorName} { 
-        @extend .section-light-theme; 
+        @include section-light-theme; 
         background-color: $colorVar !important;
     }
 }
@@ -18,7 +18,7 @@
     $colorVar: nth($i, 2);
 
     .bg-#{$colorName}, .background-#{$colorName} { 
-        @extend .section-dark-theme; 
+        @include section-dark-theme; 
         background-color: $colorVar !important;
     }
 }
@@ -139,6 +139,14 @@
 ///OVERLAYS
 
 .overlay-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red {
+    @include section-light-theme;
+
+    position: relative;
+}
+
+.overlay-white
+{
+    @extend .section-dark-theme;
     position: relative;
 }
 
@@ -175,7 +183,7 @@
 }
 
 .overlay-gray:before {
-    @extend .section-light-theme;
+    
     position: absolute;
     display: block;
     content: " ";
@@ -189,6 +197,7 @@
     z-index: 0;
     background-color: rgba(51, 51, 51, 0.5);
 }
+
 
 .overlay-red:before {
     @extend .section-light-theme;

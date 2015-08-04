@@ -1,6 +1,6 @@
-.section-light-theme {
+/*.section-light-theme {
     .section-themeable {
-        color: #FFF;
+        color: #ffffff;
         a {
             color: $light-gray;
         }
@@ -21,6 +21,8 @@
 
 
 }
+
+
 
 .section-dark-theme {
     .section-themeable {
@@ -43,6 +45,8 @@
         @extend .simple-btn__text-dark:hover;
     }
 }
+*/
+
 
 /*
 .section-gray-theme {
