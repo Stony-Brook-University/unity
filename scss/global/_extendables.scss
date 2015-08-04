@@ -109,6 +109,19 @@
     margin-right: auto !important;
 }
 
+//http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns
+.row-centered {
+    text-align:center;
+}
+.column-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 /* 5 column bootstrap */
 .col-xs-5ths,
 .col-sm-5ths,
