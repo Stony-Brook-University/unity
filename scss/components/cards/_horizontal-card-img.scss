@@ -1,0 +1,25 @@
+.horizontal-card-o {
+
+	position: relative;
+    padding: 1.5em 0 1.5em 12.5em;
+    margin: 4em 0 4em 0;
+    text-align: left;
+
+	h4 {
+		color: #990000;
+		line-height: 1em;
+	}
+	p {
+		font-size: inherit;
+	}
+
+	img {
+	position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    top: 0;
+    display: inline-block;
+
+	}
+}
