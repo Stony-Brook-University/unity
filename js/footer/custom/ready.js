@@ -10,10 +10,9 @@ $(document).ready(function() {
 
 /* Scalable use of accordion-style slideUp/slideDown with hide-accessible */
 
-   
 /* drop-accordion */
 
- (function( $ ) {
+(function( $ ) {
 
 var accordionContent;
 var openTab;
@@ -42,5 +41,14 @@ $('.drop-accordion .tab').on('click',function() {
 
 })(jQuery);
 
+/* scroll button */
+
+(function($) {
+
+$(".hero-scroll").click(function () {
+   $('html, body').animate({scrollTop:$(this).parent().parent().next().offset().top}, 'slow');
+});
+
+})(jQuery);
 
  new WOW().init();
