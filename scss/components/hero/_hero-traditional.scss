@@ -87,6 +87,15 @@
     }
 }
 
+.hero-scroll {
+    position: relative;
+    @include breakpoint($screen-sm) {
+        position: absolute;
+        bottom: 2em;
+        right: 2em;
+    }
+}
+
 .hero-minimal.hero-format-small, .hero-minimal.hero-format-banner {
     @include breakpoint($break-tablet) {
         min-height: 350px;
