@@ -1,9 +1,10 @@
 .horizontal-card-o {
 
 	position: relative;
-    padding: 1.5em 0 1.5em 12.5em;
+    padding: .5em 0 1.5em 12.5em;
     margin: 4em 0 4em 0;
     text-align: left;
+    display: block;
 
 	h4 {
 		color: #990000;
@@ -15,11 +16,22 @@
 
 	img {
 	position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 9.375em; /* 150px */
+    width: 9.375em; /* 150px */
+    border-radius: 50%;
     left: 0;
     top: 0;
-    display: inline-block;
+    display: block;
+
+	}
+	.small-img img {
+	position: absolute;
+    height: 4.375em; /* 150px */
+    width: 4.375em; /* 150px */
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    display: block;
 
 	}
 }
