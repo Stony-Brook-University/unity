@@ -7,7 +7,7 @@
     text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
 }*/
-
+/*
 label {
     display: block;
     margin: 0px;
@@ -16,14 +16,11 @@ label {
 input[type="text"], input[type="email"], textarea, select {
     border: 1px solid #DBDBDB;
     color: #000;
-    height: 35px;
-    margin-bottom: 16px;
-    margin-right: 6px;
-    margin-top: 2px;
+    
     outline: 0 none;
     padding: 3px 3px 3px 5px;
     width: 100%;
-    font-size: 12px;
+    font-size: 1em;
     line-height: 15px;
     max-width: 100%;
 }
@@ -63,10 +60,5 @@ button {
     border-color: #900000;
 }
 
-/* DLL4: when should this be used? Also, why is this being defined twice? */
-.form-control {
-    border-radius: 0px;
-    width: auto;
-}
-
+*/
 /* end Form */
