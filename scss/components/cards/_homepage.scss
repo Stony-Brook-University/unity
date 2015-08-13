@@ -90,7 +90,9 @@ button {
 	}
 }
 
-.homepage-service-card {
+
+
+.service-card {
 
 	li:nth-child(3) {
 		margin-bottom: 1em;
@@ -108,12 +110,12 @@ button {
 
 	}
 
-	text-align: center;
+	text-align: left;
 	margin-bottom: 2em;
 	
 	i {
 		font-size: 3em;
-		padding: 1em;
+		padding: 1em 0;
 		color: $red;
 	}
 
@@ -146,7 +148,7 @@ button {
 	}
 }
 
-.homepage-help-card {
+.help-card {
 
 	padding: 2em;
 	margin: 1em;
@@ -174,7 +176,7 @@ button {
 }
 
 
-.homepage-media-object {
+.media-object {
 
 	border:	.1em solid $gray;
 	min-height: 23.4375em; /* 375px */
@@ -187,7 +189,7 @@ button {
 	}
 }
 
-.homepage-media-card {
+.media-card {
 
 	h2 {
 		color: $red;
@@ -219,7 +221,7 @@ button {
 	}
 }
 
-.homepage-media-card-hz {
+.media-card-hz {
 
 	margin-top: 4em; 
 
@@ -376,7 +378,7 @@ button {
 }
 
 
-.homepage-event-date-desc-card {
+.event-date-desc-card {
 
 	position: relative;
 	padding: 0 0 1em 14em;
@@ -439,7 +441,7 @@ button {
 	}
 }
 
-.homepage-blog-card {
+.blog-card {
 
 	padding: 1.5em;
 	border: .1em solid $gray;
@@ -454,7 +456,7 @@ button {
 	}
 
 
-	.homepage-blog-info {
+	.blog-info {
 
 		border-bottom: .1em solid $gray;
 		padding-bottom: 1em;
@@ -636,7 +638,7 @@ button {
 		color: $white;
 		font-size: 1.3em;
 		padding: .5em 0 .5em 0;
-		border-bottom: .1em solid $gray;
+
 	}
 
 	ul li a {
@@ -657,7 +659,7 @@ button {
 
 @media (max-width: 991px) {
 
-	.homepage-media-card {
+	.media-card {
 
 		h2 {
 		
@@ -676,14 +678,14 @@ button {
 
 
 
-	.homepage-media-object {
+	.media-object {
 
 
 	min-height: 0;
 	
 	}
 
-	.homepage-media-card {
+	.media-card {
 
 		h2 {
 		
@@ -699,13 +701,13 @@ button {
 	}
  
 
-	.homepage-event-date-desc-card time {
+	.event-date-desc-card time {
 
 			max-width: 25%;
 			min-width: 25%;
 	}
 
-	.homepage-media-card-hz {
+	.media-card-hz {
 
 		h2 {
 			margin-top: 2em;
@@ -716,20 +718,25 @@ button {
 
 @media (max-width: 430px) {
 
+	.service-card {
 
-	.homepage-event-date-desc-card {
+		text-align: center;
+
+	}
+
+	.event-date-desc-card {
 
 	position: relative;
 	padding: 0 0 1em 8.5em;
 
 	}
 
-	.homepage-event-date-desc-card .share i {
+	.event-date-desc-card .share i {
 
 		line-height: 3em;
 	}
 
-	.homepage-event-date-desc-card time {
+	.event-date-desc-card time {
 
 			max-width: 30%;
 			min-width: 30%;
