@@ -1,0 +1,73 @@
+.system-status {
+
+	h2 {
+
+		color: $red;
+		font-size: 1.7em;
+		margin-bottom: 2em;
+	}
+}
+
+.system-status-card {
+
+	border: none;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+	position: relative;
+
+	.sbuicon-close {
+			color: $red;
+	}
+	.sbuicon-exclamation-triangle {
+		color: $sun;
+	}
+	.sbuicon-info {
+		color: $river;
+	}
+	.sbuicon-circle {
+		color: $turquoise;
+	}
+
+
+	a {
+		color: $dark-gray;
+		font-size: 1.1em;
+		border-bottom: .1em dashed $dark-gray;
+
+		&:hover,
+		&:focus {
+			color: $red;
+			border-bottom: none;
+		}
+
+	i {
+
+		position: absolute;
+	    font-size: .5em;
+	    left: 0;
+	    top: 0;
+	    display: block;
+
+		}
+	}
+}
+
+.sch-maintenance-card {
+
+	.item {
+
+		font-size: 1.1em;
+
+
+	
+		li {
+			padding: 1em;
+		}
+
+		li:nth-child(even) {
+			background-color: $light-gray;
+			border-top: .1em solid $gray;
+			border-bottom: .1em solid $gray;
+		}
+	}
+}

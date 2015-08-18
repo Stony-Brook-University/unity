@@ -1,0 +1,88 @@
+/* Media Queries */
+
+
+@media (max-width: 991px) {
+
+	.media-card {
+
+		h2 {
+		
+		margin-top: 1.7em;
+		
+		}
+	}
+
+	.event-media-highlight-card {
+
+		margin-bottom: 3em;
+	}
+}
+
+@media (max-width:767px) {
+
+
+
+	.media-object {
+
+
+	min-height: 0;
+	
+	}
+
+	.media-card {
+
+		h2 {
+		
+		margin-top: 1.7em;
+		
+		}
+	}
+
+	.event-media-highlight-card {
+
+	margin-bottom: 3em;
+	
+	}
+ 
+
+	.event-date-desc-card time {
+
+			max-width: 25%;
+			min-width: 25%;
+	}
+
+	.media-card-hz {
+
+		h2 {
+			margin-top: 2em;
+		}
+	
+	}
+}
+
+@media (max-width: 430px) {
+
+	.service-card {
+
+		text-align: center;
+
+	}
+
+	.event-date-desc-card {
+
+	position: relative;
+	padding: 0 0 1em 8.5em;
+
+	}
+
+	.event-date-desc-card .share i {
+
+		line-height: 3em;
+	}
+
+	.event-date-desc-card time {
+
+			max-width: 30%;
+			min-width: 30%;
+	}
+}
