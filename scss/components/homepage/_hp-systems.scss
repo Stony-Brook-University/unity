@@ -1,6 +1,6 @@
 .system-status {
 
-	h2 {
+	.system-status-heading {
 
 		color: $red;
 		font-size: 1.7em;
@@ -40,7 +40,7 @@
 			border-bottom: none;
 		}
 
-	i {
+	.system-status-icon {
 
 		position: absolute;
 	    font-size: .5em;
@@ -54,7 +54,7 @@
 
 .sch-maintenance-card {
 
-	.item {
+	.sch-maintenance-items {
 
 		font-size: 1.1em;
 

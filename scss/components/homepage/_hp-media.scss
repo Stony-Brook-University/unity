@@ -1,122 +1,107 @@
+.media-highlight {
 
-.media-object {
+	.media-object {
 
-	border:	.1em solid $gray;
-	min-height: 23.4375em; /* 375px */
+		border:	.1em solid $gray;
+		min-height: 23.4375em; /* 375px */
 
-	img,
-	iframe,
-	video {
-		
-		padding: 1em;
-	}
-}
-
-.media-card {
-
-	h2 {
-		color: $red;
-		font-size: 2.3em;
-	}
-	time {
-		font-size: 1em;
-		color: $gray;
+		.media-object-img,
+		.media-object-iframe,
+		.media-object-video {
+			
+			padding: 1em;
+		}
 	}
 
-	.item {
-		padding-top: 2em;
-		font-size: 1.1em;
-		line-height: 1.7em;
-		
-		a {
+	.media-info {
 
+		.media-info-title {
 			color: $red;
+			font-size: 2.3em;
+		}
+		.media-info-time {
+			font-size: 1em;
+			color: $gray;
+		}
 
-			&:hover,
-			&:focus {
-				
-				color: $dark-gray;
-				border-bottom: none;
+		.media-info-item {
+			padding-top: 2em;
+			font-size: 1.1em;
+			line-height: 1.7em;
+			
+			.media-info-read-more {
+
+				color: $red;
+
+				&:hover,
+				&:focus {
+					
+					color: $dark-gray;
+					border-bottom: none;
+				}
 			}
-
-        	button {
-
-	            color: $red;
-	            min-width: 100%;
-	            font-size: 1.1em;
-	            text-align: center;
-	            background-color: transparent;
-	            border: .1em solid $red;
-	            margin-top: 1em;
-	            padding: .5em;
-
-
-	            &:hover,
-	            &:focus {
-
-	                color: $dark-gray;
-	                border: .1em solid $dark-gray;
-	            }
-            }
 		}
 	}
 }
 
-.media-card-hz {
+.small-media-highlights {
 
-	margin-top: 4em; 
+	.media-card {
 
-	img, 
-	video, 
-	iframe {
+		margin-top: 4em; 
 
-		padding: .5em;
-		border: .1em solid $gray;
-		min-width: 100%;
+		.media-card-img, 
+		.media-card-video, 
+		.media-card-iframe {
 
-	}
+			padding: .5em;
+			border: .1em solid $gray;
+			min-width: 100%;
 
-	h2{
-		font-size: 1.3em;
-		color: $red;
-	}
+		}
 
-	time {
-		font-size: 1em;
-		color: $gray;
-	}
+		.media-card-title {
+			font-size: 1.3em;
+			color: $red;
+		}
 
-	.item {
+		.media-card-time {
+			font-size: 1em;
+			color: $gray;
+		}
 
-		padding-top: 1em;
-		font-size: 1.1em;
-		line-height: 1.7em;
-	}
+		.media-card-item {
 
-	.read-more {
-
-		margin: 2em 0 2em 0;
-
-		a {
-			color: $dark-gray;
+			padding-top: 1em;
 			font-size: 1.1em;
-			border-bottom: .1em dashed $dark-gray;
+			line-height: 1.7em;
+		}
 
-			&:hover,
-			&:focus {
-				color: $red;
-				border-bottom: none;
+		.media-card-read-more {
+
+			margin: 2em 0 2em 0;
+
+			a {
+				color: $dark-gray;
+				font-size: 1.1em;
+				border-bottom: .1em dashed $dark-gray;
+
+				&:hover,
+				&:focus {
+					color: $red;
+					border-bottom: none;
+				}
 			}
 		}
-	}
 
-	i {
+		.media-card-icon {
 
-	color: $red;
-	position: absolute;
-    font-size: 4em;
-    left: 0;
-    top: -0.25em;
-    display: block;
+		color: $red;
+		position: absolute;
+	    font-size: 4em;
+	    left: 0;
+	    top: -0.25em;
+	    display: block;
+		}
 	}
 }
