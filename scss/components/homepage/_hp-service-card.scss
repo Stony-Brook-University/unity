@@ -36,8 +36,7 @@
 
 	}
 	.service-card-item {
-		font-size: 1.1em;
-		line-height: 1.7em;
+		@extend .card-item-font;
 
 		a {
 

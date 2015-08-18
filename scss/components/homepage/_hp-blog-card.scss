@@ -5,8 +5,7 @@
 
 	.blog-heading {
 
-		font-size: 1.5em;
-		color: $red;
+		@extend .card-title;
 		padding-bottom: .5em;
 	}
 	.blog-image {
@@ -67,8 +66,7 @@
 	.blog-item {
 
 		padding-top: 1em;
-		font-size: 1.1em;
-		line-height: 1.7em;
+		@extend .card-item-font;
 
 		.blog-link {
 			

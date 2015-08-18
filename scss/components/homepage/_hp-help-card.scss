@@ -5,13 +5,11 @@
 
 	.help-card-title {
 
-		color: $red;
-		font-size: 1.7em;
+		@extend .card-title;
 	}
 
 	.help-card-item {
-		font-size: 1.1em;
-		line-height: 1.7em;
+		@extend .card-item-font;
 	}
 
 	li:nth-child(1) {

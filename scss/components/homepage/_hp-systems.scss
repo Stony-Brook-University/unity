@@ -2,8 +2,7 @@
 
 	.system-status-heading {
 
-		color: $red;
-		font-size: 1.7em;
+		@extend .card-title;
 		margin-bottom: 2em;
 	}
 }

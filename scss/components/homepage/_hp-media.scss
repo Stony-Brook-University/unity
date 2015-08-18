@@ -26,8 +26,7 @@
 
 		.media-info-item {
 			padding-top: 2em;
-			font-size: 1.1em;
-			line-height: 1.7em;
+			@extend .card-item-font;
 			
 			.media-info-read-more {
 
@@ -73,8 +72,7 @@
 		.media-card-item {
 
 			padding-top: 1em;
-			font-size: 1.1em;
-			line-height: 1.7em;
+			@extend .card-item-font;
 		}
 
 		.media-card-read-more {

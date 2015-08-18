@@ -5,6 +5,20 @@
 //   should go in this file.
 ////////////////////////
 
+/* Heading, subheading, paragraph, and media styles for cards */
+
+.card-title {
+
+    color: $red;
+    font-size: 1.7em;
+}
+
+.card-item-font {
+
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
 .clearfix {
     *zoom: 1;
 
