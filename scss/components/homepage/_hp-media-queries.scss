@@ -31,7 +31,7 @@
 
 	.media-card {
 
-		h2 {
+		.media-card-title {
 		
 		margin-top: 1.7em;
 		
@@ -45,19 +45,15 @@
 	}
  
 
-	.event-date-desc-card time {
+	.event-date-desc-card { 
+		
+		.event-date-desc-time {
 
-			max-width: 25%;
-			min-width: 25%;
-	}
-
-	.media-card-hz {
-
-		h2 {
-			margin-top: 2em;
+				max-width: 25%;
+				min-width: 25%;
 		}
-	
 	}
+
 }
 
 @media (max-width: 430px) {
@@ -75,14 +71,16 @@
 
 	}
 
-	.event-date-desc-card .share i {
+	.event-date-desc-share-icon {
 
 		line-height: 3em;
 	}
 
-	.event-date-desc-card time {
+	.event-date-desc-card { 
+		.event-date-desc-time {
 
-			max-width: 30%;
-			min-width: 30%;
+				max-width: 30%;
+				min-width: 30%;
+		}
 	}
 }
