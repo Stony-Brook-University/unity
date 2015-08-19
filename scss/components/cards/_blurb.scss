@@ -1,3 +1,82 @@
+
+.simple-blurb {
+
+    padding: 2em;
+
+    .simple-blurb-icon {
+
+        @extend .card-icon;
+    }
+
+    .simple-blurb-title {
+
+        @extend .card-title;
+    }
+    .simple-blurb-subtitle {
+
+        @extend .card-subtitle;
+        margin-top: -.3em;
+    }
+
+    .simple-blurb-item {
+        @extend .card-item-font;
+    }
+
+    .simple-blurb-cta {
+
+        @extend .card-call-to-action;
+
+    }
+}
+
+.classic-blurb {
+
+    position: relative;
+    margin-bottom: 3em;
+
+    .classic-blurb-icon {
+
+        @extend .card-icon;
+
+        position: absolute;
+        height: 2em;
+        width: 2em;
+        left: 0;
+        top: -.45em;
+        text-align: center;
+        font-size: 3em;
+        display: inline-block;
+        line-height: 1;
+
+    }
+
+    .classic-blurb-content {
+
+        padding-left: 6em;
+
+        .classic-blurb-title {
+
+            @extend .card-title 
+        }
+        .classic-blurb-subtitle {
+
+            @extend .card-subtitle
+        }
+        .classic-blurb-item {
+
+            @extend .card-item-font;
+        }
+        .classic-blurb-cta {
+
+            @extend .card-call-to-action;
+        }
+    }
+
+}
+
+
+
+
 /* -------------------------------------------------------------------
 Blurbs
 ------------------------------------------------------------------- */
