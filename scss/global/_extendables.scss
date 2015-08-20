@@ -7,16 +7,44 @@
 
 /* Heading, subheading, paragraph, and media styles for cards */
 
+.card-icon {
+
+    font-size: 3em;
+    padding: .5em 0;
+}
+
 .card-title {
 
     color: $red;
     font-size: 1.7em;
+}
+.card-subtitle {
+
+    color: $dark-gray;
+    font-size: 1.3em;
 }
 
 .card-item-font {
 
     font-size: 1.1em;
     line-height: 1.7em;
+}
+
+.card-call-to-action {
+
+    margin-top: 2em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+    border: .1em solid $red;
+
+    &:hover,
+    &:focus, {
+
+        color: $dark-gray;
+        border: .1em solid $dark-gray;
+    }
 }
 
 .clearfix {
