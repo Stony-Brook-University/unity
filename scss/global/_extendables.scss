@@ -47,6 +47,23 @@
     }
 }
 
+/* Link Types */
+
+.dashed-link {
+
+    border-bottom: .1em dashed;
+
+}
+
+.view-all {
+
+        display: inline-block;
+        margin-top: 1em;
+        padding: .5em;
+        border: .1em solid $light-gray;
+}
+
+
 .clearfix {
     *zoom: 1;
 
