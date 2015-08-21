@@ -1,34 +1,30 @@
 .site-footer {
     background: #252525;
-
     .top-footer {
         display: block;
         background: #252525;
         color: #ccc;
         border-bottom: 1px solid #aaa;
-        padding: 40px 0;
+        @extend .fluffy;
         font-family: 'Trade Gothic Next W01';
         font-size: 1em;
         position: relative;
         z-index: 1;
-
         h1, h2, h3, h4, h5 {
             color: #eee;
         }
-
         h1 {
             font-size: 2em;
         }
-
         h2 {
             font-size: 1.7em;
         }
-
         h3 {
             font-size: 1.2em;
         }
+        background-image: url("../assets/images/backgrounds/images/shieldbg.png");
+        background-size: cover;
     }
-
     .bottom-footer {
         display: block;
         background: #121212;
@@ -39,13 +35,11 @@
         position: relative;
         z-index: 1;
     }
-
     ul.menu {
         li {
             list-style-image: none;
             list-style-type: none;
             margin-left: 0;
-
             a:after {
                 display: inline-block;
                 content: "\f105";
@@ -57,11 +51,9 @@
             }
         }
     }
-
     .address, .address a, .codes {
         line-height: 1.7em;
     }
-
     .codes {
         display: block;
         line-height: 1.7em;
@@ -71,7 +63,6 @@
         padding: 10px 0;
         background: #191919;
     }
-
     .address .serif-italic,
     .codes .serif-italic {
         font-size: 1.3em;
@@ -79,21 +70,17 @@
         margin: 0 0 4px;
         display: block;
     }
-
     a {
         color: #ccc;
     }
-
     a:hover {
         color: #fff;
     }
-
     .address-link .icon {
         display: inline-block;
         margin: 0 6px 0 0;
         font-size: 1.2em;
     }
-
     .small-button,
     .phone a,
     .footer-bar span a {
@@ -105,17 +92,14 @@
         background: #222;
         border-radius: 3px;
     }
-
     .phone {
         display: block;
     }
-
     .phone a {
         color: #ddd;
         width: 100px;
         padding-top: 0px 8px 1px;
     }
-
     .social h5 {
         font-size: 1.4em;
         font-family: 'ITCFranklinGothicW01-Md 812695';
@@ -123,7 +107,6 @@
         margin: 0 0 15px;
         color: #ccc;
     }
-
     .social-links a {
         display: inline-block;
         padding: 10px 10px 0;
@@ -139,26 +122,38 @@
         font-size: 1.4em;
         line-height: 0;
     }
-
     .social-links a em {
         text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
     }
-
-    .social-links a:hover em {
+    .social-links a:hover span {
         color: #fff;
     }
-
     .social .small-button {
         margin: 15px 0 5px;
     }
-
     .social .small-button:after {
         content: " ";
     }
-
     .footer-links {
         @include breakpoint($screen-md) {
             text-align: left;
+        }
+    }
+    background-size: cover;
+    color: $white;
+    @extend .card-item-font;
+    h2 {
+        color: $white;
+        font-size: 1.3em;
+        padding: .5em 0 .5em 0;
+        margin: 0.5em 0 0.5em 0;
+    }
+    ul li a {
+        color: $light-gray;
+        &:hover,
+        &:focus {
+            color: $gray;
+            border-bottom: 0.1em dashed $x-light-gray;
         }
     }
 }
