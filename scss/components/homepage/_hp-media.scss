@@ -28,8 +28,9 @@
 			padding-top: 2em;
 			@extend .card-item-font;
 			
-			.media-info-read-more {
+			.read-more {
 
+				@extend .read-more;
 				color: $red;
 
 				&:hover,
@@ -47,7 +48,7 @@
 
 	.media-card {
 
-		margin-top: 4em; 
+		margin-top: 4em;
 
 		.media-card-img, 
 		.media-card-video, 
@@ -73,20 +74,17 @@
 
 			padding-top: 1em;
 			@extend .card-item-font;
-		}
+			
 
-		.media-card-read-more {
+			.read-more {
 
-			margin: 2em 0 2em 0;
-
-			a {
-				color: $dark-gray;
-				font-size: 1.1em;
-				border-bottom: .1em dashed $dark-gray;
+				@extend .read-more;
+				color: $red;
 
 				&:hover,
 				&:focus {
-					color: $red;
+					
+					color: $dark-gray;
 					border-bottom: none;
 				}
 			}
