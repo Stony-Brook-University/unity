@@ -1,11 +1,9 @@
-.system-status {
+.system-status-heading {
 
-	.system-status-heading {
-
-		@extend .card-title;
-		margin-bottom: 2em;
-	}
+	@extend .card-title;
+	margin-bottom: 2em;
 }
+
 
 .system-status-card {
 
@@ -31,7 +29,7 @@
 	a {
 		color: $dark-gray;
 		font-size: 1.1em;
-		border-bottom: .1em dashed $dark-gray;
+		border-bottom: .1em $dark-gray;
 
 		&:hover,
 		&:focus {
@@ -46,12 +44,33 @@
 	    left: 0;
 	    top: 0;
 	    display: block;
+	    margin: 2em;
 
 		}
 	}
 }
 
 .sch-maintenance-card {
+
+	margin-bottom: 2em;
+
+	.sch-maintenance-service {
+
+		@extend .card-subtitle;
+		color: $red;
+
+			&:hover,
+			&:focus {
+
+				color: $dark-gray;
+			}
+
+	}
+
+	.sch-maintenance-time {
+		
+		@extend .card-item-font;
+	}
 
 	.sch-maintenance-items {
 
