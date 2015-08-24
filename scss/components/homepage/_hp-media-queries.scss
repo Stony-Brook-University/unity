@@ -58,6 +58,14 @@
 		}
 	}
 
+	.media-highlight {
+
+		.media-object {
+
+			min-height: 0;	
+		}
+	}
+
 }
 
 @media (max-width: 430px) {
@@ -101,6 +109,14 @@
 	    margin-bottom: 1.5em;
 
 
+		}
+	}
+
+	.media-highlight {
+
+		.media-object {
+
+			min-height: 0;	
 		}
 	}
 
