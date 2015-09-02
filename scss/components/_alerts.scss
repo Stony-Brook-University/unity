@@ -1,0 +1,37 @@
+.alert.alert-emergency {
+    background-color: #660000;
+    padding: 2em;
+}
+
+.alert.alert-notification {
+    background-color: #000033;
+    padding: 2em;
+}
+
+.alert-notification h2:before
+{
+	  @extend .sbuicon;
+    content: "\ed61";
+    margin-right: 0.5em;
+}
+
+.alert {
+    color: #fff;
+    border-radius: 0;
+    margin-bottom: 0px;
+    //border-top: 1px solid #fff;
+}
+
+.alert .summary a
+{
+	color: #ccc;
+	border-bottom: 1px dashed #ccc;
+	text-decoration: none;
+}
+
+.alert .summary a:hover, .alert .summary a:focus
+{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
