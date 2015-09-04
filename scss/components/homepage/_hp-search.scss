@@ -44,6 +44,14 @@
   color: $white;
   background-color: $red;
   border-color: $red;
+
+    &:hover,
+    &:focus {
+
+    background-color: $gray;
+    border-color: $gray;
+
+    }
   
   }
 
