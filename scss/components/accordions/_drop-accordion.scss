@@ -1,24 +1,21 @@
 /* Drop accordion */
 
 .drop-accordion {
-
+    padding: 1em;
     margin: 0 0 1.1em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
- 
-    .item {
 
+    .item {
         margin-bottom: 2em;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-
     }
 
     .tab,
     .link {
-
         background: $x-light-gray;
         color: $dark-gray;
         display: block;
@@ -32,11 +29,9 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-
         .icon {
-           
             display: inline-block;
-            font-size: 2em;
+            font-size: 1.2em;
             margin-right: 1em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
@@ -44,9 +39,16 @@
             color: $red;
         }
     }
-
+    .org-hd-img {
+        padding: .3em;
+        border: 0.1em solid $gray;
+        margin-right: 1.5em;
+        margin-left: .5em;
+        height: 12.500em;
+        width: 9.375em;
+        float: left;
+    }
     .active .icon {
-        
         color: $red;
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
@@ -54,12 +56,10 @@
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
     }
-
     .accordion-content {
-
         margin: -1.1em 0 0 0;
         background: $x-light-gray;
-        border: .1em solid $gray;
+        border: 0.1em solid $gray;
         z-index: 100;
         position: relative;
         -webkit-box-sizing: border-box;
@@ -67,15 +67,11 @@
         box-sizing: border-box;
         float: none;
     }
-
     .accordion-content-wrap {
-   
         padding: 3em;
     }
-    
     .accordion-content p,
     .accordion-content li {
-
         font-size: 1.1em;
         line-height: 1.8em;
     }
