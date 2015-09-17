@@ -1,13 +1,14 @@
 /*ROUNDED IMAGE BUTTONS*/
-/*.rounded-image-buttons {
+.rounded-image-buttons {
   display: block;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 1.25em 0; /* 20/16 */
+
+}
   
-}*/
 .rounded-image-buttons a {
   display: table;
   float: left;
@@ -15,21 +16,21 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-shadow: 0 2px 5px #444;
+  text-shadow: 0 0.125em 0.3125em #444; /* 2/16 */ /* 5/16 */
   color: #fff !important;
   font-family: 'Trade Gothic W01 Bold 2';
-  border: 1px solid #fff;
+  border: 0.0625em solid #fff; /* 1/16 */
   font-size: 1.5em;
-  height: 150px;
-  margin: 22px;
+  height: 9.375em; /* 150/16 */
+  margin: 1.375em; /* 22/16 */
   img {
-    width: 239px;
-    height: 150px;
-    border-radius: 15px;
+    width: 14.9375em; /* 239/16 */
+    height: 9.375em; /* 150/16 */
+    border-radius: 0.9375em; /* 15/16 */
   }
   p {
     position: absolute;
-    top: 60px;
+    top: 3.75em; /* 60/16 */
     width: 100%;
 
   }
@@ -44,15 +45,14 @@
   } 
   @include breakpoint($screen-md) {
         width: 21%;
-        height: 150px;
-        margin: 22px;
+        height: 9.375em; /* 150/16 */
+        margin: 1.375em; /* 22/16 */
         font-size: 1.5em;
   } 
 }
 .round-image-label:hover{
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.75);
+  border-radius: 0.9375em; /* 15/16 */
+  -webkit-box-shadow: 0em 0em 1.5625em 0.0625em rgba(0,0,0,0.75); /* 0/16 */ /* 0/16 */ /* 25/16 */ /* 1/16 */
+  -moz-box-shadow: 0em 0em 1.5625em 0.0625em rgba(0,0,0,0.75); /* 0/16 */ /* 0/16 */ /* 25/16 */ /* 1/16 */
+  box-shadow: 0em 0em 1.5625em 0.0625em rgba(0,0,0,0.75); /* 0/16 */ /* 0/16 */ /* 25/16 */ /* 1/16 */
 }
-

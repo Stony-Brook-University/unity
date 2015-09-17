@@ -1,14 +1,14 @@
 /* svg animation */
 .box {
-    width: 300px;
-    height: 460px;
+    width: 18.75em; /* 300/16 */
+    height: 28.75em; /* 460/16 */
     position: relative;
     background: rgba(255,255,255,1);
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 0.625em; /* 10/16 */
     cursor: pointer;
     color: #2c3e50;
-    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 0.1875em rgba(0, 0, 0, 0.4); /* 3/16 */
     -webkit-transition: background 0.4s 0.5s;
     transition: background 0.4s 0.5s;
 }
@@ -20,13 +20,13 @@
 }
 
 .box img {
-    padding-top: 25px;
+    padding-top: 1.5625em; /* 25/16 */
 }
 
 .box h3 {
     font-family: Helvetica;
-    font-size: 30px;
-    line-height: 55px;
+    font-size: 1.875em; /* 30/16 */
+    line-height: 3.4375em; /* 55/16 */
     margin: 0;
     font-weight: 400;
     width: 100%;
@@ -36,9 +36,9 @@
     display: block;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 13px;
-    padding: 5px;
+    letter-spacing: 0.0625em; /* 1/16 */
+    font-size: 0.8125em; /* 13/16 */
+    padding: 0.3125em; /* 5/16 */
 }
 
 .box h3,
@@ -84,27 +84,27 @@
 }
 
 .box:hover svg line.top {
-    -webkit-transform: translateX(-600px);
-    transform: translateX(-600px);
+    -webkit-transform: translateX(-37.5em); /* 600/16 */
+    transform: translateX(-37.5em); /* 600/16 */
 }
 
 .box:hover svg line.bottom {
-    -webkit-transform: translateX(600px);
-    transform: translateX(600px);
+    -webkit-transform: translateX(37.5em); /* 600/16 */
+    transform: translateX(37.5em); /* 600/16 */
 }
 
 .box:hover svg line.left {
-    -webkit-transform: translateY(920px);
-    transform: translateY(920px);
+    -webkit-transform: translateY(57.5em); /* 920/16 */
+    transform: translateY(57.5em); /* 920/16 */
 }
 
 .box:hover svg line.right {
-    -webkit-transform: translateY(-920px);
-    transform: translateY(-920px);
+    -webkit-transform: translateY(-57.5em); /* 920/16 */
+    transform: translateY(-57.5em); /* 920/16 */
 }
 
 .color-1 .box {
-    box-shadow: inset 0 0 0 10px #2c3e50;
+    box-shadow: inset 0 0 0 0.625em #2c3e50; /* 10/16 */
 }
 
 .color-1 .box:hover h3,
@@ -151,23 +151,23 @@
 }
 
 .frame-1 .box:hover svg line.top {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
+    -webkit-transform: translateX(-18.75em); /* 300/16 */
+    transform: translateX(-18.75em); /* 300/16 */
 }
 
 .frame-1 .box:hover svg line.bottom {
-    -webkit-transform: translateX(300px);
-    transform: translateX(300px);
+    -webkit-transform: translateX(18.75em); /* 300/16 */
+    transform: translateX(18.75em); /* 300/16 */
 }
 
 .frame-1 .box:hover svg line.left {
-    -webkit-transform: translateY(460px);
-    transform: translateY(460px);
+    -webkit-transform: translateY(28.75em); /* 460/16 */
+    transform: translateY(28.75em); /* 460/16 */
 }
 
 .frame-1 .box:hover svg line.right {
-    -webkit-transform: translateY(-460px);
-    transform: translateY(-460px);
+    -webkit-transform: translateY(-28.75em); /* 460/16 */
+    transform: translateY(-28.75em); /* 460/16 */
 }
 
 /* Spin */
@@ -221,21 +221,21 @@
 }
 
 .spin-1 .box:hover svg line.top {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
+    -webkit-transform: translateX(-18.75em); /* 300/16 */
+    transform: translateX(-18.75em); /* 300/16 */
 }
 
 .spin-1 .box:hover svg line.bottom {
-    -webkit-transform: translateX(300px);
-    transform: translateX(300px);
+    -webkit-transform: translateX(18.75em); /* 300/16 */
+    transform: translateX(18.75em); /* 300/16 */
 }
 
 .spin-1 .box:hover svg line.left {
-    -webkit-transform: translateY(460px);
-    transform: translateY(460px);
+    -webkit-transform: translateY(28.75em); /* 460/16 */
+    transform: translateY(28.75em); /* 460/16 */
 }
 
 .spin-1 .box:hover svg line.right {
-    -webkit-transform: translateY(-460px);
-    transform: translateY(-460px);
+    -webkit-transform: translateY(-28.75em); /* 460/16 */
+    transform: translateY(-28.75em); /* 460/16 */
 }

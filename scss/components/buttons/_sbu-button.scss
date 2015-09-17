@@ -4,21 +4,21 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        padding: 8px 18px 10px;
+        padding: 0.5em 1.125em 0.625em; /* 8/16 */ /* 18/16 */ /* 10/16 */
         font-family: 'Trade Gothic Next W01', Arial, sans-serif;
         font-weight: normal;
         font-size: inherit;
         text-decoration: none;
         cursor: pointer;
-        border-radius: 2px;
+        border-radius: 0.125em; /* 2/16 */
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         transition: all 0.2s;
-       /* box-shadow: 0 0 10px #fff;*/
+       /* box-shadow: 0 0 0.625em #fff;*/ /* 10/16 */
         background: #900;
-        border: 1px solid #800;
+        border: 0.0625em solid #800; /* 1/16 */
         color: #fff !important;
-        margin: 0 10px 5px 0;
+        margin: 0 0.625em 0.3125em 0; /* 10/16 */ /* 5/16 */
         position: relative;
     }
     .sbu-button:hover,

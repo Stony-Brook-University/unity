@@ -5,9 +5,9 @@ a.circle-band-button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 25px;
+    width: 9.375em; /* 150/16 */
+    height: 9.375em; /* 150/16 */
+    margin: 0 auto 1.5625em; /* 25/16 */
     border-radius: 50%;
     overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -20,7 +20,7 @@ a.circle-band-button {
         display: block;
         opacity: .75;
         background: #000;
-        height: 36px;
+        height: 2.25em; /* 36/16 */
         color: #fff;
         font-size: 1.3em;
         font-family: 'TradeGothicW01-BoldCn20 675334','Oswald';
@@ -32,34 +32,32 @@ a.circle-band-button {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin: 57px 0 0 0;
-        padding: 5px 0 0 0;
+        margin: 3.5625em 0 0 0; /* 57/16 */
+        padding: 0.3125em 0 0 0; /* 5/16 */
         -webkit-transition: box-shadow .3s;
         -moz-transition: box-shadow .3s;
         transition: box-shadow .3s;
-        box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);    
+        box-shadow: 0 0 0 6.25em rgba(45, 195, 232, 0);     /* 100/16 */
     }
     @include breakpoint($screen-xs) {
-        width: 200px;
-        height: 200px;
+        width: 12.5em; /* 200/16 */
+        height: 12.5em; /* 200/16 */
         span {
             font-size: 1.5em;
-            margin: 82px 0 0 0;
+            margin: 5.125em 0 0 0; /* 82/16 */
         } 
     }
 }
 
 /*
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 35em) { /* 560/16 */
     a.circle-band-button span {
-        height: 40px;
+        height: 2.5em; /* 40/16 */
         font-size: 1.9em;
-        margin: 94px 0 0 -2%;
-        padding: 3px 0 0 0;
+        margin: 5.875em 0 0 -2%; /* 94/16 */
+        padding: 0.1875em 0 0 0; /* 3/16 */
         width: 104%;
     }
-}
-*/
 
 @include breakpoint($screen-xs) {
     a.circle-band-button span {
@@ -72,48 +70,45 @@ a.circle-band-button {
 }
 
 /*
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30em) { /* 480/16 */
     a.circle-band-button:nth-child(n) {
-        margin: 0 15px;
+        margin: 0 0.9375em; /* 15/16 */
     }
-}
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 35em) { /* 560/16 */
     a.circle-band-button {
-        width: 224px;
-        height: 224px;
+        width: 14em; /* 224/16 */
+        height: 14em; /* 224/16 */
         float: none;
         display: inline-block;
-        margin: 0 15px 30px;
+        margin: 0 0.9375em 1.875em; /* 15/16 */ /* 30/16 */
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30em) { /* 480/16 */
     a.circle-band-button {
         float: none;
         display: inline-block;
-        margin: 0 15px 30px;
+        margin: 0 0.9375em 1.875em; /* 15/16 */ /* 30/16 */
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) { /* 768/16 */
     a.circle-band-button:nth-child(3n) {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 0.9375em; /* 15/16 */
+        margin-right: 0.9375em; /* 15/16 */
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30em) { /* 480/16 */
     a.circle-band-button:nth-child(3n) {
-        margin-right: 145px;
-        margin-left: 145px;
+        margin-right: 9.0625em; /* 145/16 */
+        margin-left: 9.0625em; /* 145/16 */
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30em) { /* 480/16 */
     a.circle-band-button:nth-child(n) {
-        margin: 0 35px;
+        margin: 0 2.1875em; /* 35/16 */
     }
 }
-
-*/

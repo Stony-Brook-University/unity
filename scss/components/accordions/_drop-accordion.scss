@@ -19,7 +19,7 @@
         background: $x-light-gray;
         color: $dark-gray;
         display: block;
-        border: 1px solid $gray;
+        border: 0.0625em solid $gray; /* 1/16 */
         font-size: 1.3em;
         font-family: 'Trade Gothic W01 Light';
         cursor: pointer;

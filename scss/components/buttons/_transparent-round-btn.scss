@@ -1,11 +1,11 @@
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin: 10px;
-    padding: 9px 16px;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    font-size: 16px;
+    width: 4.375em; /* 70/16 */
+    height: 4.375em; /* 70/16 */
+    margin: 0.625em; /* 10/16 */
+    padding: 0.5625em 1em; /* 9/16 */
+    border: 0.125em solid #fff; /* 2/16 */
+    border-radius: 2.1875em; /* 35/16 */
+    font-size: 1em;
     color: #fff;
     background-color: #fff;
     -webkit-transition: background .3s ease-in-out;
