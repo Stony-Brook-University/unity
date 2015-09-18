@@ -235,21 +235,12 @@ $(document).ready(function(){
 setInterval('cycleImages()', 7000);
 })
 
-// creates a animation loop
-function doAnimationLoop(element, fadeInTime, visibleTime, fadeOutTime, pauseTime){
-  fadeInOut(element,fadeInTime, visibleTime, fadeOutTime ,function(){
-    setTimeout(function(){
-      doAnimationLoop(element, fadeInTime, visibleTime, fadeOutTime, pauseTime);
-    },pauseTime);
-  });
-}
 
 
 
 /* Scalable use of accordion-style slideUp/slideDown with hide-accessible */
   
 /* drop-accordion */
-
 (function( $ ) {
 
 var accordionContent;
