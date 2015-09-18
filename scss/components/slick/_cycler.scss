@@ -1,0 +1,12 @@
+#cycler {
+    position: relative;
+    min-width: 100%;
+    min-height: 375px;
+    img {
+        position: absolute;
+        z-index: 1;
+        &.active {
+            z-index: 3;
+        }
+    }
+}
