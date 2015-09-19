@@ -1,5 +1,27 @@
 /* Styles unique to styleguide only */
 
+.icon-exp {
+
+    padding: .5em;
+    margin-right: .3em;
+    margin-top: .3em;
+    border: 0.1em solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.color-blurb {
+
+    min-height: 50px;
+    padding: 1em;
+    text-align: center; 
+    border-radius: .7em;
+    margin-bottom: .7em;
+
+}
+
+
+
 /* icon catalog */
 ul.icons li {
     width: 60px;

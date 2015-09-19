@@ -1,0 +1,75 @@
+.op-button-default {
+
+    font-size: $font-size-base;
+    font-weight: 500;
+    -moz-border-radius: 0.625em; /* 10/16 */
+    margin: .5em 0;
+    -webkit-border-radius: 0.625em; /* 10/16 */
+    padding: 0.625em 1.25em; /* 10/16 */ /* 20/16 */
+    line-height: 1.7em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family-base;
+    border: 0.125em solid;
+
+    &:hover,
+    &:focus {
+
+        color: $white;   
+    }
+
+}
+
+.op-button-red {
+    
+    @extend .op-button-default;
+
+    background-color: $red;
+    color: $white;
+
+    &:hover,
+    &:focus {
+
+        background-color: transparent; 
+        border: 0.125em solid $red;
+        color: $red; 
+    }
+}
+.op-button-dark-gray {
+    
+    @extend .button-default;
+
+    background-color: $dark-gray;
+    color: $white;
+
+    &:hover,
+    &:focus {
+
+        background-color: transparent; 
+        border: 0.125em solid $dark-gray;
+        color: $dark-gray; 
+    }
+}
+.op-button-gray {
+    
+    @extend .button-default;
+    
+    background-color: $gray;
+    color: $white;
+
+    &:hover,
+    &:focus {
+
+        background-color: transparent; 
+        border: 0.125em solid $gray;
+        color: $gray; 
+    }
+}
+

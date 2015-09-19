@@ -1,0 +1,108 @@
+.button-default {
+
+    font-size: $font-size-base;
+    font-weight: 500;
+    -moz-border-radius: 0.625em; /* 10/16 */
+    margin: .5em 0;
+    -webkit-border-radius: 0.625em; /* 10/16 */
+    padding: 0.625em 1.25em; /* 10/16 */ /* 20/16 */
+    line-height: 1.7em;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family-base;
+    border: 0.125em solid;
+
+    &:hover,
+    &:focus {
+
+        color: $white;   
+    }
+
+}
+
+.button-red {
+    
+    @extend .button-default;
+    color: $red;
+
+    border-color: $red;
+
+    &:hover,
+    &:focus {
+
+        border-color: $red;
+        background-color: $red;  
+    }
+}
+.button-dark-gray {
+    
+    @extend .button-default;
+    color: $dark-gray;
+
+    border-color: $dark-gray;
+
+    &:hover,
+    &:focus {
+
+        border-color: $dark-gray;
+        background-color: $dark-gray;  
+    }
+}
+.button-gray {
+    
+    @extend .button-default;
+    color: $gray;
+
+    border-color: $gray;
+
+    &:hover,
+    &:focus {
+
+        border-color: $gray;
+        background-color: $gray;  
+    }
+}
+
+
+
+@each $i in $darkColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .button-theme-#{$colorName} .default-btn { 
+            border-color:rgba($colorVar, 0.8);
+            color:rgba($colorVar, 0.8);
+    }
+
+    .button-theme-#{$colorName} .default-btn:hover { 
+            background-color:rgba($colorVar, 0.6);
+            color:rgba($white, 1);
+    }
+
+  
+    
+}
+
+@each $i in $lightColorsList {
+    $colorName: nth($i, 1);
+    $colorVar: nth($i, 2);
+
+    .button-theme-#{$colorName} .default-btn { 
+            border-color:$colorVar;
+            color: $colorVar;
+    }
+
+    .button-theme-#{$colorName} .default-btn:hover { 
+            background-color:rgba($colorVar, 0.6);
+            color:rgba($black, 1);
+    }
+
+}
