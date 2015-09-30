@@ -317,10 +317,10 @@ function load()
 	
 			
 
-
+            defaultPadding = "fluffy"
 			texture = "bg-texture-" + texture;
-			heading = "fluffy " + texture + " " + defaultColor;
-			 items.push( "<section id='texture-" + i + "' class='" + defaultColor + " fluffy " + texture + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header section-themeable'>" + heading + "</h2><ul class='color-picker'>" + colorList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
+			heading = defaultPadding + " " + texture + " " + defaultColor;
+			 items.push( "<section id='texture-" + i + "' class='" + defaultColor + " " + defaultPadding + " " + texture + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header section-themeable'>" + heading + "</h2><ul class='color-picker'>" + colorList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
 			 i++;
 		});
 
@@ -335,9 +335,8 @@ function load()
 
 		 	$.each(classList, function(index, item) { //search classes remove existing padding
 
-		 		if($.inArray(item, paddings) > 0)
+		 		if($.inArray(item, paddings) >= 0)
 		 		{
-		 			
 		 			section.removeClass(item);
 		 		}
 		 	});

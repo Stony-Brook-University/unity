@@ -4,6 +4,7 @@
         <div class="container">
            <div class="row">
                 <h1 class="centered">Icons</h1>
+                <div class="class_box bg-texture-az-subtle bg-youtube"></div>
                 <form id="live-search" action="" class="styled" method="post">
                     <fieldset>
                         Search for Icons:<b />
@@ -23,7 +24,9 @@ $(document).ready(function() {
 
     // The Google Geocoding API url used to get the JSON data
     var icons = "/.dist/assets/fonts/sbu-icons/selection.json";
+    var icon_info ={
 
+    }
     $.getJSON(icons, function (json) {
 
         // Set the variables from the results array
@@ -94,8 +97,21 @@ $(document).ready(function() {
                 aliases = '';
             }
 
-            popup = '<div id="' + curSet + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>Class: sbuicon-' + name + '<br />' + aliases + lig + tags + '</p></div>';
-            output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' + popup + '</li>';  
+//
+            icon_id = curSet+"-"+name           
+            //console.log(icon_id);
+            d =  { 
+                "name": name,
+                "aliases":aliases,
+                "lig":lig,
+                "tags":tags,
+                }
+            icon_info[icon_id] = d
+//
+
+            popup = '<div id="' + icon_id + '" class="popbox"><h2>' + name + '</h2><p>Class: sbuicon-' + name + '<br />' + aliases + lig + tags + '</p></div>';     
+
+            output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' /*+ popup */ + '</li>';  
         });
 
         output += "</ul>";
@@ -110,6 +126,20 @@ $(document).ready(function() {
             property: 'height'
         });
 
+        $('li.popper').click(function(e) {
+                //popup = '<div id="' + curSet + '-' + name + '" class="popbox"><h2>' + name + '</h2><p>Class: sbuicon-' + name + '<br />' + aliases + lig + tags + '</p></div>';
+                //#(".class_box").
+                //$('li.popper').css("border","4px solid black");
+                icon_prop = icon_info[$(this).attr("data-popbox")]
+                $(".class_box").empty();
+                $(".class_box").show();
+                $(".class_box").append('<h2>' + icon_prop["name"] + '</h2><p>Class: sbuicon-' + icon_prop["name"] + '<br />' + icon_prop["aliases"] + icon_prop["lig"] + icon_prop["tags"] +'</p><span class="class_icon sbuicon-' + icon_prop["name"] + '"></span>')
+
+            }
+            ); 
+
+
+/*
         $(function() {
             var moveLeft = 0;
             var moveDown = 0;
@@ -153,7 +183,11 @@ $(document).ready(function() {
                 $(target).css('top', topD).css('left', leftD);
             });   
         });
+
+*/
     });
+    $(".class_box").hide();  // hide class_box initially
+
 });
 
 
