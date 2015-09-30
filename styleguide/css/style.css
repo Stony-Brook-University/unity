@@ -103,7 +103,8 @@ ul.icons li span:before {
     border-width: 5px;
 }
 
-.class_box{ /* this is the floating div with all the class names and fun stuff */
+ /* this is the floating div with all the class names and fun stuff */
+.class_box{
     position:fixed;
     width: 300px;
     right:1em;
@@ -116,6 +117,7 @@ ul.icons li span:before {
     float:right;
     text-align:right;
     display:none;
+    font-weight:bold;
 }
 
 .class_box h2 {
