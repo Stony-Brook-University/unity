@@ -1,0 +1,41 @@
+/* -------------------------------------------------------------------
+Simple Button
+------------------------------------------------------------------- */
+
+.simple-btn-fade {
+    font-size: 1.25em; /* 20/16 */
+    font-weight: 500;
+    -moz-border-radius: 0.625em; /* 10/16 */
+    -webkit-border-radius: 0.625em; /* 10/16 */
+    padding: 0.625em 1.25em; /* 10/16 */ /* 20/16 */
+    line-height: 1.7em;
+    background: transparent;
+    border: 0.125em solid; /* 2/16 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    display: block;
+}
+
+.simple-btn-fade:hover {
+    background: inherit;
+    border: 0.125em solid transparent; /* 2/16 */
+    padding: 0.625em 2.125em 0.625em 0.625em !important; /* 10/16 */ /* 34/16 */ /* 10/16 */ /* 10/16 */
+}
+
+.simple-btn-fade:after {
+    font-size: 2em; /* 32/16 */
+    line-height: 1em;
+    content: "\35";
+    opacity: 0;
+    position: absolute;
+    margin-left: -1.25em; /* 20/16 */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    top: 0.4375em; /* 7/16 */
+    right: 0.3125em; /* 5/16 */
+}

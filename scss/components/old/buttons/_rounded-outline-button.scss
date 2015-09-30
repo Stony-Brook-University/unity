@@ -1,0 +1,35 @@
+.rounded-outline-button {
+
+   display: inline-block;
+
+    padding: 0.625em 0.625em 0.875em 1em; /* 10/16 */ /* 10/16 */ /* 14/16 */
+    background: #fff;
+    display: inline-block;
+    font-family: 'Trade Gothic Next W01';
+    font-size: 1.4em;
+    border: 0.0625em solid #900; /* 1/16 */
+    border-radius: 0.9375em; /* 15/16 */
+    box-shadow: 0.4375em 0.4375em 0.625em #ddd; /* 7/16 */ /* 7/16 */ /* 10/16 */
+    text-align: left;
+    margin: 0 1em 1em 0;
+    
+    &:hover {
+        background: #fcfcfc;
+    }
+
+    .icon {
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    
+}
+
+.rounded-outline-button-block {
+    @extend .rounded-outline-button;
+    display: block;
+    margin: 0 0 1em 0;
+   text-align: center;
+    
+}

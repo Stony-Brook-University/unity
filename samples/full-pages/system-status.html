@@ -1,0 +1,110 @@
+<!--#include file="includes/headers/header.html" -->
+
+<section class="fluffy section-border">
+	<div class="container">
+		<div class="row">
+
+
+
+			<p id="system-status"></p>
+
+			<script>
+			var text = '{"employees":[' +
+			'{"firstName":"John","lastName":"Doe" },' +
+			'{"firstName":"Anna","lastName":"Smith" },' +
+			'{"firstName":"Peter","lastName":"Jones" }]}';
+
+			obj = JSON.parse(text);
+			document.getElementById("system-status").innerHTML =
+			obj.employees[1].firstName;
+			</script>
+
+
+			<div class="col-md-12">
+      			<h2 class="system-status-heading">System Status</h2>
+   			 </div>
+
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		        <span class="system-status-icon sbuicon-circle turquoise"></span>
+		        <a href="#">Blackboard</a>
+		      </div>
+		    </div>
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		        <span class="system-status-icon sbuicon-circle"></span>
+		        <a href="#">Digication ePortfolios</a>
+		      </div>
+		    </div>
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		        <span class="system-status-icon sbuicon-circle"></span>
+		        <a href="#">Google Apps</a>
+		      </div>
+		    </div>
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		        <span class="system-status-icon sbuicon-circle"></span>
+		        <a href="#">ITSM (IT Service Management)</a>
+		      </div>
+		    </div>
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		        <span class="system-status-icon sbuicon-exclamation-triangle"></span>
+		        <a href="#">Network (Wired)</a>
+		      </div>
+		    </div>
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		        <span class="system-status-icon sbuicon-circle"></span>
+		        <a href="#">PeopleSoft</a>
+		      </div>
+		    </div>
+		    <div class="col-xs-6 col-sm-4 col-md-4">
+		      <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-circle"></span
+		      <a href="#">Qualtrics</a>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 col-sm-4 col-md-4">
+		    <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-circle"></span>
+		      <a href="#">SB You</a>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 col-sm-4 col-md-4">
+		    <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-info"></span>
+		      <a href="#">SOLAR</a>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 col-sm-4 col-md-4">
+		    <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-circle"></span>
+		      <a href="#">Talent Management System </a>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 col-sm-4 col-md-4">
+		    <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-circle"></span>
+		      <a href="#">Telephone Systems</a>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 col-sm-4 col-md-4">
+		    <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-circle"></span>
+		      <a href="#">Virtual SINC Site</a>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 col-sm-4 col-md-4">
+		    <div class="system-status-card">
+		      <span class="system-status-icon sbuicon-close"></span>
+		      <a href="#">WolfieNet</a>
+		    </div>
+		  </div>
+		</div><!-- End Row -->
+	</div><!-- End Container -->
+</section><!-- End System Status Section -->
+
+
+<!--#include file="includes/footers/simple.html" -->

@@ -1,3 +1,23 @@
+.typography {
+    padding-left: 25%;
+    margin-bottom: 40px;
+    position: relative;
+	
+	.typo-spec {
+		bottom: .8em;
+		color: $gray;
+		display: block;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 13px;
+		left: 0;
+		margin-left: 20px;
+		position: absolute;
+		width: 260px;
+	}
+}
+
+
 /* ------------------------------------------------------------------
 Typography
 ------------------------------------------------------------------- */

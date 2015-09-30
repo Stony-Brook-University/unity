@@ -1,25 +1,25 @@
 .call-to-action {
 	
 	float: center;
-	padding: 10px 30px 10px 30px;
-	margin: 10px;
+	padding: 0.625em 1.875em 0.625em 1.875em; /* 10/16 */ /* 30/16 */ /* 10/16 */ /* 30/16 */
+	margin: 0.625em; /* 10/16 */
 	background-color: white;
-	font-size: 16px;
+	font-size: 1em;
 	text-align: center;
-	border-bottom: 15px solid #990000;
-	border-top-left-right: 1px solid #eeeeee;
-	-webkit-box-shadow: 0 0 2px #333;
-    box-shadow: 0 0 2px #333;
+	border-bottom: 0.9375em solid #990000; /* 15/16 */
+	border-top-left-right: 0.0625em solid #eeeeee; /* 1/16 */
+	-webkit-box-shadow: 0 0 0.125em #333; /* 2/16 */
+    box-shadow: 0 0 0.125em #333; /* 2/16 */
 
 
 	h1 {
-	padding-bottom: 5px;
+	padding-bottom: 0.3125em; /* 5/16 */
 	text-align: center;
-	font-size: 24px;
-	border-bottom: 1px solid #eee;
+	font-size: 1.5em; /* 24/16 */
+	border-bottom: 0.0625em solid #eee; /* 1/16 */
 	}
 
 	> p + p {
-		padding-top: 5px;
+		padding-top: 0.3125em; /* 5/16 */
 	}
 }

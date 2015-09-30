@@ -1,0 +1,59 @@
+/* BACKGROUND IMAGE BUTTONS */
+.background-image-buttons {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 1.5625em; /* 25/16 */
+}
+
+span.image-label {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #00acc6;
+    font-family: 'Trade Gothic W01 Bold 2';
+    color: #fff;
+    padding: 0.625em 1.25em; /* 10/16 */ /* 20/16 */
+    font-size: 1.2em;
+    display: block;
+    float: left;
+    margin-top: 0.9375em; /* 15/16 */
+    margin-bottom: 0.9375em; /* 15/16 */
+
+    @include breakpoint($screen-sm) {
+        padding: 1.125em 1.5625em; /* 18/16 */ /* 25/16 */
+        font-size: 2em;
+        margin-top: 1.5625em; /* 25/16 */
+        margin-bottom: 1.5625em; /* 25/16 */
+    }
+
+    span:after {
+        display: inline-block;
+        content: "\f105";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        padding: 0 0 0 0.8125em; /* 13/16 */
+    }
+}
+
+span.image-label-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 14.0625em; /* 225/16 */
+    text-align: center;
+
+    @include breakpoint($screen-md) {
+        width: 15.625em; /* 250/16 */
+    }
+}

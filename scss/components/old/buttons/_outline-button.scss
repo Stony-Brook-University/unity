@@ -1,0 +1,34 @@
+.outline-button, a.outline-button, a.outline-button:visited {
+    border: 0.0625em solid #fff; /* 1/16 */
+    border-radius: 0.3125em; /* 5/16 */
+    background: #333333;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1em;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.outline-button:hover, a.outline-button:hover {
+    background: #990000;
+    background: rgba(153, 0, 0, 0.8);
+    text-decoration: none;
+    color: #fff;
+}
+
+
+    
+
+        .outline-button
+        {
+            margin: 0 1em 0.80em 0;
+            font-size: 0.8em;
+
+            @include breakpoint($break2) {
+
+                margin: 0 1em 1em 0;
+                font-size: 1.0em;
+            }
+        }

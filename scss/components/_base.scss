@@ -17,6 +17,8 @@
 
 @import "carousel";
 @import "gallery";
+@import "slick/base";
+@import "tabs/tabs";
 
 @import "accordions/base";
 
@@ -24,7 +26,6 @@
 
 @import "lists/primary-tabs";
 
-@import "digital-media/base";
 
 @import "background-full-page";
 
@@ -41,3 +42,5 @@
 @import "icons/base";
 
 @import "alerts";
+
+@import "scrollspy";

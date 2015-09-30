@@ -411,3 +411,11 @@
         display: none;
     }
 }
+
+ @media only screen and (max-width : 992px) {
+
+    .main-site-nav-wrap {
+
+        height: 50px;
+    }
+}
