@@ -218,6 +218,7 @@ $(document).ready(function() {
 
 })(jQuery);
 
+/* jshint ignore:start */
 /* Crossfade Images for Homepage */
 
 function cycleImages(){
@@ -234,7 +235,7 @@ $(document).ready(function(){
 // run every 7s
 setInterval('cycleImages()', 7000);
 })
-
+/* jshint ignore:end */
 
 
 
