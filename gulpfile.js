@@ -166,7 +166,7 @@ gulp.task('styles', function() {
         //.pipe(gulp.dest('app/assets/temp'))
         
         .pipe(notify({
-            message: 'Styles task complete'
+            message: 'The Baron says: I can not handle all this Sass.'
         }));
 
 
