@@ -1,17 +1,16 @@
 /* Varaibles - config */
-$linePx: 1px; 
+$linePx: 1px;
 $borderPx: 1px;
 $screen-sm: 990px;
 $color1: #000;
 $color2: #fff;
 $subcolor1: #000;
 $subcolor2: black;
-$pageBG:  #F5EEC9;
+$pageBG:  #fff;
 /* SCSS*/
-
 .content{
-	font-family:Verdana;
-	font-size:14px;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
 	* {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -19,7 +18,6 @@ $pageBG:  #F5EEC9;
 	}
 	position: relative;
 }
-
 .org-chart{
 	display:block;
 	clear: both;
@@ -43,13 +41,17 @@ $pageBG:  #F5EEC9;
 ul{
 	padding: 0;
 	margin: 0;
-	list-style: none;		
+	list-style: none;
 }
-ul li{ position: relative;}
+ul li{ position: relative;
+	margin-top: 20px;
+}
 ul li span{
 	display: block;
-	border:  $borderPx solid $subcolor1;
-	text-align: center;
+	border-top:  $borderPx solid $subcolor1;
+	border-right:  $borderPx solid $subcolor1;
+	border-bottom:  $borderPx solid $subcolor1;
+	text-align: left;
 	overflow: hidden;
 	text-decoration: none;
 	color: $subcolor2;
@@ -59,27 +61,25 @@ ul li span{
 	-moz-transition: all linear .1s;
 	transition: all linear .1s;
 	background: $color2;
-	padding: 4px; 
+	padding: 4px;
 }
-
-/* Box colors */ 
-.lvl-b { background: $color2; color:$color1;  } 
+/* Box colors */
+.lvl-b { background: $light-gray; color:$color1;  }
+.cio { border-left: 1px solid #000;}
 .board{
 	width:70%;
 	margin: 0 auto;
-
 	display: block;
 	position: relative;
-
 	&:before{
 		content: "";
 		display: block;
 		position: absolute;
-		height: 600px;
-		width: 0px;	
+		height: 100px;
+		width: 0px;
 		border-left:  $linePx solid $subcolor1;
-		margin-left: 49%;
-		top:  50px; 
+		margin-left: 50%;
+		top:  50px;
 	}
 }
 /* 1 column */
@@ -96,101 +96,43 @@ ul.columnOne{
 	}
 }
 
-/* 2 column */
-ul.columnTwo{
-	position: relative;
-	width: 100%;
-	display: block;
 
-	height:90px;
-	clear: both;
-	li:first-child{
-		width:30%;
-		float: left;
-	}
-	li{
-		width:30%; 
-		float: right;
-	}
-	&:before{
-		content: "";
-		display: block;
-		position: relative;
-		width: 80%;
-		height: 10px;	
-		border-top:  $linePx solid $subcolor1;
-		margin: 0 auto;
-		top: 40px;  
-	}
-}
-/* 3 column */
-ul.columnThree{ 
-	position: relative;
-	width: 100%;
-	display: block;
-	clear: both;
-	li:first-child{
-		width:30%;
-		float: left;
-		margin-left:0;
-	}
-	li{  	 
-		width:30%; 
-		margin-left:5%;
-		float: left;
-	}
-	li:last-child{ 
-		width:30%;  
-		float: right;
-		margin-left:0;
-	}
-	&:before{
-		content: "";
-		display: block;
-		position: relative;
-		width: 80%;
-		height: 10px;	
-		border-top:  $linePx solid $subcolor1;
-		margin: 0 auto ;
-		top: 40px;  
-	}
-}
 /* DEPARTMENTS COLUMNs */
-.departments{ 
-	width: 100%;
+.departments{
+	width: 102%;
 	display: block;
 	clear: both;
 	&:before{
 		content: "";
-		display: block; 
+		display: block;
 		width: 85%;
-		height: 30px;	
+		height: 30px;
 		border-top:  $linePx solid $subcolor1;
 		border-left:  $linePx solid $subcolor1;
 		border-right:  $linePx solid $subcolor1;
 		margin-left: 5%;
-		top:  0px; 
+		top:  0px;
 	}
 }
 .department{
 	border-left:  $linePx solid $subcolor1;
 	width: 10%;
-	float: left;  
-	margin: 0px 4px; 
+	float: left;
+	margin: 0px 4px;
 	&:after{
 		content: "";
 		position:absolute;
-		display: block; 
+		display: block;
 		width: 10px;
-		height: 30px;	
+		height: 30px;
 		border-left:  $linePx solid $subcolor1;
 		left:50%;
-		top:  -30px; 
+		top:  -30px;
 	}
 	&:first-child{
 		&:after{
 			display:none;
-		} 
+		}
 	}
 	&:last-child{
 		&:after{
@@ -202,24 +144,21 @@ ul.columnThree{
 			display:none;
 		}
 	}
-	span{
-		border-left:  1px solid $subcolor1;
-	}
-	li{	
+	li{
 		padding-left: 25px;
 		border-bottom:  $linePx solid $subcolor1;
-		height: 80px;
+		height: 66px;
 	}
 	li span{
 		background: $color2;
-		top: 38px;	
+		top: 38px;
 		position: absolute;
 		z-index: 1;
 		width: 95%;
 		height: auto;
 		vertical-align: middle;
-		right:0px; 
-		line-height: 14px;
+		right:0px;
+		line-height: 1.4em;
 		border:  $borderPx solid $subcolor1;
 	}
 	.sections{
@@ -227,12 +166,11 @@ ul.columnThree{
 	}
 }
 }
-
 @mixin responsiveClasses() {
 	.org-chart{
 		.board{
 			margin: 0px;
-			width:100%;
+			width: 100%;
 		}
 		.departments{
 			&:before{
@@ -241,7 +179,7 @@ ul.columnThree{
 		}
 		.department{
 			float: none;
-			width: 100%;
+			width: 90%;
 			margin-left: 0;
 			background:$pageBG;
 			margin-bottom: 40px;
@@ -253,8 +191,8 @@ ul.columnThree{
 				height: 60px;
 				border-left:  $linePx solid $subcolor1;
 				z-index: 1;
-				top: -45px;
-				left: 0%;
+				top: -41px;
+				left: 1px;
 				margin-left: -2px;
 			}
 			&:after{
@@ -264,9 +202,7 @@ ul.columnThree{
 		.department:first-child:before{	display: none;}
 	}
 }
-
 /* MEDIA QUERIES */
 @media all and (max-width: $screen-sm){
 	@include responsiveClasses();
 }
-	
