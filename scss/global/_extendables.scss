@@ -49,6 +49,13 @@
 
 /* Link Types */
 
+.button-trans {
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
 .dashed-link {
 
     border-bottom: .1em dashed;

@@ -4,12 +4,19 @@
         margin: 0px;
     }
 
+    h2 { 
+
+        font-size: 1.4em;
+    }
+
     .article {
         width: 100%;
         margin: 0px 0 20px 0;
         display: inline-block;
         vertical-align: top;
         list-style: none;
+        border-bottom: 3px solid $gray;
+        padding-bottom: 1em;
 
         @include breakpoint($break-phone) {
             width: 45%;

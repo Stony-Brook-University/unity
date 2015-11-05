@@ -10,11 +10,12 @@ Simple Card
 	border-radius: 2px;
 	text-align: left;
 	background-color: #fff;
+	font-size: 1.1em;
+	line-height: 1.7em;
 }
 
 .simple__card.best {
-	border-color: #990000	;
-	box-shadow: 10px 10px 5px 0px #666666;
+	border-color: #990000;
   	border-width: 3px;
 }
 
@@ -63,11 +64,12 @@ Simple Card
 	border-radius: 2px;
 	text-align: left;
 	background-color: #fff;
+	font-size: 1.1em;
+	line-height: 1.7em;
 
 
 &.best {
-	border-color: #990000	;
-	box-shadow: 10px 10px 5px 0px #666666;
+	border-color: #990000;
   	border-width: 3px;
 }
 

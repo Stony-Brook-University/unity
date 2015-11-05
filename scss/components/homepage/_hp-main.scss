@@ -30,36 +30,40 @@
 	.homepage-top-services {
 
 		margin-top: 5em;
-		padding: 2em;
-		background-color: rgba(255,255,255, 0.8);
+		padding: 0;
 
 		.top-services-text {
 
-		font-family: 'Times New Roman', serif; 
+		font-family: $font-school-spirit, serif; 
+		text-transform: uppercase;
 		font-size: 1.3em;
 		font-style: italic;
-		color: $dark-gray;
+		color: $white;
 
 		}
 
-
 		.top-service-links {
 
-			font-size: 1.1em;
-			display: block;
-			color: $dark-gray;
-			line-height: 2em;
-			text-align: center;
-			padding: .5em;
-			border: .1em solid $dark-gray;
-			margin-bottom: 1em;
-
-				&:hover,
-				&:focus {
-
-					color: $red;
-					border: .1em solid $red;
-				}
+	    display: block;
+	    background: rgba(51, 51, 51, 0.8);
+	    padding: 1em;
+	    text-transform: uppercase;
+	    text-align: center;
+	    border-bottom: 1px solid rgba(255,255,255,0.7);
+	    box-sizing: inherit;
+	    cursor: pointer;
+	    font-family: $font;
+	    @extend .button-trans;
+	    zoom: 1;
+	    color: $white;
+	    margin: 0.5em;
+	    
+		    &:hover,
+		    &:focus {
+		        background-color: $alt-red;
+		        border-bottom: 1px solid rgba(255,255,255,1);
+		        color: $white;
+			}
 		}
 	}
 }

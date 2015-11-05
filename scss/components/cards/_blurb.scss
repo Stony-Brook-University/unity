@@ -29,6 +29,7 @@
     }
 }
 
+.classy-blurb,
 .classic-blurb {
 
     position: relative;
@@ -54,6 +55,7 @@
 
         padding-left: 6em;
 
+        .blurb__title,
         .classic-blurb-title {
 
             @extend .card-title 
@@ -93,15 +95,6 @@ Blurbs
     color: #111;
 }
 
-.blurb__title {
-    text-transform: uppercase;
-    letter-spacing: 0.125em; /* 2/16 */
-    font-weight: 400;
-    font-size: 0.875em; /* 14/16 */
-    color: #111;
-    font-size: 0.8125em; /* 13/16 */
-    margin: 0 0 0.625em; /* 10/16 */
-}
 
 .blurb__item {
     position: relative;
@@ -120,8 +113,8 @@ Blurbs
     position: absolute;
     height: 2.5em; /* 40/16 */
     width: 2.5em; /* 40/16 */
-    left: 0;
-    top: 0;
+    left: -11px;
+    top: 11px;
     text-align: center;
     line-height: 2.5em; /* 40/16 */
     font-size: 1.75em; /* 28/16 */

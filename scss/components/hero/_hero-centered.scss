@@ -19,12 +19,15 @@ Hero
     }
     a {
         color: #fff;
-        border-bottom: 1px dashed #fff;
+        
+        border-bottom: 1px solid rgba(255,255,255, 0.7);
         text-transform: uppercase;
+        @extend .button-trans;
     }
     a:hover {
-        color: $gray;
-        border-bottom: 1px solid $gray;
+        background-color: $alt-red;
+        border-bottom: 1px solid rgba(255,255,255,1);
+        color: $white;
     }
     &.hero-format-small, &.hero-format-banner {
         min-height: 400px;
