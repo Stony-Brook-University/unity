@@ -39,6 +39,11 @@
     }
     &:active {
         background: $red;
+        color: $white;
+    }
+    &:visited {
+
+        color: $white;
     }
 }
 
@@ -49,3 +54,9 @@
 
     color: $white !important;
  }
+
+.simple-btn.red  {
+
+    color: $white !important;
+ }
+
