@@ -7,6 +7,11 @@
 
 /* Heading, subheading, paragraph, and media styles for cards */
 
+.card--image {
+    max-width: 100%;
+    height: auto;
+}
+
 .card-icon {
 
     font-size: 3em;

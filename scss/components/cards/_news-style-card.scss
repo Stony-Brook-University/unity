@@ -1,0 +1,77 @@
+.padding-half {
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.news-style-card {
+    padding: 0.1em;
+    background-color: $white;
+}
+
+.news-style-card--icon {
+    @extend .card--icon;
+}
+
+.news-style-card--image {
+    @extend .card--image;
+    margin-bottom: 5px;
+    padding: 0.3em;
+}
+
+.news-style-card--heading {
+    @extend .card--heading;
+}
+
+.news-style-card--heading-small {
+
+    @extend .card--heading;
+    font-size: 18px;
+    padding: 0.3em;
+}
+
+.news-style-card--subheading {
+    @extend .card--subheading;
+    margin-top: -.3em;
+    padding: 0.3em;
+}
+
+.news-style-card--text {
+    @extend .card--text;
+    padding: 0.3em;
+}
+
+.news-style-card--cta {
+    @extend .card--cta;
+}
+
+.news-style-card--video-container {
+    @extend .embed-responsive;
+    @extend .embed-responsive-16by9;
+
+    border: 1px solid #eee;
+}
+
+.news-style-card--video {
+    @extend .embed-responsive-item;
+
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.news-style-card--read-more {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 18px 10px;
+    font-family: "Trade Gothic Next W01", Arial, sans-serif;
+    font-weight: normal;
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background: #900;
+    border: 1px solid #800;
+    color: #fff !important;
+    position: relative;
+
+}

@@ -27,6 +27,55 @@
         @extend .card-call-to-action;
 
     }
+
+
+}
+
+
+.simple-blurb-card {
+    padding: 2em;
+}
+
+.simple-blurb-card--icon {
+    @extend .card--icon;
+}
+
+.simple-blurb-card--image {
+    @extend .card--image;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.simple-blurb-card--heading {
+    @extend .card--heading;
+}
+
+.simple-blurb-card--subheading {
+    @extend .card--subheading;
+    margin-top: -.3em;
+}
+
+.simple-blurb-card--text {
+    @extend .card--text;
+}
+
+.simple-blurb-card--cta {
+    @extend .card--cta;
+}
+
+.simple-blurb-card--video-container {
+    @extend .embed-responsive;
+    @extend .embed-responsive-16by9;
+
+    border: 1px solid #eee;
+}
+
+.simple-blurb-card--video {
+    @extend .embed-responsive-item;
+
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .classy-blurb,
