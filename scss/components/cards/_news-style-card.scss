@@ -7,10 +7,30 @@
     @extend .card--icon;
 }
 
+
+.event-highlight-card--info-wrap {
+    background-color: $x-light-gray;
+    padding: 10px 10px 0px;
+    border: 2px solid $gray;
+    margin: 0px 15px 15px;
+}
+
+
+.event-highlight-card--date:before {
+    font-family: 'FontAwesome';
+    content: "\f041";
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
 .event-highlight-card--date {
     font-size: 0.9em;
     font-color: $x-light-gray;
-    padding: 5px 15px 0px;
+    padding: 0px 15px 0px;
+    display: block;
 }
 
 .event-highlight-card--image {
@@ -58,6 +78,21 @@
 
     padding: 10px;
     margin-bottom: 15px;
+}
+.event-highlight-card--location:before {
+    font-family: 'FontAwesome';
+    content: "\e062";
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0
+}
+
+.event-highlight-card--location {
+    font-size: 0.9em;
+    font-color: $x-light-gray;
+    padding: 0px 15px 0px;   
 }
 
 .event-highlight-card--read-more {
