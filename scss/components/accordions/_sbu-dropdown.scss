@@ -1,0 +1,97 @@
+ .section-nav {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+     .section-nav a,
+     .section-nav-trigger a {
+        width: 100%;
+        font-family:'Trade Gothic Next W01';
+        font-size: 1.3em;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 1px solid #777;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        background: #fafafa;
+        position: relative;
+    }
+
+     .section-nav a.selected,
+     .section-nav a.highlighted,
+     .section-nav a:hover {
+        background: #f3f3f3;
+        color: #900;
+    }
+
+     .section-nav a:before {
+        display: inline-block;
+        content: "»";
+        margin: 0 8px 0 0;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        z-index: 1;
+        font-size: 1em;
+        width: 12px;
+        text-align: center;
+    }
+
+     .section-nav a.selected:before {
+        content: "»";
+        font-size: .8em;
+    }
+
+ .section-nav-trigger a {
+        background: #eee;
+        position: relative;
+    }
+
+     .section-nav-trigger a.active,
+     .section-nav-trigger a:hover {
+        background: #222;
+        color: #fff;
+    }
+
+     .section-nav-trigger a:after {
+        display: inline-block;
+        content: "⌄";
+        margin: 0;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        z-index: 1;
+        font-size: 1.3em;
+        width: 10px;
+        text-align: center;
+        color: #900;
+        position: absolute;
+        right: 14px;
+        top: 12px;
+    }
+
+     .section-nav-trigger a.active:after,
+     .section-nav-trigger a:hover:after {
+        color: #eee;
+    }
+
+    .sbu-dropdown-nav-hide {
+    position: absolute !important;
+    top: -99999px !important;
+    left: -99999px !important;
+    width: 2000px;
+    height: 2000px;
+}
