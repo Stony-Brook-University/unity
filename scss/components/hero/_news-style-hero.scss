@@ -11,17 +11,30 @@
     margin: 0 0 auto;
   }
 }
-.sbu-hero-slider .sbu-full-width{
-    margin-left: 10%;
-}
-.sbu-half-width-img-right {
-
-  margin-left: 5%;
-}
 .sbu-hero-slider {
   position: relative;
   height: 360px;
   overflow: hidden;
+}
+.sbu-hero-slider-content-wrap {
+  padding-top: 10vh;
+  @extend .no-padding;
+  position: relative;
+}
+@media only screen and (max-width: 1169px) {
+  .sbu-hero-slider-content-wrap {
+    padding-top: 7vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sbu-hero-slider-content-wrap {
+    padding-top: 5vh;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .sbu-hero-slider-content-wrap {
+    padding-top: 3vh;
+  }
 }
 .sbu-hero-slider li {
   position: absolute;
@@ -58,6 +71,7 @@
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
 }
+
 @media only screen and (min-width: 768px) {
   .sbu-hero-slider {
     height: 500px;
@@ -80,52 +94,6 @@ Single slide style
   background-repeat: no-repeat;
 }
 
-.sbu-hero-slider .sbu-full-width,
-.sbu-hero-slider .sbu-half-width {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  /* this padding is used to align the text */
-  padding-top: 100px;
-  text-align: left;
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.sbu-slider-content-wrap {
-    margin: 0;
-    padding: 1em 2em;
-    color: #fff;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-}
-.sbu-hero-slider .sbu-img-container {
-  /* hide image on mobile device */
-  display: none;
-}
-.sbu-hero-slider .sbu-img-container img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
 .sbu-hero-slider .sbu-bg-video-wrapper {
   /* hide video on mobile device */
   display: none;
@@ -160,7 +128,7 @@ Single slide style
   line-height: 1.2;
   margin: 0 0 14px;
   color: #ffffff;
-  width: 75%;
+  width: 95%;
   max-width: 400px;
 }
 .sbu-hero-slider h2 {
@@ -207,26 +175,7 @@ Single slide style
   .sbu-hero-slider li:nth-of-type(4) {
     background-image: none;
   }
-  .sbu-hero-slider .sbu-full-width{
-    margin-left: 10%;
-  }
-  .sbu-hero-slider .sbu-half-width {
-    padding-top: 150px;
-  }
   .sbu-hero-slider .sbu-bg-video-wrapper {
-    display: block;
-  }
-  .sbu-hero-slider .sbu-half-width {
-    width: 45%;
-  }
-  .sbu-hero-slider .sbu-half-width:first-of-type {
-    left: 5%;
-  }
-  .sbu-hero-slider .sbu-half-width:nth-of-type(2) {
-    right: 5%;
-    left: auto;
-  }
-  .sbu-hero-slider .sbu-img-container {
     display: block;
   }
   .sbu-hero-slider h2, .sbu-hero-slider p {
@@ -241,10 +190,6 @@ Single slide style
   }
 }
 @media only screen and (min-width: 1170px) {
-  .sbu-hero-slider .sbu-full-width,
-  .sbu-hero-slider .sbu-half-width {
-    padding-top: 170px;
-  }
   .sbu-hero-slider h2, .sbu-hero-slider p {
     margin-bottom: 20px;
   }
@@ -262,91 +207,6 @@ Single slide animation
 
 -------------------------------- */
 @media only screen and (min-width: 768px) {
-  .sbu-hero-slider .sbu-half-width {
-    opacity: 0;
-    -webkit-transform: translateX(40px);
-    -moz-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-    -o-transform: translateX(40px);
-    transform: translateX(40px);
-  }
-  .sbu-hero-slider .move-left .sbu-half-width {
-    -webkit-transform: translateX(-40px);
-    -moz-transform: translateX(-40px);
-    -ms-transform: translateX(-40px);
-    -o-transform: translateX(-40px);
-    transform: translateX(-40px);
-  }
-  .sbu-hero-slider .selected .sbu-half-width {
-    /* this is the visible slide */
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .sbu-hero-slider .is-moving .sbu-half-width {
-    /* this is the slide moving outside the viewport 
-    wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
-    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
-    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
-    transition: opacity 0s 0.5s, transform 0s 0.5s;
-  }
-  .sbu-hero-slider li.selected.from-left .sbu-half-width:nth-of-type(2),
-  .sbu-hero-slider li.selected.from-right .sbu-half-width:first-of-type {
-    /* this is the selected slide - different animation if it's entering from left or right */
-    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
-    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
-    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
-  }
-  .sbu-hero-slider li.selected.from-left .sbu-half-width:first-of-type,
-  .sbu-hero-slider li.selected.from-right .sbu-half-width:nth-of-type(2) {
-    /* this is the selected slide - different animation if it's entering from left or right */
-    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
-    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s;
-    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
-  }
-  .sbu-hero-slider .sbu-full-width h2,
-  .sbu-hero-slider .sbu-full-width p,
-  .sbu-hero-slider .sbu-full-width .sbu-btn .sbu-button {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-    -moz-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    -o-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-  .sbu-hero-slider .move-left .sbu-full-width h2,
-  .sbu-hero-slider .move-left .sbu-full-width p,
-  .sbu-hero-slider .move-left .sbu-full-width .sbu-btn .sbu-button {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-  .sbu-hero-slider .selected .sbu-full-width h2,
-  .sbu-hero-slider .selected .sbu-full-width p,
-  .sbu-hero-slider .selected .sbu-full-width .sbu-btn .sbu-button {
-    /* this is the visible slide */
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .sbu-hero-slider li.is-moving .sbu-full-width h2,
-  .sbu-hero-slider li.is-moving .sbu-full-width p,
-  .sbu-hero-slider li.is-moving .sbu-full-width .sbu-btn .sbu-button {
-    /* this is the slide moving outside the viewport 
-    wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
-    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
-    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
-    transition: opacity 0s 0.5s, transform 0s 0.5s;
-  }
   .sbu-hero-slider li.selected h2 {
     -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
     -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
@@ -525,44 +385,6 @@ Slider navigation
 
   }
 
-}
-
-/* -------------------------------- 
-
-Media Queries
-
--------------------------------- */
-
-@media only screen and (max-width: 767px) {
-  .sbu-half-width {
-    margin-left: 10%;
-    padding-right: 10%;
-  }
-  .sbu-full-width {
-      padding-right: 10%;
-    }
-  .sbu-hero-slider .sbu-full-width {
-      padding-top: 5%;
-  }
-  .sbu-hero-slider .sbu-half-width {
-      padding-top: 5%;
-
-  }
-}
-@media only screen and (max-width: 480px) {
-  .sbu-half-width {
-    margin-left: 10%;
-    padding-right: 10%;
-  }
-  .sbu-full-width {
-    padding-right: 10%;
-  }
-  .sbu-hero-slider .sbu-full-width {
-    padding-top: 5%;
-  }
-  .sbu-hero-slider .sbu-half-width {
-    padding-top: 5%;
-  }
 }
 
 /* -------------------------------- 
