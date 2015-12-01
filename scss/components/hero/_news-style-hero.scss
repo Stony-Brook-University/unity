@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 .sbu-hero-slider-content-wrap {
-  padding-top: 10vh;
+  padding-top: 15vh;
   @extend .no-padding;
   position: relative;
 }
@@ -235,7 +235,7 @@ Slider navigation
   z-index: 2;
   text-align: center;
   height: 55px;
-  background-color: rgba(0, 1, 1, 0.5);
+  background-color: transparent;
 }
 .sbu-slider-nav nav, .sbu-slider-nav ul, .sbu-slider-nav li, .sbu-slider-nav a {
   height: 100%;
@@ -307,7 +307,7 @@ Slider navigation
   padding-top: 30px;
   font-size: 1rem;
   font-weight: 700;
-  color: #a8b4be;
+  color: #fff;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
