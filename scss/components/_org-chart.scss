@@ -99,13 +99,13 @@ ul.columnOne{
 
 /* DEPARTMENTS COLUMNs */
 .departments{
-	width: 102%;
+	width: 100%;
 	display: block;
 	clear: both;
 	&:before{
 		content: "";
 		display: block;
-		width: 85%;
+		width: 80%;
 		height: 30px;
 		border-top:  $linePx solid $subcolor1;
 		border-left:  $linePx solid $subcolor1;
@@ -116,7 +116,7 @@ ul.columnOne{
 }
 .department{
 	border-left:  $linePx solid $subcolor1;
-	width: 10%;
+	width: 11%;
 	float: left;
 	margin: 0px 4px;
 	&:after{
