@@ -1,0 +1,5 @@
+Options MultiViews Indexes IncludesNoExec
+
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+AddOutputFilter INCLUDES .html
