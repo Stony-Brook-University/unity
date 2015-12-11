@@ -55,6 +55,12 @@ var config = {
       
 };
 
+gulp.task('copy', function() {
+
+    gulp.src([ '.dist/**/*'])
+        .pipe(gulp.dest('/var/www/doitsbu/docroot/sites/all/libraries/unity/latest'));
+
+});
 
 
 // Concatenate & Minify JS
