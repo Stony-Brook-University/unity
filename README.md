@@ -2,35 +2,30 @@ unity
 =====
 This is a theme for Stony Brook University; See it in action at http://it.stonybrook.edu
 
+
+Vagrantfile
+=====
+This file is used to load our vagrant VM based off of Geerling Guys DrupalVM [https://github.com/geerlingguy/drupal-vm/]
+While Drupal itself isn't installed as part of our particular configuration, the VM provides a lot of useful tools out of the box that are perfect for assisting with Unity Development
+
+This Vagrant file loads the vagrant file in the /vagrant directory. This allows us to keep the vagrant configuration separate and by itself, while still running vagrant commands from anywhere within out project directory structure. 
+
+You will want to run 2 vagrant plugins:
+
+vagrant plugin install vagrant-auto_network #this assigns a non-routable dynamic IP
+vagrant plugin install vagrant-hostsupdater #this updates your HOST machines hosts file with the appropriate linkages
+
+
 package.json
 =====
 This file is used for node.js 
 From a command prompt in this directory you should run npm install and it will load the required node.js packages based on this manifest. It is probably smart to add NodeJS to your system paths. 
 
-Gemfile
-=====
-This file is used for our ruby packages
-From a command prompt in this directory type "bundle install" -- 
-
-You will need ruby installed https://www.ruby-lang.org/en/ and the bundler extension http://bundler.io/ (gem install bundler). It is probably smart to add the ruby bin folder to your System Paths
 
 gulpfile.js
 =====
 This file contains our gulp scripts which sare used to automate the build process.
 Simply run gulp to build things from within the unity directory.
-
-Gruntfile.js (Deprecated [maybe?] ~DLL4)
-=====
-This file contains our grunt scripts which are used to automate the build process
-(or is just this line deprecated? ~DLL4) grunt styleguidewatch will watch our sass folder for changes, compile them and copy compiled css files to the styleguide folder. 
-
-.working
-=====
-This is a scratch directory used by the grunt script, it can be safely deleted, but will be recreated the next time the script runs. 
-
-.release
-=======
-This file contains our gulp scripts which are used to automate the build process
 
 
 .dist
@@ -60,9 +55,6 @@ This is where the SASS / SCSS files are stored.
 Other Useful Commands
 =====
 npm install
-bundle install
-bundle clean
-bundle update
 
 IIS - new web site, ssinc in handlers for the site, add for server side include for html
 =======
