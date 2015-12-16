@@ -11,3 +11,4 @@ stylesheets/
 .temp
 
 styleguide/compiled-assets/*
+.vagrant

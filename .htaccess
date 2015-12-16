@@ -1,0 +1,7 @@
+Options MultiViews Indexes IncludesNoExec
+
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+AddOutputFilter INCLUDES .html
+
+ Header add Access-Control-Allow-Origin "*" 
