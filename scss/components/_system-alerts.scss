@@ -1,0 +1,42 @@
+.system-alert {
+
+  width: 100%; 
+  padding: 20px;
+  display: block;
+  padding: 1.2em 1.4em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.all-systems-go {
+background-color: #66BB6A;
+}
+.systems-down {
+background-color: #B71C1C;
+  
+  a {
+    color: rgba(255,255,255, 1);
+    text-decoration: underline;
+
+    &:hover, 
+    &:focus {
+
+      color: rgba(255,255,255,1);
+      text-decoration: none;
+    }
+  }
+}
+
+.system-alert-icon {
+
+  color: white;
+  font-size: 1.3rem;
+  width: 50px; 
+  height: 50px;
+  margin-right: 10px;
+}
