@@ -1,35 +1,48 @@
 <!--#include file="includes/headers/header.html" -->
 
+<section class="system-alert all-systems-go">
+  <div class="container">
+    <div class="col-md-8 col-xs-12 no-padding">
+      <i class="sbuicon-check-square-o white system-alert-icon"></i>All systems reported to be online.
+    </div>
 
+    <div class="col-md-4 col-xs-12 no-padding dismiss">
+      <a href="#">Dismiss</a>
+    </div>
+  </div>
+</section>
 
 <section class="system-alert systems-down">
   <div class="container">
-  <i class="sbuicon-cancel-circle white system-alert-icon"></i>The following systems are experiencing outages: <a href="#">Blackboard</a>, <a href="#">SOLAR</a>, <a href="#">more...</a>
+    <div class="col-md-8 col-xs-12 no-padding"><!-- Limit systems down to two services, if more than that display a 'more' link that will link to the system status page -->
+    <i class="sbuicon-cancel-circle white system-alert-icon"></i>The following systems are experiencing outages: <a href="#">Blackboard</a>, <a href="#">SOLAR</a>, <a href="#">more...</a>
+    </div>
+
+  <div class="col-md-4 col-xs-12 no-padding dismiss">
+      <a href="#">Dismiss</a>
   </div>
 </section>
 
-<section class="system-alert all-systems-go">
-  <div class="container">
-  <i class="sbuicon-check-square-o white system-alert-icon"></i>All systems reported to be online.
-  </div>
-</section>
+
+
+
 
 
 <section class="sbu-hero bg-asphalt">
 
 
   <ul class="sbu-hero-slider autoplay">    
-    <li class="selected">
+    <li class="selected" class="overlay-gray" style="background-image: url('https://you.stonybrook.edu/doitsocial/files/2015/12/Header-140ks0s.jpg'); background-size: cover; background-position: 50% 50%;">
       <div class="sbu-full-width">
         <div class="container">
 
-          <div class="col-md-6 col-sm-6 col-xs-12 no-lef-padding">
-            <img src="http://it.stonybrook.edu/sites/it.stonybrook.edu/files/styles/large/public/articles/22206/spotlight/ie_spotlight.jpg" class="img-responsive hide-on-mobile-980" alt="tech 2">
+          <div class="col-md-6 col-sm-6 col-xs-12 no-left-padding">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/IMac_vector.svg/2000px-IMac_vector.svg.png" class="sbu-hero-slider-img" alt="tech 2">
           </div>
 
           <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
-              <h2>Microsoft Ending Support for Older Versions of Internet Explorer on Jan. 12, 2016</h2>
-              <p class="hide-on-mobile-980">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+              <h2 class="sbu-hero-title">Microsoft Ending Support for Older Versions of Internet Explorer on Jan. 12, 2016</h2>
+              <p class="sbu-hero-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
               <a href="#0" class="sbu-btn">Start</a>
           </div>
           
@@ -37,18 +50,13 @@
       </div> 
     </li>
 
-     <li>
+     <li style="background-image: url('http://it.stonybrook.edu/sites/it.stonybrook.edu/files/styles/hero/public/heros/december_2015/desktop/security1900.jpg?itok=0wcK3_H2'); background-size: cover; background-position: 50% 50%;">
       <div class="sbu-full-width">
         <div class="container">
           <div class="col-md-12 no-padding">
-            <h2>Microsoft Ending Support for Older Versions of Internet Explorer on Jan. 12, 2016</h2>            
-            <p class="hide-on-mobile-980">A simple, responsive slideshow in CSS &amp; jQuery. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="http://codyhouse.co/?p=675" class="sbu-btn">Learn More</a>
+            <h2 class="sbu-hero-title">Information Security Initiative Kicks Off</h2>            
+            <p class="sbu-hero-content">Stony Brook University has authorized a new Project 50 Forward/Operational Excellence initiative focused on Information Security. This project will bolster the University’s ability to deal with the ever-increasing number of sophisticated cybersecurity threats that pose reputational and financial risks to our institution.</p>
+            <a href="#" class="sbu-btn">Continue Reading</a>
           </div>    
         </div>
       </div> <!-- .sbu-full-width -->
@@ -57,9 +65,9 @@
     <li class="sbu-bg-video">
       <div class="sbu-full-width">
         <div class="container">
-        <div class="col-md-12">
-          <h2>Slide title here</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+        <div class="col-md-12 no-padding">
+          <h2 class="sbu-hero-title">Slide title here</h2>
+          <p class="sbu-hero-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
           <a href="#0" class="sbu-btn">Learn more</a>
         </div>
       </div>
@@ -73,9 +81,9 @@
     <li>
       <div class="sbu-full-width">
         <div class="container">
-        <div class="col-md-12">
-          <h2>Slide title here</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+        <div class="col-md-12 no-padding">
+          <h2 class="sbu-hero-title">Slide title here</h2>
+          <p class="sbu-hero-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
           <a href="#0" class="sbu-btn">Start</a>
           <a href="#0" class="sbu-btn secondary">Learn More</a>
         </div>
