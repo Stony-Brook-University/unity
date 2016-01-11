@@ -197,7 +197,7 @@ Single slide style
   margin-left: 1em;
 }
 .no-touch .sbu-hero-slider .sbu-btn:hover {
-  background-color: #d44457;
+  background-color: rgba(188  ,0,0,1);
 }
 .no-touch .sbu-hero-slider .sbu-btn.secondary:hover {
   background-color: #161a1e;
@@ -461,7 +461,7 @@ Slider navigation
 
 @media only screen and (min-width: 768px) {
   .sbu-slider-nav {
-    height: 80px;
+    height: 120px;
   }
   .sbu-slider-nav .sbu-marker,
   .sbu-slider-nav li {
