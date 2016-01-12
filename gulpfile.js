@@ -146,8 +146,8 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', function() {
- //   gulp.watch('js/header**/*.js', ['lint', 'headerjs']);
- //   gulp.watch('js/footer/**/*.js', ['lint', 'footerjs']);
+    gulp.watch('js/header**/*.js', ['headerjs']);
+    gulp.watch('js/footer/**/*.js', ['footerjs']);
     gulp.watch('fonts/**/*', ['fonts']);
     gulp.watch('images/**/*', ['images']);
     gulp.watch('scss/**/*.scss', ['styles']);

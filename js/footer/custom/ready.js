@@ -5,7 +5,7 @@
         $('.js-unity-slider--single-item').slick({
             dots: true,
             infinite: true,
-            speed: 500,
+            speed: 50000,
             slidesToShow: 1,
             slidesToScroll: 1
         });
