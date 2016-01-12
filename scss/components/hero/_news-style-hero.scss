@@ -24,6 +24,8 @@ h2.sbu-hero-title {
 .sbu-hero-slider {
   position: relative;
   height: 75vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .sbu-hero-slider-img {
@@ -45,6 +47,9 @@ h2.sbu-hero-title {
   -o-transform: translateX(100%);
   transform: translateX(100%);
 }
+
+
+
 .sbu-hero-slider li.selected {
   /* this is the visible slide */
   position: relative;
