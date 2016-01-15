@@ -133,7 +133,7 @@ jQuery(document).ready(function($){
 
 jQuery(document).ready(function($){
 	var	scrolling = false;
-	var contentSections = $('.cd-section'),
+	var contentSections = $('.sbu-section'),
 		verticalNavigation = $('.cd-vertical-nav'),
 		navigationItems = verticalNavigation.find('a'),
 		navTrigger = $('.cd-nav-trigger'),

@@ -26,23 +26,17 @@
 .event-date-desc-card {
 
 	position: relative;
-	padding: 0 0 1em 14em;
-	border-bottom: .1em solid $gray;
-	margin-bottom: 2em;
+	margin-bottom: 30%;
 
 	.event-date-desc-time {
 
-		text-align: center;
+		text-align: left;
 		color: $red;
-		border: .1em solid $red;
-		padding: 1em;
-		font-size: 1.1em;
-		position: absolute;
+		font-size: 1.3em;
+
 	    left: 0;
 	    top: 0;
 	    display: block;
-	    min-width: 22%;
-	    max-width: 22%;
 
 	    ul li {
 

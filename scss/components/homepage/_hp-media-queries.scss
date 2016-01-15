@@ -68,7 +68,7 @@
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 660px) {
 
 	.link-card {
 
@@ -80,6 +80,7 @@
 
 	position: relative;
 	padding: 0;
+	margin-bottom: 10%;
 
 	}
 
@@ -96,12 +97,9 @@
 		.event-date-desc-time {
 
 	    display: block;
-	    text-align: center;
+	    text-align: left;
 		color: $red;
-		border: .1em solid $red;
-		padding: .5em;
-		font-size: 1.1em;
-		position: relative;
+		font-size: 1.3em;
 	    left: 0;
 	    top: 0;
 	    max-width: 100%;
