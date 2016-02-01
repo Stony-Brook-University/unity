@@ -1,0 +1,41 @@
+.sbu-breadcrumb {
+	width: 100%;
+    max-width: 1280px;
+    padding: 0.5em 1em;
+    margin: 1em auto;
+    background-color: $x-light-gray;
+    display: block;
+    text-align: left;
+ 	
+ 	li { 
+	margin: 1.2em 0;
+	display: inline-block;
+
+	}
+}
+
+.sbu-breadcrumb li > * {
+
+	&:after {
+
+		display: inline-block;
+	    content:"\00bb"; 
+	    margin: 0 .6em;
+	    color: $dark-gray;
+	}
+}
+
+.sbu-breadcrumb--active {
+
+	color: $dark-gray;
+}
+.sbu-breadcrumb li > .sbu-breadcrumb--active {
+
+	&:after {
+
+		content: " ";
+
+	}
+
+}
+

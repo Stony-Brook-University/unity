@@ -28,6 +28,24 @@ h2.sbu-hero-title {
   overflow-y: hidden;
 }
 
+.sbu-hero-content {
+  font-size: 1.7rem;
+  line-height: 1.9;
+
+}
+
+.sbu-hero-content a {
+
+  color: #fff;
+  text-decoration: underline;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+}
+
 .sbu-hero-slider-img {
 
   @extend .img-responsive;
@@ -176,16 +194,11 @@ Single slide style
 .sbu-hero-slider h2 {
   font-size: 2.4rem;
 }
-.sbu-hero-slider p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-}
 .sbu-hero-slider .sbu-btn {
   display: inline-block;
   padding: 1.2em 1.4em;
   margin-top: .8em;
   background-color: rgba(151, 0, 0, 1);
-  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
@@ -248,9 +261,6 @@ Single slide style
   }
   .sbu-hero-slider h2 {
     font-size: 3.2em;
-  }
-  .sbu-hero-slider p {
-    font-size: 1.6rem;
   }
 }
 
