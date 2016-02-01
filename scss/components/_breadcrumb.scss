@@ -14,7 +14,7 @@
 	}
 }
 
-.sbu-breadcrumb li > * {
+.sbu-breadcrumb > li {
 
 	&:after {
 
@@ -23,19 +23,17 @@
 	    margin: 0 .6em;
 	    color: $dark-gray;
 	}
-}
 
-.sbu-breadcrumb--active {
+	&:last-child {
+		
+		color: $dark-gray;
 
-	color: $dark-gray;
-}
-.sbu-breadcrumb li > .sbu-breadcrumb--active {
-
-	&:after {
+		&:after {
 
 		content: " ";
 
+		}
 	}
-
 }
+
 
