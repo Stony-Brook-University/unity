@@ -1,0 +1,68 @@
+.article-footer {
+	width: 100%;
+    padding: 15px 0 15px 0;
+    box-sizing: border-box;
+    text-align: left;
+
+    .article-share {
+		display: inline-block;
+	    margin: 0 15px 10px;
+
+	    .share-title {
+
+			display: inline-block;
+		    margin: 0 10px 0 0;
+		    color: rgba(0, 0, 0, 0.6);
+		    font-size: 16px;
+		    font-weight: 600;
+		    line-height: 30px;
+		    text-transform: uppercase;
+		    vertical-align: middle;
+		}
+
+		.social-icon {
+			display: inline-block;
+			background: rgba(0, 0, 0, 0.2);
+		    width: 30px;
+		    height: 30px;
+		    margin: 5px 5px 5px;
+		    border-radius: 3px;
+		    line-height: 30px;
+		    box-sizing: border-box;
+		    vertical-align: middle;
+		    text-align: center;
+		    transition: .3s ease; 
+
+		}
+
+		span.social-icon.sbuicon-facebook-f.article-share-facebook:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
+		.article-share-facebook { color: #ffffff; }
+		.article-share-facebook:hover {
+  			background: #39579a !important;
+		}		
+
+		span.social-icon.sbuicon-twitter4.article-share-twitter:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
+		.article-share-twitter { color: #ffffff; }
+		.article-share-twitter:hover {
+			background: #01aced !important;
+		}
+
+		span.social-icon.sbuicon-yammer.article-share-yammer:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
+		.article-share-yammer { color: #ffffff; }
+		.article-share-yammer:hover {
+			background: #005FB9 !important;
+		}
+
+		span.social-icon.sbuicon-pinterest.article-share-pinterest:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
+		.article-share-pinterest { color: #ffffff; }
+		.article-share-pinterest:hover {
+			background: #cb2027 !important;
+		}
+
+		span.social-icon.sbuicon-envelope-o.article-share-email:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
+		.article-share-email { color: #ffffff; } 
+		.article-share-email:hover {
+			background: #333333 !important;
+		}
+	}	
+}
