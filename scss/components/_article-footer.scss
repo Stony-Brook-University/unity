@@ -38,31 +38,36 @@
 
 		span.social-icon.sbuicon-facebook-f.article-share-facebook:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
 		.article-share-facebook { color: #ffffff; }
-		.article-share-facebook:hover {
+		.article-share-facebook:hover,
+		.article-share-facebook:focus {
   			background: #39579a !important;
 		}		
 
 		span.social-icon.sbuicon-twitter4.article-share-twitter:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
 		.article-share-twitter { color: #ffffff; }
-		.article-share-twitter:hover {
+		.article-share-twitter:hover,
+		.article-share-twitter:focus {
 			background: #01aced !important;
 		}
 
 		span.social-icon.sbuicon-yammer.article-share-yammer:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
 		.article-share-yammer { color: #ffffff; }
-		.article-share-yammer:hover {
+		.article-share-yammer:hover,
+		.article-share-yammer:focus  {
 			background: #005FB9 !important;
 		}
 
 		span.social-icon.sbuicon-pinterest.article-share-pinterest:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
 		.article-share-pinterest { color: #ffffff; }
-		.article-share-pinterest:hover {
+		.article-share-pinterest:hover,
+		.article-share-pinterest:focus {
 			background: #cb2027 !important;
 		}
 
 		span.social-icon.sbuicon-envelope-o.article-share-email:before { margin-right: 0 !important } /* removes margin from _university-icons.scss */
 		.article-share-email { color: #ffffff; } 
-		.article-share-email:hover {
+		.article-share-email:hover,
+		.article-share-email:focus {
 			background: #333333 !important;
 		}
 	}	

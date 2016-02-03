@@ -10,14 +10,23 @@
 .item {
     display: inline-block;
     background: #fff;
-    padding: 1.5em;
-    margin: 0 0 1.5em;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 2px solid rgba(51,51,51,0.1);
+    margin: 0 0 1.5em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
 
+    &:hover,
+    &:focus {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+  .article-snippet {
+    padding: 1.5em;
+    
+  }
 
 }
 
@@ -26,41 +35,43 @@
 max-width: 100%;
 height: auto;
 display: block;
-margin-bottom: 1em;
 }
 
 .item .title {
 text-align: left;
 font-size: 1.5em;
 margin-top: 0;
-margin-bottom: .1em;
+margin-bottom: 0.375em;
 padding: 0;
 }
 
 .item .article-date {
-  color: #990000;
+  color: rgba(51,51,51,0.3);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: .5em;
   display: block;
 }
 
 .item a.article-read-more {
-  color: #ffffff;
-  padding: .5em 1em;
-  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  vertical-align: middle;
   display: block;
-  background-color: rgba(0,0,0,.2);
-  border-radius: 10px;
+
 }
 
 .item a.article-read-more:after {
   content: "\00bb";
   margin-left: .3em;
 }
-.item a.article-read-more:hover{
-  color: #ffffff;
-  text-decoration: underline;
-  transition: .3s ease; 
-  background-color: rgba(151,0,0,1);
+.item a.article-read-more:hover,
+.item a.article-read-more:focus {
+  transition: .3s ease-in-out; 
 }
 .item .title a:hover {
 color: #666;
@@ -69,7 +80,7 @@ border-color: #888;
 
 .item .article-footer {
 
-  border-top: .1em solid rgba(51,51,51,0.1); 
+  border-top: 0 !important; 
   margin-right: 0;
   margin-bottom: 0;
   padding-bottom: 0;
