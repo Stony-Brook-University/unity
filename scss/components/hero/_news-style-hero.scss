@@ -3,7 +3,7 @@
 
   padding-left: 0;
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Slider Hero
 
@@ -26,6 +26,16 @@ h2.sbu-hero-title {
   height: 75vh;
   overflow-x: hidden;
   overflow-y: hidden;
+
+          list-style-image: none;
+          list-style-type: none;
+          padding:0;
+          li{
+
+                    list-style-image: none;
+                    list-style-type: none;
+          }
+
 }
 
 .sbu-hero-content {
@@ -94,7 +104,7 @@ h2.sbu-hero-title {
 
 @media only screen and (max-width: 960px) {
 
-.sbu-hero-content { 
+.sbu-hero-content {
   display: none;
 }
 .sbu-hero-slider-img {
@@ -103,7 +113,7 @@ h2.sbu-hero-title {
 
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Single slide style
 
@@ -221,7 +231,7 @@ Single slide style
   background-color: #161a1e;
 }
 @media only screen and (min-width: 768px) {
-  
+
   .sbu-hero-slider .sbu-full-width,
   .sbu-hero-slider .sbu-half-width {
     padding-top: 0px;
@@ -264,7 +274,7 @@ Single slide style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Single slide animation
 
@@ -295,7 +305,7 @@ Single slide animation
     transform: translateX(0);
   }
   .sbu-hero-slider .is-moving .sbu-half-width {
-    /* this is the slide moving outside the viewport 
+    /* this is the slide moving outside the viewport
     wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
     -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
     -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
@@ -349,7 +359,7 @@ Single slide animation
   .sbu-hero-slider li.is-moving .sbu-full-width h2,
   .sbu-hero-slider li.is-moving .sbu-full-width p,
   .sbu-hero-slider li.is-moving .sbu-full-width .sbu-btn {
-    /* this is the slide moving outside the viewport 
+    /* this is the slide moving outside the viewport
     wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
     -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
     -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
@@ -371,7 +381,7 @@ Single slide animation
     transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Slider navigation
 
@@ -492,7 +502,7 @@ Slider navigation
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Javascript disabled
 

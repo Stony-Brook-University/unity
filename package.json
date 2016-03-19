@@ -1,6 +1,6 @@
 {
   "name": "unity",
-  "version": "1.0.0",
+  "version": "3.0.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/SBUDoIT/unity.git"
@@ -13,6 +13,7 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-bless": "^3.0.1",
+    "gulp-bump": "^2.0.1",
     "gulp-clean": "^0.3.1",
     "gulp-compass": "^2.0.3",
     "gulp-concat": "^2.5.2",

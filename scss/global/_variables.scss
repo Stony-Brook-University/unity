@@ -11,18 +11,21 @@ $font-secondary: "Cosmic Sans", Times, "Times New Roman", serif;
 
 //Official Colors
 
-$black: black;
-$white: white;
+$black: #000;
+$white: #fff;
 
-$red: #990000;
+$red: #900;
 $stony-brook-red: $red;
 $dark-red: #890000;
-$alt-red: #aa0000;
-$light-red: #ff9999;
+$alt-red: #a00;
+$light-red: #f99;
 
-$gray: #cccccc;
-$dark-gray: #333333;
-$light-gray: #eeeeee;
+
+
+
+$gray: #ccc;
+$dark-gray: #333;
+$light-gray: #eee;
 $x-light-gray: #f6f6f6;
 
 //Supplemental Colors
@@ -44,6 +47,10 @@ $yammer: #0072c6;
 $tumblr: #35465c;
 $instagram: #3f729b;
 $flickr: #ff0084;
+
+
+$information-bg: #003;
+$footer-bg: #252525;
 
 $paddingList: ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em) ("tight" 0em);
 

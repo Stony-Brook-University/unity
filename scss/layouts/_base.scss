@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 #main-prefix, #main-postfix, #main-content {
@@ -37,6 +37,10 @@ body {
             font-size: 1.6em;
         }
 
+        ul{
+          padding-left: 0;
+        }
+
         ul li {
             list-style: none;
             padding: 0em 0em 0.3125em 0em; /* 0/16 */ /* 0/16 */ /* 5/16 */ /* 0/16 */
@@ -51,7 +55,7 @@ body {
         ul ul {
           margin: 0.9375em 0 0 0.625em; /* 15/16 */ /* 10/16 */
           padding: 0;
-            
+
                 @include breakpoint($screen-lg) {
                 border-top: 0.0625em solid #ccc; /* 1/16 */
             }

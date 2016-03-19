@@ -1,37 +1,37 @@
-.alert.alert-emergency {
-    background-color: #660000;
-    padding: 2em;
+.alert-emergency {
+  background-color: $dark-red;
+  color: $white;
+  padding: 2em;
+
 }
 
-.alert.alert-notification {
-    background-color: #000033;
-    padding: 2em;
-}
+.alert-notification {
+  background-color: $information-bg;
+  color: $white;
+  padding: 2em;
 
-.alert-notification h2:before
-{
-	  @extend .sbuicon;
+  h2:before {
+    @extend .sbuicon;
     content: "\ed61";
     margin-right: 0.5em;
+  }
 }
 
-.alert {
-    color: #fff;
-    border-radius: 0;
-    margin-bottom: 0px;
-    //border-top: 1px solid #fff;
-}
+.alert-notification,
+.alert-emergency {
+  border-radius: 0;
+  color: $white;
+  margin-bottom: 0;
 
-.alert .summary a
-{
-	color: #ccc;
-	border-bottom: 1px dashed #ccc;
-	text-decoration: none;
-}
+  .summary a {
+    border-bottom: 1px dashed $gray;
+    color: $gray;
+    text-decoration: none;
+   }
 
-.alert .summary a:hover, .alert .summary a:focus
-{
-	color: #fff;
-	border-bottom: 1px solid #fff;
-	text-decoration: none;
+  .summary a:hover,
+  .summary a:focus {
+    border-bottom: 1px solid $white;
+    text-decoration: none;
+  }
 }

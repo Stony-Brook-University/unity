@@ -2,7 +2,7 @@
 
 	text-align: left;
 	margin-bottom: 2em;
-	
+
 	.link-card-icon {
 
 		font-size: 3em;
@@ -13,8 +13,18 @@
 	.link-card-heading {
 		font-size: 1.3em;
 		color: $dark-gray;
-		
+
 	}
+
+  ul.link-card-item {
+    list-style-image: none;
+    list-style-type: none;
+
+    li{
+      list-style-image: none;
+      list-style-type: none;
+    }
+  }
 
 	.link-card-item {
 
@@ -24,17 +34,17 @@
 	}
 
 	.dashed-link {
-			
+
 		@extend .dashed-link;
 		color: $dark-gray;
 		border-bottom: .1em dashed #333;
 
 		&:hover,
 		&:focus {
-			
+
 			color: $red;
 			border-bottom: none;
-				
+
 		}
 	}
 

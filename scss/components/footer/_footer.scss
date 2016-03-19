@@ -1,68 +1,85 @@
 .site-footer {
-    background: #252525;
-    .top-footer {
-        display: block;
-        background: #252525;
-        color: #ccc;
-        border-bottom: 1px solid #aaa;
-        @extend .fluffy;
-        font-family: 'Trade Gothic Next W01';
-        font-size: 1em;
-        position: relative;
-        z-index: 1;
-        h1, h2, h3, h4, h5 {
-            color: #eee;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        h2 {
-            font-size: 1.7em;
-        }
-        h3 {
-            font-size: 1.2em;
-        }
-        background-image: url("../assets/images/backgrounds/images/shieldbg.png");
-        background-size: cover;
+  background: $footer-bg;
+
+
+
+  .top-footer {
+    @extend .fluffy;
+
+    background: $footer-bg;
+    background-image: url("../assets/images/backgrounds/images/shieldbg.png");
+    background-size: cover;
+    border-bottom: 1px solid $gray;
+    color: $gray;
+    display: block;
+    font-family: "Trade Gothic Next W01";
+    font-size: 1em;
+    position: relative;
+    z-index: 1;
+
+    ul {
+
+      list-style-image: none;
+      list-style-type: none;
+      padding: 0;
+
+      li {
+
+        list-style-image: none;
+        list-style-type: none;
+
+      }
     }
-    .bottom-footer {
-        display: block;
-        background: #121212;
-        color: #ccc;
-        padding: 1em 0;
-        font-family: 'Trade Gothic Next W01';
-        font-size: 1em;
-        position: relative;
-        z-index: 1;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $light-gray;
     }
-    ul.menu {
-        li {
-            list-style-image: none;
-            list-style-type: none;
-            margin-left: 0;
-            a:after {
-                display: inline-block;
-                content: "\f105";
-                margin: 0 0 0 8px;
-                @extend .sbuicon;
-                position: relative;
-                z-index: 1;
-                font-size: 1em;
-            }
-        }
+
+    h1 {
+      font-size: 2em;
     }
-    .address, .address a, .codes {
-        line-height: 1.7em;
+
+    h2 {
+      font-size: 1.7em;
     }
-    .codes {
-        display: block;
-        line-height: 1.7em;
-        width: 200px;
-        margin: 0 auto;
-        border: 1px solid #000;
-        padding: 10px 0;
-        background: #191919;
+
+    h3 {
+      font-size: 1.2em;
     }
+  }
+
+  .bottom-footer {
+    background: $black;
+    color: $gray;
+    display: block;
+    font-family: "Trade Gothic Next W01";
+    font-size: 1em;
+    padding: 1em 0;
+
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .address, .address a, .codes {
+      line-height: 1.7em;
+  }
+
+  .codes {
+      background: #191919;
+      display: block;
+      line-height: 1.7em;
+  
+      margin: 0 auto;
+      border: 1px solid #000;
+      padding: 10px 0;
+
+      width: 200px;
+  }
     .address .serif-italic,
     .codes .serif-italic {
         font-size: 1.3em;

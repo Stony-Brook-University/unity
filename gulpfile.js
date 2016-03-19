@@ -19,41 +19,66 @@ var path = require('path');
 var template = require('lodash.template');
 var through = require('through2');
 var directoryMap = require("gulp-directory-map");
+var bump = require("gulp-bump");
 
 
 var config = {
-        
+
     dest: '.dist',
 
     sass: {
         src: './scss/**/*.{scss,sass}',
-        dest: './.dist/css'
+        dest: './.dist/latest/css'
     },
 
     fonts: {
         src: './fonts/**/*',
-        dest: './.dist/assets/fonts'
+        dest: './.dist/latest/assets/fonts'
     },
     //css:'./css',
     //js:'./js',
     images: {
-        src: './images/*.{png,gif,jpeg,jpg,svg}',
-        dest: './.dist/assets/images'
+        src: './images/**/*.{png,gif,jpeg,jpg,svg}',
+        dest: './.dist/latest/assets/images'
+
     },
 
-    jsheader: 
+    jsheader:
     {
         src: ['js/header/libraries/*.js', 'js/header/custom/*.js'],
-        dest: '.dist/js/header'
+        dest: '.dist/latest/js/header'
     },
 
     jsfooter:
     {
         src: ['js/footer/libraries/*.js', 'js/footer/custom/*.js'],
-        dest: '.dist/js/footer'
+        dest: '.dist/latest/js/footer'
+
     }
-      
+
 };
+
+gulp.task('bump', function () {
+  return gulp.src(['./package.json'])
+    .pipe(bump())
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('tag', function () {
+
+  var v = 'v' + pkg.version;
+  var message = 'Release ' + v;
+
+  return gulp.src('./')
+    .pipe(git.commit(message))
+    .pipe(git.tag(v, message))
+    .pipe(git.push('origin', 'master', '--tags'))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('release', ['bump'], function () {
+  gulp.start('versioncopy');
+});
 
 gulp.task('copy', function() {
 
@@ -61,6 +86,15 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('/var/www/doitsbu/docroot/sites/all/libraries/unity/latest'));
 
 });
+
+
+gulp.task('versioncopy', function() {
+    var pkg = require('./package.json');
+    gulp.src([ '.dist/latest/**/*'])
+        .pipe(gulp.dest('.dist/v' + pkg.version));
+
+});
+
 
 
 // Concatenate & Minify JS
@@ -128,7 +162,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest(config.sass.dest));
 
         //.pipe(gulp.dest('app/assets/temp'))
-        
+
         //.pipe(notify({
         //    message: 'The Baron says: I can not handle all this Sass.'
         //}));

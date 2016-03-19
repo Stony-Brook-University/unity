@@ -1,17 +1,22 @@
-ul, ul li {
+/* ul, ul li {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
     list-style: none;
     list-style-type: none;
-}
+} */
 
 //TODO: Why are star bullets indented differently than normal bullets?
 ul.star-bullets {
+    list-style: none;
+    list-style-type: none;
+
     li {
         margin-left: 20px;
         text-indent: -15px;
         margin-bottom: 14px;
+        list-style: none;
+        list-style-type: none;
     }
 
     li:before {
@@ -72,6 +77,10 @@ ul.default-bullets, {
 }
 
 .arrow-bullets {
+
+  list-style: none;
+  list-style-type: none;
+
     li:before {
         content: "\f061";
         @extend .sbuicon;
@@ -79,6 +88,10 @@ ul.default-bullets, {
 }
 
 .check-bullets {
+
+  list-style: none;
+  list-style-type: none;
+  
     li:before {
         content: "\f00c";
         @extend .sbuicon;

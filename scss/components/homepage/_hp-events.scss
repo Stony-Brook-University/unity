@@ -9,7 +9,7 @@
 	.event-media-highlight-img,
 	.event-media-highlight-iframe,
 	.event-media-highlight-video {
-	
+
 		max-width: 100%;
 		border: 1px solid $light-gray;
 		padding: 1em;
@@ -24,6 +24,16 @@
 }
 
 .event-date-desc-card {
+
+  ul {
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    list-style-image: none;
+    list-style-type: none;
+  }
 
 	position: relative;
 	margin-bottom: 30%;
@@ -69,9 +79,9 @@
 				color: $red;
 			}
 		}
-	
+
 		.event-date-desc-share-icon {
-			
+
 			text-align: center;
 			padding: .5em 0 .5em .5em;
 			font-size: 1em;
