@@ -23,7 +23,7 @@
 $(document).ready(function() {
 
     // The Google Geocoding API url used to get the JSON data
-    var icons = "/.dist/assets/fonts/sbu-icons/selection.json";
+    var icons = "/.dist/latest/assets/fonts/sbu-icons/selection.json";
     var icon_info ={
 
     }
@@ -45,14 +45,14 @@ $(document).ready(function() {
         var iconCount=0;
 
         $.each(icons, function(index, icon) {
-            
+
             iconCount++;
 
             if(curSet != icon.setId) {
                 curSet = icon.setId;
                 output += '<h2>' + iconSets[curSet] + '</h2>' + '<ul class="icons">';
-            }   
-          
+            }
+
             var lig = icon.properties.ligatures;
             var name = icon.properties.name;
             var id = icon.properties.id;
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
             if(icon.properties.ligatures != null) {
                icon.properties.ligatures;
-            }  
+            }
 
             if(icon.properties.name != null) {
                 if(name.indexOf(",") > 0) {
@@ -69,7 +69,7 @@ $(document).ready(function() {
                     aliases = icon.properties.name.substring(icon.properties.name.indexOf(",")+1);
                 }
             }
-                          
+
             $.each(icon.icon.tags, function(tagIndex, tag) {
                 tags += ', ' + tag;
             });
@@ -84,21 +84,21 @@ $(document).ready(function() {
             } else {
                 tags = '';
             }
-            
+
             if(lig != null && lig != '') {
                 lig = 'Ligatures: ' + lig + '<br />';
             } else {
                 lig = '';
             }
-            
+
             if(aliases != null && aliases  != '') {
                 aliases = 'Aliases: ' + aliases + '<br />';
             } else {
                 aliases = '';
             }
 
-            icon_id = curSet+"-"+name           
-            d =  { 
+            icon_id = curSet+"-"+name
+            d =  {
                 "name": name,
                 "aliases":aliases,
                 "lig":lig,
@@ -106,11 +106,11 @@ $(document).ready(function() {
                 }
             icon_info[icon_id] = d
 
-            output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' /*+ popup */ + '</li>';  
+            output += '<li class="popper" data-popbox="' + curSet + '-' + name + '"><div class="contents"><span class="sbuicon-' + name + '"></span><div style="display: none;">' + name + ' ' + lig + '</div>' /*+ popup */ + '</li>';
         });
 
         output += "</ul>";
-        
+
         $('div.icon-container').html(output);
 
         $('#filter-count').text('Number of Icons = ' + iconCount);
@@ -127,7 +127,7 @@ $(document).ready(function() {
                 $(".class_box").append('<h2>' + icon_prop["name"] + '</h2><p>Class: sbuicon-' + icon_prop["name"] + '<br />' + icon_prop["aliases"] + icon_prop["lig"] + icon_prop["tags"] +'</p><span class="class_icon sbuicon-' + icon_prop["name"] + '"></span>')
 
             }
-            ); 
+            );
 
     });
     $(".class_box").hide();  // hide class_box when page first loads
@@ -137,24 +137,24 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $("#filter").keyup(function(){
- 
+
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val(), count = 0;
- 
+
         // Loop through the comment list
         $(".icons li").each(function(){
- 
+
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
                 $(this).fadeOut();
- 
+
             // Show the list item if the phrase matches and increase the count by 1
             } else {
                 $(this).show();
                 count++;
             }
         });
- 
+
         // Update the count
         var numberItems = count;
         $("#filter-count").text("Number of Icons = "+count);
@@ -165,4 +165,3 @@ $(document).ready(function(){
 
 
 <!--#include file="footer.html" -->
-
