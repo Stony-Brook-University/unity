@@ -1,6 +1,6 @@
 unity
 =====
-This is a theme for Stony Brook University; See it in action at http://it.stonybrook.edu
+This was our original attempt at providing a Front End Framework for Stony Brook University IT Web Projects. This project has been replaced by Unity Lab, a Pattern Lab based approach for organizing our style components and prototypes. This repository will be kept around for posterity. 
 
 
 Vagrantfile
